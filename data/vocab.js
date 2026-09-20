@@ -15021,5 +15021,2782 @@ const VOCAB_DATA = [
         "back": "mental health day\n\nDía de salud mental (baja informal)"
       }
     ]
+  },
+  {
+    "section": 29,
+    "title": "anki_29_moda_belleza_avanzada.csv",
+    "cards": [
+      {
+        "id": "v29_001",
+        "front": "A ___ makes or alters clothing to fit a specific person.",
+        "back": "tailor\n\nSastre"
+      },
+      {
+        "id": "v29_002",
+        "front": "___ clothing is custom-made to a client's exact measurements.",
+        "back": "Bespoke\n\nHecho a medida / bespoke"
+      },
+      {
+        "id": "v29_003",
+        "front": "___ / ___ clothing is mass-produced in standard sizes.",
+        "back": "Off-the-rack / ready-to-wear\n\nRopa de percha / prêt-à-porter"
+      },
+      {
+        "id": "v29_004",
+        "front": "A ___ sews and repairs clothes professionally.",
+        "back": "seamstress\n\nCosturera"
+      },
+      {
+        "id": "v29_005",
+        "front": "___ refers to high-end custom-fitted fashion.",
+        "back": "Haute couture\n\nAlta costura"
+      },
+      {
+        "id": "v29_006",
+        "front": "A ___ is a company that creates designer clothing.",
+        "back": "fashion house\n\nCasa de moda"
+      },
+      {
+        "id": "v29_007",
+        "front": "A ___ / ___ is the platform models walk on during a fashion show.",
+        "back": "runway / catwalk\n\nPasarela"
+      },
+      {
+        "id": "v29_008",
+        "front": "A ___ is a designer's set of clothes for a season.",
+        "back": "collection\n\nColección"
+      },
+      {
+        "id": "v29_009",
+        "front": "___ is designer clothing made in standard sizes.",
+        "back": "Prêt-à-porter\n\nPrêt-à-porter / listo para llevar"
+      },
+      {
+        "id": "v29_010",
+        "front": "A ___ is a catalogue showing a brand's seasonal collection.",
+        "back": "lookbook\n\nLookbook / catálogo de moda"
+      },
+      {
+        "id": "v29_011",
+        "front": "___ refers to cheap, rapidly produced clothing that follows trends.",
+        "back": "Fast fashion\n\nModa rápida / fast fashion"
+      },
+      {
+        "id": "v29_012",
+        "front": "___ uses ethical and eco-friendly production methods.",
+        "back": "Sustainable fashion\n\nModa sostenible"
+      },
+      {
+        "id": "v29_013",
+        "front": "___ means transforming old clothing into new garments.",
+        "back": "Upcycling\n\nUpcycling / reutilización creativa"
+      },
+      {
+        "id": "v29_014",
+        "front": "A ___ item is second-hand clothing from a previous era.",
+        "back": "vintage\n\nVintage / de época"
+      },
+      {
+        "id": "v29_015",
+        "front": "___ fabric is unused material left over from original production.",
+        "back": "Deadstock\n\nTela sobrante sin usar"
+      },
+      {
+        "id": "v29_016",
+        "front": "A ___ is a small collection of versatile, timeless pieces.",
+        "back": "capsule wardrobe\n\nGuardarropa cápsula"
+      },
+      {
+        "id": "v29_017",
+        "front": "___ is clothing designed for both exercise and casual wear.",
+        "back": "Athleisure\n\nAthleisure (ropa deportiva informal)"
+      },
+      {
+        "id": "v29_018",
+        "front": "___ is casual urban fashion influenced by skate and hip-hop culture.",
+        "back": "Streetwear\n\nStreetwear / moda urbana"
+      },
+      {
+        "id": "v29_019",
+        "front": "A ___ is a bold item that stands out in an outfit.",
+        "back": "statement piece\n\nPieza llamativa / protagonista del look"
+      },
+      {
+        "id": "v29_020",
+        "front": "___ dressing means wearing one colour head to toe.",
+        "back": "Monochrome\n\nMonocromático / un solo color"
+      },
+      {
+        "id": "v29_021",
+        "front": "___ combines bold blocks of contrasting colours in an outfit.",
+        "back": "Colour blocking\n\nCombinación de bloques de color"
+      },
+      {
+        "id": "v29_022",
+        "front": "A ___ is a repeated pattern on fabric (floral, geometric, etc.).",
+        "back": "print\n\nEstampado"
+      },
+      {
+        "id": "v29_023",
+        "front": "___ is a classic black-and-white checked pattern.",
+        "back": "Houndstooth\n\nPata de gallo (estampado)"
+      },
+      {
+        "id": "v29_024",
+        "front": "___ / ___ is a criss-crossed horizontal and vertical bands pattern.",
+        "back": "Plaid / tartan\n\nTartán / cuadros escoceses"
+      },
+      {
+        "id": "v29_025",
+        "front": "A ___ is a very thin stripe on fabric, common in suits.",
+        "back": "pinstripe\n\nRaya diplomática / rayas finas"
+      },
+      {
+        "id": "v29_026",
+        "front": "___ is a rough woollen fabric associated with countryside style.",
+        "back": "Tweed\n\nTweed (tela)"
+      },
+      {
+        "id": "v29_027",
+        "front": "___ is a luxury soft wool from cashmere goats.",
+        "back": "Cashmere\n\nCachemira"
+      },
+      {
+        "id": "v29_028",
+        "front": "___ is a lightweight breathable fabric made from flax.",
+        "back": "Linen\n\nLino"
+      },
+      {
+        "id": "v29_029",
+        "front": "___ is a soft, rich fabric with a short dense pile.",
+        "back": "Velvet\n\nTerciopelo"
+      },
+      {
+        "id": "v29_030",
+        "front": "___ is a sheer, lightweight fabric often used in eveningwear.",
+        "back": "Chiffon\n\nGasa / chifón"
+      },
+      {
+        "id": "v29_031",
+        "front": "___ is the sturdy cotton fabric used for jeans.",
+        "back": "Denim\n\nTela vaquera / denim"
+      },
+      {
+        "id": "v29_032",
+        "front": "___ is a smooth, glossy fabric with a luxurious sheen.",
+        "back": "Satin\n\nSatén"
+      },
+      {
+        "id": "v29_033",
+        "front": "___ is a thin, stiff, sheer fabric used in formal wear.",
+        "back": "Organza\n\nOrganza"
+      },
+      {
+        "id": "v29_034",
+        "front": "___ is a synthetic rubber fabric used in sports and fashion.",
+        "back": "Neoprene\n\nNeopreno"
+      },
+      {
+        "id": "v29_035",
+        "front": "A ___ is the finished bottom edge of a garment.",
+        "back": "hem\n\nDobladillo"
+      },
+      {
+        "id": "v29_036",
+        "front": "A ___ is the folded flap of a jacket or coat.",
+        "back": "lapel\n\nSolapa"
+      },
+      {
+        "id": "v29_037",
+        "front": "A ___ is the band at the end of a sleeve.",
+        "back": "cuff\n\nPuño (de manga)"
+      },
+      {
+        "id": "v29_038",
+        "front": "A ___ is the inner layer of a garment.",
+        "back": "lining\n\nForro"
+      },
+      {
+        "id": "v29_039",
+        "front": "A ___ is a fold of fabric sewn into place for fullness.",
+        "back": "pleat\n\nPliegue / tabla"
+      },
+      {
+        "id": "v29_040",
+        "front": "A ___ is a tapered fold sewn into fabric to shape it to the body.",
+        "back": "dart\n\nPinza (costura)"
+      },
+      {
+        "id": "v29_041",
+        "front": "___ is decorative stitching on fabric.",
+        "back": "Embroidery\n\nBordado"
+      },
+      {
+        "id": "v29_042",
+        "front": "___ are small shiny discs sewn onto fabric for decoration.",
+        "back": "Sequins\n\nLentejuelas"
+      },
+      {
+        "id": "v29_043",
+        "front": "___ is the decoration of fabric with small beads.",
+        "back": "Beading\n\nAbalorios / decoración con cuentas"
+      },
+      {
+        "id": "v29_044",
+        "front": "A ___ is a decorative pin worn on clothing.",
+        "back": "brooch\n\nBroche / alfiler decorativo"
+      },
+      {
+        "id": "v29_045",
+        "front": "___ is inexpensive decorative jewellery, not precious metals.",
+        "back": "Costume jewellery\n\nBisutería"
+      },
+      {
+        "id": "v29_046",
+        "front": "A ___ is a small handbag without a strap held in the hand.",
+        "back": "clutch\n\nBolso de mano / clutch"
+      },
+      {
+        "id": "v29_047",
+        "front": "A ___ is a large open-top bag carried by handles.",
+        "back": "tote bag\n\nBolsa tote / bolsa de asas"
+      },
+      {
+        "id": "v29_048",
+        "front": "A ___ is a bag worn across the body on a long strap.",
+        "back": "crossbody bag\n\nBolso bandolera"
+      },
+      {
+        "id": "v29_049",
+        "front": "___ are high-heeled shoes with a very thin heel.",
+        "back": "Stilettos\n\nStilettos / tacones de aguja"
+      },
+      {
+        "id": "v29_050",
+        "front": "___ are flat slip-on leather shoes.",
+        "back": "Loafers\n\nMocasines"
+      },
+      {
+        "id": "v29_051",
+        "front": "___ are flat shoes with a canvas upper and rope sole.",
+        "back": "Espadrilles\n\nAlpargatas"
+      },
+      {
+        "id": "v29_052",
+        "front": "___ are ankle boots with elastic side panels.",
+        "back": "Chelsea boots\n\nBotas Chelsea"
+      },
+      {
+        "id": "v29_053",
+        "front": "A ___ is a belted waterproof coat originally worn in the military.",
+        "back": "trench coat\n\nGabardina / trench coat"
+      },
+      {
+        "id": "v29_054",
+        "front": "A ___ is a padded, quilted jacket filled with down or synthetic material.",
+        "back": "puffer jacket\n\nPlumífero / anorak acolchado"
+      },
+      {
+        "id": "v29_055",
+        "front": "A ___ is a semi-formal jacket, often worn without a matching trouser.",
+        "back": "blazer\n\nBlazer / americana"
+      },
+      {
+        "id": "v29_056",
+        "front": "A ___ (BrE) / ___ (AmE) is a sleeveless garment worn over a shirt.",
+        "back": "waistcoat / vest\n\nChaleco"
+      },
+      {
+        "id": "v29_057",
+        "front": "A ___ is a high close-fitting collar that covers the neck.",
+        "back": "turtleneck\n\nJersey de cuello alto / cuello tortuga"
+      },
+      {
+        "id": "v29_058",
+        "front": "A ___ is a dress with a front closure formed by wrapping one side over the other.",
+        "back": "wrap dress\n\nVestido cruzado"
+      },
+      {
+        "id": "v29_059",
+        "front": "A ___ falls to mid-calf length.",
+        "back": "midi skirt\n\nFalda midi"
+      },
+      {
+        "id": "v29_060",
+        "front": "A ___ reaches the ankles or floor.",
+        "back": "maxi dress\n\nVestido maxi"
+      },
+      {
+        "id": "v29_061",
+        "front": "___ have a very wide cut from hip to hem.",
+        "back": "Wide-leg trousers\n\nPantalones de pierna ancha"
+      },
+      {
+        "id": "v29_062",
+        "front": "___ are very tight-fitting denim trousers.",
+        "back": "Skinny jeans\n\nVaqueros pitillo"
+      },
+      {
+        "id": "v29_063",
+        "front": "___ are loose, casual trousers with an elasticated waist.",
+        "back": "Joggers\n\nJoggers / pantalón chándal"
+      },
+      {
+        "id": "v29_064",
+        "front": "A ___ is a tight one-piece garment covering the torso.",
+        "back": "bodysuit\n\nBody"
+      },
+      {
+        "id": "v29_065",
+        "front": "A ___ is a matching top and bottom sold as a set.",
+        "back": "co-ord set\n\nConjunto coordinado"
+      },
+      {
+        "id": "v29_066",
+        "front": "___ is comfortable, casual clothing worn at home.",
+        "back": "Loungewear\n\nRopa de estar en casa / loungewear"
+      },
+      {
+        "id": "v29_067",
+        "front": "A ___ helps clients choose clothes and accessories.",
+        "back": "personal shopper\n\nPersonal shopper"
+      },
+      {
+        "id": "v29_068",
+        "front": "A ___ selects and coordinates clothing for clients or photo shoots.",
+        "back": "stylist\n\nEstilista"
+      },
+      {
+        "id": "v29_069",
+        "front": "A ___ selects and presents fashion content for magazines.",
+        "back": "fashion editor\n\nEditora de moda"
+      },
+      {
+        "id": "v29_070",
+        "front": "___ is the visual style and values that define a fashion label.",
+        "back": "Brand identity\n\nIdentidad de marca"
+      },
+      {
+        "id": "v29_071",
+        "front": "___ are the dominant styles for a specific fashion season.",
+        "back": "Seasonal trends\n\nTendencias de temporada"
+      },
+      {
+        "id": "v29_072",
+        "front": "A ___ is a collage of images used to communicate a design concept.",
+        "back": "mood board\n\nTablero de inspiración / mood board"
+      },
+      {
+        "id": "v29_073",
+        "front": "___ designs clothes without masculine or feminine distinction.",
+        "back": "Gender-neutral fashion\n\nModa sin género / unisex"
+      },
+      {
+        "id": "v29_074",
+        "front": "___ in fashion promotes the inclusion of all body types.",
+        "back": "Body positivity\n\nPositividad corporal en moda"
+      },
+      {
+        "id": "v29_075",
+        "front": "___ is when brands falsely claim to be environmentally sustainable.",
+        "back": "Greenwashing\n\nGreenwashing / ecoblanqueo"
+      },
+      {
+        "id": "v29_076",
+        "front": "A ___ is a series of runway shows held twice a year in major cities.",
+        "back": "fashion week\n\nSemana de la moda"
+      },
+      {
+        "id": "v29_077",
+        "front": "___ refers to practices and products that maintain skin health.",
+        "back": "Skincare\n\nCuidado de la piel"
+      },
+      {
+        "id": "v29_078",
+        "front": "A ___ is a cream or lotion that hydrates the skin.",
+        "back": "moisturiser\n\nHidratante"
+      },
+      {
+        "id": "v29_079",
+        "front": "___ (Sun Protection Factor) measures how well a product blocks UV rays.",
+        "back": "SPF\n\nFPS / factor de protección solar"
+      },
+      {
+        "id": "v29_080",
+        "front": "A ___ is a liquid applied after cleansing to balance the skin.",
+        "back": "toner\n\nTónico facial"
+      },
+      {
+        "id": "v29_081",
+        "front": "A ___ is a concentrated skincare product targeting specific concerns.",
+        "back": "serum\n\nSérum"
+      },
+      {
+        "id": "v29_082",
+        "front": "___ is a vitamin A derivative used in anti-ageing skincare.",
+        "back": "Retinol\n\nRetinol"
+      },
+      {
+        "id": "v29_083",
+        "front": "___ attracts and retains moisture in the skin.",
+        "back": "Hyaluronic acid\n\nÁcido hialurónico"
+      },
+      {
+        "id": "v29_084",
+        "front": "___ removes dead skin cells to reveal fresher skin beneath.",
+        "back": "Exfoliation\n\nExfoliación"
+      },
+      {
+        "id": "v29_085",
+        "front": "A ___ is a product applied to the face and left on before removing.",
+        "back": "face mask\n\nMascarilla facial"
+      },
+      {
+        "id": "v29_086",
+        "front": "___ is a base applied before foundation to smooth the skin.",
+        "back": "Primer\n\nBase de maquillaje / primer"
+      },
+      {
+        "id": "v29_087",
+        "front": "___ evens out skin tone and provides coverage.",
+        "back": "Foundation\n\nBase de maquillaje (cobertura)"
+      },
+      {
+        "id": "v29_088",
+        "front": "___ covers blemishes, dark circles or imperfections.",
+        "back": "Concealer\n\nCorrector"
+      },
+      {
+        "id": "v29_089",
+        "front": "___ products create the illusion of shadow to define facial features.",
+        "back": "Contour\n\nContorno / contouring"
+      },
+      {
+        "id": "v29_090",
+        "front": "___ adds a shimmery glow to the high points of the face.",
+        "back": "Highlighter\n\nIluminador"
+      },
+      {
+        "id": "v29_091",
+        "front": "___ adds colour to the cheeks.",
+        "back": "Blush\n\nColorete / rubor"
+      },
+      {
+        "id": "v29_092",
+        "front": "A ___ darkens and thickens the eyelashes.",
+        "back": "mascara\n\nMáscara de pestañas"
+      },
+      {
+        "id": "v29_093",
+        "front": "___ is used to define the eyes along the lash line.",
+        "back": "Eyeliner\n\nDelineador de ojos"
+      },
+      {
+        "id": "v29_094",
+        "front": "___ is a pigmented powder or cream applied to the eyelids.",
+        "back": "Eyeshadow\n\nSombra de ojos"
+      },
+      {
+        "id": "v29_095",
+        "front": "A ___ defines the outline of the lips before lipstick.",
+        "back": "lip liner\n\nPerfilador de labios"
+      },
+      {
+        "id": "v29_096",
+        "front": "___ adds shine to the lips.",
+        "back": "Lip gloss\n\nBrillo de labios"
+      },
+      {
+        "id": "v29_097",
+        "front": "___ is applied over makeup to make it last longer.",
+        "back": "Setting spray\n\nSpray fijador"
+      },
+      {
+        "id": "v29_098",
+        "front": "___ is a gentle no-rinse cleanser that removes makeup.",
+        "back": "Micellar water\n\nAgua micelar"
+      },
+      {
+        "id": "v29_099",
+        "front": "A ___ is a sponge applicator for blending foundation.",
+        "back": "beauty blender\n\nEsponja de maquillaje / beauty blender"
+      }
+    ]
+  },
+  {
+    "section": 30,
+    "title": "anki_30_cocteles_bebidas.csv",
+    "cards": [
+      {
+        "id": "v30_001",
+        "front": "A ___ / ___ prepares and serves cocktails.",
+        "back": "bartender / mixologist\n\nBarman / coctelero"
+      },
+      {
+        "id": "v30_002",
+        "front": "A ___ is a mixed drink made with spirits, mixers and garnishes.",
+        "back": "cocktail\n\nCóctel"
+      },
+      {
+        "id": "v30_003",
+        "front": "A ___ is a non-alcoholic cocktail.",
+        "back": "mocktail\n\nCóctel sin alcohol / mocktail"
+      },
+      {
+        "id": "v30_004",
+        "front": "A ___ is the container used to mix cocktail ingredients by shaking.",
+        "back": "shaker\n\nCoctelera"
+      },
+      {
+        "id": "v30_005",
+        "front": "A ___ removes ice and solids when pouring a cocktail.",
+        "back": "strainer\n\nColador de coctelería"
+      },
+      {
+        "id": "v30_006",
+        "front": "A ___ is a small measuring tool for spirits.",
+        "back": "jigger\n\nMedidor / jigger"
+      },
+      {
+        "id": "v30_007",
+        "front": "A ___ is used to crush ingredients like mint or citrus in a glass.",
+        "back": "muddler\n\nMazo de coctelería / muddler"
+      },
+      {
+        "id": "v30_008",
+        "front": "___ means served over ice.",
+        "back": "On the rocks\n\nCon hielo (en vaso)"
+      },
+      {
+        "id": "v30_009",
+        "front": "___ means chilled then served without ice.",
+        "back": "Straight up\n\nSin hielo (agitado y colado)"
+      },
+      {
+        "id": "v30_010",
+        "front": "___ means served at room temperature with no ice or mixer.",
+        "back": "Neat\n\nSolo / sin hielo ni mezcla"
+      },
+      {
+        "id": "v30_011",
+        "front": "A ___ is a spirit mixed with a larger amount of a non-alcoholic drink.",
+        "back": "highball\n\nHighball (combinado largo)"
+      },
+      {
+        "id": "v30_012",
+        "front": "A ___ is a small measure of spirit (approx. 25–50 ml).",
+        "back": "shot\n\nChupito / shot"
+      },
+      {
+        "id": "v30_013",
+        "front": "A ___ is two measures of spirit in one drink.",
+        "back": "double\n\nDoble"
+      },
+      {
+        "id": "v30_014",
+        "front": "A ___ is a non-alcoholic drink added to a spirit (tonic, soda, juice).",
+        "back": "mixer\n\nMezclador / refresco"
+      },
+      {
+        "id": "v30_015",
+        "front": "___ is a carbonated drink with quinine, used in gin and tonic.",
+        "back": "Tonic water\n\nAgua tónica"
+      },
+      {
+        "id": "v30_016",
+        "front": "___ is plain carbonated water used as a mixer.",
+        "back": "Soda water\n\nAgua con gas / soda"
+      },
+      {
+        "id": "v30_017",
+        "front": "A ___ is a decorative and flavourful addition to a cocktail (lemon twist, mint, etc.).",
+        "back": "garnish\n\nGuarnición / decoración"
+      },
+      {
+        "id": "v30_018",
+        "front": "A ___ is a strip of citrus peel used as a garnish.",
+        "back": "twist\n\nTwist / piel de cítrico"
+      },
+      {
+        "id": "v30_019",
+        "front": "A ___ is the edge of a glass, often salted or sugared for certain cocktails.",
+        "back": "rim\n\nBorde del vaso (con sal o azúcar)"
+      },
+      {
+        "id": "v30_020",
+        "front": "___ creates a smoky effect in cocktails.",
+        "back": "Dry ice\n\nHielo seco"
+      },
+      {
+        "id": "v30_021",
+        "front": "A ___ is made with tequila, triple sec and lime juice.",
+        "back": "Margarita\n\nMargarita"
+      },
+      {
+        "id": "v30_022",
+        "front": "A ___ is made with rum, mint, lime, sugar and soda water.",
+        "back": "Mojito\n\nMojito"
+      },
+      {
+        "id": "v30_023",
+        "front": "A ___ is made with gin, Campari and sweet vermouth.",
+        "back": "Negroni\n\nNegroni"
+      },
+      {
+        "id": "v30_024",
+        "front": "An ___ is made with bourbon, bitters, sugar and orange peel.",
+        "back": "Old Fashioned\n\nOld Fashioned"
+      },
+      {
+        "id": "v30_025",
+        "front": "A ___ is made with vodka, triple sec, cranberry and lime juice.",
+        "back": "Cosmopolitan\n\nCosmopolitan"
+      },
+      {
+        "id": "v30_026",
+        "front": "A ___ is made with whiskey, lemon juice and sugar syrup.",
+        "back": "Whiskey Sour\n\nWhiskey Sour"
+      },
+      {
+        "id": "v30_027",
+        "front": "A ___ is made with rum, lime juice and sugar.",
+        "back": "Daiquiri\n\nDaiquiri"
+      },
+      {
+        "id": "v30_028",
+        "front": "A ___ is made with vodka, tomato juice and spices.",
+        "back": "Bloody Mary\n\nBloody Mary"
+      },
+      {
+        "id": "v30_029",
+        "front": "A ___ is gin mixed with tonic water over ice.",
+        "back": "Gin and Tonic\n\nGin tonic"
+      },
+      {
+        "id": "v30_030",
+        "front": "A ___ is typically Prosecco, Aperol and soda water.",
+        "back": "Spritz\n\nSpritz"
+      },
+      {
+        "id": "v30_031",
+        "front": "A ___ is a cocktail made with gin (or vodka) and dry vermouth.",
+        "back": "Martini\n\nMartini"
+      },
+      {
+        "id": "v30_032",
+        "front": "A ___ is made with pisco, lemon juice, sugar and egg white.",
+        "back": "Pisco Sour\n\nPisco Sour"
+      },
+      {
+        "id": "v30_033",
+        "front": "___ (BrE) / ___ (AmE/Irish) is a distilled grain spirit aged in barrels.",
+        "back": "Whisky / whiskey\n\nWhisky / whiskey"
+      },
+      {
+        "id": "v30_034",
+        "front": "___ is an American whiskey made primarily from corn.",
+        "back": "Bourbon\n\nBourbon"
+      },
+      {
+        "id": "v30_035",
+        "front": "___ is whisky made in Scotland, often with a smoky flavour.",
+        "back": "Scotch\n\nScotch (whisky escocés)"
+      },
+      {
+        "id": "v30_036",
+        "front": "___ is made primarily from rye grain, common in cocktails.",
+        "back": "Rye whiskey\n\nWhiskey de centeno"
+      },
+      {
+        "id": "v30_037",
+        "front": "___ whisky comes from a single distillery and one type of grain.",
+        "back": "Single malt\n\nSingle malt"
+      },
+      {
+        "id": "v30_038",
+        "front": "___ mixes malt and grain whiskies from multiple distilleries.",
+        "back": "Blended whisky\n\nWhisky blended"
+      },
+      {
+        "id": "v30_039",
+        "front": "___ is a neutral spirit distilled from grains or potatoes.",
+        "back": "Vodka\n\nVodka"
+      },
+      {
+        "id": "v30_040",
+        "front": "___ is a spirit flavoured with juniper berries and botanicals.",
+        "back": "Gin\n\nGinebra"
+      },
+      {
+        "id": "v30_041",
+        "front": "___ is distilled from sugarcane or molasses.",
+        "back": "Rum\n\nRon"
+      },
+      {
+        "id": "v30_042",
+        "front": "___ is a Mexican spirit distilled from blue agave.",
+        "back": "Tequila\n\nTequila"
+      },
+      {
+        "id": "v30_043",
+        "front": "___ is a smoky Mexican spirit made from various agave plants.",
+        "back": "Mezcal\n\nMezcal"
+      },
+      {
+        "id": "v30_044",
+        "front": "___ is a spirit distilled from fermented fruit juice, usually grapes.",
+        "back": "Brandy\n\nBrandy / coñac"
+      },
+      {
+        "id": "v30_045",
+        "front": "___ is a type of brandy from the Cognac region of France.",
+        "back": "Cognac\n\nCoñac"
+      },
+      {
+        "id": "v30_046",
+        "front": "___ is a sparkling wine from the Champagne region of France.",
+        "back": "Champagne\n\nChampán / champagne"
+      },
+      {
+        "id": "v30_047",
+        "front": "___ is an Italian sparkling wine.",
+        "back": "Prosecco\n\nProsecco"
+      },
+      {
+        "id": "v30_048",
+        "front": "___ is a Spanish sparkling wine made by traditional method.",
+        "back": "Cava\n\nCava"
+      },
+      {
+        "id": "v30_049",
+        "front": "___ is a pink wine made from red grapes with limited skin contact.",
+        "back": "Rosé\n\nVino rosado"
+      },
+      {
+        "id": "v30_050",
+        "front": "A ___ has little residual sugar.",
+        "back": "dry wine\n\nVino seco"
+      },
+      {
+        "id": "v30_051",
+        "front": "A ___ has a high residual sugar content.",
+        "back": "sweet wine\n\nVino dulce"
+      },
+      {
+        "id": "v30_052",
+        "front": "___ describes a wine with a rich, complex flavour.",
+        "back": "Full-bodied\n\nVino con cuerpo"
+      },
+      {
+        "id": "v30_053",
+        "front": "___ are natural compounds in red wine that create a dry sensation.",
+        "back": "Tannins\n\nTaninos"
+      },
+      {
+        "id": "v30_054",
+        "front": "___ is produced by small independent breweries with an emphasis on quality.",
+        "back": "Craft beer\n\nCerveza artesanal"
+      },
+      {
+        "id": "v30_055",
+        "front": "An ___ (India Pale Ale) is a hoppy, bitter style of beer.",
+        "back": "IPA\n\nIPA (cerveza pale ale amarga)"
+      },
+      {
+        "id": "v30_056",
+        "front": "A ___ is a dark, rich beer made with roasted malt.",
+        "back": "stout\n\nStout (cerveza negra)"
+      },
+      {
+        "id": "v30_057",
+        "front": "A ___ is a light, crisp beer fermented at low temperatures.",
+        "back": "lager\n\nLager / cerveza rubia"
+      },
+      {
+        "id": "v30_058",
+        "front": "A ___ is brewed with a significant proportion of wheat.",
+        "back": "wheat beer\n\nCerveza de trigo"
+      },
+      {
+        "id": "v30_059",
+        "front": "___ is served from a keg or cask via a tap.",
+        "back": "Draught beer\n\nCerveza de barril / de grifo"
+      },
+      {
+        "id": "v30_060",
+        "front": "___ is a high-alcohol anise-flavoured spirit.",
+        "back": "Absinthe\n\nAbsenta"
+      },
+      {
+        "id": "v30_061",
+        "front": "___ is a sweet Italian almond-flavoured liqueur.",
+        "back": "Amaretto\n\nAmaretto"
+      },
+      {
+        "id": "v30_062",
+        "front": "___ is an orange-flavoured liqueur used in many cocktails.",
+        "back": "Triple sec\n\nTriple sec (licor de naranja)"
+      },
+      {
+        "id": "v30_063",
+        "front": "___ is a fortified wine flavoured with herbs, used in cocktails.",
+        "back": "Vermouth\n\nVermut"
+      },
+      {
+        "id": "v30_064",
+        "front": "___ are concentrated alcoholic flavourings added in small amounts to cocktails.",
+        "back": "Bitters\n\nBitters / amargos"
+      },
+      {
+        "id": "v30_065",
+        "front": "___ is sugar dissolved in water, used to sweeten cocktails.",
+        "back": "Simple syrup\n\nAlmíbar simple / sirope"
+      },
+      {
+        "id": "v30_066",
+        "front": "___ is a sweet pomegranate-flavoured syrup used in cocktails.",
+        "back": "Grenadine\n\nGranadina"
+      },
+      {
+        "id": "v30_067",
+        "front": "___ spirits have had flavours added through soaking ingredients.",
+        "back": "Infused\n\nMacerado / infusionado"
+      },
+      {
+        "id": "v30_068",
+        "front": "___ cocktails or spirits have been matured in wooden casks.",
+        "back": "Barrel-aged\n\nEnvejecido en barrica"
+      },
+      {
+        "id": "v30_069",
+        "front": "A ___ is a cool underground space for storing wine.",
+        "back": "cellar\n\nBodega / sótano de vinos"
+      },
+      {
+        "id": "v30_070",
+        "front": "A ___ is a trained wine expert who advises on wine pairings.",
+        "back": "sommelier\n\nSumiller"
+      },
+      {
+        "id": "v30_071",
+        "front": "___ means pouring wine from the bottle into a decanter to aerate it.",
+        "back": "Decanting\n\nDecantación"
+      },
+      {
+        "id": "v30_072",
+        "front": "A ___ is a selection of drinks (usually wine or beer) served for tasting.",
+        "back": "flight\n\nCata / degustación"
+      },
+      {
+        "id": "v30_073",
+        "front": "___ is a period of reduced drink prices, usually in the early evening.",
+        "back": "Happy hour\n\nHora feliz / happy hour"
+      },
+      {
+        "id": "v30_074",
+        "front": "___ is the person in a group who agrees not to drink alcohol.",
+        "back": "Designated driver\n\nConductor designado"
+      },
+      {
+        "id": "v30_075",
+        "front": "___ is the unpleasant after-effects of drinking too much alcohol.",
+        "back": "Hangover\n\nResaca"
+      },
+      {
+        "id": "v30_076",
+        "front": "To ___ means to drink slowly to avoid getting too drunk.",
+        "back": "pace yourself\n\nBeber con moderación / controlarse"
+      }
+    ]
+  },
+  {
+    "section": 31,
+    "title": "anki_31_religion_filosofia.csv",
+    "cards": [
+      {
+        "id": "v31_001",
+        "front": "___ is an organised system of beliefs, practices and worship.",
+        "back": "Religion\n\nReligión"
+      },
+      {
+        "id": "v31_002",
+        "front": "___ is strong belief in a religion or doctrine, often without proof.",
+        "back": "Faith\n\nFe"
+      },
+      {
+        "id": "v31_003",
+        "front": "___ is the study of religious beliefs and the nature of God.",
+        "back": "Theology\n\nTeología"
+      },
+      {
+        "id": "v31_004",
+        "front": "___ is the belief in one God.",
+        "back": "Monotheism\n\nMonoteísmo"
+      },
+      {
+        "id": "v31_005",
+        "front": "___ is the belief in multiple gods.",
+        "back": "Polytheism\n\nPoliteísmo"
+      },
+      {
+        "id": "v31_006",
+        "front": "___ is the rejection of belief in the existence of gods.",
+        "back": "Atheism\n\nAteísmo"
+      },
+      {
+        "id": "v31_007",
+        "front": "___ holds that the existence of God is unknown or unknowable.",
+        "back": "Agnosticism\n\nAgnosticismo"
+      },
+      {
+        "id": "v31_008",
+        "front": "___ is the principle of separating religion from public life.",
+        "back": "Secularism\n\nSecularismo / laicismo"
+      },
+      {
+        "id": "v31_009",
+        "front": "___ is the religion based on the teachings of Jesus Christ.",
+        "back": "Christianity\n\nCristianismo"
+      },
+      {
+        "id": "v31_010",
+        "front": "___ is the religion based on the Quran and the teachings of Muhammad.",
+        "back": "Islam\n\nIslam"
+      },
+      {
+        "id": "v31_011",
+        "front": "___ is the monotheistic religion of the Jewish people.",
+        "back": "Judaism\n\nJudaísmo"
+      },
+      {
+        "id": "v31_012",
+        "front": "___ is the ancient Indian religion with many deities and texts.",
+        "back": "Hinduism\n\nHinduismo"
+      },
+      {
+        "id": "v31_013",
+        "front": "___ follows the teachings of Siddhartha Gautama on the path to enlightenment.",
+        "back": "Buddhism\n\nBudismo"
+      },
+      {
+        "id": "v31_014",
+        "front": "___ is a monotheistic religion originating in the Punjab region of India.",
+        "back": "Sikhism\n\nSijismo"
+      },
+      {
+        "id": "v31_015",
+        "front": "A ___ is a god or goddess.",
+        "back": "deity\n\nDeidad / dios"
+      },
+      {
+        "id": "v31_016",
+        "front": "___ is reverence and devotion shown to a deity.",
+        "back": "Worship\n\nAdoración / culto"
+      },
+      {
+        "id": "v31_017",
+        "front": "___ is communication with God or a deity through words or thought.",
+        "back": "Prayer\n\nOración / rezo"
+      },
+      {
+        "id": "v31_018",
+        "front": "A ___ is a religious ceremony or act performed regularly.",
+        "back": "ritual\n\nRitual"
+      },
+      {
+        "id": "v31_019",
+        "front": "A ___ is a journey to a sacred place for religious reasons.",
+        "back": "pilgrimage\n\nPeregrinación"
+      },
+      {
+        "id": "v31_020",
+        "front": "A ___ place or object is considered holy and deserving of reverence.",
+        "back": "sacred\n\nSagrado"
+      },
+      {
+        "id": "v31_021",
+        "front": "___ refers to the sacred writings of a religion.",
+        "back": "Scripture\n\nEscrituras sagradas"
+      },
+      {
+        "id": "v31_022",
+        "front": "The ___ is the sacred text of Christianity.",
+        "back": "Bible\n\nBiblia"
+      },
+      {
+        "id": "v31_023",
+        "front": "The ___ / ___ is the sacred text of Islam.",
+        "back": "Quran / Koran\n\nCorán"
+      },
+      {
+        "id": "v31_024",
+        "front": "The ___ is the sacred text of Judaism.",
+        "back": "Torah\n\nTorá"
+      },
+      {
+        "id": "v31_025",
+        "front": "A ___ is a Muslim place of worship.",
+        "back": "mosque\n\nMezquita"
+      },
+      {
+        "id": "v31_026",
+        "front": "A ___ is a Jewish place of worship.",
+        "back": "synagogue\n\nSinagoga"
+      },
+      {
+        "id": "v31_027",
+        "front": "A ___ is a place of worship in Hinduism, Buddhism and other religions.",
+        "back": "temple\n\nTemplo"
+      },
+      {
+        "id": "v31_028",
+        "front": "A ___ is the principal church of a bishop's area in Christianity.",
+        "back": "cathedral\n\nCatedral"
+      },
+      {
+        "id": "v31_029",
+        "front": "A ___ member is an ordained religious leader.",
+        "back": "clergy\n\nClérigo / clero"
+      },
+      {
+        "id": "v31_030",
+        "front": "A ___ is an ordained minister in Catholic, Orthodox and some Protestant churches.",
+        "back": "priest\n\nSacerdote"
+      },
+      {
+        "id": "v31_031",
+        "front": "An ___ is a Muslim religious leader.",
+        "back": "imam\n\nImán"
+      },
+      {
+        "id": "v31_032",
+        "front": "A ___ is a Jewish religious leader and teacher.",
+        "back": "rabbi\n\nRabino"
+      },
+      {
+        "id": "v31_033",
+        "front": "___ in Christianity is deliverance from sin and its consequences.",
+        "back": "Salvation\n\nSalvación"
+      },
+      {
+        "id": "v31_034",
+        "front": "___ is an act considered an offence against God or divine law.",
+        "back": "Sin\n\nPecado"
+      },
+      {
+        "id": "v31_035",
+        "front": "___ in Christianity is the unmerited favour of God toward humans.",
+        "back": "Grace\n\nGracia (divina)"
+      },
+      {
+        "id": "v31_036",
+        "front": "___ in Hinduism and Buddhism is the sum of one's actions affecting future lives.",
+        "back": "Karma\n\nKarma"
+      },
+      {
+        "id": "v31_037",
+        "front": "___ in Buddhism is the state of liberation from suffering and the cycle of rebirth.",
+        "back": "Nirvana\n\nNirvana"
+      },
+      {
+        "id": "v31_038",
+        "front": "___ is the rebirth of a soul into a new body after death.",
+        "back": "Reincarnation\n\nReencarnación"
+      },
+      {
+        "id": "v31_039",
+        "front": "___ refers to a continued existence after death.",
+        "back": "Afterlife\n\nVida después de la muerte"
+      },
+      {
+        "id": "v31_040",
+        "front": "___ is the place of eternal happiness in many religions.",
+        "back": "Heaven\n\nCielo / paraíso"
+      },
+      {
+        "id": "v31_041",
+        "front": "___ is the place of punishment after death in many religions.",
+        "back": "Hell\n\nInfierno"
+      },
+      {
+        "id": "v31_042",
+        "front": "___ in Catholicism is a state of purification after death before heaven.",
+        "back": "Purgatory\n\nPurgatorio"
+      },
+      {
+        "id": "v31_043",
+        "front": "___ is the study of fundamental questions about existence, knowledge and ethics.",
+        "back": "Philosophy\n\nFilosofía"
+      },
+      {
+        "id": "v31_044",
+        "front": "___ is the branch of philosophy concerned with the nature of reality.",
+        "back": "Metaphysics\n\nMetafísica"
+      },
+      {
+        "id": "v31_045",
+        "front": "___ is the study of knowledge — what it is and how we acquire it.",
+        "back": "Epistemology\n\nEpistemología"
+      },
+      {
+        "id": "v31_046",
+        "front": "___ is the branch of philosophy dealing with morality and right action.",
+        "back": "Ethics\n\nÉtica"
+      },
+      {
+        "id": "v31_047",
+        "front": "___ is the study of valid reasoning and argument.",
+        "back": "Logic\n\nLógica"
+      },
+      {
+        "id": "v31_048",
+        "front": "___ is the philosophy of beauty and art.",
+        "back": "Aesthetics\n\nEstética (filosófica)"
+      },
+      {
+        "id": "v31_049",
+        "front": "___ is the philosophical study of being and existence.",
+        "back": "Ontology\n\nOntología"
+      },
+      {
+        "id": "v31_050",
+        "front": "___ holds that reason is the primary source of knowledge.",
+        "back": "Rationalism\n\nRacionalismo"
+      },
+      {
+        "id": "v31_051",
+        "front": "___ holds that all knowledge comes from sensory experience.",
+        "back": "Empiricism\n\nEmpirismo"
+      },
+      {
+        "id": "v31_052",
+        "front": "___ holds that reality is fundamentally mental or spiritual.",
+        "back": "Idealism\n\nIdealismo"
+      },
+      {
+        "id": "v31_053",
+        "front": "___ holds that only physical matter truly exists.",
+        "back": "Materialism\n\nMaterialismo"
+      },
+      {
+        "id": "v31_054",
+        "front": "___ focuses on individual freedom, choice and responsibility.",
+        "back": "Existentialism\n\nExistencialismo"
+      },
+      {
+        "id": "v31_055",
+        "front": "___ holds that life has no intrinsic meaning or value.",
+        "back": "Nihilism\n\nNihilismo"
+      },
+      {
+        "id": "v31_056",
+        "front": "___ teaches that virtue is the only true good and emotions should be controlled.",
+        "back": "Stoicism\n\nEstoicismo"
+      },
+      {
+        "id": "v31_057",
+        "front": "___ holds that the best action produces the greatest happiness for the most people.",
+        "back": "Utilitarianism\n\nUtilitarismo"
+      },
+      {
+        "id": "v31_058",
+        "front": "___ / ___ judges actions by their adherence to rules or duties.",
+        "back": "Kantian ethics / deontology\n\nÉtica kantiana / deontología"
+      },
+      {
+        "id": "v31_059",
+        "front": "A ___ is a seemingly contradictory statement that may nonetheless be true.",
+        "back": "paradox\n\nParadoja"
+      },
+      {
+        "id": "v31_060",
+        "front": "___ is the ability to choose one's actions independently of fate or God.",
+        "back": "Free will\n\nLibre albedrío"
+      },
+      {
+        "id": "v31_061",
+        "front": "___ holds that all events are determined by prior causes.",
+        "back": "Determinism\n\nDeterminismo"
+      },
+      {
+        "id": "v31_062",
+        "front": "___ is the state of being aware of one's own existence and thoughts.",
+        "back": "Consciousness\n\nConciencia (filosófica)"
+      },
+      {
+        "id": "v31_063",
+        "front": "The ___ questions the relationship between mental states and physical reality.",
+        "back": "mind-body problem\n\nProblema mente-cuerpo"
+      },
+      {
+        "id": "v31_064",
+        "front": "___ taught that reality consists of ideal Forms and the physical world is a shadow.",
+        "back": "Plato\n\nPlatón"
+      },
+      {
+        "id": "v31_065",
+        "front": "___ emphasised empirical observation and logic as the basis of knowledge.",
+        "back": "Aristotle\n\nAristóteles"
+      },
+      {
+        "id": "v31_066",
+        "front": "___ introduced methodological doubt and said \"I think, therefore I am\".",
+        "back": "Descartes\n\nDescartes"
+      },
+      {
+        "id": "v31_067",
+        "front": "___ proclaimed the death of God and the idea of the Übermensch.",
+        "back": "Nietzsche\n\nNietzsche"
+      },
+      {
+        "id": "v31_068",
+        "front": "___ used questioning dialogue (the Socratic method) to examine beliefs.",
+        "back": "Socrates\n\nSócrates"
+      },
+      {
+        "id": "v31_069",
+        "front": "The ___ is a form of dialogue using questions to challenge assumptions.",
+        "back": "Socratic method\n\nMétodo socrático"
+      },
+      {
+        "id": "v31_070",
+        "front": "A ___ is the main argument or position defended in a philosophical text.",
+        "back": "thesis\n\nTesis"
+      },
+      {
+        "id": "v31_071",
+        "front": "An ___ is the opposing argument to the thesis.",
+        "back": "antithesis\n\nAntítesis"
+      },
+      {
+        "id": "v31_072",
+        "front": "A ___ combines thesis and antithesis into a new position.",
+        "back": "synthesis\n\nSíntesis"
+      },
+      {
+        "id": "v31_073",
+        "front": "___ questions whether certain knowledge is possible.",
+        "back": "Scepticism\n\nEscepticismo"
+      },
+      {
+        "id": "v31_074",
+        "front": "___ holds that moral judgements are not universally valid.",
+        "back": "Moral relativism\n\nRelativismo moral"
+      },
+      {
+        "id": "v31_075",
+        "front": "___ is selfless concern for the wellbeing of others.",
+        "back": "Altruism\n\nAltruismo"
+      },
+      {
+        "id": "v31_076",
+        "front": "___ holds that pleasure is the highest good.",
+        "back": "Hedonism\n\nHedonismo"
+      },
+      {
+        "id": "v31_077",
+        "front": "___ focuses on character and virtuous traits rather than rules.",
+        "back": "Virtue ethics\n\nÉtica de la virtud"
+      }
+    ]
+  },
+  {
+    "section": 32,
+    "title": "anki_32_medios_periodismo.csv",
+    "cards": [
+      {
+        "id": "v32_001",
+        "front": "___ is the activity of gathering and reporting news.",
+        "back": "Journalism\n\nPeriodismo"
+      },
+      {
+        "id": "v32_002",
+        "front": "A ___ investigates and reports on events for media outlets.",
+        "back": "journalist\n\nPeriodista"
+      },
+      {
+        "id": "v32_003",
+        "front": "A ___ gathers information and writes news stories.",
+        "back": "reporter\n\nReportero"
+      },
+      {
+        "id": "v32_004",
+        "front": "A ___ covers news from a specific region or topic.",
+        "back": "correspondent\n\nCorresponsal"
+      },
+      {
+        "id": "v32_005",
+        "front": "An ___ oversees the content and publication of a newspaper or website.",
+        "back": "editor\n\nEditor"
+      },
+      {
+        "id": "v32_006",
+        "front": "A ___ checks and corrects copy before publication.",
+        "back": "sub-editor\n\nCorrector / redactor de mesa"
+      },
+      {
+        "id": "v32_007",
+        "front": "A ___ is a journalist who works independently, not for one outlet.",
+        "back": "freelancer\n\nFreelance / periodista autónomo"
+      },
+      {
+        "id": "v32_008",
+        "front": "An ___ presents news on television or radio.",
+        "back": "anchor\n\nPresentador de noticias"
+      },
+      {
+        "id": "v32_009",
+        "front": "A ___ is an expert commentator on a specific subject.",
+        "back": "pundit\n\nAnalista / comentarista experto"
+      },
+      {
+        "id": "v32_010",
+        "front": "A ___ is a person who provides information to a journalist.",
+        "back": "source\n\nFuente"
+      },
+      {
+        "id": "v32_011",
+        "front": "___ means information shared that cannot be published.",
+        "back": "Off the record\n\nFuera de registro / off the record"
+      },
+      {
+        "id": "v32_012",
+        "front": "___ means information can be used but the source is not named.",
+        "back": "On background\n\nEn background / sin atribución directa"
+      },
+      {
+        "id": "v32_013",
+        "front": "___ means information can be published with attribution.",
+        "back": "On the record\n\nCon atribución / on the record"
+      },
+      {
+        "id": "v32_014",
+        "front": "A ___ is an exclusive news story reported before competitors.",
+        "back": "scoop\n\nExclusiva"
+      },
+      {
+        "id": "v32_015",
+        "front": "A ___ is the name of the author printed at the top of an article.",
+        "back": "byline\n\nFirma del artículo"
+      },
+      {
+        "id": "v32_016",
+        "front": "A ___ is the title of a news article.",
+        "back": "headline\n\nTitular"
+      },
+      {
+        "id": "v32_017",
+        "front": "A ___ / ___ is the opening paragraph that summarises the key facts.",
+        "back": "lead / lede\n\nEntradilla / primer párrafo"
+      },
+      {
+        "id": "v32_018",
+        "front": "A ___ is a longer article exploring a topic in depth.",
+        "back": "feature\n\nReportaje / artículo de fondo"
+      },
+      {
+        "id": "v32_019",
+        "front": "An ___ is an opinion article written by someone outside the editorial staff.",
+        "back": "op-ed\n\nArtículo de opinión (op-ed)"
+      },
+      {
+        "id": "v32_020",
+        "front": "An ___ expresses the official opinion of the publication.",
+        "back": "editorial\n\nEditorial"
+      },
+      {
+        "id": "v32_021",
+        "front": "___ involves in-depth research to expose wrongdoing.",
+        "back": "Investigative journalism\n\nPeriodismo de investigación"
+      },
+      {
+        "id": "v32_022",
+        "front": "___ refers to an urgent, developing story.",
+        "back": "Breaking news\n\nNoticias de última hora"
+      },
+      {
+        "id": "v32_023",
+        "front": "___ uses sensational headlines to attract clicks.",
+        "back": "Clickbait\n\nClickbait / cebo de clics"
+      },
+      {
+        "id": "v32_024",
+        "front": "___ refers to deliberately false news stories.",
+        "back": "Fake news\n\nNoticias falsas / fake news"
+      },
+      {
+        "id": "v32_025",
+        "front": "___ is false information spread without intending to deceive.",
+        "back": "Misinformation\n\nDesinformación involuntaria"
+      },
+      {
+        "id": "v32_026",
+        "front": "___ is false information deliberately spread to deceive.",
+        "back": "Disinformation\n\nDesinformación intencional"
+      },
+      {
+        "id": "v32_027",
+        "front": "___ is the tendency of media outlets to favour a particular viewpoint.",
+        "back": "Media bias\n\nSesgo mediático"
+      },
+      {
+        "id": "v32_028",
+        "front": "___ is the suppression of speech or publication by authorities.",
+        "back": "Censorship\n\nCensura"
+      },
+      {
+        "id": "v32_029",
+        "front": "___ is the right of journalists to report without government interference.",
+        "back": "Press freedom\n\nLibertad de prensa"
+      },
+      {
+        "id": "v32_030",
+        "front": "A ___ is an official statement issued to media by an organisation.",
+        "back": "press release\n\nNota de prensa / comunicado"
+      },
+      {
+        "id": "v32_031",
+        "front": "A ___ is an event where officials answer journalists' questions.",
+        "back": "press conference\n\nRueda de prensa / conferencia de prensa"
+      },
+      {
+        "id": "v32_032",
+        "front": "___ information cannot be published before a specified date.",
+        "back": "Embargoed\n\nBajo embargo (no publicar antes de)"
+      },
+      {
+        "id": "v32_033",
+        "front": "A ___ is a correction published when a story was wrong.",
+        "back": "retraction\n\nRectificación / desmenti"
+      },
+      {
+        "id": "v32_034",
+        "front": "___ refers to a large-format, serious newspaper.",
+        "back": "Broadsheet\n\nPeriódico de formato grande / periódico serio"
+      },
+      {
+        "id": "v32_035",
+        "front": "___ refers to a smaller-format newspaper, often more sensationalist.",
+        "back": "Tabloid\n\nTabloide"
+      },
+      {
+        "id": "v32_036",
+        "front": "___ is the number of copies of a publication distributed.",
+        "back": "Circulation\n\nTirada / circulación"
+      },
+      {
+        "id": "v32_037",
+        "front": "A ___ is the audience that regularly reads a publication.",
+        "back": "readership\n\nAudiencia lectora"
+      },
+      {
+        "id": "v32_038",
+        "front": "___ includes newspapers and magazines in physical form.",
+        "back": "Print media\n\nMedios impresos"
+      },
+      {
+        "id": "v32_039",
+        "front": "___ refers to online news and content.",
+        "back": "Digital media\n\nMedios digitales"
+      },
+      {
+        "id": "v32_040",
+        "front": "___ includes television and radio.",
+        "back": "Broadcast media\n\nMedios de difusión / audiovisuales"
+      },
+      {
+        "id": "v32_041",
+        "front": "___ is an audio programme available for streaming or download.",
+        "back": "Podcast\n\nPodcast"
+      },
+      {
+        "id": "v32_042",
+        "front": "A ___ is a video blog, typically personal.",
+        "back": "vlog\n\nVlog / videoblog"
+      },
+      {
+        "id": "v32_043",
+        "front": "___ platforms allow users to create and share content.",
+        "back": "Social media\n\nRedes sociales"
+      },
+      {
+        "id": "v32_044",
+        "front": "___ (UGC) is content created by the public rather than professionals.",
+        "back": "User-generated content\n\nContenido generado por usuarios"
+      },
+      {
+        "id": "v32_045",
+        "front": "An ___ determines what content users see on social media platforms.",
+        "back": "algorithm\n\nAlgoritmo"
+      },
+      {
+        "id": "v32_046",
+        "front": "___ describes a topic gaining rapid popularity on social media.",
+        "back": "Trending\n\nTendencia / en tendencia"
+      },
+      {
+        "id": "v32_047",
+        "front": "___ content spreads rapidly and widely across the internet.",
+        "back": "Viral\n\nViral"
+      },
+      {
+        "id": "v32_048",
+        "front": "A ___ restricts access to online content unless the user pays.",
+        "back": "paywall\n\nMuro de pago"
+      },
+      {
+        "id": "v32_049",
+        "front": "A ___ charges users a regular fee for access to content.",
+        "back": "subscription model\n\nModelo de suscripción"
+      },
+      {
+        "id": "v32_050",
+        "front": "___ is paid content designed to look like editorial content.",
+        "back": "Native advertising\n\nPublicidad nativa"
+      },
+      {
+        "id": "v32_051",
+        "front": "___ is an advertisement written in the style of an article.",
+        "back": "Advertorial\n\nPublirreportaje"
+      },
+      {
+        "id": "v32_052",
+        "front": "___ is a service that distributes news stories to media outlets.",
+        "back": "Newswire\n\nAgencia de noticias / newswire"
+      },
+      {
+        "id": "v32_053",
+        "front": "___ and ___ (Associated Press) are major international news agencies.",
+        "back": "Reuters / AP\n\nReuters y AP (agencias de noticias)"
+      },
+      {
+        "id": "v32_054",
+        "front": "___ is funded by the government or public licence fees.",
+        "back": "Public broadcasting\n\nTelevisión / radio pública"
+      },
+      {
+        "id": "v32_055",
+        "front": "___ measure how many people watch a TV programme or listen to a radio show.",
+        "back": "Ratings\n\nÍndice de audiencia"
+      },
+      {
+        "id": "v32_056",
+        "front": "___ is the peak viewing hours on television (typically 8–10 pm).",
+        "back": "Prime time\n\nPrime time / horario de máxima audiencia"
+      },
+      {
+        "id": "v32_057",
+        "front": "A ___ is a non-fiction film or programme about real events.",
+        "back": "documentary\n\nDocumental"
+      },
+      {
+        "id": "v32_058",
+        "front": "A ___ goes out in real time without being pre-recorded.",
+        "back": "live broadcast\n\nEmisión en directo"
+      },
+      {
+        "id": "v32_059",
+        "front": "A ___ broadcasts the same content on multiple channels simultaneously.",
+        "back": "simulcast\n\nEmisión simultánea en varios canales"
+      },
+      {
+        "id": "v32_060",
+        "front": "A ___ reports stories through photographs.",
+        "back": "photojournalist\n\nFotoperiodista"
+      },
+      {
+        "id": "v32_061",
+        "front": "___ is the explanatory text below a photograph.",
+        "back": "Caption\n\nPie de foto"
+      },
+      {
+        "id": "v32_062",
+        "front": "An ___ presents data visually to explain a story.",
+        "back": "infographic\n\nInfografía"
+      },
+      {
+        "id": "v32_063",
+        "front": "A ___ shows where and when a news story was reported.",
+        "back": "dateline\n\nDateline / lugar y fecha de la noticia"
+      },
+      {
+        "id": "v32_064",
+        "front": "___ is news reported by non-professional members of the public.",
+        "back": "Citizen journalism\n\nPeriodismo ciudadano"
+      },
+      {
+        "id": "v32_065",
+        "front": "___ holds power to account by monitoring institutions.",
+        "back": "Watchdog journalism\n\nPeriodismo de vigilancia / watchdog"
+      },
+      {
+        "id": "v32_066",
+        "front": "___ means reporting facts without personal bias.",
+        "back": "Objectivity\n\nObjetividad"
+      },
+      {
+        "id": "v32_067",
+        "front": "___ means giving fair coverage to all sides of an issue.",
+        "back": "Impartiality\n\nImparcialidad"
+      },
+      {
+        "id": "v32_068",
+        "front": "___ means confirming information from multiple reliable sources.",
+        "back": "Verification\n\nVerificación de datos"
+      },
+      {
+        "id": "v32_069",
+        "front": "A ___ verifies the accuracy of claims made in news stories.",
+        "back": "fact-checker\n\nVerificador de hechos / fact-checker"
+      }
+    ]
+  },
+  {
+    "section": 33,
+    "title": "anki_33_economia_mercados.csv",
+    "cards": [
+      {
+        "id": "v33_001",
+        "front": "___ studies the economy as a whole — GDP, inflation, unemployment.",
+        "back": "Macroeconomics\n\nMacroeconomía"
+      },
+      {
+        "id": "v33_002",
+        "front": "___ studies individual markets, firms and consumers.",
+        "back": "Microeconomics\n\nMicroeconomía"
+      },
+      {
+        "id": "v33_003",
+        "front": "___ (Gross Domestic Product) is the total value of goods and services produced in a country.",
+        "back": "GDP\n\nPIB (Producto Interior Bruto)"
+      },
+      {
+        "id": "v33_004",
+        "front": "___ (Gross National Product) measures output by a country's residents regardless of location.",
+        "back": "GNP\n\nPNB (Producto Nacional Bruto)"
+      },
+      {
+        "id": "v33_005",
+        "front": "___ is the rate at which prices rise over time.",
+        "back": "Inflation\n\nInflación"
+      },
+      {
+        "id": "v33_006",
+        "front": "___ is a sustained fall in the general price level.",
+        "back": "Deflation\n\nDeflación"
+      },
+      {
+        "id": "v33_007",
+        "front": "___ is high inflation combined with slow growth and high unemployment.",
+        "back": "Stagflation\n\nEstanflación"
+      },
+      {
+        "id": "v33_008",
+        "front": "___ is the cost of borrowing money, set by central banks.",
+        "back": "Interest rate\n\nTipo de interés"
+      },
+      {
+        "id": "v33_009",
+        "front": "___ uses interest rates and money supply to manage the economy.",
+        "back": "Monetary policy\n\nPolítica monetaria"
+      },
+      {
+        "id": "v33_010",
+        "front": "___ uses government spending and taxation to influence the economy.",
+        "back": "Fiscal policy\n\nPolítica fiscal"
+      },
+      {
+        "id": "v33_011",
+        "front": "___ refers to government spending cuts to reduce public debt.",
+        "back": "Austerity\n\nAusteridad"
+      },
+      {
+        "id": "v33_012",
+        "front": "___ (QE) is when a central bank buys assets to inject money into the economy.",
+        "back": "Quantitative easing\n\nExpansión cuantitativa / QE"
+      },
+      {
+        "id": "v33_013",
+        "front": "A ___ manages a country's currency and monetary policy.",
+        "back": "central bank\n\nBanco central"
+      },
+      {
+        "id": "v33_014",
+        "front": "___ is the US central bank (Federal Reserve).",
+        "back": "The Fed\n\nLa Reserva Federal (Fed)"
+      },
+      {
+        "id": "v33_015",
+        "front": "___ (European Central Bank) manages the euro.",
+        "back": "The ECB\n\nBanco Central Europeo (BCE)"
+      },
+      {
+        "id": "v33_016",
+        "front": "A ___ is a period of rising stock prices.",
+        "back": "bull market\n\nMercado alcista"
+      },
+      {
+        "id": "v33_017",
+        "front": "A ___ is a period of falling stock prices.",
+        "back": "bear market\n\nMercado bajista"
+      },
+      {
+        "id": "v33_018",
+        "front": "___ is the total market value of a company's shares.",
+        "back": "Market capitalisation\n\nCapitalización bursátil"
+      },
+      {
+        "id": "v33_019",
+        "front": "A ___ / ___ is a unit of ownership in a company.",
+        "back": "stock / share\n\nAcción (bolsa)"
+      },
+      {
+        "id": "v33_020",
+        "front": "A ___ is a debt instrument issued by governments or companies.",
+        "back": "bond\n\nBono (deuda)"
+      },
+      {
+        "id": "v33_021",
+        "front": "A ___ is a payment made to shareholders from company profits.",
+        "back": "dividend\n\nDividendo"
+      },
+      {
+        "id": "v33_022",
+        "front": "___ is the return generated by an investment.",
+        "back": "Yield\n\nRentabilidad / rendimiento"
+      },
+      {
+        "id": "v33_023",
+        "front": "___ is how easily an asset can be converted to cash.",
+        "back": "Liquidity\n\nLiquidez"
+      },
+      {
+        "id": "v33_024",
+        "front": "___ is the ability of a company to meet its long-term debts.",
+        "back": "Solvency\n\nSolvencia"
+      },
+      {
+        "id": "v33_025",
+        "front": "___ is using borrowed money to increase potential return.",
+        "back": "Leverage\n\nApalancamiento"
+      },
+      {
+        "id": "v33_026",
+        "front": "A ___ is an investment fund using high-risk strategies to maximise returns.",
+        "back": "hedge fund\n\nFondo de cobertura / hedge fund"
+      },
+      {
+        "id": "v33_027",
+        "front": "___ involves investing in companies not listed on a stock exchange.",
+        "back": "Private equity\n\nCapital privado / private equity"
+      },
+      {
+        "id": "v33_028",
+        "front": "___ is funding provided to early-stage high-growth startups.",
+        "back": "Venture capital\n\nCapital riesgo / venture capital"
+      },
+      {
+        "id": "v33_029",
+        "front": "An ___ (Initial Public Offering) is when a company first sells shares on a stock exchange.",
+        "back": "IPO\n\nOPI / salida a bolsa"
+      },
+      {
+        "id": "v33_030",
+        "front": "___ (M&A) refers to company consolidations through purchase or merger.",
+        "back": "Mergers and acquisitions\n\nFusiones y adquisiciones (M&A)"
+      },
+      {
+        "id": "v33_031",
+        "front": "A ___ is when one company buys enough shares to control another.",
+        "back": "takeover\n\nAdquisición / compra de empresa"
+      },
+      {
+        "id": "v33_032",
+        "front": "___ is the investigation of a company before an investment or acquisition.",
+        "back": "Due diligence\n\nDiligencia debida"
+      },
+      {
+        "id": "v33_033",
+        "front": "___ determines prices in free markets.",
+        "back": "Supply and demand\n\nOferta y demanda"
+      },
+      {
+        "id": "v33_034",
+        "front": "___ measures how much demand changes when price changes.",
+        "back": "Elasticity\n\nElasticidad"
+      },
+      {
+        "id": "v33_035",
+        "front": "___ is a maximum price set by the government.",
+        "back": "Price ceiling\n\nPrecio máximo / techo de precio"
+      },
+      {
+        "id": "v33_036",
+        "front": "___ is a minimum price set by the government.",
+        "back": "Price floor\n\nPrecio mínimo / suelo de precio"
+      },
+      {
+        "id": "v33_037",
+        "front": "A ___ is a government payment to support businesses or individuals.",
+        "back": "subsidy\n\nSubvención"
+      },
+      {
+        "id": "v33_038",
+        "front": "A ___ is a tax on imported goods.",
+        "back": "tariff\n\nArancel"
+      },
+      {
+        "id": "v33_039",
+        "front": "___ allows goods to move between countries without tariffs.",
+        "back": "Free trade\n\nLibre comercio"
+      },
+      {
+        "id": "v33_040",
+        "front": "___ uses tariffs and quotas to shield domestic industries.",
+        "back": "Protectionism\n\nProteccionismo"
+      },
+      {
+        "id": "v33_041",
+        "front": "A ___ occurs when imports exceed exports.",
+        "back": "trade deficit\n\nDéficit comercial"
+      },
+      {
+        "id": "v33_042",
+        "front": "A ___ occurs when exports exceed imports.",
+        "back": "trade surplus\n\nSuperávit comercial"
+      },
+      {
+        "id": "v33_043",
+        "front": "___ records a country's trade in goods, services and transfers.",
+        "back": "Current account\n\nCuenta corriente (balanza de pagos)"
+      },
+      {
+        "id": "v33_044",
+        "front": "___ records cross-border capital transfers.",
+        "back": "Capital account\n\nCuenta de capital"
+      },
+      {
+        "id": "v33_045",
+        "front": "___ is the price of one currency in terms of another.",
+        "back": "Exchange rate\n\nTipo de cambio"
+      },
+      {
+        "id": "v33_046",
+        "front": "___ means the value of a currency rises relative to others.",
+        "back": "Appreciation\n\nApreciación (moneda)"
+      },
+      {
+        "id": "v33_047",
+        "front": "___ means the value of a currency falls relative to others.",
+        "back": "Depreciation\n\nDepreciación (moneda)"
+      },
+      {
+        "id": "v33_048",
+        "front": "___ is two consecutive quarters of negative GDP growth.",
+        "back": "Recession\n\nRecesión"
+      },
+      {
+        "id": "v33_049",
+        "front": "___ is a severe, prolonged economic downturn.",
+        "back": "Depression\n\nDepresión económica"
+      },
+      {
+        "id": "v33_050",
+        "front": "___ is the phase of renewed growth following a recession.",
+        "back": "Recovery\n\nRecuperación económica"
+      },
+      {
+        "id": "v33_051",
+        "front": "___ is the recurring pattern of expansion and contraction in an economy.",
+        "back": "Business cycle\n\nCiclo económico"
+      },
+      {
+        "id": "v33_052",
+        "front": "___ is the percentage of the labour force without a job.",
+        "back": "Unemployment rate\n\nTasa de desempleo"
+      },
+      {
+        "id": "v33_053",
+        "front": "___ arises when skills don't match available jobs.",
+        "back": "Structural unemployment\n\nDesempleo estructural"
+      },
+      {
+        "id": "v33_054",
+        "front": "___ rises during recessions and falls during booms.",
+        "back": "Cyclical unemployment\n\nDesempleo cíclico"
+      },
+      {
+        "id": "v33_055",
+        "front": "___ is the difference between actual and potential GDP.",
+        "back": "Output gap\n\nBrecha de producción"
+      },
+      {
+        "id": "v33_056",
+        "front": "___ measures how optimistic consumers feel about the economy.",
+        "back": "Consumer confidence\n\nConfianza del consumidor"
+      },
+      {
+        "id": "v33_057",
+        "front": "___ is the amount needed to cover basic expenses in a place.",
+        "back": "Cost of living\n\nCoste de vida"
+      },
+      {
+        "id": "v33_058",
+        "front": "___ is the quantity of goods money can buy.",
+        "back": "Purchasing power\n\nPoder adquisitivo"
+      },
+      {
+        "id": "v33_059",
+        "front": "___ are wages adjusted for inflation.",
+        "back": "Real wages\n\nSalarios reales"
+      },
+      {
+        "id": "v33_060",
+        "front": "___ refers to the unequal distribution of income across society.",
+        "back": "Income inequality\n\nDesigualdad de ingresos"
+      },
+      {
+        "id": "v33_061",
+        "front": "The ___ measures income inequality (0 = perfect equality, 1 = maximum inequality).",
+        "back": "Gini coefficient\n\nCoeficiente de Gini"
+      },
+      {
+        "id": "v33_062",
+        "front": "___ is the income threshold below which a person is considered poor.",
+        "back": "Poverty line\n\nUmbral de pobreza"
+      },
+      {
+        "id": "v33_063",
+        "front": "___ claims that benefits for the wealthy eventually benefit everyone.",
+        "back": "Trickle-down economics\n\nEconomía del goteo / trickle-down"
+      },
+      {
+        "id": "v33_064",
+        "front": "___ advocates government spending to stimulate demand during recessions.",
+        "back": "Keynesian economics\n\nEconomía keynesiana"
+      },
+      {
+        "id": "v33_065",
+        "front": "___ promotes free markets, deregulation and limited government intervention.",
+        "back": "Neoliberalism\n\nNeoliberalismo"
+      },
+      {
+        "id": "v33_066",
+        "front": "___ is a digital currency secured by cryptography.",
+        "back": "Cryptocurrency\n\nCriptomoneda"
+      },
+      {
+        "id": "v33_067",
+        "front": "___ is the first and most widely known cryptocurrency.",
+        "back": "Bitcoin\n\nBitcoin"
+      },
+      {
+        "id": "v33_068",
+        "front": "___ is a decentralised digital ledger recording transactions.",
+        "back": "Blockchain\n\nCadena de bloques / blockchain"
+      },
+      {
+        "id": "v33_069",
+        "front": "___ (Environmental, Social, Governance) criteria guide socially responsible investing.",
+        "back": "ESG\n\nESG (criterios inversión responsable)"
+      }
+    ]
+  },
+  {
+    "section": 34,
+    "title": "anki_34_slang_britanico.csv",
+    "cards": [
+      {
+        "id": "v34_001",
+        "front": "___ is British slang for a man.",
+        "back": "Bloke\n\nTío / tipo (hombre)"
+      },
+      {
+        "id": "v34_002",
+        "front": "___ is a young man, often used affectionately.",
+        "back": "Lad\n\nChaval / tío joven"
+      },
+      {
+        "id": "v34_003",
+        "front": "___ is a young woman, common in northern England and Scotland.",
+        "back": "Lass\n\nChica / chavala (norte de Inglaterra)"
+      },
+      {
+        "id": "v34_004",
+        "front": "___ means friend in British English.",
+        "back": "Mate\n\nAmigo / colega"
+      },
+      {
+        "id": "v34_005",
+        "front": "___ means thank you or goodbye in British English.",
+        "back": "Cheers\n\nGracias / hasta luego (informal)"
+      },
+      {
+        "id": "v34_006",
+        "front": "___ is very informal British slang for thank you.",
+        "back": "Ta\n\nGracias (muy informal)"
+      },
+      {
+        "id": "v34_007",
+        "front": "___ means excellent or great in British slang.",
+        "back": "Brilliant\n\nBrillante / genial / estupendo"
+      },
+      {
+        "id": "v34_008",
+        "front": "___ is used as an intensifier meaning very or really.",
+        "back": "Proper\n\n\"Muy / de verdad\" (intensificador)"
+      },
+      {
+        "id": "v34_009",
+        "front": "___ means slightly rude or disrespectful in a playful way.",
+        "back": "Cheeky\n\nDescarado / pícaro"
+      },
+      {
+        "id": "v34_010",
+        "front": "___ means suspicious, unreliable or illegal.",
+        "back": "Dodgy\n\nSospechoso / chungo"
+      },
+      {
+        "id": "v34_011",
+        "front": "___ means very disappointed.",
+        "back": "Gutted\n\nDestrozado / muy decepcionado"
+      },
+      {
+        "id": "v34_012",
+        "front": "___ means very pleased or proud.",
+        "back": "Chuffed\n\nEncantado / muy contento"
+      },
+      {
+        "id": "v34_013",
+        "front": "___ means completely shocked or astounded.",
+        "back": "Gobsmacked\n\nAlucinado / flipando"
+      },
+      {
+        "id": "v34_014",
+        "front": "___ means slightly annoyed.",
+        "back": "Miffed\n\nUn poco molesto"
+      },
+      {
+        "id": "v34_015",
+        "front": "___ means bad-tempered or argumentative.",
+        "back": "Stroppy\n\nMalhumorado / borde"
+      },
+      {
+        "id": "v34_016",
+        "front": "___ means exhausted.",
+        "back": "Knackered\n\nAgotado / hecho polvo"
+      },
+      {
+        "id": "v34_017",
+        "front": "___ also means extremely tired.",
+        "back": "Shattered\n\nDestrozado (de cansancio)"
+      },
+      {
+        "id": "v34_018",
+        "front": "___ means having no money.",
+        "back": "Skint\n\nSin un duro / pelado"
+      },
+      {
+        "id": "v34_019",
+        "front": "___ means to avoid work or school without a valid excuse.",
+        "back": "Skive\n\nEscaquearse / hacer pellas"
+      },
+      {
+        "id": "v34_020",
+        "front": "___ means to skip school or work.",
+        "back": "Bunk off\n\nHacer novillos / escaquearse"
+      },
+      {
+        "id": "v34_021",
+        "front": "___ means to figure out or assess someone or something.",
+        "back": "Suss out\n\nPillar / descifrar / intuir"
+      },
+      {
+        "id": "v34_022",
+        "front": "___ means to resolve a problem or organise something.",
+        "back": "Sort out\n\nArreglar / solucionar"
+      },
+      {
+        "id": "v34_023",
+        "front": "___ is British slang for a nap or sleep.",
+        "back": "Kip\n\nSiesta / sueño (informal)"
+      },
+      {
+        "id": "v34_024",
+        "front": "___ also refers to a short sleep but is more standard.",
+        "back": "Nap\n\nSiesta / cabezada"
+      },
+      {
+        "id": "v34_025",
+        "front": "___ means to waste time doing unimportant things.",
+        "back": "Faff\n\nPerder el tiempo / enredar"
+      },
+      {
+        "id": "v34_026",
+        "front": "___ means to mess around without purpose.",
+        "back": "Faff about\n\nAndar entretenido / perder el tiempo"
+      },
+      {
+        "id": "v34_027",
+        "front": "___ means slightly hungry.",
+        "back": "Peckish\n\nCon un poco de hambre"
+      },
+      {
+        "id": "v34_028",
+        "front": "___ in slang means very hungry (not literally dying).",
+        "back": "Starving\n\nMuerto de hambre (informal)"
+      },
+      {
+        "id": "v34_029",
+        "front": "___ means to eat or snack.",
+        "back": "Munch\n\nPicar / comer (informal)"
+      },
+      {
+        "id": "v34_030",
+        "front": "___ means food or to eat.",
+        "back": "Nosh\n\nComida / comer (argot)"
+      },
+      {
+        "id": "v34_031",
+        "front": "___ is informal for food.",
+        "back": "Grub\n\nComida / pitanza"
+      },
+      {
+        "id": "v34_032",
+        "front": "___ is often called a ___ in casual British speech.",
+        "back": "Cheeseburger / burger\n\nHamburguesa con queso"
+      },
+      {
+        "id": "v34_033",
+        "front": "___ is British slang for a toilet.",
+        "back": "Bog\n\nBaño / váter (muy informal)"
+      },
+      {
+        "id": "v34_034",
+        "front": "___ is informal for toilet.",
+        "back": "Loo\n\nBaño / servicio (informal)"
+      },
+      {
+        "id": "v34_035",
+        "front": "___ means nonsense or of poor quality in British English.",
+        "back": "Rubbish\n\nBasura / tonterías / de mala calidad"
+      },
+      {
+        "id": "v34_036",
+        "front": "___ means nonsense or is used as an expletive.",
+        "back": "Bollocks\n\nTonterías / bobadas (palabrota)"
+      },
+      {
+        "id": "v34_037",
+        "front": "___ is an exclamation of surprise.",
+        "back": "Blimey\n\n\"¡Dios mío! / ¡Vaya!\" (sorpresa)"
+      },
+      {
+        "id": "v34_038",
+        "front": "___ is a mild exclamation of surprise.",
+        "back": "Crikey\n\n\"¡Cielos! / ¡Vaya!\" (suave)"
+      },
+      {
+        "id": "v34_039",
+        "front": "___ is a British intensifier expressing annoyance or emphasis.",
+        "back": "Bloody\n\n\"Maldito / jodido\" (intensificador)"
+      },
+      {
+        "id": "v34_040",
+        "front": "___ means upper-class or very elegant.",
+        "back": "Posh\n\nPijo / elegante / de clase alta"
+      },
+      {
+        "id": "v34_041",
+        "front": "___ means unfashionable or in poor taste.",
+        "back": "Naff\n\nHortera / pasado de moda"
+      },
+      {
+        "id": "v34_042",
+        "front": "___ means very rich.",
+        "back": "Minted\n\nForrado / con mucho dinero"
+      },
+      {
+        "id": "v34_043",
+        "front": "___ also means very wealthy.",
+        "back": "Loaded\n\nCargado de dinero / forrado"
+      },
+      {
+        "id": "v34_044",
+        "front": "___ is British slang for a pound (£1).",
+        "back": "Quid\n\nLibra esterlina (argot)"
+      },
+      {
+        "id": "v34_045",
+        "front": "___ is a ten-pound note.",
+        "back": "Tenner\n\nBillete de diez libras"
+      },
+      {
+        "id": "v34_046",
+        "front": "___ is a five-pound note.",
+        "back": "Fiver\n\nBillete de cinco libras"
+      },
+      {
+        "id": "v34_047",
+        "front": "___ is a pejorative term for a poorly educated young person from a low-income background.",
+        "back": "Chav\n\nChoni / chaval de barrio (peyorativo)"
+      },
+      {
+        "id": "v34_048",
+        "front": "___ is slang for an upper-class person.",
+        "back": "Toff\n\nPijo / aristócrata (argot)"
+      },
+      {
+        "id": "v34_049",
+        "front": "___ means playful, teasing conversation.",
+        "back": "Banter\n\nCachondeo / guasa / broma"
+      },
+      {
+        "id": "v34_050",
+        "front": "___ means joking around or finding something amusing.",
+        "back": "Having a laugh\n\nTomarse a broma / cachondearse"
+      },
+      {
+        "id": "v34_051",
+        "front": "___ means to mock or make fun of someone.",
+        "back": "Take the mickey\n\nTomar el pelo / burlarse"
+      },
+      {
+        "id": "v34_052",
+        "front": "___ means to tease or trick someone.",
+        "back": "Wind up\n\nTomar el pelo / hacer una broma"
+      },
+      {
+        "id": "v34_053",
+        "front": "___ means to run away quickly.",
+        "back": "Leg it\n\nCorrer / largarse a toda velocidad"
+      },
+      {
+        "id": "v34_054",
+        "front": "___ means to run away or escape.",
+        "back": "Scarper\n\nLargarse / escaparse"
+      },
+      {
+        "id": "v34_055",
+        "front": "___ means stolen or arrested by the police.",
+        "back": "Nicked\n\nRobado / detenido"
+      },
+      {
+        "id": "v34_056",
+        "front": "___ / ___ is British slang for a police officer.",
+        "back": "Copper / Plod\n\nPoli / madero"
+      },
+      {
+        "id": "v34_057",
+        "front": "___ means something very easy.",
+        "back": "Doddle\n\nPan comido / facilísimo"
+      },
+      {
+        "id": "v34_058",
+        "front": "___ means something very easy (also used in American English).",
+        "back": "Piece of cake\n\nPan comido"
+      },
+      {
+        "id": "v34_059",
+        "front": "___ means to complain frequently.",
+        "back": "Moan\n\nQuejarse / refunfuñar"
+      },
+      {
+        "id": "v34_060",
+        "front": "___ means to complain in a self-pitying way.",
+        "back": "Whinge\n\nLloriquear / quejarse sin parar"
+      },
+      {
+        "id": "v34_061",
+        "front": "___ means to talk at length without saying anything meaningful.",
+        "back": "Blather\n\nHablar sin decir nada / parlotear"
+      },
+      {
+        "id": "v34_062",
+        "front": "___ means to speak or write vaguely without getting to the point.",
+        "back": "Waffle\n\nIrse por las ramas"
+      },
+      {
+        "id": "v34_063",
+        "front": "___ is a chat or conversation.",
+        "back": "Chinwag\n\nCháchara / charla"
+      },
+      {
+        "id": "v34_064",
+        "front": "___ means to chat informally.",
+        "back": "Natter\n\nCharlar / cotorrear"
+      },
+      {
+        "id": "v34_065",
+        "front": "___ vehicle or item means broken or worn out.",
+        "back": "Knackered\n\nDestrozado / estropeado (objeto)"
+      },
+      {
+        "id": "v34_066",
+        "front": "___ means silly or stupid.",
+        "back": "Daft\n\nTonto / bobo"
+      },
+      {
+        "id": "v34_067",
+        "front": "___ means crazy or eccentric.",
+        "back": "Barmy\n\nChiflado / loco"
+      },
+      {
+        "id": "v34_068",
+        "front": "___ is used to call someone foolish or incompetent.",
+        "back": "Muppet\n\nImbécil / inútil (informal)"
+      },
+      {
+        "id": "v34_069",
+        "front": "___ is a mild insult for a stupid person.",
+        "back": "Berk\n\nIdiota / memo (insulto suave)"
+      },
+      {
+        "id": "v34_070",
+        "front": "___ is used in Scotland for a stupid person.",
+        "back": "Numpty\n\nBobo / inútil (Escocia)"
+      },
+      {
+        "id": "v34_071",
+        "front": "___ means very simple.",
+        "back": "Easy peasy\n\nFacilísimo / chupado"
+      },
+      {
+        "id": "v34_072",
+        "front": "___ is an old-fashioned British exclamation meaning excellent.",
+        "back": "Splendid\n\nEspléndido / estupendo (anticuado)"
+      },
+      {
+        "id": "v34_073",
+        "front": "___ means exactly right or perfect.",
+        "back": "Spot on\n\nExacto / en el clavo"
+      },
+      {
+        "id": "v34_074",
+        "front": "___ is an emphatic way of saying very much or absolutely.",
+        "back": "Not half\n\n\"Ya lo creo / y cómo\" (énfasis)"
+      },
+      {
+        "id": "v34_075",
+        "front": "___ means to want something or to be attracted to someone.",
+        "back": "Fancy\n\nApetecer / gustar / tener ganas"
+      },
+      {
+        "id": "v34_076",
+        "front": "___ means \"Would you like a cup of tea?\".",
+        "back": "Fancy a cuppa?\n\n\"¿Te apetece un té?\" (expresión típica)"
+      },
+      {
+        "id": "v34_077",
+        "front": "___ means two weeks.",
+        "back": "Fortnight\n\nQuincena / dos semanas"
+      },
+      {
+        "id": "v34_078",
+        "front": "___ means slightly cold.",
+        "back": "Chilly\n\nFresquito / frío suave"
+      },
+      {
+        "id": "v34_079",
+        "front": "___ is British slang for umbrella.",
+        "back": "Brolly\n\nParaguas (argot)"
+      }
+    ]
+  },
+  {
+    "section": 35,
+    "title": "anki_35_gramatica_contexto.csv",
+    "cards": [
+      {
+        "id": "v35_001",
+        "front": "Use ___ to add a point that reinforces the previous argument.",
+        "back": "furthermore\n\nAdemás / es más (formal, añadir)"
+      },
+      {
+        "id": "v35_002",
+        "front": "Use ___ to add a point stronger than the previous one.",
+        "back": "moreover\n\nEs más / además (más enfático)"
+      },
+      {
+        "id": "v35_003",
+        "front": "Use ___ to introduce a contrast despite what was said before.",
+        "back": "nevertheless\n\nSin embargo / no obstante (contraste formal)"
+      },
+      {
+        "id": "v35_004",
+        "front": "Use ___ as a formal synonym for nevertheless.",
+        "back": "nonetheless\n\nSin embargo / aun así (formal)"
+      },
+      {
+        "id": "v35_005",
+        "front": "Use ___ to contrast two ideas.",
+        "back": "however\n\nSin embargo / no obstante (contraste)"
+      },
+      {
+        "id": "v35_006",
+        "front": "Use ___ to mean \"although\" in a formal or literary context.",
+        "back": "albeit\n\nAunque / si bien (formal)"
+      },
+      {
+        "id": "v35_007",
+        "front": "Use ___ to contrast two facts in the same sentence.",
+        "back": "whereas\n\nMientras que / en cambio"
+      },
+      {
+        "id": "v35_008",
+        "front": "Use ___ to highlight a clear difference between two things.",
+        "back": "in contrast\n\nEn contraste / por el contrario"
+      },
+      {
+        "id": "v35_009",
+        "front": "Use ___ to present the opposing viewpoint.",
+        "back": "on the other hand\n\nPor otro lado / por otra parte"
+      },
+      {
+        "id": "v35_010",
+        "front": "Use ___ to introduce the opposite of what was just stated.",
+        "back": "conversely\n\nA la inversa / por el contrario"
+      },
+      {
+        "id": "v35_011",
+        "front": "Use ___ to show a result or effect.",
+        "back": "consequently\n\nPor consiguiente / en consecuencia"
+      },
+      {
+        "id": "v35_012",
+        "front": "Use ___ to show a logical conclusion.",
+        "back": "therefore\n\nPor lo tanto / por ende"
+      },
+      {
+        "id": "v35_013",
+        "front": "Use ___ as a formal way to say therefore.",
+        "back": "thus\n\nAsí pues / por tanto (formal)"
+      },
+      {
+        "id": "v35_014",
+        "front": "Use ___ to indicate a reason or result in formal writing.",
+        "back": "hence\n\nDe ahí que / por eso (formal)"
+      },
+      {
+        "id": "v35_015",
+        "front": "Use ___ to introduce the consequence of an action.",
+        "back": "as a result\n\nComo resultado / como consecuencia"
+      },
+      {
+        "id": "v35_016",
+        "front": "Use ___ to mean as a result or correspondingly.",
+        "back": "accordingly\n\nEn consecuencia / por tanto"
+      },
+      {
+        "id": "v35_017",
+        "front": "Use ___ to express purpose.",
+        "back": "in order to\n\nCon el fin de / para (propósito)"
+      },
+      {
+        "id": "v35_018",
+        "front": "Use ___ as an alternative to \"in order to\".",
+        "back": "so as to\n\nA fin de / para (propósito, formal)"
+      },
+      {
+        "id": "v35_019",
+        "front": "Use ___ to introduce a condition.",
+        "back": "provided that\n\nSiempre que / con tal de que (condición)"
+      },
+      {
+        "id": "v35_020",
+        "front": "Use ___ to introduce the only condition under which something won't happen.",
+        "back": "unless\n\nA menos que / salvo que"
+      },
+      {
+        "id": "v35_021",
+        "front": "Use ___ to state a continuing condition.",
+        "back": "as long as\n\nMientras / siempre y cuando"
+      },
+      {
+        "id": "v35_022",
+        "front": "Use ___ to concede a fact while contrasting it.",
+        "back": "even though\n\nAunque / a pesar de que (concesión)"
+      },
+      {
+        "id": "v35_023",
+        "front": "Use ___ + noun/gerund to express contrast without a clause.",
+        "back": "despite\n\nA pesar de (+ sustantivo/gerundio)"
+      },
+      {
+        "id": "v35_024",
+        "front": "Use ___ as a synonym for despite.",
+        "back": "in spite of\n\nA pesar de (= despite)"
+      },
+      {
+        "id": "v35_025",
+        "front": "Use ___ to give a formal reason.",
+        "back": "owing to\n\nDebido a / a causa de (formal)"
+      },
+      {
+        "id": "v35_026",
+        "front": "Use ___ to give a reason, typically after a linking verb.",
+        "back": "due to\n\nDebido a / a causa de"
+      },
+      {
+        "id": "v35_027",
+        "front": "Use ___ to mean because of or by reason of (formal/legal).",
+        "back": "by virtue of\n\nEn virtud de / gracias a (formal)"
+      },
+      {
+        "id": "v35_028",
+        "front": "Use ___ to introduce the subject being discussed.",
+        "back": "with regard to\n\nCon respecto a / en lo que respecta a"
+      },
+      {
+        "id": "v35_029",
+        "front": "Use ___ as a formal synonym for with regard to.",
+        "back": "as regards\n\nEn lo que respecta a (formal)"
+      },
+      {
+        "id": "v35_030",
+        "front": "Use ___ to specify the aspect being discussed.",
+        "back": "in terms of\n\nEn términos de / en cuanto a"
+      },
+      {
+        "id": "v35_031",
+        "front": "Use ___ to consider something in relation to new information.",
+        "back": "in light of\n\nA la luz de / teniendo en cuenta"
+      },
+      {
+        "id": "v35_032",
+        "front": "Use ___ to mean with the intention of doing something.",
+        "back": "with a view to\n\nCon vistas a / con la intención de"
+      },
+      {
+        "id": "v35_033",
+        "front": "Use ___ to act or speak for someone else.",
+        "back": "on behalf of\n\nEn nombre de / de parte de"
+      },
+      {
+        "id": "v35_034",
+        "front": "Use ___ to mean instead of (formal/legal).",
+        "back": "in lieu of\n\nEn lugar de / en sustitución de (formal)"
+      },
+      {
+        "id": "v35_035",
+        "front": "Use ___ to qualify a statement by degree.",
+        "back": "to the extent that\n\nHasta el punto en que / en la medida en que"
+      },
+      {
+        "id": "v35_036",
+        "front": "Use ___ to mean to the degree that (formal).",
+        "back": "insofar as\n\nEn la medida en que (muy formal)"
+      },
+      {
+        "id": "v35_037",
+        "front": "Use ___ to give a formal reason or qualification.",
+        "back": "inasmuch as\n\nEn tanto en cuanto / dado que (formal)"
+      },
+      {
+        "id": "v35_038",
+        "front": "Use ___ to mean despite (formal/legal).",
+        "back": "notwithstanding\n\nNo obstante / a pesar de (formal/legal)"
+      },
+      {
+        "id": "v35_039",
+        "front": "Use ___ to mean from this point forward (formal).",
+        "back": "henceforth\n\nEn adelante / de ahora en adelante (formal)"
+      },
+      {
+        "id": "v35_040",
+        "front": "Use ___ to mean until now (legal/archaic).",
+        "back": "heretofore\n\nHasta ahora / hasta este momento (legal)"
+      },
+      {
+        "id": "v35_041",
+        "front": "Use ___ to refer to the first of two things previously mentioned.",
+        "back": "the former\n\nEl primero (de dos mencionados)"
+      },
+      {
+        "id": "v35_042",
+        "front": "Use ___ to refer to the second of two things previously mentioned.",
+        "back": "the latter\n\nEl último / el segundo (de dos mencionados)"
+      },
+      {
+        "id": "v35_043",
+        "front": "Use ___ to contrast two mentioned items clearly.",
+        "back": "the former...the latter\n\nEl primero... el segundo (contraste)"
+      },
+      {
+        "id": "v35_044",
+        "front": "Use ___ to refer to items in the order they were mentioned.",
+        "back": "respectively\n\nRespectivamente"
+      },
+      {
+        "id": "v35_045",
+        "front": "Use ___ to introduce a notable example.",
+        "back": "notably\n\nEspecialmente / cabe destacar"
+      },
+      {
+        "id": "v35_046",
+        "front": "Use ___ to single out one item from a general statement.",
+        "back": "in particular\n\nEn particular / especialmente"
+      },
+      {
+        "id": "v35_047",
+        "front": "Use ___ / ___ to introduce an example.",
+        "back": "for instance / for example\n\nPor ejemplo"
+      },
+      {
+        "id": "v35_048",
+        "front": "Use ___ to specify what was mentioned.",
+        "back": "namely\n\nA saber / es decir (especificar)"
+      },
+      {
+        "id": "v35_049",
+        "front": "Use ___ / ___ to clarify or restate in other words.",
+        "back": "that is / i.e.\n\nEs decir / o sea (i.e.)"
+      },
+      {
+        "id": "v35_050",
+        "front": "Use ___ to give an example (from Latin exempli gratia).",
+        "back": "e.g.\n\nPor ejemplo (e.g.)"
+      },
+      {
+        "id": "v35_051",
+        "front": "Use ___ to specify exactly what is meant (formal/academic).",
+        "back": "viz.\n\nA saber / es decir (viz., formal)"
+      },
+      {
+        "id": "v35_052",
+        "front": "Use ___ to introduce a clarifying example in formal writing.",
+        "back": "to illustrate\n\nPara ilustrar / a modo de ejemplo"
+      },
+      {
+        "id": "v35_053",
+        "front": "Use ___ to introduce a brief restatement of key points.",
+        "back": "in summary\n\nEn resumen"
+      },
+      {
+        "id": "v35_054",
+        "front": "Use ___ to signal the conclusion of an argument.",
+        "back": "to sum up\n\nPara resumir / en definitiva"
+      },
+      {
+        "id": "v35_055",
+        "front": "Use ___ to signal the final paragraph of a formal text.",
+        "back": "in conclusion\n\nEn conclusión"
+      },
+      {
+        "id": "v35_056",
+        "front": "Use ___ as a formal way to introduce the final point.",
+        "back": "to conclude\n\nPara concluir (formal)"
+      },
+      {
+        "id": "v35_057",
+        "front": "Use ___ to give a final overall assessment (slightly informal).",
+        "back": "all in all\n\nEn general / en definitiva"
+      },
+      {
+        "id": "v35_058",
+        "front": "Use ___ to give a considered overall judgement.",
+        "back": "on balance\n\nEn conjunto / valorando todo"
+      },
+      {
+        "id": "v35_059",
+        "front": "Use ___ to mean mostly or generally.",
+        "back": "by and large\n\nEn general / por lo general"
+      },
+      {
+        "id": "v35_060",
+        "front": "Use ___ to indicate a general statement with exceptions.",
+        "back": "broadly speaking\n\nEn términos generales / a grandes rasgos"
+      },
+      {
+        "id": "v35_061",
+        "front": "Use ___ to qualify a statement as technically precise.",
+        "back": "strictly speaking\n\nHablando con precisión / en sentido estricto"
+      },
+      {
+        "id": "v35_062",
+        "front": "Use ___ to introduce a qualified or partial truth.",
+        "back": "in a sense\n\nEn cierto sentido"
+      },
+      {
+        "id": "v35_063",
+        "front": "Use ___ to soften a metaphor or unusual use of language.",
+        "back": "as it were\n\nPor así decirlo / como si dijéramos"
+      },
+      {
+        "id": "v35_064",
+        "front": "Use ___ to acknowledge figurative or informal language.",
+        "back": "so to speak\n\nPor así decirlo"
+      },
+      {
+        "id": "v35_065",
+        "front": "Use ___ to introduce something obvious.",
+        "back": "needless to say\n\nHuelga decir / no hace falta decir"
+      },
+      {
+        "id": "v35_066",
+        "front": "Use ___ to state something obvious.",
+        "back": "it goes without saying\n\nSe da por supuesto / huelga decir"
+      },
+      {
+        "id": "v35_067",
+        "front": "Use ___ to concede a point.",
+        "back": "admittedly\n\nHay que reconocer que / ciertamente"
+      },
+      {
+        "id": "v35_068",
+        "front": "Use ___ to acknowledge a conceded point before countering it.",
+        "back": "granted\n\nEs cierto que / concedo que"
+      },
+      {
+        "id": "v35_069",
+        "front": "Use ___ to acknowledge a truth before qualifying it.",
+        "back": "to be sure\n\nEs cierto / hay que reconocer"
+      },
+      {
+        "id": "v35_070",
+        "front": "Use ___ to introduce a claim that could be supported by argument.",
+        "back": "arguably\n\nSe podría argumentar que / posiblemente"
+      },
+      {
+        "id": "v35_071",
+        "front": "Use ___ to mean apparently but not necessarily in reality.",
+        "back": "ostensibly\n\nAparentemente / en apariencia"
+      },
+      {
+        "id": "v35_072",
+        "front": "Use ___ to mean according to what is claimed, with some scepticism.",
+        "back": "supposedly\n\nSupuestamente"
+      },
+      {
+        "id": "v35_073",
+        "front": "Use ___ to mean based on reasonable assumption.",
+        "back": "presumably\n\nPresumiblemente / se supone que"
+      },
+      {
+        "id": "v35_074",
+        "front": "Use ___ to mean clearly based on evidence.",
+        "back": "evidently\n\nEvidentemente / claramente"
+      },
+      {
+        "id": "v35_075",
+        "front": "Use ___ to state something that cannot be disputed.",
+        "back": "undeniably\n\nInnegablemente"
+      },
+      {
+        "id": "v35_076",
+        "front": "Use ___ for a stronger, more formal version of undeniably.",
+        "back": "unquestionably\n\nIndiscutiblemente / sin lugar a dudas"
+      },
+      {
+        "id": "v35_077",
+        "front": "Use ___ to draw attention to an important detail.",
+        "back": "it is worth noting\n\nCabe señalar que / vale la pena destacar"
+      },
+      {
+        "id": "v35_078",
+        "front": "Use ___ to stress a key point in formal writing.",
+        "back": "it should be emphasised\n\nDebe subrayarse que / cabe enfatizar"
+      }
+    ]
   }
 ];
