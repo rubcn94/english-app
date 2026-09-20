@@ -317,5 +317,152 @@ function refreshHomeStats() {
   dueBtn.disabled = due === 0;
 }
 
+// ── Glossary ──────────────────────────────────────────────────────────────────
+let glossaryFilter = 'all';
+let noteTargetId = null;
+
+function showGlossary() {
+  // Populate section selector
+  const sel = document.getElementById('glossary-section-select');
+  sel.innerHTML = '<option value="">All sections</option>';
+  VOCAB_DATA.forEach(s => {
+    const opt = document.createElement('option');
+    opt.value = s.section;
+    opt.textContent = `${s.section}. ${s.title}`;
+    sel.appendChild(opt);
+  });
+  document.getElementById('glossary-search').value = '';
+  glossaryFilter = 'all';
+  document.querySelectorAll('.gfilter').forEach(b => b.classList.remove('active'));
+  document.getElementById('gf-all').classList.add('active');
+  renderGlossary();
+  showScreen('glossary');
+}
+
+function setGFilter(f) {
+  glossaryFilter = f;
+  document.querySelectorAll('.gfilter').forEach(b => b.classList.remove('active'));
+  document.getElementById('gf-' + f).classList.add('active');
+  renderGlossary();
+}
+
+function renderGlossary() {
+  const query  = document.getElementById('glossary-search').value.toLowerCase().trim();
+  const secVal = document.getElementById('glossary-section-select').value;
+
+  let cards = [];
+  VOCAB_DATA.forEach(sec => {
+    if (secVal && String(sec.section) !== secVal) return;
+    sec.cards.forEach(c => cards.push({ ...c, _secTitle: sec.title }));
+  });
+
+  // Filter by known state
+  if (glossaryFilter === 'known')   cards = cards.filter(c => state.known[c.id]);
+  if (glossaryFilter === 'unknown') cards = cards.filter(c => !state.known[c.id]);
+
+  // Filter by search
+  if (query) {
+    cards = cards.filter(c =>
+      c.front.toLowerCase().includes(query) ||
+      c.back.toLowerCase().includes(query)
+    );
+  }
+
+  const knownCount = Object.keys(state.known).length;
+  document.getElementById('glossary-counter').textContent = `${cards.length} words`;
+  document.getElementById('glossary-known-badge').textContent = `${knownCount} known`;
+  document.getElementById('glossary-title').textContent =
+    secVal ? VOCAB_DATA.find(s => String(s.section) === secVal)?.title || 'Glossary' : 'Glossary';
+
+  const list = document.getElementById('glossary-list');
+  list.innerHTML = '';
+
+  cards.forEach(card => {
+    const isKnown = !!state.known[card.id];
+    const note    = state.notes[card.id] || '';
+
+    // Parse word and translation from card
+    const answer      = card.back.split('\n')[0];
+    const translation = card.back.split('\n\n')[1] || '';
+
+    const item = document.createElement('div');
+    item.className = 'glossary-item' + (isKnown ? ' is-known' : '');
+    item.dataset.id = card.id;
+
+    item.innerHTML = `
+      <button class="gitem-check ${isKnown ? 'checked' : ''}" onclick="toggleKnown('${card.id}')" title="Mark as known">
+        ${isKnown ? '✓' : ''}
+      </button>
+      <div class="gitem-body">
+        <div class="gitem-word">${answer}</div>
+        ${translation ? `<div class="gitem-translation">${translation}</div>` : ''}
+        <div class="gitem-sentence">${card.front}</div>
+        ${note ? `<div class="gitem-note">💡 ${note}</div>` : ''}
+      </div>
+      <button class="gitem-note-btn ${note ? 'has-note' : ''}" onclick="openNoteModal('${card.id}')">
+        ${note ? '✏️' : '+ note'}
+      </button>`;
+
+    list.appendChild(item);
+  });
+
+  if (cards.length === 0) {
+    list.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:40px">No words found</div>';
+  }
+}
+
+function toggleKnown(id) {
+  if (state.known[id]) delete state.known[id];
+  else state.known[id] = true;
+  saveKnown(state.known);
+  // Update just this item in DOM for speed
+  const item = document.querySelector(`.glossary-item[data-id="${id}"]`);
+  if (item) {
+    const isKnown = !!state.known[id];
+    item.classList.toggle('is-known', isKnown);
+    const btn = item.querySelector('.gitem-check');
+    btn.classList.toggle('checked', isKnown);
+    btn.textContent = isKnown ? '✓' : '';
+  }
+  // Update badge
+  document.getElementById('glossary-known-badge').textContent = `${Object.keys(state.known).length} known`;
+  refreshHomeStats();
+}
+
+function openNoteModal(id) {
+  noteTargetId = id;
+  // Find card
+  let card = null;
+  for (const sec of VOCAB_DATA) {
+    card = sec.cards.find(c => c.id === id);
+    if (card) break;
+  }
+  if (!card) return;
+
+  const answer      = card.back.split('\n')[0];
+  const translation = card.back.split('\n\n')[1] || '';
+
+  document.getElementById('modal-word').textContent        = answer;
+  document.getElementById('modal-translation').textContent = translation;
+  document.getElementById('modal-textarea').value          = state.notes[id] || '';
+  document.getElementById('note-modal').classList.remove('hidden');
+  setTimeout(() => document.getElementById('modal-textarea').focus(), 100);
+}
+
+function saveNote() {
+  const text = document.getElementById('modal-textarea').value.trim();
+  if (text) state.notes[noteTargetId] = text;
+  else delete state.notes[noteTargetId];
+  saveNotes(state.notes);
+  closeNoteModal();
+  renderGlossary();
+}
+
+function closeNoteModal(e) {
+  if (e && e.target !== document.getElementById('note-modal')) return;
+  document.getElementById('note-modal').classList.add('hidden');
+  noteTargetId = null;
+}
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 refreshHomeStats();

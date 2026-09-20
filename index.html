@@ -46,6 +46,12 @@
         <span class="due-badge" id="due-badge">0</span>
       </button>
     </div>
+    <div class="due-row" style="margin-top:10px">
+      <button class="btn-due btn-glossary" onclick="showGlossary()">
+        <span>📖 Glossary</span>
+        <span class="due-badge" id="glossary-known-badge" style="background:#4caf7d">0 known</span>
+      </button>
+    </div>
     <div class="stats-bar">
       <div class="stat">
         <span class="stat-num" id="stat-streak">0</span>
@@ -135,6 +141,46 @@
       </div>
       <button class="btn-primary" onclick="showScreen('home')">Back to Home</button>
       <button class="btn-secondary" id="btn-study-again" onclick="studyAgain()">Study Again</button>
+    </div>
+  </div>
+
+  <!-- SCREEN: GLOSSARY -->
+  <div id="screen-glossary" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('home')">← Back</button>
+      <div class="study-meta">
+        <span id="glossary-title">Glossary</span>
+        <span id="glossary-counter"></span>
+      </div>
+    </div>
+    <!-- Search + filters -->
+    <div class="glossary-toolbar">
+      <input type="search" id="glossary-search" class="answer-input glossary-search"
+             placeholder="Search…" oninput="renderGlossary()" autocorrect="off" autocapitalize="off">
+      <div class="glossary-filters">
+        <button class="gfilter active" id="gf-all"     onclick="setGFilter('all')">All</button>
+        <button class="gfilter"        id="gf-unknown" onclick="setGFilter('unknown')">To learn</button>
+        <button class="gfilter"        id="gf-known"   onclick="setGFilter('known')">Known</button>
+      </div>
+      <div class="glossary-section-select-wrap">
+        <select id="glossary-section-select" class="glossary-section-select" onchange="renderGlossary()">
+          <option value="">All sections</option>
+        </select>
+      </div>
+    </div>
+    <div id="glossary-list" class="glossary-list"></div>
+  </div>
+
+  <!-- NOTE MODAL -->
+  <div id="note-modal" class="modal-overlay hidden" onclick="closeNoteModal(event)">
+    <div class="modal-box">
+      <div class="modal-word" id="modal-word"></div>
+      <div class="modal-translation" id="modal-translation"></div>
+      <textarea id="modal-textarea" class="modal-textarea" placeholder="Add a mnemonic or note…" rows="4"></textarea>
+      <div class="modal-actions">
+        <button class="btn-primary" onclick="saveNote()">Save</button>
+        <button class="btn-secondary" onclick="closeNoteModal()">Cancel</button>
+      </div>
     </div>
   </div>
 
