@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="theme-color" content="#1a1a2e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>English App</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SCREEN: HOME -->
+  <div id="screen-home" class="screen active">
+    <div class="home-header">
+      <h1>English App</h1>
+      <p class="subtitle">Grammar + Vocabulary</p>
+    </div>
+    <div class="book-grid">
+      <button class="book-card blue" onclick="showBookMenu('blue')">
+        <div class="book-icon">📘</div>
+        <div class="book-label">Blue Book</div>
+        <div class="book-sub">Intermediate · 15 sections</div>
+        <div class="book-progress" id="progress-blue">0 / 0 studied</div>
+      </button>
+      <button class="book-card green" onclick="showBookMenu('green')">
+        <div class="book-icon">📗</div>
+        <div class="book-label">Green Book</div>
+        <div class="book-sub">Advanced · 14 sections</div>
+        <div class="book-progress" id="progress-green">0 / 0 studied</div>
+      </button>
+    </div>
+    <div class="vocab-row">
+      <button class="book-card vocab" onclick="showBookMenu('vocab')">
+        <div class="book-icon">📒</div>
+        <div class="book-label">Vocabulary</div>
+        <div class="book-sub">Everyday topics · 28 sections · 2971 cards</div>
+        <div class="book-progress" id="progress-vocab">0 / 0 studied</div>
+      </button>
+    </div>
+    <div class="due-row">
+      <button class="btn-due" id="btn-study-due" onclick="startAllDue()">
+        <span id="due-label">Study due cards</span>
+        <span class="due-badge" id="due-badge">0</span>
+      </button>
+    </div>
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-num" id="stat-streak">0</span>
+        <span class="stat-label">day streak</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="stat-total">0</span>
+        <span class="stat-label">cards done</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="stat-due">0</span>
+        <span class="stat-label">due today</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN: BOOK MENU -->
+  <div id="screen-book" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('home')">← Back</button>
+      <h2 id="book-menu-title">Sections</h2>
+    </div>
+    <div id="section-list" class="section-list"></div>
+  </div>
+
+  <!-- SCREEN: STUDY -->
+  <div id="screen-study" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="exitStudy()">← Back</button>
+      <div class="study-meta">
+        <span id="study-title">Section</span>
+        <span id="study-counter">1 / 10</span>
+      </div>
+    </div>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-fill" id="progress-bar-fill"></div>
+    </div>
+    <div class="card-wrap">
+      <div class="card" id="flashcard" onclick="flipCard()">
+        <div class="card-inner" id="card-inner">
+          <div class="card-front" id="card-front"></div>
+          <div class="card-back" id="card-back"></div>
+        </div>
+        <div class="tap-hint" id="tap-hint">Tap to reveal answer</div>
+      </div>
+    </div>
+    <div class="rating-wrap" id="rating-wrap">
+      <p class="rating-label">How well did you know it?</p>
+      <div class="rating-btns">
+        <button class="btn-rate again" onclick="rateCard(0)">Again</button>
+        <button class="btn-rate hard" onclick="rateCard(1)">Hard</button>
+        <button class="btn-rate good" onclick="rateCard(3)">Good</button>
+        <button class="btn-rate easy" onclick="rateCard(5)">Easy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN: SUMMARY -->
+  <div id="screen-summary" class="screen">
+    <div class="summary-wrap">
+      <div class="summary-icon">🎉</div>
+      <h2>Session complete!</h2>
+      <div class="summary-stats">
+        <div class="sum-stat"><span id="sum-easy">0</span><label>Easy</label></div>
+        <div class="sum-stat"><span id="sum-good">0</span><label>Good</label></div>
+        <div class="sum-stat"><span id="sum-hard">0</span><label>Hard</label></div>
+        <div class="sum-stat"><span id="sum-again">0</span><label>Again</label></div>
+      </div>
+      <button class="btn-primary" onclick="showScreen('home')">Back to Home</button>
+      <button class="btn-secondary" id="btn-study-again" onclick="studyAgain()">Study Again</button>
+    </div>
+  </div>
+
+  <script src="data/blue.js"></script>
+  <script src="data/green.js"></script>
+  <script src="data/vocab.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
+</body>
+</html>
