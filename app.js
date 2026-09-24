@@ -51,6 +51,7 @@ let state = {
   currentBook: null,
   currentSection: null,
   isAllDue: false,
+  isCustomQueue: false,
   queue: [],
   queueIndex: 0,
   sessionStats: { again: 0, hard: 0, good: 0, easy: 0 },
@@ -118,6 +119,7 @@ function showBookMenu(book) {
 function exitStudy() {
   const done = state.sessionStats.again + state.sessionStats.hard + state.sessionStats.good + state.sessionStats.easy;
   if (done > 0) showSummary();
+  else if (state.isCustomQueue) showScreen('glossary');
   else if (state.isAllDue) showScreen('home');
   else showScreen('book');
 }
@@ -162,6 +164,7 @@ function startSection(book, sectionNum) {
   state.currentBook = book;
   state.currentSection = sec;
   state.isAllDue = false;
+  state.isCustomQueue = false;
   state.sessionStats = { again: 0, hard: 0, good: 0, easy: 0 };
   const due     = sec.cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
   const newCards = sec.cards.filter(c => getCardProgress(c.id) === null);
@@ -179,12 +182,37 @@ function startAllDue() {
   state.currentBook = null;
   state.currentSection = null;
   state.isAllDue = true;
+  state.isCustomQueue = false;
   state.sessionStats = { again: 0, hard: 0, good: 0, easy: 0 };
   state.queue = shuffle(due);
   state.queueIndex = 0;
   document.getElementById('study-title').textContent = 'All due cards';
   showScreen('study');
   loadCard();
+}
+
+function startCustomQueue(cards, title) {
+  if (!cards || cards.length === 0) return;
+  state.currentBook = null;
+  state.currentSection = null;
+  state.isAllDue = false;
+  state.isCustomQueue = true;
+  state.sessionStats = { again: 0, hard: 0, good: 0, easy: 0 };
+  const due      = cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
+  const newCards = cards.filter(c => getCardProgress(c.id) === null);
+  const notDue   = cards.filter(c => !isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
+  state.queue = [...shuffle(due), ...shuffle(newCards), ...shuffle(notDue)];
+  state.queueIndex = 0;
+  document.getElementById('study-title').textContent = title;
+  showScreen('study');
+  loadCard();
+}
+
+function studyGlossarySelection() {
+  const cards = getCurrentGlossaryCards();
+  if (cards.length === 0) { alert('No cards match this filter.'); return; }
+  const filterLabel = { all: 'All', unknown: 'To learn', known: 'Known', tricks: 'Tricks' }[glossaryFilter] || 'Glossary';
+  startCustomQueue(cards, `${filterLabel} · ${cards.length} cards`);
 }
 
 function shuffle(arr) {
@@ -306,7 +334,8 @@ function showSummary() {
 }
 
 function studyAgain() {
-  if (state.isAllDue) startAllDue();
+  if (state.isCustomQueue) showScreen('glossary');
+  else if (state.isAllDue) startAllDue();
   else if (state.currentSection) startSection(state.currentBook, state.currentSection.section);
   else showScreen('home');
 }
@@ -392,7 +421,7 @@ function setGFilter(f) {
   renderGlossary();
 }
 
-function renderGlossary() {
+function getCurrentGlossaryCards() {
   const query  = document.getElementById('glossary-search').value.toLowerCase().trim();
   const secVal = document.getElementById('glossary-section-select').value;
   const data   = getData(glossaryBook);
@@ -416,11 +445,24 @@ function renderGlossary() {
     );
   }
 
-  const knownCount = cards.filter(c => state.known[c.id]).length;
+  return cards;
+}
+
+function renderGlossary() {
+  const secVal = document.getElementById('glossary-section-select').value;
+  const data   = getData(glossaryBook);
+  const cards  = getCurrentGlossaryCards();
+
   document.getElementById('glossary-counter').textContent = `${cards.length} words`;
   document.getElementById('glossary-known-badge').textContent = `${Object.keys(state.known).length} known`;
   document.getElementById('glossary-title').textContent =
     secVal ? data.find(s => String(s.section) === secVal)?.title || 'Glossary' : 'Glossary';
+
+  const studyBtn = document.getElementById('btn-glossary-study');
+  if (studyBtn) {
+    studyBtn.textContent = `▶ Test these ${cards.length} cards`;
+    studyBtn.disabled = cards.length === 0;
+  }
 
   const list = document.getElementById('glossary-list');
   list.innerHTML = '';

@@ -518,6 +518,21 @@ input.hidden { display: none; }
   outline: none;
 }
 
+.btn-glossary-study {
+  margin: 12px 16px 0;
+  background: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.btn-glossary-study:active { opacity: 0.8; }
+.btn-glossary-study:disabled { opacity: 0.4; cursor: default; }
+
 .glossary-list {
   flex: 1;
   overflow-y: auto;
