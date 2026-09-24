@@ -47,18 +47,28 @@ function todayStr() { return new Date().toISOString().slice(0, 10); }
 function isDue(card) { if (!card || !card.dueDate) return true; return card.dueDate <= todayStr(); }
 
 // ── App state ─────────────────────────────────────────────────────────────────
+const BLOCK_SIZE = 10;
+
 let state = {
   currentBook: null,
   currentSection: null,
   isAllDue: false,
   isCustomQueue: false,
   customQueueOrigin: null,
-  queue: [],
-  queueIndex: 0,
   sessionStats: { again: 0, hard: 0, good: 0, easy: 0 },
   progress: loadProgress(),
   notes: loadNotes(),
   known: loadKnown(),
+
+  // Blocked study (theory -> practice loop), Duolingo-style
+  blocks: [],           // full queue split into chunks of BLOCK_SIZE
+  blockIndex: 0,        // which block we're on
+  phase: 'practice',    // 'theory' | 'practice'
+  theoryIndex: 0,       // position within the current block's theory pass
+  blockQueue: [],       // cards still pending in this block's practice loop
+                         // (a missed card gets pushed back onto this queue,
+                         // so the loop keeps going until every card in the
+                         // block has been answered correctly at least once)
 };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -214,15 +224,10 @@ function startSection(book, sectionNum) {
   state.currentSection = sec;
   state.isAllDue = false;
   state.isCustomQueue = false;
-  state.sessionStats = { again: 0, hard: 0, good: 0, easy: 0 };
   const due     = sec.cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
   const newCards = sec.cards.filter(c => getCardProgress(c.id) === null);
   const notDue  = sec.cards.filter(c => !isDue(getCardProgress(c.id)));
-  state.queue = [...shuffle(due), ...shuffle(newCards), ...notDue];
-  state.queueIndex = 0;
-  document.getElementById('study-title').textContent = sec.title;
-  showScreen('study');
-  loadCard();
+  beginBlockedStudy([...shuffle(due), ...shuffle(newCards), ...notDue], sec.title);
 }
 
 function startAllDue() {
@@ -232,12 +237,7 @@ function startAllDue() {
   state.currentSection = null;
   state.isAllDue = true;
   state.isCustomQueue = false;
-  state.sessionStats = { again: 0, hard: 0, good: 0, easy: 0 };
-  state.queue = shuffle(due);
-  state.queueIndex = 0;
-  document.getElementById('study-title').textContent = 'All due cards';
-  showScreen('study');
-  loadCard();
+  beginBlockedStudy(shuffle(due), 'All due cards');
 }
 
 function startCustomQueue(cards, title, origin) {
@@ -247,15 +247,10 @@ function startCustomQueue(cards, title, origin) {
   state.isAllDue = false;
   state.isCustomQueue = true;
   state.customQueueOrigin = origin || 'glossary';
-  state.sessionStats = { again: 0, hard: 0, good: 0, easy: 0 };
   const due      = cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
   const newCards = cards.filter(c => getCardProgress(c.id) === null);
   const notDue   = cards.filter(c => !isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
-  state.queue = [...shuffle(due), ...shuffle(newCards), ...shuffle(notDue)];
-  state.queueIndex = 0;
-  document.getElementById('study-title').textContent = title;
-  showScreen('study');
-  loadCard();
+  beginBlockedStudy([...shuffle(due), ...shuffle(newCards), ...shuffle(notDue)], title);
 }
 
 function studyGlossarySelection() {
@@ -274,10 +269,66 @@ function shuffle(arr) {
   return a;
 }
 
+// ── Blocked study: theory -> practice loop, Duolingo-style ─────────────────────
+// Splits a queue into chunks of BLOCK_SIZE. Each block is shown as a theory
+// pass (read every card, front+back, no quiz) followed by a practice loop
+// where a missed card is pushed back into the block's queue instead of just
+// moving on, so it keeps reappearing until answered correctly once. Only
+// then does the next block start (back to its own theory pass).
+function beginBlockedStudy(cards, title) {
+  state.sessionStats = { again: 0, hard: 0, good: 0, easy: 0 };
+  state.blocks = [];
+  for (let i = 0; i < cards.length; i += BLOCK_SIZE) state.blocks.push(cards.slice(i, i + BLOCK_SIZE));
+  state.blockIndex = 0;
+  document.getElementById('study-title').textContent = title;
+  showScreen('study');
+  startBlockTheory();
+}
+
+function startBlockTheory() {
+  state.phase = 'theory';
+  state.theoryIndex = 0;
+  document.getElementById('phase-question').classList.add('hidden');
+  document.getElementById('phase-correction').classList.add('hidden');
+  document.getElementById('phase-theory').classList.remove('hidden');
+  loadTheoryCard();
+}
+
+function loadTheoryCard() {
+  const block = state.blocks[state.blockIndex];
+  const card = block[state.theoryIndex];
+  document.getElementById('theory-front').textContent = card.front;
+  document.getElementById('theory-back').textContent = card.back.split('\n\n')[0];
+  const blockLabel = state.blocks.length > 1 ? `Block ${state.blockIndex + 1}/${state.blocks.length} · ` : '';
+  document.getElementById('theory-counter').textContent = `${blockLabel}${state.theoryIndex + 1}/${block.length}`;
+  const nextBtn = document.getElementById('btn-theory-next');
+  nextBtn.textContent = state.theoryIndex + 1 < block.length ? 'Next →' : "Start practice →";
+}
+
+function nextTheoryCard() {
+  const block = state.blocks[state.blockIndex];
+  state.theoryIndex++;
+  if (state.theoryIndex < block.length) loadTheoryCard();
+  else startBlockPractice();
+}
+
+function startBlockPractice() {
+  state.phase = 'practice';
+  state.blockQueue = shuffle(state.blocks[state.blockIndex]);
+  document.getElementById('phase-theory').classList.add('hidden');
+  loadCard();
+}
+
+function finishCurrentBlock() {
+  state.blockIndex++;
+  if (state.blockIndex < state.blocks.length) startBlockTheory();
+  else { updateStreak(); showSummary(); }
+}
+
 // ── Card rendering ────────────────────────────────────────────────────────────
 function loadCard() {
-  const card = state.queue[state.queueIndex];
-  if (!card) { showSummary(); return; }
+  const card = state.blockQueue[0];
+  if (!card) { finishCurrentBlock(); return; }
   document.querySelectorAll('.btn-rate').forEach(b => b.disabled = false);
 
   // Show question phase
@@ -289,21 +340,24 @@ function loadCard() {
   input.value = '';
   setTimeout(() => input.focus(), 100);
 
-  const total = state.queue.length;
-  const idx = state.queueIndex + 1;
-  document.getElementById('study-counter').textContent = `${idx} / ${total}`;
-  document.getElementById('progress-bar-fill').style.width = Math.round(((idx - 1) / total) * 100) + '%';
+  const blockTotal = state.blocks[state.blockIndex].length;
+  const remaining = state.blockQueue.length;
+  const blockLabel = state.blocks.length > 1 ? `Block ${state.blockIndex + 1}/${state.blocks.length} · ` : '';
+  document.getElementById('study-counter').textContent = `${blockLabel}${remaining} left`;
+  document.getElementById('progress-bar-fill').style.width =
+    Math.round(((blockTotal - remaining) / blockTotal) * 100) + '%';
 }
 
 function checkAnswer() {
   if (document.getElementById('phase-question').classList.contains('hidden')) return; // already answered
-  const card = state.queue[state.queueIndex];
+  const card = state.blockQueue[0];
   if (!card) return;
   const input = document.getElementById('answer-input');
   const userAnswer = input.value.trim();
   if (!userAnswer) return;
 
   const correct = isCorrect(userAnswer, card);
+  state.lastAnswerCorrect = correct;
 
   // Build correction view
   document.getElementById('correction-question').textContent = card.front;
@@ -346,7 +400,7 @@ function renderCorrectionNote(card, justFailed) {
 }
 
 function openCorrectionNoteModal() {
-  const card = state.queue[state.queueIndex];
+  const card = state.blockQueue[0];
   if (!card) return;
   openNoteModalForCard(card, () => renderCorrectionNote(card, false));
 }
@@ -362,7 +416,7 @@ function showQuestion() {
 function rateCard(rating) {
   const ratingButtons = document.querySelectorAll('.btn-rate');
   if (ratingButtons[0] && ratingButtons[0].disabled) return; // already rated, waiting for next card to render
-  const card = state.queue[state.queueIndex];
+  const card = state.blockQueue[0];
   if (!card) return;
   ratingButtons.forEach(b => b.disabled = true); // re-enabled by loadCard()/showSummary() on the next render
   const prev = getCardProgress(card.id) || {};
@@ -372,9 +426,20 @@ function rateCard(rating) {
   else if (rating === 1) state.sessionStats.hard++;
   else if (rating === 3) state.sessionStats.good++;
   else if (rating === 5) state.sessionStats.easy++;
-  state.queueIndex++;
-  if (state.queueIndex < state.queue.length) loadCard();
-  else { updateStreak(); showSummary(); }
+
+  state.blockQueue.shift();
+  // A card whose typed answer was wrong keeps circling back within this
+  // block's practice loop, regardless of the SM-2 rating chosen, so it
+  // only "graduates" once actually answered correctly in this session.
+  if (state.lastAnswerCorrect === false) {
+    state.blockQueue.push(card);
+  } else {
+    // Graduated this session — reflect it in the glossary automatically.
+    state.known[card.id] = true;
+    saveKnown(state.known);
+  }
+
+  loadCard();
 }
 
 // ── Summary ───────────────────────────────────────────────────────────────────

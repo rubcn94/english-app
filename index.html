@@ -114,6 +114,18 @@
       <div class="progress-bar-fill" id="progress-bar-fill"></div>
     </div>
 
+    <!-- PHASE 0: theory pass — read before practice starts -->
+    <div id="phase-theory" class="phase hidden">
+      <p class="theory-hint">📖 Read through this block first</p>
+      <div id="theory-counter" class="theory-counter">Block 1/1 · 1/10</div>
+      <div class="card-static theory-card">
+        <div id="theory-front" class="card-front-text"></div>
+        <div class="theory-divider"></div>
+        <div id="theory-back" class="theory-back-text"></div>
+      </div>
+      <button class="btn-primary" id="btn-theory-next" onclick="nextTheoryCard()">Next →</button>
+    </div>
+
     <!-- PHASE 1: question + input -->
     <div id="phase-question" class="phase">
       <div class="card-static">

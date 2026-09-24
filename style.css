@@ -251,6 +251,27 @@ input.hidden { display: none; }
   color: var(--text);
 }
 
+/* THEORY PASS */
+.theory-hint {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #e0b84a;
+}
+.theory-counter {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.theory-card { flex-direction: column; gap: 14px; }
+.theory-divider { width: 60%; height: 1px; background: var(--surface2); }
+.theory-back-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: center;
+  white-space: pre-wrap;
+  color: var(--easy);
+}
+
 .input-area {
   display: flex;
   flex-direction: column;
