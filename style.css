@@ -28,6 +28,20 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Removes the ~300ms tap delay on touch devices and gives every button/link
+   instant, consistent press feedback instead of relying on :active alone
+   (which mobile Chrome often skips on a fast tap). */
+button, a, input[type="search"], select {
+  touch-action: manipulation;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.08s ease, opacity 0.08s ease, background 0.08s ease, border-color 0.08s ease;
+}
+button:active {
+  transform: scale(0.96);
+}
+
 /* SCREENS */
 .screen {
   display: none;

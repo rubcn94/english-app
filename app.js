@@ -270,6 +270,7 @@ function shuffle(arr) {
 function loadCard() {
   const card = state.queue[state.queueIndex];
   if (!card) { showSummary(); return; }
+  document.querySelectorAll('.btn-rate').forEach(b => b.disabled = false);
 
   // Show question phase
   document.getElementById('phase-question').classList.remove('hidden');
@@ -287,6 +288,7 @@ function loadCard() {
 }
 
 function checkAnswer() {
+  if (document.getElementById('phase-question').classList.contains('hidden')) return; // already answered
   const card = state.queue[state.queueIndex];
   if (!card) return;
   const input = document.getElementById('answer-input');
@@ -350,8 +352,11 @@ function showQuestion() {
 }
 
 function rateCard(rating) {
+  const ratingButtons = document.querySelectorAll('.btn-rate');
+  if (ratingButtons[0] && ratingButtons[0].disabled) return; // already rated, waiting for next card to render
   const card = state.queue[state.queueIndex];
   if (!card) return;
+  ratingButtons.forEach(b => b.disabled = true); // re-enabled by loadCard()/showSummary() on the next render
   const prev = getCardProgress(card.id) || {};
   state.progress[card.id] = sm2(prev, rating);
   saveProgress(state.progress);
@@ -366,6 +371,7 @@ function rateCard(rating) {
 
 // ── Summary ───────────────────────────────────────────────────────────────────
 function showSummary() {
+  document.querySelectorAll('.btn-rate').forEach(b => b.disabled = false);
   const { again, hard, good, easy } = state.sessionStats;
   document.getElementById('sum-again').textContent = again;
   document.getElementById('sum-hard').textContent = hard;
@@ -549,6 +555,9 @@ function submitDynamicAnswer() {
 }
 
 function checkDynamicAnswer(userAnswer) {
+  const questionPhase = document.getElementById('dynamic-phase-question');
+  if (questionPhase.classList.contains('hidden')) return; // already answered this exercise
+
   const exercise = dynamicState.exercise;
   const correct = normalise(userAnswer) === normalise(exercise.correct);
   dynamicState.stats.total++;
@@ -561,7 +570,7 @@ function checkDynamicAnswer(userAnswer) {
   document.getElementById('dynamic-correction-correct').textContent = exercise.correct;
   document.getElementById('dynamic-correction-extra').textContent = exercise.explanation || '';
 
-  document.getElementById('dynamic-phase-question').classList.add('hidden');
+  questionPhase.classList.add('hidden');
   document.getElementById('dynamic-phase-correction').classList.remove('hidden');
 }
 
@@ -577,6 +586,12 @@ function exitDynamicTest() {
 let glossaryFilter = 'all';
 let glossaryBook = 'vocab';
 let noteTargetId = null;
+
+let glossarySearchDebounceTimer = null;
+function debouncedRenderGlossary() {
+  clearTimeout(glossarySearchDebounceTimer);
+  glossarySearchDebounceTimer = setTimeout(renderGlossary, 150);
+}
 
 function populateGlossarySections() {
   const sel = document.getElementById('glossary-section-select');
@@ -663,6 +678,7 @@ function renderGlossary() {
 
   const list = document.getElementById('glossary-list');
   list.innerHTML = '';
+  const fragment = document.createDocumentFragment();
 
   cards.forEach(card => {
     const isKnown = !!state.known[card.id];
@@ -690,11 +706,13 @@ function renderGlossary() {
         ${note ? '✏️' : '+ note'}
       </button>`;
 
-    list.appendChild(item);
+    fragment.appendChild(item);
   });
 
   if (cards.length === 0) {
     list.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:40px">No words found</div>';
+  } else {
+    list.appendChild(fragment);
   }
 }
 

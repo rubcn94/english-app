@@ -184,7 +184,7 @@
         <button class="gbook"        id="gb-green" onclick="setGlossaryBook('green')">📗 Green</button>
       </div>
       <input type="search" id="glossary-search" class="answer-input glossary-search"
-             placeholder="Search…" oninput="renderGlossary()" autocorrect="off" autocapitalize="off">
+             placeholder="Search…" oninput="debouncedRenderGlossary()" autocorrect="off" autocapitalize="off">
       <div class="glossary-filters">
         <button class="gfilter active" id="gf-all"     onclick="setGFilter('all')">All</button>
         <button class="gfilter"        id="gf-unknown" onclick="setGFilter('unknown')">To learn</button>
