@@ -342,6 +342,95 @@ const TEMPLATE_DATA = [
         }
       }
     ]
+  },
+  {
+    id: "conditionals",
+    tags: ["conditionals"],
+    title: "Conditionals (1st, 2nd, 3rd)",
+    generators: [
+      {
+        type: "gap-fill",
+        build(rand) {
+          const cond = rand.pick(CONDITIONAL_ITEMS);
+          return {
+            front: `${cond.label} conditional — complete both gaps:\n\n'If ${cond.ifClause}, ${cond.mainStart}___ (${cond.verb}).'`,
+            correct: cond.correct,
+            explanation: cond.explanation,
+            back: `'If ${cond.ifClause}, ${cond.mainStart}${cond.correct}.'\n\n📌 ${cond.explanation}`
+          };
+        }
+      },
+      {
+        type: "multiple-choice",
+        build(rand) {
+          const cond = rand.pick(CONDITIONAL_ITEMS);
+          const otherCond = rand.pick(CONDITIONAL_ITEMS.filter(c => c.label !== cond.label));
+          const options = rand.shuffle([cond.correct, otherCond.correct]);
+          return {
+            front: `Which fits this ${cond.label.toLowerCase()} conditional?\n\n'If ${cond.ifClause}, ${cond.mainStart}___ (${cond.verb}).'`,
+            options,
+            correct: cond.correct,
+            explanation: cond.explanation,
+            back: `✅ '${cond.mainStart}${cond.correct}'\n\n📌 ${cond.explanation}`
+          };
+        }
+      }
+    ]
+  },
+  {
+    id: "passive-voice",
+    tags: ["passive"],
+    title: "Passive Voice",
+    generators: [
+      {
+        type: "gap-fill",
+        build(rand) {
+          const item = rand.pick(PASSIVE_ITEMS);
+          const restOfSentence = item.passiveEnd ? ` ${item.passiveEnd}` : '.';
+          return {
+            front: `Turn into the passive:\n\n'${item.active}'\n\n'${item.passiveStart}___ (${item.verb})${restOfSentence}'`,
+            correct: item.correct,
+            explanation: item.explanation,
+            back: `'${item.passiveStart}${item.correct}${restOfSentence}'\n\n📌 ${item.explanation}`
+          };
+        }
+      },
+      {
+        type: "multiple-choice",
+        build(rand) {
+          const item = rand.pick(HAVE_SOMETHING_DONE_ITEMS);
+          const options = rand.shuffle([item.correct, item.wrong]);
+          return {
+            front: `Which is correct?\n\n"${item.context}"`,
+            options,
+            correct: item.correct,
+            explanation: item.explanation,
+            back: `✅ '${item.correct}'\n\n📌 ${item.explanation}`
+          };
+        }
+      }
+    ]
+  },
+  {
+    id: "relative-clauses",
+    tags: ["relative-clauses"],
+    title: "Relative Clauses",
+    generators: [
+      {
+        type: "multiple-choice",
+        build(rand) {
+          const item = rand.pick(RELATIVE_CLAUSE_ITEMS);
+          const options = rand.shuffle([item.correct, item.wrong]);
+          return {
+            front: `Which fits?\n\n'${item.sentence}'`,
+            options,
+            correct: item.correct,
+            explanation: item.explanation,
+            back: `✅ '${item.sentence.replace('___', item.correct)}'\n\n📌 ${item.explanation}`
+          };
+        }
+      }
+    ]
   }
 ];
 
@@ -451,6 +540,75 @@ const CAUSATIVE_ITEMS = [
     wrong: "I had my tooth to check.",
     explanation: "have + object + past participle, not 'to + infinitive'"
   }
+];
+
+const CONDITIONAL_ITEMS = [
+  { label: "1st", ifClause: "it rains tomorrow", mainStart: "I ", verb: "stay", correct: "will stay", explanation: "1st conditional: if + present simple → will + infinitive — real/possible future situation" },
+  { label: "1st", ifClause: "she calls", mainStart: "I ", verb: "tell", correct: "will tell", explanation: "1st conditional: if + present simple → will + infinitive — real/possible future situation" },
+  { label: "2nd", ifClause: "I were rich", mainStart: "I ", verb: "travel", correct: "would travel", explanation: "2nd conditional: if + past simple → would + infinitive — hypothetical present, not real" },
+  { label: "2nd", ifClause: "he had more time", mainStart: "he ", verb: "learn", correct: "would learn", explanation: "2nd conditional: if + past simple → would + infinitive — hypothetical present, not real" },
+  { label: "3rd", ifClause: "she had studied harder", mainStart: "she ", verb: "pass", correct: "would have passed", explanation: "3rd conditional: if + past perfect → would have + past participle — imaginary past, can't be changed" },
+  { label: "3rd", ifClause: "I had known", mainStart: "I ", verb: "come", correct: "would have come", explanation: "3rd conditional: if + past perfect → would have + past participle — imaginary past, can't be changed" }
+];
+
+const PASSIVE_ITEMS = [
+  {
+    active: "Someone built this house in 1900.",
+    passiveStart: "This house ", verb: "build",
+    passiveEnd: "in 1900.",
+    correct: "was built",
+    explanation: "be + past participle — the agent is unimportant, so it's dropped"
+  },
+  {
+    active: "They cancelled the flight.",
+    passiveStart: "The flight ", verb: "cancel",
+    passiveEnd: null,
+    correct: "was cancelled",
+    explanation: "be + past participle in the tense of the original sentence (past simple here)"
+  },
+  {
+    active: "Someone has sent the report.",
+    passiveStart: "The report ", verb: "send",
+    passiveEnd: null,
+    correct: "has been sent",
+    explanation: "present perfect passive: has/have been + past participle"
+  },
+  {
+    active: "They are painting the house.",
+    passiveStart: "The house ", verb: "paint",
+    passiveEnd: "at the moment.",
+    correct: "is being painted",
+    explanation: "present continuous passive: is/are being + past participle"
+  }
+];
+
+const HAVE_SOMETHING_DONE_ITEMS = [
+  {
+    context: "A hairdresser cut my hair yesterday (I arranged it, didn't do it myself).",
+    correct: "I had my hair cut yesterday.",
+    wrong: "I had cut my hair yesterday.",
+    explanation: "have + object + past participle = you arranged for someone else to do it"
+  },
+  {
+    context: "A mechanic is going to service my car next week.",
+    correct: "I'm having my car serviced next week.",
+    wrong: "I'm having my car service next week.",
+    explanation: "have + object + past participle, not the bare verb"
+  },
+  {
+    context: "Someone stole my bike (happened TO me, not arranged).",
+    correct: "I had my bike stolen.",
+    wrong: "I had my bike steal.",
+    explanation: "have + object + past participle also covers something unpleasant happening to you"
+  }
+];
+
+const RELATIVE_CLAUSE_ITEMS = [
+  { sentence: "The man ___ called you is here.", correct: "who", wrong: "which", explanation: "who = for people" },
+  { sentence: "The car ___ was stolen is red.", correct: "which", wrong: "who", explanation: "which = for things" },
+  { sentence: "The man ___ car was stolen is upset.", correct: "whose", wrong: "who", explanation: "whose = possession, works for both people and things" },
+  { sentence: "This is the book ___ I told you about.", correct: "that", wrong: "whose", explanation: "that = can replace who/which in defining clauses" },
+  { sentence: "My brother, ___ lives in London, called me.", correct: "who", wrong: "that", explanation: "non-defining clause (has commas) — 'that' is never used here, only who/which" }
 ];
 
 // ── Tiny conjugation helpers (3rd person -s, be+ing) ────────────────────────
