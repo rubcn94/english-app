@@ -431,7 +431,7 @@ function makeRand() {
   };
 }
 
-let dynamicState = { template: null, exercise: null, stats: { correct: 0, total: 0 } };
+let dynamicState = { templates: [], title: '', exercise: null, stats: { correct: 0, total: 0 } };
 
 function getDynamicTemplates() {
   return typeof TEMPLATE_DATA !== 'undefined' ? TEMPLATE_DATA : [];
@@ -450,25 +450,36 @@ function showDynamicTests() {
     btn.innerHTML = `
       <span class="topic-name">${tpl.title}</span>
       <span class="topic-count">∞ generated</span>`;
-    btn.onclick = () => startDynamicTest(tpl);
+    btn.onclick = () => startDynamicTest([tpl], tpl.title);
     list.appendChild(btn);
   });
+
+  const mixBtn = document.getElementById('btn-mixed-review');
+  if (mixBtn) mixBtn.disabled = templates.length < 2;
+
   showScreen('dynamic-templates');
 }
 
-function startDynamicTest(template) {
-  dynamicState.template = template;
+function startMixedReview() {
+  const templates = getDynamicTemplates();
+  if (templates.length === 0) return;
+  startDynamicTest(templates, `🎲 Mixed review · ${templates.length} topics`);
+}
+
+function startDynamicTest(templates, title) {
+  dynamicState.templates = templates;
   dynamicState.stats = { correct: 0, total: 0 };
-  document.getElementById('dynamic-title').textContent = template.title;
+  document.getElementById('dynamic-title').textContent = title;
   showScreen('dynamic-study');
   loadDynamicExercise();
 }
 
 function loadDynamicExercise() {
-  const template = dynamicState.template;
   const rand = makeRand();
+  const template = rand.pick(dynamicState.templates);
   const gen = rand.pick(template.generators);
   const exercise = gen.build(rand);
+  exercise._templateTitle = template.title;
   dynamicState.exercise = exercise;
 
   document.getElementById('dynamic-phase-question').classList.remove('hidden');
@@ -476,6 +487,8 @@ function loadDynamicExercise() {
   document.getElementById('dynamic-front-text').textContent = exercise.front;
   document.getElementById('dynamic-score').textContent =
     `${dynamicState.stats.correct} / ${dynamicState.stats.total}`;
+  const topicLabel = document.getElementById('dynamic-topic-label');
+  if (topicLabel) topicLabel.textContent = dynamicState.templates.length > 1 ? exercise._templateTitle : '';
 
   const inputArea = document.getElementById('dynamic-input-area');
   const choiceArea = document.getElementById('dynamic-choice-area');

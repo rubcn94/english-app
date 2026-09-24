@@ -485,6 +485,13 @@ input.hidden { display: none; }
   transition: border-color 0.15s, background 0.15s;
 }
 .dynamic-choice-btn:active { border-color: var(--blue); background: var(--surface2); }
+.dynamic-topic-tag {
+  font-size: 0.72rem;
+  color: #c568e0;
+  text-align: center;
+  padding: 6px 20px 0;
+  min-height: 20px;
+}
 
 /* TOPICS */
 .topics-hint {
