@@ -57,6 +57,11 @@
         <span>🔗 Study by topic</span>
       </button>
     </div>
+    <div class="due-row" style="margin-top:10px">
+      <button class="btn-due btn-dynamic" onclick="showDynamicTests()">
+        <span>🎲 Dynamic tests</span>
+      </button>
+    </div>
     <div class="stats-bar">
       <div class="stat">
         <span class="stat-num" id="stat-streak">0</span>
@@ -205,6 +210,54 @@
     <div id="topics-list" class="topics-list"></div>
   </div>
 
+  <!-- SCREEN: DYNAMIC TEST PICKER -->
+  <div id="screen-dynamic-templates" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('home')">← Back</button>
+      <h2>Dynamic tests</h2>
+    </div>
+    <p class="topics-hint">Fresh sentences generated each time, like a mini Duolingo drill — unlimited practice, no fixed question bank.</p>
+    <div id="dynamic-templates-list" class="topics-list"></div>
+  </div>
+
+  <!-- SCREEN: DYNAMIC TEST STUDY -->
+  <div id="screen-dynamic-study" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="exitDynamicTest()">← Back</button>
+      <div class="study-meta">
+        <span id="dynamic-title">Topic</span>
+        <span id="dynamic-score">0 / 0</span>
+      </div>
+    </div>
+
+    <div id="dynamic-phase-question" class="phase">
+      <div class="card-static">
+        <div id="dynamic-front-text" class="card-front-text"></div>
+      </div>
+      <div class="input-area" id="dynamic-input-area">
+        <input type="text" id="dynamic-answer-input" class="answer-input"
+               placeholder="Type your answer…"
+               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+               onkeydown="if(event.key==='Enter') submitDynamicAnswer()">
+        <button class="btn-check" onclick="submitDynamicAnswer()">Check →</button>
+      </div>
+      <div class="dynamic-choices hidden" id="dynamic-choice-area"></div>
+    </div>
+
+    <div id="dynamic-phase-correction" class="phase hidden">
+      <div class="correction-card">
+        <div class="correction-question" id="dynamic-correction-question"></div>
+        <div class="correction-divider"></div>
+        <div class="correction-your-label">Your answer</div>
+        <div class="correction-your" id="dynamic-correction-your"></div>
+        <div class="correction-correct-label">Correct answer</div>
+        <div class="correction-correct" id="dynamic-correction-correct"></div>
+        <div class="correction-extra" id="dynamic-correction-extra"></div>
+      </div>
+      <button class="btn-primary" onclick="nextDynamicExercise()">Next →</button>
+    </div>
+  </div>
+
   <!-- NOTE MODAL -->
   <div id="note-modal" class="modal-overlay hidden" onclick="closeNoteModal(event)">
     <div class="modal-box">
@@ -221,6 +274,7 @@
   <script src="data/blue.js"></script>
   <script src="data/green.js"></script>
   <script src="data/vocab.js"></script>
+  <script src="data/templates.js"></script>
   <script src="app.js"></script>
   <script>
     if ('serviceWorker' in navigator) {

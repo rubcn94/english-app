@@ -416,6 +416,121 @@ function formatTagLabel(tag) {
   return tag.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 
+// ── Dynamic tests (template-generated, no fixed correct-answer bank) ────────
+function makeRand() {
+  return {
+    pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; },
+    shuffle(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+  };
+}
+
+let dynamicState = { template: null, exercise: null, stats: { correct: 0, total: 0 } };
+
+function getDynamicTemplates() {
+  return typeof TEMPLATE_DATA !== 'undefined' ? TEMPLATE_DATA : [];
+}
+
+function showDynamicTests() {
+  const templates = getDynamicTemplates();
+  const list = document.getElementById('dynamic-templates-list');
+  list.innerHTML = '';
+  if (templates.length === 0) {
+    list.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:40px">No dynamic templates yet</div>';
+  }
+  templates.forEach(tpl => {
+    const btn = document.createElement('button');
+    btn.className = 'topic-item';
+    btn.innerHTML = `
+      <span class="topic-name">${tpl.title}</span>
+      <span class="topic-count">∞ generated</span>`;
+    btn.onclick = () => startDynamicTest(tpl);
+    list.appendChild(btn);
+  });
+  showScreen('dynamic-templates');
+}
+
+function startDynamicTest(template) {
+  dynamicState.template = template;
+  dynamicState.stats = { correct: 0, total: 0 };
+  document.getElementById('dynamic-title').textContent = template.title;
+  showScreen('dynamic-study');
+  loadDynamicExercise();
+}
+
+function loadDynamicExercise() {
+  const template = dynamicState.template;
+  const rand = makeRand();
+  const gen = rand.pick(template.generators);
+  const exercise = gen.build(rand);
+  dynamicState.exercise = exercise;
+
+  document.getElementById('dynamic-phase-question').classList.remove('hidden');
+  document.getElementById('dynamic-phase-correction').classList.add('hidden');
+  document.getElementById('dynamic-front-text').textContent = exercise.front;
+  document.getElementById('dynamic-score').textContent =
+    `${dynamicState.stats.correct} / ${dynamicState.stats.total}`;
+
+  const inputArea = document.getElementById('dynamic-input-area');
+  const choiceArea = document.getElementById('dynamic-choice-area');
+  if (exercise.options) {
+    inputArea.classList.add('hidden');
+    choiceArea.classList.remove('hidden');
+    choiceArea.innerHTML = '';
+    exercise.options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'dynamic-choice-btn';
+      btn.textContent = opt;
+      btn.onclick = () => checkDynamicAnswer(opt);
+      choiceArea.appendChild(btn);
+    });
+  } else {
+    choiceArea.classList.add('hidden');
+    inputArea.classList.remove('hidden');
+    const input = document.getElementById('dynamic-answer-input');
+    input.value = '';
+    setTimeout(() => input.focus(), 100);
+  }
+}
+
+function submitDynamicAnswer() {
+  const input = document.getElementById('dynamic-answer-input');
+  const val = input.value.trim();
+  if (!val) return;
+  checkDynamicAnswer(val);
+}
+
+function checkDynamicAnswer(userAnswer) {
+  const exercise = dynamicState.exercise;
+  const correct = normalise(userAnswer) === normalise(exercise.correct);
+  dynamicState.stats.total++;
+  if (correct) dynamicState.stats.correct++;
+
+  document.getElementById('dynamic-correction-question').textContent = exercise.front;
+  const yourEl = document.getElementById('dynamic-correction-your');
+  yourEl.textContent = userAnswer;
+  yourEl.className = 'correction-your ' + (correct ? 'correct' : 'wrong');
+  document.getElementById('dynamic-correction-correct').textContent = exercise.correct;
+  document.getElementById('dynamic-correction-extra').textContent = exercise.explanation || '';
+
+  document.getElementById('dynamic-phase-question').classList.add('hidden');
+  document.getElementById('dynamic-phase-correction').classList.remove('hidden');
+}
+
+function nextDynamicExercise() {
+  loadDynamicExercise();
+}
+
+function exitDynamicTest() {
+  showScreen('dynamic-templates');
+}
+
 // ── Glossary ──────────────────────────────────────────────────────────────────
 let glossaryFilter = 'all';
 let glossaryBook = 'vocab';

@@ -242,6 +242,7 @@ input.hidden { display: none; }
   flex-direction: column;
   gap: 10px;
 }
+.input-area.hidden { display: none; }
 .answer-input {
   width: 100%;
   background: var(--surface);
@@ -462,6 +463,28 @@ input.hidden { display: none; }
 
 .btn-glossary { border-color: var(--green); }
 .btn-topics { border-color: #e0b84a; }
+.btn-dynamic { border-color: #c568e0; }
+
+/* DYNAMIC TESTS */
+.dynamic-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dynamic-choices.hidden { display: none; }
+.dynamic-choice-btn {
+  width: 100%;
+  background: var(--surface);
+  border: 2px solid var(--surface2);
+  border-radius: 14px;
+  padding: 16px 18px;
+  font-size: 1rem;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s;
+}
+.dynamic-choice-btn:active { border-color: var(--blue); background: var(--surface2); }
 
 /* TOPICS */
 .topics-hint {

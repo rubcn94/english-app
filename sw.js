@@ -1,4 +1,4 @@
-const CACHE = 'eng-app-v7';
+const CACHE = 'eng-app-v8';
 const ASSETS = [
   './',
   './index.html',
@@ -10,6 +10,7 @@ const ASSETS = [
   './data/blue.js',
   './data/green.js',
   './data/vocab.js',
+  './data/templates.js',
 ];
 
 self.addEventListener('install', e => {
