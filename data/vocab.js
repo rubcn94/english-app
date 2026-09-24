@@ -15024,7 +15024,7 @@ const VOCAB_DATA = [
   },
   {
     "section": 29,
-    "title": "anki_29_moda_belleza_avanzada.csv",
+    "title": "Moda y Belleza Avanzada",
     "cards": [
       {
         "id": "v29_001",
@@ -15525,7 +15525,7 @@ const VOCAB_DATA = [
   },
   {
     "section": 30,
-    "title": "anki_30_cocteles_bebidas.csv",
+    "title": "Coctelería y Bebidas",
     "cards": [
       {
         "id": "v30_001",
@@ -15911,7 +15911,7 @@ const VOCAB_DATA = [
   },
   {
     "section": 31,
-    "title": "anki_31_religion_filosofia.csv",
+    "title": "Religión y Filosofía",
     "cards": [
       {
         "id": "v31_001",
@@ -16302,7 +16302,7 @@ const VOCAB_DATA = [
   },
   {
     "section": 32,
-    "title": "anki_32_medios_periodismo.csv",
+    "title": "Medios y Periodismo",
     "cards": [
       {
         "id": "v32_001",
@@ -16653,7 +16653,7 @@ const VOCAB_DATA = [
   },
   {
     "section": 33,
-    "title": "anki_33_economia_mercados.csv",
+    "title": "Economía y Mercados",
     "cards": [
       {
         "id": "v33_001",
@@ -17004,7 +17004,7 @@ const VOCAB_DATA = [
   },
   {
     "section": 34,
-    "title": "anki_34_slang_britanico.csv",
+    "title": "Slang Británico",
     "cards": [
       {
         "id": "v34_001",
@@ -17405,7 +17405,7 @@ const VOCAB_DATA = [
   },
   {
     "section": 35,
-    "title": "anki_35_gramatica_contexto.csv",
+    "title": "Gramática en Contexto",
     "cards": [
       {
         "id": "v35_001",

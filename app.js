@@ -240,8 +240,34 @@ function checkAnswer() {
   const extraEl = document.getElementById('correction-extra');
   extraEl.textContent = parts.length > 1 ? parts[1] : '';
 
+  renderCorrectionNote(card, !correct);
+
   document.getElementById('phase-question').classList.add('hidden');
   document.getElementById('phase-correction').classList.remove('hidden');
+}
+
+function renderCorrectionNote(card, justFailed) {
+  const note = state.notes[card.id] || '';
+  const wrap = document.getElementById('correction-note-wrap');
+  const noteText = document.getElementById('correction-note-text');
+  const btn = document.getElementById('btn-correction-note');
+  if (note) {
+    noteText.textContent = '💡 ' + note;
+    noteText.classList.remove('hidden');
+    btn.textContent = '✏️ Edit trick';
+    btn.classList.remove('prompt');
+  } else {
+    noteText.classList.add('hidden');
+    btn.textContent = '+ Add a trick';
+    btn.classList.toggle('prompt', !!justFailed);
+  }
+  wrap.dataset.cardId = card.id;
+}
+
+function openCorrectionNoteModal() {
+  const card = state.queue[state.queueIndex];
+  if (!card) return;
+  openNoteModalForCard(card, () => renderCorrectionNote(card, false));
 }
 
 function showQuestion() {
@@ -319,18 +345,34 @@ function refreshHomeStats() {
 
 // ── Glossary ──────────────────────────────────────────────────────────────────
 let glossaryFilter = 'all';
+let glossaryBook = 'vocab';
 let noteTargetId = null;
 
-function showGlossary() {
-  // Populate section selector
+function populateGlossarySections() {
   const sel = document.getElementById('glossary-section-select');
   sel.innerHTML = '<option value="">All sections</option>';
-  VOCAB_DATA.forEach(s => {
+  getData(glossaryBook).forEach(s => {
     const opt = document.createElement('option');
     opt.value = s.section;
     opt.textContent = `${s.section}. ${s.title}`;
     sel.appendChild(opt);
   });
+}
+
+function setGlossaryBook(book) {
+  glossaryBook = book;
+  document.querySelectorAll('.gbook').forEach(b => b.classList.remove('active'));
+  document.getElementById('gb-' + book).classList.add('active');
+  populateGlossarySections();
+  document.getElementById('glossary-search').value = '';
+  renderGlossary();
+}
+
+function showGlossary() {
+  glossaryBook = 'vocab';
+  document.querySelectorAll('.gbook').forEach(b => b.classList.remove('active'));
+  document.getElementById('gb-vocab').classList.add('active');
+  populateGlossarySections();
   document.getElementById('glossary-search').value = '';
   glossaryFilter = 'all';
   document.querySelectorAll('.gfilter').forEach(b => b.classList.remove('active'));
@@ -349,16 +391,18 @@ function setGFilter(f) {
 function renderGlossary() {
   const query  = document.getElementById('glossary-search').value.toLowerCase().trim();
   const secVal = document.getElementById('glossary-section-select').value;
+  const data   = getData(glossaryBook);
 
   let cards = [];
-  VOCAB_DATA.forEach(sec => {
+  data.forEach(sec => {
     if (secVal && String(sec.section) !== secVal) return;
     sec.cards.forEach(c => cards.push({ ...c, _secTitle: sec.title }));
   });
 
-  // Filter by known state
+  // Filter by known/notes state
   if (glossaryFilter === 'known')   cards = cards.filter(c => state.known[c.id]);
   if (glossaryFilter === 'unknown') cards = cards.filter(c => !state.known[c.id]);
+  if (glossaryFilter === 'tricks')  cards = cards.filter(c => state.notes[c.id]);
 
   // Filter by search
   if (query) {
@@ -368,11 +412,11 @@ function renderGlossary() {
     );
   }
 
-  const knownCount = Object.keys(state.known).length;
+  const knownCount = cards.filter(c => state.known[c.id]).length;
   document.getElementById('glossary-counter').textContent = `${cards.length} words`;
-  document.getElementById('glossary-known-badge').textContent = `${knownCount} known`;
+  document.getElementById('glossary-known-badge').textContent = `${Object.keys(state.known).length} known`;
   document.getElementById('glossary-title').textContent =
-    secVal ? VOCAB_DATA.find(s => String(s.section) === secVal)?.title || 'Glossary' : 'Glossary';
+    secVal ? data.find(s => String(s.section) === secVal)?.title || 'Glossary' : 'Glossary';
 
   const list = document.getElementById('glossary-list');
   list.innerHTML = '';
@@ -429,22 +473,28 @@ function toggleKnown(id) {
   refreshHomeStats();
 }
 
+let noteSavedCallback = null;
+
 function openNoteModal(id) {
-  noteTargetId = id;
-  // Find card
   let card = null;
-  for (const sec of VOCAB_DATA) {
+  for (const sec of getData(glossaryBook)) {
     card = sec.cards.find(c => c.id === id);
     if (card) break;
   }
   if (!card) return;
+  openNoteModalForCard(card, renderGlossary);
+}
+
+function openNoteModalForCard(card, onSaved) {
+  noteTargetId = card.id;
+  noteSavedCallback = onSaved || null;
 
   const answer      = card.back.split('\n')[0];
   const translation = card.back.split('\n\n')[1] || '';
 
   document.getElementById('modal-word').textContent        = answer;
   document.getElementById('modal-translation').textContent = translation;
-  document.getElementById('modal-textarea').value          = state.notes[id] || '';
+  document.getElementById('modal-textarea').value          = state.notes[card.id] || '';
   document.getElementById('note-modal').classList.remove('hidden');
   setTimeout(() => document.getElementById('modal-textarea').focus(), 100);
 }
@@ -454,14 +504,16 @@ function saveNote() {
   if (text) state.notes[noteTargetId] = text;
   else delete state.notes[noteTargetId];
   saveNotes(state.notes);
+  const cb = noteSavedCallback;
   closeNoteModal();
-  renderGlossary();
+  if (cb) cb();
 }
 
 function closeNoteModal(e) {
   if (e && e.target !== document.getElementById('note-modal')) return;
   document.getElementById('note-modal').classList.add('hidden');
   noteTargetId = null;
+  noteSavedCallback = null;
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────────

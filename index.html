@@ -115,6 +115,10 @@
         <div class="correction-correct" id="correction-correct"></div>
         <div class="correction-extra" id="correction-extra"></div>
       </div>
+      <div class="correction-note-wrap" id="correction-note-wrap">
+        <div class="correction-note-text hidden" id="correction-note-text"></div>
+        <button class="btn-correction-note" id="btn-correction-note" onclick="openCorrectionNoteModal()">+ Add a trick</button>
+      </div>
       <button class="btn-flip-back" onclick="showQuestion()">↩ See question again</button>
       <div class="rating-wrap visible">
         <p class="rating-label">How well did you know it?</p>
@@ -155,12 +159,18 @@
     </div>
     <!-- Search + filters -->
     <div class="glossary-toolbar">
+      <div class="glossary-books">
+        <button class="gbook active" id="gb-vocab" onclick="setGlossaryBook('vocab')">📒 Vocab</button>
+        <button class="gbook"        id="gb-blue"  onclick="setGlossaryBook('blue')">📘 Blue</button>
+        <button class="gbook"        id="gb-green" onclick="setGlossaryBook('green')">📗 Green</button>
+      </div>
       <input type="search" id="glossary-search" class="answer-input glossary-search"
              placeholder="Search…" oninput="renderGlossary()" autocorrect="off" autocapitalize="off">
       <div class="glossary-filters">
         <button class="gfilter active" id="gf-all"     onclick="setGFilter('all')">All</button>
         <button class="gfilter"        id="gf-unknown" onclick="setGFilter('unknown')">To learn</button>
         <button class="gfilter"        id="gf-known"   onclick="setGFilter('known')">Known</button>
+        <button class="gfilter"        id="gf-tricks"  onclick="setGFilter('tricks')">💡 Tricks</button>
       </div>
       <div class="glossary-section-select-wrap">
         <select id="glossary-section-select" class="glossary-section-select" onchange="renderGlossary()">

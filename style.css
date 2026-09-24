@@ -299,6 +299,41 @@ html, body {
   min-height: 0;
 }
 
+.correction-note-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.correction-note-text {
+  font-size: 0.85rem;
+  color: var(--text);
+  font-style: italic;
+  background: #2a2410;
+  border: 1px solid #4a3f1a;
+  border-radius: 12px;
+  padding: 10px 14px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+.correction-note-text.hidden { display: none; }
+.btn-correction-note {
+  background: none;
+  border: 1px dashed var(--surface2);
+  border-radius: 12px;
+  padding: 10px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.15s, color 0.15s;
+}
+.btn-correction-note:active { border-color: #e0b84a; color: #e0b84a; }
+.btn-correction-note.prompt {
+  border: 1px solid #e0b84a;
+  color: #e0b84a;
+  background: rgba(224,184,74,0.08);
+}
+
 .btn-flip-back {
   background: none;
   border: 1px solid var(--surface2);
@@ -415,10 +450,28 @@ html, body {
   border-bottom: 1px solid var(--surface2);
 }
 .glossary-search { margin: 0; }
-.glossary-filters {
+.glossary-books {
   display: flex;
   gap: 8px;
 }
+.gbook {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 10px;
+  border: 1px solid var(--surface2);
+  background: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.gbook.active { background: var(--surface2); color: var(--text); border-color: var(--blue); }
+.glossary-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.glossary-filters .gfilter { flex: 1 1 auto; min-width: 70px; }
 .gfilter {
   flex: 1;
   padding: 8px 0;
