@@ -52,6 +52,11 @@
         <span class="due-badge" id="glossary-known-badge" style="background:#4caf7d">0 known</span>
       </button>
     </div>
+    <div class="due-row" style="margin-top:10px">
+      <button class="btn-due btn-topics" onclick="showTopics()">
+        <span>🔗 Study by topic</span>
+      </button>
+    </div>
     <div class="stats-bar">
       <div class="stat">
         <span class="stat-num" id="stat-streak">0</span>
@@ -188,6 +193,16 @@
     </div>
     <button class="btn-glossary-study" id="btn-glossary-study" onclick="studyGlossarySelection()">▶ Test these 0 cards</button>
     <div id="glossary-list" class="glossary-list"></div>
+  </div>
+
+  <!-- SCREEN: TOPICS -->
+  <div id="screen-topics" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('home')">← Back</button>
+      <h2>Study by topic</h2>
+    </div>
+    <p class="topics-hint">Grammar and vocabulary tagged with the same theme, mixed into one session.</p>
+    <div id="topics-list" class="topics-list"></div>
   </div>
 
   <!-- NOTE MODAL -->

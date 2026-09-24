@@ -461,6 +461,37 @@ input.hidden { display: none; }
 .btn-secondary { background: var(--surface); color: var(--text); }
 
 .btn-glossary { border-color: var(--green); }
+.btn-topics { border-color: #e0b84a; }
+
+/* TOPICS */
+.topics-hint {
+  padding: 12px 20px 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.topics-list {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.topic-item {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  color: var(--text);
+  text-align: left;
+  box-shadow: var(--shadow);
+}
+.topic-item:active { background: var(--surface2); }
+.topic-name { font-size: 1rem; font-weight: 600; }
+.topic-count { font-size: 0.8rem; color: var(--text-muted); }
 
 /* GLOSSARY */
 .glossary-toolbar {

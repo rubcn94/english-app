@@ -52,6 +52,7 @@ let state = {
   currentSection: null,
   isAllDue: false,
   isCustomQueue: false,
+  customQueueOrigin: null,
   queue: [],
   queueIndex: 0,
   sessionStats: { again: 0, hard: 0, good: 0, easy: 0 },
@@ -73,6 +74,17 @@ function getAllCardsAllBooks() {
   return ['blue', 'green', 'vocab'].flatMap(b =>
     getData(b).flatMap(s => s.cards.map(c => ({ ...c, _book: b, _section: s.section })))
   );
+}
+function getCardsByTag(tag) {
+  return getAllCardsAllBooks().filter(c => Array.isArray(c.tags) && c.tags.includes(tag));
+}
+function getAllTags() {
+  const counts = {};
+  getAllCardsAllBooks().forEach(c => {
+    if (!Array.isArray(c.tags)) return;
+    c.tags.forEach(t => { counts[t] = (counts[t] || 0) + 1; });
+  });
+  return Object.keys(counts).sort().map(t => ({ tag: t, count: counts[t] }));
 }
 function getCardProgress(id) { return state.progress[id] || null; }
 function countDue(book) { return getAllCards(book).filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null).length; }
@@ -119,7 +131,7 @@ function showBookMenu(book) {
 function exitStudy() {
   const done = state.sessionStats.again + state.sessionStats.hard + state.sessionStats.good + state.sessionStats.easy;
   if (done > 0) showSummary();
-  else if (state.isCustomQueue) showScreen('glossary');
+  else if (state.isCustomQueue) showScreen(state.customQueueOrigin === 'topics' ? 'topics' : 'glossary');
   else if (state.isAllDue) showScreen('home');
   else showScreen('book');
 }
@@ -191,12 +203,13 @@ function startAllDue() {
   loadCard();
 }
 
-function startCustomQueue(cards, title) {
+function startCustomQueue(cards, title, origin) {
   if (!cards || cards.length === 0) return;
   state.currentBook = null;
   state.currentSection = null;
   state.isAllDue = false;
   state.isCustomQueue = true;
+  state.customQueueOrigin = origin || 'glossary';
   state.sessionStats = { again: 0, hard: 0, good: 0, easy: 0 };
   const due      = cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
   const newCards = cards.filter(c => getCardProgress(c.id) === null);
@@ -334,7 +347,7 @@ function showSummary() {
 }
 
 function studyAgain() {
-  if (state.isCustomQueue) showScreen('glossary');
+  if (state.isCustomQueue) showScreen(state.customQueueOrigin === 'topics' ? 'topics' : 'glossary');
   else if (state.isAllDue) startAllDue();
   else if (state.currentSection) startSection(state.currentBook, state.currentSection.section);
   else showScreen('home');
@@ -374,6 +387,33 @@ function refreshHomeStats() {
 
   const backupLabel = document.getElementById('backup-status');
   if (backupLabel) backupLabel.textContent = formatLastBackup();
+}
+
+// ── Study by topic (tags) ────────────────────────────────────────────────────
+function showTopics() {
+  const tags = getAllTags();
+  const list = document.getElementById('topics-list');
+  list.innerHTML = '';
+
+  if (tags.length === 0) {
+    list.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:40px">No tagged topics yet</div>';
+  }
+
+  tags.forEach(({ tag, count }) => {
+    const btn = document.createElement('button');
+    btn.className = 'topic-item';
+    btn.innerHTML = `
+      <span class="topic-name">${formatTagLabel(tag)}</span>
+      <span class="topic-count">${count} cards</span>`;
+    btn.onclick = () => startCustomQueue(getCardsByTag(tag), formatTagLabel(tag), 'topics');
+    list.appendChild(btn);
+  });
+
+  showScreen('topics');
+}
+
+function formatTagLabel(tag) {
+  return tag.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 
 // ── Glossary ──────────────────────────────────────────────────────────────────

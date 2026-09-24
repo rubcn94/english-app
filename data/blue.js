@@ -323,37 +323,44 @@ const BLUE_DATA = [
       {
         id: "b9_01",
         front: "Which verbs take -ING?\n\nComplete: 'I enjoy ___ (swim).'\nComplete: 'She avoids ___ (eat) sugar.'",
-        back: "'I enjoy SWIMMING.'\n'She avoids EATING sugar.'\n\n📌 enjoy · mind · avoid · finish · stop · admit · deny · suggest · recommend · keep"
+        back: "'I enjoy SWIMMING.'\n'She avoids EATING sugar.'\n\n📌 enjoy · mind · avoid · finish · stop · admit · deny · suggest · recommend · keep",
+        tags: ["ing-verbs"]
       },
       {
         id: "b9_02",
         front: "Which verbs take TO + infinitive?\n\nComplete: 'He decided ___ (leave).'\nComplete: 'She promised ___ (call).'",
-        back: "'He decided TO LEAVE.'\n'She promised TO CALL.'\n\n📌 want · need · hope · decide · plan · manage · offer · refuse · promise · agree · seem"
+        back: "'He decided TO LEAVE.'\n'She promised TO CALL.'\n\n📌 want · need · hope · decide · plan · manage · offer · refuse · promise · agree · seem",
+        tags: ["to-infinitive-verbs"]
       },
       {
         id: "b9_03",
         front: "REMEMBER — two meanings:\n\n'I remember ___ (lock) the door.' (I did it — I recall)\n'Remember ___ (lock) the door.' (don't forget to do it)",
-        back: "'I remember LOCKING the door.' (-ing = recall a past action)\n'Remember TO LOCK the door.' (to = future obligation)\n\n📌 -ing looks back · to looks forward"
+        back: "'I remember LOCKING the door.' (-ing = recall a past action)\n'Remember TO LOCK the door.' (to = future obligation)\n\n📌 -ing looks back · to looks forward",
+        tags: ["remember-regret-try", "memory-verbs"]
       },
       {
         id: "b9_04",
         front: "STOP — two meanings:\n\n'He stopped ___ (smoke).'\n'He stopped ___ (buy) a newspaper.'",
-        back: "'He stopped SMOKING.' (gave up the habit)\n'He stopped TO BUY a newspaper.' (paused in order to buy)\n\n📌 stop -ing = quit / stop to = pause for a purpose"
+        back: "'He stopped SMOKING.' (gave up the habit)\n'He stopped TO BUY a newspaper.' (paused in order to buy)\n\n📌 stop -ing = quit / stop to = pause for a purpose",
+        tags: ["remember-regret-try", "habits"]
       },
       {
         id: "b9_05",
         front: "TRY — two meanings:\n\n'Try ___ (add) more salt.' (experiment)\n'I tried ___ (open) the door but it was locked.' (attempt with effort)",
-        back: "'Try ADDING more salt.' (experiment — see if it works)\n'I tried TO OPEN the door.' (attempted but possibly failed)\n\n📌 try -ing = experiment / try to = attempt"
+        back: "'Try ADDING more salt.' (experiment — see if it works)\n'I tried TO OPEN the door.' (attempted but possibly failed)\n\n📌 try -ing = experiment / try to = attempt",
+        tags: ["remember-regret-try"]
       },
       {
         id: "b9_06",
         front: "Preposition + verb → always ___\n\n'She's good at ___ (cook).'\n'He left without ___ (say) goodbye.'",
-        back: "Preposition + -ING always\n\n'She's good at COOKING.'\n'He left without SAYING goodbye.'\n\n📌 at · in · on · of · about · without + -ing"
+        back: "Preposition + -ING always\n\n'She's good at COOKING.'\n'He left without SAYING goodbye.'\n\n📌 at · in · on · of · about · without + -ing",
+        tags: ["ing-verbs"]
       },
       {
         id: "b9_07",
         front: "USED TO vs BE USED TO vs GET USED TO\n\n'I ___ live in Paris.' (past habit)\n'I ___ living alone now.' (it's normal for me)\n'It took time to ___ the cold.'",
-        back: "'I USED TO live in Paris.' (past habit, no longer)\n'I'M USED TO living alone.' (accustomed now)\n'It took time to GET USED TO the cold.' (process of adapting)\n\n📌 used to + inf / be used to + -ing / get used to + -ing"
+        back: "'I USED TO live in Paris.' (past habit, no longer)\n'I'M USED TO living alone.' (accustomed now)\n'It took time to GET USED TO the cold.' (process of adapting)\n\n📌 used to + inf / be used to + -ing / get used to + -ing",
+        tags: ["used-to", "habits"]
       }
     ]
   },
