@@ -203,6 +203,145 @@ const TEMPLATE_DATA = [
         }
       }
     ]
+  },
+  {
+    id: "narrative-tenses",
+    tags: ["narrative-tenses", "advanced"],
+    title: "Narrative Tenses",
+    generators: [
+      {
+        type: "multiple-choice",
+        build(rand) {
+          const subj = rand.pick(SUBJECTS);
+          const bgVerb = rand.pick(ACTION_VERBS);
+          const event = rand.pick(PAST_INTERRUPTIONS);
+          const be = { I: "was", You: "were", She: "was", He: "was", We: "were", They: "were" }[subj];
+          const correct = `${be} ${bgVerb.ing}`;
+          const wrong = conjugatePresentSimple(subj, bgVerb.base);
+          const options = rand.shuffle([correct, wrong]);
+          return {
+            front: `Which fits the background action?\n\n'${subj} ___ (${bgVerb.base}) when ${event}.'`,
+            options,
+            correct,
+            explanation: `Past continuous sets the background scene; the interrupting event is past simple.`,
+            back: `✅ '${subj} ${correct} when ${event}.'\n\n📌 Past continuous (backdrop) + past simple (main event)`
+          };
+        }
+      },
+      {
+        type: "gap-fill",
+        build(rand) {
+          const subj = rand.pick(SUBJECTS);
+          const subjMid = subj === "I" ? "I" : subj.toLowerCase();
+          const verb = rand.pick(PERFECT_VERBS);
+          const event = rand.pick(PAST_INTERRUPTIONS);
+          return {
+            front: `Complete with the correct form (flashback — earlier than the main event):\n\n'By the time ${event}, ${subjMid} ___ already ___ (${verb.base}).'`,
+            correct: `had ${verb.pp}`,
+            explanation: `Past perfect marks an event that happened BEFORE the past simple event ("${event}").`,
+            back: `'By the time ${event}, ${subjMid} had already ${verb.pp}.'\n\n📌 Past perfect = flashback, earlier than the past simple reference point`
+          };
+        }
+      }
+    ]
+  },
+  {
+    id: "future-continuous-vs-perfect",
+    tags: ["future-continuous", "future-perfect", "advanced"],
+    title: "Future Continuous vs Perfect",
+    generators: [
+      {
+        type: "multiple-choice",
+        build(rand) {
+          const subj = rand.pick(SUBJECTS);
+          const verb = rand.pick(FUTURE_ASPECT_VERBS);
+          const futureTime = rand.pick(FUTURE_POINTS);
+          const correct = `will be ${verb.ing}`;
+          const wrong = `will have ${verb.pp}`;
+          const options = rand.shuffle([correct, wrong]);
+          return {
+            front: `Which fits?\n\n'${subj} ___ (${verb.base}) ${futureTime}.'`,
+            options,
+            correct,
+            explanation: `An action IN PROGRESS at a future point uses future continuous (will be -ing).`,
+            back: `✅ '${subj} ${correct} ${futureTime}.'\n\n📌 will be + -ing = in progress at a future moment`
+          };
+        }
+      },
+      {
+        type: "gap-fill",
+        build(rand) {
+          const subj = rand.pick(SUBJECTS);
+          const subjMid = subj === "I" ? "I" : subj.toLowerCase();
+          const verb = rand.pick(PERFECT_VERBS);
+          const deadline = rand.pick(BY_DEADLINES);
+          return {
+            front: `Complete with the correct form:\n\n'By ${deadline}, ${subjMid} ___ (${verb.base}) this.'`,
+            correct: `will have ${verb.pp}`,
+            explanation: `"By + future time" triggers future perfect — completed before that point.`,
+            back: `'By ${deadline}, ${subjMid} will have ${verb.pp} this.'\n\n📌 will have + past participle — triggered by "by + future time"`
+          };
+        }
+      }
+    ]
+  },
+  {
+    id: "would-rather",
+    tags: ["would-rather", "advanced"],
+    title: "Would Rather",
+    generators: [
+      {
+        type: "gap-fill",
+        build(rand) {
+          const subj = rand.pick(SUBJECTS);
+          const verb = rand.pick(ROUTINE_VERBS);
+          return {
+            front: `Complete (same subject — bare infinitive):\n\n'${subj}'d rather ___ (${verb.base}) than go out tonight.'`,
+            correct: verb.base,
+            explanation: `Same subject for both actions → bare infinitive, no "to".`,
+            back: `'${subj}'d rather ${verb.base} than go out tonight.'\n\n📌 would rather + bare infinitive when the subject is the same for both actions`
+          };
+        }
+      },
+      {
+        type: "multiple-choice",
+        build(rand) {
+          const subj = rand.pick(["you", "she", "they", "he"]);
+          const verb = rand.pick(REGULAR_PAST_VERBS);
+          const correct = "didn't " + verb.base;
+          const wrong = "don't " + verb.base;
+          const options = rand.shuffle([correct, wrong]);
+          return {
+            front: `Which fits? (different subject — a wish about someone else)\n\n'I'd rather ${subj} ___ (${verb.base}) that.'`,
+            options,
+            correct,
+            explanation: `Different subject → would rather + subject + PAST tense (even though it's about now/future).`,
+            back: `✅ 'I'd rather ${subj} ${correct} that.'\n\n📌 would rather + different subject + past tense (not present!) — a subtle exception`
+          };
+        }
+      }
+    ]
+  },
+  {
+    id: "causative-verbs",
+    tags: ["causative", "advanced"],
+    title: "Causative Verbs (make/let/have/get)",
+    generators: [
+      {
+        type: "multiple-choice",
+        build(rand) {
+          const item = rand.pick(CAUSATIVE_ITEMS);
+          const options = rand.shuffle([item.correct, item.wrong]);
+          return {
+            front: `Which is correct?\n\n"${item.context}"`,
+            options,
+            correct: item.correct,
+            explanation: item.explanation,
+            back: `✅ '${item.correct}'\n\n📌 ${item.explanation}`
+          };
+        }
+      }
+    ]
   }
 ];
 
@@ -267,6 +406,51 @@ const ADVICE_ITEMS = [
   { text: "skip breakfast every day", correct: "shouldn't", explanation: "shouldn't = advice against something" },
   { text: "get more sleep before the exam", correct: "should", explanation: "should = recommendation" },
   { text: "ignore the doctor's advice", correct: "shouldn't", explanation: "shouldn't = warning against a bad idea" },
+];
+
+// ── Green Book (advanced) word banks ────────────────────────────────────────
+const FUTURE_ASPECT_VERBS = [
+  { base: "fly", ing: "flying", pp: "flown" },
+  { base: "cook", ing: "cooking", pp: "cooked" },
+  { base: "study", ing: "studying", pp: "studied" },
+  { base: "write", ing: "writing", pp: "written" },
+  { base: "travel", ing: "travelling", pp: "travelled" },
+  { base: "finish", ing: "finishing", pp: "finished" }
+];
+const FUTURE_POINTS = ["this time tomorrow", "at 8pm tonight", "this time next week", "at noon on Saturday"];
+const BY_DEADLINES = ["Friday", "the end of the month", "next year", "6pm", "the deadline"];
+
+const CAUSATIVE_ITEMS = [
+  {
+    context: "The teacher forced the students to apologise.",
+    correct: "The teacher made the students apologise.",
+    wrong: "The teacher made the students to apologise.",
+    explanation: "make + object + bare infinitive (no 'to') — forced action"
+  },
+  {
+    context: "My parents allowed me to stay out late.",
+    correct: "My parents let me stay out late.",
+    wrong: "My parents let me to stay out late.",
+    explanation: "let + object + bare infinitive (no 'to') — permission"
+  },
+  {
+    context: "I arranged for a mechanic to fix my car.",
+    correct: "I had my car fixed.",
+    wrong: "I had my car fix.",
+    explanation: "have + object + past participle — arranged for someone else to do it"
+  },
+  {
+    context: "I persuaded him to call you.",
+    correct: "I got him to call you.",
+    wrong: "I got him call you.",
+    explanation: "get + object + TO-infinitive (unlike make/let) — persuaded/managed to arrange"
+  },
+  {
+    context: "The dentist arranged for my tooth to be checked.",
+    correct: "I had my tooth checked.",
+    wrong: "I had my tooth to check.",
+    explanation: "have + object + past participle, not 'to + infinitive'"
+  }
 ];
 
 // ── Tiny conjugation helpers (3rd person -s, be+ing) ────────────────────────
