@@ -65,7 +65,13 @@ let state = {
 function getData(book) {
   if (book === 'blue') return BLUE_DATA;
   if (book === 'green') return GREEN_DATA;
+  if (book === 'phrasal') return getPhrasalVerbSections();
   return VOCAB_DATA;
+}
+// Virtual "book" combining every vocab section whose title mentions phrasal
+// verbs — a dedicated glossary view without duplicating any card data.
+function getPhrasalVerbSections() {
+  return VOCAB_DATA.filter(s => /phrasal/i.test(s.title));
 }
 function getAllCards(book) {
   return getData(book).flatMap(s => s.cards.map(c => ({ ...c, _section: s.section })));
@@ -125,7 +131,9 @@ function showScreen(name, opts) {
   document.getElementById('screen-' + name).classList.add('active');
   if (!opts || !opts.skipPersist) {
     if (RESTORABLE_SCREENS.includes(name)) {
-      try { localStorage.setItem(LAST_SCREEN_KEY, JSON.stringify({ screen: name, book: state.currentBook })); } catch {}
+      const payload = { screen: name, book: state.currentBook };
+      if (name === 'glossary') payload.glossaryBook = glossaryBook;
+      try { localStorage.setItem(LAST_SCREEN_KEY, JSON.stringify(payload)); } catch {}
     } else {
       try { localStorage.removeItem(LAST_SCREEN_KEY); } catch {}
     }
@@ -140,7 +148,7 @@ function restoreLastScreen() {
   if (saved.screen === 'book' && saved.book) {
     showBookMenu(saved.book);
   } else if (saved.screen === 'glossary') {
-    showGlossary();
+    showGlossary(saved.glossaryBook);
   } else if (saved.screen === 'topics') {
     showTopics();
   } else if (saved.screen === 'dynamic-templates') {
@@ -613,10 +621,11 @@ function setGlossaryBook(book) {
   renderGlossary();
 }
 
-function showGlossary() {
-  glossaryBook = 'vocab';
+function showGlossary(book) {
+  glossaryBook = book || 'vocab';
   document.querySelectorAll('.gbook').forEach(b => b.classList.remove('active'));
-  document.getElementById('gb-vocab').classList.add('active');
+  const bookBtn = document.getElementById('gb-' + glossaryBook);
+  if (bookBtn) bookBtn.classList.add('active');
   populateGlossarySections();
   document.getElementById('glossary-search').value = '';
   glossaryFilter = 'all';
@@ -624,6 +633,10 @@ function showGlossary() {
   document.getElementById('gf-all').classList.add('active');
   renderGlossary();
   showScreen('glossary');
+}
+
+function showPhrasalVerbGlossary() {
+  showGlossary('phrasal');
 }
 
 function setGFilter(f) {

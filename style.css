@@ -478,6 +478,7 @@ input.hidden { display: none; }
 .btn-glossary { border-color: var(--green); }
 .btn-topics { border-color: #e0b84a; }
 .btn-dynamic { border-color: #c568e0; }
+.btn-phrasal { border-color: #4ec9d9; }
 
 /* DYNAMIC TESTS */
 .dynamic-choices {

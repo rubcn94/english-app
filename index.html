@@ -54,6 +54,11 @@
       </button>
     </div>
     <div class="due-row" style="margin-top:10px">
+      <button class="btn-due btn-phrasal" onclick="showPhrasalVerbGlossary()">
+        <span>🧩 Phrasal Verbs Glossary</span>
+      </button>
+    </div>
+    <div class="due-row" style="margin-top:10px">
       <button class="btn-due btn-topics" onclick="showTopics()">
         <span>🔗 Study by topic</span>
       </button>
@@ -179,9 +184,10 @@
     <!-- Search + filters -->
     <div class="glossary-toolbar">
       <div class="glossary-books">
-        <button class="gbook active" id="gb-vocab" onclick="setGlossaryBook('vocab')">📒 Vocab</button>
-        <button class="gbook"        id="gb-blue"  onclick="setGlossaryBook('blue')">📘 Blue</button>
-        <button class="gbook"        id="gb-green" onclick="setGlossaryBook('green')">📗 Green</button>
+        <button class="gbook active" id="gb-vocab"   onclick="setGlossaryBook('vocab')">📒 Vocab</button>
+        <button class="gbook"        id="gb-blue"    onclick="setGlossaryBook('blue')">📘 Blue</button>
+        <button class="gbook"        id="gb-green"   onclick="setGlossaryBook('green')">📗 Green</button>
+        <button class="gbook"        id="gb-phrasal" onclick="setGlossaryBook('phrasal')">🧩 Phrasal</button>
       </div>
       <input type="search" id="glossary-search" class="answer-input glossary-search"
              placeholder="Search…" oninput="debouncedRenderGlossary()" autocorrect="off" autocapitalize="off">
