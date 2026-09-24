@@ -115,9 +115,38 @@ function isCorrect(userInput, card) {
 }
 
 // ── Screen navigation ─────────────────────────────────────────────────────────
-function showScreen(name) {
+const LAST_SCREEN_KEY = 'eng_last_screen_v1';
+// Screens that make sense to restore as-is after a reload (no in-progress
+// session state like a shuffled queue that would be lost anyway).
+const RESTORABLE_SCREENS = ['home', 'book', 'glossary', 'topics', 'dynamic-templates'];
+
+function showScreen(name, opts) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById('screen-' + name).classList.add('active');
+  if (!opts || !opts.skipPersist) {
+    if (RESTORABLE_SCREENS.includes(name)) {
+      try { localStorage.setItem(LAST_SCREEN_KEY, JSON.stringify({ screen: name, book: state.currentBook })); } catch {}
+    } else {
+      try { localStorage.removeItem(LAST_SCREEN_KEY); } catch {}
+    }
+  }
+}
+
+function restoreLastScreen() {
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem(LAST_SCREEN_KEY)); } catch {}
+  if (!saved || !RESTORABLE_SCREENS.includes(saved.screen)) return;
+
+  if (saved.screen === 'book' && saved.book) {
+    showBookMenu(saved.book);
+  } else if (saved.screen === 'glossary') {
+    showGlossary();
+  } else if (saved.screen === 'topics') {
+    showTopics();
+  } else if (saved.screen === 'dynamic-templates') {
+    showDynamicTests();
+  }
+  // 'home' needs no action — it's already the default active screen.
 }
 
 function showBookMenu(book) {
@@ -831,3 +860,4 @@ function formatLastBackup() {
 
 // ── Init ──────────────────────────────────────────────────────────────────────
 refreshHomeStats();
+restoreLastScreen();
