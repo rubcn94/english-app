@@ -127,6 +127,28 @@ html, body {
 .stat-num { display: block; font-size: 1.8rem; font-weight: 700; }
 .stat-label { font-size: 0.75rem; color: var(--text-muted); }
 
+.backup-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 20px 20px;
+}
+.backup-status { font-size: 0.72rem; color: var(--text-muted); }
+.backup-actions { display: flex; gap: 8px; }
+.btn-backup {
+  background: var(--surface);
+  border: 1px solid var(--surface2);
+  border-radius: 10px;
+  padding: 6px 12px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.btn-backup:active { border-color: var(--blue); color: var(--blue); }
+
+input.hidden { display: none; }
+
 /* SCREEN HEADER */
 .screen-header {
   display: flex;

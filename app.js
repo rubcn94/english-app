@@ -5,6 +5,7 @@ const STORE_KEY   = 'eng_cards_v1';
 const STREAK_KEY  = 'eng_streak_v1';
 const NOTES_KEY   = 'eng_notes_v1';
 const KNOWN_KEY   = 'eng_known_v1';
+const BACKUP_KEY  = 'eng_last_backup_v1';
 
 function loadProgress() {
   try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch { return {}; }
@@ -341,6 +342,9 @@ function refreshHomeStats() {
   document.getElementById('due-badge').textContent = due;
   document.getElementById('due-label').textContent = due === 0 ? 'No cards due' : 'Study due cards';
   dueBtn.disabled = due === 0;
+
+  const backupLabel = document.getElementById('backup-status');
+  if (backupLabel) backupLabel.textContent = formatLastBackup();
 }
 
 // ── Glossary ──────────────────────────────────────────────────────────────────
@@ -514,6 +518,105 @@ function closeNoteModal(e) {
   document.getElementById('note-modal').classList.add('hidden');
   noteTargetId = null;
   noteSavedCallback = null;
+}
+
+// ── Backup / Restore ──────────────────────────────────────────────────────────
+function loadLastBackup() {
+  return localStorage.getItem(BACKUP_KEY);
+}
+function markBackupDone() {
+  localStorage.setItem(BACKUP_KEY, new Date().toISOString());
+}
+
+function exportBackup() {
+  const payload = {
+    type: 'english-app-backup',
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    progress: state.progress,
+    notes: state.notes,
+    known: state.known,
+    streak: loadStreak(),
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const dateStr = new Date().toISOString().slice(0, 10);
+  a.href = url;
+  a.download = `english-app-backup-${dateStr}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  markBackupDone();
+  refreshHomeStats();
+}
+
+function triggerImportBackup() {
+  document.getElementById('backup-file-input').click();
+}
+
+function importBackupFile(input) {
+  const file = input.files && input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const data = JSON.parse(reader.result);
+      if (!data || data.type !== 'english-app-backup') {
+        alert('This file doesn\'t look like an English App backup.');
+        return;
+      }
+      mergeBackup(data);
+    } catch (e) {
+      alert('Could not read that file. Make sure it\'s an unmodified backup .json.');
+    } finally {
+      input.value = '';
+    }
+  };
+  reader.readAsText(file);
+}
+
+function mergeBackup(data) {
+  // Merge, don't overwrite: newer per-card progress wins, notes/known are unioned.
+  const incomingProgress = data.progress || {};
+  let updatedCards = 0;
+  Object.keys(incomingProgress).forEach(id => {
+    const incoming = incomingProgress[id];
+    const existing = state.progress[id];
+    if (!existing || !existing.dueDate || (incoming.dueDate && incoming.dueDate > existing.dueDate)) {
+      state.progress[id] = incoming;
+      updatedCards++;
+    }
+  });
+  saveProgress(state.progress);
+
+  const incomingNotes = data.notes || {};
+  Object.keys(incomingNotes).forEach(id => {
+    if (!state.notes[id]) state.notes[id] = incomingNotes[id];
+  });
+  saveNotes(state.notes);
+
+  const incomingKnown = data.known || {};
+  Object.keys(incomingKnown).forEach(id => { state.known[id] = true; });
+  saveKnown(state.known);
+
+  if (data.streak && typeof data.streak.count === 'number') {
+    const current = loadStreak();
+    if (data.streak.count > current.count) saveStreak(data.streak);
+  }
+
+  refreshHomeStats();
+  alert(`Backup imported. ${updatedCards} card(s) updated, notes and known words merged.`);
+}
+
+function formatLastBackup() {
+  const iso = loadLastBackup();
+  if (!iso) return 'Never backed up';
+  const days = Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
+  if (days <= 0) return 'Backed up today';
+  if (days === 1) return 'Backed up 1 day ago';
+  return `Backed up ${days} days ago`;
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────────

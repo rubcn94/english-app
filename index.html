@@ -66,6 +66,14 @@
         <span class="stat-label">due today</span>
       </div>
     </div>
+    <div class="backup-row">
+      <span class="backup-status" id="backup-status">Never backed up</span>
+      <div class="backup-actions">
+        <button class="btn-backup" onclick="exportBackup()">⬇ Export</button>
+        <button class="btn-backup" onclick="triggerImportBackup()">⬆ Import</button>
+      </div>
+      <input type="file" id="backup-file-input" accept="application/json" class="hidden" onchange="importBackupFile(this)">
+    </div>
   </div>
 
   <!-- SCREEN: BOOK MENU -->
