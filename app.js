@@ -298,11 +298,32 @@ function loadTheoryCard() {
   const block = state.blocks[state.blockIndex];
   const card = block[state.theoryIndex];
   document.getElementById('theory-front').textContent = card.front;
-  document.getElementById('theory-back').textContent = card.back.split('\n\n')[0];
+  document.getElementById('theory-back').textContent = card.back;
   const blockLabel = state.blocks.length > 1 ? `Block ${state.blockIndex + 1}/${state.blocks.length} · ` : '';
   document.getElementById('theory-counter').textContent = `${blockLabel}${state.theoryIndex + 1}/${block.length}`;
   const nextBtn = document.getElementById('btn-theory-next');
   nextBtn.textContent = state.theoryIndex + 1 < block.length ? 'Next →' : "Start practice →";
+  renderTheoryNote(card);
+}
+
+function renderTheoryNote(card) {
+  const note = state.notes[card.id] || '';
+  const noteText = document.getElementById('theory-note-text');
+  const btn = document.getElementById('btn-theory-note');
+  if (note) {
+    noteText.textContent = '💡 ' + note;
+    noteText.classList.remove('hidden');
+    btn.textContent = '✏️ Edit trick';
+  } else {
+    noteText.classList.add('hidden');
+    btn.textContent = '+ Add a trick';
+  }
+}
+
+function openTheoryNoteModal() {
+  const block = state.blocks[state.blockIndex];
+  const card = block[state.theoryIndex];
+  openNoteModalForCard(card, () => renderTheoryNote(card));
 }
 
 function nextTheoryCard() {
@@ -635,6 +656,8 @@ function checkDynamicAnswer(userAnswer) {
   const correct = normalise(userAnswer) === normalise(exercise.correct);
   dynamicState.stats.total++;
   if (correct) dynamicState.stats.correct++;
+  document.getElementById('dynamic-score').textContent =
+    `${dynamicState.stats.correct} / ${dynamicState.stats.total}`;
 
   document.getElementById('dynamic-correction-question').textContent = exercise.front;
   const yourEl = document.getElementById('dynamic-correction-your');
