@@ -247,7 +247,17 @@ function buildChoiceOptions(correctDisplay, pool, count) {
 // blank i come from the card's OTHER blanks first (same grammar point,
 // always available) then the section/book pool used for single answers.
 function buildCombinedMultiBlankOptions(card, book, sectionNum, correctAnswers) {
-  const pool = getDistractorPool(book, sectionNum, card.id);
+  // Pool candidates can be another multi-blank card's own combined answer
+  // (e.g. "at / on / in / in") — using one whole as a single blank's
+  // replacement would silently add extra " / "-separated segments to the
+  // combo, producing a 4-part option for a 3-blank question. Break every
+  // pool candidate into its individual " / "-separated pieces instead of
+  // dropping multi-blank combos outright — a small section (e.g. Articles
+  // & Nouns) can otherwise leave a card with nothing left to draw
+  // distractors from when every other card nearby is also multi-blank.
+  const pool = [...new Set(
+    getDistractorPool(book, sectionNum, card.id).flatMap(c => c.split(' / ').map(s => s.trim()).filter(Boolean))
+  )];
   const correctDisplay = buildCombinedAnswerText(correctAnswers);
   const correctNorm = normalise(correctDisplay);
   const seen = new Set([correctNorm]);
@@ -263,7 +273,17 @@ function buildCombinedMultiBlankOptions(card, book, sectionNum, correctAnswers) 
     // the whole combo stick out and gives the answer away without reading it.
     const candidates = shuffle(ownOtherBlanks.concat(pool))
       .sort((a, b) => Math.abs(a.length - targetLen) - Math.abs(b.length - targetLen));
-    const wrongForThisBlank = candidates.find(c => normalise(c) !== normalise(correctAnswers[i]) && c.trim());
+    // The candidate must differ from what it's replacing AND the resulting
+    // combo must differ from the correct one as a whole — a blank whose
+    // correct value repeats elsewhere in the same card (e.g. three "∅"
+    // blanks) can swap in a value that's "different" locally but still
+    // produces a combo identical to the correct answer.
+    const wrongForThisBlank = candidates.find(c => {
+      if (!c.trim() || normalise(c) === normalise(correctAnswers[i])) return false;
+      const candidateCombo = correctAnswers.slice();
+      candidateCombo[i] = c.trim();
+      return normalise(buildCombinedAnswerText(candidateCombo)) !== correctNorm;
+    });
     if (!wrongForThisBlank) continue;
     const combo = correctAnswers.slice();
     combo[i] = wrongForThisBlank.trim();
