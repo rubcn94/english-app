@@ -500,6 +500,18 @@ input.hidden { display: none; }
 .btn-topics { border-color: #e0b84a; }
 .btn-dynamic { border-color: #c568e0; }
 .btn-phrasal { border-color: #4ec9d9; }
+.btn-leveltest { border-color: #ff6b6b; }
+
+/* LEVEL TEST */
+.leveltest-weak-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+  text-align: left;
+}
+.leveltest-weak-list .topics-hint { padding: 0 0 4px; text-align: center; }
 
 /* DYNAMIC TESTS */
 .dynamic-choices {

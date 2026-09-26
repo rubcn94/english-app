@@ -977,6 +977,230 @@ function formatLastBackup() {
   return `Backed up ${days} days ago`;
 }
 
+// ── Level test ────────────────────────────────────────────────────────────────
+// One-shot diagnostic: 2-3 fixed-card questions per grammar section (Blue+Green,
+// 29 sections total) — plus 1-2 dynamically generated exercises for the sections
+// that already have a template — and a general random sample of vocab. Unlike
+// blocked study, there's no theory pass and no manual Again/Hard/Good/Easy rating:
+// correctness is scored automatically from the typed answer, exactly like Dynamic
+// Tests. On finish, each section's hit rate decides known/due, so "Study due
+// cards" and the glossary immediately reflect the diagnosis.
+const LEVELTEST_PER_SECTION = 3;      // fixed cards sampled per grammar section
+const LEVELTEST_TEMPLATE_EXTRA = 2;   // dynamic exercises added when a section has a template
+const LEVELTEST_VOCAB_SAMPLE = 25;    // random vocab cards, no category weighting
+
+// Maps a Blue/Green section title to the TEMPLATE_DATA ids that cover the same
+// grammar point, so the level test can add live-generated exercises for it.
+// Sections not listed here simply get no dynamic exercises (fixed cards only) —
+// this mirrors the real coverage gap already documented in memory (only 12/29
+// sections have a template).
+const LEVELTEST_SECTION_TEMPLATES = {
+  'blue:1':  ['present-simple-vs-continuous', 'past-simple', 'past-continuous'],
+  'blue:2':  ['present-perfect'],
+  'blue:4':  ['modals-obligation'],
+  'blue:5':  ['conditionals'],
+  'blue:6':  ['passive-voice'],
+  'blue:12': ['relative-clauses'],
+  'green:1': ['narrative-tenses'],
+  'green:2': ['future-continuous-vs-perfect'],
+  'green:5': ['would-rather', 'causative-verbs'],
+};
+
+let levelTestState = { queue: [], index: 0, exercise: null, correct: 0, total: 0, sectionStats: {} };
+
+function startLevelTest() {
+  const queue = buildLevelTestQueue();
+  levelTestState = { queue: shuffle(queue), index: 0, exercise: null, correct: 0, total: 0, sectionStats: {} };
+  showScreen('leveltest-study');
+  loadLevelTestExercise();
+}
+
+function buildLevelTestQueue() {
+  const items = [];
+
+  ['blue', 'green'].forEach(book => {
+    getData(book).forEach(sec => {
+      const key = `${book}:${sec.section}`;
+      const sampled = shuffle(sec.cards).slice(0, Math.min(LEVELTEST_PER_SECTION, sec.cards.length));
+      sampled.forEach(card => items.push({
+        kind: 'card', card, book, sectionKey: key, sectionTitle: sec.title
+      }));
+
+      const templateIds = LEVELTEST_SECTION_TEMPLATES[key] || [];
+      const templates = getDynamicTemplates().filter(t => templateIds.includes(t.id));
+      templates.forEach(tpl => {
+        for (let i = 0; i < LEVELTEST_TEMPLATE_EXTRA; i++) {
+          items.push({ kind: 'dynamic', template: tpl, book, sectionKey: key, sectionTitle: sec.title });
+        }
+      });
+    });
+  });
+
+  const allVocab = getAllCards('vocab');
+  shuffle(allVocab).slice(0, Math.min(LEVELTEST_VOCAB_SAMPLE, allVocab.length)).forEach(card => {
+    items.push({ kind: 'card', card, book: 'vocab', sectionKey: 'vocab', sectionTitle: 'Vocabulary' });
+  });
+
+  return items;
+}
+
+function loadLevelTestExercise() {
+  const item = levelTestState.queue[levelTestState.index];
+  if (!item) { finishLevelTest(); return; }
+
+  let front, exercise;
+  if (item.kind === 'dynamic') {
+    const rand = makeRand();
+    const gen = rand.pick(item.template.generators);
+    exercise = gen.build(rand);
+    front = exercise.front;
+  } else {
+    front = item.card.front;
+  }
+  levelTestState.exercise = exercise;
+
+  document.getElementById('leveltest-title').textContent = `🎯 ${item.sectionTitle}`;
+  document.getElementById('leveltest-counter').textContent =
+    `${levelTestState.index + 1} / ${levelTestState.queue.length}`;
+  document.getElementById('leveltest-progress-fill').style.width =
+    Math.round((levelTestState.index / levelTestState.queue.length) * 100) + '%';
+
+  document.getElementById('leveltest-phase-question').classList.remove('hidden');
+  document.getElementById('leveltest-phase-correction').classList.add('hidden');
+  document.getElementById('leveltest-front-text').textContent = front;
+
+  const inputArea = document.getElementById('leveltest-input-area');
+  const choiceArea = document.getElementById('leveltest-choice-area');
+  if (exercise && exercise.options) {
+    inputArea.classList.add('hidden');
+    choiceArea.classList.remove('hidden');
+    choiceArea.innerHTML = '';
+    exercise.options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'dynamic-choice-btn';
+      btn.textContent = opt;
+      btn.onclick = () => checkLevelTestAnswer(opt);
+      choiceArea.appendChild(btn);
+    });
+  } else {
+    choiceArea.classList.add('hidden');
+    inputArea.classList.remove('hidden');
+    const input = document.getElementById('leveltest-answer-input');
+    input.value = '';
+    setTimeout(() => input.focus(), 100);
+  }
+}
+
+function submitLevelTestAnswer() {
+  const input = document.getElementById('leveltest-answer-input');
+  const val = input.value.trim();
+  if (!val) return;
+  checkLevelTestAnswer(val);
+}
+
+function checkLevelTestAnswer(userAnswer) {
+  const questionPhase = document.getElementById('leveltest-phase-question');
+  if (questionPhase.classList.contains('hidden')) return; // already answered this exercise
+
+  const item = levelTestState.queue[levelTestState.index];
+  const exercise = levelTestState.exercise;
+  const correct = exercise ? normalise(userAnswer) === normalise(exercise.correct) : isCorrect(userAnswer, item.card);
+
+  levelTestState.total++;
+  if (correct) levelTestState.correct++;
+
+  const stat = levelTestState.sectionStats[item.sectionKey] ||
+    (levelTestState.sectionStats[item.sectionKey] = { title: item.sectionTitle, book: item.book, correct: 0, total: 0, cardIds: [] });
+  stat.total++;
+  if (correct) stat.correct++;
+  if (item.kind === 'card') stat.cardIds.push(item.card.id);
+
+  const questionText = exercise ? exercise.front : item.card.front;
+  const correctText = exercise ? exercise.correct : item.card.back.split('\n')[0];
+  const extraText = exercise ? (exercise.explanation || '') : (item.card.back.split('\n\n')[1] || '');
+
+  document.getElementById('leveltest-correction-question').textContent = questionText;
+  const yourEl = document.getElementById('leveltest-correction-your');
+  yourEl.textContent = userAnswer;
+  yourEl.className = 'correction-your ' + (correct ? 'correct' : 'wrong');
+  document.getElementById('leveltest-correction-correct').textContent = correctText;
+  document.getElementById('leveltest-correction-extra').textContent = extraText;
+
+  // Resolve SM-2 + known status right away for fixed cards, same signal
+  // "Good"/nothing would give in a normal study session — a level test
+  // answer is graded exactly like a real review, not a freebie.
+  if (item.kind === 'card') {
+    const prev = getCardProgress(item.card.id) || {};
+    state.progress[item.card.id] = sm2(prev, correct ? 3 : 0);
+    if (correct) { state.known[item.card.id] = true; }
+  }
+
+  questionPhase.classList.add('hidden');
+  document.getElementById('leveltest-phase-correction').classList.remove('hidden');
+}
+
+function nextLevelTestExercise() {
+  levelTestState.index++;
+  loadLevelTestExercise();
+}
+
+function exitLevelTest() {
+  if (levelTestState.total > 0 && !confirm('Cancel the level test? Progress on answered questions is kept, the rest is discarded.')) return;
+  finishLevelTest();
+}
+
+function finishLevelTest() {
+  saveProgress(state.progress);
+  saveKnown(state.known);
+  updateStreak();
+  refreshHomeStats();
+
+  const { correct, total, sectionStats } = levelTestState;
+  document.getElementById('leveltest-sum-correct').textContent = correct;
+  document.getElementById('leveltest-sum-total').textContent = total;
+  document.getElementById('leveltest-sum-pct').textContent = total > 0 ? Math.round((correct / total) * 100) + '%' : '0%';
+
+  const weak = Object.entries(sectionStats)
+    .filter(([key]) => key !== 'vocab')
+    .map(([key, s]) => ({ key, ...s, pct: s.total > 0 ? s.correct / s.total : 1 }))
+    .filter(s => s.pct < 0.7)
+    .sort((a, b) => a.pct - b.pct);
+
+  levelTestState.weakSections = weak;
+
+  const list = document.getElementById('leveltest-weak-sections');
+  list.innerHTML = '';
+  if (weak.length === 0) {
+    list.innerHTML = '<div style="text-align:center;color:var(--text-muted);padding:20px">💪 Strong across the board — nothing flagged for review!</div>';
+  } else {
+    const heading = document.createElement('p');
+    heading.className = 'topics-hint';
+    heading.textContent = 'Sections to review, weakest first:';
+    list.appendChild(heading);
+    weak.forEach(s => {
+      const btn = document.createElement('button');
+      btn.className = 'topic-item';
+      btn.innerHTML = `
+        <span class="topic-name">${s.title}</span>
+        <span class="topic-count">${s.correct}/${s.total} · ${Math.round(s.pct * 100)}%</span>`;
+      btn.onclick = () => startSection(s.book, Number(s.key.split(':')[1]));
+      list.appendChild(btn);
+    });
+  }
+
+  const startPlanBtn = document.getElementById('btn-leveltest-start-plan');
+  startPlanBtn.classList.toggle('hidden', weak.length === 0);
+
+  showScreen('leveltest-result', { skipPersist: true });
+}
+
+function startWeakestSection() {
+  const weak = levelTestState.weakSections || [];
+  if (weak.length === 0) return;
+  const worst = weak[0];
+  startSection(worst.book, Number(worst.key.split(':')[1]));
+}
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 refreshHomeStats();
 restoreLastScreen();
