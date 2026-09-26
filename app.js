@@ -130,6 +130,25 @@ function isCorrect(userInput, card) {
   return getCorrectAnswers(card).some(ans => user === ans);
 }
 
+// A card with card.blanks (one entry per ___ in front, same order) uses one
+// input per blank instead of a single free-text field — the multi-blank
+// grammar cards (e.g. "'I ___ to work.' / 'She ___ (leave) yesterday.'")
+// used to require typing several unrelated answers into one line, which
+// was confusing and impossible to grade per-blank.
+function hasBlanks(card) { return Array.isArray(card.blanks) && card.blanks.length > 0; }
+
+function getBlankAnswers(blank) {
+  return blank.split(' / ').map(a => normalise(a.trim())).filter(Boolean);
+}
+
+function isBlankCorrect(userInput, blank) {
+  return getBlankAnswers(blank).some(ans => normalise(userInput) === ans);
+}
+
+function isAllBlanksCorrect(userInputs, card) {
+  return card.blanks.every((blank, i) => isBlankCorrect(userInputs[i] || '', blank));
+}
+
 // ── Screen navigation ─────────────────────────────────────────────────────────
 const LAST_SCREEN_KEY = 'eng_last_screen_v1';
 // Screens that make sense to restore as-is after a reload (no in-progress
@@ -346,6 +365,62 @@ function finishCurrentBlock() {
   else { updateStreak(); showSummary(); }
 }
 
+// ── Multi-blank rendering (shared by blocked study + level test) ───────────────
+// Builds one labeled input per card.blanks[i] into `container`, focuses the
+// first one, and wires Enter-to-advance between inputs (last one triggers
+// onSubmit, same as pressing Check).
+function renderMultiBlankInputs(container, card, onSubmit) {
+  container.innerHTML = '';
+  card.blanks.forEach((_, i) => {
+    const item = document.createElement('div');
+    item.className = 'multi-blank-item';
+    const label = document.createElement('div');
+    label.className = 'multi-blank-label';
+    label.textContent = `Blank ${i + 1} of ${card.blanks.length}`;
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'answer-input multi-blank-input';
+    input.autocomplete = 'off'; input.autocorrect = 'off'; input.autocapitalize = 'off'; input.spellcheck = false;
+    input.dataset.blankIndex = i;
+    input.onkeydown = (e) => {
+      if (e.key !== 'Enter') return;
+      const inputs = container.querySelectorAll('.multi-blank-input');
+      if (i + 1 < inputs.length) inputs[i + 1].focus();
+      else onSubmit();
+    };
+    item.appendChild(label);
+    item.appendChild(input);
+    container.appendChild(item);
+  });
+  const btn = document.createElement('button');
+  btn.className = 'btn-check';
+  btn.textContent = 'Check →';
+  btn.onclick = onSubmit;
+  container.appendChild(btn);
+  setTimeout(() => { const first = container.querySelector('.multi-blank-input'); if (first) first.focus(); }, 100);
+}
+
+function readMultiBlankInputs(container) {
+  return [...container.querySelectorAll('.multi-blank-input')].map(inp => inp.value.trim());
+}
+
+function renderMultiBlankReview(container, card, userAnswers) {
+  container.innerHTML = '';
+  card.blanks.forEach((blank, i) => {
+    const userAns = userAnswers[i] || '(empty)';
+    const correct = isBlankCorrect(userAnswers[i] || '', blank);
+    const row = document.createElement('div');
+    row.className = 'multi-blank-review-row';
+    row.innerHTML = `
+      <div class="multi-blank-label">Blank ${i + 1} of ${card.blanks.length}</div>
+      <div class="multi-blank-review-pair">
+        <div class="correction-your ${correct ? 'correct' : 'wrong'}">${userAns}</div>
+        <div class="correction-correct">${blank}</div>
+      </div>`;
+    container.appendChild(row);
+  });
+}
+
 // ── Card rendering ────────────────────────────────────────────────────────────
 function loadCard() {
   const card = state.blockQueue[0];
@@ -357,9 +432,19 @@ function loadCard() {
   document.getElementById('phase-correction').classList.add('hidden');
   document.getElementById('card-front-text').textContent = card.front;
 
-  const input = document.getElementById('answer-input');
-  input.value = '';
-  setTimeout(() => input.focus(), 100);
+  const inputArea = document.getElementById('input-area');
+  const multiArea = document.getElementById('multi-blank-area');
+  if (hasBlanks(card)) {
+    inputArea.classList.add('hidden');
+    multiArea.classList.remove('hidden');
+    renderMultiBlankInputs(multiArea, card, checkAnswer);
+  } else {
+    multiArea.classList.add('hidden');
+    inputArea.classList.remove('hidden');
+    const input = document.getElementById('answer-input');
+    input.value = '';
+    setTimeout(() => input.focus(), 100);
+  }
 
   const blockTotal = state.blocks[state.blockIndex].length;
   const remaining = state.blockQueue.length;
@@ -373,23 +458,42 @@ function checkAnswer() {
   if (document.getElementById('phase-question').classList.contains('hidden')) return; // already answered
   const card = state.blockQueue[0];
   if (!card) return;
-  const input = document.getElementById('answer-input');
-  const userAnswer = input.value.trim();
-  if (!userAnswer) return;
 
-  const correct = isCorrect(userAnswer, card);
+  const multiArea = document.getElementById('multi-blank-area');
+  const multiReview = document.getElementById('multi-blank-review');
+  let userAnswer, correct;
+
+  if (hasBlanks(card)) {
+    const answers = readMultiBlankInputs(multiArea);
+    if (answers.every(a => !a)) return; // nothing typed at all yet
+    correct = isAllBlanksCorrect(answers, card);
+    userAnswer = answers.join(' / ');
+    renderMultiBlankReview(multiReview, card, answers);
+    multiReview.classList.remove('hidden');
+  } else {
+    const input = document.getElementById('answer-input');
+    userAnswer = input.value.trim();
+    if (!userAnswer) return;
+    correct = isCorrect(userAnswer, card);
+    multiReview.classList.add('hidden');
+  }
   state.lastAnswerCorrect = correct;
 
   // Build correction view
   document.getElementById('correction-question').textContent = card.front;
 
   const yourEl = document.getElementById('correction-your');
-  yourEl.textContent = userAnswer || '(empty)';
-  yourEl.className = 'correction-your ' + (correct ? 'correct' : 'wrong');
-
-  // Correct answer: first line of back
-  const firstLine = card.back.split('\n')[0];
-  document.getElementById('correction-correct').textContent = firstLine;
+  if (hasBlanks(card)) {
+    yourEl.classList.add('hidden');
+    document.getElementById('correction-correct').classList.add('hidden');
+  } else {
+    yourEl.classList.remove('hidden');
+    document.getElementById('correction-correct').classList.remove('hidden');
+    yourEl.textContent = userAnswer || '(empty)';
+    yourEl.className = 'correction-your ' + (correct ? 'correct' : 'wrong');
+    // Correct answer: first line of back
+    document.getElementById('correction-correct').textContent = card.back.split('\n')[0];
+  }
 
   // Extra: translation (after \n\n) for vocab cards
   const parts = card.back.split('\n\n');
@@ -429,6 +533,8 @@ function openCorrectionNoteModal() {
 function showQuestion() {
   document.getElementById('phase-question').classList.remove('hidden');
   document.getElementById('phase-correction').classList.add('hidden');
+  const card = state.blockQueue[0];
+  if (card && hasBlanks(card)) return; // inputs already hold what was typed, just re-show them
   const input = document.getElementById('answer-input');
   input.value = '';
   setTimeout(() => input.focus(), 100);
@@ -1071,8 +1177,10 @@ function loadLevelTestExercise() {
 
   const inputArea = document.getElementById('leveltest-input-area');
   const choiceArea = document.getElementById('leveltest-choice-area');
+  const multiArea = document.getElementById('leveltest-multi-blank-area');
   if (exercise && exercise.options) {
     inputArea.classList.add('hidden');
+    multiArea.classList.add('hidden');
     choiceArea.classList.remove('hidden');
     choiceArea.innerHTML = '';
     exercise.options.forEach(opt => {
@@ -1082,8 +1190,14 @@ function loadLevelTestExercise() {
       btn.onclick = () => checkLevelTestAnswer(opt);
       choiceArea.appendChild(btn);
     });
+  } else if (!exercise && hasBlanks(item.card)) {
+    choiceArea.classList.add('hidden');
+    inputArea.classList.add('hidden');
+    multiArea.classList.remove('hidden');
+    renderMultiBlankInputs(multiArea, item.card, checkLevelTestMultiBlankAnswer);
   } else {
     choiceArea.classList.add('hidden');
+    multiArea.classList.add('hidden');
     inputArea.classList.remove('hidden');
     const input = document.getElementById('leveltest-answer-input');
     input.value = '';
@@ -1098,6 +1212,15 @@ function submitLevelTestAnswer() {
   checkLevelTestAnswer(val);
 }
 
+function checkLevelTestMultiBlankAnswer() {
+  const questionPhase = document.getElementById('leveltest-phase-question');
+  if (questionPhase.classList.contains('hidden')) return;
+  const item = levelTestState.queue[levelTestState.index];
+  const answers = readMultiBlankInputs(document.getElementById('leveltest-multi-blank-area'));
+  if (answers.every(a => !a)) return;
+  recordLevelTestAnswer(item, isAllBlanksCorrect(answers, item.card), answers);
+}
+
 function checkLevelTestAnswer(userAnswer) {
   const questionPhase = document.getElementById('leveltest-phase-question');
   if (questionPhase.classList.contains('hidden')) return; // already answered this exercise
@@ -1105,6 +1228,11 @@ function checkLevelTestAnswer(userAnswer) {
   const item = levelTestState.queue[levelTestState.index];
   const exercise = levelTestState.exercise;
   const correct = exercise ? normalise(userAnswer) === normalise(exercise.correct) : isCorrect(userAnswer, item.card);
+  recordLevelTestAnswer(item, correct, userAnswer);
+}
+
+function recordLevelTestAnswer(item, correct, userAnswer) {
+  const exercise = levelTestState.exercise;
 
   levelTestState.total++;
   if (correct) levelTestState.correct++;
@@ -1116,15 +1244,29 @@ function checkLevelTestAnswer(userAnswer) {
   if (item.kind === 'card') stat.cardIds.push(item.card.id);
 
   const questionText = exercise ? exercise.front : item.card.front;
-  const correctText = exercise ? exercise.correct : item.card.back.split('\n')[0];
-  const extraText = exercise ? (exercise.explanation || '') : (item.card.back.split('\n\n')[1] || '');
+  const isMulti = !exercise && hasBlanks(item.card);
+  const multiReview = document.getElementById('leveltest-multi-blank-review');
+  const yourEl = document.getElementById('leveltest-correction-your');
+  const correctEl = document.getElementById('leveltest-correction-correct');
 
   document.getElementById('leveltest-correction-question').textContent = questionText;
-  const yourEl = document.getElementById('leveltest-correction-your');
-  yourEl.textContent = userAnswer;
-  yourEl.className = 'correction-your ' + (correct ? 'correct' : 'wrong');
-  document.getElementById('leveltest-correction-correct').textContent = correctText;
-  document.getElementById('leveltest-correction-extra').textContent = extraText;
+  if (isMulti) {
+    yourEl.classList.add('hidden');
+    correctEl.classList.add('hidden');
+    renderMultiBlankReview(multiReview, item.card, userAnswer);
+    multiReview.classList.remove('hidden');
+    document.getElementById('leveltest-correction-extra').textContent = item.card.back.split('\n\n')[1] || '';
+  } else {
+    yourEl.classList.remove('hidden');
+    correctEl.classList.remove('hidden');
+    multiReview.classList.add('hidden');
+    const correctText = exercise ? exercise.correct : item.card.back.split('\n')[0];
+    const extraText = exercise ? (exercise.explanation || '') : (item.card.back.split('\n\n')[1] || '');
+    yourEl.textContent = userAnswer;
+    yourEl.className = 'correction-your ' + (correct ? 'correct' : 'wrong');
+    correctEl.textContent = correctText;
+    document.getElementById('leveltest-correction-extra').textContent = extraText;
+  }
 
   // Resolve SM-2 + known status right away for fixed cards, same signal
   // "Good"/nothing would give in a normal study session — a level test
@@ -1135,7 +1277,7 @@ function checkLevelTestAnswer(userAnswer) {
     if (correct) { state.known[item.card.id] = true; }
   }
 
-  questionPhase.classList.add('hidden');
+  document.getElementById('leveltest-phase-question').classList.add('hidden');
   document.getElementById('leveltest-phase-correction').classList.remove('hidden');
 }
 

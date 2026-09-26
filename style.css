@@ -278,6 +278,41 @@ input.hidden { display: none; }
   gap: 10px;
 }
 .input-area.hidden { display: none; }
+
+/* MULTI-BLANK (cards with several ___ in front, one input each) */
+.multi-blank-area {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.multi-blank-area.hidden { display: none; }
+.multi-blank-item { display: flex; flex-direction: column; gap: 6px; }
+.multi-blank-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+.multi-blank-review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+.multi-blank-review.hidden { display: none; }
+.multi-blank-review-row {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+}
+.multi-blank-review-row .multi-blank-label { margin-bottom: 6px; }
+.multi-blank-review-pair { display: flex; flex-direction: column; gap: 6px; }
+.multi-blank-review-pair .correction-your,
+.multi-blank-review-pair .correction-correct {
+  padding: 6px 10px;
+  font-size: 0.92rem;
+}
 .answer-input {
   width: 100%;
   background: var(--surface);
@@ -733,6 +768,8 @@ input.hidden { display: none; }
   border-radius: 20px 20px 0 0;
   padding: 24px 20px 40px;
   width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -760,4 +797,19 @@ input.hidden { display: none; }
   .book-grid { grid-template-columns: 1fr; }
   .rating-btns { grid-template-columns: repeat(2, 1fr); }
   .summary-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* TABLET / LANDSCAPE — beyond phone width the single-column layout was
+   stretching full-bleed (kilometer-long lines, giant inputs). Cap content
+   to a readable column and center it; every child already uses relative
+   widths/padding so this alone re-flows the whole app without per-screen
+   overrides. bg still fills the viewport behind it. */
+@media (min-width: 700px) {
+  html, body { background: var(--bg); }
+  .screen {
+    max-width: 640px;
+    margin: 0 auto;
+    min-height: 100vh;
+    box-shadow: 0 0 60px rgba(0,0,0,0.35);
+  }
 }

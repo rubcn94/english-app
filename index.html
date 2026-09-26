@@ -140,13 +140,14 @@
       <div class="card-static">
         <div id="card-front-text" class="card-front-text"></div>
       </div>
-      <div class="input-area">
+      <div class="input-area" id="input-area">
         <input type="text" id="answer-input" class="answer-input"
                placeholder="Type your answer…"
                autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
                onkeydown="if(event.key==='Enter') checkAnswer()">
         <button class="btn-check" onclick="checkAnswer()">Check →</button>
       </div>
+      <div class="multi-blank-area hidden" id="multi-blank-area"></div>
     </div>
 
     <!-- PHASE 2: correction -->
@@ -160,6 +161,7 @@
         <div class="correction-correct" id="correction-correct"></div>
         <div class="correction-extra" id="correction-extra"></div>
       </div>
+      <div class="multi-blank-review hidden" id="multi-blank-review"></div>
       <div class="correction-note-wrap" id="correction-note-wrap">
         <div class="correction-note-text hidden" id="correction-note-text"></div>
         <button class="btn-correction-note" id="btn-correction-note" onclick="openCorrectionNoteModal()">+ Add a trick</button>
@@ -313,6 +315,7 @@
         <button class="btn-check" onclick="submitLevelTestAnswer()">Check →</button>
       </div>
       <div class="dynamic-choices hidden" id="leveltest-choice-area"></div>
+      <div class="multi-blank-area hidden" id="leveltest-multi-blank-area"></div>
     </div>
 
     <div id="leveltest-phase-correction" class="phase hidden">
@@ -325,6 +328,7 @@
         <div class="correction-correct" id="leveltest-correction-correct"></div>
         <div class="correction-extra" id="leveltest-correction-extra"></div>
       </div>
+      <div class="multi-blank-review hidden" id="leveltest-multi-blank-review"></div>
       <button class="btn-primary" onclick="nextLevelTestExercise()">Next →</button>
     </div>
   </div>

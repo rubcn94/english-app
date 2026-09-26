@@ -7,11 +7,13 @@ const BLUE_DATA = [
       {
         id: "b1_01",
         front: "Use _____ for routines and permanent facts.\n\n'I ___ to work every day.'",
+        blanks: ["present simple", "go"],
         back: "Present simple\n\n'I go to work every day.'\n\n📌 Routines · facts · permanent states"
       },
       {
         id: "b1_02",
         front: "Use _____ for actions happening right now or temporary situations.\n\n'I ___ (study) for my exam this week.'",
+        blanks: ["present continuous", "am studying"],
         back: "Present continuous\n\n'I am studying for my exam this week.'\n\n📌 Now · temporary · in progress"
       },
       {
@@ -22,26 +24,31 @@ const BLUE_DATA = [
       {
         id: "b1_04",
         front: "Use _____ for a completed action in the past.\n\n'She ___ (leave) at 8am yesterday.'",
+        blanks: ["past simple", "left"],
         back: "Past simple\n\n'She left at 8am yesterday.'\n\n📌 Triggers: yesterday · ago · last week · in 2010"
       },
       {
         id: "b1_05",
         front: "Use _____ for an action in progress when another happened.\n\n'I ___ (read) when the phone rang.'",
+        blanks: ["past continuous", "was reading"],
         back: "Past continuous\n\n'I was reading when the phone rang.'\n\n📌 Background action interrupted by past simple"
       },
       {
         id: "b1_06",
         front: "TRICKY: 'have' as state vs action\n\nWhich uses continuous and which doesn't?\n\na) I ___ a car (possession)\nb) I ___ lunch (activity)",
+        blanks: ["have", "am having"],
         back: "a) ❌ continuous → I HAVE a car (possession = state)\nb) ✅ continuous → I'M HAVING lunch (activity = action)\n\n📌 have (own) = state / have (do) = action"
       },
       {
         id: "b1_07",
         front: "TRICKY: 'think' — state or action?\n\nChoose the correct form:\n\na) I ___ it's a great idea. (opinion)\nb) I ___ about you. (mental process)",
+        blanks: ["think", "am thinking"],
         back: "a) I THINK it's a great idea. (opinion = state → simple)\nb) I'M THINKING about you. (process = action → continuous)\n\n📌 think (believe) = simple / think (consider) = continuous"
       },
       {
         id: "b1_08",
         front: "Complete with the correct tense:\n\n'She usually ___ (walk) to work but today she ___ (take) the bus.'",
+        blanks: ["walks", "is taking"],
         back: "'She usually WALKS to work but today she IS TAKING the bus.'\n\n📌 usually + present simple · today (temporary) + present continuous"
       }
     ]
@@ -54,21 +61,25 @@ const BLUE_DATA = [
       {
         id: "b2_01",
         front: "Use _____ when the past is connected to the present.\n\n'I can't find my keys — I ___ (lose) them.'",
+        blanks: ["present perfect", "have lost / 've lost"],
         back: "Present perfect\n\n'I've lost them.'\n\n📌 Result matters NOW · don't know exact time"
       },
       {
         id: "b2_02",
         front: "Use _____ when you give a specific past time.\n\n'I ___ (lose) my keys yesterday.'",
+        blanks: ["past simple", "lost"],
         back: "Past simple\n\n'I lost my keys yesterday.'\n\n📌 yesterday · ago · last · in [year] → ALWAYS past simple"
       },
       {
         id: "b2_03",
         front: "Use _____ for how long an action has been happening.\n\n'She ___ (teach) here for 10 years.'",
+        blanks: ["present perfect continuous", "has been teaching"],
         back: "Present perfect continuous\n\n'She has been teaching here for 10 years.'\n\n📌 for · since · how long · recently → PP continuous"
       },
       {
         id: "b2_04",
         front: "FOR vs SINCE — which one?\n\n'I've lived here ___ 2018.'\n'I've lived here ___ six years.'",
+        blanks: ["since", "for"],
         back: "'I've lived here SINCE 2018.' (point in time)\n'I've lived here FOR six years.' (duration)\n\n📌 SINCE = starting point / FOR = length of time"
       },
       {
@@ -84,16 +95,19 @@ const BLUE_DATA = [
       {
         id: "b2_07",
         front: "Use _____ for an action completed BEFORE another past action.\n\n'When I arrived, she ___ (already leave).'",
+        blanks: ["past perfect", "had already left"],
         back: "Past perfect\n\n'When I arrived, she had already left.'\n\n📌 Past perfect = the earlier of two past actions"
       },
       {
         id: "b2_08",
         front: "JUST · ALREADY · YET — which tense?\n\n'Have you eaten ___?'\n'I've ___ eaten.'\n'She's ___ arrived.'",
+        blanks: ["yet", "already", "just"],
         back: "YET → questions and negatives: 'Have you eaten yet?'\nALREADY → affirmative: 'I've already eaten.'\nJUST → very recently: 'She's just arrived.'\n\n📌 All three → present perfect"
       },
       {
         id: "b2_09",
         front: "EVER · NEVER — which tense?\n\n'Have you ___ been to Japan?'\n'I've ___ tried sushi.'",
+        blanks: ["ever", "never"],
         back: "EVER → questions: 'Have you ever been to Japan?'\nNEVER → negative: 'I've never tried sushi.'\n\n📌 Life experience up to now → present perfect"
       },
       {
@@ -131,6 +145,7 @@ const BLUE_DATA = [
       {
         id: "b3_05",
         front: "WILL vs GOING TO — prediction\n\nWhich uses which?\n\na) 'The forecast says it ___ snow tomorrow.'\nb) 'I think she ___ be a great doctor.'",
+        blanks: ["is going to", "will / 'll"],
         back: "a) It's going to snow. (evidence: forecast)\nb) I think she'll be a great doctor. (personal opinion, no evidence)\n\n📌 Evidence → going to / Opinion/guess → will"
       },
       {
@@ -153,11 +168,13 @@ const BLUE_DATA = [
       {
         id: "b4_01",
         front: "MUST vs HAVE TO — what's the difference?\n\na) 'I ___ wear a uniform at work.' (rule imposed by boss)\nb) 'I ___ call her — it's important to me.' (personal decision)",
+        blanks: ["have to", "must"],
         back: "a) I HAVE TO wear a uniform. (external obligation)\nb) I MUST call her. (internal decision)\n\n📌 must = you decide · have to = someone/rule imposes"
       },
       {
         id: "b4_02",
         front: "MUST NOT vs DON'T HAVE TO — same or different?\n\na) You ___ tell anyone. (forbidden)\nb) You ___ come if you don't want to. (not necessary)",
+        blanks: ["must not / mustn't", "don't have to"],
         back: "DIFFERENT!\n\na) You MUST NOT tell anyone. (prohibition = forbidden)\nb) You DON'T HAVE TO come. (no obligation = your choice)\n\n📌 mustn't = forbidden / don't have to = not necessary"
       },
       {
@@ -173,6 +190,7 @@ const BLUE_DATA = [
       {
         id: "b4_05",
         front: "CAN vs COULD vs BE ABLE TO\n\n'She ___ speak three languages when she was ten.'\n'I ___ come tomorrow if you need me.'",
+        blanks: ["could", "can / will be able to"],
         back: "'She COULD speak three languages when she was ten.' (past ability)\n'I CAN / WILL BE ABLE TO come tomorrow.' (future ability)\n\n📌 could = past general ability / was able to = specific past achievement"
       },
       {
@@ -200,21 +218,25 @@ const BLUE_DATA = [
       {
         id: "b5_01",
         front: "1st conditional — when?\n\n'If it ___ (rain), I ___ (stay) home.'",
+        blanks: ["rains", "'ll stay / will stay"],
         back: "'If it rains, I'll stay home.'\n\n📌 if + present simple → will + infinitive\nReal/possible situation"
       },
       {
         id: "b5_02",
         front: "2nd conditional — when?\n\n'If I ___ (be) rich, I ___ (travel) the world.'",
+        blanks: ["were", "would travel"],
         back: "'If I were rich, I would travel the world.'\n\n📌 if + past simple → would + infinitive\nHypothetical present (not real)\nNote: were (not was) for all persons in formal use"
       },
       {
         id: "b5_03",
         front: "3rd conditional — when?\n\n'If she ___ (study) harder, she ___ (pass) the exam.'",
+        blanks: ["had studied", "would have passed"],
         back: "'If she had studied harder, she would have passed the exam.'\n\n📌 if + past perfect → would have + past participle\nImaginary past (can't change what happened)"
       },
       {
         id: "b5_04",
         front: "WISH + past simple vs wish + past perfect\n\n'I wish I ___ taller.' (I'm not tall)\n'I wish I ___ harder.' (I didn't study — regret)",
+        blanks: ["were", "had studied"],
         back: "'I wish I WERE taller.' (present wish — not true now)\n'I wish I HAD STUDIED harder.' (past regret)\n\n📌 wish + past simple = present hypothetical\nwish + past perfect = past regret"
       },
       {
@@ -274,6 +296,7 @@ const BLUE_DATA = [
       {
         id: "b7_02",
         front: "SAY vs TELL — which needs an object?\n\na) He ___ that he was late.\nb) He ___ me that he was late.",
+        blanks: ["said", "told"],
         back: "a) He SAID that he was late. (no object after say)\nb) He TOLD me that he was late. (object needed after tell)\n\n📌 say + (that) / tell + person + (that)\n❌ He told that... / He said me..."
       },
       {
@@ -296,6 +319,7 @@ const BLUE_DATA = [
       {
         id: "b8_01",
         front: "Question tags — rule:\n\n'It's cold, ___?'\n'You don't know, ___?'\n'She can swim, ___?'",
+        blanks: ["isn't it", "do you", "can't she"],
         back: "'It's cold, ISN'T IT?'\n'You don't know, DO YOU?'\n'She can swim, CAN'T SHE?'\n\n📌 Positive → negative tag / Negative → positive tag\nSame auxiliary as the statement"
       },
       {
@@ -323,36 +347,43 @@ const BLUE_DATA = [
       {
         id: "b9_01",
         front: "Which verbs take -ING?\n\nComplete: 'I enjoy ___ (swim).'\nComplete: 'She avoids ___ (eat) sugar.'",
+        blanks: ["swimming", "eating"],
         back: "'I enjoy SWIMMING.'\n'She avoids EATING sugar.'\n\n📌 enjoy · mind · avoid · finish · stop · admit · deny · suggest · recommend · keep"
       },
       {
         id: "b9_02",
         front: "Which verbs take TO + infinitive?\n\nComplete: 'He decided ___ (leave).'\nComplete: 'She promised ___ (call).'",
+        blanks: ["to leave", "to call"],
         back: "'He decided TO LEAVE.'\n'She promised TO CALL.'\n\n📌 want · need · hope · decide · plan · manage · offer · refuse · promise · agree · seem"
       },
       {
         id: "b9_03",
         front: "REMEMBER — two meanings:\n\n'I remember ___ (lock) the door.' (I did it — I recall)\n'Remember ___ (lock) the door.' (don't forget to do it)",
+        blanks: ["locking", "to lock"],
         back: "'I remember LOCKING the door.' (-ing = recall a past action)\n'Remember TO LOCK the door.' (to = future obligation)\n\n📌 -ing looks back · to looks forward"
       },
       {
         id: "b9_04",
         front: "STOP — two meanings:\n\n'He stopped ___ (smoke).'\n'He stopped ___ (buy) a newspaper.'",
+        blanks: ["smoking", "to buy"],
         back: "'He stopped SMOKING.' (gave up the habit)\n'He stopped TO BUY a newspaper.' (paused in order to buy)\n\n📌 stop -ing = quit / stop to = pause for a purpose"
       },
       {
         id: "b9_05",
         front: "TRY — two meanings:\n\n'Try ___ (add) more salt.' (experiment)\n'I tried ___ (open) the door but it was locked.' (attempt with effort)",
+        blanks: ["adding", "to open"],
         back: "'Try ADDING more salt.' (experiment — see if it works)\n'I tried TO OPEN the door.' (attempted but possibly failed)\n\n📌 try -ing = experiment / try to = attempt"
       },
       {
         id: "b9_06",
         front: "Preposition + verb → always ___\n\n'She's good at ___ (cook).'\n'He left without ___ (say) goodbye.'",
+        blanks: ["-ing", "cooking", "saying"],
         back: "Preposition + -ING always\n\n'She's good at COOKING.'\n'He left without SAYING goodbye.'\n\n📌 at · in · on · of · about · without + -ing"
       },
       {
         id: "b9_07",
         front: "USED TO vs BE USED TO vs GET USED TO\n\n'I ___ live in Paris.' (past habit)\n'I ___ living alone now.' (it's normal for me)\n'It took time to ___ the cold.'",
+        blanks: ["used to", "am used to", "get used to"],
         back: "'I USED TO live in Paris.' (past habit, no longer)\n'I'M USED TO living alone.' (accustomed now)\n'It took time to GET USED TO the cold.' (process of adapting)\n\n📌 used to + inf / be used to + -ing / get used to + -ing"
       }
     ]
@@ -365,26 +396,31 @@ const BLUE_DATA = [
       {
         id: "b10_01",
         front: "A vs THE — first mention vs second mention:\n\n'I saw ___ dog. ___ dog was barking.'",
+        blanks: ["a", "the"],
         back: "'I saw A dog. THE dog was barking.'\n\n📌 First mention = a/an (one of many)\nSecond mention = the (we know which one)"
       },
       {
         id: "b10_02",
         front: "No article (∅) — when?\n\n'I like ___music.'\n'She goes to ___ school every day.'\n'He's at ___ work.'",
+        blanks: ["∅", "∅", "∅"],
         back: "'I like ∅ music.' (general — not specific)\n'She goes to ∅ school.' (function, not building)\n'He's at ∅ work.' (activity)\n\n📌 ∅ with general plural/uncountable · go to bed/school/work/church"
       },
       {
         id: "b10_03",
         front: "THE with unique things:\n\nComplete: '___ sun · ___ moon · ___ internet · ___ north of Spain'",
+        blanks: ["the", "the", "the", "the"],
         back: "THE sun · THE moon · THE internet · THE north of Spain\n\n📌 Unique = only one exists → always the\nAlso: the radio · the cinema · the theatre"
       },
       {
         id: "b10_04",
         front: "Countable vs uncountable — which needs an article change?\n\n'I need ___ information.'\n'I need ___ piece of information.'",
+        blanks: ["∅", "a"],
         back: "'I need ∅ information.' (uncountable — no a/an)\n'I need A piece of information.' (made countable with unit)\n\n📌 Uncountable nouns need a unit: a piece of · a bit of · a slice of"
       },
       {
         id: "b10_05",
         front: "SOME vs ANY — rule?\n\n'I'd like ___ coffee.'\n'Do you have ___ questions?'\n'I don't have ___ money.'",
+        blanks: ["some", "any", "any"],
         back: "'I'd like SOME coffee.' (affirmative)\n'Do you have ANY questions?' (question)\n'I don't have ANY money.' (negative)\n\n📌 some = affirmative / any = questions and negatives\nException: 'Would you like SOME tea?' (offer)"
       }
     ]
@@ -397,6 +433,7 @@ const BLUE_DATA = [
       {
         id: "b11_01",
         front: "Reflexive pronouns — when?\n\n'She hurt ___.' (herself/her)\n'I did it ___.' (myself/alone)",
+        blanks: ["herself", "by myself"],
         back: "'She hurt HERSELF.' (subject = object)\n'I did it BY MYSELF.' (alone, without help)\n\n📌 -self/-selves when subject = object\nby myself = alone"
       },
       {
@@ -407,11 +444,13 @@ const BLUE_DATA = [
       {
         id: "b11_03",
         front: "BOTH · EITHER · NEITHER — which?\n\n'___ of them came.' (= none of the two)\n'___ of them came.' (= the two of them)\n'___ day works for me.' (= one or the other)",
+        blanks: ["neither", "both", "either"],
         back: "'NEITHER of them came.' (not one, not the other)\n'BOTH of them came.' (the two)\n'EITHER day works for me.' (one or the other)\n\n📌 neither + singular verb / both + plural verb"
       },
       {
         id: "b11_04",
         front: "ALL · MOST · SOME · NO + of — when to add 'of'?\n\n'___ people like music.' (general)\n'___ the people at the party left early.' (specific)",
+        blanks: ["most", "most of"],
         back: "'MOST people like music.' (general → no 'of')\n'MOST OF THE people at the party left early.' (specific → of + the)\n\n📌 General noun → no 'of' / Specific reference → of + the/my/his..."
       }
     ]
@@ -429,6 +468,7 @@ const BLUE_DATA = [
       {
         id: "b12_02",
         front: "WHO · WHICH · THAT · WHOSE — which for each?\n\n'The man ___ called.'\n'The car ___ was stolen.'\n'The man ___ car was stolen.'",
+        blanks: ["who", "which / that", "whose"],
         back: "'The man WHO called.' (person)\n'The car WHICH / THAT was stolen.' (thing)\n'The man WHOSE car was stolen.' (possession)\n\n📌 who = person · which = thing · that = either (defining only) · whose = possession"
       },
       {
@@ -446,16 +486,19 @@ const BLUE_DATA = [
       {
         id: "b13_01",
         front: "Comparatives — short vs long adjectives:\n\n'This is ___ (cheap) than that.'\n'She is ___ (intelligent) than him.'",
+        blanks: ["cheaper", "more intelligent"],
         back: "'This is CHEAPER than that.' (1 syllable → -er)\n'She is MORE INTELLIGENT than him.' (3+ syllables → more)\n\n📌 1 syllable → -er/est · 2+ syllables → more/most\nIrregular: good→better→best · bad→worse→worst"
       },
       {
         id: "b13_02",
         front: "TOO vs ENOUGH — position and meaning:\n\n'It's ___ hot ___ eat.'\n'It's hot ___ swim.'",
+        blanks: ["too", "to", "enough to"],
         back: "'It's TOO hot TO eat.' (excess — negative)\n'It's hot ENOUGH TO swim.' (sufficient — positive)\n\n📌 too + adj + to / adj + enough + to\nEnough comes AFTER the adjective"
       },
       {
         id: "b13_03",
         front: "Adjective vs adverb — which?\n\n'She is a ___ (quick) learner.'\n'She learns ___ (quick).'",
+        blanks: ["quick", "quickly"],
         back: "'She is a QUICK learner.' (adjective → modifies noun)\n'She learns QUICKLY.' (adverb → modifies verb)\n\n📌 Adjective + noun / Adverb + verb/adjective/adverb"
       },
       {
@@ -473,21 +516,25 @@ const BLUE_DATA = [
       {
         id: "b14_01",
         front: "AT · ON · IN for time — which?\n\n'___ 3pm'\n'___ Monday'\n'___ March'\n'___ 2026'",
+        blanks: ["at", "on", "in", "in"],
         back: "AT 3pm (exact time)\nON Monday (specific day)\nIN March / IN 2026 (month, year, season)\n\n📌 AT = point · ON = day/date · IN = longer period"
       },
       {
         id: "b14_02",
         front: "AT · ON · IN for place — which?\n\n'___ the door'\n'___ the table'\n'___ the box'\n'___ London'",
+        blanks: ["at", "on", "in", "in"],
         back: "AT the door (specific point)\nON the table (surface)\nIN the box (inside/enclosed)\nIN London (city/country)\n\n📌 AT = point/location · ON = surface · IN = inside"
       },
       {
         id: "b14_03",
         front: "BY vs UNTIL — difference?\n\n'The report must be ready ___ Friday.'\n'I'll wait ___ Friday.'",
+        blanks: ["by", "until"],
         back: "'The report must be ready BY Friday.' (deadline — no later than)\n'I'll wait UNTIL Friday.' (continuous up to that point)\n\n📌 by = deadline (action completed before) · until = duration up to a point"
       },
       {
         id: "b14_04",
         front: "Common verb + preposition pairs:\n\n'She's good ___ maths.'\n'He's interested ___ history.'\n'I'm afraid ___ spiders.'",
+        blanks: ["at", "in", "of"],
         back: "'She's good AT maths.'\n'He's interested IN history.'\n'I'm afraid OF spiders.'\n\n📌 good at · interested in · afraid of · bored with · responsible for · excited about"
       }
     ]

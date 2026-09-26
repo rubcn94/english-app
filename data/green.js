@@ -7,6 +7,7 @@ const GREEN_DATA = [
       {
         id: "g1_01",
         front: "Narrative tenses — three roles:\n\n'I ___ (walk) home when I ___ (see) him. He ___ (already leave).'\n\nWhich tense for each?",
+        blanks: ["was walking", "saw", "had already left"],
         back: "I WAS WALKING home (past continuous = background)\nwhen I SAW him (past simple = main event)\nHe HAD ALREADY LEFT (past perfect = earlier event)\n\n📌 Past simple → sequence · Past continuous → backdrop · Past perfect → flashback"
       },
       {
@@ -39,6 +40,7 @@ const GREEN_DATA = [
       {
         id: "g2_01",
         front: "Future continuous — when?\n\n'This time tomorrow I ___ (fly) to London.'\n'I ___ (see) Tom later — want me to give him a message?'",
+        blanks: ["will be flying", "will be seeing"],
         back: "'I WILL BE FLYING to London.' (in progress at future point)\n'I WILL BE SEEING Tom later.' (natural/planned — not a deliberate decision)\n\n📌 will be + -ing = action in progress at future time OR natural consequence of plans"
       },
       {
@@ -76,6 +78,7 @@ const GREEN_DATA = [
       {
         id: "g3_02",
         front: "WOULD RATHER — structure and meaning:\n\n'I'd rather ___ (stay) home tonight.'\n'I'd rather you ___ (not come).'",
+        blanks: ["stay", "didn't come"],
         back: "'I'd rather STAY home tonight.' (same subject → bare infinitive)\n'I'd rather you DIDN'T COME.' (different subject → past tense)\n\n📌 would rather + bare inf (same subject)\nwould rather + subject + past tense (different subject)"
       },
       {
@@ -86,6 +89,7 @@ const GREEN_DATA = [
       {
         id: "g3_04",
         front: "Modal + HAVE for past — four key examples:\n\na) She ___ (must/leave) by now.\nb) You ___ (should/call) me.\nc) He ___ (might/forget).\nd) They ___ (can't/know).",
+        blanks: ["must have left", "should have called", "might have forgotten", "can't have known"],
         back: "a) She MUST HAVE LEFT by now. (near-certain deduction)\nb) You SHOULD HAVE CALLED me. (criticism — you didn't)\nc) He MIGHT HAVE FORGOTTEN. (possibility in the past)\nd) They CAN'T HAVE KNOWN. (near-certain impossibility)\n\n📌 must have = certain · should have = criticism · might have = possibility · can't have = impossible"
       },
       {
@@ -103,6 +107,7 @@ const GREEN_DATA = [
       {
         id: "g4_01",
         front: "Linking verbs — adjective or adverb after them?\n\n'She looks ___ (tired/tiredly).'\n'The milk went ___ (sour/sourly).'",
+        blanks: ["tired", "sour"],
         back: "'She looks TIRED.' (adjective — describes subject)\n'The milk went SOUR.' (adjective)\n\n📌 Linking verbs + adjective (NOT adverb)\nLinking verbs: appear · become · feel · get · go · grow · keep · look · remain · seem · smell · sound · stay · taste · turn"
       },
       {
@@ -130,11 +135,13 @@ const GREEN_DATA = [
       {
         id: "g5_01",
         front: "Perception verbs: bare infinitive vs -ing\n\n'I saw him ___ (cross) the street.' (complete action)\n'I saw him ___ (cross) the street.' (in progress)",
+        blanks: ["cross", "crossing"],
         back: "'I saw him CROSS the street.' (complete action — I saw all of it)\n'I saw him CROSSING the street.' (in progress — I saw part of it)\n\n📌 see/hear/watch/notice + obj + bare inf = complete\n+ obj + -ing = in progress"
       },
       {
         id: "g5_02",
         front: "Causative verbs — four types:\n\nMAKE · LET · HAVE · GET\n\n'She ___ him apologise.'\n'___ me help you.'\n'I ___ my car fixed.'\n'I ___ him to call you.'",
+        blanks: ["made", "let", "had", "got"],
         back: "'She MADE him apologise.' (forced — bare inf)\n'LET me help you.' (allowed — bare inf)\n'I HAD my car fixed.' (arranged — past participle)\n'I'll HAVE him call you.' / 'I GOT him to call you.' (arranged — to inf with get)\n\n📌 make/let + bare inf · have + pp · get + to inf"
       },
       {
@@ -157,6 +164,7 @@ const GREEN_DATA = [
       {
         id: "g6_02",
         front: "ACCUSE · BLAME · WARN · REMIND — structures:\n\n'He ___ her ___ lying.'\n'She ___ him ___ not go.'\n'I ___ her ___ call.'",
+        blanks: ["accused", "of", "warned", "not to", "reminded", "to"],
         back: "'He ACCUSED her OF lying.' (accuse + of + -ing)\n'She WARNED him NOT TO GO.' (warn + not to + inf)\n'I REMINDED her TO CALL.' (remind + to + inf)\n\n📌 accuse of -ing · warn not to · remind to · blame for -ing · congratulate on -ing"
       },
       {
@@ -179,6 +187,7 @@ const GREEN_DATA = [
       {
         id: "g7_02",
         front: "Collective nouns — singular or plural? (British English)\n\n'The team ___ playing well.'\n'The government ___ announced new policies.'",
+        blanks: ["is / are", "has / have"],
         back: "Both singular AND plural possible in BrE!\n\n'The team IS playing well.' OR 'The team ARE playing well.'\n\n📌 BrE: collective nouns can be singular (unit) or plural (individuals)\nAmE: always singular"
       },
       {
@@ -196,21 +205,25 @@ const GREEN_DATA = [
       {
         id: "g8_01",
         front: "THE with institutions — rule:\n\n'___ government · ___ police · ___ internet'\nvs\n'___ Parliament · ___ Congress · ___ France'",
+        blanks: ["the", "the", "the", "∅", "∅", "∅"],
         back: "THE government · THE police · THE internet (general reference)\n∅ Parliament · ∅ Congress · ∅ France (proper nouns / names)\n\n📌 Exceptions with the: the United States · the Netherlands · the north of Spain\nCountries with 'united/republic/kingdom' → the"
       },
       {
         id: "g8_02",
         front: "EVERY vs EACH — subtle difference:\n\n'___ student passed the exam.'\n'___ student received a certificate.'",
+        blanks: ["every", "each"],
         back: "EVERY student passed. (thinking of all as a group)\nEACH student received a certificate. (thinking of one by one)\n\n📌 every = group focus · each = individual focus\nBoth take singular verb"
       },
       {
         id: "g8_03",
         front: "A LITTLE vs LITTLE · A FEW vs FEW:\n\n'I have ___ time.' (some, enough)\n'I have ___ time.' (barely any — problem)\n'There are ___ options.' (some)\n'There are ___ options.' (barely any — problem)",
+        blanks: ["a little", "little", "a few", "few"],
         back: "'I have A LITTLE time.' (some — positive)\n'I have LITTLE time.' (barely any — negative)\n'There are A FEW options.' (some — positive)\n'There are FEW options.' (barely any — negative)\n\n📌 a little/a few = positive small amount\nlittle/few = negative, almost nothing"
       },
       {
         id: "g8_04",
         front: "MUCH vs MANY vs A LOT OF — register?\n\n'She doesn't have ___ money.'\n'There were ___ people at the party.'\n'He has ___ experience.'",
+        blanks: ["much", "many", "a lot of"],
         back: "'She doesn't have MUCH money.' (much = formal/negative/questions)\n'There were MANY people.' (many = formal/written)\n'He has A LOT OF experience.' (a lot of = informal/affirmative)\n\n📌 much/many = formal or negative/question context\na lot of = neutral, affirmative"
       }
     ]
@@ -245,11 +258,13 @@ const GREEN_DATA = [
       {
         id: "g10_01",
         front: "ONE / ONES — substitution:\n\n'I need a pen. Do you have ___?'\n'I like the red dress but not the blue ___.'",
+        blanks: ["one", "one"],
         back: "'Do you have ONE?' (any one)\n'Not the blue ONE.' (that specific one)\n\n📌 one = substitutes a/an + noun\nones = plural substitute\nNot used after 'the' alone: 'I prefer the ∅' (not 'the one'... unless distinguishing)"
       },
       {
         id: "g10_02",
         front: "SO and NOT as clause substitutes:\n\n'Is it going to rain?' → 'I think ___.' (yes)\n'Will he come?' → 'I hope ___.' (no)",
+        blanks: ["so", "not"],
         back: "'I think SO.' (yes/positive)\n'I hope NOT.' (no/negative)\n\n📌 Verbs using so/not: think · believe · hope · expect · suppose · imagine · say · tell\n'I don't think so.' NOT 'I think not.' (modern English)"
       },
       {
@@ -272,6 +287,7 @@ const GREEN_DATA = [
       {
         id: "g11_02",
         front: "Gradable vs non-gradable adjectives:\n\nWhich intensifier goes with each?\n\n'___ tired' vs '___ exhausted'\n'___ hot' vs '___ boiling'",
+        blanks: ["very", "absolutely", "very", "absolutely"],
         back: "VERY tired (gradable)\nABSOLUTELY exhausted (non-gradable/extreme)\nVERY hot (gradable)\nABSOLUTELY boiling (non-gradable)\n\n📌 Gradable → very/quite/rather\nNon-gradable/extreme → absolutely/completely/totally/utterly\nReally works with both"
       },
       {
@@ -289,6 +305,7 @@ const GREEN_DATA = [
       {
         id: "g12_01",
         front: "ALTHOUGH vs HOWEVER vs DESPITE:\n\n'___ it was cold, she went out.'\n'It was cold. ___, she went out.'\n'She went out ___ the cold.'",
+        blanks: ["although", "however", "despite"],
         back: "'ALTHOUGH it was cold, she went out.' (one sentence)\n'However, she went out.' (two sentences, comma after however)\n'She went out DESPITE the cold.' (+ noun/pronoun)\n'She went out DESPITE FEELING cold.' (+ -ing)\n\n📌 although/even though + clause · however + sentence · despite/in spite of + noun/-ing"
       },
       {
@@ -299,6 +316,7 @@ const GREEN_DATA = [
       {
         id: "g12_03",
         front: "UNLESS vs IF NOT — always interchangeable?\n\n'I won't go ___ you come.'\n'___ I'm wrong, he left already.'",
+        blanks: ["unless", "if"],
         back: "'I won't go UNLESS you come.' ✅ = if you don't come\n'IF I'M NOT wrong, he left already.' ✅\n'Unless I'm wrong...' ⚠️ less natural here\n\n📌 Unless works for conditions · less natural with concessive/tentative meanings\nunless = if...not (but not always replaceable)"
       },
       {
@@ -326,6 +344,7 @@ const GREEN_DATA = [
       {
         id: "g13_03",
         front: "Verb + preposition collocations (advanced):\n\n'She ___ her success ___ hard work.'\n'He ___ his failure ___ bad luck.'\n'They ___ the problem ___ a solution.'",
+        blanks: ["attributed", "to", "blamed", "on", "approached", "with"],
         back: "'She ATTRIBUTED her success TO hard work.'\n'He BLAMED his failure ON bad luck.'\n'They APPROACHED the problem WITH a solution.'\n\n📌 attribute to · blame on · accuse of · rely on · result in · consist of · succeed in"
       }
     ]
