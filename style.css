@@ -568,6 +568,9 @@ input.hidden { display: none; }
   transition: border-color 0.15s, background 0.15s;
 }
 .dynamic-choice-btn:active { border-color: var(--blue); background: var(--surface2); }
+.dynamic-choice-btn:disabled { cursor: default; opacity: 0.6; }
+.dynamic-choice-btn.choice-correct { opacity: 1; border-color: var(--easy); background: #1a3a2a; color: var(--easy); }
+.dynamic-choice-btn.choice-wrong { opacity: 1; border-color: var(--again); background: #3a1a1a; color: var(--again); }
 .dynamic-topic-tag {
   font-size: 0.72rem;
   color: #c568e0;

@@ -149,6 +149,79 @@ function isAllBlanksCorrect(userInputs, card) {
   return card.blanks.every((blank, i) => isBlankCorrect(userInputs[i] || '', blank));
 }
 
+// ── Multiple-choice distractors ─────────────────────────────────────────────
+// Every question in blocked study + the level test is answered by picking
+// from 2-4 buttons instead of typing, so every question needs "wrong"
+// options pulled from real answers elsewhere in the data — there's no
+// curated distractor field, this is generated at render time.
+const CHOICE_TARGET = 4;
+
+// Readable (original-case) text for what a card's answer looks like on
+// screen — NOT the same as getCorrectAnswers(), which normalises to
+// lowercase for comparison. Vocab cards can have "answer1 / answer2" — use
+// only the first alternative as the display/option text.
+function getReadableAnswer(card) {
+  return card.back.split('\n')[0].split(' / ')[0].replace(/\(.*?\)/g, '').trim();
+}
+
+// Other cards' readable answers to draw distractors from: same section
+// first (most sections are small — 3-8 cards in Blue/Green — so this often
+// isn't enough on its own), falling back to the whole book when the
+// section alone can't supply enough unique candidates.
+function getDistractorPool(book, sectionNum, excludeCardId) {
+  const data = getData(book);
+  const section = data.find(s => s.section === sectionNum);
+  const fromSection = section
+    ? section.cards.filter(c => c.id !== excludeCardId).map(getReadableAnswer)
+    : [];
+  const uniqueInSection = new Set(fromSection.map(normalise));
+  if (uniqueInSection.size >= CHOICE_TARGET) return fromSection;
+
+  const fromBook = getAllCards(book).filter(c => c.id !== excludeCardId).map(getReadableAnswer);
+  return fromSection.concat(fromBook);
+}
+
+// Builds the final shuffled option list for one question: the correct
+// answer plus up to (count-1) unique distractors pulled from `pool`.
+// Distractors whose normalised form matches the correct answer are
+// dropped (vocab sections often repeat a synonym across cards — that
+// would otherwise show up as a second "correct" option). Never returns
+// fewer than 2 options when at least one distinct distractor exists
+// anywhere in the pool; returns null if the pool has none at all (caller
+// falls back to free-text input for that one question).
+function buildChoiceOptions(correctDisplay, pool, count) {
+  const correctNorm = normalise(correctDisplay);
+  const seen = new Set([correctNorm]);
+  const distractors = [];
+  shuffle(pool).forEach(candidate => {
+    if (distractors.length >= count - 1) return;
+    const n = normalise(candidate);
+    if (!n || seen.has(n)) return;
+    seen.add(n);
+    distractors.push(candidate);
+  });
+  if (distractors.length === 0) return null;
+  return shuffle([correctDisplay, ...distractors]);
+}
+
+// Multi-blank version: one option set per blank. Distractor candidates for
+// blank i are the OTHER blanks' answers in the same card (cheap, always
+// available, and usually plausible-looking since they're the same
+// grammar point) combined with the section/book pool used for single
+// answers — so a 3-blank card doesn't just recycle its own 2 other
+// answers when the section can supply more variety.
+function buildMultiBlankChoices(card, book, sectionNum) {
+  const pool = getDistractorPool(book, sectionNum, card.id);
+  return card.blanks.map((blank, i) => {
+    const correctDisplay = blank.split(' / ')[0].trim();
+    const ownOtherBlanks = card.blanks
+      .filter((_, j) => j !== i)
+      .map(b => b.split(' / ')[0].trim());
+    const combinedPool = ownOtherBlanks.concat(pool);
+    return buildChoiceOptions(correctDisplay, combinedPool, CHOICE_TARGET);
+  });
+}
+
 // ── Screen navigation ─────────────────────────────────────────────────────────
 const LAST_SCREEN_KEY = 'eng_last_screen_v1';
 // Screens that make sense to restore as-is after a reload (no in-progress
@@ -288,6 +361,29 @@ function shuffle(arr) {
   return a;
 }
 
+// id -> {book, section} for every card in every book, built once and reused
+// to tag cards with where they came from regardless of entry point
+// (startSection/startAllDue/startCustomQueue/glossary all reach
+// beginBlockedStudy with plain card objects that may not carry _book/
+// _section) — multiple-choice distractor pooling needs to know a card's
+// section without re-deriving it per call site.
+let _cardLocationIndex = null;
+function getCardLocationIndex() {
+  if (_cardLocationIndex) return _cardLocationIndex;
+  _cardLocationIndex = {};
+  ['blue', 'green', 'vocab'].forEach(book => {
+    getData(book).forEach(sec => {
+      sec.cards.forEach(c => { _cardLocationIndex[c.id] = { book, section: sec.section }; });
+    });
+  });
+  return _cardLocationIndex;
+}
+function tagCardLocation(card) {
+  if (card._book && card._section != null) return card;
+  const loc = getCardLocationIndex()[card.id];
+  return loc ? { ...card, _book: loc.book, _section: loc.section } : card;
+}
+
 // ── Blocked study: theory -> practice loop, Duolingo-style ─────────────────────
 // Splits a queue into chunks of BLOCK_SIZE. Each block is shown as a theory
 // pass (read every card, front+back, no quiz) followed by a practice loop
@@ -297,7 +393,8 @@ function shuffle(arr) {
 function beginBlockedStudy(cards, title) {
   state.sessionStats = { again: 0, hard: 0, good: 0, easy: 0 };
   state.blocks = [];
-  for (let i = 0; i < cards.length; i += BLOCK_SIZE) state.blocks.push(cards.slice(i, i + BLOCK_SIZE));
+  const tagged = cards.map(tagCardLocation);
+  for (let i = 0; i < tagged.length; i += BLOCK_SIZE) state.blocks.push(tagged.slice(i, i + BLOCK_SIZE));
   state.blockIndex = 0;
   document.getElementById('study-title').textContent = title;
   showScreen('study');
@@ -365,43 +462,85 @@ function finishCurrentBlock() {
   else { updateStreak(); showSummary(); }
 }
 
-// ── Multi-blank rendering (shared by blocked study + level test) ───────────────
-// Builds one labeled input per card.blanks[i] into `container`, focuses the
-// first one, and wires Enter-to-advance between inputs (last one triggers
-// onSubmit, same as pressing Check).
-function renderMultiBlankInputs(container, card, onSubmit) {
+// ── Choice rendering (shared by blocked study + level test) ────────────────────
+// Every question is answered by picking one of 2-4 buttons instead of
+// typing. Picking a choice highlights it (green if correct, red if wrong,
+// and the correct one is revealed in green either way) and disables the
+// whole group so it can't be re-picked, then calls onSubmit with the
+// picked text once — same "answer locked in" semantics the old text input
+// had via the disabled-while-answered guard.
+function renderChoiceGroup(container, options, correctDisplay, onSubmit) {
   container.innerHTML = '';
-  card.blanks.forEach((_, i) => {
+  const correctNorm = normalise(correctDisplay);
+  let answered = false;
+  options.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'dynamic-choice-btn';
+    btn.textContent = opt;
+    btn.onclick = () => {
+      if (answered) return;
+      answered = true;
+      const picked = opt;
+      const pickedCorrect = normalise(picked) === correctNorm;
+      container.querySelectorAll('.dynamic-choice-btn').forEach(b => {
+        b.disabled = true;
+        if (normalise(b.textContent) === correctNorm) b.classList.add('choice-correct');
+        else if (b === btn) b.classList.add('choice-wrong');
+      });
+      onSubmit(picked, pickedCorrect);
+    };
+    container.appendChild(btn);
+  });
+}
+
+// Single-answer card (no card.blanks): builds the options from the section/
+// book distractor pool and renders one choice group. Falls back to null
+// when there's truly no distractor anywhere (caller decides what to do —
+// in practice this never happens given the dataset size, but a section
+// could theoretically be down to 1 card with nothing else to compare against).
+function buildSingleChoiceOptions(card, book, sectionNum) {
+  const correctDisplay = getReadableAnswer(card);
+  const pool = getDistractorPool(book, sectionNum, card.id);
+  return buildChoiceOptions(correctDisplay, pool, CHOICE_TARGET);
+}
+
+// Multi-blank rendering: one labeled choice group per card.blanks[i]. Each
+// group must be answered before the "Check" button (submits all picks at
+// once) is enabled — mirrors the old "fill every input, then Check"
+// behaviour instead of auto-advancing/auto-submitting on the last pick,
+// so a wrong early pick can still be reviewed before moving on.
+function renderMultiBlankChoices(container, card, book, sectionNum, onSubmit) {
+  container.innerHTML = '';
+  const perBlankOptions = buildMultiBlankChoices(card, book, sectionNum);
+  const picks = new Array(card.blanks.length).fill(null);
+
+  const checkBtn = document.createElement('button');
+  checkBtn.className = 'btn-check';
+  checkBtn.textContent = 'Check →';
+  checkBtn.disabled = true;
+  checkBtn.onclick = () => onSubmit(picks.slice());
+
+  card.blanks.forEach((blank, i) => {
+    const correctDisplay = blank.split(' / ')[0].trim();
+    const options = perBlankOptions[i] || buildChoiceOptions(correctDisplay, [correctDisplay], 2) || [correctDisplay];
     const item = document.createElement('div');
     item.className = 'multi-blank-item';
     const label = document.createElement('div');
     label.className = 'multi-blank-label';
     label.textContent = `Blank ${i + 1} of ${card.blanks.length}`;
-    const input = document.createElement('input');
-    input.type = 'text';
-    input.className = 'answer-input multi-blank-input';
-    input.autocomplete = 'off'; input.autocorrect = 'off'; input.autocapitalize = 'off'; input.spellcheck = false;
-    input.dataset.blankIndex = i;
-    input.onkeydown = (e) => {
-      if (e.key !== 'Enter') return;
-      const inputs = container.querySelectorAll('.multi-blank-input');
-      if (i + 1 < inputs.length) inputs[i + 1].focus();
-      else onSubmit();
-    };
     item.appendChild(label);
-    item.appendChild(input);
+
+    const group = document.createElement('div');
+    group.className = 'dynamic-choices';
+    renderChoiceGroup(group, options, correctDisplay, (picked) => {
+      picks[i] = picked;
+      checkBtn.disabled = picks.some(p => p === null);
+    });
+    item.appendChild(group);
     container.appendChild(item);
   });
-  const btn = document.createElement('button');
-  btn.className = 'btn-check';
-  btn.textContent = 'Check →';
-  btn.onclick = onSubmit;
-  container.appendChild(btn);
-  setTimeout(() => { const first = container.querySelector('.multi-blank-input'); if (first) first.focus(); }, 100);
-}
 
-function readMultiBlankInputs(container) {
-  return [...container.querySelectorAll('.multi-blank-input')].map(inp => inp.value.trim());
+  container.appendChild(checkBtn);
 }
 
 function renderMultiBlankReview(container, card, userAnswers) {
@@ -432,18 +571,23 @@ function loadCard() {
   document.getElementById('phase-correction').classList.add('hidden');
   document.getElementById('card-front-text').textContent = card.front;
 
-  const inputArea = document.getElementById('input-area');
+  const choiceArea = document.getElementById('input-area');
   const multiArea = document.getElementById('multi-blank-area');
   if (hasBlanks(card)) {
-    inputArea.classList.add('hidden');
+    choiceArea.classList.add('hidden');
     multiArea.classList.remove('hidden');
-    renderMultiBlankInputs(multiArea, card, checkAnswer);
+    renderMultiBlankChoices(multiArea, card, card._book, card._section, (picks) => finishAnswer(card, picks));
   } else {
     multiArea.classList.add('hidden');
-    inputArea.classList.remove('hidden');
-    const input = document.getElementById('answer-input');
-    input.value = '';
-    setTimeout(() => input.focus(), 100);
+    choiceArea.classList.remove('hidden');
+    const options = buildSingleChoiceOptions(card, card._book, card._section);
+    if (options) {
+      renderChoiceGroup(choiceArea, options, getReadableAnswer(card), (picked) => finishAnswer(card, picked));
+    } else {
+      // No distractor anywhere in the data for this card (practically never
+      // happens) — show the single correct answer as a one-button "reveal".
+      renderChoiceGroup(choiceArea, [getReadableAnswer(card)], getReadableAnswer(card), (picked) => finishAnswer(card, picked));
+    }
   }
 
   const blockTotal = state.blocks[state.blockIndex].length;
@@ -454,26 +598,23 @@ function loadCard() {
     Math.round(((blockTotal - remaining) / blockTotal) * 100) + '%';
 }
 
-function checkAnswer() {
+// Called once the user has answered (single choice picked, or every
+// multi-blank group picked + Check pressed). `picked` is either a string
+// (single choice) or an array of per-blank picks (multi-blank).
+function finishAnswer(card, picked) {
   if (document.getElementById('phase-question').classList.contains('hidden')) return; // already answered
-  const card = state.blockQueue[0];
-  if (!card) return;
 
-  const multiArea = document.getElementById('multi-blank-area');
   const multiReview = document.getElementById('multi-blank-review');
   let userAnswer, correct;
 
   if (hasBlanks(card)) {
-    const answers = readMultiBlankInputs(multiArea);
-    if (answers.every(a => !a)) return; // nothing typed at all yet
+    const answers = picked;
     correct = isAllBlanksCorrect(answers, card);
     userAnswer = answers.join(' / ');
     renderMultiBlankReview(multiReview, card, answers);
     multiReview.classList.remove('hidden');
   } else {
-    const input = document.getElementById('answer-input');
-    userAnswer = input.value.trim();
-    if (!userAnswer) return;
+    userAnswer = picked;
     correct = isCorrect(userAnswer, card);
     multiReview.classList.add('hidden');
   }
@@ -533,11 +674,8 @@ function openCorrectionNoteModal() {
 function showQuestion() {
   document.getElementById('phase-question').classList.remove('hidden');
   document.getElementById('phase-correction').classList.add('hidden');
-  const card = state.blockQueue[0];
-  if (card && hasBlanks(card)) return; // inputs already hold what was typed, just re-show them
-  const input = document.getElementById('answer-input');
-  input.value = '';
-  setTimeout(() => input.focus(), 100);
+  // Choice buttons already show what was picked (disabled, highlighted
+  // correct/wrong) — just re-reveal the question phase, nothing to reset.
 }
 
 function rateCard(rating) {
@@ -1150,6 +1288,15 @@ function buildLevelTestQueue() {
   return items;
 }
 
+// A level test item's section number for distractor pooling: blue/green
+// items carry it in sectionKey ("blue:4" -> 4); vocab items' sectionKey is
+// just the literal string "vocab", so the real section number comes from
+// the card's own _section (set by getAllCards('vocab') in buildLevelTestQueue).
+function levelTestItemSectionNum(item) {
+  if (item.book === 'vocab') return item.card._section;
+  return Number(item.sectionKey.split(':')[1]);
+}
+
 function loadLevelTestExercise() {
   const item = levelTestState.queue[levelTestState.index];
   if (!item) { finishLevelTest(); return; }
@@ -1175,49 +1322,59 @@ function loadLevelTestExercise() {
   document.getElementById('leveltest-phase-correction').classList.add('hidden');
   document.getElementById('leveltest-front-text').textContent = front;
 
-  const inputArea = document.getElementById('leveltest-input-area');
-  const choiceArea = document.getElementById('leveltest-choice-area');
+  const choiceArea = document.getElementById('leveltest-input-area');
   const multiArea = document.getElementById('leveltest-multi-blank-area');
   if (exercise && exercise.options) {
-    inputArea.classList.add('hidden');
+    // Dynamic Tests generator already built its own options (multiple-choice
+    // type) — untouched, same as the Dynamic Tests screen.
     multiArea.classList.add('hidden');
     choiceArea.classList.remove('hidden');
-    choiceArea.innerHTML = '';
-    exercise.options.forEach(opt => {
-      const btn = document.createElement('button');
-      btn.className = 'dynamic-choice-btn';
-      btn.textContent = opt;
-      btn.onclick = () => checkLevelTestAnswer(opt);
-      choiceArea.appendChild(btn);
-    });
-  } else if (!exercise && hasBlanks(item.card)) {
-    choiceArea.classList.add('hidden');
-    inputArea.classList.add('hidden');
-    multiArea.classList.remove('hidden');
-    renderMultiBlankInputs(multiArea, item.card, checkLevelTestMultiBlankAnswer);
-  } else {
-    choiceArea.classList.add('hidden');
+    renderChoiceGroup(choiceArea, exercise.options, exercise.correct, (picked) => checkLevelTestAnswer(picked));
+  } else if (exercise) {
+    // Dynamic Tests generator with no built-in options (gap-fill type) —
+    // there's no card/section to pool distractors from, so regenerate a
+    // few more instances of the same template and use their distinct
+    // `correct` values as distractors (always available, templates are
+    // infinite by design).
     multiArea.classList.add('hidden');
-    inputArea.classList.remove('hidden');
-    const input = document.getElementById('leveltest-answer-input');
-    input.value = '';
-    setTimeout(() => input.focus(), 100);
+    choiceArea.classList.remove('hidden');
+    const options = buildChoiceOptions(exercise.correct, generateDynamicDistractorPool(item.template, exercise.correct), CHOICE_TARGET);
+    renderChoiceGroup(choiceArea, options || [exercise.correct], exercise.correct, (picked) => checkLevelTestAnswer(picked));
+  } else if (hasBlanks(item.card)) {
+    choiceArea.classList.add('hidden');
+    multiArea.classList.remove('hidden');
+    renderMultiBlankChoices(multiArea, item.card, item.book, levelTestItemSectionNum(item), checkLevelTestMultiBlankAnswer);
+  } else {
+    multiArea.classList.add('hidden');
+    choiceArea.classList.remove('hidden');
+    const options = buildSingleChoiceOptions(item.card, item.book, levelTestItemSectionNum(item));
+    const correctDisplay = getReadableAnswer(item.card);
+    renderChoiceGroup(choiceArea, options || [correctDisplay], correctDisplay, (picked) => checkLevelTestAnswer(picked));
   }
 }
 
-function submitLevelTestAnswer() {
-  const input = document.getElementById('leveltest-answer-input');
-  const val = input.value.trim();
-  if (!val) return;
-  checkLevelTestAnswer(val);
+// Regenerates a template's exercises a handful of times to collect other
+// `correct` values as multiple-choice distractors — used only for the
+// level test's dynamic gap-fill items, which have no card/section to pool
+// from otherwise. Skips options-based generators (already handled above)
+// and any run that reproduces the same correct answer.
+function generateDynamicDistractorPool(template, excludeCorrect) {
+  const rand = makeRand();
+  const pool = [];
+  for (let i = 0; i < 12 && pool.length < CHOICE_TARGET * 2; i++) {
+    const gen = rand.pick(template.generators);
+    const ex = gen.build(rand);
+    if (ex.options) continue;
+    if (normalise(ex.correct) === normalise(excludeCorrect)) continue;
+    pool.push(ex.correct);
+  }
+  return pool;
 }
 
-function checkLevelTestMultiBlankAnswer() {
+function checkLevelTestMultiBlankAnswer(answers) {
   const questionPhase = document.getElementById('leveltest-phase-question');
   if (questionPhase.classList.contains('hidden')) return;
   const item = levelTestState.queue[levelTestState.index];
-  const answers = readMultiBlankInputs(document.getElementById('leveltest-multi-blank-area'));
-  if (answers.every(a => !a)) return;
   recordLevelTestAnswer(item, isAllBlanksCorrect(answers, item.card), answers);
 }
 
