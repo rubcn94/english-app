@@ -358,6 +358,8 @@ const GREEN_DATA = [
       {
         id: "g12_04",
         front: "PROVIDED THAT · AS LONG AS · GIVEN THAT:\n\nMatch to meaning:\na) considering that (it's already true)\nb) on the condition that\nc) with the condition that (same as b, slightly formal)",
+        answer: "given that, as long as, provided that",
+        freeText: true,
         back: "a) GIVEN THAT (accepting a known fact as premise)\nb) AS LONG AS (condition for something to happen)\nc) PROVIDED / PROVIDING THAT (same — slightly formal)\n\n📌 given that = since · as long as / provided that = only if"
       }
     ]

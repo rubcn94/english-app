@@ -173,9 +173,14 @@ const CHOICE_TARGET_MULTI_BLANK = 2;
 // rather than a short answer — "a) ❌ I'm knowing the answer", "BE passive
 // = neutral/formal", etc — unusable as a multiple-choice option as-is. For
 // those, a hand-written `card.answer` field holds the clean short answer;
-// it takes priority over parsing `back` when present.
+// it takes priority over parsing `back` when present. A card with
+// `blanks` and no `answer` (the multi-blank cards) falls back to its
+// combined blanks instead of `back` — otherwise it would leak its raw
+// explanation text into OTHER cards' distractor pools via
+// getDistractorPool, which calls this on every card in a section/book.
 function getReadableAnswer(card) {
   if (card.answer) return card.answer.split(' / ')[0].trim();
+  if (hasBlanks(card)) return card.blanks.map(b => b.split(' / ')[0].trim()).join(' / ');
   return card.back.split('\n')[0].split(' / ')[0].replace(/\(.*?\)/g, '').trim();
 }
 
@@ -204,11 +209,25 @@ function getDistractorPool(book, sectionNum, excludeCardId) {
 // fewer than 2 options when at least one distinct distractor exists
 // anywhere in the pool; returns null if the pool has none at all (caller
 // falls back to free-text input for that one question).
+//
+// Candidates are tried in order of how close their length is to the
+// correct answer's, not pure random order — when the pool gets widened
+// to the whole book (small sections), it can mix wildly different
+// grammar topics, and a distractor several times longer/shorter than the
+// real answer instantly gives the question away without reading it, e.g.
+// "Turn it off" next to a full phrasal-verb-matching sentence pulled in
+// from an unrelated section. Ties (similar length) are still shuffled
+// for variety.
 function buildChoiceOptions(correctDisplay, pool, count) {
   const correctNorm = normalise(correctDisplay);
+  const correctLen = correctDisplay.length;
   const seen = new Set([correctNorm]);
+  const byLengthCloseness = shuffle(pool)
+    .map(candidate => ({ candidate, diff: Math.abs(candidate.length - correctLen) }))
+    .sort((a, b) => a.diff - b.diff);
+
   const distractors = [];
-  shuffle(pool).forEach(candidate => {
+  byLengthCloseness.forEach(({ candidate }) => {
     if (distractors.length >= count - 1) return;
     const n = normalise(candidate);
     if (!n || seen.has(n)) return;
@@ -219,22 +238,44 @@ function buildChoiceOptions(correctDisplay, pool, count) {
   return shuffle([correctDisplay, ...distractors]);
 }
 
-// Multi-blank version: one option set per blank. Distractor candidates for
-// blank i are the OTHER blanks' answers in the same card (cheap, always
-// available, and usually plausible-looking since they're the same
-// grammar point) combined with the section/book pool used for single
-// answers — so a 3-blank card doesn't just recycle its own 2 other
-// answers when the section can supply more variety.
-function buildMultiBlankChoices(card, book, sectionNum) {
+// Builds up to CHOICE_TARGET full combined-answer options for a multi-blank
+// card: the correct combination plus distractor combinations that each
+// differ from it in exactly one blank (swap blank i's answer for a wrong
+// candidate, keep the rest correct). A one-blank-off distractor reads as a
+// real near-miss instead of an obviously-wrong jumble, and stays roughly
+// as hard to spot as the per-blank groups this replaces. Candidates for
+// blank i come from the card's OTHER blanks first (same grammar point,
+// always available) then the section/book pool used for single answers.
+function buildCombinedMultiBlankOptions(card, book, sectionNum, correctAnswers) {
   const pool = getDistractorPool(book, sectionNum, card.id);
-  return card.blanks.map((blank, i) => {
-    const correctDisplay = blank.split(' / ')[0].trim();
-    const ownOtherBlanks = card.blanks
-      .filter((_, j) => j !== i)
-      .map(b => b.split(' / ')[0].trim());
-    const combinedPool = ownOtherBlanks.concat(pool);
-    return buildChoiceOptions(correctDisplay, combinedPool, CHOICE_TARGET_MULTI_BLANK);
-  });
+  const correctDisplay = buildCombinedAnswerText(correctAnswers);
+  const correctNorm = normalise(correctDisplay);
+  const seen = new Set([correctNorm]);
+  const combos = [];
+
+  const blankIndexesShuffled = shuffle(correctAnswers.map((_, i) => i));
+  for (const i of blankIndexesShuffled) {
+    if (combos.length >= CHOICE_TARGET - 1) break;
+    const ownOtherBlanks = correctAnswers.filter((_, j) => j !== i);
+    const targetLen = correctAnswers[i].length;
+    // Same length-closeness preference as buildChoiceOptions — a swapped-in
+    // candidate several times longer/shorter than what it replaces makes
+    // the whole combo stick out and gives the answer away without reading it.
+    const candidates = shuffle(ownOtherBlanks.concat(pool))
+      .sort((a, b) => Math.abs(a.length - targetLen) - Math.abs(b.length - targetLen));
+    const wrongForThisBlank = candidates.find(c => normalise(c) !== normalise(correctAnswers[i]) && c.trim());
+    if (!wrongForThisBlank) continue;
+    const combo = correctAnswers.slice();
+    combo[i] = wrongForThisBlank.trim();
+    const comboText = buildCombinedAnswerText(combo);
+    const comboNorm = normalise(comboText);
+    if (seen.has(comboNorm)) continue;
+    seen.add(comboNorm);
+    combos.push(comboText);
+  }
+
+  if (combos.length === 0) return [correctDisplay];
+  return shuffle([correctDisplay, ...combos]);
 }
 
 // ── Screen navigation ─────────────────────────────────────────────────────────
@@ -519,43 +560,30 @@ function buildSingleChoiceOptions(card, book, sectionNum) {
   return buildChoiceOptions(correctDisplay, pool, CHOICE_TARGET);
 }
 
-// Multi-blank rendering: one labeled choice group per card.blanks[i]. Each
-// group must be answered before the "Check" button (submits all picks at
-// once) is enabled — mirrors the old "fill every input, then Check"
-// behaviour instead of auto-advancing/auto-submitting on the last pick,
-// so a wrong early pick can still be reviewed before moving on.
+// Multi-blank rendering: ONE choice group of up to 4 buttons, each button a
+// full combined answer across every blank (e.g. "go / was reading" for a
+// 2-blank card), joined with " / " to match how alternatives are already
+// displayed elsewhere. Picking a button answers every blank in the card at
+// once instead of one blank-group at a time — onSubmit still receives an
+// array of per-blank strings (same contract finishAnswer/
+// checkLevelTestMultiBlankAnswer already expect), it's just parsed back out
+// of whichever combined option was picked.
+function buildCombinedAnswerText(perBlankAnswers) {
+  return perBlankAnswers.join(' / ');
+}
+
 function renderMultiBlankChoices(container, card, book, sectionNum, onSubmit) {
   container.innerHTML = '';
-  const perBlankOptions = buildMultiBlankChoices(card, book, sectionNum);
-  const picks = new Array(card.blanks.length).fill(null);
+  const correctAnswers = card.blanks.map(b => b.split(' / ')[0].trim());
+  const correctDisplay = buildCombinedAnswerText(correctAnswers);
+  const options = buildCombinedMultiBlankOptions(card, book, sectionNum, correctAnswers);
 
-  const checkBtn = document.createElement('button');
-  checkBtn.className = 'btn-check';
-  checkBtn.textContent = 'Check →';
-  checkBtn.disabled = true;
-  checkBtn.onclick = () => onSubmit(picks.slice());
-
-  card.blanks.forEach((blank, i) => {
-    const correctDisplay = blank.split(' / ')[0].trim();
-    const options = perBlankOptions[i] || buildChoiceOptions(correctDisplay, [correctDisplay], 2) || [correctDisplay];
-    const item = document.createElement('div');
-    item.className = 'multi-blank-item';
-    const label = document.createElement('div');
-    label.className = 'multi-blank-label';
-    label.textContent = `Blank ${i + 1} of ${card.blanks.length}`;
-    item.appendChild(label);
-
-    const group = document.createElement('div');
-    group.className = 'dynamic-choices';
-    renderChoiceGroup(group, options, correctDisplay, (picked) => {
-      picks[i] = picked;
-      checkBtn.disabled = picks.some(p => p === null);
-    });
-    item.appendChild(group);
-    container.appendChild(item);
+  const group = document.createElement('div');
+  group.className = 'dynamic-choices';
+  renderChoiceGroup(group, options, correctDisplay, (picked) => {
+    onSubmit(picked.split(' / ').map(s => s.trim()));
   });
-
-  container.appendChild(checkBtn);
+  container.appendChild(group);
 }
 
 function renderMultiBlankReview(container, card, userAnswers) {

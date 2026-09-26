@@ -93,6 +93,7 @@ const BLUE_DATA = [
       {
         id: "b2_06",
         front: "Correct the error:\n\n'Mozart has written over 600 compositions.'",
+        answer: "Mozart wrote over 600 compositions",
         back: "❌ Mozart has written...\n✅ Mozart WROTE over 600 compositions.\n\n📌 Dead people / historical facts → ALWAYS past simple"
       },
       {
@@ -214,6 +215,8 @@ const BLUE_DATA = [
       {
         id: "b4_07",
         front: "WOULD — uses\n\nMatch each:\na) Would you like some tea?\nb) I would always walk to school as a child.\nc) She would help if she could.",
+        answer: "polite offer/request, past habit, conditional",
+        freeText: true,
         back: "a) Polite offer/request\nb) Past habit (= used to)\nc) Conditional\n\n📌 would = polite · past habit · conditional"
       },
       {
