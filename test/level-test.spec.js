@@ -23,6 +23,24 @@ function testAllWrongYieldsZeroScoreWithoutCrashing() {
   assert(result.total > 0, 'level test produced zero questions');
 }
 
+// Regression test for an intermittent (~1-in-4 to ~1-in-15 runs) bug: a
+// curated Dynamic Test generator with very few distinct possible answers
+// (e.g. a should/shouldn't advice generator with only 4 hand-picked items)
+// could exhaust its distractor-generation attempts and land the question
+// on a single unpickable-wrong option, silently scoring as "correct" even
+// when the harness deliberately picks "wrong". A single run isn't enough
+// to catch this reliably given how rare it was — run the whole level test
+// many times to make a reintroduced regression fail loudly instead of
+// flaking green most of the time.
+function testAllWrongNeverScoresCorrectAcrossManyRuns() {
+  const RUNS = 25;
+  for (let i = 0; i < RUNS; i++) {
+    const h = load();
+    const result = h.runFullLevelTest('wrong');
+    assertEqual(result.correct, 0, `run ${i + 1}/${RUNS}: expected zero correct answers when always answering wrong, got ${result.correct}`);
+  }
+}
+
 function testSectionStatsTotalsMatchOverallTotal() {
   const h = load();
   const result = h.runFullLevelTest('correct');
@@ -63,6 +81,7 @@ function testCancellingMidTestKeepsAnsweredProgress() {
 module.exports = {
   testAllCorrectYieldsFullScore,
   testAllWrongYieldsZeroScoreWithoutCrashing,
+  testAllWrongNeverScoresCorrectAcrossManyRuns,
   testSectionStatsTotalsMatchOverallTotal,
   testFinishLevelTestPersistsProgress,
   testCancellingMidTestKeepsAnsweredProgress,

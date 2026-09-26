@@ -27,6 +27,22 @@ function loadKnown() {
 }
 function saveKnown(k) { localStorage.setItem(KNOWN_KEY, JSON.stringify(k)); }
 
+// ── Dates ─────────────────────────────────────────────────────────────────────
+// Local-calendar-day string (YYYY-MM-DD), NOT toISOString().slice(0,10) —
+// that reads UTC, so anyone west of Greenwich (Spain included, for the ~1h
+// of the year outside DST, and more broadly anyone in the Americas) sees
+// "today"/"due" flip over at the wrong local time, e.g. still showing
+// yesterday's date between 00:00-01:00/02:00 local. Every date used to
+// decide "is this due today" or "did the streak continue" must go through
+// this, not toISOString().
+function localDateStr(date) {
+  const d = date || new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
 // ── SM-2 ──────────────────────────────────────────────────────────────────────
 function sm2(card, rating) {
   let { interval = 1, repetitions = 0, easeFactor = 2.5 } = card || {};
@@ -40,10 +56,10 @@ function sm2(card, rating) {
   easeFactor = Math.max(1.3, easeFactor + 0.1 - (5 - rating) * (0.08 + (5 - rating) * 0.02));
   const due = new Date();
   due.setDate(due.getDate() + interval);
-  return { interval, repetitions, easeFactor: Math.round(easeFactor * 1000) / 1000, dueDate: due.toISOString().slice(0, 10) };
+  return { interval, repetitions, easeFactor: Math.round(easeFactor * 1000) / 1000, dueDate: localDateStr(due) };
 }
 
-function todayStr() { return new Date().toISOString().slice(0, 10); }
+function todayStr() { return localDateStr(); }
 function isDue(card) { if (!card || !card.dueDate) return true; return card.dueDate <= todayStr(); }
 
 // ── App state ─────────────────────────────────────────────────────────────────
@@ -117,6 +133,19 @@ function normalise(str) {
     .replace(/\s+/g, ' ');
 }
 
+// Escapes text inserted into innerHTML templates (glossary notes, imported
+// via backup JSON the user can hand-edit, and card front/back/answer text
+// that could in principle contain HTML-special characters) so it renders
+// as plain text instead of being parsed as markup.
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 function getCorrectAnswers(card) {
   // card.answer (hand-written clean answer) takes priority when present —
   // same reasoning as getReadableAnswer: some grammar cards' `back` is a
@@ -157,12 +186,6 @@ function isAllBlanksCorrect(userInputs, card) {
 // options pulled from real answers elsewhere in the data — there's no
 // curated distractor field, this is generated at render time.
 const CHOICE_TARGET = 4;
-// Multi-blank cards (several ___ in one question) show one choice group per
-// blank — at 4 options each, a 3-4 blank card became a wall of buttons. 2
-// options per blank (correct + 1 distractor) keeps each blank quick to
-// answer while the question as a whole still has real variety across its
-// blanks.
-const CHOICE_TARGET_MULTI_BLANK = 2;
 
 // Readable (original-case) text for what a card's answer looks like on
 // screen — NOT the same as getCorrectAnswers(), which normalises to
@@ -218,10 +241,10 @@ function getDistractorPool(book, sectionNum, excludeCardId) {
 // "Turn it off" next to a full phrasal-verb-matching sentence pulled in
 // from an unrelated section. Ties (similar length) are still shuffled
 // for variety.
-function buildChoiceOptions(correctDisplay, pool, count) {
+function buildChoiceOptions(correctDisplay, pool, count, extraExcludeAnswers) {
   const correctNorm = normalise(correctDisplay);
   const correctLen = correctDisplay.length;
-  const seen = new Set([correctNorm]);
+  const seen = new Set([correctNorm, ...(extraExcludeAnswers || []).map(normalise)]);
   const byLengthCloseness = shuffle(pool)
     .map(candidate => ({ candidate, diff: Math.abs(candidate.length - correctLen) }))
     .sort((a, b) => a.diff - b.diff);
@@ -577,7 +600,13 @@ function renderChoiceGroup(container, options, correctDisplay, onSubmit) {
 function buildSingleChoiceOptions(card, book, sectionNum) {
   const correctDisplay = getReadableAnswer(card);
   const pool = getDistractorPool(book, sectionNum, card.id);
-  return buildChoiceOptions(correctDisplay, pool, CHOICE_TARGET);
+  // getReadableAnswer only surfaces the FIRST valid alternative (e.g. "am
+  // going to visit" out of "am going to visit / am visiting") — a
+  // distractor pulled from another card that happens to equal a secondary
+  // alternative of THIS card's answer would otherwise get shown as a wrong
+  // option while actually being correct. Exclude every alternative
+  // getCorrectAnswers() knows about, not just the displayed one.
+  return buildChoiceOptions(correctDisplay, pool, CHOICE_TARGET, getCorrectAnswers(card));
 }
 
 // Multi-blank rendering: ONE choice group of up to 4 buttons, each button a
@@ -658,11 +687,11 @@ function loadCard() {
     choiceArea.classList.remove('hidden');
     const options = buildSingleChoiceOptions(card, card._book, card._section);
     if (options) {
-      renderChoiceGroup(choiceArea, options, getReadableAnswer(card), (picked) => finishAnswer(card, picked));
+      renderChoiceGroup(choiceArea, options, getReadableAnswer(card), (picked, isRight) => finishAnswer(card, picked, isRight));
     } else {
       // No distractor anywhere in the data for this card (practically never
       // happens) — show the single correct answer as a one-button "reveal".
-      renderChoiceGroup(choiceArea, [getReadableAnswer(card)], getReadableAnswer(card), (picked) => finishAnswer(card, picked));
+      renderChoiceGroup(choiceArea, [getReadableAnswer(card)], getReadableAnswer(card), (picked, isRight) => finishAnswer(card, picked, isRight));
     }
   }
 
@@ -686,8 +715,15 @@ function submitFreeTextAnswer() {
 // Called once the user has answered (single choice picked, every
 // multi-blank group picked + Check pressed, or free-text Check pressed).
 // `picked` is a string (single choice / free text) or an array of
-// per-blank picks (multi-blank).
-function finishAnswer(card, picked) {
+// per-blank picks (multi-blank). `knownCorrect` is the correctness
+// renderChoiceGroup already decided when `picked` came from a button click
+// (comparing against the single `correctDisplay` string it was given) —
+// passed through here instead of recomputed via isCorrect(), which checks
+// against ALL of getCorrectAnswers()'s alternatives and could disagree
+// with what the button just showed as right/wrong if a distractor happened
+// to text-match a secondary valid alternative. Free text has no prior
+// verdict to reuse, so it still resolves correctness itself.
+function finishAnswer(card, picked, knownCorrect) {
   if (document.getElementById('phase-question').classList.contains('hidden')) return; // already answered
 
   const multiReview = document.getElementById('multi-blank-review');
@@ -701,7 +737,7 @@ function finishAnswer(card, picked) {
     multiReview.classList.remove('hidden');
   } else {
     userAnswer = picked;
-    correct = isCorrect(userAnswer, card);
+    correct = typeof knownCorrect === 'boolean' ? knownCorrect : isCorrect(userAnswer, card);
     multiReview.classList.add('hidden');
   }
   state.lastAnswerCorrect = correct;
@@ -817,7 +853,7 @@ function updateStreak() {
   const today = todayStr();
   const yesterday = new Date();
   yesterday.setDate(yesterday.getDate() - 1);
-  const yStr = yesterday.toISOString().slice(0, 10);
+  const yStr = localDateStr(yesterday);
   if (s.lastDate === today) return;
   s.count = s.lastDate === yStr ? s.count + 1 : 1;
   s.lastDate = today;
@@ -1114,9 +1150,12 @@ function renderGlossary() {
     const isKnown = !!state.known[card.id];
     const note    = state.notes[card.id] || '';
 
-    // Parse word and translation from card
-    const answer      = card.back.split('\n')[0];
-    const translation = card.back.split('\n\n')[1] || '';
+    // Clean short answer (not the raw, sometimes messy `back` text) and its
+    // translation/extra line.
+    const answer      = escapeHtml(getReadableAnswer(card));
+    const translation = escapeHtml(card.back.split('\n\n')[1] || '');
+    const front        = escapeHtml(card.front);
+    const noteEscaped  = escapeHtml(note);
 
     const item = document.createElement('div');
     item.className = 'glossary-item' + (isKnown ? ' is-known' : '');
@@ -1129,8 +1168,8 @@ function renderGlossary() {
       <div class="gitem-body">
         <div class="gitem-word">${answer}</div>
         ${translation ? `<div class="gitem-translation">${translation}</div>` : ''}
-        <div class="gitem-sentence">${card.front}</div>
-        ${note ? `<div class="gitem-note">💡 ${note}</div>` : ''}
+        <div class="gitem-sentence">${front}</div>
+        ${note ? `<div class="gitem-note">💡 ${noteEscaped}</div>` : ''}
       </div>
       <button class="gitem-note-btn ${note ? 'has-note' : ''}" onclick="openNoteModal('${card.id}')">
         ${note ? '✏️' : '+ note'}
@@ -1180,7 +1219,7 @@ function openNoteModalForCard(card, onSaved) {
   noteTargetId = card.id;
   noteSavedCallback = onSaved || null;
 
-  const answer      = card.back.split('\n')[0];
+  const answer      = getReadableAnswer(card);
   const translation = card.back.split('\n\n')[1] || '';
 
   document.getElementById('modal-word').textContent        = answer;
@@ -1386,11 +1425,11 @@ function loadLevelTestExercise() {
   const item = levelTestState.queue[levelTestState.index];
   if (!item) { finishLevelTest(); return; }
 
-  let front, exercise;
+  let front, exercise, exerciseGen;
   if (item.kind === 'dynamic') {
     const rand = makeRand();
-    const gen = rand.pick(item.template.generators);
-    exercise = gen.build(rand);
+    exerciseGen = rand.pick(item.template.generators);
+    exercise = exerciseGen.build(rand);
     front = exercise.front;
   } else {
     front = item.card.front;
@@ -1416,18 +1455,20 @@ function loadLevelTestExercise() {
     multiArea.classList.add('hidden');
     freeTextArea.classList.add('hidden');
     choiceArea.classList.remove('hidden');
-    renderChoiceGroup(choiceArea, exercise.options, exercise.correct, (picked) => checkLevelTestAnswer(picked));
+    renderChoiceGroup(choiceArea, exercise.options, exercise.correct, (picked, isRight) => checkLevelTestAnswer(picked, isRight));
   } else if (exercise) {
     // Dynamic Tests generator with no built-in options (gap-fill type) —
     // there's no card/section to pool distractors from, so regenerate a
-    // few more instances of the same template and use their distinct
-    // `correct` values as distractors (always available, templates are
-    // infinite by design).
+    // few more instances of the SAME generator (not a random one from the
+    // template — a template can mix a multiple-choice generator with a
+    // gap-fill one, and picking randomly wastes attempts re-rolling a
+    // generator whose output gets discarded for already having its own
+    // options) and use their distinct `correct` values as distractors.
     multiArea.classList.add('hidden');
     freeTextArea.classList.add('hidden');
     choiceArea.classList.remove('hidden');
-    const options = buildChoiceOptions(exercise.correct, generateDynamicDistractorPool(item.template, exercise.correct), CHOICE_TARGET);
-    renderChoiceGroup(choiceArea, options || [exercise.correct], exercise.correct, (picked) => checkLevelTestAnswer(picked));
+    const options = buildChoiceOptions(exercise.correct, generateDynamicDistractorPool(exerciseGen, exercise.correct), CHOICE_TARGET);
+    renderChoiceGroup(choiceArea, options || [exercise.correct], exercise.correct, (picked, isRight) => checkLevelTestAnswer(picked, isRight));
   } else if (item.card.freeText) {
     choiceArea.classList.add('hidden');
     multiArea.classList.add('hidden');
@@ -1446,7 +1487,7 @@ function loadLevelTestExercise() {
     choiceArea.classList.remove('hidden');
     const options = buildSingleChoiceOptions(item.card, item.book, levelTestItemSectionNum(item));
     const correctDisplay = getReadableAnswer(item.card);
-    renderChoiceGroup(choiceArea, options || [correctDisplay], correctDisplay, (picked) => checkLevelTestAnswer(picked));
+    renderChoiceGroup(choiceArea, options || [correctDisplay], correctDisplay, (picked, isRight) => checkLevelTestAnswer(picked, isRight));
   }
 }
 
@@ -1457,18 +1498,22 @@ function submitLevelTestFreeTextAnswer() {
   checkLevelTestAnswer(val);
 }
 
-// Regenerates a template's exercises a handful of times to collect other
-// `correct` values as multiple-choice distractors — used only for the
-// level test's dynamic gap-fill items, which have no card/section to pool
-// from otherwise. Skips options-based generators (already handled above)
-// and any run that reproduces the same correct answer.
-function generateDynamicDistractorPool(template, excludeCorrect) {
+// Regenerates the SAME generator that produced the current exercise a
+// number of times to collect other `correct` values as multiple-choice
+// distractors — used only for the level test's dynamic gap-fill items,
+// which have no card/section to pool from otherwise. Some curated
+// generators only have a handful of distinct possible answers (e.g. a
+// should/shouldn't advice generator with 4 hand-picked items — 2 "should",
+// 2 "shouldn't"), so this tries considerably more times than the target
+// pool size before giving up, instead of leaving a real possibility that
+// every attempt lands on the excluded answer and the question ends up with
+// only 1 option (impossible to answer wrong).
+function generateDynamicDistractorPool(gen, excludeCorrect) {
   const rand = makeRand();
   const pool = [];
-  for (let i = 0; i < 12 && pool.length < CHOICE_TARGET * 2; i++) {
-    const gen = rand.pick(template.generators);
+  for (let i = 0; i < 60 && pool.length < CHOICE_TARGET * 2; i++) {
     const ex = gen.build(rand);
-    if (ex.options) continue;
+    if (ex.options) continue; // shouldn't happen (caller only uses this for non-options generators), but stay defensive
     if (normalise(ex.correct) === normalise(excludeCorrect)) continue;
     pool.push(ex.correct);
   }
@@ -1482,13 +1527,18 @@ function checkLevelTestMultiBlankAnswer(answers) {
   recordLevelTestAnswer(item, isAllBlanksCorrect(answers, item.card), answers);
 }
 
-function checkLevelTestAnswer(userAnswer) {
+// `knownCorrect` is the correctness renderChoiceGroup already decided when
+// userAnswer came from a button click — see finishAnswer's comment for why
+// this avoids re-deciding with a second, possibly-disagreeing rule.
+function checkLevelTestAnswer(userAnswer, knownCorrect) {
   const questionPhase = document.getElementById('leveltest-phase-question');
   if (questionPhase.classList.contains('hidden')) return; // already answered this exercise
 
   const item = levelTestState.queue[levelTestState.index];
   const exercise = levelTestState.exercise;
-  const correct = exercise ? normalise(userAnswer) === normalise(exercise.correct) : isCorrect(userAnswer, item.card);
+  const correct = typeof knownCorrect === 'boolean'
+    ? knownCorrect
+    : (exercise ? normalise(userAnswer) === normalise(exercise.correct) : isCorrect(userAnswer, item.card));
   recordLevelTestAnswer(item, correct, userAnswer);
 }
 
