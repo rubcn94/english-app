@@ -19,6 +19,7 @@ const BLUE_DATA = [
       {
         id: "b1_03",
         front: "State verbs NEVER go in continuous.\n\nWhich of these is WRONG?\n\na) I know the answer\nb) I'm knowing the answer\nc) She wants coffee",
+        answer: "I'm knowing the answer",
         back: "b) ❌ I'm knowing the answer\n\n✅ I know the answer\n\n📌 State verbs: know · like · want · need · believe · understand · own · have (possession)"
       },
       {
@@ -85,6 +86,8 @@ const BLUE_DATA = [
       {
         id: "b2_05",
         front: "PP simple vs PP continuous — what's the difference?\n\na) I've read three books this month.\nb) I've been reading all afternoon.",
+        answer: "How many/much → PP simple, how long → PP continuous",
+        freeText: true,
         back: "a) PP simple → completed, number matters (three books)\nb) PP continuous → duration matters, process (all afternoon)\n\n📌 How many/much → PP simple · How long → PP continuous"
       },
       {
@@ -113,6 +116,7 @@ const BLUE_DATA = [
       {
         id: "b2_10",
         front: "State verbs + present perfect — correct or wrong?\n\n'I've been knowing him for years.'",
+        answer: "Wrong — I've known him for years",
         back: "❌ I've been knowing him for years.\n✅ I've known him for years.\n\n📌 State verbs (know · like · want) → NEVER in continuous, even with for/since"
       }
     ]
@@ -125,21 +129,25 @@ const BLUE_DATA = [
       {
         id: "b3_01",
         front: "You're deciding at the moment of speaking.\n\n'I'm hungry.' → '___ get a sandwich.'",
+        answer: "I'll",
         back: "'I'll get a sandwich.'\n\n📌 will = instant decision made while speaking"
       },
       {
         id: "b3_02",
         front: "You already had this plan before speaking.\n\n'What are you doing tonight?' → 'I ___ (visit) my parents.'",
+        answer: "am going to visit / am visiting",
         back: "'I'm going to visit my parents.' OR 'I'm visiting my parents.'\n\n📌 going to / present continuous = pre-made plan"
       },
       {
         id: "b3_03",
         front: "You can see evidence of what's about to happen.\n\n'Look at those clouds — it ___ (rain).'",
+        answer: "is going to rain",
         back: "'It's going to rain.'\n\n📌 going to = prediction based on present evidence"
       },
       {
         id: "b3_04",
         front: "Which is correct after WHEN, IF, BEFORE, AFTER, AS SOON AS?\n\na) I'll call you when I will arrive.\nb) I'll call you when I arrive.",
+        answer: "I'll call you when I arrive",
         back: "b) ✅ I'll call you when I ARRIVE.\n\n📌 After time conjunctions → present simple (NEVER will)\nwhen · if · before · after · as soon as · until"
       },
       {
@@ -151,11 +159,13 @@ const BLUE_DATA = [
       {
         id: "b3_06",
         front: "Present continuous for the future — when?\n\n'I ___ (meet) Sarah at 7pm tomorrow.'",
+        answer: "am meeting",
         back: "'I'm meeting Sarah at 7pm tomorrow.'\n\n📌 Arranged event with time + place already fixed\n→ like an entry in your diary"
       },
       {
         id: "b3_07",
         front: "Complete:\n\n'By the time you read this, I ___ (already leave).'",
+        answer: "will have already left",
         back: "'I will have already left.'\n\n📌 will have + past participle = future perfect\nAction completed before a future point"
       }
     ]
@@ -180,11 +190,14 @@ const BLUE_DATA = [
       {
         id: "b4_03",
         front: "Degrees of certainty — present\n\nOrder from most to least certain:\nmight be · must be · can't be · should be",
+        answer: "must be, should be, might be, can't be",
+        freeText: true,
         back: "must be (~95%) → deduction almost certain\nshould be (~80%) → expected\nmight be (~50%) → possible\ncan't be (~5%) → almost impossible\n\n📌 must be ≠ have to (obligation) in this context"
       },
       {
         id: "b4_04",
         front: "Modal + HAVE + past participle = past modal\n\nWhat do these mean?\n\na) You should have called.\nb) She must have left.\nc) He can't have known.",
+        answer: "criticism / deduction / impossibility",
         back: "a) You should have called. → but you didn't (criticism)\nb) She must have left. → almost certain she left (deduction)\nc) He can't have known. → impossible that he knew\n\n📌 modal + have + pp = judgement about the past"
       },
       {
@@ -206,6 +219,7 @@ const BLUE_DATA = [
       {
         id: "b4_08",
         front: "USED TO — correct or wrong?\n\na) I used to live in Madrid. (no longer true)\nb) I am used to waking up early. (it's normal for me now)\nc) I got used to the cold weather. (became accustomed)",
+        answer: "All three are correct",
         back: "All three are correct but different!\n\na) used to + inf = past habit/state (no longer)\nb) be used to + -ing = accustomed to (present)\nc) get used to + -ing = become accustomed (process)\n\n📌 Three completely different structures"
       }
     ]
@@ -242,11 +256,13 @@ const BLUE_DATA = [
       {
         id: "b5_05",
         front: "WISH + WOULD — when?\n\n'I wish he ___ stop talking.'",
+        answer: "would",
         back: "'I wish he WOULD stop talking.'\n\n📌 wish + would = annoyed about someone's behaviour\nWant them to change what they do"
       },
       {
         id: "b5_06",
         front: "IF ONLY vs I WISH — same or different?\n\n'If only I had more time.'\n'I wish I had more time.'",
+        answer: "Same meaning",
         back: "Same meaning — if only is more emphatic/dramatic\n\n📌 if only = stronger emotional version of I wish"
       }
     ]
@@ -259,26 +275,34 @@ const BLUE_DATA = [
       {
         id: "b6_01",
         front: "Passive formula:\n\n'Someone built this house in 1900.'\n→ passive: 'This house ___ in 1900.'",
+        answer: "was built",
         back: "'This house WAS BUILT in 1900.'\n\n📌 be + past participle in any tense\nAgent (by someone) only if important"
       },
       {
         id: "b6_02",
         front: "When do you use the passive?\n\nChoose all that apply:\na) When the agent is unknown\nb) When the agent is obvious\nc) When you want to focus on the action/object\nd) Always instead of active",
+        answer: "Agent unknown, obvious, or focus on result — never always",
+        freeText: true,
         back: "a) ✅ Agent unknown: 'My bike was stolen.'\nb) ✅ Agent obvious: 'He was arrested.' (by police — obvious)\nc) ✅ Focus on result: 'The report has been sent.'\nd) ❌ Not always — use active when agent matters\n\n📌 Passive = agent irrelevant or unknown"
       },
       {
         id: "b6_03",
         front: "GET passive vs BE passive — difference?\n\n'He was promoted.' vs 'He got promoted.'",
+        answer: "BE = neutral/formal, GET = informal/accidental",
+        freeText: true,
         back: "BE passive = neutral/formal\nGET passive = informal, often accidental or unexpected\n\n'The window was broken.' (neutral)\n'The window got broken.' (accident implied)\n\n📌 get passive = more colloquial, implies change"
       },
       {
         id: "b6_04",
         front: "HAVE SOMETHING DONE — what does it mean?\n\n'I had my hair cut yesterday.'",
+        answer: "Someone did it for you",
         back: "Someone did it FOR you (you paid/arranged it)\n\n'I had my hair cut.' = a hairdresser cut it\n≠ 'I cut my hair.' (did it myself)\n\n📌 have + object + past participle = arranged service"
       },
       {
         id: "b6_05",
         front: "Passive of reporting verbs:\n\n'People say he is rich.'\n→ two passive forms?",
+        answer: "It is said that he is rich / He is said to be rich",
+        freeText: true,
         back: "1) It IS SAID that he is rich.\n2) He IS SAID TO BE rich.\n\n📌 Both correct · say · believe · think · report · know · consider"
       }
     ]
@@ -291,6 +315,8 @@ const BLUE_DATA = [
       {
         id: "b7_01",
         front: "Backshift rule — what happens to tenses?\n\n'I am tired.' → She said...\n'I was working.' → She said...\n'I will call.' → She said...",
+        answer: "present→past, past→past perfect, will→would",
+        freeText: true,
         back: "'I am tired.' → She said she WAS tired.\n'I was working.' → She said she HAD BEEN working.\n'I will call.' → She said she WOULD call.\n\n📌 present→past · past→past perfect · will→would"
       },
       {
@@ -302,6 +328,7 @@ const BLUE_DATA = [
       {
         id: "b7_03",
         front: "Reported questions — word order?\n\n'Where do you live?' → She asked me...",
+        answer: "She asked me where I lived",
         back: "She asked me WHERE I LIVED.\n\n📌 Reported questions = normal word order (no inversion)\n❌ She asked me where did I live."
       },
       {
@@ -325,6 +352,7 @@ const BLUE_DATA = [
       {
         id: "b8_02",
         front: "Indirect questions — word order?\n\n'Where is the station?'\n→ 'Do you know ___?'",
+        answer: "where the station is",
         back: "'Do you know WHERE THE STATION IS?'\n\n📌 Indirect questions = normal order (no inversion, no do/does/did)\n❌ Do you know where is the station?"
       },
       {
@@ -335,6 +363,7 @@ const BLUE_DATA = [
       {
         id: "b8_04",
         front: "Negative questions — meaning?\n\n'Didn't you get my message?'",
+        answer: "Express surprise or seek confirmation",
         back: "Negative questions express surprise or seek confirmation\n\n'Didn't you get my message?' = I expected you did\n\n📌 Negative question = speaker is surprised the opposite happened"
       }
     ]
@@ -439,6 +468,7 @@ const BLUE_DATA = [
       {
         id: "b11_02",
         front: "EACH OTHER vs ONE ANOTHER — difference?\n\n'They looked at ___.'\n'The students helped ___.'",
+        answer: "Largely interchangeable",
         back: "Both express reciprocity — largely interchangeable\n\n'They looked at EACH OTHER / ONE ANOTHER.'\n\n📌 each other = two people (traditionally)\none another = more than two (traditionally)\nIn modern English both work for any number"
       },
       {
@@ -474,6 +504,7 @@ const BLUE_DATA = [
       {
         id: "b12_03",
         front: "Can you omit the relative pronoun?\n\n'The film (that) I saw was great.'\n'The woman who called was angry.'",
+        answer: "Only when it's the object of the clause",
         back: "'The film I saw was great.' ✅ (can omit — object clause)\n'The woman who called was angry.' ❌ (can't omit — subject clause)\n\n📌 Omit when pronoun = object of the clause\nKeep when pronoun = subject of the clause"
       }
     ]
@@ -547,21 +578,26 @@ const BLUE_DATA = [
       {
         id: "b15_01",
         front: "Separable phrasal verbs — pronoun rule:\n\n'Turn off the light.' → with pronoun?\n'Turn off it.' or 'Turn it off.'?",
+        answer: "Turn it off",
         back: "'Turn IT off.' ✅\n'Turn off it.' ❌\n\n📌 With pronouns → ALWAYS between verb and particle\nWith nouns → either position works"
       },
       {
         id: "b15_02",
         front: "Inseparable phrasal verbs:\n\n'Look after the children.' → with pronoun?\n'Look them after.' or 'Look after them.'?",
+        answer: "Look after them",
         back: "'Look after THEM.' ✅\n'Look them after.' ❌\n\n📌 Inseparable = object always after the particle\nlook after · get on with · come across · run into"
       },
       {
         id: "b15_03",
         front: "Match the meaning:\n\na) give up\nb) find out\nc) put off\nd) carry out",
+        answer: "give up = quit, find out = discover, put off = postpone, carry out = perform",
+        freeText: true,
         back: "a) give up = stop doing / quit\nb) find out = discover / learn information\nc) put off = postpone\nd) carry out = execute / perform\n\n📌 These are the most tested phrasal verbs in exams"
       },
       {
         id: "b15_04",
         front: "UP particle — general meaning pattern:\n\n'save up · use up · eat up · finish up · wash up'",
+        answer: "Completion or increase",
         back: "UP often = completion or increase\n\nsave up = accumulate\nuse up = exhaust completely\neat up = eat all of it\nfinish up = complete\nwash up = clean (BrE)\n\n📌 UP frequently suggests finishing or increasing"
       }
     ]

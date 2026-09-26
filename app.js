@@ -118,11 +118,13 @@ function normalise(str) {
 }
 
 function getCorrectAnswers(card) {
-  // For vocab cards back is "answer1 / answer2\n\ntranslation"
-  // For grammar cards back is full explanation — first line is the answer
-  const firstLine = card.back.split('\n')[0];
+  // card.answer (hand-written clean answer) takes priority when present —
+  // same reasoning as getReadableAnswer: some grammar cards' `back` is a
+  // full explanation, not a short answer, so parsing it directly here
+  // would disagree with what the multiple-choice button actually shows.
+  const source = card.answer || card.back.split('\n')[0];
   // Split by " / " to get alternates
-  return firstLine.split(' / ').map(a => normalise(a.replace(/\(.*?\)/g, '').trim())).filter(Boolean);
+  return source.split(' / ').map(a => normalise(a.replace(/\(.*?\)/g, '').trim())).filter(Boolean);
 }
 
 function isCorrect(userInput, card) {
@@ -155,12 +157,25 @@ function isAllBlanksCorrect(userInputs, card) {
 // options pulled from real answers elsewhere in the data — there's no
 // curated distractor field, this is generated at render time.
 const CHOICE_TARGET = 4;
+// Multi-blank cards (several ___ in one question) show one choice group per
+// blank — at 4 options each, a 3-4 blank card became a wall of buttons. 2
+// options per blank (correct + 1 distractor) keeps each blank quick to
+// answer while the question as a whole still has real variety across its
+// blanks.
+const CHOICE_TARGET_MULTI_BLANK = 2;
 
 // Readable (original-case) text for what a card's answer looks like on
 // screen — NOT the same as getCorrectAnswers(), which normalises to
 // lowercase for comparison. Vocab cards can have "answer1 / answer2" — use
 // only the first alternative as the display/option text.
+//
+// Some grammar cards (Blue/Green) have a `back` that's a full explanation
+// rather than a short answer — "a) ❌ I'm knowing the answer", "BE passive
+// = neutral/formal", etc — unusable as a multiple-choice option as-is. For
+// those, a hand-written `card.answer` field holds the clean short answer;
+// it takes priority over parsing `back` when present.
 function getReadableAnswer(card) {
+  if (card.answer) return card.answer.split(' / ')[0].trim();
   return card.back.split('\n')[0].split(' / ')[0].replace(/\(.*?\)/g, '').trim();
 }
 
@@ -218,7 +233,7 @@ function buildMultiBlankChoices(card, book, sectionNum) {
       .filter((_, j) => j !== i)
       .map(b => b.split(' / ')[0].trim());
     const combinedPool = ownOtherBlanks.concat(pool);
-    return buildChoiceOptions(correctDisplay, combinedPool, CHOICE_TARGET);
+    return buildChoiceOptions(correctDisplay, combinedPool, CHOICE_TARGET_MULTI_BLANK);
   });
 }
 
@@ -573,12 +588,25 @@ function loadCard() {
 
   const choiceArea = document.getElementById('input-area');
   const multiArea = document.getElementById('multi-blank-area');
-  if (hasBlanks(card)) {
+  const freeTextArea = document.getElementById('freetext-area');
+  if (card.freeText) {
+    // Cards whose answer is a match/sequence/list of several short items
+    // (e.g. "give up = quit, find out = discover...") don't reduce to one
+    // clean multiple-choice option — typing stays the honest way to answer.
     choiceArea.classList.add('hidden');
+    multiArea.classList.add('hidden');
+    freeTextArea.classList.remove('hidden');
+    const input = document.getElementById('answer-input');
+    input.value = '';
+    setTimeout(() => input.focus(), 100);
+  } else if (hasBlanks(card)) {
+    choiceArea.classList.add('hidden');
+    freeTextArea.classList.add('hidden');
     multiArea.classList.remove('hidden');
     renderMultiBlankChoices(multiArea, card, card._book, card._section, (picks) => finishAnswer(card, picks));
   } else {
     multiArea.classList.add('hidden');
+    freeTextArea.classList.add('hidden');
     choiceArea.classList.remove('hidden');
     const options = buildSingleChoiceOptions(card, card._book, card._section);
     if (options) {
@@ -598,9 +626,19 @@ function loadCard() {
     Math.round(((blockTotal - remaining) / blockTotal) * 100) + '%';
 }
 
-// Called once the user has answered (single choice picked, or every
-// multi-blank group picked + Check pressed). `picked` is either a string
-// (single choice) or an array of per-blank picks (multi-blank).
+function submitFreeTextAnswer() {
+  const card = state.blockQueue[0];
+  if (!card) return;
+  const input = document.getElementById('answer-input');
+  const val = input.value.trim();
+  if (!val) return;
+  finishAnswer(card, val);
+}
+
+// Called once the user has answered (single choice picked, every
+// multi-blank group picked + Check pressed, or free-text Check pressed).
+// `picked` is a string (single choice / free text) or an array of
+// per-blank picks (multi-blank).
 function finishAnswer(card, picked) {
   if (document.getElementById('phase-question').classList.contains('hidden')) return; // already answered
 
@@ -632,8 +670,7 @@ function finishAnswer(card, picked) {
     document.getElementById('correction-correct').classList.remove('hidden');
     yourEl.textContent = userAnswer || '(empty)';
     yourEl.className = 'correction-your ' + (correct ? 'correct' : 'wrong');
-    // Correct answer: first line of back
-    document.getElementById('correction-correct').textContent = card.back.split('\n')[0];
+    document.getElementById('correction-correct').textContent = getReadableAnswer(card);
   }
 
   // Extra: translation (after \n\n) for vocab cards
@@ -1324,10 +1361,12 @@ function loadLevelTestExercise() {
 
   const choiceArea = document.getElementById('leveltest-input-area');
   const multiArea = document.getElementById('leveltest-multi-blank-area');
+  const freeTextArea = document.getElementById('leveltest-freetext-area');
   if (exercise && exercise.options) {
     // Dynamic Tests generator already built its own options (multiple-choice
     // type) — untouched, same as the Dynamic Tests screen.
     multiArea.classList.add('hidden');
+    freeTextArea.classList.add('hidden');
     choiceArea.classList.remove('hidden');
     renderChoiceGroup(choiceArea, exercise.options, exercise.correct, (picked) => checkLevelTestAnswer(picked));
   } else if (exercise) {
@@ -1337,20 +1376,37 @@ function loadLevelTestExercise() {
     // `correct` values as distractors (always available, templates are
     // infinite by design).
     multiArea.classList.add('hidden');
+    freeTextArea.classList.add('hidden');
     choiceArea.classList.remove('hidden');
     const options = buildChoiceOptions(exercise.correct, generateDynamicDistractorPool(item.template, exercise.correct), CHOICE_TARGET);
     renderChoiceGroup(choiceArea, options || [exercise.correct], exercise.correct, (picked) => checkLevelTestAnswer(picked));
+  } else if (item.card.freeText) {
+    choiceArea.classList.add('hidden');
+    multiArea.classList.add('hidden');
+    freeTextArea.classList.remove('hidden');
+    const input = document.getElementById('leveltest-answer-input');
+    input.value = '';
+    setTimeout(() => input.focus(), 100);
   } else if (hasBlanks(item.card)) {
     choiceArea.classList.add('hidden');
+    freeTextArea.classList.add('hidden');
     multiArea.classList.remove('hidden');
     renderMultiBlankChoices(multiArea, item.card, item.book, levelTestItemSectionNum(item), checkLevelTestMultiBlankAnswer);
   } else {
     multiArea.classList.add('hidden');
+    freeTextArea.classList.add('hidden');
     choiceArea.classList.remove('hidden');
     const options = buildSingleChoiceOptions(item.card, item.book, levelTestItemSectionNum(item));
     const correctDisplay = getReadableAnswer(item.card);
     renderChoiceGroup(choiceArea, options || [correctDisplay], correctDisplay, (picked) => checkLevelTestAnswer(picked));
   }
+}
+
+function submitLevelTestFreeTextAnswer() {
+  const input = document.getElementById('leveltest-answer-input');
+  const val = input.value.trim();
+  if (!val) return;
+  checkLevelTestAnswer(val);
 }
 
 // Regenerates a template's exercises a handful of times to collect other
@@ -1417,7 +1473,7 @@ function recordLevelTestAnswer(item, correct, userAnswer) {
     yourEl.classList.remove('hidden');
     correctEl.classList.remove('hidden');
     multiReview.classList.add('hidden');
-    const correctText = exercise ? exercise.correct : item.card.back.split('\n')[0];
+    const correctText = exercise ? exercise.correct : getReadableAnswer(item.card);
     const extraText = exercise ? (exercise.explanation || '') : (item.card.back.split('\n\n')[1] || '');
     yourEl.textContent = userAnswer;
     yourEl.className = 'correction-your ' + (correct ? 'correct' : 'wrong');

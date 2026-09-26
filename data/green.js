@@ -13,11 +13,15 @@ const GREEN_DATA = [
       {
         id: "g1_02",
         front: "Historic present — what is it and when used?\n\n'So I walk into the room and there he is.'",
+        answer: "Present tense to narrate past events for effect",
+        freeText: true,
         back: "Using present tense to narrate past events for dramatic effect\n\nCommon in:\n· Informal storytelling\n· News headlines\n· Sports commentary\n\n📌 Makes events feel vivid and immediate"
       },
       {
         id: "g1_03",
         front: "Present perfect — five key uses:\n\nCan you name them all?",
+        answer: "Recent events, experience, unfinished states, news, superlatives",
+        freeText: true,
         back: "1. Recent events: 'She's just arrived.'\n2. Life experience: 'I've been to Japan.'\n3. Unfinished states: 'I've lived here for 10 years.'\n4. News/announcements: 'Scientists have discovered...'\n5. With superlatives: 'It's the best film I've ever seen.'\n\n📌 All connect past to present"
       },
       {
@@ -28,6 +32,7 @@ const GREEN_DATA = [
       {
         id: "g1_05",
         front: "Stative verbs in present perfect continuous — possible or not?\n\n'I've been knowing him for years.'\n'I've been wanting to call you.'",
+        answer: "Not possible with classic statives like know",
         back: "'I've been knowing him.' ❌ (know = state → never continuous)\n'I've been wanting to call you.' ⚠️ Technically wrong but increasingly accepted informally\n\n📌 Classic statives (know/understand/believe) → never continuous\nSome borderline verbs (want/love/feel) → grey area in modern English"
       }
     ]
@@ -46,21 +51,26 @@ const GREEN_DATA = [
       {
         id: "g2_02",
         front: "Future perfect — formula and trigger:\n\n'By Friday she ___ (finish) the report.'",
+        answer: "will have finished",
         back: "'By Friday she WILL HAVE FINISHED the report.'\n\nFormula: will have + past participle\n\n📌 Trigger: BY + future time\nAction completed before that future point"
       },
       {
         id: "g2_03",
         front: "BE TO — meaning?\n\n'The president is to visit France next week.'\n'You are not to leave this room.'",
+        answer: "Formal/official plan or instruction",
         back: "Formal/official plan or instruction\n\n'The president is to visit France.' = scheduled/official\n'You are not to leave.' = instruction/order\n\n📌 be to = formal future plan or order\nCommon in news and formal writing"
       },
       {
         id: "g2_04",
         front: "BE ABOUT TO — meaning?\n\n'I'm about to leave — call me later.'\n'She was about to speak when he interrupted.'",
+        answer: "Immediate future — happening very soon",
         back: "Immediate future — happening very soon\n\n'I'm about to leave.' = leaving in seconds/minutes\n'She was about to speak.' = on the point of speaking\n\n📌 be about to = imminent action"
       },
       {
         id: "g2_05",
         front: "Will be doing vs Will do — subtle difference:\n\n'I'll call you tomorrow.'\n'I'll be passing the shop — want anything?'",
+        answer: "Will be doing = natural consequence, not effort",
+        freeText: true,
         back: "'I'll call you tomorrow.' = deliberate decision/promise\n'I'll be passing the shop.' = natural consequence, not a special effort\n\n📌 will be doing = 'it'll happen anyway as part of my plans'\nUseful for polite requests that don't impose"
       }
     ]
@@ -73,6 +83,8 @@ const GREEN_DATA = [
       {
         id: "g3_01",
         front: "DARE and NEED as modals vs main verbs:\n\n'Need I say more?' vs 'Do I need to say more?'\n'She daren't tell him.' vs 'She doesn't dare to tell him.'",
+        answer: "Modal form is formal, main verb form is everyday",
+        freeText: true,
         back: "Modal form: need/dare + bare infinitive (formal/literary)\nMain verb form: need to / dare to + infinitive (everyday)\n\n'Need I say more?' = formal\n'Do I need to say more?' = everyday\n\n📌 Modal dare/need → mainly negative/question · formal register"
       },
       {
@@ -84,6 +96,8 @@ const GREEN_DATA = [
       {
         id: "g3_03",
         front: "HAD BETTER — meaning and structure:\n\n'You'd better leave now or you'll miss the train.'",
+        answer: "Strong advice with a negative consequence if ignored",
+        freeText: true,
         back: "Strong advice implying negative consequence if ignored\n\nStructure: had better + bare infinitive\nNegative: had better not\n\n'You'd better leave.' = leave or something bad happens\n\n📌 had better ≠ mild suggestion · it implies a warning\n❌ You'd better to leave."
       },
       {
@@ -95,6 +109,7 @@ const GREEN_DATA = [
       {
         id: "g3_05",
         front: "Softening with continuous modals:\n\n'I was hoping you could help me.'\n'I was wondering if you're free.'\n\nWhy continuous instead of simple?",
+        answer: "Makes the request more tentative and polite",
         back: "Continuous makes the request more tentative and polite\n\n'I hope you can help.' = direct\n'I was hoping you could help.' = softer, less imposing\n\n📌 was hoping/wondering/thinking = distancing strategy\nPuts speaker in a less demanding position"
       }
     ]
@@ -113,16 +128,20 @@ const GREEN_DATA = [
       {
         id: "g4_02",
         front: "Passive with reporting verbs — two structures:\n\n'People believe he is dangerous.'\n→ Write both passive forms.",
+        answer: "It is believed that he is dangerous / He is believed to be dangerous",
+        freeText: true,
         back: "1) IT IS BELIEVED THAT he is dangerous.\n2) He IS BELIEVED TO BE dangerous.\n\n📌 Both correct\nVerbs: say · believe · think · report · know · consider · expect · understand"
       },
       {
         id: "g4_03",
         front: "Cleft sentences — IT cleft:\n\n'John broke the window.'\n→ Emphasise John.\n→ Emphasise the window.",
+        answer: "It was John who broke the window",
         back: "Emphasise John: IT WAS JOHN WHO broke the window.\nEmphasise window: IT WAS THE WINDOW THAT John broke.\n\n📌 It was + focus + that/who + rest\nUsed to correct misunderstandings or highlight key info"
       },
       {
         id: "g4_04",
         front: "WH-cleft (pseudo-cleft) — structure:\n\n'I need a holiday.' → emphasise 'a holiday'",
+        answer: "What I need is a holiday",
         back: "WHAT I NEED IS a holiday.\n\nStructure: What + clause + is/was + emphasis\n\nMore examples:\n'What surprised me was his reaction.'\n'What I want is your honesty.'\n\n📌 What-cleft = emphasis on the predicate/new info"
       }
     ]
@@ -159,6 +178,8 @@ const GREEN_DATA = [
       {
         id: "g6_01",
         front: "Reporting verbs — structure patterns:\n\nSUGGEST · DENY · ADMIT · INSIST · REFUSE · OFFER\n\nWhich take -ing and which take to?",
+        answer: "Suggest/deny/admit → -ing, refuse/offer → to",
+        freeText: true,
         back: "-ING: suggest · deny · admit · recommend · avoid · consider\nTO: refuse · offer · promise · agree · decide · manage\nBOTH: begin · start · continue · intend\n\n📌 deny/admit/suggest → -ing (the action already happened or is ongoing)\nrefuse/offer/promise → to (looking forward)"
       },
       {
@@ -182,6 +203,8 @@ const GREEN_DATA = [
       {
         id: "g7_01",
         front: "Compound nouns — order rule:\n\n'car park · credit card · fire station'\n\nHow do you read them?",
+        answer: "Right to left — the second noun is the main thing",
+        freeText: true,
         back: "Right to left: the second noun is the main thing\n\ncar PARK = a park for cars\ncredit CARD = a card for credit\nfire STATION = a station for fire engines\n\n📌 First noun modifies the second\nStress usually on FIRST word: CAR park, CREDit card"
       },
       {
@@ -193,6 +216,8 @@ const GREEN_DATA = [
       {
         id: "g7_03",
         front: "Uncountable nouns used countably:\n\n'I need some information.' vs 'She had an experience.'\n'I'll have a coffee.'\n\nHow does the meaning shift?",
+        answer: "Becomes a specific instance instead of the general idea",
+        freeText: true,
         back: "'information' (uncountable) = knowledge in general\n'an experience' (countable) = a specific event\n'a coffee' (countable) = one cup\n\n📌 Many uncountables become countable when referring to a specific instance\nexperience/an experience · hair/a hair · work/a work · coffee/a coffee"
       }
     ]
@@ -236,16 +261,22 @@ const GREEN_DATA = [
       {
         id: "g9_01",
         front: "Reduced relative clauses — how?\n\n'The man who is standing there.'\n'The car which was stolen.'",
+        answer: "Remove who/which + be, keep the participle",
+        freeText: true,
         back: "'The man STANDING there.' (remove who is)\n'The car STOLEN.' (remove which was)\n\n📌 who/which + be → remove both, keep participle\nActive: -ing / Passive: past participle"
       },
       {
         id: "g9_02",
         front: "Participle clauses — subject rule:\n\n'Walking home, I saw an accident.' ✅\n'Walking home, the rain started.' ❌\n\nWhy is the second wrong?",
+        answer: "The participle's subject must match the main clause subject",
+        freeText: true,
         back: "The subject of the participle clause MUST match the main clause subject\n\n✅ Walking home, I saw... (I was walking)\n❌ Walking home, the rain started. (the rain wasn't walking)\n\n📌 Dangling participle = common error to avoid"
       },
       {
         id: "g9_03",
         front: "Appositive clause vs relative clause:\n\n'The fact THAT he lied surprised me.'\n'The fact WHICH surprised me was that he lied.'\n\nWhat's the difference?",
+        answer: "Appositive that explains the noun, relative which adds info",
+        freeText: true,
         back: "Appositive (that): explains/defines the noun\nRelative (which): adds info about the noun\n\n'The fact that he lied' = the fact = he lied (same thing)\n'The fact which surprised me' = gives more info about the fact\n\n📌 Appositive that cannot be replaced by which"
       }
     ]
@@ -270,6 +301,8 @@ const GREEN_DATA = [
       {
         id: "g10_03",
         front: "Ellipsis — what is it?\n\n'Are you coming?' → 'I might ___.'",
+        answer: "Omitting predictable words to avoid repetition",
+        freeText: true,
         back: "Omitting predictable words to avoid repetition\n\n'I might ∅.' (= I might come — 'come' omitted)\n'She can swim and so can he ∅.' (= he can swim)\n\n📌 Ellipsis common after auxiliaries, at end of clauses"
       }
     ]
@@ -282,6 +315,8 @@ const GREEN_DATA = [
       {
         id: "g11_01",
         front: "Order of adjectives — rule:\n\n'a ___ old ___ rectangular ___ French ___'\n\nFill with: silver · little · green · whittling knife",
+        answer: "little, green, silver whittling knife",
+        freeText: true,
         back: "a lovely little old rectangular green French silver whittling knife\n\nOrder: Opinion → Size → Age → Shape → Colour → Origin → Material → Purpose\n\n📌 In practice 2-3 adjectives max\nOpinion always first, origin/material near last"
       },
       {
@@ -293,6 +328,7 @@ const GREEN_DATA = [
       {
         id: "g11_03",
         front: "Non-gradable adjectives — can you use 'very'?\n\n'very perfect · very unique · very dead · very impossible'",
+        answer: "No — none of these work",
         back: "❌ None of these work!\n\nPerfect · unique · dead · impossible · empty · full · pregnant\n→ already absolute — they can't be 'more' or 'very'\n\n✅ absolutely perfect · completely unique · totally empty\n\n📌 Absolute adjectives = no degrees possible"
       }
     ]
@@ -334,6 +370,8 @@ const GREEN_DATA = [
       {
         id: "g13_01",
         front: "Formal prepositional phrases — match:\n\na) in terms of\nb) with regard to\nc) on behalf of\nd) as a result of",
+        answer: "regarding, concerning, representing, because of",
+        freeText: true,
         back: "a) in terms of = regarding / from the perspective of\nb) with regard to = concerning / about (formal)\nc) on behalf of = representing / for\nd) as a result of = because of / due to\n\n📌 Common in formal writing and presentations"
       },
       {
@@ -357,21 +395,28 @@ const GREEN_DATA = [
       {
         id: "g14_01",
         front: "Inversion after negative adverbials:\n\n'Never have I felt so tired.'\n\nWhich adverbials trigger inversion?",
+        answer: "never, rarely, seldom, hardly, not only, under no circumstances",
+        freeText: true,
         back: "never · rarely · seldom · hardly · scarcely · barely · not only · not until · only then · in no way · under no circumstances\n\n'NEVER HAVE I seen this.' (not: Never I have seen)\n'HARDLY HAD I arrived when the phone rang.'\n\n📌 Negative/restrictive adverbial at start → inversion (auxiliary + subject)"
       },
       {
         id: "g14_02",
         front: "Fronting for emphasis:\n\n'I've never seen anything like it.' → fronted version?\n\n'This I can do.' — what's fronted?",
+        answer: "Never have I seen anything like it",
         back: "'NEVER HAVE I seen anything like it.' (inversion)\n'THIS I can do.' (object fronted — no inversion here)\n\n📌 Fronting = moving element to start of sentence\nInversion required after negative fronting\nNo inversion when fronting object/complement alone"
       },
       {
         id: "g14_03",
         front: "IT-cleft vs WH-cleft — when to use each?\n\n'What I need is a break.' (WH-cleft)\n'It was the noise that woke me.' (IT-cleft)",
+        answer: "IT-cleft specifies who/what did it, WH-cleft introduces new info",
+        freeText: true,
         back: "IT-cleft: IT WAS + X + THAT/WHO = emphasises a specific element (who/what did something)\n\nWH-cleft: WHAT + clause + IS = emphasises what you want/need/feel\n\n📌 It-cleft = corrects or specifies\nWh-cleft = introduces new important information"
       },
       {
         id: "g14_04",
         front: "NOT ONLY... BUT ALSO — inversion rule:\n\n'He lied. He also stole.' → combined with inversion?",
+        answer: "Not only did he lie, but he also stole",
+        freeText: true,
         back: "'NOT ONLY DID he lie, BUT he also stole.'\n\n📌 Not only at the start → inversion in first clause\nBut (also) in second clause → no inversion\n\nMore examples:\n'Not only is she talented, but she also works hard.'"
       }
     ]
