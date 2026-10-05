@@ -11,7 +11,7 @@ function testNoDuplicateIdsAcrossBooks() {
   const h = load();
   const ids = new Map(); // id -> book
   const dupes = [];
-  ['blue', 'green', 'vocab'].forEach(book => {
+  ['blue', 'green', 'vocab', 'sherlock'].forEach(book => {
     h.allCards(book).forEach(c => {
       if (ids.has(c.id)) dupes.push(`${c.id} in both ${ids.get(c.id)} and ${book}`);
       ids.set(c.id, book);
@@ -23,7 +23,7 @@ function testNoDuplicateIdsAcrossBooks() {
 function testEveryCardHasFrontAndBack() {
   const h = load();
   const broken = [];
-  ['blue', 'green', 'vocab'].forEach(book => {
+  ['blue', 'green', 'vocab', 'sherlock'].forEach(book => {
     h.allCards(book).forEach(c => {
       if (!c.front || !c.front.trim()) broken.push(`${book}/${c.id}: empty front`);
       if (!c.back || !c.back.trim()) broken.push(`${book}/${c.id}: empty back`);
@@ -65,7 +65,7 @@ function testEveryBlankHasNonEmptyAlternatives() {
 function testGetCorrectAnswersNeverEmpty() {
   const h = load();
   const broken = [];
-  ['blue', 'green', 'vocab'].forEach(book => {
+  ['blue', 'green', 'vocab', 'sherlock'].forEach(book => {
     h.allCards(book).forEach(c => {
       if (c.blanks) return; // multi-blank cards don't use getCorrectAnswers
       const answers = h.run(`getCorrectAnswers(${JSON.stringify(c)})`);
@@ -90,7 +90,7 @@ function testGetReadableAnswerNeverEmptyOrDirty() {
 
 function testSectionNumbersUniqueWithinBook() {
   const h = load();
-  ['blue', 'green', 'vocab'].forEach(book => {
+  ['blue', 'green', 'vocab', 'sherlock'].forEach(book => {
     const sections = h.getData(book).map(s => s.section);
     const unique = new Set(sections);
     assertEqual(unique.size, sections.length, `${book} has duplicate section numbers`);

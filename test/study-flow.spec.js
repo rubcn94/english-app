@@ -21,6 +21,26 @@ function testVocabSectionCompletesAllCorrect() {
   assertEqual(knownCount, sectionCards, 'not every card in the section was marked known after an all-correct run');
 }
 
+function testSherlockEpisodeCompletesAllCorrect() {
+  const h = load();
+  const sectionCards = h.getData('sherlock').find(s => s.section === 1).cards.length;
+  h.call('startSection', 'sherlock', 1);
+  const res = h.runFullBlockedStudy('correct');
+  assertEqual(h.activeScreenId(), 'screen-summary', 'did not reach summary screen for Sherlock episode');
+  assertEqual(res.answers.length, sectionCards, 'answered a different number of cards than the episode contains');
+}
+
+function testEpisodeGlossaryShowsOnlyThatEpisodeInOrder() {
+  const h = load();
+  const ep = h.getData('sherlock').find(s => s.section === 4);
+  h.call('showEpisodeGlossary', 4);
+  assertEqual(h.activeScreenId(), 'screen-glossary', 'episode glossary did not open');
+  const ids = h.run('getCurrentGlossaryCards().map(c => c.id)');
+  assertEqual(JSON.stringify(ids), JSON.stringify(ep.cards.map(c => c.id)), 'episode glossary is not exactly that episode in data order');
+  h.call('exitGlossary');
+  assertEqual(h.activeScreenId(), 'screen-book', 'Back from an episode glossary should return to the episode list');
+}
+
 function testSmallBlueSectionUsesWholeBookFallback() {
   const h = load();
   // Section 12 (Relative Clauses) is one of the smallest Blue sections —
@@ -103,6 +123,8 @@ function testAllDueQueueAcrossBooksCompletes() {
 }
 
 module.exports = {
+  testSherlockEpisodeCompletesAllCorrect,
+  testEpisodeGlossaryShowsOnlyThatEpisodeInOrder,
   testVocabSectionCompletesAllCorrect,
   testSmallBlueSectionUsesWholeBookFallback,
   testSectionWithMultiBlankCardsCompletes,

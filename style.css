@@ -89,6 +89,7 @@ button:active {
 .book-card.blue { border-top: 4px solid var(--blue); }
 .book-card.green { border-top: 4px solid var(--green); }
 .book-card.vocab { border-top: 4px solid #e0b84a; }
+.book-card.sherlock { border-top: 4px solid #b5562f; }
 
 .vocab-row {
   padding: 0 20px;
@@ -219,6 +220,15 @@ input.hidden { display: none; }
 .section-units { font-size: 0.75rem; color: var(--text-muted); }
 .section-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
 .section-count { font-size: 0.8rem; color: var(--text-muted); }
+.section-glossary-btn {
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: 20px;
+  border: 1px solid #b5562f;
+  white-space: nowrap;
+  color: var(--text);
+  cursor: pointer;
+}
 .section-badge {
   font-size: 0.7rem;
   padding: 2px 8px;
@@ -726,6 +736,12 @@ input.hidden { display: none; }
 .gitem-translation {
   font-size: 0.8rem;
   color: #e0b84a;
+  margin-top: 2px;
+}
+.gitem-usage {
+  font-size: 0.75rem;
+  color: var(--text);
+  opacity: 0.8;
   margin-top: 2px;
 }
 .gitem-sentence {

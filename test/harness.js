@@ -13,7 +13,7 @@ const vm = require('vm');
 const { createDom } = require('./dom-shim');
 
 const APP_DIR = path.resolve(__dirname, '..');
-const DATA_FILES = ['data/blue.js', 'data/green.js', 'data/vocab.js', 'data/templates.js'];
+const DATA_FILES = ['data/blue.js', 'data/green.js', 'data/vocab.js', 'data/sherlock.js', 'data/templates.js'];
 
 function load() {
   const { document, localStorage, window } = createDom();

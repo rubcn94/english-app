@@ -129,7 +129,7 @@ function matchAll(nodes, selector) {
 // added to index.html but not mirrored here.
 const ALL_IDS = [
   // home
-  'progress-blue', 'progress-green', 'progress-vocab',
+  'progress-blue', 'progress-green', 'progress-vocab', 'progress-sherlock',
   'stat-streak', 'stat-total', 'stat-due',
   'btn-study-due', 'due-badge', 'due-label', 'backup-status', 'backup-file-input',
   // book menu / sections
@@ -148,7 +148,7 @@ const ALL_IDS = [
   // glossary
   'glossary-title', 'glossary-counter', 'glossary-known-badge', 'glossary-list',
   'glossary-search', 'glossary-section-select', 'btn-glossary-study',
-  'gb-blue', 'gb-green', 'gb-vocab', 'gb-phrasal',
+  'gb-blue', 'gb-green', 'gb-vocab', 'gb-phrasal', 'gb-sherlock',
   'gf-all', 'gf-known', 'gf-unknown', 'gf-tricks',
   // topics
   'topics-list',

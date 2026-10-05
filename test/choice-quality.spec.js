@@ -41,6 +41,15 @@ function collectQuestions(h) {
     });
   });
 
+  // Sherlock is small enough (~700 cards) to check every card.
+  h.getData('sherlock').forEach(sec => {
+    sec.cards.forEach(c => {
+      const options = h.run(`buildSingleChoiceOptions(${JSON.stringify(c)}, 'sherlock', ${sec.section})`);
+      const correct = h.run(`getReadableAnswer(${JSON.stringify(c)})`);
+      out.push({ type: 'single', book: 'sherlock', section: sec.section, id: c.id, correct, options });
+    });
+  });
+
   return out;
 }
 

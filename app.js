@@ -88,10 +88,14 @@ let state = {
 };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
+// Real books (each card belongs to exactly one). 'phrasal' is a virtual view
+// over vocab, so it's not listed here.
+const BOOKS = ['blue', 'green', 'vocab', 'sherlock'];
 function getData(book) {
   if (book === 'blue') return BLUE_DATA;
   if (book === 'green') return GREEN_DATA;
   if (book === 'phrasal') return getPhrasalVerbSections();
+  if (book === 'sherlock') return SHERLOCK_DATA;
   return VOCAB_DATA;
 }
 // Virtual "book" combining every vocab section whose title mentions phrasal
@@ -103,7 +107,7 @@ function getAllCards(book) {
   return getData(book).flatMap(s => s.cards.map(c => ({ ...c, _section: s.section })));
 }
 function getAllCardsAllBooks() {
-  return ['blue', 'green', 'vocab'].flatMap(b =>
+  return BOOKS.flatMap(b =>
     getData(b).flatMap(s => s.cards.map(c => ({ ...c, _book: b, _section: s.section })))
   );
 }
@@ -360,7 +364,7 @@ function restoreLastScreen() {
 
 function showBookMenu(book) {
   state.currentBook = book;
-  const titles = { blue: '📘 Blue Book', green: '📗 Green Book', vocab: '📒 Vocabulary' };
+  const titles = { blue: '📘 Blue Book', green: '📗 Green Book', vocab: '📒 Vocabulary', sherlock: '🔍 Sherlock' };
   document.getElementById('book-menu-title').textContent = titles[book] || 'Sections';
   renderSectionList(book);
   showScreen('book');
@@ -390,19 +394,23 @@ function renderSectionList(book) {
     else if (due > 0)        { badge = `${due} due`;   badgeClass = 'due'; }
     else                     { badge = `${done}/${total}`; badgeClass = ''; }
     const unitsHtml = sec.units ? `<span class="section-units">Units ${sec.units}</span>` : '';
+    const isSherlock = book === 'sherlock';
     const btn = document.createElement('button');
     btn.className = 'section-item';
     btn.innerHTML = `
       <div class="section-info">
-        <span class="section-num">Section ${sec.section}</span>
+        <span class="section-num">${isSherlock ? 'Episode' : 'Section'} ${sec.section}</span>
         <span class="section-name">${sec.title}</span>
         ${unitsHtml}
       </div>
       <div class="section-right">
+        ${isSherlock ? '<span class="section-glossary-btn" role="button" title="Episode glossary">📖 Glossary</span>' : ''}
         <span class="section-count">${done}/${total}</span>
         <span class="section-badge ${badgeClass}">${badge}</span>
       </div>`;
     btn.onclick = () => startSection(book, sec.section);
+    const gBtn = btn.querySelector('.section-glossary-btn');
+    if (gBtn) gBtn.onclick = e => { e.stopPropagation(); showEpisodeGlossary(sec.section); };
     list.appendChild(btn);
   });
 }
@@ -470,7 +478,7 @@ let _cardLocationIndex = null;
 function getCardLocationIndex() {
   if (_cardLocationIndex) return _cardLocationIndex;
   _cardLocationIndex = {};
-  ['blue', 'green', 'vocab'].forEach(book => {
+  BOOKS.forEach(book => {
     getData(book).forEach(sec => {
       sec.cards.forEach(c => { _cardLocationIndex[c.id] = { book, section: sec.section }; });
     });
@@ -760,7 +768,8 @@ function finishAnswer(card, picked, knownCorrect) {
   // Extra: translation (after \n\n) for vocab cards
   const parts = card.back.split('\n\n');
   const extraEl = document.getElementById('correction-extra');
-  extraEl.textContent = parts.length > 1 ? parts[1] : '';
+  extraEl.textContent = card._book === 'sherlock' ? parts.slice(1).join('\n\n')
+    : parts.length > 1 ? parts[1] : '';
 
   renderCorrectionNote(card, !correct);
 
@@ -865,9 +874,10 @@ function refreshHomeStats() {
   document.getElementById('progress-blue').textContent  = `${countStudied('blue')} / ${totalCards('blue')} studied`;
   document.getElementById('progress-green').textContent = `${countStudied('green')} / ${totalCards('green')} studied`;
   document.getElementById('progress-vocab').textContent = `${countStudied('vocab')} / ${totalCards('vocab')} studied`;
+  document.getElementById('progress-sherlock').textContent = `${countStudied('sherlock')} / ${totalCards('sherlock')} studied`;
 
   const due    = totalDueAll();
-  const total  = countStudied('blue') + countStudied('green') + countStudied('vocab');
+  const total  = BOOKS.reduce((n, b) => n + countStudied(b), 0);
   const streak = loadStreak().count;
 
   document.getElementById('stat-streak').textContent = streak;
@@ -1074,7 +1084,13 @@ function setGlossaryBook(book) {
   renderGlossary();
 }
 
+// Where the glossary's Back button returns to: home by default, or the
+// Sherlock episode list when opened from an episode's 📖 button.
+let glossaryOrigin = 'home';
+function exitGlossary() { showScreen(glossaryOrigin); }
+
 function showGlossary(book) {
+  glossaryOrigin = 'home';
   glossaryBook = book || 'vocab';
   document.querySelectorAll('.gbook').forEach(b => b.classList.remove('active'));
   const bookBtn = document.getElementById('gb-' + glossaryBook);
@@ -1086,6 +1102,15 @@ function showGlossary(book) {
   document.getElementById('gf-all').classList.add('active');
   renderGlossary();
   showScreen('glossary');
+}
+
+// Glossary for a single Sherlock episode, in order of appearance (the data
+// is already sorted that way).
+function showEpisodeGlossary(sectionNum) {
+  showGlossary('sherlock');
+  glossaryOrigin = 'book';
+  document.getElementById('glossary-section-select').value = String(sectionNum);
+  renderGlossary();
 }
 
 function showPhrasalVerbGlossary() {
@@ -1153,7 +1178,9 @@ function renderGlossary() {
     // Clean short answer (not the raw, sometimes messy `back` text) and its
     // translation/extra line.
     const answer      = escapeHtml(getReadableAnswer(card));
-    const translation = escapeHtml(card.back.split('\n\n')[1] || '');
+    const backParts   = card.back.split('\n\n');
+    const translation = escapeHtml(backParts[1] || '');
+    const usage       = backParts[2] && backParts[2].startsWith('📌') ? escapeHtml(backParts[2]) : '';
     const front        = escapeHtml(card.front);
     const noteEscaped  = escapeHtml(note);
 
@@ -1168,6 +1195,7 @@ function renderGlossary() {
       <div class="gitem-body">
         <div class="gitem-word">${answer}</div>
         ${translation ? `<div class="gitem-translation">${translation}</div>` : ''}
+        ${usage ? `<div class="gitem-usage">${usage}</div>` : ''}
         <div class="gitem-sentence">${front}</div>
         ${note ? `<div class="gitem-note">💡 ${noteEscaped}</div>` : ''}
       </div>

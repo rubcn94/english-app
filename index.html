@@ -41,6 +41,14 @@
         <div class="book-progress" id="progress-vocab">0 / 0 studied</div>
       </button>
     </div>
+    <div class="vocab-row">
+      <button class="book-card sherlock" onclick="showBookMenu('sherlock')">
+        <div class="book-icon">🔍</div>
+        <div class="book-label">Sherlock</div>
+        <div class="book-sub">BBC series · 13 episodes · hard words, phrasals &amp; idioms</div>
+        <div class="book-progress" id="progress-sherlock">0 / 0 studied</div>
+      </button>
+    </div>
     <div class="due-row">
       <button class="btn-due" id="btn-study-due" onclick="startAllDue()">
         <span id="due-label">Study due cards</span>
@@ -199,7 +207,7 @@
   <!-- SCREEN: GLOSSARY -->
   <div id="screen-glossary" class="screen">
     <div class="screen-header">
-      <button class="btn-back" onclick="showScreen('home')">← Back</button>
+      <button class="btn-back" onclick="exitGlossary()">← Back</button>
       <div class="study-meta">
         <span id="glossary-title">Glossary</span>
         <span id="glossary-counter"></span>
@@ -212,6 +220,7 @@
         <button class="gbook"        id="gb-blue"    onclick="setGlossaryBook('blue')">📘 Blue</button>
         <button class="gbook"        id="gb-green"   onclick="setGlossaryBook('green')">📗 Green</button>
         <button class="gbook"        id="gb-phrasal" onclick="setGlossaryBook('phrasal')">🧩 Phrasal</button>
+        <button class="gbook"        id="gb-sherlock" onclick="setGlossaryBook('sherlock')">🔍 Sherlock</button>
       </div>
       <input type="search" id="glossary-search" class="answer-input glossary-search"
              placeholder="Search…" oninput="debouncedRenderGlossary()" autocorrect="off" autocapitalize="off">
@@ -366,6 +375,7 @@
   <script src="data/blue.js"></script>
   <script src="data/green.js"></script>
   <script src="data/vocab.js"></script>
+  <script src="data/sherlock.js"></script>
   <script src="data/templates.js"></script>
   <script src="app.js"></script>
   <script>

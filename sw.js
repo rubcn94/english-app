@@ -1,4 +1,4 @@
-const CACHE = 'eng-app-v11';
+const CACHE = 'eng-app-v12';
 const ASSETS = [
   './',
   './index.html',
@@ -10,6 +10,7 @@ const ASSETS = [
   './data/blue.js',
   './data/green.js',
   './data/vocab.js',
+  './data/sherlock.js',
   './data/templates.js',
 ];
 
