@@ -2474,995 +2474,995 @@ const SHERLOCK_DATA = [
   },
   {
     "section": 10,
+    "title": "Special · The Abominable Bride",
+    "cards": [
+      {
+        "id": "sh10_gravitated",
+        "front": "Under such circumstances, I naturally ___ to London.\n\n💬 moved towards, was attracted to",
+        "back": "gravitated\n\nacabé yendo / gravité hacia\n\n📌 gravitate towards"
+      },
+      {
+        "id": "sh10_idlers",
+        "front": "That great cesspool into which all the loungers and ___ of the empire are drained.\n\n💬 lazy people who avoid work",
+        "back": "idlers\n\nholgazanes / ociosos\n\n📌 inglés victoriano; loungers = vagos"
+      },
+      {
+        "id": "sh10_lodger",
+        "front": "I mentioned to Stamford this morning that I was in need of a fellow ___.\n\n💬 person who pays to live in someone's house",
+        "back": "lodger\n\ninquilino / huésped"
+      },
+      {
+        "id": "sh10_splendidly",
+        "front": "You're clearly acclimatised to never getting to the end of a sentence. We'll get along ___.\n\n💬 extremely well",
+        "back": "splendidly\n\nde maravilla / estupendamente"
+      },
+      {
+        "id": "sh10_draw",
+        "front": "Caught the murderer, still looking for the legs. I think we'll call it a ___.\n\n💬 result where neither side wins",
+        "back": "draw\n\nempate"
+      },
+      {
+        "id": "sh10_singled-out",
+        "front": "Don't feel ___, Mrs Hudson. I'm hardly in the dog one.\n\n💬 chosen from a group (for criticism)",
+        "back": "singled out\n\nseñalada / discriminada\n\n📌 single sb out"
+      },
+      {
+        "id": "sh10_plot-device",
+        "front": "I'm your landlady, not a ___.\n\n💬 character or element used just to move the story forward",
+        "back": "plot device\n\nrecurso argumental"
+      },
+      {
+        "id": "sh10_dingy",
+        "front": "And you make the room so drab and ___.\n\n💬 dark and dirty",
+        "back": "dingy\n\nlóbrega / sombría\n\n📌 drab = gris, apagado"
+      },
+      {
+        "id": "sh10_recount",
+        "front": "Some are still too sensitive to ___.\n\n💬 tell (a story) in detail",
+        "back": "recount\n\nrelatar / contar"
+      },
+      {
+        "id": "sh10_trifling",
+        "front": "Allow me to make some ___ observations.\n\n💬 small, unimportant",
+        "back": "trifling\n\ntriviales / nimias\n\n📌 trifle = nimiedad"
+      },
+      {
+        "id": "sh10_impish",
+        "front": "You have an ___ sense of humour.\n\n💬 playful, slightly naughty",
+        "back": "impish\n\npícaro / travieso\n\n📌 imp = diablillo"
+      },
+      {
+        "id": "sh10_unsavoury",
+        "front": "He has abandoned you for an ___ companion of dubious morals.\n\n💬 unpleasant, morally doubtful",
+        "back": "unsavoury\n\nindeseable / de mala reputación"
+      },
+      {
+        "id": "sh10_last-resort",
+        "front": "You have come to this agency as a ___.\n\n💬 the final option when everything else fails",
+        "back": "last resort\n\núltimo recurso"
+      },
+      {
+        "id": "sh10_tread",
+        "front": "How did you know it was me? — Regulation ___ is unmistakable.\n\n💬 way of walking, sound of footsteps",
+        "back": "tread\n\npisada / paso\n\n📌 tread = pisar"
+      },
+      {
+        "id": "sh10_decanter",
+        "front": "You've addressed over 40% of your remarks to my ___.\n\n💬 glass bottle for serving wine/spirits",
+        "back": "decanter\n\nlicorera / decantador"
+      },
+      {
+        "id": "sh10_compliments-of-the-season",
+        "front": "I just thought I'd drop by. Just to wish you the ___.\n\n💬 Christmas greetings (formal)",
+        "back": "compliments of the season\n\nfelices fiestas"
+      },
+      {
+        "id": "sh10_surmise",
+        "front": "That's not why I'm here. — I ___.\n\n💬 guess, suppose (formal)",
+        "back": "surmise\n\nlo supongo / lo deduzco"
+      },
+      {
+        "id": "sh10_shotgun-wedding",
+        "front": "What does it look like, my handsome friend? It's a ___.\n\n💬 wedding forced by circumstances (often pregnancy)",
+        "back": "shotgun wedding\n\nboda forzada / de penalti\n\n📌 juego de palabras aquí (escopeta)"
+      },
+      {
+        "id": "sh10_till-death-us-do-part",
+        "front": "It's a shotgun wedding. ___. Twice, in this case.\n\n💬 wedding vow: until one of us dies",
+        "back": "Till death us do part\n\nHasta que la muerte nos separe"
+      },
+      {
+        "id": "sh10_needs-must",
+        "front": "Holmes, tweeds in a morgue? — ___ when the devil drives, Watson.\n\n💬 we have to, because there's no choice",
+        "back": "Needs must\n\nLa necesidad obliga\n\n📌 refrán: needs must when the devil drives"
+      },
+      {
+        "id": "sh10_prescient",
+        "front": "Since the moment of conception, how breathtakingly ___ of her.\n\n💬 knowing about events before they happen",
+        "back": "prescient\n\nprevisor / clarividente"
+      },
+      {
+        "id": "sh10_swatting-up",
+        "front": "It's the inclination of the Earth's equator... — You've been ___.\n\n💬 studying hard (BrE: swotting up)",
+        "back": "swatting up\n\nempollando\n\n📌 swot = empollón (BrE)"
+      },
+      {
+        "id": "sh10_hovers-at-our-elbow",
+        "front": "Our way of life is under threat from an invisible enemy. One that ___ on a daily basis.\n\n💬 stays close to us",
+        "back": "hovers at our elbow\n\nronda a nuestro lado"
+      },
+      {
+        "id": "sh10_wager",
+        "front": "Give me five minutes. I have a ___ to win.\n\n💬 bet",
+        "back": "wager\n\napuesta"
+      },
+      {
+        "id": "sh10_purview",
+        "front": "I'm not sure this comes within your ___, Mr Holmes.\n\n💬 range of responsibility or competence",
+        "back": "purview\n\ncompetencia / ámbito\n\n📌 formal"
+      },
+      {
+        "id": "sh10_milliners",
+        "front": "A vigorous round of embroidering? An exhausting appointment at the ___?\n\n💬 shop/person that makes women's hats",
+        "back": "milliners\n\nsombrerera"
+      },
+      {
+        "id": "sh10_borders-on",
+        "front": "He has an enthusiasm for stating the obvious which ___ mania.\n\n💬 is almost",
+        "back": "borders on\n\nraya en\n\n📌 border on sth"
+      },
+      {
+        "id": "sh10_bait",
+        "front": "Somebody definitely wants to kill him, but that's good for us. You can't set a trap without ___.\n\n💬 something used to attract and catch",
+        "back": "bait\n\ncebo"
+      },
+      {
+        "id": "sh10_play-our-cards-right",
+        "front": "My husband is not bait. — No, but he could be if we ___.\n\n💬 act cleverly to get the result we want",
+        "back": "play our cards right\n\njugamos bien nuestras cartas"
+      },
+      {
+        "id": "sh10_prone-to",
+        "front": "She's an hysteric, ___ fancies.\n\n💬 likely to suffer from",
+        "back": "prone to\n\npropensa a\n\n📌 fancies = fantasías"
+      },
+      {
+        "id": "sh10_marked-man",
+        "front": "Sir Eustace knows he's a ___.\n\n💬 someone who is going to be attacked/killed",
+        "back": "marked man\n\nhombre marcado"
+      },
+      {
+        "id": "sh10_afoot",
+        "front": "Then, come, Watson, come. The game is ___.\n\n💬 happening, in progress (old-fashioned)",
+        "back": "afoot\n\nen marcha\n\n📌 frase original de Conan Doyle"
+      },
+      {
+        "id": "sh10_cramp",
+        "front": "Get down, for heaven's sake. — Sorry. ___.\n\n💬 sudden painful muscle tightening",
+        "back": "Cramp\n\nCalambre"
+      },
+      {
+        "id": "sh10_chewing-the-fat",
+        "front": "Two old friends just talking, ___, man to man.\n\n💬 chatting informally",
+        "back": "chewing the fat\n\nde cháchara / charlando\n\n📌 chew the fat"
+      },
+      {
+        "id": "sh10_dwell",
+        "front": "Marriage is not a subject upon which I ___.\n\n💬 think or talk about for a long time",
+        "back": "dwell\n\nme detengo / le doy vueltas\n\n📌 dwell on/upon sth"
+      },
+      {
+        "id": "sh10_lap-it-up",
+        "front": "I write all of that, Holmes, and the readers ___, but I do not believe it.\n\n💬 accept eagerly",
+        "back": "lap it up\n\nse lo tragan encantados"
+      },
+      {
+        "id": "sh10_good-mind",
+        "front": "Well, I have a ___ to write to your editor.\n\n💬 (have a good mind to) feel like doing (a threat)",
+        "back": "good mind\n\ntengo ganas de / estoy por"
+      },
+      {
+        "id": "sh10_culpable",
+        "front": "You really mustn't blame yourself. — Watson is equally ___.\n\n💬 responsible for something bad",
+        "back": "culpable\n\nculpable"
+      },
+      {
+        "id": "sh10_botch",
+        "front": "Between us, we've managed to ___ this whole case.\n\n💬 do badly, ruin",
+        "back": "botch\n\nchapucear / echar a perder\n\n📌 botched job = chapuza"
+      },
+      {
+        "id": "sh10_undertaking",
+        "front": "I give an ___ to protect that man, now he's lying there with a dagger in his breast.\n\n💬 formal promise",
+        "back": "undertaking\n\ncompromiso / garantía"
+      },
+      {
+        "id": "sh10_morsel",
+        "front": "Has he eaten? — No, not a ___.\n\n💬 very small piece of food",
+        "back": "morsel\n\nbocado"
+      },
+      {
+        "id": "sh10_field-day",
+        "front": "Press are having a ruddy ___.\n\n💬 a great opportunity to enjoy something (often criticism)",
+        "back": "field day\n\nponerse las botas\n\n📌 have a field day"
+      },
+      {
+        "id": "sh10_tip-of-my-tongue",
+        "front": "What was that case? It's on the ___.\n\n💬 almost remembered",
+        "back": "tip of my tongue\n\npunta de la lengua"
+      },
+      {
+        "id": "sh10_blows-the-cobwebs-away",
+        "front": "Dead is the new sexy. — Well, that rather ___.\n\n💬 refreshes, wakes you up",
+        "back": "blows the cobwebs away\n\ndespeja la mente"
+      },
+      {
+        "id": "sh10_doss-house",
+        "front": "Wherever I find him, whatever back alley or ___, there will always be a list.\n\n💬 very cheap, dirty lodging house",
+        "back": "doss house\n\nalbergue de mala muerte\n\n📌 BrE; doss = dormir (coloquial)"
+      },
+      {
+        "id": "sh10_alleviate",
+        "front": "I'm not an addict, I'm a user. I ___ boredom.\n\n💬 make less severe",
+        "back": "alleviate\n\nalivio / mitigo"
+      },
+      {
+        "id": "sh10_yapping",
+        "front": "I was nearly there before you stepped on and started ___ away.\n\n💬 talking continuously and annoyingly",
+        "back": "yapping\n\nparlotear / dar la tabarra\n\n📌 yap = ladrido agudo"
+      },
+      {
+        "id": "sh10_halfwit",
+        "front": "I will run along behind you like some ___, making you look clever.\n\n💬 stupid person",
+        "back": "halfwit\n\nbobo / idiota"
+      },
+      {
+        "id": "sh10_punch-your-lights-out",
+        "front": "Tell me where my bloody wife is, you pompous prick, or I'll ___.\n\n💬 hit you very hard",
+        "back": "punch your lights out\n\npartirte la cara"
+      },
+      {
+        "id": "sh10_neglecting",
+        "front": "I thought perhaps we were... ___ each other.\n\n💬 not giving enough attention to",
+        "back": "Neglecting\n\nDescuidándonos"
+      },
+      {
+        "id": "sh10_wrath",
+        "front": "And you have nothing less than the ___ of a vengeful ghost.\n\n💬 extreme anger",
+        "back": "wrath\n\nira / cólera"
+      },
+      {
+        "id": "sh10_patronised",
+        "front": "Ignored. ___. Disregarded. Not allowed so much as a vote.\n\n💬 treated as if less intelligent",
+        "back": "Patronised\n\nTratadas con condescendencia\n\n📌 patronising = condescendiente"
+      },
+      {
+        "id": "sh10_reckoning",
+        "front": "A spectre to stalk those unpunished brutes whose ___ is long overdue.\n\n💬 punishment for past actions",
+        "back": "reckoning\n\najuste de cuentas\n\n📌 day of reckoning = día del juicio"
+      },
+      {
+        "id": "sh10_disparaged",
+        "front": "The women we have ignored. And ___.\n\n💬 criticised as worthless",
+        "back": "disparaged\n\nmenospreciado"
+      },
+      {
+        "id": "sh10_short-arse",
+        "front": "You're going in the water. ___.\n\n💬 short person (rude, BrE)",
+        "back": "Short-arse\n\nRetaco / tapón\n\n📌 BrE vulgar"
+      },
+      {
+        "id": "sh10_elope",
+        "front": "Oh, why don't you two just ___, for God's sake?\n\n💬 run away secretly to get married",
+        "back": "elope\n\nfugaros (para casaros)"
+      },
+      {
+        "id": "sh10_fanciful",
+        "front": "Perhaps I was being a little ___.\n\n💬 imaginative but unrealistic",
+        "back": "fanciful\n\nfantasioso"
+      },
+      {
+        "id": "sh10_beg-to-differ",
+        "front": "Don't think I would be. — I ___.\n\n💬 politely disagree",
+        "back": "beg to differ\n\npermíteme discrepar\n\n📌 I beg to differ"
+      }
+    ]
+  },
+  {
+    "section": 11,
     "title": "S04E01 · The Six Thatchers",
     "cards": [
       {
-        "id": "sh10_spoilsport",
+        "id": "sh11_spoilsport",
         "front": "Don't read them out. \"Free as a bird.\" God, you're such a ___.\n\n💬 person who spoils other people's fun",
         "back": "spoilsport\n\naguafiestas"
       },
       {
-        "id": "sh10_high-as-a-kite",
+        "id": "sh11_high-as-a-kite",
         "front": "Our doctor said you were clean. — I am. — You're ___.\n\n💬 very excited or drugged",
         "back": "high as a kite\n\ncolocadísimo / eufórico"
       },
       {
-        "id": "sh10_itchy-trigger-finger",
+        "id": "sh11_itchy-trigger-finger",
         "front": "Some over-eager squaddie with an ___, that's who.\n\n💬 tendency to shoot too quickly",
         "back": "itchy trigger finger\n\ngatillo fácil\n\n📌 squaddie = soldado raso (BrE)"
       },
       {
-        "id": "sh10_doctor",
+        "id": "sh11_doctor",
         "front": "We have the tech to ___ a bit of security footage.\n\n💬 change something dishonestly",
         "back": "doctor\n\nmanipular / amañar\n\n📌 doctor (verb) = falsificar"
       },
       {
-        "id": "sh10_off-the-hook",
+        "id": "sh11_off-the-hook",
         "front": "No need to get some sort of official pardon. You're ___, Mr Holmes.\n\n💬 free from blame or trouble",
         "back": "off the hook\n\nlibre / te has librado"
       },
       {
-        "id": "sh10_home-and-dry",
+        "id": "sh11_home-and-dry",
         "front": "You're off the hook. You're ___.\n\n💬 safe, successful",
         "back": "home and dry\n\na salvo / lo tienes hecho\n\n📌 BrE"
       },
       {
-        "id": "sh10_spinning-plates",
+        "id": "sh11_spinning-plates",
         "front": "Sherlock, you can't go on ___ like this.\n\n💬 doing many things at the same time",
         "back": "spinning plates\n\nhaciendo malabares"
       },
       {
-        "id": "sh10_bouts",
+        "id": "sh11_bouts",
         "front": "The heart medication you are taking is known to cause ___ of amnesia.\n\n💬 short periods of illness",
         "back": "bouts\n\nepisodios / ataques"
       },
       {
-        "id": "sh10_gone-off-that",
+        "id": "sh11_gone-off-that",
         "front": "What about a name? Catherine. — Oh, yeah, we've ___.\n\n💬 stopped liking it",
         "back": "gone off that\n\nya no nos gusta / nos ha dejado de gustar\n\n📌 go off sth/sb (BrE)"
       },
       {
-        "id": "sh10_broadens-the-mind",
+        "id": "sh11_broadens-the-mind",
         "front": "Sorry to miss the party, but travel ___, right?\n\n💬 makes you more open and tolerant",
         "back": "broadens the mind\n\nabre la mente"
       },
       {
-        "id": "sh10_settle-a-bet",
+        "id": "sh11_settle-a-bet",
         "front": "Could you just check something on my car? To ___.\n\n💬 decide who wins an argument/bet",
         "back": "settle a bet\n\nzanjar una apuesta"
       },
       {
-        "id": "sh10_tickle-you",
+        "id": "sh11_tickle-you",
         "front": "Yeah, I thought it'd ___.\n\n💬 amuse you",
         "back": "tickle you\n\nhacerte gracia"
       },
       {
-        "id": "sh10_flash",
+        "id": "sh11_flash",
         "front": "Was it his own car? — Yeah, not ___. He was a student.\n\n💬 expensive and showy (BrE)",
         "back": "flash\n\nostentoso / pijo\n\n📌 BrE coloquial"
       },
       {
-        "id": "sh10_sore-spot",
+        "id": "sh11_sore-spot",
         "front": "Well, I think you've hit a ___, Sherlock.\n\n💬 sensitive subject",
         "back": "sore spot\n\npunto débil / tema delicado"
       },
       {
-        "id": "sh10_driving-me-nuts",
+        "id": "sh11_driving-me-nuts",
         "front": "Just solve the bloody thing, will you. It's ___.\n\n💬 making me crazy",
         "back": "driving me nuts\n\nvolviendo loco"
       },
       {
-        "id": "sh10_beck-and-call",
+        "id": "sh11_beck-and-call",
         "front": "You at the ___ of a screaming, demanding baby.\n\n💬 always ready to obey someone",
         "back": "beck and call\n\na disposición / a merced\n\n📌 at sb's beck and call"
       },
       {
-        "id": "sh10_winding",
+        "id": "sh11_winding",
         "front": "I think he needs ___.\n\n💬 helping a baby burp",
         "back": "winding\n\nque le saquen los gases\n\n📌 BrE: wind a baby; AmE: burp"
       },
       {
-        "id": "sh10_cut-up",
+        "id": "sh11_cut-up",
         "front": "Charlie's family are pretty ___ about it, as you'd expect.\n\n💬 very upset (BrE)",
         "back": "cut up\n\ndestrozados / hechos polvo"
       },
       {
-        "id": "sh10_throw-any-light",
+        "id": "sh11_throw-any-light",
         "front": "If anyone can ___ into this darkness, surely it will be you.\n\n💬 help explain something",
         "back": "throw any light\n\narrojar luz\n\n📌 throw/shed light on sth"
       },
       {
-        "id": "sh10_playing-for-time",
+        "id": "sh11_playing-for-time",
         "front": "For God's sake, you know who she is. Why are you ___?\n\n💬 delaying to gain time",
         "back": "playing for time\n\nintentando ganar tiempo"
       },
       {
-        "id": "sh10_verging-on",
+        "id": "sh11_verging-on",
         "front": "Everything else is perfectly ordered. This whole thing's ___ OCD.\n\n💬 almost reaching",
         "back": "verging on\n\nrozando / al borde de\n\n📌 verge = borde"
       },
       {
-        "id": "sh10_to-be-blunt",
+        "id": "sh11_to-be-blunt",
         "front": "It's quite simple. Superficial, ___.\n\n💬 to speak directly and honestly",
         "back": "to be blunt\n\npara ser franco\n\n📌 blunt = directo; también desafilado"
       },
       {
-        "id": "sh10_keep-it-down",
+        "id": "sh11_keep-it-down",
         "front": "Would you please ___? — Sorry.\n\n💬 be quieter",
         "back": "keep it down\n\nbajar la voz"
       },
       {
-        "id": "sh10_obliterated",
+        "id": "sh11_obliterated",
         "front": "If she'd really hurt your feelings, you would have had the word ___.\n\n💬 completely destroyed or erased",
         "back": "obliterated\n\nborrado del todo"
       },
       {
-        "id": "sh10_out-of-your-league",
+        "id": "sh11_out-of-your-league",
         "front": "Have you ever wondered if your wife was a little bit ___?\n\n💬 too good for you",
         "back": "out of your league\n\ndemasiado para ti"
       },
       {
-        "id": "sh10_trudge",
+        "id": "sh11_trudge",
         "front": "Barnicot's house, then. Anyone up for a ___?\n\n💬 long, tiring walk",
         "back": "trudge\n\ncaminata / pateada"
       },
       {
-        "id": "sh10_lure-me-in",
+        "id": "sh11_lure-me-in",
         "front": "It's designed to beguile me, tease me and ___.\n\n💬 attract me into a trap",
         "back": "lure me in\n\natraerme / tenderme una trampa"
       },
       {
-        "id": "sh10_leveller",
+        "id": "sh11_leveller",
         "front": "Time's a great ___, innit?\n\n💬 something that makes everyone equal",
         "back": "leveller\n\nigualador"
       },
       {
-        "id": "sh10_perks-things-up",
+        "id": "sh11_perks-things-up",
         "front": "And it's murder this time. — Mmm. That ___ a bit.\n\n💬 makes things more lively",
         "back": "perks things up\n\nanima las cosas\n\n📌 perk up"
       },
       {
-        "id": "sh10_grievances",
+        "id": "sh11_grievances",
         "front": "It would be much simpler to take out your ___ at the polling station.\n\n💬 complaints about unfair treatment",
         "back": "grievances\n\nquejas / agravios"
       },
       {
-        "id": "sh10_palls",
+        "id": "sh11_palls",
         "front": "Chess ___ after three months. Everything palls.\n\n💬 becomes boring",
         "back": "palls\n\naburre / cansa"
       },
       {
-        "id": "sh10_top-of-our-game",
+        "id": "sh11_top-of-our-game",
         "front": "Oh, we were at the ___ for years, and then it all ended.\n\n💬 performing at our best",
         "back": "top of our game\n\nen lo más alto / en plena forma"
       },
       {
-        "id": "sh10_propping-up",
+        "id": "sh11_propping-up",
         "front": "The British Government or whatever government you're currently ___.\n\n💬 supporting something weak",
         "back": "propping up\n\napuntalando / sosteniendo\n\n📌 prop up"
       },
       {
-        "id": "sh10_woolly",
+        "id": "sh11_woolly",
         "front": "We stopped using freelancers. Freelancers are too ___, too messy.\n\n💬 unclear, not well organised",
         "back": "woolly\n\nimprecisos / poco fiables"
       },
       {
-        "id": "sh10_loose-ends",
+        "id": "sh11_loose-ends",
         "front": "Freelancers are too messy. I don't like ___.\n\n💬 unfinished details",
         "back": "loose ends\n\ncabos sueltos"
       },
       {
-        "id": "sh10_not-on-my-watch",
+        "id": "sh11_not-on-my-watch",
         "front": "I don't like loose ends. ___.\n\n💬 not while I am responsible",
         "back": "Not on my watch\n\nNo mientras yo esté al mando"
       },
       {
-        "id": "sh10_knackered",
+        "id": "sh11_knackered",
         "front": "It's too floral for me. I'm more of a ___ with weary old eyes kind of a guy.\n\n💬 extremely tired (BrE)",
         "back": "knackered\n\nhecho polvo / reventado"
       },
       {
-        "id": "sh10_foggiest",
+        "id": "sh11_foggiest",
         "front": "I promise you, I haven't the ___ idea what all this is about.\n\n💬 (not the foggiest) no idea at all",
         "back": "foggiest\n\nla más remota (idea)\n\n📌 BrE; = haven't the faintest"
       },
       {
-        "id": "sh10_cutting-to-the-chase",
+        "id": "sh11_cutting-to-the-chase",
         "front": "I really am a very busy man. Would you mind ___?\n\n💬 getting to the point",
         "back": "cutting to the chase\n\nir al grano"
       },
       {
-        "id": "sh10_churlish",
+        "id": "sh11_churlish",
         "front": "Selling secrets? — Well, it would be ___ to refuse.\n\n💬 rude, ungrateful",
         "back": "churlish\n\ndescortés / de mala educación"
       },
       {
-        "id": "sh10_tipped-off",
+        "id": "sh11_tipped-off",
         "front": "This one also ___ the hostage-takers.\n\n💬 warned secretly",
         "back": "tipped off\n\ndio el soplo a / avisó a\n\n📌 tip-off = soplo"
       },
       {
-        "id": "sh10_drudge",
+        "id": "sh11_drudge",
         "front": "Same old ___, day in, day out.\n\n💬 boring, hard routine work",
         "back": "drudge\n\nrutina pesada / curro aburrido\n\n📌 drudgery = trabajo monótono"
       },
       {
-        "id": "sh10_outsmarted",
+        "id": "sh11_outsmarted",
         "front": "Vivian Norbury. You ___ them all.\n\n💬 were cleverer than",
         "back": "outsmarted\n\nfuiste más lista que"
       },
       {
-        "id": "sh10_rally-around",
+        "id": "sh11_rally-around",
         "front": "We'll have to ___, I expect, do our bit.\n\n💬 come together to help",
         "back": "rally around\n\narrimar el hombro / unirnos"
       },
       {
-        "id": "sh10_full-of-myself",
+        "id": "sh11_full-of-myself",
         "front": "If you ever think I'm becoming a bit ___, cocky or overconfident...\n\n💬 too proud, conceited",
         "back": "full of myself\n\ncreído / pagado de mí mismo"
       },
       {
-        "id": "sh10_cocky",
+        "id": "sh11_cocky",
         "front": "A bit full of myself, ___ or overconfident... — Yes?\n\n💬 too confident, arrogant",
         "back": "cocky\n\nchulo / gallito"
       }
     ]
   },
   {
-    "section": 11,
+    "section": 12,
     "title": "S04E02 · The Lying Detective",
     "cards": [
       {
-        "id": "sh11_confide-in",
+        "id": "sh12_confide-in",
         "front": "So, there is no one you talk to? ___? — No one.\n\n💬 tell secrets or private feelings to",
         "back": "Confide in\n\nConfiar en / desahogarte con"
       },
       {
-        "id": "sh11_glancing",
+        "id": "sh12_glancing",
         "front": "You keep ___ to my left.\n\n💬 looking quickly",
         "back": "glancing\n\nechando miraditas\n\n📌 glance = vistazo"
       },
       {
-        "id": "sh11_off-my-chest",
+        "id": "sh12_off-my-chest",
         "front": "All I'm doing, Faith dear, is getting something ___.\n\n💬 (get sth off your chest) talking about something that worries you",
         "back": "off my chest\n\ndesahogarme / quitarme un peso de encima"
       },
       {
-        "id": "sh11_ignorance-is-bliss",
+        "id": "sh12_ignorance-is-bliss",
         "front": "___. — What's wrong with bliss?\n\n💬 it's better not to know",
         "back": "Ignorance is bliss\n\nOjos que no ven, corazón que no siente"
       },
       {
-        "id": "sh11_balance-sheet",
+        "id": "sh12_balance-sheet",
         "front": "If life is a ___, and I think it is, I believe I'm in credit!\n\n💬 statement of what is owned and owed",
         "back": "balance sheet\n\nbalance (contable)\n\n📌 in credit = con saldo positivo"
       },
       {
-        "id": "sh11_letting-yourself-go",
+        "id": "sh12_letting-yourself-go",
         "front": "You need to top up your tan and your roots are showing, you're ___.\n\n💬 not taking care of your appearance",
         "back": "letting yourself go\n\ndescuidándote"
       },
       {
-        "id": "sh11_downsized",
+        "id": "sh12_downsized",
         "front": "Presumably, you ___ when you left your job.\n\n💬 moved to a smaller home / reduced size",
         "back": "downsized\n\nte mudaste a algo más pequeño"
       },
       {
-        "id": "sh11_hem",
+        "id": "sh12_hem",
         "front": "Your skirt. Look at the ___ of it!\n\n💬 folded edge at the bottom of clothing",
         "back": "hem\n\ndobladillo"
       },
       {
-        "id": "sh11_self-harm",
+        "id": "sh12_self-harm",
         "front": "I don't really need to check that the angles are consistent with ___, do I?\n\n💬 injuring yourself deliberately",
         "back": "self-harm\n\nautolesiones"
       },
       {
-        "id": "sh11_perk",
+        "id": "sh12_perk",
         "front": "You're suicidal. You're allowed chips. Trust me. It's about the only ___.\n\n💬 extra advantage",
         "back": "perk\n\nventaja / privilegio\n\n📌 perks of the job"
       },
       {
-        "id": "sh11_in-a-state",
+        "id": "sh12_in-a-state",
         "front": "Oh, you're ___! Look at you!\n\n💬 very upset or in a bad condition",
         "back": "in a state\n\nhecho un desastre"
       },
       {
-        "id": "sh11_strapped-for-cash",
+        "id": "sh12_strapped-for-cash",
         "front": "You're suicidal, alone and ___.\n\n💬 having very little money",
         "back": "strapped for cash\n\nsin blanca / pelado"
       },
       {
-        "id": "sh11_keep-tabs",
+        "id": "sh12_keep-tabs",
         "front": "Big brother is watching you. — We can ___. You didn't have to come in.\n\n💬 watch carefully, monitor",
         "back": "keep tabs\n\nvigilarle / controlarle\n\n📌 keep tabs on sb"
       },
       {
-        "id": "sh11_made-it-up-to-me",
+        "id": "sh12_made-it-up-to-me",
         "front": "I have, I think, apologised extensively. — You haven't ___.\n\n💬 compensated me",
         "back": "made it up to me\n\ncompensado\n\n📌 make it up to sb"
       },
       {
-        "id": "sh11_hijack",
+        "id": "sh12_hijack",
         "front": "That's very touching how you can ___ the machinery of the state to look after your own family.\n\n💬 take control of illegally",
         "back": "hijack\n\nsecuestrar / apropiarte de"
       },
       {
-        "id": "sh11_gone-rogue",
+        "id": "sh12_gone-rogue",
         "front": "Sherlock ___ is a legitimate security concern.\n\n💬 out of control, acting independently",
         "back": "gone rogue\n\nfuera de control / desmadrado"
       },
       {
-        "id": "sh11_burn-our-bridges",
+        "id": "sh12_burn-our-bridges",
         "front": "We must be careful not to ___.\n\n💬 destroy relationships so you can't go back",
         "back": "burn our bridges\n\nquemar las naves / los puentes"
       },
       {
-        "id": "sh11_turned-on",
+        "id": "sh12_turned-on",
         "front": "You said your life ___ one word.\n\n💬 depended on",
         "back": "turned on\n\ndependía de / giró en torno a"
       },
       {
-        "id": "sh11_out",
+        "id": "sh12_out",
         "front": "Look, I think we can rule both of them ___ as targets.\n\n💬 (rule sb/sth ___) exclude, decide it is not possible",
         "back": "out\n\ndescartar (rule out)\n\n📌 phrasal separable: rule them out"
       },
       {
-        "id": "sh11_lost-it",
+        "id": "sh12_lost-it",
         "front": "I'm out of here. He's ___. He's totally gone!\n\n💬 lost control, gone crazy",
         "back": "lost it\n\nperdido la cabeza"
       },
       {
-        "id": "sh11_get-over-yourself",
+        "id": "sh12_get-over-yourself",
         "front": "I've borrowed them before. Oh, ___.\n\n💬 stop being so self-important",
         "back": "get over yourself\n\nno te lo tengas tan creído"
       },
       {
-        "id": "sh11_malingerer",
+        "id": "sh12_malingerer",
         "front": "I have been many things, John, but when have I ever been a ___?\n\n💬 person who pretends to be ill",
         "back": "malingerer\n\nsimulador / cuentista"
       },
       {
-        "id": "sh11_bullshit",
+        "id": "sh12_bullshit",
         "front": "The one person who learnt to see through your ___ long ago.\n\n💬 nonsense, lies (rude)",
         "back": "bullshit\n\ngilipolleces / trolas\n\n📌 vulgar"
       },
       {
-        "id": "sh11_buck-up",
+        "id": "sh12_buck-up",
         "front": "You're going to have to ___ a bit, John. You know that, don't you?\n\n💬 become more cheerful/energetic",
         "back": "buck up\n\nespabilar / animarte"
       },
       {
-        "id": "sh11_get-ahead-of-ourselves",
+        "id": "sh12_get-ahead-of-ourselves",
         "front": "You've got weeks. — Exactly. Weeks. Let's not ___.\n\n💬 act too early, before the right time",
         "back": "get ahead of ourselves\n\nadelantarnos / precipitarnos"
       },
       {
-        "id": "sh11_fumbling-around",
+        "id": "sh12_fumbling-around",
         "front": "Clever boy. Missed you ___ the place.\n\n💬 moving clumsily",
         "back": "fumbling around\n\ndando tumbos / torpeando"
       },
       {
-        "id": "sh11_drug-addled",
+        "id": "sh12_drug-addled",
         "front": "Has it occurred to you, anywhere in your ___ brain, that you've just been played?\n\n💬 confused by drugs",
         "back": "drug-addled\n\natontado por las drogas"
       },
       {
-        "id": "sh11_gone-downhill",
+        "id": "sh12_gone-downhill",
         "front": "You write Sherlock's blog? It's ___ a bit, hasn't it?\n\n💬 become worse",
         "back": "gone downhill\n\nido a peor / cuesta abajo"
       },
       {
-        "id": "sh11_outcasts",
+        "id": "sh12_outcasts",
         "front": "They tend to be social ___.\n\n💬 people rejected by society",
         "back": "outcasts\n\nmarginados"
       },
       {
-        "id": "sh11_gloomy",
+        "id": "sh12_gloomy",
         "front": "Look at you all. So ___. Can't you take a joke?\n\n💬 sad, without hope",
         "back": "gloomy\n\nsombríos / tristones"
       },
       {
-        "id": "sh11_pliable",
+        "id": "sh12_pliable",
         "front": "Tough crowd. — Oh, I don't know. I've always found them quite ___.\n\n💬 easily bent; easily influenced",
         "back": "pliable\n\ndóciles / maleables"
       },
       {
-        "id": "sh11_off-his-tits",
+        "id": "sh12_off-his-tits",
         "front": "Either I'm a serial killer, or Sherlock Holmes is ___ on drugs.\n\n💬 extremely drunk or high (vulgar BrE)",
         "back": "off his tits\n\ncolocadísimo / ciego\n\n📌 BrE vulgar"
       },
       {
-        "id": "sh11_loitering",
+        "id": "sh12_loitering",
         "front": "Faith, stop ___ at the door and come in.\n\n💬 standing around without a purpose",
         "back": "loitering\n\nmerodear / quedarte ahí parada"
       },
       {
-        "id": "sh11_bringing-charges",
+        "id": "sh12_bringing-charges",
         "front": "Mr Smith stated he had no interest in ___.\n\n💬 formally accusing someone of a crime",
         "back": "bringing charges\n\npresentar cargos\n\n📌 press charges"
       },
       {
-        "id": "sh11_pull-through",
+        "id": "sh12_pull-through",
         "front": "I'm sure he'll ___. He's awfully strong.\n\n💬 recover from a serious illness",
         "back": "pull through\n\nsalir adelante / recuperarse"
       },
       {
-        "id": "sh11_look-on-the-bright-side",
+        "id": "sh12_look-on-the-bright-side",
         "front": "He's made a terrible mess of himself, so we must ___.\n\n💬 be optimistic",
         "back": "look on the bright side\n\nmirar el lado bueno"
       },
       {
-        "id": "sh11_off-the-rails",
+        "id": "sh12_off-the-rails",
         "front": "I'm trying to establish exactly what drove Sherlock ___.\n\n💬 out of control, behaving badly",
         "back": "off the rails\n\ndesquiciarse / descarrilar\n\n📌 go off the rails"
       },
       {
-        "id": "sh11_spooks",
+        "id": "sh12_spooks",
         "front": "Are these ___? Are you using spooks now to look after your family?\n\n💬 spies (informal)",
         "back": "spooks\n\nespías / agentes secretos"
       },
       {
-        "id": "sh11_gave-up-the-ghost",
+        "id": "sh12_gave-up-the-ghost",
         "front": "Everyone assumes that it was a fault, or you just ___.\n\n💬 died; stopped working",
         "back": "gave up the ghost\n\nentregaste el alma"
       },
       {
-        "id": "sh11_ration-myself",
+        "id": "sh12_ration-myself",
         "front": "I just have to ___, choose the right heart to stop.\n\n💬 limit what I take",
         "back": "ration myself\n\nracionarme / dosificarme"
       },
       {
-        "id": "sh11_in-harm-s-way",
+        "id": "sh12_in-harm-s-way",
         "front": "Go and pick a fight with a bad guy, put yourself ___.\n\n💬 in danger",
         "back": "in harm's way\n\nen peligro"
       },
       {
-        "id": "sh11_sweeties",
+        "id": "sh12_sweeties",
         "front": "Which is why we're all taking it in turns to keep you off the ___.\n\n💬 sweets (here: drugs, ironic)",
         "back": "sweeties\n\ngolosinas (las drogas)\n\n📌 BrE infantil"
       },
       {
-        "id": "sh11_hanging-out",
+        "id": "sh12_hanging-out",
         "front": "I thought we were just ___.\n\n💬 spending time together casually",
         "back": "hanging out\n\npasando el rato"
       },
       {
-        "id": "sh11_inadmissible",
+        "id": "sh12_inadmissible",
         "front": "By the way, the recordings will probably be ___.\n\n💬 not allowed as legal evidence",
         "back": "inadmissible\n\ninadmisibles"
       },
       {
-        "id": "sh11_entrapment",
+        "id": "sh12_entrapment",
         "front": "Well, technically it's ___, so it might get thrown out as evidence.\n\n💬 tricking someone into a crime (police)",
         "back": "entrapment\n\ninducción al delito\n\n📌 término legal"
       },
       {
-        "id": "sh11_disservice",
+        "id": "sh12_disservice",
         "front": "Look at me, you are doing yourself a ___.\n\n💬 harmful action",
         "back": "disservice\n\nflaco favor / perjuicio\n\n📌 do sb a disservice"
       },
       {
-        "id": "sh11_comeback",
+        "id": "sh12_comeback",
         "front": "I cheated on her. No clever ___?\n\n💬 quick, clever reply",
         "back": "comeback\n\nréplica ingeniosa"
       }
     ]
   },
   {
-    "section": 12,
+    "section": 13,
     "title": "S04E03 · The Final Problem",
     "cards": [
       {
-        "id": "sh12_press-charges",
+        "id": "sh13_press-charges",
         "front": "Would you like me to take it off? — Then I'd really have to ___.\n\n💬 formally accuse someone in court",
         "back": "press charges\n\npresentar cargos / denunciar"
       },
       {
-        "id": "sh12_close-watch",
+        "id": "sh13_close-watch",
         "front": "Maybe not arresting you. I could just keep you under ___.\n\n💬 careful observation",
         "back": "close watch\n\nvigilancia estrecha\n\n📌 keep sb under close watch"
       },
       {
-        "id": "sh12_wetting-yourself",
+        "id": "sh13_wetting-yourself",
         "front": "Someone convinced him you wouldn't tell the truth unless you were actually ___.\n\n💬 urinating in your clothes (from fear)",
         "back": "wetting yourself\n\nmeándote encima"
       },
       {
-        "id": "sh12_resurface",
+        "id": "sh13_resurface",
         "front": "Memories can ___. Wounds can reopen.\n\n💬 come back to the surface",
         "back": "resurface\n\nvolver a aflorar / resurgir"
       },
       {
-        "id": "sh12_incandescent",
+        "id": "sh13_incandescent",
         "front": "But Eurus, she was ___, even then.\n\n💬 extremely bright; also: extremely angry",
         "back": "incandescent\n\ndeslumbrante / brillantísima\n\n📌 incandescent with rage = furioso"
       },
       {
-        "id": "sh12_spare-them",
+        "id": "sh13_spare-them",
         "front": "This is the story I told our parents to ___ further pain.\n\n💬 avoid causing them",
         "back": "spare them\n\nahorrarles\n\n📌 spare sb sth"
       },
       {
-        "id": "sh12_credulous",
+        "id": "sh13_credulous",
         "front": "Heaven may be a fantasy for the ___ and the afraid.\n\n💬 too ready to believe things",
         "back": "credulous\n\ncrédulos / ingenuos"
       },
       {
-        "id": "sh12_vacate",
+        "id": "sh13_vacate",
         "front": "We have a maximum of three seconds to ___ the blast radius.\n\n💬 leave a place",
         "back": "vacate\n\ndesalojar / abandonar"
       },
       {
-        "id": "sh12_better-out-than-in",
+        "id": "sh13_better-out-than-in",
         "front": "Go on, son, get it up. ___.\n\n💬 it's better to vomit (or express it) than keep it inside",
         "back": "Better out than in\n\nMejor fuera que dentro"
       },
       {
-        "id": "sh12_off-course",
+        "id": "sh13_off-course",
         "front": "This is a restricted area. You are ___.\n\n💬 not following the right route",
         "back": "off course\n\nfuera de rumbo"
       },
       {
-        "id": "sh12_sparing-your-blushes",
+        "id": "sh13_sparing-your-blushes",
         "front": "I'm ___ because we're supposed to be on the same side.\n\n💬 avoiding embarrassing you",
         "back": "sparing your blushes\n\nevitándote el bochorno\n\n📌 spare sb's blushes (BrE)"
       },
       {
-        "id": "sh12_trial-and-error",
+        "id": "sh13_trial-and-error",
         "front": "Two others? — Well, it was ___. We had to find the right waistband.\n\n💬 trying different methods until one works",
         "back": "trial-and-error\n\nensayo y error"
       },
       {
-        "id": "sh12_talked-me-out-of",
+        "id": "sh13_talked-me-out-of",
         "front": "Say thank you to Dr Watson. He ___ Lady Bracknell.\n\n💬 persuaded me not to do",
         "back": "talked me out of\n\nme convenció de no hacer\n\n📌 talk sb out of sth"
       },
       {
-        "id": "sh12_cast-your-mind-back",
+        "id": "sh13_cast-your-mind-back",
         "front": "Your office? — ___. It used to be yours.\n\n💬 try to remember",
         "back": "Cast your mind back\n\nHaz memoria"
       },
       {
-        "id": "sh12_enslaved",
+        "id": "sh13_enslaved",
         "front": "Everyone we sent in there... Recruited them. ___ them.\n\n💬 made them slaves",
         "back": "Enslaved\n\nLos esclavizó"
       },
       {
-        "id": "sh12_ear-worm",
+        "id": "sh13_ear-worm",
         "front": "He said it was like an ___, couldn't get her out of his head.\n\n💬 song or idea you can't stop thinking about",
         "back": "ear worm\n\n(canción) pegadiza / obsesión"
       },
       {
-        "id": "sh12_heat-of-the-moment",
+        "id": "sh13_heat-of-the-moment",
         "front": "He? She? Afraid I didn't notice in the ___.\n\n💬 while feeling strong emotions",
         "back": "heat of the moment\n\ncalor del momento\n\n📌 in the heat of the moment"
       },
       {
-        "id": "sh12_beside-the-point",
+        "id": "sh13_beside-the-point",
         "front": "It's as if you woke her up. — That is entirely ___.\n\n💬 not relevant",
         "back": "beside the point\n\nno viene al caso"
       },
       {
-        "id": "sh12_down-with-the-kids",
+        "id": "sh13_down-with-the-kids",
         "front": "Big G means governor. Street speak. I'm a bit ___, you know.\n\n💬 in touch with young people's culture",
         "back": "down with the kids\n\nen la onda de los jóvenes\n\n📌 BrE humorístico"
       },
       {
-        "id": "sh12_gory",
+        "id": "sh13_gory",
         "front": "I wrote my own version of the Nativity. The Hungry Donkey. It was a bit ___.\n\n💬 full of blood and violence",
         "back": "gory\n\nsangriento / gore"
       },
       {
-        "id": "sh12_asking-for-trouble",
+        "id": "sh13_asking-for-trouble",
         "front": "If you're gonna put a baby in a manger, you're ___.\n\n💬 behaving in a way likely to cause problems",
         "back": "asking for trouble\n\nbuscándote problemas"
       },
       {
-        "id": "sh12_at-liberty",
+        "id": "sh13_at-liberty",
         "front": "Until you commit a verifiable crime, you are, I regret, ___.\n\n💬 free",
         "back": "at liberty\n\nen libertad\n\n📌 at liberty to say = autorizado a decir"
       },
       {
-        "id": "sh12_banter",
+        "id": "sh13_banter",
         "front": "Family is always difficult. — Is this an occasion for ___?\n\n💬 friendly teasing conversation",
         "back": "banter\n\nbromas / pique amistoso"
       },
       {
-        "id": "sh12_case-in-point",
+        "id": "sh13_case-in-point",
         "front": "Is this an occasion for banter? — Hmm. ___.\n\n💬 a good example of what was just said",
         "back": "Case in point\n\nEjemplo claro"
       },
       {
-        "id": "sh12_blood-on-my-hands",
+        "id": "sh13_blood-on-my-hands",
         "front": "I will not kill. I will not have ___.\n\n💬 responsibility for someone's death",
         "back": "blood on my hands\n\nsangre en las manos"
       },
       {
-        "id": "sh12_sink-or-swim",
+        "id": "sh13_sink-or-swim",
         "front": "You'll drop them into the sea. — ___.\n\n💬 succeed or fail without help",
         "back": "Sink or swim\n\nO nadas o te hundes"
       },
       {
-        "id": "sh12_disinclined",
+        "id": "sh13_disinclined",
         "front": "What if we're ___ to play your games, little sister?\n\n💬 unwilling",
         "back": "disinclined\n\npoco dispuestos / reacios"
       },
       {
-        "id": "sh12_notwithstanding",
+        "id": "sh13_notwithstanding",
         "front": "And terror ___, a bad case of the DTs.\n\n💬 despite",
         "back": "notwithstanding\n\na pesar de / pese a\n\n📌 formal; va detrás o delante"
       },
       {
-        "id": "sh12_peering",
+        "id": "sh13_peering",
         "front": "Frown line suggests a lifetime of ___.\n\n💬 looking closely with difficulty",
         "back": "peering\n\nmirar forzando la vista\n\n📌 peer at sth"
       },
       {
-        "id": "sh12_done-the-trick",
+        "id": "sh13_done-the-trick",
         "front": "He's short-sighted, or he was. His recent laser surgery has ___.\n\n💬 worked, solved the problem",
         "back": "done the trick\n\nfuncionado / hecho efecto\n\n📌 do the trick"
       },
       {
-        "id": "sh12_specs",
+        "id": "sh13_specs",
         "front": "Suddenly he sees himself in quite a different light, now that he's dumped the ___.\n\n💬 glasses (informal)",
         "back": "specs\n\ngafas\n\n📌 specs = spectacles"
       },
       {
-        "id": "sh12_pull-yourself-together",
+        "id": "sh13_pull-yourself-together",
         "front": "Emotional context destroys you every time. Now please, ___.\n\n💬 control your emotions, calm down",
         "back": "pull yourself together\n\nrecomponte / serénate"
       },
       {
-        "id": "sh12_keep-it-together",
+        "id": "sh13_keep-it-together",
         "front": "I know you're being tortured. But you have got to ___.\n\n💬 stay calm and in control",
         "back": "keep it together\n\nmantener la calma / no venirte abajo"
       },
       {
-        "id": "sh12_prolong-his-agony",
+        "id": "sh13_prolong-his-agony",
         "front": "Not sentiment. Don't ___. Shoot him.\n\n💬 make his suffering last longer",
         "back": "prolong his agony\n\nprolongar su agonía"
       },
       {
-        "id": "sh12_get-a-say",
+        "id": "sh13_get-a-say",
         "front": "Do I ___ in this?\n\n💬 have the right to give an opinion",
         "back": "get a say\n\ntengo voz y voto / puedo opinar\n\n📌 have a say"
       },
       {
-        "id": "sh12_dazzle",
+        "id": "sh13_dazzle",
         "front": "A little scrap of ordinariness for you to impress, to ___ with your cleverness.\n\n💬 impress greatly",
         "back": "dazzle\n\ndeslumbrar"
       },
       {
-        "id": "sh12_end-of-the-line",
+        "id": "sh13_end-of-the-line",
         "front": "And here we are, the ___. Holmes killing Holmes.\n\n💬 the final point",
         "back": "end of the line\n\nfinal del trayecto / fin de la historia"
       },
       {
-        "id": "sh12_cut-off",
+        "id": "sh13_cut-off",
         "front": "I'm sorry about that. We must have got ___.\n\n💬 disconnected (phone call)",
         "back": "cut off\n\ncortado"
       },
       {
-        "id": "sh12_like-a-house-on-fire",
+        "id": "sh13_like-a-house-on-fire",
         "front": "Me and Jim Moriarty, we got on ___.\n\n💬 (get on) very well, quickly",
         "back": "like a house on fire\n\nde maravilla\n\n📌 get on like a house on fire"
       },
       {
-        "id": "sh12_shaken-up",
+        "id": "sh13_shaken-up",
         "front": "How is he? — He's a bit ___, that's all.\n\n💬 upset and shocked",
         "back": "shaken up\n\nconmocionado / afectado"
       },
       {
-        "id": "sh12_what-goes-around-comes-around",
+        "id": "sh13_what-goes-around-comes-around",
         "front": "She just locked him in her old cell. ___.\n\n💬 your actions return to you",
         "back": "What goes around, comes around\n\nDonde las dan, las toman"
       },
       {
-        "id": "sh12_refuge",
+        "id": "sh13_refuge",
         "front": "There is a last ___ for the desperate, the unloved, the persecuted.\n\n💬 place of safety",
         "back": "refuge\n\nrefugio"
       },
       {
-        "id": "sh12_scruffy",
+        "id": "sh13_scruffy",
         "front": "Two men sitting, arguing in a ___ flat.\n\n💬 untidy, dirty",
         "back": "scruffy\n\ndesastrado / cutre"
-      }
-    ]
-  },
-  {
-    "section": 13,
-    "title": "Special · The Abominable Bride (1895)",
-    "cards": [
-      {
-        "id": "sh13_gravitated",
-        "front": "Under such circumstances, I naturally ___ to London.\n\n💬 moved towards, was attracted to",
-        "back": "gravitated\n\nacabé yendo / gravité hacia\n\n📌 gravitate towards"
-      },
-      {
-        "id": "sh13_idlers",
-        "front": "That great cesspool into which all the loungers and ___ of the empire are drained.\n\n💬 lazy people who avoid work",
-        "back": "idlers\n\nholgazanes / ociosos\n\n📌 inglés victoriano; loungers = vagos"
-      },
-      {
-        "id": "sh13_lodger",
-        "front": "I mentioned to Stamford this morning that I was in need of a fellow ___.\n\n💬 person who pays to live in someone's house",
-        "back": "lodger\n\ninquilino / huésped"
-      },
-      {
-        "id": "sh13_splendidly",
-        "front": "You're clearly acclimatised to never getting to the end of a sentence. We'll get along ___.\n\n💬 extremely well",
-        "back": "splendidly\n\nde maravilla / estupendamente"
-      },
-      {
-        "id": "sh13_draw",
-        "front": "Caught the murderer, still looking for the legs. I think we'll call it a ___.\n\n💬 result where neither side wins",
-        "back": "draw\n\nempate"
-      },
-      {
-        "id": "sh13_singled-out",
-        "front": "Don't feel ___, Mrs Hudson. I'm hardly in the dog one.\n\n💬 chosen from a group (for criticism)",
-        "back": "singled out\n\nseñalada / discriminada\n\n📌 single sb out"
-      },
-      {
-        "id": "sh13_plot-device",
-        "front": "I'm your landlady, not a ___.\n\n💬 character or element used just to move the story forward",
-        "back": "plot device\n\nrecurso argumental"
-      },
-      {
-        "id": "sh13_dingy",
-        "front": "And you make the room so drab and ___.\n\n💬 dark and dirty",
-        "back": "dingy\n\nlóbrega / sombría\n\n📌 drab = gris, apagado"
-      },
-      {
-        "id": "sh13_recount",
-        "front": "Some are still too sensitive to ___.\n\n💬 tell (a story) in detail",
-        "back": "recount\n\nrelatar / contar"
-      },
-      {
-        "id": "sh13_trifling",
-        "front": "Allow me to make some ___ observations.\n\n💬 small, unimportant",
-        "back": "trifling\n\ntriviales / nimias\n\n📌 trifle = nimiedad"
-      },
-      {
-        "id": "sh13_impish",
-        "front": "You have an ___ sense of humour.\n\n💬 playful, slightly naughty",
-        "back": "impish\n\npícaro / travieso\n\n📌 imp = diablillo"
-      },
-      {
-        "id": "sh13_unsavoury",
-        "front": "He has abandoned you for an ___ companion of dubious morals.\n\n💬 unpleasant, morally doubtful",
-        "back": "unsavoury\n\nindeseable / de mala reputación"
-      },
-      {
-        "id": "sh13_last-resort",
-        "front": "You have come to this agency as a ___.\n\n💬 the final option when everything else fails",
-        "back": "last resort\n\núltimo recurso"
-      },
-      {
-        "id": "sh13_tread",
-        "front": "How did you know it was me? — Regulation ___ is unmistakable.\n\n💬 way of walking, sound of footsteps",
-        "back": "tread\n\npisada / paso\n\n📌 tread = pisar"
-      },
-      {
-        "id": "sh13_decanter",
-        "front": "You've addressed over 40% of your remarks to my ___.\n\n💬 glass bottle for serving wine/spirits",
-        "back": "decanter\n\nlicorera / decantador"
-      },
-      {
-        "id": "sh13_compliments-of-the-season",
-        "front": "I just thought I'd drop by. Just to wish you the ___.\n\n💬 Christmas greetings (formal)",
-        "back": "compliments of the season\n\nfelices fiestas"
-      },
-      {
-        "id": "sh13_surmise",
-        "front": "That's not why I'm here. — I ___.\n\n💬 guess, suppose (formal)",
-        "back": "surmise\n\nlo supongo / lo deduzco"
-      },
-      {
-        "id": "sh13_shotgun-wedding",
-        "front": "What does it look like, my handsome friend? It's a ___.\n\n💬 wedding forced by circumstances (often pregnancy)",
-        "back": "shotgun wedding\n\nboda forzada / de penalti\n\n📌 juego de palabras aquí (escopeta)"
-      },
-      {
-        "id": "sh13_till-death-us-do-part",
-        "front": "It's a shotgun wedding. ___. Twice, in this case.\n\n💬 wedding vow: until one of us dies",
-        "back": "Till death us do part\n\nHasta que la muerte nos separe"
-      },
-      {
-        "id": "sh13_needs-must",
-        "front": "Holmes, tweeds in a morgue? — ___ when the devil drives, Watson.\n\n💬 we have to, because there's no choice",
-        "back": "Needs must\n\nLa necesidad obliga\n\n📌 refrán: needs must when the devil drives"
-      },
-      {
-        "id": "sh13_prescient",
-        "front": "Since the moment of conception, how breathtakingly ___ of her.\n\n💬 knowing about events before they happen",
-        "back": "prescient\n\nprevisor / clarividente"
-      },
-      {
-        "id": "sh13_swatting-up",
-        "front": "It's the inclination of the Earth's equator... — You've been ___.\n\n💬 studying hard (BrE: swotting up)",
-        "back": "swatting up\n\nempollando\n\n📌 swot = empollón (BrE)"
-      },
-      {
-        "id": "sh13_hovers-at-our-elbow",
-        "front": "Our way of life is under threat from an invisible enemy. One that ___ on a daily basis.\n\n💬 stays close to us",
-        "back": "hovers at our elbow\n\nronda a nuestro lado"
-      },
-      {
-        "id": "sh13_wager",
-        "front": "Give me five minutes. I have a ___ to win.\n\n💬 bet",
-        "back": "wager\n\napuesta"
-      },
-      {
-        "id": "sh13_purview",
-        "front": "I'm not sure this comes within your ___, Mr Holmes.\n\n💬 range of responsibility or competence",
-        "back": "purview\n\ncompetencia / ámbito\n\n📌 formal"
-      },
-      {
-        "id": "sh13_milliners",
-        "front": "A vigorous round of embroidering? An exhausting appointment at the ___?\n\n💬 shop/person that makes women's hats",
-        "back": "milliners\n\nsombrerera"
-      },
-      {
-        "id": "sh13_borders-on",
-        "front": "He has an enthusiasm for stating the obvious which ___ mania.\n\n💬 is almost",
-        "back": "borders on\n\nraya en\n\n📌 border on sth"
-      },
-      {
-        "id": "sh13_bait",
-        "front": "Somebody definitely wants to kill him, but that's good for us. You can't set a trap without ___.\n\n💬 something used to attract and catch",
-        "back": "bait\n\ncebo"
-      },
-      {
-        "id": "sh13_play-our-cards-right",
-        "front": "My husband is not bait. — No, but he could be if we ___.\n\n💬 act cleverly to get the result we want",
-        "back": "play our cards right\n\njugamos bien nuestras cartas"
-      },
-      {
-        "id": "sh13_prone-to",
-        "front": "She's an hysteric, ___ fancies.\n\n💬 likely to suffer from",
-        "back": "prone to\n\npropensa a\n\n📌 fancies = fantasías"
-      },
-      {
-        "id": "sh13_marked-man",
-        "front": "Sir Eustace knows he's a ___.\n\n💬 someone who is going to be attacked/killed",
-        "back": "marked man\n\nhombre marcado"
-      },
-      {
-        "id": "sh13_afoot",
-        "front": "Then, come, Watson, come. The game is ___.\n\n💬 happening, in progress (old-fashioned)",
-        "back": "afoot\n\nen marcha\n\n📌 frase original de Conan Doyle"
-      },
-      {
-        "id": "sh13_cramp",
-        "front": "Get down, for heaven's sake. — Sorry. ___.\n\n💬 sudden painful muscle tightening",
-        "back": "Cramp\n\nCalambre"
-      },
-      {
-        "id": "sh13_chewing-the-fat",
-        "front": "Two old friends just talking, ___, man to man.\n\n💬 chatting informally",
-        "back": "chewing the fat\n\nde cháchara / charlando\n\n📌 chew the fat"
-      },
-      {
-        "id": "sh13_dwell",
-        "front": "Marriage is not a subject upon which I ___.\n\n💬 think or talk about for a long time",
-        "back": "dwell\n\nme detengo / le doy vueltas\n\n📌 dwell on/upon sth"
-      },
-      {
-        "id": "sh13_lap-it-up",
-        "front": "I write all of that, Holmes, and the readers ___, but I do not believe it.\n\n💬 accept eagerly",
-        "back": "lap it up\n\nse lo tragan encantados"
-      },
-      {
-        "id": "sh13_good-mind",
-        "front": "Well, I have a ___ to write to your editor.\n\n💬 (have a good mind to) feel like doing (a threat)",
-        "back": "good mind\n\ntengo ganas de / estoy por"
-      },
-      {
-        "id": "sh13_culpable",
-        "front": "You really mustn't blame yourself. — Watson is equally ___.\n\n💬 responsible for something bad",
-        "back": "culpable\n\nculpable"
-      },
-      {
-        "id": "sh13_botch",
-        "front": "Between us, we've managed to ___ this whole case.\n\n💬 do badly, ruin",
-        "back": "botch\n\nchapucear / echar a perder\n\n📌 botched job = chapuza"
-      },
-      {
-        "id": "sh13_undertaking",
-        "front": "I give an ___ to protect that man, now he's lying there with a dagger in his breast.\n\n💬 formal promise",
-        "back": "undertaking\n\ncompromiso / garantía"
-      },
-      {
-        "id": "sh13_morsel",
-        "front": "Has he eaten? — No, not a ___.\n\n💬 very small piece of food",
-        "back": "morsel\n\nbocado"
-      },
-      {
-        "id": "sh13_field-day",
-        "front": "Press are having a ruddy ___.\n\n💬 a great opportunity to enjoy something (often criticism)",
-        "back": "field day\n\nponerse las botas\n\n📌 have a field day"
-      },
-      {
-        "id": "sh13_tip-of-my-tongue",
-        "front": "What was that case? It's on the ___.\n\n💬 almost remembered",
-        "back": "tip of my tongue\n\npunta de la lengua"
-      },
-      {
-        "id": "sh13_blows-the-cobwebs-away",
-        "front": "Dead is the new sexy. — Well, that rather ___.\n\n💬 refreshes, wakes you up",
-        "back": "blows the cobwebs away\n\ndespeja la mente"
-      },
-      {
-        "id": "sh13_doss-house",
-        "front": "Wherever I find him, whatever back alley or ___, there will always be a list.\n\n💬 very cheap, dirty lodging house",
-        "back": "doss house\n\nalbergue de mala muerte\n\n📌 BrE; doss = dormir (coloquial)"
-      },
-      {
-        "id": "sh13_alleviate",
-        "front": "I'm not an addict, I'm a user. I ___ boredom.\n\n💬 make less severe",
-        "back": "alleviate\n\nalivio / mitigo"
-      },
-      {
-        "id": "sh13_yapping",
-        "front": "I was nearly there before you stepped on and started ___ away.\n\n💬 talking continuously and annoyingly",
-        "back": "yapping\n\nparlotear / dar la tabarra\n\n📌 yap = ladrido agudo"
-      },
-      {
-        "id": "sh13_halfwit",
-        "front": "I will run along behind you like some ___, making you look clever.\n\n💬 stupid person",
-        "back": "halfwit\n\nbobo / idiota"
-      },
-      {
-        "id": "sh13_punch-your-lights-out",
-        "front": "Tell me where my bloody wife is, you pompous prick, or I'll ___.\n\n💬 hit you very hard",
-        "back": "punch your lights out\n\npartirte la cara"
-      },
-      {
-        "id": "sh13_neglecting",
-        "front": "I thought perhaps we were... ___ each other.\n\n💬 not giving enough attention to",
-        "back": "Neglecting\n\nDescuidándonos"
-      },
-      {
-        "id": "sh13_wrath",
-        "front": "And you have nothing less than the ___ of a vengeful ghost.\n\n💬 extreme anger",
-        "back": "wrath\n\nira / cólera"
-      },
-      {
-        "id": "sh13_patronised",
-        "front": "Ignored. ___. Disregarded. Not allowed so much as a vote.\n\n💬 treated as if less intelligent",
-        "back": "Patronised\n\nTratadas con condescendencia\n\n📌 patronising = condescendiente"
-      },
-      {
-        "id": "sh13_reckoning",
-        "front": "A spectre to stalk those unpunished brutes whose ___ is long overdue.\n\n💬 punishment for past actions",
-        "back": "reckoning\n\najuste de cuentas\n\n📌 day of reckoning = día del juicio"
-      },
-      {
-        "id": "sh13_disparaged",
-        "front": "The women we have ignored. And ___.\n\n💬 criticised as worthless",
-        "back": "disparaged\n\nmenospreciado"
-      },
-      {
-        "id": "sh13_short-arse",
-        "front": "You're going in the water. ___.\n\n💬 short person (rude, BrE)",
-        "back": "Short-arse\n\nRetaco / tapón\n\n📌 BrE vulgar"
-      },
-      {
-        "id": "sh13_elope",
-        "front": "Oh, why don't you two just ___, for God's sake?\n\n💬 run away secretly to get married",
-        "back": "elope\n\nfugaros (para casaros)"
-      },
-      {
-        "id": "sh13_fanciful",
-        "front": "Perhaps I was being a little ___.\n\n💬 imaginative but unrealistic",
-        "back": "fanciful\n\nfantasioso"
-      },
-      {
-        "id": "sh13_beg-to-differ",
-        "front": "Don't think I would be. — I ___.\n\n💬 politely disagree",
-        "back": "beg to differ\n\npermíteme discrepar\n\n📌 I beg to differ"
       }
     ]
   }

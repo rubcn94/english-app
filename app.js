@@ -426,7 +426,10 @@ function startSection(book, sectionNum) {
   const due     = sec.cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
   const newCards = sec.cards.filter(c => getCardProgress(c.id) === null);
   const notDue  = sec.cards.filter(c => !isDue(getCardProgress(c.id)));
-  beginBlockedStudy([...shuffle(due), ...shuffle(newCards), ...notDue], sec.title);
+  // Sherlock episodes are studied in the order the words come up in the
+  // episode (the data is already sorted that way), so no shuffling there.
+  const order = book === 'sherlock' ? (a => a) : shuffle;
+  beginBlockedStudy([...order(due), ...order(newCards), ...notDue], sec.title);
 }
 
 function startAllDue() {
@@ -1171,7 +1174,19 @@ function renderGlossary() {
   list.innerHTML = '';
   const fragment = document.createDocumentFragment();
 
+  // Sherlock with "All sections": one heading per episode, episodes and
+  // words both in series order.
+  const showEpisodeHeaders = glossaryBook === 'sherlock' && !secVal;
+  let lastSecTitle = null;
+
   cards.forEach(card => {
+    if (showEpisodeHeaders && card._secTitle !== lastSecTitle) {
+      lastSecTitle = card._secTitle;
+      const header = document.createElement('div');
+      header.className = 'glossary-episode-header';
+      header.textContent = card._secTitle;
+      fragment.appendChild(header);
+    }
     const isKnown = !!state.known[card.id];
     const note    = state.notes[card.id] || '';
 

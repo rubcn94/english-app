@@ -30,6 +30,14 @@ function testSherlockEpisodeCompletesAllCorrect() {
   assertEqual(res.answers.length, sectionCards, 'answered a different number of cards than the episode contains');
 }
 
+function testSherlockEpisodeStudiedInSeriesOrder() {
+  const h = load();
+  const ep = h.getData('sherlock').find(s => s.section === 2);
+  h.call('startSection', 'sherlock', 2);
+  const ids = h.run('state.blocks.flat().map(c => c.id)');
+  assertEqual(JSON.stringify(ids), JSON.stringify(ep.cards.map(c => c.id)), 'new Sherlock cards should keep episode order, not be shuffled');
+}
+
 function testEpisodeGlossaryShowsOnlyThatEpisodeInOrder() {
   const h = load();
   const ep = h.getData('sherlock').find(s => s.section === 4);
@@ -125,6 +133,7 @@ function testAllDueQueueAcrossBooksCompletes() {
 module.exports = {
   testSherlockEpisodeCompletesAllCorrect,
   testEpisodeGlossaryShowsOnlyThatEpisodeInOrder,
+  testSherlockEpisodeStudiedInSeriesOrder,
   testVocabSectionCompletesAllCorrect,
   testSmallBlueSectionUsesWholeBookFallback,
   testSectionWithMultiBlankCardsCompletes,

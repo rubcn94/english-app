@@ -728,6 +728,14 @@ input.hidden { display: none; }
 .gitem-check.checked { background: var(--easy); border-color: var(--easy); color: white; }
 
 .gitem-body { flex: 1; min-width: 0; }
+.glossary-episode-header {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #e08a5f;
+  padding: 14px 4px 6px;
+  border-bottom: 1px solid #b5562f;
+  margin-bottom: 8px;
+}
 .gitem-word {
   font-size: 0.95rem;
   font-weight: 600;
