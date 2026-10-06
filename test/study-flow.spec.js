@@ -49,6 +49,20 @@ function testEpisodeGlossaryShowsOnlyThatEpisodeInOrder() {
   assertEqual(h.activeScreenId(), 'screen-book', 'Back from an episode glossary should return to the episode list');
 }
 
+function testSherlockGlossaryTabListsWholeSeriesInOrder() {
+  const h = load();
+  const data = h.getData('sherlock');
+  h.call('showGlossary', 'sherlock');
+  assertEqual(h.activeScreenId(), 'screen-glossary', 'Sherlock glossary did not open');
+  const ids = h.run('getCurrentGlossaryCards().map(c => c.id)');
+  assertEqual(JSON.stringify(ids), JSON.stringify(data.flatMap(s => s.cards.map(c => c.id))), 'Sherlock glossary is not every episode in series order');
+  const headers = h.run(`[...document.querySelectorAll('.glossary-episode-header')].map(e => e.textContent)`);
+  assertEqual(headers.length, data.length, 'expected one heading per episode');
+  data.forEach((s, i) => assert(headers[i].startsWith(s.title), `heading ${i} should be ${s.title}, got ${headers[i]}`));
+  h.call('exitGlossary');
+  assertEqual(h.activeScreenId(), 'screen-home', 'Back from the Sherlock glossary should return home');
+}
+
 function testSmallBlueSectionUsesWholeBookFallback() {
   const h = load();
   // Section 12 (Relative Clauses) is one of the smallest Blue sections —
@@ -133,6 +147,7 @@ function testAllDueQueueAcrossBooksCompletes() {
 module.exports = {
   testSherlockEpisodeCompletesAllCorrect,
   testEpisodeGlossaryShowsOnlyThatEpisodeInOrder,
+  testSherlockGlossaryTabListsWholeSeriesInOrder,
   testSherlockEpisodeStudiedInSeriesOrder,
   testVocabSectionCompletesAllCorrect,
   testSmallBlueSectionUsesWholeBookFallback,

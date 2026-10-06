@@ -1069,11 +1069,13 @@ function debouncedRenderGlossary() {
 
 function populateGlossarySections() {
   const sel = document.getElementById('glossary-section-select');
-  sel.innerHTML = '<option value="">All sections</option>';
+  const isSherlock = glossaryBook === 'sherlock';
+  sel.innerHTML = `<option value="">${isSherlock ? 'All episodes' : 'All sections'}</option>`;
   getData(glossaryBook).forEach(s => {
     const opt = document.createElement('option');
     opt.value = s.section;
-    opt.textContent = `${s.section}. ${s.title}`;
+    // Sherlock titles already carry the episode code (S01E01 · …).
+    opt.textContent = isSherlock ? `${s.title} (${s.cards.length})` : `${s.section}. ${s.title}`;
     sel.appendChild(opt);
   });
 }
@@ -1179,12 +1181,15 @@ function renderGlossary() {
   const showEpisodeHeaders = glossaryBook === 'sherlock' && !secVal;
   let lastSecTitle = null;
 
+  const perEpisode = {};
+  if (showEpisodeHeaders) cards.forEach(c => { perEpisode[c._secTitle] = (perEpisode[c._secTitle] || 0) + 1; });
+
   cards.forEach(card => {
     if (showEpisodeHeaders && card._secTitle !== lastSecTitle) {
       lastSecTitle = card._secTitle;
       const header = document.createElement('div');
       header.className = 'glossary-episode-header';
-      header.textContent = card._secTitle;
+      header.textContent = `${card._secTitle} · ${perEpisode[card._secTitle]} words`;
       fragment.appendChild(header);
     }
     const isKnown = !!state.known[card.id];
