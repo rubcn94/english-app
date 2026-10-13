@@ -94,8 +94,9 @@ function testDatedCardsGoLastAndShowAmE() {
   const first = ep.cards[0].id;
   h.run(`CARD_EXTRAS[${JSON.stringify(first)}] = { dated: true, us: 'test-us' }`);
   h.call('startSection', 'sherlock', 1);
-  const ids = h.run('state.blocks.flat().map(c => c.id)');
-  assertEqual(ids[ids.length - 1], first, 'new old-fashioned card should be studied last');
+  const flags = h.run('state.blocks.flat().map(c => isDated(c))');
+  const firstDated = flags.indexOf(true);
+  assert(firstDated >= 0 && flags.slice(firstDated).every(Boolean), 'new old-fashioned cards should be studied after all the others');
   const next = h.run(`scheduleCard(CARD_EXTRAS && { id: ${JSON.stringify(first)} }, { interval: 6, repetitions: 2, easeFactor: 2.5 }, 3)`);
   assertEqual(next.interval, 30, 'old-fashioned card interval should be doubled (6*2.5*2)');
   h.run(`renderCardMeta(document.getElementById('correction-meta'), { id: ${JSON.stringify(first)} })`);
