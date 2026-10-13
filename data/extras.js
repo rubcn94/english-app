@@ -15452,5 +15452,1026 @@ const CARD_EXTRAS = {
    "Hidden in the ___."
   ],
   "us": "linen closet"
+ },
+ "sh13_press-charges": {
+  "ex": [
+   "The shop decided not to ___.",
+   "Do you want to ___ against him?",
+   "If you hit me again, I'll ___.",
+   "She was too scared to ___.",
+   "The police can't act unless you ___."
+  ]
+ },
+ "sh13_close-watch": {
+  "ex": [
+   "Doctors are keeping him under ___.",
+   "Keep a ___ on the kids by the pool.",
+   "The police kept the house under ___.",
+   "We're keeping a ___ on prices.",
+   "Keep a ___ on your bags."
+  ]
+ },
+ "sh13_wetting-yourself": {
+  "ex": [
+   "The film was so funny I was nearly ___.",
+   "Stop laughing, you'll end up ___.",
+   "You looked like you were ___ with fear.",
+   "Were you ___ on that ride?",
+   "___ at your age?"
+  ]
+ },
+ "sh13_resurface": {
+  "ex": [
+   "Old problems can ___.",
+   "The submarine will ___ soon.",
+   "His name has started to ___.",
+   "Painful memories ___.",
+   "They'll ___ the road next week."
+  ]
+ },
+ "sh13_incandescent": {
+  "ex": [
+   "He was ___ with rage.",
+   "Her talent was ___.",
+   "An ___ light bulb.",
+   "___ anger.",
+   "She was ___ when she heard."
+  ],
+  "us": "livid"
+ },
+ "sh13_spare-them": {
+  "ex": [
+   "Tell a white lie to ___ the pain.",
+   "I'd like to ___ the details.",
+   "Let's ___ the trouble.",
+   "We tried to ___ embarrassment.",
+   "___ the worry."
+  ]
+ },
+ "sh13_credulous": {
+  "ex": [
+   "Only the ___ believe those ads.",
+   "A ___ audience.",
+   "Don't be so ___.",
+   "___ tourists.",
+   "She's too ___."
+  ],
+  "us": "gullible"
+ },
+ "sh13_vacate": {
+  "ex": [
+   "Please ___ the room by 11.",
+   "Guests must ___ the building.",
+   "We have to ___ the flat.",
+   "___ your seats, please.",
+   "They were ordered to ___."
+  ]
+ },
+ "sh13_better-out-than-in": {
+  "ex": [
+   "Sneeze! ___.",
+   "Cry if you need to — ___.",
+   "Burping? ___, I say.",
+   "Say it — ___.",
+   "___, as my grandma said."
+  ]
+ },
+ "sh13_off-course": {
+  "ex": [
+   "The plane was blown ___.",
+   "We're ___ — check the map.",
+   "The project went ___.",
+   "The ship drifted ___.",
+   "Your life seems ___."
+  ]
+ },
+ "sh13_sparing-your-blushes": {
+  "ex": [
+   "I won't say who — I'm ___.",
+   "I'm ___ by not mentioning it.",
+   "Thanks for ___.",
+   "She was ___.",
+   "No need — I'm ___."
+  ]
+ },
+ "sh13_trial-and-error": {
+  "ex": [
+   "I learned to cook by ___.",
+   "It's a process of ___.",
+   "Through ___, we fixed it.",
+   "Lots of ___.",
+   "Science is ___."
+  ]
+ },
+ "sh13_talked-me-out-of": {
+  "ex": [
+   "My friends ___ quitting.",
+   "She ___ the tattoo.",
+   "Thank God you ___ it.",
+   "He ___ buying that car.",
+   "Mum ___ moving abroad."
+  ]
+ },
+ "sh13_cast-your-mind-back": {
+  "ex": [
+   "___ to your first day at school.",
+   "___ to last summer.",
+   "___ ten years.",
+   "___ — what happened?",
+   "___ to when we met."
+  ],
+  "us": "Think back"
+ },
+ "sh13_enslaved": {
+  "ex": [
+   "___ people built the pyramids.",
+   "___ by debt.",
+   "___ to his phone.",
+   "___ by fear.",
+   "Millions were ___."
+  ]
+ },
+ "sh13_ear-worm": {
+  "ex": [
+   "That song is a real ___.",
+   "I've got an ___.",
+   "That jingle is an ___.",
+   "A catchy ___.",
+   "An ___ all day."
+  ]
+ },
+ "sh13_heat-of-the-moment": {
+  "ex": [
+   "I said it in the ___.",
+   "In the ___, he hit him.",
+   "It was the ___.",
+   "Things said in the ___.",
+   "I forgot in the ___."
+  ]
+ },
+ "sh13_beside-the-point": {
+  "ex": [
+   "That's ___.",
+   "Whether you like it is ___.",
+   "Money is ___.",
+   "The cost is ___.",
+   "It's ___ now."
+  ]
+ },
+ "sh13_down-with-the-kids": {
+  "ex": [
+   "Grandad thinks he's ___.",
+   "My teacher tries to be ___.",
+   "She's ___ — knows all the slang.",
+   "Trying to be ___.",
+   "Totally ___."
+  ],
+  "us": "hip"
+ },
+ "sh13_gory": {
+  "ex": [
+   "A ___ horror film.",
+   "Spare me the ___ details.",
+   "It was very ___.",
+   "___ scenes.",
+   "A ___ video game."
+  ]
+ },
+ "sh13_asking-for-trouble": {
+  "ex": [
+   "Leaving your car unlocked is ___.",
+   "You're ___.",
+   "Walking there at night is ___.",
+   "That's just ___.",
+   "He's ___."
+  ]
+ },
+ "sh13_at-liberty": {
+  "ex": [
+   "The prisoner is now ___.",
+   "He's ___ until charged.",
+   "I'm not ___ to say.",
+   "You're ___ to leave.",
+   "The killer is still ___."
+  ]
+ },
+ "sh13_banter": {
+  "ex": [
+   "Office ___.",
+   "Friendly ___.",
+   "I love their ___.",
+   "Lots of ___.",
+   "Just ___, nothing serious."
+  ]
+ },
+ "sh13_case-in-point": {
+  "ex": [
+   "Politicians lie. ___: him.",
+   "___ — look at this mess.",
+   "___.",
+   "Prices are rising. ___: bread.",
+   "___: he's late again."
+  ]
+ },
+ "sh13_blood-on-my-hands": {
+  "ex": [
+   "I don't want ___.",
+   "She has ___.",
+   "___ if he dies.",
+   "Leave me without ___.",
+   "I'll have ___."
+  ]
+ },
+ "sh13_notwithstanding": {
+  "ex": [
+   "The weather ___, we had fun.",
+   "___ his age, he runs fast.",
+   "Costs ___, it's worth it.",
+   "Objections ___.",
+   "___ the delay."
+  ]
+ },
+ "sh13_peering": {
+  "ex": [
+   "She was ___ through the window.",
+   "Stop ___ at me.",
+   "___ into the darkness.",
+   "He was ___ at the map.",
+   "Kids ___ over the fence."
+  ]
+ },
+ "sh13_done-the-trick": {
+  "ex": [
+   "The new medicine has ___.",
+   "Tape has ___.",
+   "That's ___!",
+   "A cup of tea has ___.",
+   "His apology ___."
+  ]
+ },
+ "sh13_specs": {
+  "ex": [
+   "I can't read without my ___.",
+   "New ___.",
+   "Where are my ___?",
+   "He's got thick ___.",
+   "Nice ___!"
+  ],
+  "us": "glasses"
+ },
+ "sh13_sink-or-swim": {
+  "ex": [
+   "It's ___ in this job.",
+   "They left us to ___.",
+   "___, kid.",
+   "First day — ___.",
+   "It's a ___ situation."
+  ]
+ },
+ "sh13_disinclined": {
+  "ex": [
+   "I'm ___ to help him.",
+   "He was ___ to talk.",
+   "She's ___ to agree.",
+   "They seemed ___ to leave.",
+   "I'm ___ to believe it."
+  ]
+ },
+ "sh13_keep-it-together": {
+  "ex": [
+   "You have to ___ in the interview.",
+   "Please ___.",
+   "I'm trying to ___.",
+   "Can you ___?",
+   "She managed to ___."
+  ]
+ },
+ "sh13_pull-yourself-together": {
+  "ex": [
+   "___ — we have work to do.",
+   "___, man!",
+   "Just ___.",
+   "___ and stop crying.",
+   "You need to ___."
+  ]
+ },
+ "sh13_prolong-his-agony": {
+  "ex": [
+   "Don't ___ — tell him the result.",
+   "Stop and don't ___.",
+   "Waiting will ___.",
+   "It'll only ___.",
+   "Why ___?"
+  ]
+ },
+ "sh13_get-a-say": {
+  "ex": [
+   "Do kids ___ in this?",
+   "We don't ___.",
+   "Do I ___?",
+   "Voters should ___.",
+   "Will we ___?"
+  ]
+ },
+ "sh13_dazzle": {
+  "ex": [
+   "The lights will ___ you.",
+   "She'll ___ them.",
+   "Her smile can ___ anyone.",
+   "___ the judges.",
+   "Diamonds ___."
+  ]
+ },
+ "sh13_end-of-the-line": {
+  "ex": [
+   "This is the ___ — everybody off.",
+   "It's the ___ for us.",
+   "The ___ for the company.",
+   "We've reached the ___.",
+   "___, I'm afraid."
+  ]
+ },
+ "sh13_cut-off": {
+  "ex": [
+   "We got ___ on the phone.",
+   "The village was ___ by snow.",
+   "They ___ the electricity.",
+   "He ___ his family.",
+   "Don't ___ my sentence."
+  ]
+ },
+ "sh13_like-a-house-on-fire": {
+  "ex": [
+   "The two dogs got on ___.",
+   "We got on ___.",
+   "They got on ___ immediately.",
+   "The kids got on ___.",
+   "Our mums got on ___."
+  ]
+ },
+ "sh13_what-goes-around-comes-around": {
+  "ex": [
+   "He cheated, now he's been cheated. ___.",
+   "___ — be kind.",
+   "___, karma.",
+   "Well, ___.",
+   "___ in the end."
+  ]
+ },
+ "sh13_shaken-up": {
+  "ex": [
+   "She's ___ after the accident.",
+   "He's still ___.",
+   "We were ___.",
+   "I'm a bit ___.",
+   "Pretty ___."
+  ]
+ },
+ "sh13_scruffy": {
+  "ex": [
+   "A ___ old jacket.",
+   "He looks ___.",
+   "A ___ dog.",
+   "___ beard.",
+   "___ student flat."
+  ]
+ },
+ "sh13_refuge": {
+  "ex": [
+   "They took ___ in a church.",
+   "A ___ for women.",
+   "A safe ___.",
+   "Music is my ___.",
+   "Seek ___."
+  ]
+ },
+ "sh13_turned-out-okay": {
+  "ex": [
+   "It ___ in the end.",
+   "Everything ___.",
+   "It all ___.",
+   "The cake ___.",
+   "Hopefully it ___."
+  ]
+ },
+ "sh13_the-authorities": {
+  "ex": [
+   "Report it to ___.",
+   "___ were informed.",
+   "___ have closed the road.",
+   "Contact ___.",
+   "___ are investigating."
+  ]
+ },
+ "sh13_pantomime": {
+  "ex": [
+   "We took the kids to a ___ at Christmas.",
+   "The meeting was a ___.",
+   "A ___ villain.",
+   "A ___ horse.",
+   "This is a ___."
+  ]
+ },
+ "sh13_refund": {
+  "ex": [
+   "Can I get a ___?",
+   "A full ___.",
+   "No ___ without a receipt.",
+   "I want a ___.",
+   "A tax ___."
+  ]
+ },
+ "sh13_pure-and-simple": {
+  "ex": [
+   "It was greed, ___.",
+   "Jealousy, ___.",
+   "It's laziness, ___.",
+   "___, he's wrong.",
+   "A lie, ___."
+  ]
+ },
+ "sh13_bullied": {
+  "ex": [
+   "He was ___ at school.",
+   "Stop being ___.",
+   "She ___ her sister.",
+   "Kids get ___ online.",
+   "I was ___."
+  ]
+ },
+ "sh13_age-gap": {
+  "ex": [
+   "There's a big ___ between them.",
+   "The ___ is ten years.",
+   "A big ___.",
+   "___ relationships.",
+   "Does the ___ matter?"
+  ]
+ },
+ "sh13_explains-a-lot": {
+  "ex": [
+   "Only child? ___.",
+   "He's a lawyer? ___.",
+   "___, actually.",
+   "No sleep? That ___.",
+   "___ about him."
+  ]
+ },
+ "sh13_never-cease-to": {
+  "ex": [
+   "You ___ amaze me.",
+   "Kids ___ surprise me.",
+   "They ___ complain.",
+   "You ___ impress.",
+   "It will ___ fascinate me."
+  ]
+ },
+ "sh13_assessed": {
+  "ex": [
+   "The damage was ___.",
+   "Students are ___ by exams.",
+   "He was ___ by a doctor.",
+   "We ___ the risks.",
+   "Your work will be ___."
+  ]
+ },
+ "sh13_ancestral-home": {
+  "ex": [
+   "The family's ___ in Scotland.",
+   "They sold the ___.",
+   "Back to the ___.",
+   "A grand ___.",
+   "His ___."
+  ]
+ },
+ "sh13_took-care-of-things": {
+  "ex": [
+   "While I was away, my brother ___.",
+   "Don't worry, I ___.",
+   "She ___.",
+   "Who ___?",
+   "Dad always ___."
+  ]
+ },
+ "sh13_fortress": {
+  "ex": [
+   "The castle was a ___.",
+   "A ___ of steel.",
+   "Their home is a ___.",
+   "Europe as a ___.",
+   "A mountain ___."
+  ]
+ },
+ "sh13_drone": {
+  "ex": [
+   "A ___ flew over the house.",
+   "The ___ of traffic.",
+   "He'll ___ on for hours.",
+   "A delivery ___.",
+   "Military ___."
+  ]
+ },
+ "sh13_colloquially": {
+  "ex": [
+   "___ known as \"the Beeb\".",
+   "___ called a \"fag\".",
+   "___, they say \"cheers\".",
+   "___, it means thanks.",
+   "___ known as Big Ben."
+  ],
+  "us": "Informally"
+ },
+ "sh13_detonate": {
+  "ex": [
+   "They'll ___ the bomb remotely.",
+   "Don't ___ it!",
+   "The mine may ___.",
+   "Experts will ___ it safely.",
+   "Ready to ___."
+  ]
+ },
+ "sh13_distress-call": {
+  "ex": [
+   "The ship sent a ___.",
+   "We received a ___.",
+   "A ___ from the mountain.",
+   "Answer the ___.",
+   "No ___."
+  ]
+ },
+ "sh13_lockdown": {
+  "ex": [
+   "The school is in ___.",
+   "___ rules.",
+   "During ___.",
+   "Prison ___.",
+   "A national ___."
+  ]
+ },
+ "sh13_fella": {
+  "ex": [
+   "Who's that ___?",
+   "He's a nice ___.",
+   "Hey ___!",
+   "Her ___.",
+   "Some ___ asked for you."
+  ],
+  "us": "guy"
+ },
+ "sh13_dressing-up": {
+  "ex": [
+   "Kids love ___.",
+   "___ for the party.",
+   "No need for ___.",
+   "___ as pirates.",
+   "___ the truth."
+  ]
+ },
+ "sh13_indulge-in": {
+  "ex": [
+   "___ a little chocolate.",
+   "Don't ___ gossip.",
+   "We ___ a spa day.",
+   "___ some shopping.",
+   "He likes to ___ nostalgia."
+  ]
+ },
+ "sh13_express-instructions": {
+  "ex": [
+   "I gave ___ not to call.",
+   "Against my ___.",
+   "His ___ were clear.",
+   "___ from the boss.",
+   "Follow my ___."
+  ]
+ },
+ "sh13_keep-your-distance": {
+  "ex": [
+   "___ from that dog.",
+   "___ from the car in front.",
+   "___, please.",
+   "Tell him to ___.",
+   "___ from strangers."
+  ]
+ },
+ "sh13_conditioned": {
+  "ex": [
+   "We're ___ to fear failure.",
+   "___ by society.",
+   "Air-___ room.",
+   "___ responses.",
+   "Dogs can be ___."
+  ]
+ },
+ "sh13_at-what-cost": {
+  "ex": [
+   "We won — but ___?",
+   "___?",
+   "Success, ___?",
+   "Fame, but ___?",
+   "They got it, but ___?"
+  ]
+ },
+ "sh13_consent": {
+  "ex": [
+   "Without my ___.",
+   "Parental ___.",
+   "Give your ___.",
+   "Silence isn't ___.",
+   "Ask for ___."
+  ]
+ },
+ "sh13_calculated-risk": {
+  "ex": [
+   "It's a ___.",
+   "Investing is a ___.",
+   "She took a ___.",
+   "A ___ that paid off.",
+   "We took a ___."
+  ]
+ },
+ "sh13_poses": {
+  "ex": [
+   "Smoking ___ health risks.",
+   "The storm ___ a threat.",
+   "He ___ for photos.",
+   "It ___ a question.",
+   "That ___ a problem."
+  ]
+ },
+ "sh13_burst": {
+  "ex": [
+   "The pipe ___.",
+   "I'll ___ if I eat more.",
+   "She ___ into tears.",
+   "A ___ of energy.",
+   "The bubble ___."
+  ]
+ },
+ "sh13_implicit-trust": {
+  "ex": [
+   "I have ___ in her.",
+   "___ between partners.",
+   "They have ___.",
+   "Built on ___.",
+   "___ in the system."
+  ],
+  "us": "complete trust"
+ },
+ "sh13_good-as-new": {
+  "ex": [
+   "After the repair, it's ___.",
+   "___!",
+   "I fixed it — ___.",
+   "The car looks ___.",
+   "Rest and you'll be ___."
+  ]
+ },
+ "sh13_inappropriate": {
+  "ex": [
+   "___ comments.",
+   "That's ___.",
+   "___ clothes for work.",
+   "___ behaviour.",
+   "An ___ joke."
+  ]
+ },
+ "sh13_self-satisfied": {
+  "ex": [
+   "A ___ smile.",
+   "He's so ___.",
+   "___ politicians.",
+   "A ___ look.",
+   "Don't be ___."
+  ],
+  "us": "smug"
+ },
+ "sh13_stamina": {
+  "ex": [
+   "Marathon runners need ___.",
+   "Build your ___.",
+   "She has great ___.",
+   "Lack of ___.",
+   "Mental ___."
+  ]
+ },
+ "sh13_person-of-interest": {
+  "ex": [
+   "Police named him a ___.",
+   "He's a ___.",
+   "A ___ in the case.",
+   "___ in the murder.",
+   "She's no longer a ___."
+  ]
+ },
+ "sh13_treats": {
+  "ex": [
+   "Dog ___.",
+   "Halloween ___.",
+   "Little ___.",
+   "Give the kids some ___.",
+   "___ for good behaviour."
+  ]
+ },
+ "sh13_selfish": {
+  "ex": [
+   "Don't be ___.",
+   "A ___ act.",
+   "He's so ___.",
+   "___ reasons.",
+   "It's ___."
+  ]
+ },
+ "sh13_at-the-expense-of": {
+  "ex": [
+   "___ his health.",
+   "Profits ___ workers.",
+   "Jokes ___ others.",
+   "Speed ___ quality.",
+   "___ the taxpayer."
+  ]
+ },
+ "sh13_mercy": {
+  "ex": [
+   "Show some ___.",
+   "At the ___ of the weather.",
+   "Have ___!",
+   "Beg for ___.",
+   "A ___ killing."
+  ]
+ },
+ "sh13_all-aboard": {
+  "ex": [
+   "___! The train is leaving.",
+   "___ for London!",
+   "___, kids.",
+   "___ the party bus!",
+   "___!"
+  ]
+ },
+ "sh13_my-nan-s": {
+  "ex": [
+   "___ house.",
+   "___ cooking.",
+   "___ ninety.",
+   "___ cat.",
+   "___ garden."
+  ],
+  "us": "My grandma's"
+ },
+ "sh13_inhuman": {
+  "ex": [
+   "___ conditions.",
+   "___ treatment.",
+   "It's ___.",
+   "An ___ scream.",
+   "___ cruelty."
+  ]
+ },
+ "sh13_up-to-date": {
+  "ex": [
+   "Keep your software ___.",
+   "___ information.",
+   "Are you ___?",
+   "An ___ map.",
+   "___ news."
+  ]
+ },
+ "sh13_kickback": {
+  "ex": [
+   "The ___ from the rifle hurt his shoulder.",
+   "A ___ from the contract.",
+   "He took a ___.",
+   "Strong ___.",
+   "Illegal ___."
+  ]
+ },
+ "sh13_do-you-credit": {
+  "ex": [
+   "Those words ___.",
+   "Your actions ___.",
+   "Your loyalty will ___.",
+   "Your efforts ___.",
+   "It does ___."
+  ]
+ },
+ "sh13_repress": {
+  "ex": [
+   "Don't ___ your feelings.",
+   "They tried to ___ the protest.",
+   "___ memories.",
+   "He tends to ___.",
+   "Governments ___ dissent."
+  ]
+ },
+ "sh13_pallor": {
+  "ex": [
+   "A deathly ___.",
+   "His ___ worried me.",
+   "Grey ___.",
+   "___ of illness.",
+   "Unhealthy ___."
+  ]
+ },
+ "sh13_short-sighted": {
+  "ex": [
+   "I'm ___ — I need glasses.",
+   "A ___ decision.",
+   "___ policies.",
+   "He's very ___.",
+   "That's ___."
+  ],
+  "us": "nearsighted"
+ },
+ "sh13_in-quite-a-different-light": {
+  "ex": [
+   "I see him ___ now.",
+   "It puts things ___.",
+   "Seen ___.",
+   "She appears ___.",
+   "___ after that."
+  ]
+ },
+ "sh13_condemn": {
+  "ex": [
+   "We ___ violence.",
+   "___ the attack.",
+   "The judge will ___ him.",
+   "Don't ___ me.",
+   "Leaders ___ it."
+  ]
+ },
+ "sh13_the-train-has-left-the-station": {
+  "ex": [
+   "It's too late to change it — ___.",
+   "___; we're committed.",
+   "___ — no going back.",
+   "Sorry, ___.",
+   "___."
+  ],
+  "us": "That ship has sailed"
+ },
+ "sh13_talk-her-through-it": {
+  "ex": [
+   "The nurse will ___.",
+   "I'll ___ on the phone.",
+   "Can you ___?",
+   "Let's ___.",
+   "He had to ___."
+  ],
+  "us": "walk her through it"
+ },
+ "sh13_the-matter-in-hand": {
+  "ex": [
+   "Back to ___.",
+   "Focus on ___.",
+   "___ is urgent.",
+   "Let's deal with ___.",
+   "Concentrate on ___."
+  ]
+ },
+ "sh13_bracket": {
+  "ex": [
+   "Income ___.",
+   "Age ___.",
+   "Tax ___.",
+   "In that price ___.",
+   "The 18-25 ___."
+  ]
+ },
+ "sh13_hang-up": {
+  "ex": [
+   "Don't ___!",
+   "He tends to ___ on me.",
+   "___ your coat.",
+   "I'll ___ now.",
+   "Please ___."
+  ]
+ },
+ "sh13_making-fun-of-me": {
+  "ex": [
+   "Stop ___!",
+   "Everyone was ___.",
+   "Are you ___?",
+   "They're ___.",
+   "Kids were ___."
+  ]
+ },
+ "sh13_like-you-mean-it": {
+  "ex": [
+   "Say sorry ___.",
+   "Smile ___.",
+   "Do it ___.",
+   "Sing ___.",
+   "Hug me ___."
+  ]
+ },
+ "sh13_clumsy": {
+  "ex": [
+   "I'm so ___.",
+   "A ___ waiter.",
+   "___ hands.",
+   "A ___ attempt.",
+   "Don't be ___."
+  ]
+ },
+ "sh13_in-many-respects": {
+  "ex": [
+   "___ she's right.",
+   "The plan works ___.",
+   "___, it's better.",
+   "He's like his dad ___.",
+   "___ it's a success."
+  ]
+ },
+ "sh13_lies-ahead": {
+  "ex": [
+   "Who knows what ___.",
+   "Danger ___.",
+   "Hard work ___.",
+   "What ___ for us?",
+   "A long road ___."
+  ]
+ },
+ "sh13_swift": {
+  "ex": [
+   "A ___ reply.",
+   "___ action.",
+   "Be ___.",
+   "A ___ recovery.",
+   "___ justice."
+  ]
+ },
+ "sh13_shame-us-all": {
+  "ex": [
+   "Your behaviour will ___.",
+   "Don't ___.",
+   "You ___.",
+   "He'd ___.",
+   "That would ___."
+  ]
+ },
+ "sh13_out-of-all-our-misery": {
+  "ex": [
+   "Tell us the result and put us ___.",
+   "Please, put us ___.",
+   "End the game and put us ___.",
+   "Announce it and put us ___.",
+   "Just put us ___."
+  ]
+ },
+ "sh13_at-once": {
+  "ex": [
+   "Stop ___!",
+   "Come here ___.",
+   "Everyone talking ___.",
+   "___, she left.",
+   "Do it ___."
+  ]
+ },
+ "sh13_nothing-to-it": {
+  "ex": [
+   "Driving? There's ___.",
+   "___.",
+   "Cooking pasta — ___.",
+   "___, really.",
+   "There's ___ — just click."
+  ]
+ },
+ "sh13_turbulence": {
+  "ex": [
+   "Fasten your seatbelts — ___.",
+   "Political ___.",
+   "Severe ___.",
+   "___ over the Alps.",
+   "Economic ___."
+  ]
+ },
+ "sh13_inseparable": {
+  "ex": [
+   "The two friends are ___.",
+   "___ twins.",
+   "They were ___.",
+   "___ since childhood.",
+   "Love and pain are ___."
+  ]
+ },
+ "sh13_persecuted": {
+  "ex": [
+   "___ for their religion.",
+   "They were ___.",
+   "___ minorities.",
+   "He felt ___.",
+   "___ writers."
+  ]
+ },
+ "sh13_when-all-else-fails": {
+  "ex": [
+   "___, read the instructions.",
+   "___, try turning it off and on.",
+   "___, ask Mum.",
+   "___, call a plumber.",
+   "___, laugh."
+  ]
  }
 };
