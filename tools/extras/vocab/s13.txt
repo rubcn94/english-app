@@ -1,0 +1,85 @@
+# 13 · Viajes y Hotel
+v13_001 || Don't forget your ___ — we're flying to Morocco. | My ___ expires next month. | The officer stamped my ___. | I lost my ___ in Rome and had to go to the embassy. | You need a ___ valid for six months. || |
+v13_002 || Do I need a ___ to visit India? | Her student ___ runs out in June. | He applied for a work ___ in Canada. | They refused his ___ application. | You can get a tourist ___ online. || |
+v13_003 || Show your ___ at the gate. | I have my ___ on my phone. | Print your ___ before you go to the airport. | The ___ shows your seat number. | I can't find my ___! || |
+v13_004 || ___ closes forty minutes before departure. | Online ___ opens 24 hours before the flight. | The queue for ___ was huge. | We did ___ at the airport. | Where's the ___ desk for Iberia? || |
+v13_005 || ___ is at eleven o'clock. | Can we have a late ___? | What's the ___ at this hotel? | The ___ is too early for us. | Leave the key at reception before ___. || |
+v13_006 || The ___ on budget airlines is very small. | Check your ___ before you pack. | My ticket includes a 23-kilo ___. | Business class has a bigger ___. | We went over the ___ and had to pay. || |
+v13_007 || We paid fifty euros for ___. | ___ charges are very high. | Avoid ___ by packing light. | The airline charged me for ___. | ___ costs more at the airport than online. || |
+v13_008 || I only travel with ___. | Liquids in ___ must be under 100 ml. | My ___ is too big for the overhead locker. | Put your laptop in your ___. | The ___ rules changed last year. || |
+v13_009 || We waited an hour for our ___. | ___ costs extra on budget airlines. | My ___ went to Paris by mistake. | Collect your ___ from carousel five. | Don't put batteries in your ___. || |
+v13_010 || I packed my ___ the night before. | The wheel came off my ___. | My ___ is too heavy to lift. | She bought a new ___ for the trip. | Excuse me, is this your ___? || |
+v13_011 || He travelled across Asia with just a ___. | My ___ has a laptop pocket. | Take a ___ for the hike. | The kids carry their ___ to school. | The straps on my ___ broke. || |
+v13_012 || She pulled her ___ through the station. | My ___ fits in the overhead locker. | The wheels on my ___ are broken. | A ___ is easier than carrying a bag. | He tripped over someone's ___. || |
+v13_013 || I bought perfume in the ___ shop. | ___ alcohol is cheaper than in the supermarket. | The ___ area is huge in Dubai. | Is there a ___ shop after security? | We bought chocolate at ___. || |
+v13_014 || There was a long queue at ___. | Have your passport ready for ___. | ___ took over an hour. | The new e-gates make ___ much faster. | The officer at ___ asked about my trip. || border control |
+v13_015 || We went through ___ with nothing to declare. | ___ found cigarettes in his bag. | ___ officers searched the car. | You have to pay ___ duty on that. | The parcel is stuck in ___. || |
+v13_016 || I'll meet you in the ___. | Taxi drivers wait in the ___. | The ___ was full of families. | She held up a sign in the ___. | There's a café in the ___. || |
+v13_017 || We had a coffee in the ___. | The ___ was full of shops. | Wait in the ___ until your gate opens. | I fell asleep in the ___. | The ___ has free Wi-Fi. || |
+v13_018 || I missed my ___ in Frankfurt. | The ___ leaves in forty minutes. | Do I need to collect my bags for the ___? | Our ___ to Lisbon was cancelled. | We ran to catch our ___. || |
+v13_019 || We had an eight-hour ___ in Dubai. | Is there a ___ on this flight? | A long ___ is boring. | We left the airport during the ___. | The ticket was cheaper with a ___. || |
+v13_020 || Is there a ___ to Tokyo? | A ___ is more expensive but quicker. | We booked a ___ to save time. | There's no ___ from here to Lima. | I always pay more for a ___. || nonstop flight |
+v13_021 || A ___ is cheaper than two singles. | I booked a ___ to New York. | The ___ costs 300 euros. | Is that a ___ or one-way? | We need a ___ for the holidays. || |
+v13_022 || We hit some ___ over the Alps. | The captain warned us about ___. | Even light ___ makes me nervous. | Fasten your seatbelt during ___. | Severe ___ injured two passengers. || |
+v13_023 || The ___ served drinks after take-off. | Follow the instructions of the ___. | The ___ were very friendly. | Ask a member of the ___ for help. | The ___ prepared the cabin for landing. || |
+v13_024 || Put your bag in the ___. | The ___ was already full. | Be careful opening the ___. | My coat fell out of the ___. | Only small bags fit in the ___. || overhead bin |
+v13_025 || I prefer an ___ so I can stretch my legs. | Can I have an ___, please? | An ___ is easier for going to the toilet. | He booked an ___ for the long flight. | People in an ___ get bumped by trolleys. || |
+v13_026 || The kids always want a ___. | I booked a ___ to see the mountains. | From the ___ you can see the city. | Can I swap my ___ for an aisle? | I sleep better in a ___. || |
+v13_027 || Nobody wants the ___ on a long flight. | I got stuck in the ___. | The ___ is the worst on long flights. | He paid extra to avoid the ___. | My son sat in the ___ between us. || |
+v13_028 || We always fly ___ to save money. | ___ seats are very small. | The food in ___ was terrible. | ___ was completely full, so we sat apart. | I upgraded from ___ to business. || coach |
+v13_029 || The company pays for ___ on long flights. | ___ has seats that become beds. | We got upgraded to ___. | ___ passengers are allowed to board first. | ___ tickets are very expensive. || |
+v13_030 || ___ has its own lounge. | Flying ___ is a dream for many people. | The ___ cabin has only eight seats. | She's rich enough to always travel ___. | A ___ ticket to Sydney costs a fortune. || |
+v13_031 || I had terrible ___ after flying to Japan. | ___ is worse when flying east. | Sunlight helps you get over ___. | The kids had ___ for a week. | Drink water to reduce ___. || |
+v13_032 || The plane will ___ in twenty minutes. | We had to ___ in fog. | The pilot managed to ___ safely. | What time does the flight ___? | The plane couldn't ___ because of the storm. || |
+v13_033 || The plane is about to ___. | We'll ___ in ten minutes. | Planes can't ___ in thick fog. | Turn off your phone before we ___. | We waited an hour to ___. || |
+v13_034 || Passengers may now ___ the plane. | We'll ___ at gate 12. | You can ___ the train ten minutes before departure. | Families with children ___ first. | Please ___ through the front door. || |
+v13_035 || Passengers may ___ from the front of the plane. | We'll ___ in about ten minutes. | Please wait until the seatbelt sign is off before you ___. | The ship's passengers will ___ in Naples. | It took an hour to ___. || |
+v13_036 || I booked a ___ for the conference. | A ___ is cheaper than a double. | The ___ was tiny but comfortable. | Do you have a ___ for tonight? | There's a supplement for a ___. || |
+v13_037 || We'd like a ___ with a sea view. | A ___ for two nights, please. | The ___ has a king-size bed. | They upgraded our ___ to a suite. | Is breakfast included with the ___? || |
+v13_038 || We asked for a ___ because we're just friends. | The kids share a ___. | Is the ___ available for three nights? | A ___ has two separate beds. | I'd prefer a ___, please. || |
+v13_039 || They stayed in the honeymoon ___. | The presidential ___ costs thousands a night. | We were upgraded to a ___. | The ___ has a living room. | The singer booked the entire top-floor ___. || |
+v13_040 || All rooms have an ___ bathroom. | The ___ was tiny but clean. | Is the bathroom in that room ___? | We paid extra for ___. | Most hostel rooms aren't ___. || |
+v13_041 || We booked ___ so we could have lunch out. | ___ includes breakfast and dinner. | ___ costs twenty euros extra a day. | Is ___ available at this hotel? | We chose ___ for the week. || |
+v13_042 || ___ is perfect for families. | With ___, you never need to leave the hotel. | We booked ___ in Tunisia. | Unlike half board, ___ includes lunch too. | Is ___ cheaper than eating out? || |
+v13_043 || We stayed at a lovely ___ in Cornwall. | The ___ was run by an old couple. | A ___ is cheaper than a hotel. | The ___ served a full English. | There's a ___ near the beach. || |
+v13_044 || We rented a ___ cottage. | ___ is cheaper with kids. | A ___ apartment has a kitchen. | With three kids, we prefer ___ holidays. | The ___ flat had everything we needed. || |
+v13_045 || Ask at ___ for a map. | Leave your key at ___. | ___ is open 24 hours. | Call ___ if you need anything. | The man at ___ was very helpful. || |
+v13_046 || The ___ booked us a table. | Ask the ___ for theatre tickets. | The ___ recommended a restaurant. | A good ___ knows the whole city. | The ___ called us a taxi. || |
+v13_047 || We ordered ___ for breakfast. | ___ is very expensive here. | Is ___ available at night? | ___ brought champagne to the room. | The ___ menu is on the desk. || |
+v13_048 || Can I have a ___ at six, please? | I asked for a ___ but nobody called. | The ___ came too early. | Book a ___ in case your alarm fails. | Our ___ is at 5 a.m. || |
+v13_049 || Don't touch the ___ — it's very expensive. | We took two beers from the ___. | The ___ was empty when we arrived. | They charged us for the ___. | The ___ has chocolate and water. || |
+v13_050 || Put your passport in the ___. | The ___ needs a four-digit code. | I forgot the ___ code. | The room ___ was locked. | Leave valuables in the hotel ___. || |
+v13_051 || ___ will clean your room after ten. | Call ___ for more towels. | ___ forgot to make the bed. | Leave a tip for ___. | ___ staff work very hard. || |
+v13_052 || Hang the ___ sign on the door. | I put up the ___ sign to sleep late. | The cleaner ignored the ___ sign. | Is there a ___ sign in the room? | The ___ sign was on all morning. || |
+v13_053 || You can ___ from three o'clock. | We arrived early but couldn't ___. | Did you ___ online last night? | I need to ___ before six. | Let's ___ and drop our bags. || |
+v13_054 || We have to ___ by eleven. | Can we ___ later tomorrow? | Don't forget to ___ before you leave. | I'll ___ and pay the bill. | Guests must ___ by noon. || |
+v13_055 || I need to ___ a table for tonight. | Did you ___ the hotel? | It's cheaper to ___ in advance. | We should ___ the flights soon. | Call to ___ a room. || |
+v13_056 || We had to ___ our holiday. | Can I ___ my booking? | The airline decided to ___ the flight. | ___ before Friday for a full refund. | Don't ___ — just change the date. || |
+v13_057 || There's a ___ if you cancel late. | We paid a ___ of fifty euros. | The ___ is the full price of the room. | Read about the ___ before you book. | There's no ___ until 24 hours before. || |
+v13_058 || I asked for a ___. | They gave us a full ___. | The ___ takes ten days. | Can I get a ___ if I cancel? | You can't get a ___ on sale items. || |
+v13_059 || Check ___ online before you call. | There's no ___ for those dates. | Room ___ is limited in August. | We're checking ___ for next week. | ___ changes every hour in summer. || |
+v13_060 || Hotels are expensive in ___. | We avoid travelling in ___. | ___ in Spain is July and August. | Flights cost double in ___. | The beaches are crowded in ___. || high season |
+v13_061 || Hotel prices drop in ___. | We prefer travelling in the ___. | Many hotels close in ___. | ___ travel is cheaper and quieter. | The town is quiet in ___. || |
+v13_062 || We booked a ___ to Greece. | A ___ is easy for families. | The ___ included airport transfers. | ___ companies offer good deals. | Our ___ in Turkey was all-inclusive. || package vacation |
+v13_063 || We went on a ___ of the Vatican. | The ___ lasts two hours. | Book a ___ to learn the history. | The ___ was in Spanish. | Our ___ guide was fantastic. || |
+v13_064 || We did a ___ with an app. | A ___ is cheaper and more flexible. | The museum offers a ___ with audio. | I prefer a ___ — I can go at my pace. | Download the ___ before you go. || |
+v13_065 || We went on a ___ to Toledo. | A ___ to the beach sounds great. | It's an easy ___ from London. | We're planning a ___ to the mountains. | The ___ took ten hours. || |
+v13_066 || We did a ___ across America. | A ___ needs good music. | They went on a ___ through Scotland. | Our ___ took two weeks. | Plan the route of your ___ carefully. || |
+v13_067 || They went on a ___ around the Caribbean. | The ___ ship had 3,000 passengers. | A Mediterranean ___ is popular. | We booked a river ___. | My grandparents love going on a ___. || |
+v13_068 || He went ___ around South America. | ___ is cheaper than hotels. | We met on a ___ trip. | ___ in Asia is popular with students. | She spent a year ___ after university. || |
+v13_069 || What's on the ___ for tomorrow? | Our ___ includes three cities. | The guide sent us the ___. | We changed the ___ because of the rain. | The ___ is very busy. || |
+v13_070 || Can you show me on the ___? | I downloaded a ___ of the city. | We got lost without a ___. | This old ___ is wrong. | Look at the ___ before we go. || |
+v13_071 || The ___ recommends this restaurant. | I bought a ___ to Rome. | Our ___ is ten years old. | The ___ says it's closed on Mondays. | Read the ___ on the plane. || |
+v13_072 || Big Ben is a famous London ___. | The tower is a ___ of the city. | Use the cathedral as a ___ to find your way. | The bridge is the city's best-known ___. | We visited every ___ in Paris. || |
+v13_073 || The Alhambra is a major ___. | The castle is the biggest ___ here. | The zoo is a popular ___. | Every ___ in the city was crowded. | The waterfall is a great ___. || |
+v13_074 || I bought a fridge magnet as a ___. | This ___ shop is very expensive. | She brought back a ___ from Japan. | Keep the ticket as a ___. | I never buy a ___ at the airport. || |
+v13_075 || The ___ is good right now. | Check the ___ before you travel. | Airports offer a bad ___. | The ___ changed a lot overnight. | What's the euro–dollar ___ today? || |
+v13_076 || Where can I ___ money? | It's cheaper to ___ euros in the city. | I need to ___ some dollars. | Don't ___ money at the airport. | Can I ___ pounds for euros here? || |
+v13_077 || Buy ___ before you go. | Our ___ covered the stolen camera. | Does your ___ include skiing? | ___ is important for long trips. | She forgot to buy ___. || |
+v13_078 || I need a ___ for the UK. | My ___ has USB ports. | Pack a ___ for your chargers. | I forgot my ___ at home. | The hotel lent me a ___. || |
+v13_079 || The flight lands at six ___. | What's the ___ in Tokyo? | Set your watch to ___. | All times are in ___. | The meeting is at ten ___. || |
+v13_080 || New York is in a different ___. | Crossing a ___ can cause jet lag. | Russia is so big that it has more than one ___. | Which ___ is Spain in? | We work across more than one ___. || |
+v13_081 || The kids got ___ after a week. | I was ___ during my year abroad. | She's ___ for her mum's cooking. | He felt ___ at Christmas. | Being ___ is normal at first. || |
+v13_082 || I suffered culture ___ in Japan. | Culture ___ is normal at first. | Reverse culture ___ happens when you go home. | The culture ___ lasted months. | Students often get culture ___. || |
+v13_083 || It's fun to ___ in the old town. | It's easy to ___ in Venice. | Don't ___ — use your phone. | I always ___ in big cities. | Let's ___ on purpose and explore. || |
+v13_084 || I had to ___ in Spanish. | Don't be afraid to ___. | Men never ___, they say. | Let's stop at the petrol station and ___. | He had to ___ three times. || |
