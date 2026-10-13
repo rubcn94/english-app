@@ -75,7 +75,7 @@ v23_073 || ___ explains how electric motors work. | Faraday made important disco
 v23_074 || ___ was discovered by Becquerel in 1896. | Marie Curie studied ___. | Exposure to ___ can cause cancer. | The area near Chernobyl still has high ___. | Scientists measure ___ with a Geiger counter. || |
 v23_075 || Nuclear power stations use ___. | The first atomic bomb used ___. | ___ produces radioactive waste. | ___ was discovered in 1938. | ___ splits uranium atoms into smaller ones. || |
 v23_076 || The sun is powered by ___. | ___ could provide almost unlimited clean energy. | Scientists are getting closer to controlling ___. | ___ produces very little waste. | ___ needs extremely high temperatures. || |
-v23_077 || ___ is changing every industry. | Many workers fear ___ will take their jobs. | ___ can now write essays and code. | She works on ___ at a lab in London. | ___ needs huge amounts of data and energy. || AI |
+v23_077 || ___ is changing every industry. | Many workers fear ___ will take their jobs. | ___ can now write essays and code. | She works on ___ at a lab in London. | ___ needs huge amounts of data and energy. || |
 v23_078 || ___ powers Netflix recommendations. | She's doing a master's degree in ___. | ___ needs huge amounts of data. | Banks use ___ to detect fraud. | Our app uses ___ to suggest songs. || |
 v23_079 || The ___ learned to recognise faces. | A ___ has many layers of nodes. | They trained a ___ on millions of images. | A ___ is loosely inspired by the brain. | The ___ made a strange mistake. || |
 v23_080 || ___ powers most modern AI. | ___ needs very powerful computers. | ___ is used in self-driving cars. | She's an expert in ___ and vision. | ___ transformed image recognition. || |
