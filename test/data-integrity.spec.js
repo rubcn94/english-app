@@ -119,6 +119,7 @@ function testCardExtrasAreWellFormed() {
     if (new Set(x.ex).size !== x.ex.length) problems.push(`${id}: duplicate example`);
     x.ex.forEach(e => {
       if ((e.match(/___/g) || []).length !== 1) problems.push(`${id}: "${e}" needs exactly one ___`);
+      if (/___[a-z]/i.test(e)) problems.push(`${id}: "${e}" glues a suffix to the blank — the answer must fit as-is`);
       if (e.trim() === own) problems.push(`${id}: example repeats the card's own sentence`);
       if (answer.length > 3 && e.toLowerCase().includes(answer)) problems.push(`${id}: "${e}" gives the answer away`);
     });

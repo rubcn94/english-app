@@ -35,7 +35,10 @@ function testSherlockEpisodeStudiedInSeriesOrder() {
   const ep = h.getData('sherlock').find(s => s.section === 2);
   h.call('startSection', 'sherlock', 2);
   const ids = h.run('state.blocks.flat().map(c => c.id)');
-  assertEqual(JSON.stringify(ids), JSON.stringify(ep.cards.map(c => c.id)), 'new Sherlock cards should keep episode order, not be shuffled');
+  // Episode order, except new old-fashioned expressions are moved to the end.
+  const dated = h.run(`getData('sherlock').find(s => s.section === 2).cards.map(c => isDated(c))`);
+  const expected = [...ep.cards.filter((_, i) => !dated[i]), ...ep.cards.filter((_, i) => dated[i])].map(c => c.id);
+  assertEqual(JSON.stringify(ids), JSON.stringify(expected), 'new Sherlock cards should keep episode order (old-fashioned last), not be shuffled');
 }
 
 function testEpisodeGlossaryShowsOnlyThatEpisodeInOrder() {

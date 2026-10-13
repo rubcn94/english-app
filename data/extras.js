@@ -724,7 +724,7 @@ const CARD_EXTRAS = {
  "sh01_pickpocket": {
   "ex": [
    "A ___ stole my wallet on the metro.",
-   "Watch out for ___s near the station.",
+   "Watch out — there's a ___ working near the station.",
    "The ___ was caught on camera.",
    "He worked as a ___ before he went straight.",
    "She felt the ___'s hand in her bag."
@@ -820,7 +820,7 @@ const CARD_EXTRAS = {
   "ex": [
    "The police are following up a new ___.",
    "That phone number is our only ___.",
-   "Any ___s on the missing girl?",
+   "Do we have a ___ on the missing girl?",
    "The tip turned out to be a good ___.",
    "We've got a ___ on the stolen car."
   ]
@@ -1035,6 +1035,1234 @@ const CARD_EXTRAS = {
    "The army was ___ my brother.",
    "This song was ___ the band.",
    "Moving abroad was ___ me."
+  ]
+ },
+ "sh02_brew": {
+  "ex": [
+   "Sit down and I'll make us a nice ___.",
+   "Nothing like a hot ___ on a cold morning.",
+   "Fancy a ___? The kettle's just boiled.",
+   "She drinks her ___ very strong with two sugars.",
+   "Let's stop for a ___ before we carry on."
+  ],
+  "us": "cup of tea / coffee"
+ },
+ "sh02_bothered": {
+  "ex": [
+   "I was too tired, I couldn't be ___ to cook.",
+   "He can't be ___ to answer my emails.",
+   "She couldn't be ___ to iron her shirt.",
+   "We couldn't be ___ to walk, so we got a taxi.",
+   "Honestly, I can't be ___ to argue."
+  ]
+ },
+ "sh02_clapped-eyes-on": {
+  "ex": [
+   "I haven't ___ him since school.",
+   "The first time I ___ her, I knew she was trouble.",
+   "I've never ___ that man in my life!",
+   "She hadn't ___ her brother for ten years.",
+   "The moment he ___ the car, he wanted it."
+  ],
+  "us": "laid eyes on"
+ },
+ "sh02_grab-a-pew": {
+  "ex": [
+   "___, the doctor won't be long.",
+   "Come in, come in, ___.",
+   "___ and tell me everything.",
+   "There's room on the sofa — ___.",
+   "___, this could take a while."
+  ],
+  "us": "Grab a seat / Take a seat",
+  "dated": true
+ },
+ "sh02_put-the-wind-up": {
+  "ex": [
+   "That phone call ___ me.",
+   "The rumours of job cuts ___ the whole office.",
+   "Seeing the police outside ___ him.",
+   "Her threats really ___ them.",
+   "That horror film ___ the kids."
+  ],
+  "us": "Scared / Spooked",
+  "dated": true
+ },
+ "sh02_enlighten": {
+  "ex": [
+   "Could you ___ me as to why the report is late?",
+   "Nobody knows the answer — please ___ us.",
+   "I don't get the joke. ___ me.",
+   "She tried to ___ the students about climate change.",
+   "Can someone ___ me on what's going on?"
+  ]
+ },
+ "sh02_break-in": {
+  "ex": [
+   "There was a ___ at the school last night.",
+   "The police are investigating the ___.",
+   "After the ___, we installed an alarm.",
+   "Nothing was stolen in the ___.",
+   "A neighbour reported a ___ at number 12."
+  ]
+ },
+ "sh02_sniff-around": {
+  "ex": [
+   "Journalists want to ___ the minister's private life.",
+   "Let's ___ the garage and see what we find.",
+   "I don't want reporters coming to ___ my family.",
+   "The dog loves to ___ the garden.",
+   "The police came back to ___ for more clues."
+  ],
+  "us": "snoop around"
+ },
+ "sh02_buzz-you-in": {
+  "ex": [
+   "Ring the bell and I'll ___.",
+   "The receptionist will ___ when you arrive.",
+   "Wait at the gate, I'll ___.",
+   "Press flat 3 and someone will ___.",
+   "I can't ___ — the intercom's broken."
+  ]
+ },
+ "sh02_take-your-word-for-it": {
+  "ex": [
+   "I haven't tried it, but I'll ___ that it's good.",
+   "You say it's safe? OK, I'll ___.",
+   "I can't check, so I'll have to ___.",
+   "Fine, I'll ___ — but you'd better be right.",
+   "I'll ___; you know more about wine than I do."
+  ]
+ },
+ "sh02_root-around": {
+  "ex": [
+   "She had to ___ in her bag for her keys.",
+   "Don't ___ in my drawers!",
+   "He likes to ___ in the bins for treasure.",
+   "I went up to ___ in the attic for old photos.",
+   "Pigs ___ in the mud for food."
+  ],
+  "us": "dig around"
+ },
+ "sh02_tamper-with": {
+  "ex": [
+   "Someone has tried to ___ the lock.",
+   "It's illegal to ___ a smoke alarm on a plane.",
+   "Don't ___ the settings.",
+   "The jury was told someone might ___ the witnesses.",
+   "He was accused of trying to ___ the results."
+  ]
+ },
+ "sh02_comply-with": {
+  "ex": [
+   "All products must ___ EU safety rules.",
+   "Failure to ___ the order will mean a fine.",
+   "The company refused to ___ the regulations.",
+   "Visitors must ___ the dress code.",
+   "We'll ___ your request immediately."
+  ]
+ },
+ "sh02_sidetracked": {
+  "ex": [
+   "I meant to study but got ___ by my phone.",
+   "Let's not get ___ — back to the main point.",
+   "The meeting got ___ by an argument about parking.",
+   "He gets ___ easily.",
+   "Sorry, I got ___ and forgot to call you."
+  ]
+ },
+ "sh02_locum": {
+  "ex": [
+   "The practice hired a ___ while the GP was on leave.",
+   "She works as a ___ doctor all over the country.",
+   "The ___ didn't know my medical history.",
+   "We've got a ___ vet this week.",
+   "He's a ___ pharmacist covering for holidays."
+  ],
+  "us": "fill-in doctor"
+ },
+ "sh02_mundane": {
+  "ex": [
+   "Most of my job is quite ___.",
+   "She was tired of the ___ routine of office life.",
+   "Even ___ tasks like shopping felt exciting abroad.",
+   "It's a ___ question, but where's the toilet?",
+   "The conversation was so ___ I nearly fell asleep."
+  ]
+ },
+ "sh02_bolted": {
+  "ex": [
+   "The back door was ___ from the inside.",
+   "Make sure the gate is ___ at night.",
+   "The shed was locked and ___.",
+   "We found all the windows ___ shut.",
+   "He ___ the door and went to bed."
+  ]
+ },
+ "sh02_gospel": {
+  "ex": [
+   "Don't take everything the newspapers say as ___.",
+   "She treats her mum's advice as ___.",
+   "His word is ___ in this office.",
+   "I wouldn't take that rumour as ___.",
+   "Fans take every interview as ___."
+  ]
+ },
+ "sh02_impregnable": {
+  "ex": [
+   "The castle was thought to be ___.",
+   "Their defence looked ___ all season.",
+   "No security system is truly ___.",
+   "The fortress walls were ___.",
+   "The bank's vault is said to be ___."
+  ]
+ },
+ "sh02_scaled": {
+  "ex": [
+   "The climbers ___ the north face of the mountain.",
+   "The thief ___ the wall and escaped.",
+   "Protesters ___ the building to hang a banner.",
+   "She ___ the fence in seconds.",
+   "They ___ the cliff without ropes."
+  ]
+ },
+ "sh02_took-exception-to": {
+  "ex": [
+   "He ___ my comments about his cooking.",
+   "The teacher ___ the student's tone.",
+   "She ___ being called \"darling\".",
+   "Many readers ___ the article.",
+   "The judge ___ the lawyer's remark."
+  ]
+ },
+ "sh02_unravel": {
+  "ex": [
+   "Detectives are trying to ___ the mystery.",
+   "His story began to ___ under questioning.",
+   "It took years to ___ the family secret.",
+   "The whole plan started to ___.",
+   "Can you help me ___ this knot?"
+  ]
+ },
+ "sh02_catchy": {
+  "ex": [
+   "\"___ name for a podcast!\"",
+   "That song is so ___ I can't stop humming it.",
+   "The advert has a ___ slogan.",
+   "We need a ___ title for the book.",
+   "It's a ___ tune, isn't it?"
+  ]
+ },
+ "sh02_own-up": {
+  "ex": [
+   "If nobody wants to ___, the whole class stays behind.",
+   "Just ___ and say you broke it.",
+   "It's time to ___ to your mistake.",
+   "She refused to ___ to eating the cake.",
+   "Somebody needs to ___."
+  ],
+  "us": "come clean"
+ },
+ "sh02_impounded": {
+  "ex": [
+   "My car was ___ for parking illegally.",
+   "Customs ___ the goods at the border.",
+   "The police ___ the van as evidence.",
+   "Their passports were ___.",
+   "The ship was ___ in port."
+  ],
+  "us": "towed (cars) / seized"
+ },
+ "sh02_retrace-their-steps": {
+  "ex": [
+   "The children had to ___ to find the lost keys.",
+   "Hikers who get lost should ___.",
+   "Investigators asked the witnesses to ___.",
+   "They decided to ___ back to the car.",
+   "Police helped the couple ___ through the city."
+  ]
+ },
+ "sh02_back-to-back": {
+  "ex": [
+   "I've got ___ meetings all afternoon.",
+   "They won the title in ___ seasons.",
+   "We watched three films ___.",
+   "Flights were ___, no time to eat.",
+   "She worked ___ shifts all week."
+  ]
+ },
+ "sh02_sod": {
+  "ex": [
+   "You lucky ___!",
+   "The poor ___ lost his job last week.",
+   "Some ___ has scratched my car.",
+   "Don't be such a lazy ___.",
+   "He's a stubborn old ___."
+  ],
+  "us": "jerk"
+ },
+ "sh02_lug": {
+  "ex": [
+   "I had to ___ my suitcase up five flights of stairs.",
+   "Why do you ___ that heavy bag everywhere?",
+   "Help me ___ the sofa into the van.",
+   "She had to ___ her shopping home on the bus.",
+   "I'm not going to ___ all this back to the car."
+  ],
+  "us": "haul"
+ },
+ "sh02_peckish": {
+  "ex": [
+   "I'm a bit ___ — any biscuits?",
+   "Feeling ___? There's cheese in the fridge.",
+   "We got ___ on the drive and stopped for crisps.",
+   "I always get ___ around four.",
+   "If you're ___, have an apple."
+  ],
+  "us": "snacky / a little hungry"
+ },
+ "sh02_light-fingered": {
+  "ex": [
+   "The new cleaner turned out to be ___.",
+   "Keep your wallet close — some of these kids are ___.",
+   "One of the staff must be ___.",
+   "A ___ guest took the silver spoons.",
+   "He's always been a bit ___."
+  ],
+  "us": "sticky-fingered"
+ },
+ "sh02_hoard": {
+  "ex": [
+   "The pirates hid their ___ on the island.",
+   "She has a ___ of chocolate in her desk.",
+   "Archaeologists found a ___ of Roman coins.",
+   "Squirrels ___ nuts for winter.",
+   "He keeps a secret ___ of comics."
+  ],
+  "us": "stash"
+ },
+ "sh02_gone-off": {
+  "ex": [
+   "Don't eat that yoghurt, it's ___.",
+   "The meat has ___ — it smells awful.",
+   "This cheese has ___.",
+   "I think the milk's ___.",
+   "The fish had ___ in the heat."
+  ],
+  "us": "gone bad"
+ },
+ "sh02_croaky": {
+  "ex": [
+   "Your voice sounds ___ — have you got a sore throat?",
+   "After the concert, my voice was all ___.",
+   "He answered the phone in a ___ voice.",
+   "I'm ___ from shouting at the match.",
+   "She sounded ___ in the morning."
+  ],
+  "us": "hoarse"
+ },
+ "sh02_livelihood": {
+  "ex": [
+   "Fishing is the town's main ___.",
+   "The drought destroyed every farmer's ___.",
+   "Tourism is their only ___.",
+   "You're threatening my ___!",
+   "Thousands lost their ___ when the factory closed."
+  ]
+ },
+ "sh02_gunned-down": {
+  "ex": [
+   "The gangster was ___ outside his home.",
+   "Two police officers were ___ during the raid.",
+   "He was ___ in broad daylight.",
+   "The witness was ___ before the trial.",
+   "Protesters were ___ by soldiers."
+  ]
+ },
+ "sh02_right-under-your-nose": {
+  "ex": [
+   "The keys were ___ the whole time!",
+   "The answer is ___.",
+   "Fraud was happening ___ and you didn't see it.",
+   "They stole it ___.",
+   "Your glasses are ___!"
+  ]
+ },
+ "sh02_cunning": {
+  "ex": [
+   "The fox is famous for its ___.",
+   "It was a ___ plan, I'll give you that.",
+   "She showed real ___ in the negotiations.",
+   "He's ___ — never trust him.",
+   "With a bit of ___, we'll get in."
+  ]
+ },
+ "sh02_ta": {
+  "ex": [
+   "\"Here's your coffee.\" \"___, love.\"",
+   "___ for that!",
+   "\"I'll lend you a pen.\" \"___.\"",
+   "\"Want a lift?\" \"Oh, ___!\"",
+   "___ very much, mate."
+  ],
+  "us": "Thanks"
+ },
+ "sh02_a-late-one": {
+  "ex": [
+   "I had ___ last night, so I'm exhausted.",
+   "Shall we make it ___? Tomorrow's a holiday.",
+   "It was ___ at the office yesterday.",
+   "We had ___ at Tom's party.",
+   "No, I can't do ___ — I've got an early start."
+  ],
+  "us": "a late night"
+ },
+ "sh02_get-off-with": {
+  "ex": [
+   "He tried to ___ her at the party.",
+   "Did you ___ anyone last night?",
+   "She wanted to ___ her best friend's brother.",
+   "Everyone knew he wanted to ___ Sarah.",
+   "He went to the club hoping to ___ someone."
+  ],
+  "us": "hook up with / make out with"
+ },
+ "sh02_shin-up": {
+  "ex": [
+   "The boy managed to ___ the tree to get his kite.",
+   "Can you ___ that pole?",
+   "He tried to ___ the drainpipe to the first floor.",
+   "Sailors had to ___ the mast.",
+   "She can ___ a rope in seconds."
+  ],
+  "us": "shimmy up"
+ },
+ "sh02_nibbles": {
+  "ex": [
+   "We'll have some drinks and ___ before dinner.",
+   "There were ___ on every table.",
+   "Bring some ___ for the party.",
+   "The bar serves free ___ with drinks.",
+   "I'll put out some crisps and ___."
+  ],
+  "us": "snacks / finger food"
+ },
+ "sh02_quid": {
+  "ex": [
+   "Can you lend me twenty ___?",
+   "It only cost five ___.",
+   "He earns a hundred ___ a day.",
+   "That jacket was fifty ___.",
+   "I'll give you a ___ for it."
+  ],
+  "us": "bucks"
+ },
+ "sh02_blimey": {
+  "ex": [
+   "___, it's cold today!",
+   "___, look at the size of that dog!",
+   "\"I got the job!\" \"___, well done!\"",
+   "___, you scared me!",
+   "___, that's expensive."
+  ],
+  "us": "Wow / Geez",
+  "dated": true
+ },
+ "sh02_just-what-the-doctor-ordered": {
+  "ex": [
+   "A hot bath after a long day is ___.",
+   "This holiday is ___.",
+   "A cold drink — ___!",
+   "A week off work is ___.",
+   "Soup when you're ill is ___."
+  ]
+ },
+ "sh02_henchmen": {
+  "ex": [
+   "The villain sent his ___ to kidnap the hero.",
+   "The boss and his ___ were arrested.",
+   "Two of his ___ were waiting outside.",
+   "He's one of the gangster's ___.",
+   "The dictator's ___ silenced the press."
+  ]
+ },
+ "sh02_scratched-the-surface": {
+  "ex": [
+   "We've only ___ of this problem.",
+   "The report barely ___.",
+   "I've just ___ of what Spain has to offer.",
+   "Scientists have only ___ in understanding the brain.",
+   "Our conversation hardly ___."
+  ]
+ },
+ "sh02_stood-me-up": {
+  "ex": [
+   "___ again! I waited an hour.",
+   "My date ___ last night.",
+   "She ___ — never showed.",
+   "He ___ at the cinema.",
+   "___ twice — no third chance."
+  ]
+ },
+ "sh02_took-me-for-granted": {
+  "ex": [
+   "My boss ___ — never a thank you.",
+   "After years together, he ___.",
+   "They ___ until I left.",
+   "She ___ and never helped at home.",
+   "I felt my family ___."
+  ]
+ },
+ "sh02_at-a-moment-s-notice": {
+  "ex": [
+   "Doctors must be ready to leave ___.",
+   "Be ready to travel ___.",
+   "He can't change plans ___.",
+   "The flight was cancelled ___.",
+   "We can't get a babysitter ___."
+  ]
+ },
+ "sh02_pinched": {
+  "ex": [
+   "Someone ___ my bike!",
+   "Who's ___ my pen?",
+   "He ___ a chocolate bar from the shop.",
+   "I think the kids ___ the biscuits.",
+   "My wallet got ___ on the bus."
+  ],
+  "us": "swiped"
+ },
+ "sh02_shouted-abuse": {
+  "ex": [
+   "The drunk man ___ at the bus driver.",
+   "Fans ___ at the referee.",
+   "Protesters ___ at the politicians.",
+   "He ___ at his neighbours all night.",
+   "Someone ___ at us from a car."
+  ],
+  "us": "yelled insults"
+ },
+ "sh02_in-a-manner-of-speaking": {
+  "ex": [
+   "\"Are you the boss?\" \"___.\"",
+   "___, we're family — we work together every day.",
+   "It's free, ___ — you pay with your data.",
+   "\"Did you win?\" \"___.\"",
+   "He's retired, ___."
+  ],
+  "us": "Sort of"
+ },
+ "sh02_shagging": {
+  "ex": [
+   "Rumour says he's been ___ his secretary.",
+   "They've been ___ for months.",
+   "Everyone knew they were ___.",
+   "He was caught ___ in the office.",
+   "She found out he'd been ___ around."
+  ],
+  "us": "sleeping with / screwing"
+ },
+ "sh02_make-it-over": {
+  "ex": [
+   "Can you ___ for dinner on Friday?",
+   "Sorry, I can't ___ tonight.",
+   "Thanks for coming — I know it was hard to ___ at such short notice.",
+   "She'll ___ after work.",
+   "If you ___ before six, we'll go out."
+  ],
+  "us": "make it"
+ },
+ "sh02_five-figures": {
+  "ex": [
+   "The repair bill ran to ___.",
+   "Her salary is in ___.",
+   "We're talking about a sum in ___.",
+   "The painting sold for ___.",
+   "Damages could reach ___."
+  ]
+ },
+ "sh02_an-advance": {
+  "ex": [
+   "The publisher paid her ___ on the book.",
+   "Can I have ___ on my salary?",
+   "He asked for ___ to cover expenses.",
+   "This money is ___, the rest comes later.",
+   "They gave us ___ of 20 per cent."
+  ]
+ },
+ "sh02_incentive": {
+  "ex": [
+   "Tax cuts give companies an ___ to invest.",
+   "There's no ___ to work harder.",
+   "Free coffee is a good ___.",
+   "Bonuses are an ___ for staff.",
+   "What's my ___ to help you?"
+  ]
+ },
+ "sh02_at-all-hours": {
+  "ex": [
+   "The neighbours make noise ___.",
+   "He phones me ___.",
+   "The shop is open ___.",
+   "Students come and go ___.",
+   "She works ___ of the night."
+  ]
+ },
+ "sh02_city-boys": {
+  "ex": [
+   "The bar was full of ___ in expensive suits.",
+   "___ earn huge bonuses.",
+   "She's tired of dating ___.",
+   "___ drink champagne at lunch.",
+   "Those ___ work insane hours."
+  ],
+  "us": "Wall Street guys"
+ },
+ "sh02_bloke": {
+  "ex": [
+   "He's a nice ___, very friendly.",
+   "Some ___ asked me for directions.",
+   "Who's that ___ with Mary?",
+   "He's just an ordinary ___.",
+   "A ___ at work told me about it."
+  ],
+  "us": "guy"
+ },
+ "sh02_in-charge": {
+  "ex": [
+   "Who's ___ here?",
+   "She's ___ of marketing.",
+   "Leave me ___ while you're away.",
+   "I'm ___ of the kids today.",
+   "Who put him ___?"
+  ]
+ },
+ "sh02_suit": {
+  "ex": [
+   "Would Monday morning ___ you?",
+   "Pick a time that will ___ everyone.",
+   "Does Friday ___ you?",
+   "That flat would ___ a student.",
+   "Nine o'clock doesn't ___ me, sorry."
+  ],
+  "us": "work for"
+ },
+ "sh02_made-it-all-back": {
+  "ex": [
+   "He lost money on shares but ___ within a year.",
+   "We lost a fortune at first, but ___.",
+   "The film ___ in its first weekend.",
+   "She gambled, lost, and ___ the next night.",
+   "Don't worry, we ___."
+  ]
+ },
+ "sh02_heartless": {
+  "ex": [
+   "How can you be so ___?",
+   "It was a ___ decision to sack him at Christmas.",
+   "That landlord is completely ___.",
+   "Don't be ___ — help her.",
+   "He's not ___, just shy."
+  ]
+ },
+ "sh02_up-for-auction": {
+  "ex": [
+   "The singer's guitar is ___.",
+   "Their house is ___ next month.",
+   "The painting went ___.",
+   "Rare stamps are ___ this weekend.",
+   "The football shirt was put ___."
+  ]
+ },
+ "sh02_appraise": {
+  "ex": [
+   "We need an expert to ___ the jewellery.",
+   "Managers ___ staff every year.",
+   "Can you ___ this painting?",
+   "Take time to ___ the situation.",
+   "The bank will ___ the house."
+  ]
+ },
+ "sh02_resigned": {
+  "ex": [
+   "The minister ___ after the scandal.",
+   "She ___ from her job last week.",
+   "He ___ to spend more time with his family.",
+   "Three directors have ___.",
+   "Why has she ___?"
+  ]
+ },
+ "sh02_over-qualified": {
+  "ex": [
+   "With a PhD, she's ___ for this job.",
+   "They told me I was ___.",
+   "He's ___ to be a waiter.",
+   "Many graduates are ___.",
+   "Being ___ can make it hard to get hired."
+  ]
+ },
+ "sh02_could-always-do-with": {
+  "ex": [
+   "I ___ some extra help.",
+   "We ___ more space.",
+   "You ___ a holiday.",
+   "The garden ___ some rain.",
+   "The team ___ another player."
+  ]
+ },
+ "sh02_surgery": {
+  "ex": [
+   "The doctor's ___ opens at 8.",
+   "I've got an appointment at the ___.",
+   "The ___ is closed on Sundays.",
+   "Our local ___ has three GPs.",
+   "Ring the ___ and book a check-up."
+  ],
+  "us": "doctor's office"
+ },
+ "sh02_clings": {
+  "ex": [
+   "___ to her mother all the time.",
+   "The wet shirt ___ to his back.",
+   "___ to hope despite everything.",
+   "Ivy ___ to the old walls.",
+   "The baby monkey ___ to its mother."
+  ]
+ },
+ "sh02_skylight": {
+  "ex": [
+   "Light came in through the ___.",
+   "The burglar got in through the ___.",
+   "We installed a ___ in the attic.",
+   "Rain was dripping from the ___.",
+   "I can see the stars through the ___."
+  ]
+ },
+ "sh02_ledge": {
+  "ex": [
+   "A pigeon was sitting on the window ___.",
+   "He stood on the ___ ready to jump.",
+   "She left the cake on the ___ to cool.",
+   "Climbers rested on a narrow ___.",
+   "Put the plant on the ___."
+  ],
+  "us": "sill"
+ },
+ "sh02_ask-around": {
+  "ex": [
+   "I'll ___ and see if anyone has a spare room.",
+   "If you need a plumber, ___.",
+   "She decided to ___ about cheap restaurants.",
+   "Let me ___ at work.",
+   "Nobody knows? I'll ___."
+  ]
+ },
+ "sh02_asbo": {
+  "ex": [
+   "The teenager got an ___ for vandalism.",
+   "Neighbours applied for an ___ against the family.",
+   "He's on an ___ — he can't go into town.",
+   "He was given an ___ for shouting at neighbours.",
+   "Breaking your ___ can mean prison."
+  ]
+ },
+ "sh02_can-t-place": {
+  "ex": [
+   "I know her face, but I ___ her.",
+   "That accent — I ___ it.",
+   "The tune sounds familiar, but I ___ it.",
+   "His name rings a bell but I ___ him.",
+   "I ___ where I've seen him."
+  ]
+ },
+ "sh02_get-hold-of": {
+  "ex": [
+   "___ the manager — it's urgent.",
+   "I couldn't ___ you all day!",
+   "Where did you ___ those tickets?",
+   "___ a copy of the contract.",
+   "It's hard to ___ him."
+  ],
+  "us": "Get ahold of"
+ },
+ "sh02_behind-you": {
+  "ex": [
+   "Whatever you decide, I'm ___.",
+   "The whole team is ___.",
+   "Don't worry, we're all ___.",
+   "Your family is ___ 100 per cent.",
+   "I'm ___ on this one."
+  ]
+ },
+ "sh02_price-tag": {
+  "ex": [
+   "The new stadium has a huge ___.",
+   "Look at the ___ on that watch!",
+   "The ___ put me off.",
+   "Quality comes with a ___.",
+   "The project's ___ is £2 billion."
+  ]
+ },
+ "sh02_rush-hour": {
+  "ex": [
+   "Avoid the Tube during ___.",
+   "Traffic is terrible in ___.",
+   "I left early to beat the ___.",
+   "Trains are packed at ___.",
+   "It took two hours in ___."
+  ]
+ },
+ "sh02_piece-together": {
+  "ex": [
+   "Detectives are trying to ___ what happened.",
+   "She tried to ___ the broken vase.",
+   "Historians ___ the story from old letters.",
+   "I can ___ most of the night.",
+   "We need to ___ the evidence."
+  ]
+ },
+ "sh02_stayed-afloat": {
+  "ex": [
+   "The business barely ___ during the crisis.",
+   "How have they ___ with no customers?",
+   "He ___ by borrowing money.",
+   "The boat ___ despite the storm.",
+   "We ___ thanks to a bank loan."
+  ]
+ },
+ "sh02_smuggler": {
+  "ex": [
+   "The ___ hid cigarettes in his car.",
+   "Police arrested a diamond ___.",
+   "Border guards caught a people ___.",
+   "The ___ used tunnels under the border.",
+   "An old ___ used to hide brandy in this cave."
+  ]
+ },
+ "sh02_drop-off": {
+  "ex": [
+   "The café was the gang's ___ point.",
+   "Where's the ___ for the parcels?",
+   "There's a ___ zone outside the airport.",
+   "School ___ is at 8:30.",
+   "They changed the ___ location."
+  ]
+ },
+ "sh02_knocked-over": {
+  "ex": [
+   "The cat ___ my coffee.",
+   "Sorry, I ___ your glass.",
+   "The wind ___ the bins.",
+   "He was ___ by a car.",
+   "She ___ a vase in the shop."
+  ]
+ },
+ "sh02_wasting-my-breath": {
+  "ex": [
+   "I'm ___ trying to convince you.",
+   "Why am I ___? You never listen.",
+   "I'm not ___ on him any more.",
+   "Am I ___ here?",
+   "Clearly I'm ___."
+  ]
+ },
+ "sh02_just-like-that": {
+  "ex": [
+   "He quit his job. ___.",
+   "___, she disappeared.",
+   "You can't leave me ___!",
+   "And ___, it was over.",
+   "He decided to move to Peru, ___."
+  ]
+ },
+ "sh02_packed-up": {
+  "ex": [
+   "She ___ her desk and left.",
+   "We ___ the car and drove off.",
+   "He ___ and moved to Spain.",
+   "They'd ___ by the time we arrived.",
+   "My old laptop finally ___."
+  ]
+ },
+ "sh02_turn-up": {
+  "ex": [
+   "He didn't ___ to the meeting.",
+   "Don't worry, your keys will ___.",
+   "How many people do you think will ___?",
+   "She always seems to ___ late.",
+   "Just ___ at eight, no need to call."
+  ],
+  "us": "show up"
+ },
+ "sh02_crack-this": {
+  "ex": [
+   "With the right software, we can ___.",
+   "Only one person can ___ code.",
+   "Give me an hour and I'll ___.",
+   "If we ___, the case is solved.",
+   "Nobody could ___ puzzle."
+  ]
+ },
+ "sh02_underworld": {
+  "ex": [
+   "He has contacts in the criminal ___.",
+   "London's ___ was terrified of him.",
+   "The film explores the drugs ___.",
+   "She grew up in the ___.",
+   "News travels fast in the ___."
+  ]
+ },
+ "sh02_crumble": {
+  "ex": [
+   "The old walls began to ___.",
+   "Mix butter and flour until it starts to ___.",
+   "His confidence started to ___.",
+   "Empires rise and ___.",
+   "The cake will ___ if it's too dry."
+  ]
+ },
+ "sh02_fancy": {
+  "ex": [
+   "___ a drink after work?",
+   "___ coming to the cinema?",
+   "___ a walk?",
+   "Do you ___ Italian tonight?",
+   "___ a game of chess?"
+  ],
+  "us": "Feel like / Want"
+ },
+ "sh02_a-matter-of-time": {
+  "ex": [
+   "It's only ___ before they find out.",
+   "Their divorce was just ___.",
+   "Success is ___ for her.",
+   "It's ___ until it breaks.",
+   "It was only ___ before it rained."
+  ]
+ },
+ "sh02_track-down": {
+  "ex": [
+   "Police managed to ___ the stolen car.",
+   "I want to ___ my old school friend.",
+   "Can you ___ a copy of this book?",
+   "It took months to ___ the killer.",
+   "She hired someone to ___ her birth mother."
+  ]
+ },
+ "sh02_starve": {
+  "ex": [
+   "Millions could ___ if the harvest fails.",
+   "Feed the dog or it'll ___.",
+   "They left the prisoners to ___.",
+   "I'd rather ___ than eat that.",
+   "Nobody should ___ in a rich country."
+  ]
+ },
+ "sh02_turned-my-brother-away": {
+  "ex": [
+   "The club ___ for wearing trainers.",
+   "The bouncer ___ at the door.",
+   "The hospital ___ — no beds.",
+   "They ___ without explanation.",
+   "The school ___ because he was too young."
+  ]
+ },
+ "sh02_stick-with": {
+  "ex": [
+   "I'll ___ water, thanks.",
+   "Let's ___ the original plan.",
+   "___ me and you'll be fine.",
+   "She decided to ___ her old phone.",
+   "___ it, you'll get better."
+  ]
+ },
+ "sh02_suits-you": {
+  "ex": [
+   "That colour really ___.",
+   "Short hair ___.",
+   "Does the job ___?",
+   "Retirement ___ — you look great.",
+   "Red ___, wear it more."
+  ]
+ },
+ "sh02_black-market": {
+  "ex": [
+   "You can buy almost anything on the ___.",
+   "During the war, food was sold on the ___.",
+   "He sold the tickets on the ___.",
+   "The ___ in fake medicines is growing.",
+   "___ prices are much higher."
+  ]
+ },
+ "sh02_got-greedy": {
+  "ex": [
+   "The robbers ___ and went back for more.",
+   "Investors ___ and lost everything.",
+   "He ___ and asked for double.",
+   "The company ___ with its prices.",
+   "They ___ — and that's how they got caught."
+  ]
+ },
+ "sh02_taking-ages": {
+  "ex": [
+   "The bus is ___.",
+   "Why is this download ___?",
+   "My visa is ___.",
+   "You're ___ in the bathroom!",
+   "The repair is ___."
+  ],
+  "us": "taking forever"
+ },
+ "sh02_stick-to-it": {
+  "ex": [
+   "Make a budget and ___.",
+   "You chose a diet, now ___.",
+   "If you agree on a plan, ___.",
+   "Set a bedtime and ___.",
+   "He makes plans but he never manages to ___."
+  ]
+ },
+ "sh02_have-a-word": {
+  "ex": [
+   "Can I ___ with you in private?",
+   "I'll ___ with the manager.",
+   "Let me ___ with him about the noise.",
+   "The teacher wants to ___ with your parents.",
+   "We need to ___."
+  ],
+  "us": "have a talk"
+ },
+ "sh02_keep-you-up": {
+  "ex": [
+   "Did the noise ___?",
+   "Sorry, I don't want to ___ too late.",
+   "Coffee will ___ all night.",
+   "Did the baby ___ again?",
+   "Don't let me ___ — go to bed."
+  ]
+ },
+ "sh02_night-off": {
+  "ex": [
+   "I'm taking a ___ from studying.",
+   "Mum deserves a ___ from cooking.",
+   "It's my ___ — let's go out.",
+   "Even nurses need a ___.",
+   "Can I have Friday as a ___?"
+  ]
+ },
+ "sh02_scarce": {
+  "ex": [
+   "Water is ___ in the desert.",
+   "Jobs are ___ round here.",
+   "Good plumbers are ___.",
+   "Food became ___ during the war.",
+   "Tickets are ___ — buy now."
+  ]
+ },
+ "sh02_a-pint": {
+  "ex": [
+   "Fancy ___ after work?",
+   "He ordered ___ of lager.",
+   "Let's go for ___ at the pub.",
+   "I'll buy you ___.",
+   "Just ___, then home."
+  ],
+  "us": "a beer"
+ },
+ "sh02_on-my-mind": {
+  "ex": [
+   "I've got a lot ___ right now.",
+   "She's been ___ all day.",
+   "Something's ___ — can we talk?",
+   "The exam is always ___.",
+   "Money is ___ these days."
+  ]
+ },
+ "sh02_day-job": {
+  "ex": [
+   "Writing novels isn't her ___ — she's a nurse.",
+   "Don't give up your ___!",
+   "His ___ is in banking.",
+   "Music pays less than my ___.",
+   "Comedy isn't his ___."
+  ]
+ },
+ "sh02_deserted": {
+  "ex": [
+   "The streets were ___ at night.",
+   "We found a ___ beach.",
+   "The village was ___ in winter.",
+   "The office is ___ on Sundays.",
+   "They walked through a ___ factory."
+  ]
+ },
+ "sh02_overtime": {
+  "ex": [
+   "I'm doing ___ this weekend.",
+   "Nurses work a lot of unpaid ___.",
+   "Do you get paid for ___?",
+   "The game went into ___.",
+   "We're working ___ to finish on time."
+  ]
+ },
+ "sh02_hideout": {
+  "ex": [
+   "The gang's ___ was in the woods.",
+   "Police raided the terrorists' ___.",
+   "The kids built a ___ in the garden.",
+   "He found a secret ___ in the mountains.",
+   "Their ___ was an old warehouse."
+  ]
+ },
+ "sh02_leave-you-to-it": {
+  "ex": [
+   "You look busy — I'll ___.",
+   "Right, I'll ___ then.",
+   "Shall I ___?",
+   "I'll ___ — call if you need anything.",
+   "Everything's set up, so I'll ___."
+  ]
+ },
+ "sh02_for-a-living": {
+  "ex": [
+   "What does your dad do ___?",
+   "She writes ___.",
+   "He drives a taxi ___.",
+   "Do you sing ___?",
+   "I teach English ___."
+  ]
+ },
+ "sh02_squiggles": {
+  "ex": [
+   "The baby drew ___ all over the wall.",
+   "His signature is just a few ___.",
+   "What do these ___ on the map mean?",
+   "I can't read your ___!",
+   "The doctor's notes were just ___."
+  ]
+ },
+ "sh02_a-takeaway": {
+  "ex": [
+   "Let's just get ___ tonight.",
+   "I'm too tired to cook — ___?",
+   "We ordered ___ from the Indian place.",
+   "Friday night is ___ night.",
+   "___ pizza?"
+  ],
+  "us": "takeout"
+ },
+ "sh02_lay-the-table": {
+  "ex": [
+   "Can you ___ while I finish cooking?",
+   "The kids ___ every night.",
+   "___ for six, please.",
+   "She likes to ___ with the best plates for guests.",
+   "Who's going to ___?"
+  ],
+  "us": "set the table"
+ },
+ "sh02_made-out-in-the-name-of": {
+  "ex": [
+   "The ticket was ___ my brother.",
+   "The invoice was ___ the company.",
+   "Is the cheque ___ me?",
+   "The booking was ___ his wife.",
+   "The contract was ___ a fake person."
+  ]
+ },
+ "sh02_resourceful": {
+  "ex": [
+   "___ people always find a solution.",
+   "She's very ___ — she fixed the car with a hairpin.",
+   "We need someone ___ for this job.",
+   "___ kids can make toys from anything.",
+   "Be ___ and use what you have."
+  ]
+ },
+ "sh02_bounce-off": {
+  "ex": [
+   "The ball ___ the wall.",
+   "Sound ___ hard surfaces.",
+   "Light can ___ water.",
+   "Let me ___ some ideas off you.",
+   "The bullet ___ the car door."
+  ]
+ },
+ "sh02_slip-off": {
+  "ex": [
+   "Let's ___ before the speeches.",
+   "He tried to ___ without anyone noticing.",
+   "I'll ___ early, I'm tired.",
+   "Could you ___ for a minute without the boss seeing?",
+   "We decided to ___ while they were dancing."
+  ],
+  "us": "sneak off"
+ },
+ "sh02_high-hopes": {
+  "ex": [
+   "We had ___ for the new manager.",
+   "Her parents have ___ for her.",
+   "I don't have ___ for this film.",
+   "Fans have ___ this season.",
+   "She started with ___."
+  ]
+ },
+ "sh02_glittering-career": {
+  "ex": [
+   "She had a ___ in Hollywood.",
+   "His ___ ended with a scandal.",
+   "A ___ awaits you.",
+   "After a ___, he retired at 40.",
+   "The young lawyer looked set for a ___."
+  ],
+  "us": "brilliant career"
+ },
+ "sh02_helps-himself-to": {
+  "ex": [
+   "He always ___ my chips.",
+   "My flatmate ___ my food.",
+   "The boss ___ the best office.",
+   "He ___ money from the till.",
+   "He just ___ whatever he wants."
+  ]
+ },
+ "sh02_gossiping": {
+  "ex": [
+   "Stop ___ about the neighbours.",
+   "The office loves ___.",
+   "They were ___ about her new boyfriend.",
+   "Who's been ___ about me?",
+   "___ can get you in trouble."
+  ]
+ },
+ "sh02_chap": {
+  "ex": [
+   "He seems a nice ___.",
+   "Who's that ___ with the hat?",
+   "The old ___ lives alone.",
+   "Some ___ called while you were out.",
+   "He's a decent ___."
+  ],
+  "us": "guy",
+  "dated": true
+ },
+ "sh02_over-in-a-flash": {
+  "ex": [
+   "The holiday was ___.",
+   "Childhood is ___.",
+   "The fight was ___.",
+   "The exam felt ___.",
+   "The summer was ___."
+  ],
+  "us": "over in a heartbeat"
+ },
+ "sh02_compromised": {
+  "ex": [
+   "The security of the system has been ___.",
+   "His position was ___ by the scandal.",
+   "Patient data was ___.",
+   "Our location is ___ — we have to move.",
+   "The mission was ___."
   ]
  }
 };
