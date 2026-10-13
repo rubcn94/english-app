@@ -22,7 +22,7 @@ v16_020 || Let's sit on the ___. | The ___ is closed in winter. | Is there a tab
 v16_021 || Are you ready to ___? | I'd like to ___ the fish, please. | Let's ___ some wine while we decide. | Can I ___ for my friend? | We should ___ now — the kitchen closes soon. || |
 v16_022 || What do you ___ for a first visit? | Can you ___ a good wine? | If you like meat, I'd ___ the lamb. | The waiter will ___ something. | Would you ___ the dessert? || |
 v16_023 || I'm going to ___ to the manager. | Did you ___ about the cold soup? | Customers often ___ about the noise. | She decided to ___ about the service. | I hate to ___, but this is raw. || |
-v16_024 || If your food is cold, you can always ___ the plate. | It's normal to ___ a dish that is undercooked. | I had to ___ my steak because it was raw. | It's normal to ___ undercooked food. | This wine is corked — should I ___ the bottle? || |
+v16_024 || If your food is cold, you can always ___ the plate. | Never be afraid to ___ a dish that is undercooked. | I had to ___ my steak because it was raw. | It's normal to ___ undercooked food. | This wine is corked — should I ___ the bottle? || |
 v16_025 || Shall we ___ between the four of us? | Let's ___ — it's thirty each. | Can we ___ by card? | They always ___ at work lunches. | It's easier to ___ on the app. || |
 v16_026 || It's nice to ___ to dinner on their birthday. | On Valentine's Day, people like to ___ to a nice meal. | When you get your first salary, ___ who helped you. | It's a lovely gesture to ___ when they're feeling down. | My dad loves to ___ to lunch at his favourite place. || |
 v16_027 || Do you have any ___ bread? | The pizza base is ___. | ___ pasta is available on request. | She follows a ___ diet. | Is the cake ___? I'm coeliac. || |
