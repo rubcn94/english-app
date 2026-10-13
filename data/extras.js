@@ -9,250 +9,250 @@
 const CARD_EXTRAS = {
  "sh10_idlers": {
   "ex": [
-   "The café was full of students and ___.",
-   "The boss has no patience for ___.",
-   "Rich ___ spent their days at the club.",
-   "The park was full of ___ in the sun.",
-   "___ and dreamers."
+   "The café was full of students and ___ who never seemed to work.",
+   "The factory owner had no patience for ___.",
+   "Rich ___ spent their days drinking at the club.",
+   "On sunny days the park fills up with ___.",
+   "The town has become a home for dreamers and ___."
   ],
   "us": "loafers / slackers",
   "dated": true
  },
  "sh10_gravitated": {
   "ex": [
-   "Young people ___ towards the city.",
-   "The kids ___ to the sweets table.",
-   "She ___ towards science at school.",
-   "Most guests ___ to the kitchen.",
-   "He ___ towards older friends."
+   "After university, most of my friends ___ to London.",
+   "At the party, the children ___ towards the sweets table.",
+   "She ___ towards science subjects at school.",
+   "As always, the guests ___ to the kitchen.",
+   "He ___ towards older friends who made him feel grown-up."
   ]
  },
  "sh10_lodger": {
   "ex": [
-   "We've got a ___ in the spare room.",
-   "The ___ pays rent every Friday.",
+   "We've got a ___ living in the spare room.",
+   "The ___ always pays his rent on Friday.",
    "She took in a ___ to help with the mortgage.",
-   "Our ___ is a student.",
-   "They're looking for a quiet ___."
+   "Our ___ is a quiet medical student.",
+   "They're looking for a quiet, tidy ___."
   ],
   "us": "roomer / tenant"
  },
  "sh10_splendidly": {
   "ex": [
-   "The party went ___.",
-   "You did ___!",
-   "They get on ___.",
-   "The plan worked ___.",
-   "She sang ___."
+   "The party went ___ — everyone loved it.",
+   "You did ___ in the interview!",
+   "My new flatmate and I get on ___.",
+   "The plan worked ___ in the end.",
+   "She sang ___ at the concert."
   ],
   "us": "wonderfully"
  },
  "sh10_draw": {
   "ex": [
-   "The match ended in a ___.",
-   "It's a ___ — two all.",
-   "Let's call it a ___.",
-   "A goalless ___.",
-   "The game finished as a ___."
+   "The match ended in a ___, one goal each.",
+   "Neither side could win, so they agreed to a ___.",
+   "It was a boring goalless ___.",
+   "After ninety minutes, it finished as a ___.",
+   "We've played for hours — let's call it a ___."
   ],
   "us": "tie"
  },
  "sh10_singled-out": {
   "ex": [
-   "Why was I ___ for criticism?",
-   "She was ___ for praise.",
-   "He felt ___.",
-   "Don't let him be ___.",
-   "Two players were ___ by the coach."
+   "Why was I ___ for criticism when we all made mistakes?",
+   "She was ___ for praise by the head teacher.",
+   "He felt ___ because he was the only new boy.",
+   "Don't let him be ___ just because he's different.",
+   "Two players were ___ by the coach for their hard work."
   ]
  },
  "sh10_plot-device": {
   "ex": [
-   "The lost letter is just a ___.",
-   "Amnesia is a lazy ___.",
-   "The twin brother was a ___.",
-   "It's a cheap ___.",
-   "The storm is a ___."
+   "The lost letter is just a ___ to keep the lovers apart.",
+   "Amnesia is a lazy ___ in soap operas.",
+   "The evil twin brother was an obvious ___.",
+   "Critics said the storm was a cheap ___.",
+   "The magic ring is the main ___ of the story."
   ]
  },
  "sh10_dingy": {
   "ex": [
-   "A ___ little room.",
-   "___ hotel.",
+   "We stayed in a ___ little hotel near the station.",
+   "His office was a ___ room with no windows.",
    "The flat was dark and ___.",
-   "A ___ bar.",
-   "___ office."
+   "They met in a ___ bar in the old town.",
+   "The ___ corridor smelled of damp."
   ]
  },
  "sh10_recount": {
   "ex": [
-   "He likes to ___ his war stories.",
-   "Can you ___ what happened?",
-   "It's painful to ___.",
-   "The election needs a ___.",
-   "Let me ___ the day."
+   "Grandpa loves to ___ his war stories.",
+   "Can you ___ exactly what happened that night?",
+   "It's still too painful for her to ___ the accident.",
+   "In his book, he tries to ___ his childhood in India.",
+   "Let me ___ the events of the day."
   ]
  },
  "sh10_trifling": {
   "ex": [
-   "A ___ matter.",
-   "___ sums of money.",
-   "It's a ___ detail.",
-   "Don't worry about ___ things.",
-   "A ___ mistake."
+   "Don't bother me with such a ___ matter.",
+   "It was a ___ sum of money for a millionaire.",
+   "It's a ___ detail; nobody will notice.",
+   "Don't worry about ___ things like that.",
+   "He was fined for a ___ mistake on the form."
   ],
   "us": "trivial"
  },
  "sh10_impish": {
   "ex": [
-   "An ___ grin.",
-   "___ humour.",
-   "The ___ child hid her shoes.",
-   "He has an ___ smile.",
-   "___ behaviour."
+   "The boy gave her an ___ grin and ran away.",
+   "He has an ___ sense of humour.",
+   "The ___ child hid her mother's shoes.",
+   "Her ___ smile told me she was planning something.",
+   "The ___ puppy kept stealing socks."
   ],
   "us": "mischievous"
  },
  "sh10_unsavoury": {
   "ex": [
-   "An ___ character.",
-   "___ business.",
-   "The ___ details.",
-   "___ friends.",
-   "An ___ reputation."
+   "He mixes with some ___ characters.",
+   "They were involved in ___ business deals.",
+   "The newspaper printed all the ___ details.",
+   "His ___ friends are a bad influence.",
+   "The bar has an ___ reputation."
   ],
   "us": "unsavory / shady"
  },
  "sh10_last-resort": {
   "ex": [
-   "Surgery is the ___.",
-   "Only as a ___.",
-   "Use force as a ___.",
-   "We came to you as a ___.",
-   "A ___ option."
+   "Surgery should be the ___ after everything else has failed.",
+   "Use force only as a ___.",
+   "We came to you as a ___ — nobody else could help.",
+   "Borrowing from my parents is my ___.",
+   "Selling the house is our ___ option."
   ]
  },
  "sh10_tread": {
   "ex": [
    "I heard his heavy ___ on the stairs.",
-   "These tyres have no ___.",
-   "___ carefully.",
-   "Don't ___ on the grass.",
-   "A soft ___."
+   "These tyres have hardly any ___ left.",
+   "___ carefully — the floor is slippery.",
+   "Please don't ___ on the grass.",
+   "She walks with a soft ___ so she won't wake the baby."
   ]
  },
  "sh10_decanter": {
   "ex": [
-   "A crystal ___ of whisky.",
-   "Pour the wine into a ___.",
-   "The ___ was empty.",
-   "Pass the ___.",
-   "An old ___."
+   "He poured the whisky from a crystal ___.",
+   "Pour the wine into a ___ to let it breathe.",
+   "The ___ on the table was empty.",
+   "Could you pass the ___ of port?",
+   "She inherited an old silver ___."
   ]
  },
  "sh10_compliments-of-the-season": {
   "ex": [
-   "I wish you the ___.",
-   "Our ___ to all.",
-   "___, sir!",
-   "With the ___.",
-   "Send them the ___."
+   "The card simply said \"With the ___.\"",
+   "He raised his glass and wished us the ___.",
+   "___, sir! Merry Christmas!",
+   "The hotel manager sent the ___ to all guests.",
+   "Please send your parents the ___ from me."
   ],
   "us": "Happy holidays",
   "dated": true
  },
  "sh10_surmise": {
   "ex": [
-   "I ___ you're not here for tea.",
-   "We can only ___.",
-   "As you may ___.",
-   "I ___ he's lying.",
-   "One can ___ the rest."
+   "You're wearing a suit, so I ___ you're not here for tea.",
+   "We can only ___ what happened to the ship.",
+   "As you may ___, I'm not happy.",
+   "From his nervous behaviour, I ___ he's lying.",
+   "Without the letter, one can only ___ the rest."
   ]
  },
  "sh10_shotgun-wedding": {
   "ex": [
    "It was a ___ — the baby came in May.",
-   "A ___ in Vegas.",
-   "Their ___ shocked the family.",
-   "Nobody wanted a ___.",
-   "It looks like a ___."
+   "They had a quick ___ in Las Vegas.",
+   "Their ___ shocked the whole family.",
+   "Nobody wanted a ___, but she was pregnant.",
+   "It looks like a ___ to me."
   ]
  },
  "sh10_till-death-us-do-part": {
   "ex": [
-   "\"For better, for worse, ___.\"",
-   "They promised ___.",
-   "___ — that's the vow.",
-   "Married ___.",
-   "___, they said."
+   "\"For better, for worse, ___,\" they promised.",
+   "The couple promised to stay together ___.",
+   "___ — that's the vow they made.",
+   "They've been married fifty years and say it's ___.",
+   "\"In sickness and in health, ___.\""
   ]
  },
  "sh10_needs-must": {
   "ex": [
-   "I hate the bus, but ___.",
-   "___ — I'll take the night shift.",
+   "I hate taking the night bus, but ___.",
+   "___ — I'll take the extra shift to pay the rent.",
    "___ when the devil drives.",
-   "___; we'll sell the car.",
-   "I'd rather not, but ___."
+   "We'll have to sell the car. ___.",
+   "I'd rather not borrow money, but ___."
   ],
   "dated": true
  },
  "sh10_prescient": {
   "ex": [
-   "A ___ warning.",
-   "Her ___ comments.",
-   "The book was ___.",
-   "How ___ of you.",
-   "A ___ decision."
+   "Her warning about the crisis was ___.",
+   "The writer made some ___ comments about the internet in 1980.",
+   "The novel now seems strangely ___.",
+   "How ___ of you to bring an umbrella!",
+   "Buying shares just before the boom was a ___ decision."
   ]
  },
  "sh10_swatting-up": {
   "ex": [
-   "I'm ___ on French before the trip.",
-   "She's ___ for exams.",
-   "He's been ___ on the history.",
-   "Stop ___ and relax.",
-   "___ on the rules."
+   "I'm ___ on French before our trip to Paris.",
+   "She's ___ for her driving theory test.",
+   "He's been ___ on the history of the company before the interview.",
+   "Stop ___ and come to the pub.",
+   "I'm ___ on the rules of cricket."
   ],
   "us": "cramming / boning up"
  },
  "sh10_hovers-at-our-elbow": {
   "ex": [
-   "Danger ___ every day.",
-   "Death ___.",
-   "Temptation ___.",
-   "The waiter ___.",
-   "Change ___."
+   "Danger ___ every day in this job.",
+   "In wartime, death ___.",
+   "When you're on a diet, temptation ___.",
+   "The nervous waiter ___ all evening.",
+   "Change ___ whether we like it or not."
   ]
  },
  "sh10_wager": {
   "ex": [
-   "I'll ___ you £10.",
-   "A friendly ___.",
-   "Place your ___.",
-   "I'd ___ she's right.",
-   "He lost the ___."
+   "I'll ___ you ten pounds that it rains tomorrow.",
+   "They made a friendly ___ on the match.",
+   "Place your ___ before the race starts.",
+   "I'd ___ she gets the job.",
+   "He lost the ___ and had to buy dinner."
   ],
   "us": "bet",
   "dated": true
  },
  "sh10_purview": {
   "ex": [
-   "That's outside my ___.",
-   "Within the ___ of the court.",
-   "It falls under his ___.",
-   "Not in my ___.",
-   "Beyond our ___."
+   "I'm afraid that's outside my ___ — ask the manager.",
+   "The case falls within the ___ of the court.",
+   "Budget decisions are under her ___.",
+   "Personnel issues aren't in my ___.",
+   "That question is beyond our ___."
   ]
  },
  "sh10_milliners": {
   "ex": [
-   "She bought a hat at the ___.",
-   "The ___ in town.",
-   "A ___ shop.",
-   "A famous ___.",
-   "Trained as a ___."
+   "She bought a beautiful hat at the ___.",
+   "There used to be a ___ on every high street.",
+   "The ___ shop sold hats for weddings.",
+   "A famous London ___ made the Queen's hats.",
+   "She trained as a ___ in Paris."
   ],
   "us": "hat shop",
   "dated": true
@@ -260,562 +260,563 @@ const CARD_EXTRAS = {
  "sh10_borders-on": {
   "ex": [
    "His confidence ___ arrogance.",
-   "That ___ madness.",
+   "Driving that fast ___ madness.",
    "Her love of cats ___ obsession.",
-   "It ___ rude.",
-   "His fear ___ panic."
+   "His tone ___ rude.",
+   "His fear of flying ___ panic."
   ]
  },
  "sh10_bait": {
   "ex": [
-   "Use worms as ___.",
+   "Fishermen use worms as ___.",
    "The cheese was ___ for the mouse trap.",
-   "Don't take the ___.",
-   "He was the ___.",
-   "A trap needs ___."
+   "Don't take the ___ — he wants you to get angry.",
+   "The police used a fake bag of money as ___.",
+   "You can't set a trap without ___."
   ]
  },
  "sh10_play-our-cards-right": {
   "ex": [
-   "If we ___, we'll win.",
-   "We could get it if we ___.",
-   "___ and we're rich.",
-   "We must ___.",
-   "If we ___, they'll sign."
+   "If we ___, we'll win the contract.",
+   "We could get a discount if we ___.",
+   "___ and we'll be rich by next year.",
+   "We must ___ in this negotiation.",
+   "If we ___, they'll offer us the job."
   ]
  },
  "sh10_prone-to": {
   "ex": [
-   "He's ___ colds.",
-   "___ exaggeration.",
-   "She's ___ mood swings.",
+   "He's ___ colds in winter.",
+   "My uncle is ___ exaggeration.",
+   "She's ___ sudden mood swings.",
    "This area is ___ flooding.",
-   "___ accidents."
+   "Small children are ___ accidents."
   ]
  },
  "sh10_marked-man": {
   "ex": [
-   "After that, he's a ___.",
-   "He knew he was a ___.",
-   "You're a ___ now.",
-   "Talk and you're a ___.",
-   "A ___ in the city."
+   "After he testified against the gang, he was a ___.",
+   "He knew he was a ___ and moved abroad.",
+   "You're a ___ now that they know your name.",
+   "Talk to the police and you're a ___.",
+   "He's a ___ in this city."
   ]
  },
  "sh10_afoot": {
   "ex": [
-   "Something's ___.",
-   "Changes are ___.",
-   "The game is ___!",
-   "Plans are ___.",
-   "Mischief ___."
+   "I can feel something is ___ in the office.",
+   "Big changes are ___ at the company.",
+   "Come quickly, Watson — the game is ___!",
+   "Plans are ___ to close the school.",
+   "There's mischief ___ — the kids are too quiet."
   ],
   "dated": true
  },
  "sh10_cramp": {
   "ex": [
-   "___ in my leg!",
-   "I've got ___.",
-   "___ woke me up.",
-   "Stomach ___.",
-   "Swimmers get ___."
+   "___ in my leg woke me up at night.",
+   "I had to stop swimming because of ___.",
+   "___ is common after hard exercise.",
+   "She got stomach ___ after lunch.",
+   "Stretch first to avoid ___."
   ]
  },
  "sh10_chewing-the-fat": {
   "ex": [
-   "We spent hours ___.",
-   "Two old men ___.",
-   "Sitting around ___.",
-   "Just ___ over coffee.",
-   "They were ___."
+   "We spent hours ___ in the kitchen.",
+   "Two old men sat on the bench ___.",
+   "We were just sitting around ___ after dinner.",
+   "They spent the afternoon ___ over coffee.",
+   "I found them in the pub, ___."
   ],
   "us": "shooting the breeze"
  },
  "sh10_dwell": {
   "ex": [
-   "Don't ___ on the past.",
-   "No need to ___ on it.",
-   "I won't ___ on details.",
-   "She tends to ___ on mistakes.",
-   "Let's not ___ on it."
+   "Don't ___ on the past — look forward.",
+   "There's no need to ___ on your mistakes.",
+   "I won't ___ on the details.",
+   "She tends to ___ on what could go wrong.",
+   "Let's not ___ on it any longer."
   ]
  },
  "sh10_lap-it-up": {
   "ex": [
-   "Tell him he's great — he'll ___.",
-   "The fans ___.",
-   "The cat will ___.",
-   "The press will ___.",
-   "She'll ___."
+   "Tell him he's a genius — he'll ___.",
+   "The fans love drama, and they ___.",
+   "Give the cat some milk and watch it ___.",
+   "The tabloids will ___ if we give them a story.",
+   "She loves compliments and will ___."
   ]
  },
  "sh10_good-mind": {
   "ex": [
-   "I've a ___ to complain.",
-   "I've got a ___ to tell her.",
-   "I have a ___ to leave.",
-   "A ___ to sue.",
+   "I've a ___ to complain to the manager.",
+   "I've got a ___ to tell her what I think.",
+   "I have a ___ to leave right now.",
+   "I've a ___ to sue them.",
    "I've a ___ to call the police."
   ]
  },
  "sh10_culpable": {
   "ex": [
-   "He was found ___.",
-   "We're all ___.",
-   "___ negligence.",
-   "Who's ___?",
-   "The company is ___."
+   "The court found the company ___ for the accident.",
+   "We're all ___ — we saw it and did nothing.",
+   "It was ___ negligence by the doctor.",
+   "Who is ___ for this mess?",
+   "The driver was not ___."
   ]
  },
  "sh10_botch": {
   "ex": [
-   "Don't ___ the job.",
-   "Builders often ___ repairs.",
-   "A ___ job.",
-   "I'll ___ it.",
-   "He managed to ___ it."
+   "Don't ___ the job — check every step.",
+   "Cheap builders often ___ repairs.",
+   "It was a terrible ___ of a haircut.",
+   "I'm afraid I'll ___ the speech.",
+   "He managed to ___ a simple task."
   ]
  },
  "sh10_undertaking": {
   "ex": [
-   "A huge ___.",
-   "Give an ___.",
-   "It's a big ___.",
-   "A risky ___.",
-   "Moving house is an ___."
+   "Building the new hospital is a huge ___.",
+   "Please give a written ___ that you'll pay.",
+   "Raising five children is a big ___.",
+   "It's a risky ___, but it could pay off.",
+   "Moving house is quite an ___."
   ]
  },
  "sh10_morsel": {
   "ex": [
-   "Not a ___ of food.",
-   "A tasty ___.",
-   "Every ___.",
-   "A ___ of news.",
-   "A tiny ___."
+   "He hadn't eaten a ___ of food all day.",
+   "She offered me a tasty ___ of cake.",
+   "The dog ate every ___ on the plate.",
+   "He was hungry for any ___ of news.",
+   "Not a single ___ was left after the party."
   ]
  },
  "sh10_field-day": {
   "ex": [
-   "The press had a ___.",
-   "Lawyers will have a ___.",
-   "Kids had a ___.",
-   "Critics had a ___.",
-   "The tabloids had a ___."
+   "The press had a ___ with the scandal.",
+   "Lawyers will have a ___ with this contract.",
+   "With all that snow, the kids had a ___.",
+   "The critics had a ___ with his terrible film.",
+   "The tabloids had a ___ when he was arrested."
   ]
  },
  "sh10_tip-of-my-tongue": {
   "ex": [
-   "Her name is on the ___.",
-   "It's on the ___.",
-   "The word was on the ___.",
-   "It's right on the ___.",
-   "Right on the ___."
+   "Her name is on the ___ — give me a second.",
+   "The answer is on the ___.",
+   "The word was on the ___ but I couldn't say it.",
+   "It's on the ___... what's that actor called?",
+   "The title of the song is right on the ___."
   ]
  },
  "sh10_blows-the-cobwebs-away": {
   "ex": [
    "A walk by the sea ___.",
-   "A cold shower ___.",
-   "That ___.",
-   "Fresh air ___.",
-   "A run ___."
+   "Nothing ___ like a cold shower.",
+   "After a week in the office, a bike ride ___.",
+   "Fresh mountain air ___.",
+   "A good run in the morning ___."
   ],
   "us": "clears your head"
  },
  "sh10_doss-house": {
   "ex": [
-   "He slept in a ___.",
-   "A cheap ___.",
-   "A Victorian ___.",
-   "Homeless men in a ___.",
-   "Life in a ___."
+   "In the 1890s he slept in a ___ in the East End.",
+   "A bed in a cheap ___ cost a penny.",
+   "Homeless men crowded into the ___.",
+   "The writer described life in a Victorian ___.",
+   "He ended up in a ___ after losing his job."
   ],
   "us": "flophouse",
   "dated": true
  },
  "sh10_alleviate": {
   "ex": [
-   "Medicine to ___ the pain.",
-   "___ poverty.",
-   "___ stress.",
-   "Help ___ traffic.",
-   "___ symptoms."
+   "This medicine will ___ the pain.",
+   "The charity works to ___ poverty.",
+   "Yoga can help ___ stress.",
+   "A new road should ___ traffic in the town.",
+   "The tablets ___ the symptoms but don't cure the illness."
   ],
   "us": "relieve"
  },
  "sh10_yapping": {
   "ex": [
-   "The dog won't stop ___.",
-   "Stop ___!",
-   "___ all day.",
-   "Little ___ dogs.",
-   "She's always ___."
+   "The neighbour's dog won't stop ___.",
+   "Stop ___ and let me think!",
+   "She was ___ on the phone all day.",
+   "I hate those little ___ dogs.",
+   "The kids were ___ in the back of the car."
   ]
  },
  "sh10_halfwit": {
   "ex": [
-   "Don't be a ___.",
-   "Some ___ broke it.",
-   "You ___!",
-   "A ___ could do it.",
-   "He's a ___."
+   "Don't be such a ___ — read the instructions.",
+   "Some ___ broke the photocopier.",
+   "You ___! You've locked the keys in the car!",
+   "Even a ___ could do this job.",
+   "He's not a ___, he's just tired."
   ],
   "us": "dimwit"
  },
  "sh10_punch-your-lights-out": {
   "ex": [
    "Say that again and I'll ___.",
-   "He threatened to ___.",
-   "I'll ___!",
+   "The bouncer threatened to ___.",
+   "Touch my car again and I'll ___!",
    "Don't make me ___.",
-   "He wanted to ___."
+   "He was so angry he wanted to ___."
   ],
   "us": "knock your lights out"
  },
  "sh10_neglecting": {
   "ex": [
-   "___ your health.",
-   "___ the garden.",
-   "___ her duties.",
-   "___ the kids.",
-   "___ friends."
+   "___ your health will cost you later.",
+   "He's been ___ the garden since his wife died.",
+   "She was accused of ___ her duties.",
+   "Social services say the parents were ___ the kids.",
+   "Work is important, but stop ___ your friends."
   ]
  },
  "sh10_wrath": {
   "ex": [
-   "The ___ of God.",
-   "Fear her ___.",
-   "Face his ___.",
-   "Avoid the ___ of the boss.",
-   "Divine ___."
+   "They feared the ___ of God.",
+   "Nobody wanted to face her ___.",
+   "He'll have to face his father's ___.",
+   "Try to avoid the ___ of the boss.",
+   "The ancient Greeks feared the gods' ___."
   ]
  },
  "sh10_patronised": {
   "ex": [
-   "___ by her colleagues.",
-   "Don't feel ___.",
-   "Women were ___.",
-   "___ again.",
-   "I felt ___."
+   "___ by her colleagues, she decided to leave.",
+   "Don't feel ___ — he talks to everyone like that.",
+   "For centuries, women were ignored and ___.",
+   "___ again! He explained how to use a phone.",
+   "I felt ___ when he called me \"sweetheart\"."
   ],
   "us": "Patronized"
  },
  "sh10_reckoning": {
   "ex": [
-   "A day of ___.",
-   "The final ___.",
-   "By my ___.",
-   "___ is coming.",
-   "A ___ with the past."
+   "The day of ___ is coming for those bankers.",
+   "The final ___ came at the election.",
+   "By my ___, we'll arrive at midnight.",
+   "A ___ with the past was long overdue.",
+   "After the scandal, there will be a ___."
   ]
  },
  "sh10_disparaged": {
   "ex": [
-   "His work was ___.",
-   "Often ___.",
-   "___ by critics.",
-   "She ___ her rivals.",
-   "___ as old-fashioned."
+   "His work was ___ by the critics.",
+   "Women's football was often ___.",
+   "Her paintings were ___ during her lifetime.",
+   "She ___ her rivals in every interview.",
+   "His ideas were ___ as old-fashioned."
   ]
  },
  "sh10_elope": {
   "ex": [
-   "They decided to ___.",
-   "___ to Gretna Green.",
-   "Why not ___?",
-   "They plan to ___.",
-   "She wanted to ___."
-  ]
+   "They decided to ___ because her parents hated him.",
+   "Couples used to ___ to Gretna Green.",
+   "Why don't you two just ___?",
+   "They plan to ___ to Las Vegas.",
+   "She wanted to ___ with the gardener."
+  ],
+  "us": "run off together"
  },
  "sh10_short-arse": {
   "ex": [
-   "Get down here, ___!",
-   "Hey, ___!",
-   "The ___ can't reach.",
-   "___ is my nickname.",
-   "Move, ___."
+   "Come down here, ___!",
+   "Hey, ___, can you reach the top shelf?",
+   "The ___ couldn't see over the crowd.",
+   "At school, my nickname was ___.",
+   "Move over, ___, I can't see."
   ],
   "us": "Shorty"
  },
  "sh10_fanciful": {
   "ex": [
-   "A ___ idea.",
-   "___ stories.",
-   "It's a bit ___.",
-   "___ claims.",
-   "Don't be ___."
+   "That's a rather ___ idea.",
+   "The book is full of ___ stories about dragons.",
+   "His plan sounds a bit ___ to me.",
+   "The advert made ___ claims about the cream.",
+   "Don't be ___ — it's just the wind."
   ]
  },
  "sh10_beg-to-differ": {
   "ex": [
-   "I ___.",
-   "I must ___.",
-   "Allow me to ___.",
-   "I'd ___.",
-   "___, sir."
+   "I ___ — I think the film was brilliant.",
+   "I must ___ on that point.",
+   "Allow me to ___, Professor.",
+   "You say it's easy? I'd ___.",
+   "___, sir, but you're mistaken."
   ]
  },
  "sh10_irretrievably": {
   "ex": [
    "The marriage has broken down ___.",
-   "___ lost.",
-   "___ damaged.",
-   "___ broken.",
-   "___ gone."
+   "The data was ___ lost when the server crashed.",
+   "His reputation was ___ damaged.",
+   "The vase was ___ broken.",
+   "Those days are ___ gone."
   ]
  },
  "sh10_affordable": {
   "ex": [
-   "___ housing.",
-   "An ___ price.",
-   "___ flats.",
-   "It's ___.",
-   "___ food."
+   "The city needs more ___ housing.",
+   "We found a flat at an ___ price.",
+   "The council built ___ flats for young people.",
+   "Is the course ___ for students?",
+   "Healthy food should be ___ for everyone."
   ]
  },
  "sh10_inescapable": {
   "ex": [
-   "The conclusion is ___.",
-   "An ___ fact.",
-   "___ fate.",
-   "It's ___.",
-   "The ___ truth."
+   "The conclusion is ___: he lied.",
+   "It's an ___ fact that we're getting older.",
+   "In the tragedy, death is the hero's ___ fate.",
+   "It's ___ — we have to cut costs.",
+   "The ___ truth is that we need more money."
   ]
  },
  "sh10_dismembered": {
   "ex": [
-   "The body was ___.",
-   "A ___ corpse.",
-   "___ by the train.",
-   "The empire was ___.",
-   "___ limbs."
+   "Police found a ___ body in the river.",
+   "The corpse had been ___.",
+   "The old car was ___ for parts.",
+   "After the war, the empire was ___.",
+   "The doll's ___ limbs were all over the floor."
   ]
  },
  "sh10_notoriously": {
   "ex": [
-   "___ difficult.",
-   "___ late.",
-   "___ expensive.",
-   "___ hard to please.",
-   "___ unreliable."
+   "Cats are ___ difficult to train.",
+   "The trains here are ___ late.",
+   "London is ___ expensive.",
+   "He's ___ hard to please.",
+   "That old car is ___ unreliable."
   ]
  },
  "sh10_drab": {
   "ex": [
-   "___ colours.",
-   "A ___ office.",
-   "___ clothes.",
-   "A ___ life.",
-   "___ grey walls."
+   "The office walls were painted in ___ colours.",
+   "It's a ___ office with grey carpet.",
+   "She always wears ___ clothes.",
+   "He lived a ___ life in a small town.",
+   "The ___ grey walls needed brightening up."
   ]
  },
  "sh10_exploits": {
   "ex": [
-   "His ___ became legend.",
-   "Daring ___.",
-   "Her ___ in Africa.",
-   "The ___ of a hero.",
-   "Wartime ___."
+   "His wartime ___ became legendary.",
+   "The book describes her daring ___ in the jungle.",
+   "Her ___ in Africa made her famous.",
+   "Children love reading about the ___ of heroes.",
+   "He loves telling us about his ___ at sea."
   ]
  },
  "sh10_speak-freely": {
   "ex": [
-   "You can ___ here.",
-   "Please ___.",
-   "___ — no one's listening.",
-   "I can't ___.",
-   "Allow me to ___."
+   "You can ___ here — nobody is listening.",
+   "Please ___; I won't be offended.",
+   "___ — this conversation stays between us.",
+   "I can't ___ with my boss in the room.",
+   "Allow me to ___, sir."
   ]
  },
  "sh10_anguish": {
   "ex": [
-   "In ___.",
-   "Mental ___.",
-   "Cries of ___.",
-   "___ and fear.",
-   "Her ___ was clear."
+   "She cried out in ___.",
+   "Waiting for news caused him great mental ___.",
+   "We heard cries of ___ from the house.",
+   "His letters are full of fear and ___.",
+   "Her ___ was clear on her face."
   ]
  },
  "sh10_dubious": {
   "ex": [
-   "A ___ honour.",
-   "___ claims.",
-   "I'm ___ about it.",
-   "A ___ character.",
-   "___ methods."
+   "Winning \"worst actor\" is a ___ honour.",
+   "The advert makes ___ claims.",
+   "I'm ___ about this plan.",
+   "He's a ___ character.",
+   "The police used ___ methods to get a confession."
   ]
  },
  "sh10_insight": {
   "ex": [
-   "A rare ___.",
-   "___ into the mind.",
-   "Valuable ___.",
-   "Give me some ___.",
-   "___ into the problem."
+   "The book gives a rare ___ into life in North Korea.",
+   "Her ___ into the mind of a child is amazing.",
+   "Thank you for your valuable ___.",
+   "Can you give me some ___ into the problem?",
+   "The documentary offers ___ into the life of bees."
   ]
  },
  "sh10_intrigue": {
   "ex": [
-   "Political ___.",
-   "A tale of ___.",
-   "The idea of ___.",
-   "___ at court.",
-   "Palace ___."
+   "The novel is a tale of love and ___.",
+   "Political ___ at court ended the king's reign.",
+   "The palace was full of ___.",
+   "There was ___ and betrayal in the royal family.",
+   "The mystery added an air of ___."
   ]
  },
  "sh10_loitering": {
   "ex": [
-   "No ___.",
-   "Teens ___ outside.",
-   "___ by the door.",
-   "Arrested for ___.",
-   "Stop ___."
+   "A sign said \"No ___ outside the shop.\"",
+   "Teenagers were ___ outside the station.",
+   "Stop ___ by the door and come in.",
+   "He was arrested for ___.",
+   "Why are you ___ in the corridor?"
   ]
  },
  "sh10_unmistakable": {
   "ex": [
-   "His accent is ___.",
-   "An ___ smell.",
-   "___ signs.",
-   "Her ___ voice.",
-   "The ___ sound."
+   "His Scottish accent is ___.",
+   "There was an ___ smell of gas.",
+   "The ___ signs of spring were everywhere.",
+   "I heard her ___ laugh across the room.",
+   "The ___ sound of a steam train."
   ]
  },
  "sh10_social-call": {
   "ex": [
-   "Is this a ___?",
-   "Not a ___.",
-   "Just a ___.",
-   "Purely a ___.",
-   "___, or business?"
+   "Is this a ___ or are you here on business?",
+   "This isn't a ___, Inspector — why are you here?",
+   "It was just a ___; I wanted to say hello.",
+   "The police said it was purely a ___.",
+   "Is it a ___ or work?"
   ]
  },
  "sh10_short-of": {
   "ex": [
-   "Everything ___ murder.",
-   "We're ___ money.",
-   "___ breath.",
-   "___ time.",
-   "___ a miracle."
+   "They tried everything ___ calling the police.",
+   "We're a bit ___ money this month.",
+   "After the stairs, I was ___ breath.",
+   "We're ___ time, so let's hurry.",
+   "It would take nothing ___ a miracle to win."
   ]
  },
  "sh10_in-the-face-of": {
   "ex": [
-   "Courage ___ danger.",
-   "___ opposition.",
-   "Calm ___ chaos.",
-   "___ fear.",
-   "___ death."
+   "She showed great courage ___ danger.",
+   "They carried on ___ strong opposition.",
+   "Stay calm ___ chaos.",
+   "He smiled ___ fear.",
+   "They were brave ___ death."
   ]
  },
  "sh10_a-new-low": {
   "ex": [
-   "That's ___ even for you.",
-   "Prices hit ___.",
-   "___ in politics.",
-   "It's ___.",
-   "We've reached ___."
+   "Lying to your own mother? That's ___ even for you.",
+   "The pound fell to ___ against the dollar.",
+   "His last film was ___ in his career.",
+   "The election campaign reached ___ with personal insults.",
+   "Morale in the office has hit ___."
   ]
  },
  "sh10_remains": {
   "ex": [
-   "Human ___.",
-   "The ___ of a castle.",
-   "His ___ were found.",
-   "Roman ___.",
-   "The ___ of dinner."
+   "Human ___ were found under the floor.",
+   "We visited the ___ of a medieval castle.",
+   "His ___ were buried in his village.",
+   "Roman ___ were discovered under the car park.",
+   "The dog ate the ___ of our dinner."
   ]
  },
  "sh10_spoiling-us": {
   "ex": [
-   "Champagne? You're ___!",
-   "You're ___ tonight.",
-   "Breakfast in bed — ___.",
-   "Gifts? ___.",
-   "Stop ___."
+   "Champagne and strawberries? You're ___!",
+   "You're ___ with all these cakes.",
+   "Breakfast in bed — Mum's ___ today.",
+   "Presents again? You keep ___.",
+   "Stop ___, you'll make us lazy!"
   ]
  },
  "sh10_votes-for-women": {
   "ex": [
-   "The suffragettes shouted \"___!\"",
-   "___ came in 1918.",
-   "___ was their slogan.",
-   "A \"___\" banner.",
-   "___ — the campaign."
+   "The suffragettes marched with banners saying \"___!\"",
+   "___ finally came in Britain in 1918.",
+   "\"___\" was the suffragettes' slogan.",
+   "She carried a \"___\" sign through London.",
+   "The campaign for ___ lasted decades."
   ],
   "dated": true
  },
  "sh10_never-you-mind": {
   "ex": [
-   "\"Who's it for?\" \"___.\"",
-   "___ what I'm doing.",
-   "Oh, ___.",
-   "___ where I've been.",
-   "___ — it's a surprise."
+   "\"Who's the present for?\" \"___.\"",
+   "___ what I'm doing in the kitchen.",
+   "\"What did she say?\" \"Oh, ___.\"",
+   "___ where I've been all night.",
+   "\"What's in the box?\" \"___ — it's a surprise.\""
   ],
   "us": "none of your business"
  },
  "sh10_friend-in-need": {
   "ex": [
    "A ___ is a friend indeed.",
-   "Just helping a ___.",
-   "I'm a ___.",
-   "Call it a ___.",
-   "A ___."
+   "I'm just helping a ___ move house.",
+   "I'm a ___ — can you lend me twenty pounds?",
+   "Call it helping a ___.",
+   "He's always there for a ___."
   ]
  },
  "sh10_categorically": {
   "ex": [
-   "I ___ deny it.",
-   "___ wrong.",
-   "___ untrue.",
-   "He ___ refused.",
-   "___ not."
+   "I ___ deny these accusations.",
+   "The minister was ___ wrong.",
+   "The story is ___ untrue.",
+   "He ___ refused to resign.",
+   "\"Will you raise taxes?\" \"___ not.\""
   ]
  },
  "sh10_beyond-a-doubt": {
   "ex": [
    "___, he's guilty.",
-   "___, she's the best.",
-   "It's ___.",
-   "___ true.",
-   "Proven ___."
+   "___, she's the best player in the team.",
+   "The DNA proved it ___.",
+   "It's ___ true.",
+   "His innocence was proven ___."
   ],
   "us": "Without a doubt"
  },
  "sh10_more-to-the-point": {
   "ex": [
-   "___, who's paying?",
-   "___, where is he?",
-   "___, why?",
-   "___, can we afford it?",
-   "___, do you care?"
+   "The dinner was expensive. ___, who's paying?",
+   "Never mind the car — ___, where is he?",
+   "He left. ___, why did he leave?",
+   "It's a nice house. ___, can we afford it?",
+   "I know you're upset. ___, do you care about her?"
   ]
  },
  "sh10_smear": {
   "ex": [
-   "A ___ of lipstick.",
-   "A ___ campaign.",
-   "A ___ test.",
-   "___ of paint.",
-   "Don't ___ it."
+   "There was a ___ of lipstick on his collar.",
+   "The opposition ran a ___ campaign against her.",
+   "Women should have a ___ test regularly.",
+   "There's a ___ of paint on your cheek.",
+   "Don't ___ jam on the sofa!"
   ]
  },
  "sh10_pick-up-the-threads": {
   "ex": [
-   "After the break, we'll ___.",
-   "Let's ___.",
-   "She tried to ___ of her life.",
-   "Time to ___.",
-   "Hard to ___."
+   "After the summer break, we'll ___ of the course.",
+   "Let's ___ where we left off.",
+   "After prison, she tried to ___ of her old life.",
+   "It's time to ___ and start again.",
+   "It was hard to ___ after so long away."
   ]
  },
  "sh10_begging-your-pardon": {
   "ex": [
-   "___, madam.",
+   "___, madam, but the doctor is here.",
    "___, sir, the carriage is ready.",
-   "___, but you're wrong.",
-   "___, my lady.",
+   "___, but I think you're mistaken.",
+   "___, my lady, there's a visitor.",
    "___, can I come in?"
   ],
   "us": "Excuse me",
@@ -823,365 +824,366 @@ const CARD_EXTRAS = {
  },
  "sh10_impertinence": {
   "ex": [
-   "The ___ of it!",
-   "Such ___.",
-   "Forgive my ___.",
-   "___ won't be tolerated.",
-   "What ___!"
+   "The ___ of that man, asking my age!",
+   "I've never seen such ___ from a child.",
+   "Forgive my ___, but are you married?",
+   "___ will not be tolerated in this school.",
+   "What ___ — reading my letters!"
   ]
  },
  "sh10_on-that-score": {
   "ex": [
-   "Don't worry ___.",
-   "I'm happy ___.",
-   "No problem ___.",
-   "___, I agree.",
-   "Relax ___."
+   "You'll be well paid — no need to worry ___.",
+   "I'm happy with the salary ___.",
+   "No problem ___ — the room is ready.",
+   "___, I agree with you completely.",
+   "Relax ___; the tickets are booked."
   ]
  },
  "sh10_family-trait": {
   "ex": [
    "Stubbornness is a ___.",
-   "Red hair is a ___.",
+   "Red hair is a ___ in the Weasley family.",
    "Big ears are a ___ on Dad's side.",
-   "It's a ___ in our house.",
-   "Long legs — ___."
+   "It's a ___ in our house to be late.",
+   "Long legs — a ___."
   ]
  },
  "sh10_inclined-to": {
   "ex": [
-   "I'm ___ agree.",
-   "He's ___ lie.",
-   "___ think so.",
-   "I'm ___ believe her.",
-   "She's ___ panic."
+   "I'm ___ agree with you.",
+   "He's ___ lie when he's nervous.",
+   "I'm ___ think it's a mistake.",
+   "I'm ___ believe her story.",
+   "She's ___ panic in emergencies."
   ]
  },
  "sh10_surpass": {
   "ex": [
-   "___ expectations.",
-   "Hard to ___.",
-   "___ all records.",
-   "___ her mother.",
-   "Will it ___ last year?"
+   "The results will ___ all expectations.",
+   "It will be hard to ___ last year's sales.",
+   "He wants to ___ the world record.",
+   "She wants to ___ her mother's success.",
+   "Will this film ___ the original?"
   ]
  },
  "sh10_vigilant": {
   "ex": [
-   "Stay ___.",
-   "Be ___.",
-   "___ citizens.",
-   "A ___ guard.",
-   "Always ___."
+   "Please stay ___ — pickpockets work here.",
+   "Be ___ when you walk home at night.",
+   "___ citizens reported the suspicious bag.",
+   "The guard must stay ___ all night.",
+   "Parents must always be ___ near water."
   ]
  },
  "sh10_conjecture": {
   "ex": [
-   "Pure ___.",
-   "It's ___.",
-   "Mere ___.",
-   "Without ___.",
-   "My ___ is right."
+   "That's pure ___ — you have no proof.",
+   "It's all ___ at this stage.",
+   "The story is mere ___.",
+   "I need facts, not ___.",
+   "My ___ turned out to be right."
   ]
  },
  "sh10_call-on-you": {
   "ex": [
-   "I'll ___ tomorrow.",
-   "May I ___?",
-   "They'll ___.",
-   "I might ___.",
-   "We'll ___ soon."
+   "I'll ___ tomorrow afternoon if you're free.",
+   "May I ___ next week?",
+   "The new neighbours will ___ to introduce themselves.",
+   "I might ___ on my way home.",
+   "We'll ___ soon to see the baby."
   ]
  },
  "sh10_the-sport-in-that": {
   "ex": [
-   "Where's ___?",
-   "There's no ___.",
-   "What's ___?",
-   "I see ___.",
-   "Find ___."
+   "Why don't you just tell us the answer? Where's ___?",
+   "There's no ___ — the game is too easy.",
+   "Shooting tame birds? What's ___?",
+   "I can't see ___.",
+   "Winning without trying? Where's ___?"
   ],
   "us": "the fun in that"
  },
  "sh10_on-one-condition": {
   "ex": [
-   "I'll go, ___.",
-   "Yes, ___.",
-   "___: you pay.",
-   "Fine, ___.",
-   "You can borrow it ___."
+   "I'll go to the party, ___: we leave by midnight.",
+   "Yes, you can borrow the car, ___.",
+   "___: you pay for the petrol.",
+   "Fine, I'll help — ___.",
+   "You can have a dog ___: you walk it."
   ]
  },
  "sh10_distressed": {
   "ex": [
-   "She seemed ___.",
-   "___ animals.",
-   "___ jeans.",
-   "A ___ caller.",
-   "He was ___."
+   "She seemed very ___ on the phone.",
+   "The charity rescues ___ animals.",
+   "___ jeans have holes on purpose.",
+   "The police received a call from a ___ woman.",
+   "He was ___ by the news."
   ]
  },
  "sh10_teasing": {
   "ex": [
-   "You're ___ me!",
-   "Stop ___.",
-   "Just ___.",
-   "___ her brother.",
-   "Gentle ___."
+   "You're ___ me — I know you are!",
+   "Stop ___ your brother.",
+   "Don't take it seriously; I was just ___.",
+   "She loves ___ her little sister.",
+   "It was just gentle ___."
   ]
  },
  "sh10_gone-quite-pale": {
   "ex": [
    "You've ___ — sit down.",
-   "She's ___.",
-   "He's ___.",
+   "She's ___ since she read the letter.",
+   "He's ___; is he going to faint?",
    "You've ___. Are you OK?",
-   "They've ___."
+   "They've ___ — did they see a ghost?"
   ]
  },
  "sh10_to-my-knowledge": {
   "ex": [
-   "Not ___.",
-   "___, he's single.",
-   "___, no.",
-   "Never ___.",
-   "___, she left."
-  ]
+   "Not ___ — I've never heard of him.",
+   "___, he's still single.",
+   "\"Has she been here before?\" \"___, no.\"",
+   "___, he has never been arrested.",
+   "___, she left in 2010."
+  ],
+  "us": "As far as I know"
  },
  "sh10_urged": {
   "ex": [
-   "I ___ her to go.",
-   "They ___ calm.",
-   "Police ___ caution.",
-   "He ___ me to stay.",
-   "She ___ action."
+   "I ___ her to see a doctor.",
+   "The police ___ calm after the riot.",
+   "Officials ___ caution on the roads.",
+   "He ___ me to stay one more night.",
+   "Campaigners ___ immediate action."
   ]
  },
  "sh10_supernatural": {
   "ex": [
-   "___ powers.",
-   "A ___ story.",
-   "___ forces.",
-   "___ events.",
-   "The ___."
+   "Do you believe in ___ powers?",
+   "It's a ___ story about ghosts.",
+   "Some people blame ___ forces for the accident.",
+   "Strange ___ events happened in the house.",
+   "The film is about the ___."
   ]
  },
  "sh10_unprincipled": {
   "ex": [
-   "An ___ politician.",
-   "___ behaviour.",
-   "He's ___.",
-   "___ businessmen.",
-   "An ___ man."
+   "He's an ___ politician who will say anything.",
+   "Lying to get the job was ___ behaviour.",
+   "He's ___ — he'll sell out his friends.",
+   "Some ___ businessmen exploit workers.",
+   "She married an ___ man."
   ]
  },
  "sh10_now-you-come-to-mention-it": {
   "ex": [
-   "___, she was acting strange.",
-   "___, yes.",
-   "___, I'm hungry.",
-   "Yes, ___.",
-   "___, he did call."
+   "___, she was acting strangely.",
+   "___, I am a bit hungry.",
+   "Yes, ___, he did look tired.",
+   "___, he did call yesterday.",
+   "___, the door was open."
   ],
   "us": "now that you mention it"
  },
  "sh10_save-for": {
   "ex": [
-   "___ one, all passed.",
-   "___ the rain.",
-   "___ him.",
-   "___ that.",
-   "___ a few."
+   "___ one student, everyone passed.",
+   "The holiday was perfect, ___ the rain.",
+   "Nobody knew ___ him.",
+   "___ that, the plan is fine.",
+   "The town was empty ___ a few tourists."
   ],
   "us": "Except for"
  },
  "sh10_sleepwalk": {
   "ex": [
    "Children often ___.",
-   "I ___ sometimes.",
-   "He used to ___.",
+   "I ___ when I'm stressed.",
+   "He used to ___ into the kitchen at night.",
    "Do you ___?",
-   "Some people ___."
+   "Some people ___ out of the house."
   ]
  },
  "sh10_grotesque": {
   "ex": [
-   "A ___ mask.",
-   "___ behaviour.",
-   "A ___ figure.",
-   "It's ___.",
-   "A ___ joke."
+   "The cathedral is decorated with ___ stone faces.",
+   "His behaviour at the funeral was ___.",
+   "A ___ figure appeared in the doorway.",
+   "It's ___ that bankers get bonuses after losing money.",
+   "That's a ___ joke."
   ]
  },
  "sh10_show-ourselves-out": {
   "ex": [
    "We'll ___, thanks.",
    "Don't get up, we'll ___.",
-   "We can ___.",
-   "Let's ___.",
+   "We know the way — we can ___.",
+   "Let's ___ quietly.",
    "We'll ___ — goodbye."
   ]
  },
  "sh10_pretence": {
   "ex": [
-   "Under the ___ of.",
-   "False ___.",
-   "No ___.",
-   "Drop the ___.",
-   "A ___ of interest."
+   "He came in under the ___ of fixing the boiler.",
+   "She made no ___ of liking him.",
+   "Stop the ___ — we know the truth.",
+   "Drop the ___ and tell me what you want.",
+   "He made a ___ of interest."
   ],
   "us": "pretense"
  },
  "sh10_lure": {
   "ex": [
-   "___ fish.",
-   "___ customers.",
-   "___ him into a trap.",
-   "The ___ of money.",
-   "A fishing ___."
+   "Fishermen use bright colours to ___ fish.",
+   "Shops use sales to ___ customers.",
+   "They tried to ___ him into a trap.",
+   "The ___ of money was too strong.",
+   "He bought a new fishing ___."
   ]
  },
  "sh10_eating-away-at": {
   "ex": [
    "Guilt is ___ him.",
-   "Rust is ___ the car.",
+   "Rust is ___ the old car.",
    "Doubt is ___ me.",
-   "Jealousy ___ her.",
+   "Jealousy was ___ her.",
    "The sea is ___ the cliffs."
   ]
  },
  "sh10_only-too-well": {
   "ex": [
-   "I know ___.",
-   "I remember ___.",
-   "___.",
-   "She knows it ___.",
-   "We understood ___."
+   "I know ___ what it's like to lose a job.",
+   "I remember that day ___.",
+   "She knows ___ how dangerous he is.",
+   "We understood ___ what was coming.",
+   "He knows ___ that he made a mistake."
   ]
  },
  "sh10_for-heaven-s-sake": {
   "ex": [
    "___, be quiet!",
-   "Hurry up, ___.",
-   "Oh ___!",
-   "___, stop!",
+   "Hurry up, ___ — we're late.",
+   "Oh, ___, not again!",
+   "___, stop shouting!",
    "Sit down, ___."
   ]
  },
  "sh10_murder-on-the-knees": {
   "ex": [
    "Gardening is ___.",
-   "Stairs are ___.",
-   "It's ___.",
-   "Football is ___.",
-   "Kneeling is ___."
+   "These stairs are ___.",
+   "It's ___ when you're my age.",
+   "Playing football on concrete is ___.",
+   "Scrubbing floors is ___."
   ]
  },
  "sh10_man-to-man": {
   "ex": [
    "Let's talk ___.",
-   "___, I'm sorry.",
-   "A ___ chat.",
-   "___ conversation.",
-   "Speak ___."
+   "___, I'm sorry about what happened.",
+   "They had a ___ chat.",
+   "It was a ___ conversation.",
+   "I'll speak to him ___."
   ]
  },
  "sh10_your-department": {
   "ex": [
-   "Kids are ___.",
-   "Cooking's ___.",
-   "That's ___.",
+   "Babies are ___ — I don't know anything.",
+   "Cooking's ___, not mine.",
+   "That's ___, not mine.",
    "Money is ___.",
-   "Not ___."
+   "Not ___? Then whose?"
   ]
  },
  "sh10_on-the-contrary": {
   "ex": [
-   "___, I loved it.",
+   "\"You didn't like the film?\" \"___, I loved it.\"",
    "___, he's very kind.",
-   "___, it's cheap.",
-   "___, I'm happy.",
-   "___, it helps."
+   "\"Is it expensive?\" \"___, it's cheap.\"",
+   "\"Are you sad?\" \"___, I'm happy.\"",
+   "___, the medicine helps."
   ]
  },
  "sh10_formidable": {
   "ex": [
-   "A ___ opponent.",
-   "___ task.",
-   "She's ___.",
-   "A ___ army.",
-   "___ talent."
+   "She is a ___ opponent.",
+   "It's a ___ task.",
+   "Their grandmother is a ___ woman.",
+   "Rome had a ___ army.",
+   "He has a ___ talent."
   ]
  },
  "sh10_i-concede-it": {
   "ex": [
-   "You're right, ___.",
-   "___ — you win.",
-   "___ gladly.",
+   "You were right about the weather; ___.",
+   "___ — you win this time.",
+   "I ___ gladly.",
    "Fine, ___.",
    "___, I was wrong."
   ]
  },
  "sh10_entanglement": {
   "ex": [
-   "Romantic ___.",
-   "Legal ___.",
-   "An ___ with the law.",
-   "___ of wires.",
-   "Political ___."
+   "She avoided any romantic ___.",
+   "A legal ___ delayed the sale.",
+   "His ___ with the law began at sixteen.",
+   "There was an ___ of wires behind the TV.",
+   "The country avoided political ___."
   ]
  },
  "sh10_abhorrent": {
   "ex": [
-   "___ behaviour.",
-   "Violence is ___.",
-   "An ___ crime.",
-   "___ to me.",
-   "___ views."
+   "Racism is ___ to me.",
+   "Violence against children is ___.",
+   "It was an ___ crime.",
+   "The idea is ___ to me.",
+   "He has ___ views."
   ]
  },
  "sh10_flesh-and-blood": {
   "ex": [
-   "My own ___.",
-   "You're ___.",
-   "Mere ___.",
-   "Real ___.",
-   "Your own ___."
+   "He's my own ___.",
+   "You're ___, not a machine.",
+   "We're mere ___.",
+   "Real ___ actors, not computer images.",
+   "How can you treat your own ___ like that?"
   ]
  },
  "sh10_as-per-instruction": {
   "ex": [
    "___, I locked the door.",
-   "___, it's done.",
-   "Done ___.",
+   "___, the report is done.",
+   "The job was done ___.",
    "___, sir.",
-   "I came ___."
+   "I came early, ___."
   ],
   "us": "As instructed"
  },
  "sh10_abandoned-your-post": {
   "ex": [
    "You ___?",
-   "A soldier who ___.",
+   "A soldier who ___ would be punished.",
    "The guard ___ to get a drink.",
    "Why have you ___?",
-   "You never ___."
+   "You never ___ before."
   ]
  },
  "sh10_seeing-sense": {
   "ex": [
    "Glad you're finally ___.",
-   "He's ___.",
-   "She's ___ at last.",
-   "Start ___.",
-   "They're ___."
+   "He's ___ at last.",
+   "She's ___ about money.",
+   "Start ___ — this plan won't work.",
+   "They're finally ___ and making peace."
   ]
  },
  "sh10_conceivably": {
   "ex": [
    "It could ___ work.",
-   "___, yes.",
-   "They could ___ win.",
+   "Could the plan ___ succeed?",
+   "They could ___ win the cup.",
    "It could ___ be true.",
    "___, he's lying."
   ],
@@ -1190,80 +1192,80 @@ const CARD_EXTRAS = {
  "sh10_blindingly-obvious": {
   "ex": [
    "The answer is ___.",
-   "It's ___.",
-   "A ___ mistake.",
-   "___ to me.",
-   "___ now."
+   "It's ___ that he likes you.",
+   "It was a ___ mistake.",
+   "It's ___ to me.",
+   "It's ___ now that I see it."
   ]
  },
  "sh10_motive": {
   "ex": [
-   "What was the ___?",
-   "No ___.",
-   "Means and ___.",
-   "A strong ___.",
-   "___ for murder."
+   "What was the ___ for the murder?",
+   "The police couldn't find a ___.",
+   "He had the means and the ___.",
+   "Money is a strong ___.",
+   "Jealousy was the ___ for the crime."
   ]
  },
  "sh10_prior-to": {
   "ex": [
-   "___ the meeting.",
-   "___ arrival.",
-   "___ 1990.",
-   "___ that.",
-   "___ surgery."
+   "Please arrive an hour ___ the meeting.",
+   "Check in two hours ___ departure.",
+   "___ 1990, this was a farm.",
+   "___ that, he lived in Spain.",
+   "Don't eat ___ surgery."
   ]
  },
  "sh10_sheer": {
   "ex": [
-   "___ luck.",
-   "___ madness.",
-   "___ cliffs.",
-   "___ joy.",
-   "___ size."
+   "We won by ___ luck.",
+   "It's ___ madness to drive in this snow.",
+   "The walls of the gorge are ___ cliffs.",
+   "She cried with ___ joy.",
+   "The ___ size of the building is amazing."
   ]
  },
  "sh10_foremost": {
   "ex": [
-   "The ___ expert.",
-   "First and ___.",
-   "___ in my mind.",
-   "___ writer.",
-   "___ among them."
+   "She's the ___ expert on Shakespeare.",
+   "First and ___, we must be safe.",
+   "His family was ___ in his mind.",
+   "He was the ___ writer of his generation.",
+   "Safety is ___ among our concerns."
   ]
  },
  "sh10_derail": {
   "ex": [
-   "Don't ___ the talks.",
-   "___ the train.",
-   "It could ___ his career.",
-   "___ the plan.",
-   "___ the meeting."
+   "Don't let one argument ___ the talks.",
+   "Rocks on the line can ___ a train.",
+   "The scandal could ___ his career.",
+   "His illness may ___ the plan.",
+   "Don't ___ the meeting with jokes."
   ]
  },
  "sh10_returned-the-courtesy": {
   "ex": [
-   "She ___.",
-   "He ___ with a smile.",
-   "They ___.",
-   "I ___.",
+   "She held the door for me, so I ___.",
+   "He helped me last year, and I ___.",
+   "They invited us, so we ___.",
+   "He smiled and I ___.",
    "We ___ with a gift."
   ]
  },
  "sh10_acquainted-yourself-with": {
   "ex": [
-   "Have you ___ the rules?",
-   "___ the files?",
-   "You've ___ them.",
-   "Have you ___ our team?",
-   "___ the area?"
+   "Have you ___ the safety rules?",
+   "Have you ___ the case files?",
+   "I'm sure you've ___ the new system.",
+   "Have you ___ our team yet?",
+   "Have you ___ the area?"
   ]
  },
  "sh10_got-what-was-coming-to-him": {
   "ex": [
-   "The bully ___.",
-   "He finally ___.",
-   "He ___, if you ask me.",
+   "The bully finally ___.",
+   "After years of cheating, he ___.",
+   "If you ask me, he ___.",
    "Honestly, he ___.",
    "Karma — he ___."
   ],
@@ -1271,66 +1273,66 @@ const CARD_EXTRAS = {
  },
  "sh10_lodged": {
   "ex": [
-   "___ in his throat.",
-   "___ in my memory.",
-   "A bullet ___ in the wall.",
-   "___ a complaint.",
-   "___ in the system."
+   "___ in his throat, a fish bone made him cough.",
+   "That song is ___ in my memory.",
+   "A bullet was ___ in the wall.",
+   "She ___ a complaint with the council.",
+   "The information is ___ in the system."
   ],
   "us": "Stuck"
  },
  "sh10_immersed": {
   "ex": [
-   "___ in a book.",
-   "Fully ___.",
-   "___ in water.",
-   "___ in work.",
-   "___ in the culture."
+   "She was ___ in a book and didn't hear me.",
+   "Learn a language by being fully ___ in it.",
+   "Keep the plant ___ in water.",
+   "He was ___ in his work.",
+   "They were ___ in the local culture."
   ]
  },
  "sh10_trance": {
   "ex": [
-   "In a ___.",
-   "A hypnotic ___.",
-   "___ music.",
-   "Fell into a ___.",
-   "___ state."
+   "She sat in a ___, staring at the wall.",
+   "The hypnotist put him in a ___.",
+   "He likes listening to ___ music.",
+   "The drummer seemed to fall into a ___.",
+   "The patient was in a ___ state."
   ]
  },
  "sh10_back-alley": {
   "ex": [
-   "A ___ in Soho.",
-   "___ deals.",
-   "Down a dark ___.",
-   "___ abortion.",
-   "___ bar."
+   "He was robbed in a ___ in Soho.",
+   "They made ___ deals with criminals.",
+   "She walked down a dark ___.",
+   "Before it was legal, women risked ___ abortions.",
+   "We drank in a tiny ___ bar."
   ]
  },
  "sh10_heighten": {
   "ex": [
-   "___ the tension.",
-   "Lights ___ the mood.",
-   "___ awareness.",
+   "Music can ___ the tension in a film.",
+   "The lights ___ the romantic mood.",
+   "The campaign aims to ___ awareness.",
    "Coffee can ___ anxiety.",
-   "___ the senses."
+   "Some drugs ___ the senses."
   ]
  },
  "sh10_abstinence": {
   "ex": [
-   "Total ___.",
-   "___ from alcohol.",
-   "___ isn't easy.",
-   "Sexual ___.",
-   "___ for Lent."
+   "Total ___ is the only cure for him.",
+   "The clinic recommends ___ from alcohol.",
+   "___ isn't easy at Christmas.",
+   "The church promoted sexual ___.",
+   "She practises ___ from meat during Lent."
   ]
  },
  "sh10_solitary-confinement": {
   "ex": [
-   "Twenty days in ___.",
-   "___ is cruel.",
-   "Put in ___.",
-   "Years of ___.",
-   "___ cell."
+   "He spent twenty days in ___.",
+   "Human rights groups say ___ is cruel.",
+   "The prisoner was put in ___.",
+   "Years of ___ damaged his mind.",
+   "The ___ cell had no windows."
   ]
  },
  "sh10_cloud-your-judgment": {
@@ -1345,170 +1347,170 @@ const CARD_EXTRAS = {
  },
  "sh10_play-the-fool": {
   "ex": [
-   "Stop trying to ___.",
-   "He likes to ___.",
-   "Don't ___.",
+   "Stop trying to ___ in class.",
+   "He likes to ___ at parties.",
+   "Don't ___ — this is serious.",
    "She'll ___ for laughs.",
-   "I'll ___."
+   "I'll ___ so you look clever."
   ]
  },
  "sh10_hold-yourself-to-a-higher-standard": {
   "ex": [
    "As a leader, you must ___.",
-   "Try to ___.",
-   "You should ___.",
+   "Try to ___ than others.",
+   "As a doctor, you should ___.",
    "Always ___.",
-   "Teachers ___."
+   "Teachers must ___."
   ]
  },
  "sh10_in-a-fit-state": {
   "ex": [
    "Are you ___ to drive?",
-   "He's not ___ to work.",
-   "Not ___.",
-   "In no ___.",
-   "___ to talk?"
+   "He's not ___ to work today.",
+   "After the party, she was not ___ to talk.",
+   "You're in no ___ to make decisions.",
+   "Is he ___ to answer questions?"
   ]
  },
  "sh10_pompous": {
   "ex": [
-   "A ___ fool.",
-   "___ speech.",
-   "Don't be ___.",
-   "___ language.",
-   "He's so ___."
+   "He's a ___ fool who loves his own voice.",
+   "The minister gave a ___ speech.",
+   "Don't be so ___.",
+   "The report is full of ___ language.",
+   "He's so ___ about his job title."
   ]
  },
  "sh10_making-inquiries": {
   "ex": [
-   "Police are ___.",
-   "I'm ___.",
-   "___ about him.",
-   "We're ___.",
-   "She's ___."
+   "The police are ___ about the missing girl.",
+   "I've been ___ about flats in the area.",
+   "She's ___ about the job.",
+   "We're ___ into the matter.",
+   "He's ___ at the hospital."
   ]
  },
  "sh10_accomplice": {
   "ex": [
-   "An ___ in the robbery.",
-   "His ___ escaped.",
-   "She was his ___.",
-   "A willing ___.",
-   "___ to murder."
+   "He had an ___ in the robbery.",
+   "His ___ escaped in the car.",
+   "She was his ___ in the scam.",
+   "He was a willing ___.",
+   "She was charged as an ___ to murder."
   ]
  },
  "sh10_resemblance": {
   "ex": [
-   "A family ___.",
-   "No ___.",
-   "A striking ___.",
-   "Bear a ___.",
-   "___ to her mother."
+   "There's a strong family ___.",
+   "There's no ___ between the brothers.",
+   "She bears a striking ___ to her mother.",
+   "Any ___ to real people is coincidental.",
+   "I see a ___ to her mother."
   ]
  },
  "sh10_grubby": {
   "ex": [
-   "___ hands.",
-   "A ___ hotel.",
-   "___ little business.",
-   "___ clothes.",
-   "A ___ kid."
+   "Wash your ___ hands before dinner.",
+   "They stayed in a ___ little hotel.",
+   "It's a ___ little business.",
+   "His ___ clothes needed washing.",
+   "A ___ kid asked for money."
   ]
  },
  "sh10_intercept": {
   "ex": [
-   "___ the ball.",
-   "___ the message.",
-   "___ the call.",
-   "Police will ___ him.",
-   "___ the drugs."
+   "Police managed to ___ the drugs at the border.",
+   "The defender tried to ___ the ball.",
+   "Spies tried to ___ the message.",
+   "Security services can ___ phone calls.",
+   "They planned to ___ him on the way home."
   ]
  },
  "sh10_martyrs": {
   "ex": [
-   "___ for the cause.",
-   "Christian ___.",
-   "___ of the revolution.",
-   "Becoming ___.",
-   "Political ___."
+   "Every great cause has its ___.",
+   "Christian ___ died in Roman arenas.",
+   "They became ___ of the revolution.",
+   "The rebels saw themselves as ___.",
+   "Political ___ inspired the movement."
   ]
  },
  "sh10_make-no-mistake": {
   "ex": [
    "___, this is serious.",
    "___ — we will win.",
-   "___ about it.",
-   "And, ___, it's war.",
-   "___, he's dangerous."
+   "___ about it: he's dangerous.",
+   "And, ___, this is war.",
+   "___, he will be punished."
   ]
  },
  "sh10_tending-to": {
   "ex": [
-   "___ the garden.",
-   "___ the sick.",
-   "___ the fire.",
-   "___ the children.",
-   "___ wounds."
+   "___ the garden takes hours every week.",
+   "Nurses were ___ the sick.",
+   "She was ___ the fire.",
+   "He's ___ the children while she works.",
+   "The doctor was ___ his wounds."
   ]
  },
  "sh10_disregarded": {
   "ex": [
-   "___ by the boss.",
-   "___ warnings.",
-   "___ advice.",
-   "___ evidence.",
-   "___ and forgotten."
+   "___ by the boss, his ideas were never used.",
+   "The ___ warnings led to disaster.",
+   "He ___ my advice and failed.",
+   "The evidence was ___ by the jury.",
+   "___ and forgotten, the old man lived alone."
   ]
  },
  "sh10_rise-up": {
   "ex": [
-   "The people will ___.",
-   "___ against injustice.",
-   "___ together.",
-   "___ and fight.",
-   "Workers ___."
+   "The people will ___ against the dictator.",
+   "We must ___ against injustice.",
+   "Workers should ___ together.",
+   "The leader told the crowd to ___ and fight.",
+   "The workers decided to ___."
   ]
  },
  "sh10_put-right-an-injustice": {
   "ex": [
    "The court tried to ___.",
-   "We must ___.",
-   "Fighting to ___.",
+   "We must ___ that happened long ago.",
+   "They're fighting to ___.",
    "It's time to ___.",
-   "Hoping to ___."
+   "She's hoping to ___ against her father."
   ]
  },
  "sh10_long-for-this-world": {
   "ex": [
-   "He wasn't ___.",
-   "Not ___.",
+   "He was so ill that he wasn't ___.",
+   "The doctor said the patient was not ___.",
    "The baby wasn't ___.",
    "She knew she wasn't ___.",
-   "I'm not ___."
+   "I'm not ___, I'm afraid."
   ]
  },
  "sh10_make-her-death-count": {
   "ex": [
    "She wanted to ___.",
-   "Let's ___.",
+   "Let's ___ by changing the law.",
    "We'll ___.",
    "He swore to ___.",
-   "Help ___."
+   "Help us ___."
   ]
  },
  "sh10_intimidation": {
   "ex": [
-   "Acts of ___.",
-   "Voter ___.",
-   "Fear and ___.",
-   "___ tactics.",
-   "Through ___."
+   "The gang used acts of ___.",
+   "There was voter ___ at the polls.",
+   "They ruled through fear and ___.",
+   "The company used ___ tactics.",
+   "They got the money through ___."
   ]
  },
  "sh10_threw-her-over": {
   "ex": [
    "He ___ for a richer woman.",
-   "Her fiancé ___.",
+   "Her fiancé ___ a week before the wedding.",
    "He ___ last year.",
    "He ___ without warning.",
    "He ___ cruelly."
@@ -1517,8 +1519,8 @@ const CARD_EXTRAS = {
  },
  "sh10_didn-t-have-me-fooled": {
   "ex": [
-   "He ___ for a second.",
-   "You ___.",
+   "His act ___ for a second.",
+   "You ___ — I knew it was you.",
    "That smile ___.",
    "She ___.",
    "His lies ___."
@@ -1526,112 +1528,112 @@ const CARD_EXTRAS = {
  },
  "sh10_brute": {
   "ex": [
-   "A cruel ___.",
-   "___ force.",
-   "You ___!",
-   "A big ___.",
-   "Don't be a ___."
+   "He's a cruel ___.",
+   "They used ___ force to open the door.",
+   "You ___! You hit him!",
+   "The big ___ pushed everyone aside.",
+   "Don't be a ___ to your sister."
   ]
  },
  "sh10_long-overdue": {
   "ex": [
-   "A ___ visit.",
-   "___ reforms.",
-   "___ recognition.",
-   "It's ___.",
-   "___ rent."
+   "A visit to my parents is ___.",
+   "These reforms are ___.",
+   "Her recognition was ___.",
+   "A pay rise is ___.",
+   "The rent is ___."
   ]
  },
  "sh10_single-minded": {
   "ex": [
-   "A ___ athlete.",
-   "___ determination.",
-   "She's ___.",
-   "A ___ person.",
-   "___ focus."
+   "She's a ___ athlete who trains every day.",
+   "His ___ determination won the race.",
+   "She's ___ about her career.",
+   "A ___ person can achieve a lot.",
+   "His ___ focus on money cost him friends."
   ]
  },
  "sh10_firsthand": {
   "ex": [
-   "___ experience.",
-   "I saw it ___.",
-   "___ knowledge.",
-   "___ accounts.",
-   "Learn ___."
+   "She has ___ experience of poverty.",
+   "I saw the damage ___.",
+   "He has ___ knowledge of the war.",
+   "The book contains ___ accounts of the battle.",
+   "You learn more ___ than from books."
   ]
  },
  "sh10_wronged": {
   "ex": [
-   "I've been ___.",
-   "A ___ woman.",
-   "___ by the system.",
-   "Those he ___.",
-   "She felt ___."
+   "She feels she's been ___ by her family.",
+   "The ___ woman wanted revenge.",
+   "Many were ___ by the system.",
+   "He tried to apologise to those he ___.",
+   "She felt ___ and humiliated."
   ]
  },
  "sh10_a-shade": {
   "ex": [
-   "___ too long.",
-   "___ darker.",
-   "___ dramatic.",
-   "___ expensive.",
-   "___ better."
+   "The soup is ___ too salty.",
+   "Can you make it ___ darker?",
+   "The ending was ___ dramatic.",
+   "It's ___ expensive for me.",
+   "This one is ___ better."
   ],
   "us": "a tad"
  },
  "sh10_precipice": {
   "ex": [
-   "On the edge of a ___.",
+   "They stood on the edge of a ___.",
    "The economy is on a ___.",
-   "A steep ___.",
-   "Standing on the ___.",
-   "A ___ of disaster."
+   "The path ran along a steep ___.",
+   "We were standing on the ___ of war.",
+   "The country is on the ___ of disaster."
   ]
  },
  "sh10_od-d": {
   "ex": [
-   "He ___ on heroin.",
-   "She nearly ___.",
-   "Someone ___ at the party.",
-   "He ___ last year.",
-   "They ___."
+   "He ___ on heroin at twenty-five.",
+   "She nearly ___ at the party.",
+   "Someone ___ at the festival.",
+   "He ___ last year and survived.",
+   "They ___ on pills."
   ],
   "us": "overdosed"
  },
  "sh10_pardon": {
   "ex": [
-   "A royal ___.",
-   "I beg your ___.",
-   "Grant a ___.",
-   "Presidential ___.",
-   "___ me?"
+   "The king granted him a royal ___.",
+   "I beg your ___? I didn't hear you.",
+   "The governor refused to grant a ___.",
+   "He received a presidential ___.",
+   "\"___ me?\" she said, surprised."
   ]
  },
  "sh10_contraptions": {
   "ex": [
-   "Strange ___ in the shed.",
-   "Flying ___.",
-   "Weird ___.",
-   "Kitchen ___.",
-   "Homemade ___."
+   "There were strange ___ in his shed.",
+   "Early flying ___ often crashed.",
+   "His kitchen is full of weird ___.",
+   "Grandpa loves kitchen ___.",
+   "The kids built homemade ___ out of boxes."
   ],
   "us": "gadgets"
  },
  "sh10_infer": {
   "ex": [
-   "What can we ___ from this?",
-   "___ meaning.",
+   "What can we ___ from this evidence?",
+   "You can ___ the meaning from the context.",
    "I ___ that you're angry.",
-   "Don't ___ too much.",
-   "___ the answer."
+   "Don't ___ too much from one result.",
+   "Can you ___ the answer?"
   ]
  },
  "sh10_come-to-pass": {
   "ex": [
-   "It will ___.",
+   "The prophecy did ___.",
    "Will it ever ___?",
-   "Things ___.",
-   "As foretold, it did ___.",
+   "Things ___ that nobody expects.",
+   "It will ___ one day, just as the old woman said.",
    "Let it ___."
   ]
  },
