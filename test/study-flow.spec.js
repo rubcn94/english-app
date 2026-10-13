@@ -9,21 +9,18 @@ const { assert, assertEqual } = require('./assert');
 
 function testVocabSectionCompletesAllCorrect() {
   const h = load();
-  const sectionCards = h.getData('vocab').find(s => s.section === 1).cards.length;
+  const sectionCards = Math.min(20, h.getData('vocab').find(s => s.section === 1).cards.length);
   h.call('startSection', 'vocab', 1);
   const res = h.runFullBlockedStudy('correct');
   assertEqual(h.activeScreenId(), 'screen-summary', 'did not reach summary screen');
-  assertEqual(res.answers.length, sectionCards, 'answered a different number of cards than the section contains');
-  assert(res.answers.every(a => true), 'sanity: answers array present');
-  // Answering everything correctly on the first try means the practice
-  // loop never requeues, so every card graduates -> known.
-  const knownCount = Object.keys(h.run('state.known')).length;
-  assertEqual(knownCount, sectionCards, 'not every card in the section was marked known after an all-correct run');
+  assertEqual(res.answers.length, sectionCards, 'a fresh section should serve at most 20 new cards');
+  // One correct answer schedules a card for tomorrow — not "known" yet.
+  assertEqual(Object.keys(h.run('state.known')).length, 0, 'cards should not be marked known after a single correct answer');
 }
 
 function testSherlockEpisodeCompletesAllCorrect() {
   const h = load();
-  const sectionCards = h.getData('sherlock').find(s => s.section === 1).cards.length;
+  const sectionCards = Math.min(20, h.getData('sherlock').find(s => s.section === 1).cards.length);
   h.call('startSection', 'sherlock', 1);
   const res = h.runFullBlockedStudy('correct');
   assertEqual(h.activeScreenId(), 'screen-summary', 'did not reach summary screen for Sherlock episode');
@@ -37,7 +34,7 @@ function testSherlockEpisodeStudiedInSeriesOrder() {
   const ids = h.run('state.blocks.flat().map(c => c.id)');
   // Episode order, except new old-fashioned expressions are moved to the end.
   const dated = h.run(`getData('sherlock').find(s => s.section === 2).cards.map(c => isDated(c))`);
-  const expected = [...ep.cards.filter((_, i) => !dated[i]), ...ep.cards.filter((_, i) => dated[i])].map(c => c.id);
+  const expected = [...ep.cards.filter((_, i) => !dated[i]), ...ep.cards.filter((_, i) => dated[i])].map(c => c.id).slice(0, 20);
   assertEqual(JSON.stringify(ids), JSON.stringify(expected), 'new Sherlock cards should keep episode order (old-fashioned last), not be shuffled');
 }
 
@@ -121,7 +118,7 @@ function testCorrectAnswerGraduatesAndMarksKnown() {
   const afterLen = h.run('state.blockQueue.length');
   assertEqual(afterLen, initialLen - 1, 'a correct answer should remove the card from blockQueue without requeuing it');
   const known = h.run('state.known');
-  assert(known[cardId], 'a card answered correctly should be marked known');
+  assert(!known[cardId], 'one correct answer is not enough to mark a card known');
 }
 
 function testAllDueQueueAcrossBooksCompletes() {

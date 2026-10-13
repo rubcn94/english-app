@@ -10,22 +10,36 @@ const BACKUP_KEY  = 'eng_last_backup_v1';
 function loadProgress() {
   try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch { return {}; }
 }
-function saveProgress(p) { localStorage.setItem(STORE_KEY, JSON.stringify(p)); }
+// Every write goes through here: localStorage can throw (private mode,
+// storage full, blocked site data) and an uncaught throw mid-session used to
+// stop the study flow dead. Warn once, keep the session running.
+let storageWarned = false;
+function safeSet(key, value) {
+  try { localStorage.setItem(key, value); return true; }
+  catch (e) {
+    if (!storageWarned) {
+      storageWarned = true;
+      try { alert('Your progress could not be saved on this device (storage full or blocked). Export a backup from the home screen.'); } catch {}
+    }
+    return false;
+  }
+}
+function saveProgress(p) { safeSet(STORE_KEY, JSON.stringify(p)); }
 
 function loadStreak() {
   try { return JSON.parse(localStorage.getItem(STREAK_KEY)) || { count: 0, lastDate: null }; } catch { return { count: 0, lastDate: null }; }
 }
-function saveStreak(s) { localStorage.setItem(STREAK_KEY, JSON.stringify(s)); }
+function saveStreak(s) { safeSet(STREAK_KEY, JSON.stringify(s)); }
 
 function loadNotes() {
   try { return JSON.parse(localStorage.getItem(NOTES_KEY)) || {}; } catch { return {}; }
 }
-function saveNotes(n) { localStorage.setItem(NOTES_KEY, JSON.stringify(n)); }
+function saveNotes(n) { safeSet(NOTES_KEY, JSON.stringify(n)); }
 
 function loadKnown() {
   try { return JSON.parse(localStorage.getItem(KNOWN_KEY)) || {}; } catch { return {}; }
 }
-function saveKnown(k) { localStorage.setItem(KNOWN_KEY, JSON.stringify(k)); }
+function saveKnown(k) { safeSet(KNOWN_KEY, JSON.stringify(k)); }
 
 // ── Dates ─────────────────────────────────────────────────────────────────────
 // Local-calendar-day string (YYYY-MM-DD), NOT toISOString().slice(0,10) —
@@ -83,6 +97,10 @@ function isDue(card) { if (!card || !card.dueDate) return true; return card.dueD
 
 // ── App state ─────────────────────────────────────────────────────────────────
 const BLOCK_SIZE = 10;
+const NEW_PER_SESSION = 20;
+// A card only counts as "known" (glossary) once its next review is at
+// least this many days away — one correct answer isn't knowing it yet.
+const KNOWN_INTERVAL = 21;
 
 let state = {
   currentBook: null,
@@ -485,7 +503,11 @@ function startSection(book, sectionNum) {
   state.isAllDue = false;
   state.isCustomQueue = false;
   const due     = sec.cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
-  const newCards = sec.cards.filter(c => getCardProgress(c.id) === null);
+  // At most NEW_PER_SESSION new cards per session (vocab sections have
+  // 70-177 cards, which meant up to 18 blocks in one go). Old-fashioned
+  // expressions are left for last, so they're the ones that wait.
+  const allNew = sec.cards.filter(c => getCardProgress(c.id) === null);
+  const newCards = [...allNew.filter(c => !isDated(c)), ...allNew.filter(c => isDated(c))].slice(0, NEW_PER_SESSION);
   // Sherlock episodes are studied in the order the words come up in the
   // episode (the data is already sorted that way), so no shuffling there.
   const order = book === 'sherlock' ? (a => a) : shuffle;
@@ -945,9 +967,13 @@ function rateCard(rating) {
   // practice loop, so it only "graduates" once actually answered correctly.
   if (state.lastAnswerCorrect === false) {
     state.blockQueue.push(card);
-  } else {
-    // Graduated this session — reflect it in the glossary automatically.
-    state.known[card.id] = true;
+  }
+  // Glossary "known" follows the schedule: reached KNOWN_INTERVAL days ->
+  // known; missed -> not known any more.
+  const p = getCardProgress(card.id);
+  const shouldBeKnown = state.lastAnswerCorrect !== false && !!p && p.interval >= KNOWN_INTERVAL;
+  if (shouldBeKnown !== !!state.known[card.id] && (shouldBeKnown || rating === 0)) {
+    if (shouldBeKnown) state.known[card.id] = true; else delete state.known[card.id];
     saveKnown(state.known);
   }
 
@@ -1413,10 +1439,10 @@ function closeNoteModal(e) {
 
 // ── Backup / Restore ──────────────────────────────────────────────────────────
 function loadLastBackup() {
-  return localStorage.getItem(BACKUP_KEY);
+  try { return localStorage.getItem(BACKUP_KEY); } catch { return null; }
 }
 function markBackupDone() {
-  localStorage.setItem(BACKUP_KEY, new Date().toISOString());
+  safeSet(BACKUP_KEY, new Date().toISOString());
 }
 
 function exportBackup() {
@@ -1819,6 +1845,26 @@ function startWeakestSection() {
   startSection(worst.book, Number(worst.key.split(':')[1]));
 }
 
+// ── One-off migrations ───────────────────────────────────────────────────────
+// Until Oct 2026 "Good" was sent to SM-2 as quality 3, which lowered the ease
+// factor by 0.14 on every review, so long-studied cards ended up with
+// shrinking intervals. Lift every ease factor below the default back to 2.5
+// once (misses also lower it, but there's no way to tell them apart now).
+const EASE_MIGRATION_KEY = 'eng_ease_fix_v1';
+function migrateEaseFactors() {
+  let done = null;
+  try { done = localStorage.getItem(EASE_MIGRATION_KEY); } catch {}
+  if (done) return 0;
+  let fixed = 0;
+  Object.values(state.progress).forEach(p => {
+    if (p && typeof p.easeFactor === 'number' && p.easeFactor < 2.5) { p.easeFactor = 2.5; fixed++; }
+  });
+  if (fixed) saveProgress(state.progress);
+  safeSet(EASE_MIGRATION_KEY, new Date().toISOString());
+  return fixed;
+}
+
 // ── Init ──────────────────────────────────────────────────────────────────────
+migrateEaseFactors();
 refreshHomeStats();
 restoreLastScreen();

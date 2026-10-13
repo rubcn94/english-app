@@ -21,7 +21,7 @@ function testStudiedNotDueCardsAreNotRequeued() {
   markProgress(h, studied, FUTURE);
   h.call('startSection', 'vocab', 1);
   const queued = h.run('state.blocks.flat().map(c => c.id)');
-  assertEqual(queued.length, sec.cards.length - 20, 'only the new cards should be queued');
+  assertEqual(queued.length, Math.min(20, sec.cards.length - 20), 'only new cards (max 20) should be queued');
   assert(!queued.some(id => studied.includes(id)), 'a card scheduled for later was re-queued');
 }
 
@@ -96,7 +96,7 @@ function testDatedCardsGoLastAndShowAmE() {
   h.call('startSection', 'sherlock', 1);
   const flags = h.run('state.blocks.flat().map(c => isDated(c))');
   const firstDated = flags.indexOf(true);
-  assert(firstDated >= 0 && flags.slice(firstDated).every(Boolean), 'new old-fashioned cards should be studied after all the others');
+  assert(firstDated < 0 || flags.slice(firstDated).every(Boolean), 'new old-fashioned cards should be studied after all the others');
   const next = h.run(`scheduleCard(CARD_EXTRAS && { id: ${JSON.stringify(first)} }, { interval: 6, repetitions: 2, easeFactor: 2.5 }, 4)`);
   assertEqual(next.interval, 30, 'old-fashioned card interval should be doubled (6*2.5*2)');
   h.run(`renderCardMeta(document.getElementById('correction-meta'), { id: ${JSON.stringify(first)} })`);
@@ -115,7 +115,51 @@ function testHardOnACorrectAnswerDoesNotResetAndGoodKeepsEase() {
   assert(h.run('sm2(__b, 5)').easeFactor > 2.5, 'Easy should raise the ease factor');
 }
 
+function testKnownFollowsTheSchedule() {
+  const h = load();
+  const sec = h.getData('blue').find(s => s.section === 12);
+  // Long interval already: one more correct answer pushes it past 21 days.
+  h.ctx.__ids = sec.cards.map(c => c.id);
+  h.run(`__ids.forEach(id => { state.progress[id] = { interval: 15, repetitions: 3, easeFactor: 2.5, dueDate: '2000-01-01' }; })`);
+  h.call('startSection', 'blue', 12);
+  const first = h.run('state.blockQueue[0].id');
+  h.answerCurrentCard('correct'); h.rate(4);
+  assert(h.run(`!!state.known[${JSON.stringify(first)}]`), 'a card whose next review is 21+ days away should be known');
+  const second = h.run('state.blockQueue[0].id');
+  h.run(`state.known[${JSON.stringify(second)}] = true`);
+  h.answerCurrentCard('wrong'); h.rate(0);
+  assert(!h.run(`!!state.known[${JSON.stringify(second)}]`), 'a missed card should stop being known');
+}
+
+function testNewCardsCappedAt20() {
+  const h = load();
+  h.call('startSection', 'vocab', 2);
+  assertEqual(h.run('state.blocks.flat().length'), 20, 'a fresh vocab section should serve 20 new cards');
+}
+
+function testEaseMigrationRunsOnce() {
+  const h = load();
+  h.run(`state.progress.x = { interval: 3, repetitions: 2, easeFactor: 1.9, dueDate: '2000-01-01' }; localStorage.removeItem(EASE_MIGRATION_KEY)`);
+  assertEqual(h.run('migrateEaseFactors()'), 1, 'should lift one ease factor');
+  assertEqual(h.run('state.progress.x.easeFactor'), 2.5, 'ease factor should be back at 2.5');
+  h.run('state.progress.x.easeFactor = 1.9');
+  assertEqual(h.run('migrateEaseFactors()'), 0, 'migration must only run once');
+}
+
+function testStorageFailureDoesNotBreakStudy() {
+  const h = load();
+  h.run(`localStorage.setItem = () => { throw new Error('QuotaExceeded'); }`);
+  h.call('startSection', 'blue', 12);
+  const res = h.runFullBlockedStudy('correct');
+  assertEqual(h.activeScreenId(), 'screen-summary', 'study should finish even when storage writes fail');
+  assert(res.answers.length > 0, 'cards answered');
+}
+
 module.exports = {
+  testKnownFollowsTheSchedule,
+  testNewCardsCappedAt20,
+  testEaseMigrationRunsOnce,
+  testStorageFailureDoesNotBreakStudy,
   testHardOnACorrectAnswerDoesNotResetAndGoodKeepsEase,
   testStudiedNotDueCardsAreNotRequeued,
   testDueCardsComeFirstAndSkipTheory,
