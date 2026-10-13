@@ -1,0 +1,77 @@
+# 30 · Coctelería y Bebidas
+v30_001 || The ___ made us two mojitos. | She works as a ___ in a hotel bar. | Ask the ___ for something without alcohol. | The ___ shook the drink with ice. | Tip the ___ if the service is good. || |
+v30_002 || I'd like a ___ with rum and lime, please. | The bar is famous for its classic ___ menu. | She ordered a fruity ___ by the pool. | Each ___ costs twelve euros here. | The wedding started with a ___ reception. || |
+v30_003 || I'm driving, so I'll have a ___. | The bar has a great ___ menu. | A virgin mojito is a popular ___. | The kids had a ___ at the party. | This ___ tastes just like the real thing. || |
+v30_004 || Put the ice in the ___ first. | Shake the ___ hard for ten seconds. | The bartender poured the drink from the ___. | A metal ___ gets very cold. | The lid of the ___ was stuck. || |
+v30_005 || Pour the drink through a ___. | The ___ catches the ice and mint. | Use a fine ___ for a smooth drink. | The bartender held the ___ over the glass. | Wash the ___ after each cocktail. || |
+v30_006 || Measure the gin with a ___. | A ___ helps you pour the right amount. | Professional bartenders always use a ___. | The ___ holds about 25 ml. | Fill the ___ to the top. || |
+v30_007 || Crush the mint with a ___. | You need a ___ to make a mojito. | The bartender used a ___ on the limes. | A wooden ___ is easy to clean. | Don't press too hard with the ___. || |
+v30_008 || I'll have a whisky ___, please. | He always drinks his bourbon ___. | Would you like that ___ or straight? | A gin ___ is refreshing in summer. | Their relationship is ___ at the moment. || |
+v30_009 || I'd like a martini ___. | She ordered her margarita ___. | A martini is usually served ___. | Do you want that ___ or on the rocks? | The cocktail comes ___ in a chilled glass. || |
+v30_010 || I take my whisky ___. | He drinks his rum ___. | Serve the cognac ___ in a small glass. | Would you like it ___ or with ice? | Old men in films always drink whisky ___. || |
+v30_011 || A gin and tonic is a classic ___. | He ordered a whisky ___. | Serve the ___ in a tall glass. | A ___ has lots of mixer and little spirit. | The ___ glass is tall and thin. || |
+v30_012 || Let's do a ___ of tequila! | A ___ of vodka is 25 ml here. | He drank a ___ of whisky in one go. | One ___ of espresso is enough. | She ordered a ___ of rum with her coffee. || |
+v30_013 || Make it a ___, please. | He ordered a ___ whisky after the bad news. | A ___ vodka costs extra. | Is that a single or a ___? | Two of those and he was drunk — each one was a ___. || |
+v30_014 || Which ___ would you like with your gin? | Tonic is the most popular ___. | The bar uses premium ___ drinks. | A ___ makes strong spirits easier to drink. | Ginger ale is a good ___ for whisky. || |
+v30_015 || I'll have gin with ___. | On its own, ___ tastes slightly bitter. | ___ glows under UV light. | Add ice and ___ to the glass. | Slimline ___ has less sugar. || |
+v30_016 || Top up the drink with ___. | Whisky and ___ is a classic drink. | ___ has no flavour, just bubbles. | Add a splash of ___. | The spritz needs a little ___. || club soda |
+v30_017 || Add a mint ___ to the drink. | The cocktail came with a fancy ___. | Lime is the classic ___ for a mojito. | The ___ made the drink look beautiful. | Olives are a classic martini ___. || |
+v30_018 || Add a lemon ___ to the martini. | The bartender cut an orange ___. | A ___ adds aroma to the drink. | The ___ of peel sat on top of the glass. | I'd like it with a ___, please. || |
+v30_019 || Salt the ___ of the glass. | The margarita had sugar on the ___. | Wet the ___ before adding salt. | There was lipstick on the ___ of the glass. | The ___ of the glass was chipped. || |
+v30_020 || The bar uses ___ to make the drinks smoke. | Never touch ___ with bare hands. | ___ made the cocktail look magical. | The ___ created a cloud of fog. | Always handle ___ with thick gloves. || |
+v30_021 || I'll have a frozen ___. | The ___ has salt on the rim. | A ___ is made with tequila. | We drank a ___ at the Mexican restaurant. | Strawberry ___ is very sweet. || |
+v30_022 || A ___ needs fresh mint. | Cuba is famous for the ___. | She ordered a ___ by the pool. | Crush the mint for the ___. | A virgin ___ has no rum. || |
+v30_023 || A ___ is bitter and strong. | The ___ comes from Italy. | Stir the ___ with ice. | A ___ is served with orange peel. | The ___ is a popular aperitif. || |
+v30_024 || He ordered an ___ at the bar. | An ___ is made with bourbon. | Stir the ___ slowly with a big ice cube. | Don Draper always drinks an ___. | An ___ is served in a short glass. || |
+v30_025 || The ___ became famous through Sex and the City. | A ___ is pink and served in a martini glass. | She ordered a ___ at the party. | The ___ is served in a martini glass. | A ___ needs cranberry juice. || |
+v30_026 || A ___ is sweet and sour. | Some bartenders add egg white to a ___. | He ordered a ___ at the bar. | The ___ needs fresh lemon. | A ___ is a classic cocktail. || |
+v30_027 || Hemingway loved the ___ in Havana. | A strawberry ___ is popular. | The ___ is made with rum. | A frozen ___ is perfect for summer. | Shake the ___ with ice. || |
+v30_028 || A ___ is a popular brunch drink. | This ___ is spicy because of the Tabasco. | People drink a ___ for a hangover. | A ___ has tomato juice. | Add celery to the ___. || |
+v30_029 || A ___ is the British summer drink. | I'll have a ___ with lime. | The ___ comes in a big glass. | People in Spain love a big ___ in a balloon glass. | A ___ is refreshing on a hot evening. || |
+v30_030 || An Aperol ___ is orange. | Italians drink a ___ before dinner. | The ___ is fizzy and bitter. | A ___ is popular in summer. | Order a ___ in Venice. || |
+v30_031 || James Bond drinks his ___ shaken. | A dry ___ has little vermouth. | The ___ comes with an olive. | Serve the ___ very cold. | A vodka ___ is popular. || |
+v30_032 || The ___ is the national drink of Peru. | A ___ has egg white. | Chile also claims the ___. | The ___ is frothy because of the egg white. | Add bitters to the ___. || |
+v30_033 || Scotland is famous for ___. | Irish ___ is smooth and easy to drink. | He drinks ___ with water. | The ___ was aged twelve years. | A bottle of ___ makes a good present. || |
+v30_034 || Most American ___ comes from Kentucky. | ___ is sweeter than Scotch. | An Old Fashioned uses ___. | ___ is aged in new oak barrels. | He drinks ___ with ice. || |
+v30_035 || A glass of ___ warms you up. | ___ from Islay is very smoky. | He brought back a bottle of ___. | ___ must be aged three years. | They drank ___ by the fire. || |
+v30_036 || ___ is spicier than bourbon. | A classic Manhattan uses ___. | ___ was popular before Prohibition. | Canadian ___ is usually quite smooth. | ___ is made in the US and Canada. || |
+v30_037 || An old ___ can be very expensive. | He collects ___ whisky. | Islay ___ is very smoky. | Taste the ___ slowly and add a drop of water. | A ___ comes from one distillery. || |
+v30_038 || Most whisky sold is ___. | ___ is cheaper than single malt. | ___ is good for mixing. | Johnnie Walker is a ___. | Many people find ___ smoother and easier to drink. || |
+v30_039 || ___ comes from Russia and Poland. | A martini can be made with ___. | ___ has almost no taste. | Mix ___ with orange juice. | Good ___ is very pure. || |
+v30_040 || A ___ and tonic is the perfect summer drink. | London dry ___ is the classic style. | ___ gets its flavour from juniper berries. | Spain has become crazy about ___ in recent years. | This ___ is made with local herbs. || |
+v30_041 || Pirates in films are always drinking ___. | Dark ___ is made from molasses. | A mojito is made with white ___. | Cuba and Jamaica produce excellent ___. | Add a little ___ to the Christmas cake. || |
+v30_042 || ___ is made from the blue agave plant. | Lick the salt, drink the ___, then bite the lime. | A margarita contains ___ and lime. | Good ___ should be sipped, not shot. | Real ___ only comes from Mexico. || |
+v30_043 || ___ has a smoky flavour. | Some bottles of ___ have a worm inside. | ___ is popular in Oaxaca. | Try a ___ cocktail instead of tequila. | ___ is made from many types of agave. || |
+v30_044 || He drank a glass of ___ after dinner. | ___ is made from grapes. | Add some ___ to the sauce. | Spanish ___ is aged in barrels. | My grandfather liked ___ in his coffee. || |
+v30_045 || He drank a glass of ___ by the fire. | Real ___ comes only from one region of France. | A bottle of very old ___ is expensive. | ___ is a famous kind of French brandy. | Serve the ___ in a balloon glass. || |
+v30_046 || They opened a bottle of ___ to celebrate. | Real ___ only comes from France. | The winner sprayed ___ everywhere. | A glass of ___ costs fifteen euros here. | ___ is traditional at weddings. || |
+v30_047 || ___ is cheaper than champagne. | An Aperol spritz is made with ___. | We drank ___ on New Year's Eve. | ___ comes from northern Italy. | A glass of ___ is perfect with brunch. || |
+v30_048 || ___ is made in Catalonia. | We toasted with a glass of ___. | ___ is a cheaper alternative to champagne. | Spanish people drink ___ at Christmas. | A bottle of ___ costs only a few euros. || |
+v30_049 || A cold glass of ___ is perfect in summer. | Provence is famous for its pale ___. | ___ is pink because of the grape skins. | Serve the ___ very cold. | She ordered a bottle of ___ with lunch. || |
+v30_050 || I prefer a ___ to a sweet one. | A ___ goes well with fish. | Sauvignon Blanc is usually a ___. | A ___ has very little sugar. | Order a ___ with the seafood. || |
+v30_051 || A small glass of ___ is perfect with dessert. | Sauternes is a famous French ___. | I don't usually like ___ with dinner. | A glass of ___ ended the meal. | Port is a kind of ___ often served with cheese. || |
+v30_052 || I prefer ___ red wines with meat. | A ___ wine goes well with steak. | This Rioja is very ___ and rich. | ___ wines usually have more alcohol. | The wine is dark and ___. || |
+v30_053 || The ___ make this red wine feel dry. | Red wine has more ___ than white. | ___ soften as the wine ages. | This young wine has very strong ___. | ___ come from grape skins and seeds. || |
+v30_054 || ___ has become very popular in the last ten years. | The bar serves local ___ from small breweries. | He makes his own ___ in his garage. | ___ is usually more expensive than lager. | The festival celebrates ___ from all over Europe. || |
+v30_055 || An ___ is quite bitter and hoppy. | He ordered a cold ___ at the bar. | An ___ has lots of hops. | ___ was first brewed for long sea voyages to India. | Craft breweries love making ___. || |
+v30_056 || Guinness is the most famous ___ in the world. | A pint of ___, please. | ___ is dark, thick and creamy. | This ___ tastes of coffee and chocolate. | Every Irish pub serves ___. || |
+v30_057 || A cold ___ on a hot day is perfect. | Most beer sold in Spain is ___. | A pint of ___, please. | German ___ is famous all over the world. | ___ is light, crisp and fizzy. || |
+v30_058 || ___ is usually cloudy and pale. | German ___ is popular in summer. | In the US, ___ is often served with lemon. | I prefer ___ to lager. | Some ___ tastes a bit like banana. || |
+v30_059 || The pub serves ___ from local breweries. | ___ tastes better than bottled beer. | They have six kinds of ___ on tap. | ___ is often cheaper than bottles. | A pint of ___, please. || draft beer |
+v30_060 || ___ was banned in France for almost a century. | ___ is often bright green. | ___ is very strong — over 60% alcohol. | Artists in Paris drank a lot of ___. | Pour water over sugar into the ___. || |
+v30_061 || ___ tastes strongly of almonds. | Add a little ___ to your coffee. | ___ is a liqueur from Italy. | An ___ sour is a popular cocktail. | The tiramisu has ___ in it. || |
+v30_062 || A margarita needs tequila, lime and ___. | ___ tastes of orange. | Add a splash of ___ to the cocktail. | Cointreau is a famous brand of ___. | ___ makes the cocktail sweeter. || |
+v30_063 || A dry martini needs only a little ___. | Italian ___ is red and sweet. | ___ is a wine flavoured with herbs. | Add ___ and Campari to the gin. | In Spain, people drink ___ before Sunday lunch. || |
+v30_064 || Add a dash of ___ to the drink. | An Old Fashioned needs sugar and ___. | ___ are very concentrated, so use only a few drops. | Angostura ___ come from Trinidad. | ___ add a bitter, spicy flavour. || |
+v30_065 || Add a little ___ to the mojito. | ___ is easy to make at home. | Make ___ with equal parts sugar and water. | ___ sweetens cold drinks easily. | Keep the ___ in the fridge. || |
+v30_066 || A tequila sunrise needs a little ___. | ___ is bright red. | Add some ___ to the lemonade for the kids. | Children love drinks with ___. | ___ makes drinks pink. || |
+v30_067 || The bar serves ___ gin with cucumber. | ___ vodka is popular with young people. | You can make ___ rum at home with fruit. | ___ spirits are very trendy. | This ___ tequila has chilli in it. || |
+v30_068 || The bar serves ___ cocktails. | ___ gin is golden in colour. | ___ drinks taste smoother. | Try the ___ Negroni. | ___ spirits taste a little of wood. || |
+v30_069 || The good wine is kept in the ___. | They have a huge wine ___ under the house. | The restaurant's ___ has 2,000 bottles. | Go down to the ___ and get a bottle. | The ___ stays cool all year. || |
+v30_070 || The ___ recommended a red from Rioja. | Ask the ___ which wine goes with fish. | She trained as a ___ in France. | The ___ tasted the wine first. | Our ___ knew every bottle on the list. || |
+v30_071 || ___ improves the taste of old red wine. | The waiter is ___ the wine at the table. | ___ an old wine can take an hour. | Use a glass jug for ___. | ___ removes the sediment. || |
+v30_072 || We ordered a beer ___ to taste four kinds. | The wine ___ had four small glasses. | A ___ is great for trying new drinks. | Try the gin ___ at the new bar. | The ___ included three local wines. || |
+v30_073 || ___ is from five to seven. | Cocktails are half price during ___. | Let's meet for ___ after work. | The bar is full during ___. | ___ ends at eight o'clock. || |
+v30_074 || I'm the ___ tonight, so just water for me. | Who's the ___ tonight? | The ___ drank only cola all night. | Some bars give free soft drinks to the ___. | Choose a ___ before you go out. || |
+v30_075 || I have a terrible ___ this morning. | Drinking water helps prevent a ___. | His ___ lasted all day. | Coffee doesn't really cure a ___. | A ___ makes you tired and grumpy. || |
+v30_076 || Remember to ___ at the wedding. | It's going to be a long night, so ___. | ___ by drinking water between drinks. | Students need to learn to ___. | ___ or you'll be ill tomorrow. || |
