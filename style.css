@@ -469,6 +469,8 @@ input.hidden { display: none; }
   gap: 12px;
 }
 .rating-wrap.visible { display: flex; }
+.rating-wrap.visible.hidden { display: none; }
+#btn-continue-miss.hidden { display: none; }
 .rating-label {
   text-align: center;
   font-size: 0.85rem;
@@ -476,7 +478,7 @@ input.hidden { display: none; }
 }
 .rating-btns {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 .btn-rate {
@@ -843,4 +845,22 @@ input.hidden { display: none; }
     min-height: 100vh;
     box-shadow: 0 0 60px rgba(0,0,0,0.35);
   }
+}
+
+/* CARD META: old-fashioned badge + American English equivalent */
+.card-meta {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  white-space: pre-line;
+  text-align: left;
+}
+.card-meta.hidden { display: none; }
+.gitem-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; font-size: 0.75rem; }
+.gitem-dated, .gitem-ame {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-muted);
 }

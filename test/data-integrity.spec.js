@@ -97,7 +97,37 @@ function testSectionNumbersUniqueWithinBook() {
   });
 }
 
+
+// data/extras.js: every entry points at a real card, example sentences have
+// exactly one ___, aren't the card's own sentence and don't leak the answer.
+function testCardExtrasAreWellFormed() {
+  const h = load();
+  const extras = h.run('CARD_EXTRAS');
+  const byId = {};
+  h.run('getAllCardsAllBooks()').forEach(c => { byId[c.id] = c; });
+  const problems = [];
+  Object.entries(extras).forEach(([id, x]) => {
+    const card = byId[id];
+    if (!card) { problems.push(`${id}: no such card`); return; }
+    if (x.us !== undefined && (typeof x.us !== 'string' || !x.us.trim())) problems.push(`${id}: empty us`);
+    if (x.dated !== undefined && x.dated !== true) problems.push(`${id}: dated must be true`);
+    if (x.ex === undefined) return;
+    if (!Array.isArray(x.ex) || x.ex.length < 3) { problems.push(`${id}: ex needs 3+ sentences`); return; }
+    if (card.blanks) problems.push(`${id}: multi-blank cards can't use an example bank`);
+    const own = card.front.split('\n\n')[0].trim();
+    const answer = h.run(`getReadableAnswer(${JSON.stringify(card)})`).toLowerCase();
+    if (new Set(x.ex).size !== x.ex.length) problems.push(`${id}: duplicate example`);
+    x.ex.forEach(e => {
+      if ((e.match(/___/g) || []).length !== 1) problems.push(`${id}: "${e}" needs exactly one ___`);
+      if (e.trim() === own) problems.push(`${id}: example repeats the card's own sentence`);
+      if (answer.length > 3 && e.toLowerCase().includes(answer)) problems.push(`${id}: "${e}" gives the answer away`);
+    });
+  });
+  assert(problems.length === 0, `bad CARD_EXTRAS entries:\n  ${problems.slice(0, 20).join('\n  ')}${problems.length > 20 ? `\n  (+${problems.length - 20} more)` : ''}`);
+}
+
 module.exports = {
+  testCardExtrasAreWellFormed,
   testNoDuplicateIdsAcrossBooks,
   testEveryCardHasFrontAndBack,
   testBlanksCountMatchesFrontBlanks,

@@ -135,6 +135,7 @@
         <div id="theory-front" class="card-front-text"></div>
         <div class="theory-divider"></div>
         <div id="theory-back" class="theory-back-text"></div>
+        <div id="theory-meta" class="card-meta hidden"></div>
       </div>
       <div class="correction-note-wrap">
         <div class="correction-note-text hidden" id="theory-note-text"></div>
@@ -169,6 +170,7 @@
         <div class="correction-correct-label">Correct answer</div>
         <div class="correction-correct" id="correction-correct"></div>
         <div class="correction-extra" id="correction-extra"></div>
+        <div id="correction-meta" class="card-meta hidden"></div>
       </div>
       <div class="multi-blank-review hidden" id="multi-blank-review"></div>
       <div class="correction-note-wrap" id="correction-note-wrap">
@@ -176,10 +178,10 @@
         <button class="btn-correction-note" id="btn-correction-note" onclick="openCorrectionNoteModal()">+ Add a trick</button>
       </div>
       <button class="btn-flip-back" onclick="showQuestion()">↩ See question again</button>
-      <div class="rating-wrap visible">
+      <button class="btn-primary hidden" id="btn-continue-miss" onclick="rateCard(0)">Continue → (it'll come back)</button>
+      <div class="rating-wrap visible" id="rating-wrap">
         <p class="rating-label">How well did you know it?</p>
         <div class="rating-btns">
-          <button class="btn-rate again" onclick="rateCard(0)">Again</button>
           <button class="btn-rate hard" onclick="rateCard(1)">Hard</button>
           <button class="btn-rate good" onclick="rateCard(3)">Good</button>
           <button class="btn-rate easy" onclick="rateCard(5)">Easy</button>
@@ -197,7 +199,7 @@
         <div class="sum-stat"><span id="sum-easy">0</span><label>Easy</label></div>
         <div class="sum-stat"><span id="sum-good">0</span><label>Good</label></div>
         <div class="sum-stat"><span id="sum-hard">0</span><label>Hard</label></div>
-        <div class="sum-stat"><span id="sum-again">0</span><label>Again</label></div>
+        <div class="sum-stat"><span id="sum-again">0</span><label>Missed</label></div>
       </div>
       <button class="btn-primary" onclick="showScreen('home')">Back to Home</button>
       <button class="btn-secondary" id="btn-study-again" onclick="studyAgain()">Study Again</button>
@@ -377,6 +379,7 @@
   <script src="data/vocab.js"></script>
   <script src="data/sherlock.js"></script>
   <script src="data/templates.js"></script>
+  <script src="data/extras.js"></script>
   <script src="app.js"></script>
   <script>
     if ('serviceWorker' in navigator) {

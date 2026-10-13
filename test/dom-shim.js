@@ -137,11 +137,11 @@ const ALL_IDS = [
   // blocked study screen
   'study-title', 'study-counter', 'progress-bar-fill',
   'phase-theory', 'theory-counter', 'theory-front', 'theory-back', 'btn-theory-next',
-  'theory-note-text', 'btn-theory-note',
+  'theory-note-text', 'btn-theory-note', 'theory-meta',
   'phase-question', 'card-front-text', 'input-area', 'answer-input', 'freetext-area',
   'multi-blank-area',
   'phase-correction', 'correction-question', 'correction-your', 'correction-correct',
-  'correction-extra', 'multi-blank-review',
+  'correction-extra', 'multi-blank-review', 'correction-meta', 'rating-wrap', 'btn-continue-miss',
   'correction-note-wrap', 'correction-note-text', 'btn-correction-note',
   // summary
   'sum-again', 'sum-hard', 'sum-good', 'sum-easy', 'btn-study-again',
