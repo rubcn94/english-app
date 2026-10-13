@@ -63,6 +63,7 @@ v10_061 || A thank-you note makes staff feel ___. | Nurses want to feel ___ for 
 v10_062 || Teenagers often feel ___ by their parents. | Many artists were ___ in their lifetime. | He felt ___ when they laughed at his idea. | I think his comment was ___. | She's a much ___ character in the novel. || |
 v10_063 || Bring your ___ to the Christmas dinner. | Her ___ works as a nurse. | She has lived with her ___ for ten years. | Is your ___ coming to the party? | He met his ___ at university. || |
 v10_064 || Please fill in your ___'s name on the form. | Members can bring their ___ for free. | She lost her ___ last year. | The visa covers you and your ___. | His ___ is a teacher. || |
+v10_065 || Her ___ proposed to her in Paris. | Have you met my ___ yet? | He introduced her as his ___. | My ___ and I are getting married in June. | She's planning the wedding with her ___. || |
 v10_066 || My ___ still calls me sometimes. | She's still friends with her ___. | I saw my ___ at the supermarket. | His ___-wife lives in Paris. | Don't text your ___ at 2 a.m.! || |
 v10_067 || She has a ___ on her maths teacher. | I had a huge ___ on him at school. | Every girl in class had a ___ on the new boy. | It's just a silly ___ — it'll pass. | He finally told his ___ how he felt. || |
 v10_068 || They went on a first ___ to the cinema. | How was your ___ last night? | He's nervous about his ___ with Lucy. | Dinner and a film is a classic ___. | It's our tenth ___ tonight. || |
@@ -103,6 +104,7 @@ v10_102 || He promised he wouldn't ___ again. | How could you ___ like that? | I
 v10_103 || They tried to ___ after the argument. | It's time to ___ with your brother. | We managed to ___ before Christmas. | Let's have dinner and ___. | Can the two leaders ___ after the dispute? || |
 v10_104 || She's been my ___ since we were five. | I told my ___ everything. | They say a dog is man's ___. | My ___ is getting married next month. | He's my ___ and my brother. || |
 v10_105 || He's just an ___, not a real friend. | She's not a close friend, just an ___. | I made his ___ at a conference. | He's an old ___ from the gym. | A casual ___ invited me to the party. || |
+v10_106 || My ___ always leaves dirty dishes in the sink. | I found a ___ online to share the rent. | Her ___ is a medical student. | We split the bills with my ___. | Living with a messy ___ is hard. || roommate |
 v10_107 || My ___ covered for me while I was ill. | She went for a drink with a ___ after work. | I asked a ___ for advice. | My new ___ sits at the desk next to mine. | A ___ of mine recommended this book. || |
 v10_108 || My first boss was a great ___. | Every young doctor needs a ___. | She acted as a ___ to new staff. | He found a ___ through the programme. | My ___ taught me to believe in myself. || |
 v10_109 || Real Madrid's biggest ___ is Barcelona. | The company's biggest ___ cut its prices. | She beat her old ___ in the final. | He sees his brother as a ___. | Apple's main ___ in phones is Samsung. || |
