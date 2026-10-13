@@ -120,6 +120,9 @@ function testCardExtrasAreWellFormed() {
     x.ex.forEach(e => {
       if ((e.match(/___/g) || []).length !== 1) problems.push(`${id}: "${e}" needs exactly one ___`);
       if (/___[a-z]/i.test(e)) problems.push(`${id}: "${e}" glues a suffix to the blank — the answer must fit as-is`);
+      const words = e.replace(/___/g, '').replace(/[.!?"—-]/g, ' ').trim().split(/\s+/).filter(Boolean);
+      if (words.length < 3) problems.push(`${id}: "${e}" is too short to give real context`);
+      if (/\.\.\.\s*[A-Z]/.test(e) || e.includes('=>')) problems.push(`${id}: "${e}" looks like an unfinished draft`);
       if (e.trim() === own) problems.push(`${id}: example repeats the card's own sentence`);
       if (answer.length > 3 && e.toLowerCase().includes(answer)) problems.push(`${id}: "${e}" gives the answer away`);
     });

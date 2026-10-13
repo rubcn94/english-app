@@ -779,7 +779,7 @@ const CARD_EXTRAS = {
    "___, he's guilty.",
    "___, she's the best player in the team.",
    "The DNA proved it ___.",
-   "It's ___ true.",
+   "The witness saw everything, so it's ___ true.",
    "His innocence was proven ___."
   ],
   "us": "Without a doubt"
@@ -999,10 +999,10 @@ const CARD_EXTRAS = {
  },
  "sh10_sleepwalk": {
   "ex": [
-   "Children often ___.",
+   "Children often ___ when they're overtired.",
    "I ___ when I'm stressed.",
    "He used to ___ into the kitchen at night.",
-   "Do you ___?",
+   "We found you in the garden at 3am. Do you ___?",
    "Some people ___ out of the house."
   ]
  },
@@ -1020,8 +1020,8 @@ const CARD_EXTRAS = {
    "We'll ___, thanks.",
    "Don't get up, we'll ___.",
    "We know the way — we can ___.",
-   "Let's ___ quietly.",
-   "We'll ___ — goodbye."
+   "Everyone's asleep. Let's ___ quietly.",
+   "Thanks for dinner — we'll ___ so you can rest."
   ]
  },
  "sh10_pretence": {
@@ -1067,12 +1067,12 @@ const CARD_EXTRAS = {
    "Hurry up, ___ — we're late.",
    "Oh, ___, not again!",
    "___, stop shouting!",
-   "Sit down, ___."
+   "You're making me nervous. Sit down, ___."
   ]
  },
  "sh10_murder-on-the-knees": {
   "ex": [
-   "Gardening is ___.",
+   "All that kneeling — gardening is ___.",
    "These stairs are ___.",
    "It's ___ when you're my age.",
    "Playing football on concrete is ___.",
@@ -1081,7 +1081,7 @@ const CARD_EXTRAS = {
  },
  "sh10_man-to-man": {
   "ex": [
-   "Let's talk ___.",
+   "Forget the lawyers. Let's talk ___.",
    "___, I'm sorry about what happened.",
    "They had a ___ chat.",
    "It was a ___ conversation.",
@@ -1093,7 +1093,7 @@ const CARD_EXTRAS = {
    "Babies are ___ — I don't know anything.",
    "Cooking's ___, not mine.",
    "That's ___, not mine.",
-   "Money is ___.",
+   "I do the cooking; money is ___.",
    "Not ___? Then whose?"
   ]
  },
@@ -1119,8 +1119,8 @@ const CARD_EXTRAS = {
   "ex": [
    "You were right about the weather; ___.",
    "___ — you win this time.",
-   "I ___ gladly.",
-   "Fine, ___.",
+   "You were the better player, and I ___ gladly.",
+   "Fine, ___ — your idea was better.",
    "___, I was wrong."
   ]
  },
@@ -1146,7 +1146,7 @@ const CARD_EXTRAS = {
   "ex": [
    "He's my own ___.",
    "You're ___, not a machine.",
-   "We're mere ___.",
+   "We're mere ___, not superheroes.",
    "Real ___ actors, not computer images.",
    "How can you treat your own ___ like that?"
   ]
@@ -1156,14 +1156,14 @@ const CARD_EXTRAS = {
    "___, I locked the door.",
    "___, the report is done.",
    "The job was done ___.",
-   "___, sir.",
+   "The prisoner is in his cell, ___, sir.",
    "I came early, ___."
   ],
   "us": "As instructed"
  },
  "sh10_abandoned-your-post": {
   "ex": [
-   "You ___?",
+   "You were supposed to guard the door. You ___?",
    "A soldier who ___ would be punished.",
    "The guard ___ to get a drink.",
    "Why have you ___?",
@@ -1266,8 +1266,8 @@ const CARD_EXTRAS = {
    "The bully finally ___.",
    "After years of cheating, he ___.",
    "If you ask me, he ___.",
-   "Honestly, he ___.",
-   "Karma — he ___."
+   "He was rude to everyone for years. Honestly, he ___.",
+   "He stole from everyone, and in the end he ___."
   ],
   "us": "got what he deserved"
  },
@@ -1338,9 +1338,9 @@ const CARD_EXTRAS = {
  "sh10_cloud-your-judgment": {
   "ex": [
    "Don't let anger ___.",
-   "Love can ___.",
-   "Alcohol will ___.",
-   "Fear might ___.",
+   "Don't marry him too fast; love can ___.",
+   "Don't decide tonight — alcohol will ___.",
+   "Stay calm. Fear might ___.",
    "Don't let money ___."
   ],
   "us": "cloud your judgement"
@@ -1359,8 +1359,8 @@ const CARD_EXTRAS = {
    "As a leader, you must ___.",
    "Try to ___ than others.",
    "As a doctor, you should ___.",
-   "Always ___.",
-   "Teachers must ___."
+   "Don't copy the others. Always ___.",
+   "Kids copy everything, so teachers must ___."
   ]
  },
  "sh10_in-a-fit-state": {
@@ -1493,9 +1493,9 @@ const CARD_EXTRAS = {
   "ex": [
    "She wanted to ___.",
    "Let's ___ by changing the law.",
-   "We'll ___.",
+   "We'll change the law and ___.",
    "He swore to ___.",
-   "Help us ___."
+   "Sign the petition and help us ___."
   ]
  },
  "sh10_intimidation": {
@@ -1513,7 +1513,7 @@ const CARD_EXTRAS = {
    "Her fiancé ___ a week before the wedding.",
    "He ___ last year.",
    "He ___ without warning.",
-   "He ___ cruelly."
+   "He ___ cruelly, by letter, on her birthday."
   ],
   "us": "dumped her"
  },
@@ -1521,9 +1521,9 @@ const CARD_EXTRAS = {
   "ex": [
    "His act ___ for a second.",
    "You ___ — I knew it was you.",
-   "That smile ___.",
-   "She ___.",
-   "His lies ___."
+   "You looked innocent, but that smile ___.",
+   "She pretended to be ill, but she ___.",
+   "He told a good story, but his lies ___."
   ]
  },
  "sh10_brute": {
@@ -1634,7 +1634,7 @@ const CARD_EXTRAS = {
    "Will it ever ___?",
    "Things ___ that nobody expects.",
    "It will ___ one day, just as the old woman said.",
-   "Let it ___."
+   "If change must come, let it ___ peacefully."
   ]
  },
  "sh01_ruddy": {
@@ -4792,7 +4792,7 @@ const CARD_EXTRAS = {
  "sh03_i-d-better-be-off": {
   "ex": [
    "It's nearly midnight and I've got work tomorrow — ___.",
-   "Right, ___. Bye!",
+   "Right, the last bus is at ten, so ___.",
    "___, my bus is coming.",
    "___ before it gets dark.",
    "Thanks for dinner, but ___."
@@ -6861,7 +6861,7 @@ const CARD_EXTRAS = {
    "The guards are ___.",
    "I'm ___, don't shoot!",
    "The protesters were ___.",
-   "Approach — he's ___."
+   "You can approach him safely — he's ___."
   ]
  },
  "sh04_i-insist": {
