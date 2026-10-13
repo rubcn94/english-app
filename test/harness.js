@@ -130,7 +130,7 @@ class Harness {
     return { cardId: card.id, wasMulti: false, wasFreeText: false, picked: target.textContent };
   }
 
-  // Rates the just-answered card (SM-2 rating 0/1/3/5) and advances.
+  // Rates the just-answered card (SM-2 quality 0/3/4/5) and advances.
   rate(rating) { this.call('rateCard', rating); }
 
   // Drives a full blocked-study session to completion (theory -> practice,
@@ -152,11 +152,11 @@ class Harness {
       const pick = typeof strategy === 'function' ? strategy(this.run('state.blockQueue[0].id'), answers.length) : (strategy || 'correct');
       const result = this.answerCurrentCard(pick);
       answers.push({ ...result, strategy: pick });
-      // Always rate "Good" (3) — SM-2 rating is orthogonal to whether the
+      // Always rate "Good" (4) — SM-2 rating is orthogonal to whether the
       // typed/picked answer was right (see app.js rateCard commentary);
       // specs that care about SM-2 rating itself test sm2()/rateCard()
       // directly instead of through this driver.
-      this.rate(3);
+      this.rate(4);
     }
     return { steps: guard, answers };
   }

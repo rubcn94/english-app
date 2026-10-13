@@ -44,6 +44,11 @@ function localDateStr(date) {
 }
 
 // ── SM-2 ──────────────────────────────────────────────────────────────────────
+// Ratings use the SM-2 quality scale: 0 = missed (set automatically on a
+// wrong answer), 3 = Hard, 4 = Good, 5 = Easy. Anything below 3 resets the
+// card. (Hard used to be sent as 1 — i.e. treated as a miss even when the
+// answer was right — and Good as 3, which knocked 0.14 off the ease factor
+// on every "Good" and made intervals shrink over time.)
 function sm2(card, rating) {
   let { interval = 1, repetitions = 0, easeFactor = 2.5 } = card || {};
   if (rating < 3) { repetitions = 0; interval = 1; }
@@ -930,8 +935,8 @@ function rateCard(rating) {
       saveProgress(state.progress);
     }
     if (rating === 0) state.sessionStats.again++;
-    else if (rating === 1) state.sessionStats.hard++;
-    else if (rating === 3) state.sessionStats.good++;
+    else if (rating === 3) state.sessionStats.hard++;
+    else if (rating === 4) state.sessionStats.good++;
     else if (rating === 5) state.sessionStats.easy++;
   }
 
@@ -1744,7 +1749,7 @@ function recordLevelTestAnswer(item, correct, userAnswer) {
   // answer is graded exactly like a real review, not a freebie.
   if (item.kind === 'card') {
     const prev = getCardProgress(item.card.id) || {};
-    state.progress[item.card.id] = sm2(prev, correct ? 3 : 0);
+    state.progress[item.card.id] = sm2(prev, correct ? 4 : 0);
     if (correct) { state.known[item.card.id] = true; }
   }
 

@@ -97,14 +97,26 @@ function testDatedCardsGoLastAndShowAmE() {
   const flags = h.run('state.blocks.flat().map(c => isDated(c))');
   const firstDated = flags.indexOf(true);
   assert(firstDated >= 0 && flags.slice(firstDated).every(Boolean), 'new old-fashioned cards should be studied after all the others');
-  const next = h.run(`scheduleCard(CARD_EXTRAS && { id: ${JSON.stringify(first)} }, { interval: 6, repetitions: 2, easeFactor: 2.5 }, 3)`);
+  const next = h.run(`scheduleCard(CARD_EXTRAS && { id: ${JSON.stringify(first)} }, { interval: 6, repetitions: 2, easeFactor: 2.5 }, 4)`);
   assertEqual(next.interval, 30, 'old-fashioned card interval should be doubled (6*2.5*2)');
   h.run(`renderCardMeta(document.getElementById('correction-meta'), { id: ${JSON.stringify(first)} })`);
   const meta = h.document.getElementById('correction-meta').textContent;
   assert(meta.includes('Old-fashioned') && meta.includes('test-us'), `meta line missing info: ${meta}`);
 }
 
+function testHardOnACorrectAnswerDoesNotResetAndGoodKeepsEase() {
+  const h = load();
+  const base = { interval: 6, repetitions: 2, easeFactor: 2.5 };
+  h.ctx.__b = base;
+  const hard = h.run('sm2(__b, 3)');
+  const good = h.run('sm2(__b, 4)');
+  assert(hard.repetitions === 3 && hard.interval > 1, 'Hard after a correct answer must not reset the card');
+  assertEqual(good.easeFactor, 2.5, 'Good should keep the ease factor unchanged');
+  assert(h.run('sm2(__b, 5)').easeFactor > 2.5, 'Easy should raise the ease factor');
+}
+
 module.exports = {
+  testHardOnACorrectAnswerDoesNotResetAndGoodKeepsEase,
   testStudiedNotDueCardsAreNotRequeued,
   testDueCardsComeFirstAndSkipTheory,
   testFullyStudiedSectionFallsBackToFreePracticeWithoutRescheduling,
