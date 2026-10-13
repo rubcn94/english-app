@@ -8582,5 +8582,1489 @@ const CARD_EXTRAS = {
    "She saw ___.",
    "I can't see ___."
   ]
+ },
+ "sh07_bollocks": {
+  "ex": [
+   "___! I've missed the last train.",
+   "Oh, ___ — I left my wallet at home.",
+   "That's a load of ___ and you know it.",
+   "___ to that, I'm not paying.",
+   "He talks complete ___."
+  ],
+  "us": "Crap / Damn it"
+ },
+ "sh07_vindicated": {
+  "ex": [
+   "The scientist was ___ when the results came in.",
+   "I feel ___ — I said it would happen.",
+   "Her decision was ___ by the success of the film.",
+   "After ten years in prison, he was finally ___.",
+   "The coach's tactics were ___."
+  ]
+ },
+ "sh07_dismantle": {
+  "ex": [
+   "It took the police years to ___ the gang.",
+   "We had to ___ the bed to get it through the door.",
+   "The new government wants to ___ the old system.",
+   "Can you help me ___ the tent?",
+   "Engineers will ___ the old bridge."
+  ]
+ },
+ "sh07_wouldn-t-go-amiss": {
+  "ex": [
+   "A cup of tea ___ right now.",
+   "A bit more salt ___.",
+   "An apology ___.",
+   "A holiday ___ after this year.",
+   "A little help ___."
+  ],
+  "us": "wouldn't hurt"
+ },
+ "sh07_wading-in": {
+  "ex": [
+   "Thanks for ___ to help me in that fight.",
+   "She's always ___ with her opinion.",
+   "Everyone started ___ when the argument got loud.",
+   "The government is ___ to fix the crisis.",
+   "Stop ___ where you're not wanted."
+  ],
+  "us": "jumping in"
+ },
+ "sh07_beaten-to-a-pulp": {
+  "ex": [
+   "The poor guy was ___ by the gang.",
+   "If he finds out, I'll be ___.",
+   "Our team got ___ in the final.",
+   "He threatened to have me ___.",
+   "The boxer was ___ in the third round."
+  ]
+ },
+ "sh07_slipping": {
+  "ex": [
+   "My memory is ___.",
+   "Standards are ___ at this restaurant.",
+   "You missed that clue — you're ___.",
+   "Our grades have been ___.",
+   "The team's form is ___."
+  ]
+ },
+ "sh07_let-it-slide": {
+  "ex": [
+   "He was late again, but I'll ___ this time.",
+   "Don't ___ — tell him it's wrong.",
+   "I've been letting... I just ___ and now the house is a mess.",
+   "The teacher decided to ___.",
+   "Sometimes it's best to ___."
+  ]
+ },
+ "sh07_kept-a-weather-eye-on": {
+  "ex": [
+   "I've ___ the markets all week.",
+   "Mum always ___ us at the beach.",
+   "The captain ___ the clouds.",
+   "The police have ___ him since his release.",
+   "We ___ the river during the floods."
+  ],
+  "us": "kept an eye on"
+ },
+ "sh07_moving-on": {
+  "ex": [
+   "I'm ___ — I've got a new job.",
+   "After the divorce, she's ___.",
+   "Right, ___ to the next point.",
+   "It's time we were ___ from this.",
+   "He's ___ to a bigger club."
+  ]
+ },
+ "sh07_live-and-let-live": {
+  "ex": [
+   "___ — what they do is their business.",
+   "My motto is ___.",
+   "___, that's how I see it.",
+   "Why not ___?",
+   "Our village believes in ___."
+  ]
+ },
+ "sh07_drop-by": {
+  "ex": [
+   "I'll ___ after work.",
+   "___ any time you like.",
+   "Can I ___ tomorrow to pick up the books?",
+   "She likes to ___ without warning.",
+   "Why don't you ___ for a coffee?"
+  ],
+  "us": "stop by"
+ },
+ "sh07_endeavouring": {
+  "ex": [
+   "We are ___ to improve our service.",
+   "I'm ___ to finish by Friday.",
+   "They are ___ to find a solution.",
+   "She's ___ to learn Chinese.",
+   "We're ___ to reply to every email."
+  ],
+  "us": "endeavoring"
+ },
+ "sh07_springing-it-on-you": {
+  "ex": [
+   "Sorry for ___ — I know it's short notice.",
+   "I hate ___ like this, but we're moving.",
+   "I didn't mean to be ___.",
+   "Forgive me for ___ at the last minute.",
+   "I'm ___ because I just found out."
+  ]
+ },
+ "sh07_grieve": {
+  "ex": [
+   "Give her time to ___.",
+   "Everyone needs to ___ in their own way.",
+   "We ___ for those we lost.",
+   "It's normal to ___ after a breakup.",
+   "He never had the chance to ___."
+  ]
+ },
+ "sh07_thick": {
+  "ex": [
+   "He's nice, but a bit ___.",
+   "Don't be so ___ — it's obvious!",
+   "I felt really ___ in maths class.",
+   "Am I being ___? I don't get it.",
+   "He's as ___ as two short planks."
+  ],
+  "us": "dumb"
+ },
+ "sh07_tramps": {
+  "ex": [
+   "A few ___ were sleeping in the doorway.",
+   "The ___ in the park know everything that happens.",
+   "He gave his sandwich to one of the ___.",
+   "The old station was full of ___.",
+   "Two ___ were sharing a bottle on the bench."
+  ],
+  "us": "bums / homeless people"
+ },
+ "sh07_let-the-cat-out-of-the-bag": {
+  "ex": [
+   "It was a surprise party, but my brother ___.",
+   "Who ___ about the wedding?",
+   "Don't ___ — it's a secret.",
+   "She almost ___ at dinner.",
+   "He ___ before the announcement."
+  ]
+ },
+ "sh07_waltz-in": {
+  "ex": [
+   "You can't just ___ after two years and expect a welcome!",
+   "He likes to ___ late to every meeting.",
+   "She'll ___ like she owns the place.",
+   "Don't ___ without knocking.",
+   "They ___ and took the best seats."
+  ]
+ },
+ "sh07_talk-him-round": {
+  "ex": [
+   "He's angry now, but I'll ___.",
+   "Do you think you can ___?",
+   "It took hours to ___.",
+   "She managed to ___ in the end.",
+   "Let me try to ___."
+  ],
+  "us": "talk him around"
+ },
+ "sh07_nerve": {
+  "ex": [
+   "He's got some ___, asking for more money!",
+   "What a ___!",
+   "She had the ___ to call me a liar.",
+   "I didn't have the ___ to tell her.",
+   "It takes ___ to do that."
+  ]
+ },
+ "sh07_bristly": {
+  "ex": [
+   "His ___ beard scratched my face.",
+   "The brush is very ___.",
+   "A ___ old man.",
+   "The pig's skin is ___.",
+   "He's got a ___ moustache."
+  ],
+  "us": "scratchy"
+ },
+ "sh07_his-nibs": {
+  "ex": [
+   "___ wants his coffee now.",
+   "Look who's here — ___ himself.",
+   "___ has decided we're working Saturday.",
+   "Make way for ___.",
+   "___ didn't even say thank you."
+  ],
+  "us": "His Majesty / The big shot",
+  "dated": true
+ },
+ "sh07_cesspool": {
+  "ex": [
+   "That office is a ___ of gossip.",
+   "The city was a ___ of crime.",
+   "The internet can be a ___.",
+   "Politics is a ___.",
+   "The old pond had become a ___."
+  ]
+ },
+ "sh07_drifters": {
+  "ex": [
+   "The town attracted ___ and travellers.",
+   "He's one of those ___ who never settle.",
+   "___ moved from job to job.",
+   "The bar was full of ___.",
+   "Police questioned some ___ near the station."
+  ]
+ },
+ "sh07_kennels": {
+  "ex": [
+   "We put the dog in ___ while we're on holiday.",
+   "The ___ are full at Christmas.",
+   "She works at a boarding ___.",
+   "Our dog hates the ___.",
+   "Book the ___ early."
+  ],
+  "us": "dog boarding"
+ },
+ "sh07_sinking-ship": {
+  "ex": [
+   "Investors are leaving like rats from a ___.",
+   "Don't be the last to leave a ___.",
+   "That company is a ___.",
+   "Staff are jumping off the ___.",
+   "He saw the ___ and resigned."
+  ]
+ },
+ "sh07_lonely-hearts": {
+  "ex": [
+   "She put an ad in the ___ column.",
+   "He reads the ___ section every week.",
+   "A ___ club.",
+   "They met through a ___ ad.",
+   "___ ads used to be in every newspaper."
+  ],
+  "us": "personal ads"
+ },
+ "sh07_ghastly": {
+  "ex": [
+   "What a ___ day!",
+   "___ weather, isn't it?",
+   "The food was ___.",
+   "She looked ___ after the flight.",
+   "A ___ mistake."
+  ],
+  "us": "Awful"
+ },
+ "sh07_rest-assured": {
+  "ex": [
+   "___, we'll find your bag.",
+   "___ that your data is safe.",
+   "___, I'll be there.",
+   "___, nobody will know.",
+   "___, it won't happen again."
+  ]
+ },
+ "sh07_contain-myself": {
+  "ex": [
+   "I could hardly ___ when I heard the news.",
+   "I tried to ___, but I laughed.",
+   "I can't ___ — I'm so excited!",
+   "I had to ___ at the funeral.",
+   "I couldn't ___ any longer."
+  ]
+ },
+ "sh07_mawkishly": {
+  "ex": [
+   "The film was ___ sentimental.",
+   "He spoke ___ about his childhood.",
+   "The song is ___ romantic.",
+   "The ending was ___ sweet.",
+   "She writes ___."
+  ]
+ },
+ "sh07_bobble": {
+  "ex": [
+   "His hat had a big red ___ on top.",
+   "The ___ fell off my hat.",
+   "A ___ hat.",
+   "The cat played with the ___.",
+   "She bought a scarf with a ___."
+  ],
+  "us": "pom-pom"
+ },
+ "sh07_plain-as-day": {
+  "ex": [
+   "___ — he's in love with her.",
+   "The answer was ___.",
+   "It's ___ that he's lying.",
+   "___, the sign said no parking.",
+   "It's ___ to me."
+  ],
+  "us": "Clear as day"
+ },
+ "sh07_piles": {
+  "ex": [
+   "He's suffering from ___ after the long drive.",
+   "Sitting all day can give you ___.",
+   "There's a cream for ___.",
+   "He was too embarrassed to mention his ___.",
+   "___ are common in pregnancy."
+  ],
+  "us": "hemorrhoids"
+ },
+ "sh07_swears-off": {
+  "ex": [
+   "Every January he ___ alcohol.",
+   "She ___ men after every breakup.",
+   "He ___ chocolate, then eats a bar.",
+   "My dad ___ fast food once a year.",
+   "She ___ social media for Lent."
+  ]
+ },
+ "sh07_man-and-boy": {
+  "ex": [
+   "He worked on that farm, ___.",
+   "I've lived here ___.",
+   "He's been a fisherman ___.",
+   "I've supported this club ___.",
+   "He served the family ___."
+  ],
+  "us": "all his life",
+  "dated": true
+ },
+ "sh07_corker": {
+  "ex": [
+   "That was a ___ of a goal!",
+   "She's a real ___.",
+   "What a ___ of a story!",
+   "That idea is a ___.",
+   "It was a ___ of a party."
+  ],
+  "us": "doozy / humdinger",
+  "dated": true
+ },
+ "sh07_saucy": {
+  "ex": [
+   "A ___ postcard.",
+   "She gave him a ___ wink.",
+   "The film has some ___ jokes.",
+   "Don't be ___ with me!",
+   "A ___ little dress."
+  ],
+  "us": "naughty / cheeky"
+ },
+ "sh07_baffled": {
+  "ex": [
+   "Scientists are ___ by the discovery.",
+   "I'm completely ___.",
+   "The police are ___.",
+   "She looked ___.",
+   "Doctors were ___ by his recovery."
+  ],
+  "us": "stumped"
+ },
+ "sh07_giving-it-a-go": {
+  "ex": [
+   "I've never surfed, but I'm ___.",
+   "Thanks for ___.",
+   "We're ___ this year.",
+   "She's ___ as a singer.",
+   "Why not try? I'm ___."
+  ],
+  "us": "giving it a shot"
+ },
+ "sh07_shoddy": {
+  "ex": [
+   "The repair was ___.",
+   "___ workmanship.",
+   "It's a ___ piece of journalism.",
+   "The house was built with ___ materials.",
+   "___ service."
+  ]
+ },
+ "sh07_whizzing-through": {
+  "ex": [
+   "I was ___ the files when I found it.",
+   "She's ___ her homework.",
+   "We were ___ the countryside on the train.",
+   "He was ___ the channels.",
+   "I'm ___ the book."
+  ]
+ },
+ "sh07_came-into-some-money": {
+  "ex": [
+   "___ — his aunt died.",
+   "She ___ and bought a house.",
+   "___? New car, new clothes...",
+   "He ___ last year.",
+   "Looks like he ___."
+  ]
+ },
+ "sh07_bought-off": {
+  "ex": [
+   "The witness was ___.",
+   "The judge had been ___.",
+   "They were ___ with promises.",
+   "The guards were ___.",
+   "Somebody ___ the police."
+  ],
+  "us": "Paid off"
+ },
+ "sh07_slipped-up": {
+  "ex": [
+   "He ___ and gave the game away.",
+   "I ___ and sent the email to the wrong person.",
+   "Even experts ___.",
+   "The keeper ___.",
+   "Where did we ___?"
+  ],
+  "us": "messed up"
+ },
+ "sh07_rang-a-bell": {
+  "ex": [
+   "His name ___.",
+   "That song ___.",
+   "The address ___ — I'd been there before.",
+   "Her face ___.",
+   "Something about it ___."
+  ]
+ },
+ "sh07_salted-away": {
+  "ex": [
+   "He's ___ millions in Swiss accounts.",
+   "She ___ some savings for retirement.",
+   "They ___ money for years.",
+   "The money was ___ abroad.",
+   "He'd ___ a fortune."
+  ],
+  "us": "stashed away"
+ },
+ "sh07_tucked-away": {
+  "ex": [
+   "The village is ___ in the hills.",
+   "I've got some money ___.",
+   "The note was ___ in a drawer.",
+   "A little café ___ behind the church.",
+   "She kept the letter ___."
+  ]
+ },
+ "sh07_upper-hand": {
+  "ex": [
+   "The champion had the ___ from the start.",
+   "Never let him get the ___.",
+   "Our team gained the ___.",
+   "She has the ___ in the negotiation.",
+   "They lost the ___."
+  ]
+ },
+ "sh07_window-dressing": {
+  "ex": [
+   "The reforms are just ___.",
+   "That charity work is ___.",
+   "It's all ___ for the voters.",
+   "The new logo is mere ___.",
+   "The cuts were hidden by ___."
+  ]
+ },
+ "sh07_lurid": {
+  "ex": [
+   "___ stories filled the newspapers.",
+   "The book is full of ___ details.",
+   "A ___ orange shirt.",
+   "___ headlines.",
+   "She told us the ___ details."
+  ]
+ },
+ "sh07_perverted-the-course-of-justice": {
+  "ex": [
+   "He ___ by lying to the police.",
+   "The officer ___.",
+   "She ___ by hiding evidence.",
+   "They ___ and went to prison.",
+   "He ___ to protect his son."
+  ],
+  "us": "Obstructed justice"
+ },
+ "sh07_pulled-that-off": {
+  "ex": [
+   "I can't believe you ___!",
+   "How did you ___?",
+   "Nobody thought she'd have ___.",
+   "If we ___, we'll be rich.",
+   "He ___ perfectly."
+  ]
+ },
+ "sh07_had-you": {
+  "ex": [
+   "Ha! I ___ there!",
+   "I totally ___ — your face!",
+   "Got you! I ___ going.",
+   "I ___ completely fooled.",
+   "Admit it, I ___."
+  ],
+  "us": "got you"
+ },
+ "sh07_breathe-a-word": {
+  "ex": [
+   "Don't ___ to anyone.",
+   "If you ___, you're dead.",
+   "I won't ___.",
+   "She promised not to ___.",
+   "Never ___ about this."
+  ]
+ },
+ "sh07_scout-s-honour": {
+  "ex": [
+   "I won't tell. ___.",
+   "___ — I didn't eat it.",
+   "\"Promise?\" \"___.\"",
+   "I'll be there, ___.",
+   "___, I'm telling the truth."
+  ],
+  "us": "Cross my heart"
+ },
+ "sh07_embellished": {
+  "ex": [
+   "His story was a bit ___.",
+   "She ___ the dress with pearls.",
+   "The truth was ___.",
+   "He ___ the facts.",
+   "An ___ version of events."
+  ]
+ },
+ "sh07_let-it-go": {
+  "ex": [
+   "It was ten years ago — ___.",
+   "___, it's not worth it.",
+   "You need to ___.",
+   "Just ___ and move on.",
+   "___, he won't change."
+  ]
+ },
+ "sh07_bring-him-back": {
+  "ex": [
+   "Crying won't ___.",
+   "Nothing can ___.",
+   "We need to ___ to the team.",
+   "Revenge won't ___.",
+   "If only we could ___."
+  ]
+ },
+ "sh07_unprecedented": {
+  "ex": [
+   "We're living in ___ times.",
+   "The storm caused ___ damage.",
+   "An ___ decision.",
+   "It's ___ for a woman to win.",
+   "___ demand for tickets."
+  ]
+ },
+ "sh07_cleared-of-all-suspicion": {
+  "ex": [
+   "The teacher was ___.",
+   "After the DNA test, he was ___.",
+   "She was ___ by the police.",
+   "The driver was ___.",
+   "They were finally ___."
+  ]
+ },
+ "sh07_fell-to-his-death": {
+  "ex": [
+   "The climber ___ from the cliff.",
+   "The worker ___ from scaffolding.",
+   "He ___ from a window.",
+   "The tourist ___.",
+   "A man ___ from the bridge."
+  ]
+ },
+ "sh07_absent-friends": {
+  "ex": [
+   "Raise your glasses: ___.",
+   "To ___!",
+   "Let's drink to ___.",
+   "___ — we miss them.",
+   "Here's to ___."
+  ]
+ },
+ "sh07_penny-for-the-guy": {
+  "ex": [
+   "Kids used to ask \"___?\" in November.",
+   "\"___, mister?\"",
+   "They sat with their dummy asking for a ___.",
+   "Nobody says \"___\" anymore.",
+   "A ___ was part of Bonfire Night."
+  ],
+  "dated": true
+ },
+ "sh07_colossal": {
+  "ex": [
+   "___ waste of money!",
+   "A ___ statue.",
+   "___ mistake.",
+   "The task was ___.",
+   "___ success."
+  ],
+  "us": "Massive"
+ },
+ "sh07_intervene": {
+  "ex": [
+   "The police had to ___.",
+   "Don't ___ in their argument.",
+   "The UN may ___.",
+   "The teacher had to ___.",
+   "Why didn't anyone ___?"
+  ],
+  "us": "step in"
+ },
+ "sh07_giving-myself-away": {
+  "ex": [
+   "I couldn't laugh without ___.",
+   "I tried not to blush and risk ___.",
+   "I was scared of ___.",
+   "I kept quiet to avoid ___.",
+   "I'm terrible at not ___."
+  ]
+ },
+ "sh07_going-undercover": {
+  "ex": [
+   "The journalist is ___ in a factory.",
+   "Police officers ___ for months.",
+   "She's ___ as a nurse.",
+   "He loved ___.",
+   "Before ___, she changed her name."
+  ]
+ },
+ "sh07_comes-to-us-all": {
+  "ex": [
+   "Old age ___.",
+   "Grey hair ___.",
+   "Death ___.",
+   "___ in the end.",
+   "Forgetfulness ___ eventually."
+  ]
+ },
+ "sh07_ages-you": {
+  "ex": [
+   "Stress ___.",
+   "Smoking ___.",
+   "That beard ___.",
+   "Having kids ___.",
+   "The sun really ___."
+  ],
+  "us": "Makes you look older"
+ },
+ "sh07_pick-up-the-phone": {
+  "ex": [
+   "Why didn't you ___ and call?",
+   "I can't ___ — I'm driving.",
+   "Just ___ and apologise.",
+   "She won't ___.",
+   "___, it's ringing!"
+  ]
+ },
+ "sh07_meet-up": {
+  "ex": [
+   "Let's ___ for lunch.",
+   "We ___ every year.",
+   "Do you want to ___ later?",
+   "We should ___ soon.",
+   "They ___ in London."
+  ],
+  "us": "get together"
+ },
+ "sh07_ancient": {
+  "ex": [
+   "My laptop is ___.",
+   "___ Greece.",
+   "This bread is ___!",
+   "He looks ___ in that photo.",
+   "___ ruins."
+  ]
+ },
+ "sh07_letting-it-out": {
+  "ex": [
+   "We're ___ to students.",
+   "She's ___ for the summer.",
+   "I'm thinking about ___.",
+   "Are you ___ furnished?",
+   "They're ___ through an agency."
+  ],
+  "us": "renting it out"
+ },
+ "sh07_got-on-with-his-life": {
+  "ex": [
+   "After the divorce, he ___.",
+   "He just ___ like nothing happened.",
+   "He ___ while I waited.",
+   "Eventually, he ___.",
+   "He's ___ and remarried."
+  ],
+  "us": "moved on"
+ },
+ "sh07_cannot-possibly-go-wrong": {
+  "ex": [
+   "With this recipe you ___.",
+   "Buy any of them — you ___.",
+   "Follow the map and you ___.",
+   "Choose either — you ___.",
+   "With her as captain, we ___."
+  ],
+  "us": "can't go wrong"
+ },
+ "sh07_see-your-way-to": {
+  "ex": [
+   "Could you ___ lending me £10?",
+   "If you could ___ helping us...",
+   "Can you ___ giving us a discount?",
+   "Could you ___ letting me leave early?",
+   "Might you ___ a small donation?"
+  ]
+ },
+ "sh07_to-your-liking": {
+  "ex": [
+   "I hope the room is ___.",
+   "Is the steak ___?",
+   "Is everything ___, sir?",
+   "The music wasn't ___.",
+   "Is the temperature ___?"
+  ]
+ },
+ "sh07_in-my-defence": {
+  "ex": [
+   "___, nobody told me.",
+   "___, it was dark.",
+   "___, I was very tired.",
+   "Well, ___, the instructions were wrong.",
+   "___, I did apologise."
+  ]
+ },
+ "sh07_rub-off": {
+  "ex": [
+   "Hopefully her good habits will ___ on you.",
+   "Will this stain ___?",
+   "His confidence started to ___ on me.",
+   "The paint won't ___.",
+   "Let some of his luck ___ on you."
+  ]
+ },
+ "sh07_hurling-myself": {
+  "ex": [
+   "I felt like ___ into the sea.",
+   "I'm ___ into my new job.",
+   "I risked ___ at the goalkeeper.",
+   "I remember ___ at the door.",
+   "I'm ___ into the project."
+  ],
+  "us": "throwing myself"
+ },
+ "sh07_if-at-all-possible": {
+  "ex": [
+   "I'd like to finish today, ___.",
+   "Please arrive early, ___.",
+   "Avoid the motorway ___.",
+   "Call me back ___.",
+   "We want to keep the house, ___."
+  ]
+ },
+ "sh07_confidant": {
+  "ex": [
+   "She was my closest ___.",
+   "The king's ___.",
+   "He became her ___.",
+   "Every leader needs a ___.",
+   "A trusted ___."
+  ]
+ },
+ "sh07_elaborate": {
+  "ex": [
+   "An ___ wedding.",
+   "It was an ___ plan.",
+   "Can you ___ on that?",
+   "___ costumes.",
+   "An ___ lie."
+  ]
+ },
+ "sh07_at-most": {
+  "ex": [
+   "It'll take ten minutes ___.",
+   "We can invite twenty people ___.",
+   "___, it's worth £50.",
+   "I sleep five hours ___.",
+   "Two weeks ___."
+  ]
+ },
+ "sh07_overreacting": {
+  "ex": [
+   "\"I'm so angry!\" \"You're ___.\"",
+   "___ again, as usual.",
+   "Am I ___?",
+   "Stop ___, it's just a scratch.",
+   "___ won't help."
+  ]
+ },
+ "sh07_large-as-bloody-life": {
+  "ex": [
+   "And there he was, ___, back from the dead!",
+   "She walked in ___.",
+   "He turned up at my door ___.",
+   "There she was, ___, at the party.",
+   "He came back ___."
+  ]
+ },
+ "sh07_duty-bound": {
+  "ex": [
+   "I'm ___ to report this.",
+   "Doctors are ___ to keep secrets.",
+   "We're ___ to help.",
+   "I feel ___ to tell you.",
+   "Police are ___ to investigate."
+  ]
+ },
+ "sh07_out-of-your-mind": {
+  "ex": [
+   "Are you ___? It's freezing!",
+   "She's ___ with worry.",
+   "You must be ___.",
+   "He went ___.",
+   "I was bored ___."
+  ]
+ },
+ "sh07_plausible": {
+  "ex": [
+   "His excuse sounds ___.",
+   "A ___ explanation.",
+   "It's ___ that she forgot.",
+   "Not a very ___ story.",
+   "The theory is ___."
+  ]
+ },
+ "sh07_like-minded": {
+  "ex": [
+   "She met ___ people at the club.",
+   "A group of ___ friends.",
+   "___ individuals.",
+   "We're ___.",
+   "It's good to talk to ___ people."
+  ]
+ },
+ "sh07_shaving-it-off": {
+  "ex": [
+   "Your beard? Are you ___?",
+   "He's ___ for charity.",
+   "I'm ___ before the interview.",
+   "She's ___ — her hair, I mean.",
+   "Why are you ___?"
+  ]
+ },
+ "sh07_something-s-up": {
+  "ex": [
+   "I can tell ___ — what's wrong?",
+   "___ with the car.",
+   "I know ___.",
+   "___, he's very quiet.",
+   "He knew ___."
+  ]
+ },
+ "sh07_solid-information": {
+  "ex": [
+   "We have ___ about the attack.",
+   "Do you have any ___?",
+   "That's not ___, it's a rumour.",
+   "___ is hard to find.",
+   "We need ___ before we act."
+  ]
+ },
+ "sh07_assurance": {
+  "ex": [
+   "I want your ___ that it's safe.",
+   "You have my ___.",
+   "Life ___.",
+   "They gave us every ___.",
+   "Quality ___."
+  ]
+ },
+ "sh07_how-very-telling": {
+  "ex": [
+   "He changed the subject. ___.",
+   "She didn't answer. ___.",
+   "___ — you're blushing.",
+   "He left early. ___.",
+   "___ that you said that."
+  ]
+ },
+ "sh07_that-takes-me-back": {
+  "ex": [
+   "___ to my schooldays!",
+   "This song — ___.",
+   "___. I haven't seen one of these in years!",
+   "Oh, ___.",
+   "___ thirty years."
+  ]
+ },
+ "sh07_go-in-for": {
+  "ex": [
+   "I don't really ___ sports.",
+   "Do you ___ that kind of thing?",
+   "She doesn't ___ gossip.",
+   "They ___ big weddings.",
+   "He doesn't ___ modern art."
+  ]
+ },
+ "sh07_change-the-subject": {
+  "ex": [
+   "___ — this is boring.",
+   "Don't ___!",
+   "Let's ___.",
+   "He always tries to ___.",
+   "___, please."
+  ]
+ },
+ "sh07_seemingly": {
+  "ex": [
+   "A ___ endless list.",
+   "___ simple question.",
+   "The road is ___ empty.",
+   "___ innocent.",
+   "A ___ perfect life."
+  ]
+ },
+ "sh07_speaking-of-which": {
+  "ex": [
+   "I need coffee. ___, where's the kitchen?",
+   "___, have you paid the rent?",
+   "___, did you call Mum?",
+   "___ — here he comes!",
+   "___, I'm hungry."
+  ]
+ },
+ "sh07_creature-of-habit": {
+  "ex": [
+   "I'm a ___ — same breakfast every day.",
+   "He's such a ___.",
+   "Every cat is a ___.",
+   "She's a ___.",
+   "Being a ___ is comforting."
+  ]
+ },
+ "sh07_out-of-condition": {
+  "ex": [
+   "I'm so ___ — I can't run.",
+   "He's ___.",
+   "After winter, I'm ___.",
+   "Players were ___.",
+   "She's ___ since the injury."
+  ],
+  "us": "out of shape"
+ },
+ "sh07_exceeds": {
+  "ex": [
+   "The cost ___ our budget.",
+   "Demand ___ supply.",
+   "Her success ___ all expectations.",
+   "The speed ___ the limit.",
+   "The bill ___ £1,000."
+  ]
+ },
+ "sh07_crying-need": {
+  "ex": [
+   "There's a ___ for more nurses.",
+   "A ___ for change.",
+   "There's a ___ for housing.",
+   "A ___ for teachers.",
+   "We have a ___ for space."
+  ]
+ },
+ "sh07_nervous-disposition": {
+  "ex": [
+   "Not suitable for people of a ___.",
+   "He's of a ___.",
+   "A woman of ___.",
+   "Those of a ___ should look away.",
+   "His ___ made him jumpy."
+  ]
+ },
+ "sh07_elementary": {
+  "ex": [
+   "___, my dear Watson.",
+   "___ maths.",
+   "It's ___ — even a child could do it.",
+   "\"How did you know?\" \"___.\"",
+   "___ school."
+  ]
+ },
+ "sh07_in-the-habit-of": {
+  "ex": [
+   "He's ___ going to bed late.",
+   "I'm not ___ lying.",
+   "She's ___ calling me at night.",
+   "We're ___ eating late.",
+   "Get ___ saving."
+  ]
+ },
+ "sh07_made-his-position-quite-clear": {
+  "ex": [
+   "The boss ___: no overtime.",
+   "He ___ — he's not coming.",
+   "Dad ___ about the car.",
+   "He ___ in the meeting.",
+   "The minister ___."
+  ]
+ },
+ "sh07_ashamed-of": {
+  "ex": [
+   "I'm ___ my behaviour.",
+   "Don't be ___ your accent.",
+   "He's ___ himself.",
+   "She was ___ her old clothes.",
+   "Nothing to be ___."
+  ]
+ },
+ "sh07_posing-as": {
+  "ex": [
+   "He was ___ a doctor.",
+   "A man ___ a policeman.",
+   "She got in by ___ a journalist.",
+   "Hackers ___ the bank.",
+   "Thieves ___ workmen."
+  ]
+ },
+ "sh07_gp": {
+  "ex": [
+   "Book an appointment with your ___.",
+   "My ___ referred me to a specialist.",
+   "The ___ surgery.",
+   "See your ___ if it continues.",
+   "Our ___ is very kind."
+  ],
+  "us": "primary care doctor"
+ },
+ "sh07_torment": {
+  "ex": [
+   "Don't ___ your little brother.",
+   "The ___ of waiting.",
+   "The memories ___ him.",
+   "Mental ___.",
+   "Why do you ___ me?"
+  ]
+ },
+ "sh07_be-my-guest": {
+  "ex": [
+   "\"Can I use your phone?\" \"___.\"",
+   "\"Mind if I sit here?\" \"___.\"",
+   "___ — help yourself.",
+   "You want to try? ___.",
+   "___, go ahead."
+  ]
+ },
+ "sh07_insult-your-intelligence": {
+  "ex": [
+   "I won't ___ by explaining.",
+   "Don't ___.",
+   "I'm not trying to ___.",
+   "The advert seems to ___.",
+   "This film will ___."
+  ]
+ },
+ "sh07_sold-off": {
+  "ex": [
+   "The land was ___ cheaply.",
+   "The company was ___.",
+   "They ___ the old furniture.",
+   "Public assets were ___.",
+   "Everything was ___ at a discount."
+  ]
+ },
+ "sh07_facile": {
+  "ex": [
+   "___ answer.",
+   "A ___ argument.",
+   "___ — too simple.",
+   "His ___ comments annoyed me.",
+   "A ___ solution."
+  ],
+  "us": "Simplistic"
+ },
+ "sh07_mind-the-gap": {
+  "ex": [
+   "\"___,\" said the voice on the Tube.",
+   "___ between the train and the platform.",
+   "___ when you get off.",
+   "Please ___.",
+   "The famous \"___\" announcement."
+  ],
+  "us": "Watch the gap"
+ },
+ "sh07_hanging-onto-it": {
+  "ex": [
+   "Thanks for ___ for me.",
+   "I'm ___ for now.",
+   "Are you still ___?",
+   "She's ___ for sentimental reasons.",
+   "Keep ___."
+  ],
+  "us": "holding onto it"
+ },
+ "sh07_footage": {
+  "ex": [
+   "CCTV ___ shows the robbery.",
+   "Old ___ of the war.",
+   "News ___.",
+   "The ___ was deleted.",
+   "We watched the ___."
+  ]
+ },
+ "sh07_put-up-some-shelves": {
+  "ex": [
+   "I need to ___ in the kitchen.",
+   "He came to ___.",
+   "Can you ___?",
+   "She learned to ___.",
+   "We'll ___ this weekend."
+  ]
+ },
+ "sh07_fall-for": {
+  "ex": [
+   "Don't ___ his tricks.",
+   "I always ___ the wrong guy.",
+   "She'll ___ you.",
+   "Many people ___ scams.",
+   "I won't ___ that again."
+  ]
+ },
+ "sh07_down-the-back-of-the-sofa": {
+  "ex": [
+   "I found coins ___.",
+   "Have you looked ___?",
+   "The remote was ___.",
+   "Keys always end up ___.",
+   "My phone fell ___."
+  ],
+  "us": "between the couch cushions"
+ },
+ "sh07_small-change": {
+  "ex": [
+   "Have you got any ___ for the bus?",
+   "Keep the ___.",
+   "It's ___ to him.",
+   "Pockets full of ___.",
+   "___ for the parking meter."
+  ]
+ },
+ "sh07_blooming-things": {
+  "ex": [
+   "___ — they never work!",
+   "These ___ keep breaking.",
+   "___, I hate them.",
+   "___ — where are they?",
+   "Oh, these ___!"
+  ],
+  "us": "Darn things",
+  "dated": true
+ },
+ "sh07_give-us-a-ring": {
+  "ex": [
+   "___ when you arrive.",
+   "___ sometime.",
+   "___ if you need anything.",
+   "Don't forget to ___.",
+   "___ later."
+  ],
+  "us": "give me a call"
+ },
+ "sh07_thinking-the-worst-of-you": {
+  "ex": [
+   "Everyone was ___.",
+   "I'm sorry for ___.",
+   "Stop ___ — he's innocent.",
+   "They kept ___.",
+   "I hate ___."
+  ]
+ },
+ "sh07_talk-me-into": {
+  "ex": [
+   "Don't try to ___ it.",
+   "She managed to ___ going.",
+   "He'll ___ anything.",
+   "You won't ___ that.",
+   "Can you ___ coming?"
+  ]
+ },
+ "sh07_a-cross-i-have-to-bear": {
+  "ex": [
+   "My mother-in-law is ___.",
+   "Noisy neighbours — ___.",
+   "It's ___.",
+   "Bad knees are ___.",
+   "My brother is ___."
+  ]
+ },
+ "sh07_hide-and-seek": {
+  "ex": [
+   "The kids are playing ___.",
+   "Let's play ___.",
+   "A game of ___.",
+   "___ in the garden.",
+   "She's great at ___."
+  ]
+ },
+ "sh07_clean-shaven": {
+  "ex": [
+   "He's ___ now.",
+   "A tall, ___ man.",
+   "I prefer him ___.",
+   "Soldiers must be ___.",
+   "He came back ___."
+  ]
+ },
+ "sh07_nebulous": {
+  "ex": [
+   "A ___ idea.",
+   "The plan is ___.",
+   "___ concepts.",
+   "His answer was ___.",
+   "The rules are ___."
+  ],
+  "us": "vague"
+ },
+ "sh07_low-lifes": {
+  "ex": [
+   "The bar was full of ___.",
+   "Don't hang out with ___.",
+   "A bunch of ___.",
+   "Those ___ stole my bike.",
+   "Drug dealers and ___."
+  ],
+  "us": "lowlifes"
+ },
+ "sh07_pillar-of-the-establishment": {
+  "ex": [
+   "He's a ___ — a judge and a lord.",
+   "___ for years.",
+   "She's a ___.",
+   "The bank was a ___.",
+   "A ___ until the scandal."
+  ]
+ },
+ "sh07_restless": {
+  "ex": [
+   "The kids are ___.",
+   "I'm feeling ___.",
+   "A ___ night.",
+   "The crowd grew ___.",
+   "___ legs."
+  ]
+ },
+ "sh07_deception": {
+  "ex": [
+   "A web of ___.",
+   "Lies and ___.",
+   "___ is part of war.",
+   "The ___ worked.",
+   "Magic is all about ___."
+  ]
+ },
+ "sh07_diverted": {
+  "ex": [
+   "The flight was ___ to Manchester.",
+   "Traffic was ___.",
+   "Money was ___ to the project.",
+   "Water was ___.",
+   "His attention was ___."
+  ]
+ },
+ "sh07_too-close-to-call": {
+  "ex": [
+   "The election is ___.",
+   "The race was ___.",
+   "Polls say it's ___.",
+   "The match is ___.",
+   "___ at this point."
+  ]
+ },
+ "sh07_evacuate": {
+  "ex": [
+   "Police had to ___ the building.",
+   "We had to ___.",
+   "___ the area!",
+   "They had to ___ the town.",
+   "Residents were told to ___."
+  ]
+ },
+ "sh07_get-in-the-way": {
+  "ex": [
+   "Don't let work ___ of family.",
+   "Kids ___ in the kitchen.",
+   "Don't ___!",
+   "Feelings ___.",
+   "The furniture will ___."
+  ]
+ },
+ "sh07_that-s-a-first": {
+  "ex": [
+   "He paid for dinner? ___!",
+   "You're early — ___.",
+   "___: a thank-you.",
+   "___ for him.",
+   "Well, ___."
+  ]
+ },
+ "sh07_bomb-disposal": {
+  "ex": [
+   "___ experts arrived.",
+   "Call ___!",
+   "A ___ unit.",
+   "___ teams worked all night.",
+   "He works in ___."
+  ]
+ },
+ "sh07_be-careful-what-you-wish-for": {
+  "ex": [
+   "You wanted fame? ___.",
+   "___ — it might come true.",
+   "Rich? ___.",
+   "You wanted a promotion? ___.",
+   "___."
+  ]
+ },
+ "sh07_came-up-with": {
+  "ex": [
+   "She ___ a great idea.",
+   "Who ___ that name?",
+   "We ___ a plan.",
+   "He ___ an excuse.",
+   "They ___ the money."
+  ]
+ },
+ "sh07_set-the-wheels-in-motion": {
+  "ex": [
+   "I've ___ for the sale.",
+   "Let's ___.",
+   "That call ___.",
+   "She ___ for the divorce.",
+   "We've already ___."
+  ]
+ },
+ "sh07_paramount": {
+  "ex": [
+   "Safety is ___.",
+   "Your health is ___.",
+   "Speed is ___.",
+   "Secrecy was ___.",
+   "Trust is ___."
+  ]
+ },
+ "sh07_out-of-action": {
+  "ex": [
+   "My car is ___.",
+   "He's ___ with a broken leg.",
+   "The lift is ___.",
+   "Three players are ___.",
+   "I'm ___ for a week."
+  ],
+  "us": "out of commission"
+ },
+ "sh07_every-eventuality": {
+  "ex": [
+   "We've planned for ___.",
+   "Be ready for ___.",
+   "It covers ___.",
+   "Insure against ___.",
+   "Prepared for ___."
+  ]
+ },
+ "sh07_everyone-s-a-critic": {
+  "ex": [
+   "I didn't like the cake. — Oh, ___.",
+   "___ these days.",
+   "Well, ___.",
+   "Online, ___.",
+   "___ in this family."
+  ]
+ },
+ "sh07_intriguing": {
+  "ex": [
+   "An ___ idea.",
+   "That's ___.",
+   "An ___ mystery.",
+   "The film has an ___ plot.",
+   "How ___!"
+  ]
+ },
+ "sh07_wasted-police-time": {
+  "ex": [
+   "Fake calls have ___.",
+   "He was charged because he ___.",
+   "You've ___.",
+   "They ___ with a hoax.",
+   "Prank callers ___."
+  ]
+ },
+ "sh07_live-with-myself": {
+  "ex": [
+   "I couldn't ___ if I lied.",
+   "How can I ___?",
+   "I'd never ___.",
+   "I have to ___.",
+   "I couldn't ___ after that."
+  ]
+ },
+ "sh07_never-knew-you-cared": {
+  "ex": [
+   "Flowers? I ___!",
+   "You remembered? I ___.",
+   "I ___ so much.",
+   "Aw, I ___.",
+   "You worried about me? I ___."
+  ]
+ },
+ "sh07_take-over": {
+  "ex": [
+   "Can you ___ while I rest?",
+   "She'll ___ the company.",
+   "Robots will ___.",
+   "Let me ___ the driving.",
+   "Who will ___?"
+  ]
+ },
+ "sh07_interval": {
+  "ex": [
+   "Ice cream in the ___.",
+   "We left at the ___.",
+   "A 20-minute ___.",
+   "Drinks at the ___.",
+   "The ___ was too short."
+  ],
+  "us": "intermission"
+ },
+ "sh07_set-a-date": {
+  "ex": [
+   "Have you ___ for the wedding?",
+   "Let's ___.",
+   "They haven't ___ yet.",
+   "We need to ___.",
+   "___ for the meeting."
+  ]
+ },
+ "sh07_not-really-my-thing": {
+  "ex": [
+   "Football is ___.",
+   "Opera's ___.",
+   "Dancing is ___.",
+   "Camping is ___.",
+   "Horror films are ___."
+  ]
+ },
+ "sh07_indestructible": {
+  "ex": [
+   "These boots are ___.",
+   "He thinks he's ___.",
+   "An ___ phone.",
+   "Nothing's ___.",
+   "Plastic is almost ___."
+  ]
  }
 };
