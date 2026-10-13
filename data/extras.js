@@ -7028,7 +7028,7 @@ const CARD_EXTRAS = {
  "sh06_boffin": {
   "ex": [
    "My brother's a computer ___.",
-   "___s at the university have found a new planet.",
+   "A ___ at the university has found a new planet.",
    "He's a real science ___.",
    "The ___ in the lab coat explained it all.",
    "Ask the IT ___."
@@ -7970,7 +7970,7 @@ const CARD_EXTRAS = {
  "sh06_i-m-sensing-a-pattern": {
   "ex": [
    "Late again? ___.",
-   "___ here.",
+   "I think ___ in your exes.",
    "Third ex who cheated? ___.",
    "___ — you always blame others.",
    "Hmm, ___."
@@ -8234,7 +8234,7 @@ const CARD_EXTRAS = {
    "A pink ___.",
    "Pack a ___.",
    "My granny's ___.",
-   "I'm in my ___."
+   "She answered the door in her ___."
   ],
   "us": "nightgown"
  },

@@ -2,7 +2,7 @@
 ordeal || The hostages described their ___ to reporters. | Moving house was a real ___. | After a six-hour ___ at the airport, we finally left. | The trial was a terrible ___ for the family. | She survived the ___ of being lost at sea. || | 
 chipped in || We all ___ for her birthday present. | Everyone ___ five pounds. | The whole office ___ to buy flowers. | My parents ___ for the car. | Friends ___ to pay for the funeral. || | 
 get it over with || I hate the dentist, but let's ___. | Just tell him the truth and ___. | Rip the plaster off quickly and ___. | I'd rather do the exam today and ___. | Make the call and ___. || | 
-Boffin || My brother's a computer ___. | ___s at the university have found a new planet. | He's a real science ___. | The ___ in the lab coat explained it all. | Ask the IT ___. || Nerd / Egghead | dated
+Boffin || My brother's a computer ___. | A ___ at the university has found a new planet. | He's a real science ___. | The ___ in the lab coat explained it all. | Ask the IT ___. || Nerd / Egghead | dated
 keep a low profile || After the scandal, he decided to ___. | Celebrities sometimes ___ for months. | ___ until things calm down. | The spy was told to ___. | She's trying to ___ at work. || lay low | 
 Pressing || ___ business, I'm afraid — I have to go. | Is it ___? Or can it wait? | There are more ___ problems right now. | ___ matters kept him in London. | Anything ___ in the post? || Urgent | 
 wide berth || I give that dog a ___. | Drivers should give cyclists a ___. | Give him a ___ when he's angry. | We gave the drunk guy a ___. | I'd give that restaurant a ___. || | 
@@ -103,7 +103,7 @@ Would you happen to know || ___ the time? | ___ where the station is? | ___ his 
 No takers || I offered free cake. ___. | Anyone? ___? | The job's open, but ___. | ___ for the last slice? | I asked for volunteers. ___. || | 
 Caught my eye || The red dress ___. | One headline ___. | ___ in the window. | Something ___. | The poster ___. || | 
 exposé || The newspaper published an ___ on the scandal. | A TV ___. | Her ___ ended his career. | An ___ of corruption. | They're preparing an ___. || | 
-I'm sensing a pattern || Late again? ___. | ___ here. | Third ex who cheated? ___. | ___ — you always blame others. | Hmm, ___. || | 
+I'm sensing a pattern || Late again? ___. | I think ___ in your exes. | Third ex who cheated? ___. | ___ — you always blame others. | Hmm, ___. || | 
 common denominator || The ___ is money. | What's the ___? | You're the ___ in all these fights. | The lowest ___. | Find the ___. || | 
 watch out for || ___ cars when you cross. | ___ him — he's a liar. | ___ pickpockets. | Can you ___ my kids? | ___ ice on the road. || | 
 If it's not too much trouble || ___, could you close the window? | ___, I'd like a glass of water. | ___, can you help me? | Call me back, ___. | ___, could I park here? || | 
@@ -131,7 +131,7 @@ No charge || ___ for children under five. | ___ — it's on me. | ___ for delive
 Look out || ___, a car! | ___, it's falling! | ___! Behind you! | ___ for the dog. | ___, there's ice. || Watch out | 
 closing in || The police are ___ on the suspect. | Night was ___. | The enemy is ___. | I feel the walls ___. | The storm is ___. || | 
 eloquent || An ___ speaker. | Her silence was ___. | He gave an ___ speech. | An ___ defence. | She writes ___ letters. || | 
-nightie || She came down in her ___. | A pink ___. | Pack a ___. | My granny's ___. | I'm in my ___. || nightgown | 
+nightie || She came down in her ___. | A pink ___. | Pack a ___. | My granny's ___. | She answered the door in her ___. || nightgown | 
 warrant || The police have a search ___. | An arrest ___. | Do you have a ___? | They issued a ___. | Without a ___, you can't come in. || | 
 Standard procedure || ___ — we search everyone. | It's ___. | ___ at the airport. | ___ is to wait. | Follow ___. || | 
 fraud || He was arrested for ___. | Tax ___. | She's a ___. | The company committed ___. | A ___ investigation. || | 
