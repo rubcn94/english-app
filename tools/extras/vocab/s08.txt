@@ -107,7 +107,7 @@ v08_105 || A ___ stung me on the arm. | The ___ was collecting pollen. | She's a
 v08_106 || A ___ came to our picnic. | The ___ stung my neck. | A ___ has yellow and black stripes. | There's a ___ nest under the roof. | Don't swat the ___ — it gets angry. || |
 v08_107 || A ___ landed on the flower. | The caterpillar turned into a ___. | A beautiful blue ___ landed on my hand. | The ___ opened its wings and flew away. | She has a ___ tattoo. || |
 v08_108 || A ___ flew round the lamp. | A ___ ate holes in my jumper. | The ___ came out at night. | At night, a ___ is attracted to light. | A big brown ___ on the curtain. || |
-v08_109 || A blue ___ hovered over the pond. | The ___ has four shiny wings. | A ___ is much bigger than a fly. | The kids tried to catch a ___ by the river. | A ___ eats mosquitoes. || |
+v08_109 || A blue ___ hovered over the pond. | The ___ has four shiny wings. | A ___ is much bigger than a fly. | The kids tried to catch a ___ by the river. | A hungry ___ eats mosquitoes over the water. || |
 v08_110 || An ___ can carry fifty times its own weight. | There's an ___ nest under the patio. | An ___ crawled across the picnic blanket. | Each ___ in the colony has a job. | Watch out — a red ___ bites! || |
 v08_111 || A ___ is spinning a web in the corner. | My sister is scared of every ___. | A ___ has eight legs. | The ___ caught a fly in its web. | A big hairy ___ in the bath! || |
 v08_112 || A ___ bit me all over my legs. | The ___ kept buzzing in my ear. | Malaria is spread by the ___. | Use a net to keep every ___ out. | A ___ bite really itches. || |
