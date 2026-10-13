@@ -76,7 +76,7 @@ v26_074 || We sit in the ___ to read. | The ___ gives a great view. | Victorian 
 v26_075 || The ___ fills the attic with light. | Rain drummed on the ___ all night. | Open the ___ to let some air in. | We installed a ___ above the stairs. | You can see the stars through the ___. || |
 v26_076 || We have breakfast on the ___. | The flat has a ___ with a sea view. | Romeo stood below the ___. | Don't lean over the ___. | The ___ is full of plants. || |
 v26_077 || We had dinner on the ___. | The café has a ___. | The ___ overlooks the sea. | The roof ___ has a pool. | The ___ was sunny all day. || |
-v26_078 || The ___ of the cathedral is amazing. | They cleaned the stone ___ of the museum. | The building has a Gothic ___. | The old ___ hides a modern interior. | His friendly manner was just a ___. || façade |
+v26_078 || The ___ of the cathedral is amazing. | They cleaned the stone ___ of the museum. | The building has a Gothic ___. | The old ___ hides a modern interior. | His friendly manner was just a ___. || |
 v26_079 || The architect drew the front ___ of the house. | The ___ shows every window and door. | Check the side ___ for the new extension. | Each ___ shows a different face of the building. | The rear ___ is very plain. || |
 v26_080 || Look at the ___ before you buy the flat. | The ___ shows three bedrooms and a study. | The ___ is on the estate agent's website. | According to the ___, the kitchen is very small. | The agent sent us the ___ by email. || |
 v26_081 || The ___ shows every floor of the building. | Draw a ___ of the house through the stairs. | The ___ reveals the basement and the loft. | A ___ is useful for engineers. | The ___ shows how thick the walls are. || |
