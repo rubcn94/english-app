@@ -1,0 +1,78 @@
+# 14 · Dinero y Banca
+v14_001 || I opened a ___ when I started working. | Your salary will go into your ___. | You need a passport to open a ___. | Do you have a ___ in Spain? | My son got his first ___ at sixteen. || |
+v14_002 || My salary goes into my ___. | I pay all my bills from my ___. | A ___ usually pays almost no interest. | I have a ___ and a savings account. | The bank charges a fee for this ___. || |
+v14_003 || I put 100 euros a month into my ___. | My ___ pays three per cent interest. | Don't touch the money in the ___. | She opened a ___ for her daughter. | The ___ is for our holiday. || |
+v14_004 || My wife and I have a ___ for bills. | They opened a ___ when they moved in together. | Both names are on the ___. | We pay the rent from our ___. | After the divorce, they closed the ___. || |
+v14_005 || Check your ___ before you go shopping. | My ___ is lower than I thought. | The app shows your ___ in real time. | I paid off the ___ on my credit card. | What's the ___ on this account? || |
+v14_006 || I'm using my ___ until payday. | The bank charges interest on an ___. | She has a 500-euro ___ limit. | Students often get a free ___. | We need to pay off the ___ first. || |
+v14_007 || The bank raised the ___ again. | The ___ on this loan is very high. | A low ___ helps people buy houses. | The ___ is fixed for five years. | What's the ___ on your mortgage? || |
+v14_008 || I took out a ___ to buy a car. | The bank refused his ___. | She's paying back a student ___. | The ___ must be repaid in two years. | Can you give me a small ___ until Friday? || |
+v14_009 || We pay our ___ every month. | They got a 25-year ___. | The ___ is our biggest expense. | It's hard to get a ___ without a stable job. | We finally paid off the ___. || |
+v14_010 || Can I pay by ___? | I paid for the flights with my ___. | Pay off your ___ every month. | My ___ was stolen on holiday. | The hotel asked for a ___ for the deposit. || |
+v14_011 || I use a ___ for everyday shopping. | My ___ was declined at the supermarket. | You can pay with a ___ almost everywhere. | The ___ takes money straight from my account. | I lost my ___ on the bus. || |
+v14_012 || Most shops accept ___ now. | The limit for ___ is fifty pounds. | I paid for the bus with a ___. | ___ is quicker than cash. | ___ became common during the pandemic. || |
+v14_013 || Enter your ___ to pay. | I forgot my ___ again. | Never write your ___ on the card. | The machine asked for my ___. | Cover the keypad when you type your ___. || |
+v14_014 || I'll pay the rent by ___. | The ___ takes one working day. | Can you send me the money by ___? | An international ___ can be expensive. | Please pay by ___ to this account. || wire transfer |
+v14_015 || I set up a ___ for the rent. | The ___ goes out on the first of the month. | Cancel the ___ when you move. | My ___ pays 50 euros into savings. | She pays her mum back with a ___. || |
+v14_016 || I pay my phone bill by ___. | The gym takes the money by ___. | Set up a ___ for your electricity. | The ___ failed because the account was empty. | Most bills are paid by ___. || automatic payment |
+v14_017 || My bank ___ arrives every month. | Check your ___ for strange payments. | I download my ___ online. | The ___ shows every transaction. | The bank wants to see my last ___. || |
+v14_018 || Keep the ___ in case you need to return it. | Can I have a ___, please? | The ___ is in the bag. | You can't get a refund without a ___. | I lost the ___ for the TV. || |
+v14_019 || Sorry, do you take ___ or only cards? | I never carry ___ anymore. | He paid for the car in ___. | The market only accepts ___. | I've got no ___ on me. || |
+v14_020 || I found a ___ on the street. | Put a ___ in the parking machine. | The machine doesn't accept that ___. | Kids collect every new ___. | She threw a ___ into the fountain. || |
+v14_021 || Have you got a twenty-pound ___? | The new plastic ___ is hard to fold. | He paid with a fifty-euro ___. | The machine won't take that ___. | She found a ___ in her old jeans. || |
+v14_022 || Is there an ___ near here? | The ___ swallowed my card. | I took out money at the ___. | The ___ charges a fee. | The ___ is out of order. || |
+v14_023 || I need to ___ some cash. | You can ___ up to 500 euros a day. | He tried to ___ money but his card was blocked. | It's expensive to ___ cash abroad. | Can I ___ money at the counter? || |
+v14_024 || I need to ___ this cheque. | You can ___ cash at any branch. | She went to ___ her salary. | ___ the money before Friday. | I want to ___ 200 euros. || |
+v14_025 || Can you ___ the money to my account? | I'll ___ it to you tonight. | It's free to ___ money between your accounts. | ___ the rent by the first of the month. | How do I ___ money abroad? || |
+v14_026 || Excuse me, can I ___ here? | Is it OK to ___ here? | Most people ___ these days. | The taxi driver wouldn't let me ___. | I prefer to ___ when I travel. || |
+v14_027 || Let's ___ tonight — you pay for yours, I'll pay for mine. | On first dates, some couples ___. | We always ___ when we go out. | Do you want to ___? | It's normal to ___ with friends. || |
+v14_028 || The total is sixty euros — shall we ___? | It's easier to ___ four ways. | Let's ___ — it's fifteen each. | We always ___ at birthday dinners. | The app helps you ___. || |
+v14_029 || ___ is a big problem for students. | He's trying to pay off his ___. | Credit card ___ grows fast. | The country's national ___ is rising. | Her ___ kept her awake at night. || |
+v14_030 || Many students are ___ when they finish university. | We were ___ for years after the wedding. | I hate being ___ to the bank. | The company is deeply ___. | He's ___ to his parents. || |
+v14_031 || My account is ___ again. | The company was ___ for three years. | We're always ___ at the end of the month. | Don't let your account go ___. | The club is deep ___. || |
+v14_032 || The business is finally ___. | We're back ___ this month. | The company stayed ___ all year. | After a year of losses, we're ___. | My account is ___ for once. || |
+v14_033 || We used our ___ to buy a car. | She spent all her ___ on travel. | Our ___ won't last forever. | He lost his ___ in the crisis. | Put your ___ somewhere safe. || |
+v14_034 || I need to ___ for a new laptop. | We're trying to ___ for a house. | She had to ___ for months to buy it. | Kids should learn to ___. | Let's ___ and go to Japan next year. || |
+v14_035 || We have a tight ___ this month. | The film's ___ was 200 million dollars. | Stick to your ___ when you go shopping. | The school's ___ was cut. | The project is over ___ again. || |
+v14_036 || You need to ___ carefully as a student. | I ___ for food every week. | It's hard to ___ with a small income. | Some apps help you ___ every month. | We have to ___ for the new baby. || |
+v14_037 || Government ___ rose last year. | Business ___ can be tax-deductible. | Keep a record of all ___. | We need to cut ___. | Our ___ is bigger than our income. || |
+v14_038 || Her ___ doubled after the promotion. | They live on a low ___. | Rent takes half my ___. | ___ from the shop is falling. | He has a second source of ___. || |
+v14_039 || My ___ is about 2,000 a month. | ___ is what you actually take home. | ___ is lower after tax. | Calculate your ___ before you rent a flat. | The mortgage depends on your ___. || take-home pay |
+v14_040 || My ___ is 40,000 a year. | Salaries are usually given as ___. | ___ is before tax and deductions. | The form asks for your ___. | His ___ is high, but taxes are too. || |
+v14_041 || Everyone has to pay ___. | ___ on petrol is very high. | Income ___ rose this year. | The price shown includes ___. | They cut ___ for small businesses. || |
+v14_042 || The menu price already includes ___. | ___ in Spain is 21 per cent. | Food has no ___ in the UK. | Businesses can claim back ___. | Is ___ included in this price? || sales tax |
+v14_043 || I filed my ___ online. | The deadline for the ___ is in January. | My accountant does my ___. | He made a mistake on his ___. | Don't forget to send your ___. || |
+v14_044 || I got a parking ___. | The ___ for speeding is 100 euros. | She had to pay a ___ for the late book. | The company got a huge ___. | Pay the ___ within a month. || ticket |
+v14_045 || I asked for a ___. | The shop gave me a full ___. | No ___ without a receipt. | The ___ took two weeks. | I'm still waiting for my ___. || |
+v14_046 || Students get a ___ at the cinema. | Can you give me a ___? | There's a 20 per cent ___ today. | I got a ___ for paying in cash. | Members get a ___ on everything. || |
+v14_047 || I've got a ___ for a free coffee. | Use this ___ to get 10 per cent off. | The ___ expires next week. | She gave me a gift ___ for my birthday. | The ___ is only valid online. || |
+v14_048 || We got a tax ___ this year. | The company offers a ___ on solar panels. | You can claim a ___ on energy bills. | The ___ came three months later. | Send the form to get your ___. || |
+v14_049 || ___ is at its highest in years. | Wages haven't kept up with ___. | The bank raised rates to fight ___. | ___ makes everything more expensive. | Food ___ hit poor families hardest. || |
+v14_050 || Japan suffered years of ___. | ___ sounds good but can hurt the economy. | Economists fear ___ more than high prices. | People delay buying during ___. | Prices fell during the period of ___. || |
+v14_051 || The ___ in London is very high. | The ___ crisis hit everyone. | Wages aren't keeping up with the ___. | The ___ is lower in the countryside. | Protests against the rising ___. || |
+v14_052 || We need more ___ housing. | The flat is ___ for students. | Healthy food should be ___. | The new phone is surprisingly ___. | It's hard to find ___ childcare. || |
+v14_053 || The restaurant was very ___. | London is an ___ city. | That watch looks really ___. | It's ___ to eat out every day. | Car repairs are very ___. || |
+v14_054 || The flights were really ___. | The market sells ___ fruit. | It was a ___ holiday. | Coffee is really ___ here. | Don't buy ___ shoes — they don't last. || |
+v14_055 || Drinks at the airport are ___. | This jacket is ___ — it's not worth it. | Tickets for the concert were ___. | The hotel was ___ for what it was. | Everything in this shop is ___. || |
+v14_056 || The menu is great ___. | This car is excellent ___. | The hotel wasn't ___ at all. | Do you think it's ___? | In a crisis, customers want ___. || |
+v14_057 || We can't ___ a new car. | Can you ___ to go on holiday? | I can't ___ to live in the centre. | Few people can ___ a house here. | We can ___ a small flat. || |
+v14_058 || I always ___ at Christmas. | Try not to ___ on holiday. | The government continues to ___. | We tend to ___ when we're stressed. | It's easy to ___ with a credit card. || |
+v14_059 || We managed to ___ this month. | The department tends to ___ its budget. | It's rare to ___ on a building project. | If you ___, save the difference. | Few companies ___ these days. || |
+v14_060 || It's wise to ___ for the future. | She decided to ___ in property. | Companies ___ in new technology. | I want to ___ in a small business. | The best thing is to ___ in your education. || |
+v14_061 || Buying a flat was a good ___. | The company needs more ___. | Education is the best ___. | Foreign ___ brought new jobs. | It was a risky ___. || |
+v14_062 || The ___ on this project is high. | Investors want a good ___. | Calculate the ___ before you spend. | Marketing should show a clear ___. | The ___ on the campaign was disappointing. || |
+v14_063 || She bought ___ in Apple. | The price of ___ fell today. | He sold his ___ for a profit. | Employees get ___ as a bonus. | ___ rose after the announcement. || |
+v14_064 || The company paid a big ___ this year. | Shareholders receive a ___ every year. | The ___ was cut after the losses. | I reinvest every ___ I receive. | The bank cancelled its ___. || |
+v14_065 || The ___ fell sharply today. | She made a fortune on the ___. | He lost everything in the ___ crash. | The ___ opens at nine. | Investing in the ___ is risky. || |
+v14_066 || Governments sell a ___ to borrow money. | A ___ is safer than shares. | The ___ pays four per cent a year. | He invested in a government ___. | The ___ matures in ten years. || |
+v14_067 || She retired on a good ___. | My ___ isn't enough to live on. | The company pays into my ___. | Start saving for your ___ early. | The state ___ starts at 67. || retirement plan |
+v14_068 || Car ___ is compulsory in Spain. | Do you have travel ___? | Home ___ covered the flood damage. | The ___ was very expensive. | Health ___ is expensive in the US. || |
+v14_069 || My car insurance ___ went up. | Young drivers pay a high ___. | The ___ is paid monthly. | A good record reduces your ___. | The ___ is 300 euros a year. || |
+v14_070 || I made a ___ for the broken phone. | The insurer rejected my ___. | You must make a ___ within thirty days. | The ___ took months to process. | She made a ___ after the accident. || |
+v14_071 || Read your insurance ___ carefully. | The ___ doesn't cover theft. | My ___ runs out in May. | The ___ number is on the letter. | We renewed our ___ last week. || |
+v14_072 || The company is facing ___. | He filed for ___ after the business failed. | ___ ruined his reputation in the city. | Many shops went into ___ during the crisis. | ___ can stay on your record for years. || |
+v14_073 || The low-cost airline went ___. | Many restaurants went ___ during the pandemic. | He was declared ___ by the court. | The club is almost ___. | The company went ___ last year. || |
+v14_074 || The bank needed a government ___. | The airline asked for a ___. | Taxpayers paid for the ___. | The ___ saved thousands of jobs. | Greece received a huge ___. || |
+v14_075 || ___ cuts hit public services. | Years of ___ made people angry. | The new government ended ___. | Protests against ___ filled the streets. | ___ policies cut spending on schools. || |
+v14_076 || The country is in ___. | Experts predict a ___ next year. | Many people lost their jobs in the ___. | The economy came out of ___. | A ___ is two quarters of negative growth. || |
+v14_077 || ___ grew by two per cent. | Debt is high compared to ___. | China's ___ is growing fast. | ___ per person is a measure of wealth. | ___ fell during the pandemic. || |
