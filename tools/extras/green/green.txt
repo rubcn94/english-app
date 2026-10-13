@@ -1,0 +1,2 @@
+# Green · single-blank cards only (multi-blank and free-text cards can't use an example bank)
+g2_02 || By next week, she ___ (finish) her thesis. | Don't worry — by the time you get here, I ___ (finish) dinner. | By 2030, they ___ (finish) the new metro line. | By the end of the month, we ___ (finish) the whole project. | By six o'clock, he ___ (finish) all his homework. || |
