@@ -1,0 +1,129 @@
+# 1 · Cocina
+v01_001 || Heat some oil in a ___ and fry the onions. | I burned the eggs because the ___ was too hot. | She flipped the pancake in the ___. | Don't put the ___ in the dishwasher; the handle is wooden. | He cooked bacon in a big ___ for breakfast. || |
+v01_002 || Eggs won't stick if you use a ___. | My new ___ doesn't need any oil. | Don't use a metal spatula on a ___ or you'll scratch the coating. | The coating on my old ___ is peeling off. | A ___ is perfect for omelettes. || |
+v01_003 || My grandmother's ___ is fifty years old and still perfect. | A ___ is heavy but keeps the heat for ages. | Never soak a ___ in water or it will rust. | He seared the steak in a hot ___. | You can put a ___ straight into the oven. || |
+v01_004 || Stir-fry the vegetables quickly in a ___. | The chef tossed the noodles in a huge ___. | You need a very hot ___ for Chinese cooking. | We bought a ___ to make pad thai at home. | The ___ has a round bottom, so it needs a special ring on the hob. || |
+v01_005 || Cook the chicken on a ___ to get those nice black lines. | The ___ leaves stripes on the vegetables. | I use a ___ when it's too cold for a barbecue. | Brush the ___ with a little oil first. | The steak had perfect marks from the ___. || |
+v01_006 || Boil the milk in a small ___. | Put the potatoes in a ___ of salted water. | The ___ boiled over and made a mess on the hob. | Make the custard in a ___ over a low heat. | Hold the ___ by its long handle. || |
+v01_007 || She made enough soup to fill a huge ___. | The chef boiled chicken bones in a ___ for hours. | We need a ___ to cook pasta for twenty people. | A ___ is too big for my little kitchen. | The broth simmered all day in a ___. || |
+v01_008 || With a ___, the beans are ready in twenty minutes. | Don't open the ___ until the steam has gone. | My mum makes stew in a ___ to save time. | The ___ whistled loudly on the hob. | A ___ is great for tough cuts of meat. || |
+v01_009 || Put the stew in a ___ and bake it for two hours. | She brought a lasagne to the party in a ___. | The ___ was too hot to touch. | Cover the ___ with a lid before it goes in the oven. | We cooked the beef in a heavy ___. || |
+v01_010 || Put the chicken and potatoes in a ___. | The juices in the ___ make great gravy. | Line the ___ with foil to save on washing up. | The turkey was too big for our ___. | Take the ___ out of the oven carefully. || roasting pan |
+v01_011 || Put the cookies on a ___ and bake for ten minutes. | Line the ___ with baking paper. | She slid the pizza onto a ___. | The bread rolls are cooling on the ___. | Roast the vegetables on a large ___. || |
+v01_012 || Grease the ___ before you pour in the mixture. | The cake stuck to the ___. | You need a round ___ for this recipe. | Leave the sponge in the ___ to cool. | I made two layers in the same ___. || cake pan |
+v01_013 || Fill each hole of the ___ two-thirds full. | Put paper cases in the ___ first. | I used a ___ to make mini quiches. | Grease the ___ so the muffins come out easily. | Our ___ makes twelve muffins at a time. || muffin pan |
+v01_014 || Bake the banana bread in a ___. | Press the dough into a greased ___. | The bread rose over the top of the ___. | A ___ is long and narrow. | Turn the cake out of the ___ when it's cool. || loaf pan |
+v01_015 || Drain the spaghetti in a ___ over the sink. | Rinse the berries in a ___. | Pour the boiled potatoes into a ___. | The ___ has lots of little holes. | Shake the ___ to get the water off the peas. || |
+v01_016 || Pass the sauce through a ___ to remove the lumps. | Use a ___ to remove the tea leaves. | Shake the flour through a fine ___. | The ___ caught all the seeds from the juice. | Pour the stock through a ___. || |
+v01_017 || Beat the eggs with a ___ until they're fluffy. | Use a ___ to make the cream thick. | An electric ___ is quicker than doing it by hand. | Stir the batter with a ___ to remove lumps. | My arm hurts from using the ___. || |
+v01_018 || Scrape the bowl clean with a rubber ___. | Spread the icing with a ___. | Use a ___ to get every bit of batter out. | She flipped the burger with a ___. | A plastic ___ won't scratch the pan. || |
+v01_019 || Use a ___ to flip the fish without breaking it. | The burger stuck to the ___. | Slide the ___ under the egg and turn it over. | A metal ___ is good for the barbecue. | Pass me the ___ — the pancakes are ready to turn. || |
+v01_020 || Serve the soup with a ___. | She poured the gravy with a ___. | Use the ___ to fill each bowl. | The ___ hangs on a hook by the cooker. | One ___ of stew is enough for me. || |
+v01_021 || Lift the eggs out of the water with a ___. | Use a ___ to serve the peas without the water. | A ___ lets the oil drain away. | Take the dumplings out with a ___. | The ___ has long holes in it. || |
+v01_022 || Stir the risotto with a ___. | A ___ won't scratch the pan. | Grandma always mixed cake batter with a ___. | Don't leave the ___ in the hot pan. | The ___ was stained red from the tomato sauce. || |
+v01_023 || Turn the sausages with ___. | Use ___ to put the salad on the plates. | He picked up the hot corn with ___. | Barbecue ___ have long handles. | Grab the ___ so you don't burn your fingers. || |
+v01_024 || Use a ___ to take the skin off the carrots. | A ___ is quicker than a knife for potatoes. | I cut my finger on the ___. | Peel the apples with a ___. | This ___ also makes thin strips of cucumber. || |
+v01_025 || Chop the onions on a ___. | Use a different ___ for raw meat. | Wash the ___ after cutting chicken. | A wooden ___ looks nice in the kitchen. | She served the cheese on a ___. || |
+v01_026 || Use the fine side of the ___ for parmesan. | I grated the carrots on a ___. | Be careful not to scrape your knuckles on the ___. | Put the cheese and the ___ on the table. | The ___ is full of bits of cheese. || |
+v01_027 || Use a ___ to get thin strips of lemon peel. | A ___ is good for orange cake. | The ___ only takes the coloured part of the skin. | I used the ___ for lime in the cocktail. | Pass me the ___ for the lemons. || |
+v01_028 || I can't open the beans without a ___. | The ___ broke, so we couldn't eat the tuna. | An electric ___ is easy for older people. | Don't forget the ___ when you go camping. | Use the ___ on the tomatoes. || |
+v01_029 || Who's got a ___ for these beers? | He opened the beer with a ___ on his keyring. | We couldn't find the ___, so we used a spoon. | Hang the ___ on the fridge door. | A ___ is useful at parties. || |
+v01_030 || We had a bottle of wine but no ___. | Twist the ___ into the cork. | The cork broke when I used the ___. | A waiter's ___ fits in your pocket. | Pass me the ___, I'll open the red. || |
+v01_031 || Crush the garlic and salt in a ___. | Grind the spices in a ___. | A stone ___ makes great pesto. | She pounded the herbs in a ___. | My ___ came from Thailand. || mortar and pestle |
+v01_032 || Roll out the pastry with a ___. | If you don't have a ___, use a bottle. | Flour the ___ so the dough doesn't stick. | She flattened the pizza dough with a ___. | A wooden ___ is heavy and smooth. || |
+v01_033 || Brush the pie with egg using a ___. | Use a ___ to spread melted butter. | A silicone ___ is easy to clean. | Paint the bread with milk using a ___. | Dip the ___ in the oil and cover the vegetables. || |
+v01_034 || Weigh the flour on the ___. | My ___ measures in grams and ounces. | Put the bowl on the ___ and press zero. | A digital ___ is more accurate. | The ___ says 250 grams. || |
+v01_035 || Pour 500 ml of milk into a ___. | The ___ has lines for millilitres. | Use a ___ to measure the water for the rice. | My glass ___ broke. | Fill the ___ to the 200 ml line. || measuring cup |
+v01_036 || Use ___ for the baking powder. | The recipe needs half a teaspoon, so use the ___. | A set of ___ hangs on a ring. | Level off the salt in the ___. | Baking needs exact amounts, so use ___. || |
+v01_037 || Put the flour and eggs in a large ___. | Cover the ___ with a cloth while the dough rises. | A glass ___ lets you see the mixture. | Scrape the ___ clean. | She beat the cream in a metal ___. || |
+v01_038 || Dry the lettuce in a ___. | Spin the ___ to get the water out. | Wet salad is soggy, so use a ___. | Our ___ has a handle on the lid. | Put the washed leaves in the ___. || |
+v01_039 || Slice the potatoes paper-thin on a ___. | Be careful — a ___ is very sharp. | Use the guard on the ___ to protect your fingers. | I made cucumber ribbons with a ___. | Chefs use a ___ for perfect slices. || |
+v01_040 || Use a ___ to check the turkey is cooked. | Stick the ___ into the thickest part. | The ___ said 75 degrees. | A ___ stops you serving raw chicken. | My digital ___ beeps when the meat is ready. || |
+v01_041 || Set the ___ for twelve minutes. | When the ___ beeps, take the eggs off. | The oven has a built-in ___. | I forgot to set the ___ and burned the cake. | Use your phone as a ___. || |
+v01_042 || Use an ___ to take the dish out of the oven. | I burned my hand because I forgot the ___. | My ___ has a hole in it. | Put on an ___ before you touch the tray. | She hung the ___ on the hook by the cooker. || pot holder |
+v01_043 || Put on an ___ so you don't get flour on your shirt. | The chef's ___ was covered in sauce. | She tied the ___ behind her back. | A plastic ___ is good for washing up. | He wore a funny ___ at the barbecue. || |
+v01_044 || Put the clean plates on the ___. | The ___ is full of glasses. | Leave the pans to dry on the ___. | Our ___ sits next to the sink. | Empty the ___ before you wash more dishes. || dish drainer |
+v01_045 || Wipe up the spill with some ___. | We've run out of ___. | Dry the chicken with ___ before cooking. | Put a piece of ___ under the bacon. | A roll of ___ is always on our kitchen table. || paper towel |
+v01_046 || Cover the bowl with ___ and put it in the fridge. | I can never find the end of the ___. | Wrap the sandwiches in ___. | The ___ stuck to itself. | Use ___ to keep the cheese fresh. || plastic wrap |
+v01_047 || Wrap the fish in ___ and bake it. | Cover the turkey with ___ so it doesn't burn. | Never put ___ in the microwave. | Line the baking tray with ___. | Wrap the potatoes in ___ for the barbecue. || aluminum foil |
+v01_048 || Make the pesto in a ___. | A ___ chops onions in seconds. | The ___ has different blades for slicing. | Put all the ingredients in the ___ and press "on". | Our ___ is too noisy. || |
+v01_049 || Make a smoothie in the ___. | Put the soup in the ___ to make it smooth. | The ___ crushed the ice easily. | Don't fill the ___ to the top with hot soup. | A ___ is great for milkshakes. || |
+v01_050 || Use a ___ to blend the soup in the pan. | A ___ saves washing a big machine. | Put the ___ straight into the pot. | My ___ splashed soup everywhere. | Make baby food with a ___. || stick blender |
+v01_051 || Knead the bread dough in a ___. | My ___ has a big metal bowl. | She bought a red ___ for baking. | A ___ can whip cream without your help. | The ___ does the hard work for you. || |
+v01_052 || Put two slices in the ___. | The ___ burnt my bread again. | Crumbs collect at the bottom of the ___. | Pop some crumpets in the ___. | Turn the ___ down to a lower setting. || |
+v01_053 || I heated the pizza slice in the ___. | A ___ is enough for one person. | Our flat has no oven, only a ___. | Toast the bagels in the ___. | The ___ uses less energy than a big oven. || |
+v01_054 || Heat the soup in the ___ for two minutes. | Don't put metal in the ___. | The ___ beeped when the popcorn was ready. | Defrost the chicken in the ___. | Leftovers taste fine reheated in the ___. || |
+v01_055 || Put the ___ on — let's have a cup of tea. | The ___ has boiled. | Fill the ___ with water. | An electric ___ is very fast. | The ___ whistled on the hob. || |
+v01_056 || Set the ___ to start at seven. | The ___ makes ten cups at once. | Clean the ___ with vinegar. | Our office ___ is broken. | The smell from the ___ woke me up. || |
+v01_057 || Make the coffee in a ___ and wait four minutes. | Push down the plunger of the ___ slowly. | A ___ needs coarse coffee. | I broke the glass of my ___. | Pour hot water into the ___. || |
+v01_058 || Put the rice and water in the ___ and press start. | The ___ keeps rice warm for hours. | In Japan, almost every home has a ___. | My ___ also steams vegetables. | The ___ clicked off when the rice was ready. || |
+v01_059 || Put everything in the ___ in the morning and dinner is ready at night. | Beef stew is perfect in a ___. | The ___ cooks on low for eight hours. | I made chilli in the ___. | Leave the ___ on while you're at work. || |
+v01_060 || Chips from an ___ are almost as good as fried ones. | An ___ uses very little oil. | Shake the basket of the ___ halfway through. | Everyone has an ___ these days. | Cook the chicken wings in the ___. || |
+v01_061 || The chips were cooked in a ___. | A ___ is dangerous if the oil overheats. | Change the oil in the ___ regularly. | The restaurant's ___ caught fire. | Lower the fish into the ___. || |
+v01_062 || Put the pan on the ___ and turn on the heat. | Wipe the ___ after cooking. | Our ___ has four rings. | Don't leave the ___ on when you go out. | The milk boiled over onto the ___. || stovetop |
+v01_063 || An ___ only works with magnetic pans. | The ___ heats up very quickly. | Water boils fast on an ___. | Our new flat has an ___. | An ___ stays cool around the pan. || induction cooktop |
+v01_064 || Chefs prefer a ___ because you can control the flame. | Light the ___ with a match. | The ___ smells if a ring is left on. | We switched from a ___ to induction. | A ___ heats the pan with a blue flame. || gas stove |
+v01_065 || We need a new ___ — the oven door is broken. | The ___ has four rings and two ovens. | A big ___ is the heart of the kitchen. | They bought a gas ___. | Clean behind the ___. || range / stove |
+v01_066 || Put the cheese on toast under the ___. | Turn on the ___ to brown the top. | Watch the bread under the ___ so it doesn't burn. | Cook the bacon under the ___. | The ___ is too close to the food. || broiler |
+v01_067 || Put the milk back in the ___. | The ___ is empty — we need to go shopping. | Leave the cake in the ___ overnight. | Close the ___ door! | There's some beer in the ___. || |
+v01_068 || Put the ice cream in the ___. | The peas are in the ___. | Defrost the ___ — it's full of ice. | I keep bread in the ___. | Take the chicken out of the ___ tonight. || |
+v01_069 || A ___ has a fridge on top and a freezer below. | Our new ___ makes ice. | The ___ is too big for our kitchen. | Put the ___ against the wall. | The ___ is very quiet. || refrigerator-freezer |
+v01_070 || Load the ___ after dinner. | Unload the ___, please. | Is this pan safe in the ___? | The ___ didn't clean the glasses properly. | Put a tablet in the ___. || |
+v01_071 || Turn on the ___ when you fry fish. | The ___ is very noisy. | Clean the filter in the ___. | The kitchen smells because the ___ is broken. | A ___ takes the steam out of the room. || range hood |
+v01_072 || Wipe the ___ after cooking. | Put the shopping on the ___. | Our ___ is made of granite. | Don't cut directly on the ___. | There's flour all over the ___. || countertop |
+v01_073 || The dirty plates are in the ___. | Wash the vegetables in the ___. | The ___ is blocked. | Fill the ___ with hot water. | Pour the pasta water down the ___. || |
+v01_074 || Turn off the ___ — you're wasting water. | The kitchen ___ is dripping. | Fill the glass from the ___. | Is the water from the ___ safe to drink? | The hot ___ is on the left. || faucet |
+v01_075 || The plates are in the ___ above the sink. | The ___ door is broken. | Put the tins in the ___. | We painted the ___ white. | There's no space in the ___. || |
+v01_076 || The forks are in the top ___. | The ___ is full of old receipts. | Open the ___ and find a knife. | The ___ won't close properly. | Keep the batteries in the ___ by the cooker. || |
+v01_077 || The rice and pasta are in the ___. | Grandma's ___ was full of jam. | We keep tins in the ___. | A big ___ is great for storing food. | Check the ___ before you go shopping. || |
+v01_078 || Put the ___ on the table, please. | Silver ___ was a wedding present. | Wash the ___ in hot water. | The ___ is in the drawer by the sink. | Plastic ___ is bad for the environment. || Silverware |
+v01_079 || Every cook needs a good ___. | Chop the vegetables with a ___. | Keep your ___ sharp. | The ___ is the most important knife in the kitchen. | He bought an expensive Japanese ___. || |
+v01_080 || Cut the loaf with a ___. | A ___ doesn't squash the bread. | The ___ has a wavy edge. | Use the ___ for the cake too. | Slice the baguette with a ___. || |
+v01_081 || Peel the apple with a ___. | Use a ___ to remove the seeds. | A ___ is good for small jobs. | I cut myself with the ___. | Hull the strawberries with a ___. || |
+v01_082 || The restaurant gave us a ___ with the meat. | A ___ has a sharp, serrated blade. | Cut the sirloin with a ___. | The ___ was too blunt. | Set a ___ next to each plate. || |
+v01_083 || The fishmonger used a ___ to remove the bones. | A ___ bends easily. | Slide the ___ along the backbone. | You need a ___ for salmon. | A ___ is long and thin. || fillet knife |
+v01_084 || The butcher chopped the ribs with a ___. | A ___ is heavy and rectangular. | Use a ___ to cut through the bone. | The chef's ___ made a loud bang. | He used a ___ to split the chicken. || |
+v01_085 || My knife is blunt — where's the ___? | Pull the blade through the ___. | Use the ___ before you cut tomatoes. | An electric ___ is quick. | He uses a stone as a ___. || |
+v01_086 || Eat your salad with a ___. | Put the ___ on the left of the plate. | He dropped his ___ on the floor. | The baby can't use a ___ yet. | Prick the potatoes with a ___. || |
+v01_087 || Eat your pudding with a ___. | A ___ is for desserts and cereals. | Use the ___ for the crumble. | Lay a ___ above each plate. | Two ___ of sugar is too much. || |
+v01_088 || Stir your tea with a ___. | Add one ___ of salt. | The ___ is the smallest spoon in the drawer. | I take one ___ of sugar in my coffee. | The baby's medicine is one ___. || |
+v01_089 || Add two ___ of olive oil. | A ___ is bigger than a dessert spoon. | Serve the rice with a ___. | One ___ of honey is enough. | Measure a ___ of flour. || |
+v01_090 || Pour the soup into bowls with a ___. | The ___ is in the pot. | Fill the mugs with hot chocolate using a ___. | A ___ has a long handle and a deep bowl. | Pass me the ___. || |
+v01_091 || ___ the eggs for eight minutes. | ___ the pasta in salted water. | Bring the water to the ___. | Don't ___ the vegetables too long. | We ___ the kettle for tea. || |
+v01_092 || Let the soup ___ for twenty minutes. | Bring to the boil, then ___. | The sauce should ___ gently. | Turn the heat down and let it ___. | ___ the beans until they're soft. || |
+v01_093 || ___ the onions until golden. | I ___ an egg for breakfast. | Don't ___ the fish in too much oil. | ___ the bacon until crispy. | It's healthier to grill than ___. || |
+v01_094 || They ___ the chicken in batter. | You can ___ ice cream in tempura. | Don't ___ at home without a thermometer. | ___ the doughnuts until golden. | In Scotland they ___ Mars bars. || |
+v01_095 || ___ the vegetables in a wok. | We ___ some beef and noodles. | ___ the prawns for two minutes. | It's quick to ___ for dinner. | ___ the broccoli with garlic. || |
+v01_096 || ___ the mushrooms in butter. | ___ the spinach for one minute. | ___ the garlic but don't let it burn. | The chef will ___ the potatoes. | ___ the onions before adding the rice. || |
+v01_097 || We ___ a chicken every Sunday. | ___ the potatoes at 200 degrees. | ___ the vegetables with olive oil. | Let the meat rest after you ___ it. | They ___ a whole lamb. || |
+v01_098 || Let's ___ a cake for her birthday. | ___ the bread for forty minutes. | I love to ___ cookies at Christmas. | ___ the pie until golden. | She learned to ___ from her grandma. || |
+v01_099 || ___ the sausages for ten minutes. | We'll ___ the burgers on the barbecue. | ___ the fish under high heat. | ___ the halloumi until brown. | Let's ___ the corn outside. || broil (in the oven) |
+v01_100 || ___ the broccoli to keep it green. | We ___ the fish in parchment. | ___ the dumplings for ten minutes. | It's healthier to ___ vegetables. | ___ the rice in a bamboo basket. || |
+v01_101 || ___ an egg in simmering water. | ___ the salmon in milk. | ___ the pears in red wine. | Don't let the water boil when you ___ eggs. | ___ the chicken gently for twenty minutes. || |
+v01_102 || ___ the beef in red wine. | ___ the cabbage slowly with apples. | ___ the lamb shanks for three hours. | Brown the meat first, then ___ it. | We ___ the pork until tender. || |
+v01_103 || ___ the chicken in yoghurt overnight. | ___ the steak for an hour. | We ___ the fish in lime juice. | ___ the tofu in soy sauce. | The longer you ___ it, the better. || |
+v01_104 || ___ the soup with salt and pepper. | Don't forget to ___ the meat. | Taste the stew and ___ it with a little salt. | Taste and ___ before serving. | ___ the potatoes with rosemary. || |
+v01_105 || ___ the egg whites until stiff. | ___ the eggs and milk together. | ___ the batter to remove lumps. | ___ the cream for two minutes. | ___ the dressing in a small bowl. || |
+v01_106 || ___ the flour into the egg whites gently. | ___ in the chocolate chips. | Don't stir — ___ carefully. | ___ the cream into the mousse. | ___ the berries into the batter. || |
+v01_107 || ___ the dough for ten minutes. | ___ the bread until it's smooth. | My arms hurt from having to ___ the pizza base. | ___ the dough on a floured table. | Machines can ___ dough for you. || |
+v01_108 || ___ the onion into small cubes. | ___ the potatoes for the salad. | ___ the tomatoes finely. | ___ the carrots into one-centimetre pieces. | ___ the cheese into small squares. || |
+v01_109 || ___ the parsley roughly. | ___ the vegetables for the soup. | ___ the wood for the fire. | ___ the nuts and add them to the cake. | ___ the onions and fry them. || |
+v01_110 || ___ the garlic very finely. | ___ the ginger for the curry. | Butchers ___ beef for burgers. | ___ the shallots so finely they almost disappear. | ___ the chillies — but wear gloves. || |
+v01_111 || ___ the bread thinly. | ___ the cucumber for the salad. | ___ the ham for the sandwiches. | ___ the cake into eight pieces. | ___ the mushrooms into thin pieces. || |
+v01_112 || ___ the carrots for the stir-fry. | Restaurants ___ vegetables into thin sticks. | ___ the peppers for the salad. | Chefs learn to ___ in their first week. | ___ the celery into matchsticks. || |
+v01_113 || ___ the cheese over the pasta. | ___ the carrots for the cake. | ___ some lemon zest. | ___ a little nutmeg on top. | ___ the potatoes for the rösti. || |
+v01_114 || ___ the potatoes before boiling them. | ___ the orange and share it. | ___ the prawns and throw the shells away. | ___ the apples for the pie. | Don't ___ the carrots, just wash them. || |
+v01_115 || ___ the apples before baking them. | ___ the pineapple and remove the hard middle. | ___ the pears and cut them in half. | Use a knife to ___ the tomatoes. | ___ the peppers and remove the seeds. || |
+v01_116 || ___ the pan with white wine. | After frying the steak, ___ with brandy. | ___ the roasting tin to make gravy. | Pour in stock to ___. | The chef used water to ___ the pan. || |
+v01_117 || ___ the sauce until it's thick. | Let the wine ___ by half. | ___ the stock for a stronger flavour. | ___ the balsamic vinegar to a syrup. | Simmer to ___ the liquid. || |
+v01_118 || ___ the pasta and add the sauce. | ___ the tuna before using it. | ___ the potatoes in a colander. | ___ the oil from the chips. | ___ the beans and rinse them. || |
+v01_119 || ___ the stock to remove the bones. | ___ the tea into the cups. | ___ the sauce through a sieve. | ___ the juice to remove the pulp. | ___ the yoghurt overnight. || |
+v01_120 || ___ the cream for the scones. | ___ the egg whites until they form peaks. | ___ some cream for the strawberries. | Can you ___ cream by hand? | ___ the cream with sugar. || |
+v01_121 || ___ the onions slowly for forty minutes. | ___ the sugar in a pan. | ___ the bananas in butter. | Be careful when you ___ sugar — it's very hot. | ___ the pecans for the cake. || caramelize |
+v01_122 || ___ the beans and put them in ice water. | ___ the tomatoes to remove the skins. | ___ the almonds so the skins slip off. | ___ the vegetables before freezing them. | ___ the spinach for thirty seconds. || |
+v01_123 || ___ the chicken in the fridge overnight. | ___ the bread before toasting it. | Never ___ meat on the counter. | ___ the freezer once a year. | ___ the prawns under cold water. || |
+v01_124 || I like my steak ___, still pink. | "How would you like it?" "___, please." | ___ lamb is juicy and pink. | Chefs say ___ is the best for steak. | Cook the duck breast until ___. || |
+v01_125 || ___, please — not too red. | I'll have my burger ___. | A ___ steak is pink but not bloody. | Cook it to ___. | He asked for ___, but it came well done. || |
+v01_126 || I don't like blood, so I'll have it ___. | Chefs hate it when you order ___ steak. | My dad always orders his steak ___. | Burgers should be ___ for kids. | Chicken must always be ___. || |
+v01_127 || "How do you like it?" "___ — almost raw." | ___ beef is red in the middle. | He likes his steak ___. | Tuna is often served ___. | A ___ steak only cooks for a minute each side. || |
+v01_128 || Italians cook pasta ___. | Drain the spaghetti when it's ___. | ___ means "to the tooth" in Italian. | Taste the pasta to see if it's ___. | Soft pasta isn't ___. || |
