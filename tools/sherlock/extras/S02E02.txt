@@ -1,7 +1,7 @@
 @ 5
 Cold turkey || He stopped smoking ___ — no patches, nothing. | Going ___ off coffee gave me headaches. | She quit sugar ___. | ___ is the hardest way to give up. | I gave up social media ___. || | 
 paid everyone off || The mayor ___ to keep the scandal quiet. | He's ___ — nobody will talk. | They ___ and the story disappeared. | She ___ before the trial. | The company ___ to avoid a strike. || | 
-Chance would be a fine thing || "Are you going on holiday this year?" "___!" | "Do you get much sleep with the baby?" "___." | A day off? ___. | "Have you got a girlfriend yet?" "___." | Retire early? ___. || I wish! / Fat chance | 
+Chance would be a fine thing || "Are you going on holiday this year?" "___!" | "Do you get much sleep with the baby?" "___." | A day off? ___. | "Have you got a girlfriend yet?" "___." | "Are you going to retire early?" "___ — I've got a mortgage." || I wish! / Fat chance |
 racy || The film has some ___ scenes. | She wore a rather ___ dress. | The novel was considered ___ in the 1950s. | His jokes were a bit ___ for the dinner party. | A ___ red sports car. || steamy | 
 pin your hopes || Don't ___ on winning the lottery. | You shouldn't ___ on one interview. | I wouldn't ___ on the weather. | Never ___ on a man who's married. | Don't ___ on a last-minute miracle. || | 
 placid || The lake was calm and ___. | She's a ___ baby who rarely cries. | Our dog is very ___. | His ___ face hid his anger. | Horses for beginners should be ___. || | 
@@ -16,7 +16,7 @@ mop up || Grab a towel and ___ the water. | Use bread to ___ the sauce. | Can yo
 smudging || Careful, you're ___ the ink. | The rain is ___ my make-up. | Stop ___ the window with your fingers. | He was ___ the charcoal drawing. | She kept ___ her lipstick. || | 
 face my demons || Coming back here forced me to ___. | Therapy helped me ___. | I have to ___ one day. | Writing the book was a way to ___. | It's time I ___. || | 
 hush-hush || The project is very ___. | Keep it ___ until the announcement. | It was all very ___ at the time. | Their wedding was very ___. | Why is everything so ___? || | 
-in uproar || The town is ___ over the new parking rules. | Parliament was ___. | The fans were ___ after the referee's decision. | The office was ___ when the news broke. | The school was ___. || in an uproar | 
+in uproar || The town is ___ over the new parking rules. | When the minister admitted lying, Parliament was ___. | The fans were ___ after the referee's decision. | The office was ___ when the news broke. | The school was ___. || in an uproar |
 wee || Just a ___ drop of milk, please. | We stayed in a ___ cottage by the sea. | I'll have a ___ dram of whisky. | She's a ___ girl. | Give me a ___ minute. || little | 
 buggers up || The rain always ___ our plans. | Every time he touches the computer, he ___ something. | One mistake ___ the whole system. | Strike action ___ the trains. | That new road ___ the view. || screws up | 
 rushed off our feet || We've been ___ at the café all day. | Christmas week, we're always ___. | Sorry for the wait, we're ___. | The nurses were ___. | We're ___ since the sale began. || swamped | 
@@ -30,7 +30,7 @@ On your head be it || Go out without a coat if you like — ___. | Ignore my adv
 speak ill of || Never ___ the dead. | She would never ___ her family. | Don't ___ your boss in public. | He refuses to ___ anyone. | It's not nice to ___ your ex. || | 
 bring things to a head || His resignation will ___. | The strike may ___. | It's time to ___. | Her letter should ___. | That argument will ___. || | 
 nutter || Some ___ was shouting at the buses. | He drives like a ___. | She's a fitness ___. | Don't talk to him — he's a ___. | The ___ next door plays drums at 3am. || nut / wacko | 
-chatting me up || The guy at the bar was ___ all night. | Are you ___? | Stop ___ — I'm married. | He spent the evening ___. | I think the waiter was ___. || hitting on me | 
+chatting me up || The guy at the bar was ___ all night. | You keep complimenting my eyes. Are you ___? | Stop ___ — I'm married. | He spent the evening ___. | I think the waiter was ___. || hitting on me |
 break the ice || A joke can help ___ at a meeting. | Games are good to ___. | Nobody spoke until she told a joke to ___. | Let's ___ with some drinks. | He tried to ___ by talking about the weather. || | 
 overdo it || Don't ___ at the gym. | It's nice, but don't ___ with the salt. | You can praise him, but don't ___. | I think I ___ at the party. | Take a break, don't ___. || | 
 handler || The spy met his ___ in the park. | The dog ___ led the search. | Her ___ arranges all her interviews. | The informant's ___ was a police officer. | A snake ___ showed us the python. || | 
@@ -60,9 +60,9 @@ luminous || The watch has ___ hands. | Her ___ smile lit up the room. | The jell
 forced entry || There was no sign of ___. | The police found evidence of ___. | ___ through the back window. | No ___, so she knew the killer. | The door showed signs of ___. || | 
 wilderness || They spent a week in the ___. | Alaska is a vast ___. | Lost in the ___. | He spent years in the political ___. | The garden has become a ___. || | 
 the moor || Fog rolled across ___. | We went walking on ___. | Sheep graze on ___. | Don't cross ___ at night. | ___ is beautiful in August. || | 
-In your own time || ___ — no rush. | Answer ___. | ___, but before Friday. | ___, tell me what happened. | Finish ___. || Take your time | 
+In your own time || Fill in the form ___ — no rush. | Take a deep breath and answer ___. | ___, but before Friday. | ___, tell me what happened. | You don't have to stay late; finish ___. || Take your time |
 landmark || Big Ben is a famous London ___. | The tower is a local ___. | The case was a ___ in legal history. | Turn left at the old ___. | The church is a ___ in the village. || | 
-tore him apart || The divorce ___. | The dogs ___. | The critics ___ in the review. | Losing his son ___. | The press ___. || | 
+tore him apart || He lost his home and his kids — the divorce ___. | The hunter fell and the wild dogs ___. | The critics ___ in the review. | Losing his son ___. | After his awful performance, the press ___. || |
 wandering || I found the dog ___ in the street. | Stop ___ around, we're late! | My mind keeps ___. | She spent the day ___ the city. | The old man was found ___ in the park. || | 
 breeding || They're ___ horses on the farm. | Rats are ___ in the cellar. | Good ___ shows in her manners. | The ___ season starts in spring. | They've been ___ dogs for years. || | 
 took me seriously || Nobody ___ when I was young. | Finally, the doctors ___. | The police never ___. | My boss ___ for once. | She ___ — and helped. || | 
@@ -72,32 +72,32 @@ How on earth || ___ did you get in here? | ___ do you know that? | ___ did she f
 account for || How do you ___ the missing money? | Stress may ___ your headaches. | Women ___ half the workforce. | Nothing can ___ his behaviour. | Can you ___ your time last night? || | 
 bringing this to my attention || Thanks for ___, I'll look into it. | I appreciate you ___. | Thank you for ___ — it's serious. | Thanks for ___, Miss Jones. | Nobody thought of ___. || | 
 Vaguely || "Do you remember her?" "___." | I ___ remember the house. | ___ familiar, but I can't place it. | "Heard of it?" "___." | She looked ___ like her mother. || | 
-miss this for the world || I wouldn't ___. | She'd never ___. | We wouldn't ___ — see you there! | He wouldn't ___. | I'd not ___. || | 
+miss this for the world || Your first concert? I wouldn't ___. | It's her best friend's wedding. She'd never ___. | We wouldn't ___ — see you there! | The final is tomorrow and he's got tickets. He wouldn't ___. | A free trip to Paris? I'd not ___. || |
 minefield || Office politics is a ___. | Dating apps are a ___. | The legal side is a ___. | They crossed a ___. | Talking about religion is a ___. || | 
-keep people out || The fence is to ___. | Locks ___. | The guards are there to ___. | They built a wall to ___. | The sign is meant to ___. || | 
+keep people out || The fence is to ___. | Locks ___, but a determined thief always finds a way. | The guards are there to ___. | They built a wall to ___. | The sign is meant to ___. || |
 80-odd || My granny is ___ years old. | There were ___ people at the party. | It's ___ miles from here. | The house is ___ years old. | We sold ___ tickets. || | 
 blown up || The bridge was ___ in the war. | The car was ___ by a bomb. | The photo was ___ to poster size. | The story got ___ by the media. | He was nearly ___ by a landmine. || | 
-stroll || Let's go for a ___ by the river. | A ___ after dinner helps digestion. | We took a ___ through the park. | It's a ten-minute ___ to the beach. | A Sunday ___. || | 
+stroll || Let's go for a ___ by the river. | A ___ after dinner helps digestion. | We took a ___ through the park. | It's a ten-minute ___ to the beach. | After lunch, we always go for a Sunday ___ in the park. || |
 crisps || A packet of salt and vinegar ___, please. | Kids love ___ in their lunchbox. | Don't eat ___ before dinner. | Cheese and onion ___ are my favourite. | We had ___ and dips at the party. || chips | 
-Mind if I join you || ___? There are no free tables. | ___ for a coffee? | Excuse me, ___? | ___ on the walk? | ___? I'm on my own. || | 
+Mind if I join you || ___? There are no free tables. | ___ for a coffee? | Excuse me, the café is full — ___? | ___ on the walk? | ___? I'm on my own. || |
 make much out || In the dark, I couldn't ___. | The writing was faded — I couldn't ___. | Through the fog we couldn't ___. | I couldn't ___ of what he said. | The photo is blurry, I can't ___. || | 
 haunted || They say the castle is ___. | She's ___ by memories of the war. | A ___ house at the end of the street. | He's ___ by guilt. | Do you believe in ___ places? || | 
-I reckon || ___ it'll rain later. | ___ she's right. | ___ we should leave now. | ___ he's about forty. | ___ they'll win. || I figure | 
+I reckon || ___ it'll rain later. | After listening to both sides, ___ she's right. | ___ we should leave now. | ___ he's about forty. | They've got the best players, so ___ they'll win. || I figure |
 as far as I could spit || I wouldn't trust that salesman ___. | I trust him about ___. | Politicians? I'd trust them ___. | That lawyer — I'd trust him ___. | Don't trust him further than ___. || | 
 showed up || He never ___ for the meeting. | She ___ an hour late. | Guess who ___ at my door? | Only five people ___. | The rash ___ the next day. || | 
 have a wander round || Let's ___ the market. | I'm going to ___ the old town. | Do you want to ___? | We had time to ___ the shops. | She likes to ___ museums. || | 
 get caught || If you cheat, you'll ___. | Don't ___ in the rain. | They didn't ___ — lucky them. | Hide it or we'll ___. | I always ___ in traffic. || | 
-opens doors || A good degree ___. | Speaking English ___. | Her name ___ in this town. | Money ___. | Networking ___. || | 
-That's an order || Go to bed. ___. | Stop now — ___! | ___, soldier. | Eat your vegetables. ___. | You'll stay here. ___. || | 
+opens doors || A good degree ___. | In international business, speaking English ___. | Her name ___ in this town. | It's not fair, but in this town money ___. | Go to the conference — networking ___. || |
+That's an order || Go to bed. ___. | You've had enough to drink. Stop now — ___! | Clean your boots before the inspection. ___, soldier. | Eat your vegetables. ___. | You'll stay here. ___. || |
 Nice touch || The flowers on the table — ___. | ___ — candles at dinner. | The little card was a ___. | ___ with the music. | A personal note — ___. || | 
 fix a tap || Can you ___? It's dripping. | It took him two hours to ___. | I called the plumber to ___. | Learn how to ___ yourself. | I only went in to ___. || fix a faucet | 
 the bins || Take ___ out, it's Tuesday. | The fox knocked over ___. | Put it in ___. | Who's doing ___ this week? | ___ smell in summer. || the trash cans | 
-the common cold || There's no cure for ___. | ___ spreads easily in winter. | Vitamin C won't stop ___. | It's just ___. | ___ is caused by a virus. || | 
+the common cold || There's no cure for ___. | ___ spreads easily in winter. | Vitamin C won't stop ___. | Don't worry, it's not flu — it's just ___. | ___ is caused by a virus. || |
 Of one sort or another || Everyone has problems ___. | We all have bad habits ___. | They sell drinks ___. | ___, he's always in trouble. | Gifts ___ arrived all day. || | 
-Orders from on high || ___ — no overtime this month. | It's ___; I can't change it. | ___: everyone wears a tie. | ___ say the office closes early. | We're following ___. || Orders from above | 
+Orders from on high || ___ — no overtime this month. | It's ___; I can't change it. | ___: everyone wears a tie. | ___ say the office closes early. | I don't like the new rules either; we're following ___. || Orders from above |
 mix things up || Let's ___ and try a new restaurant. | The coach wants to ___ in the team. | I like to ___ at the gym. | She decided to ___ with a new haircut. | Time to ___ a bit. || shake things up | 
 Now and again || ___ I eat meat. | I see him ___. | ___ the car breaks down. | We go out for dinner ___. | ___ it snows here. || Every now and then | 
-outrageous || The prices are ___! | That's ___ behaviour. | She wore an ___ hat. | It's ___ that they lied. | His claims are ___. || | 
+outrageous || The prices are ___! | He threw a chair at the referee. That's ___ behaviour. | She wore an ___ hat. | It's ___ that they lied. | His claims are ___. || |
 get up to || What did you ___ last weekend? | Kids ___ all sorts of mischief. | I wonder what they ___ when we're out. | What will you ___ on holiday? | Don't ___ anything silly. || get into | 
 show them out || My assistant will ___. | Please ___, they're leaving. | Could you ___ the back way? | Wait here while I ___. | Let the butler ___. || | 
 speak well of || Everyone seems to ___ him. | She always ___ her teachers. | I've heard people ___ this hotel. | You never ___ your brother. | His staff ___ him. || | 
@@ -105,54 +105,54 @@ worrier || I'm a natural ___. | Don't be such a ___. | My mum is a big ___. | Sh
 Bless him || He tried to cook dinner, ___. | ___, he's only five. | He's doing his best, ___. | ___, he got lost again. | ___, he's so shy. || | 
 in a pretty bad way || After the crash, he was ___. | The company is ___. | She's ___ since the divorce. | The dog was ___ when we found it. | His finances are ___. || in bad shape | 
 roaming || Wild horses are ___ the hills. | Teenagers ___ the streets at night. | My data ___ is turned off. | Bears are ___ freely. | Wolves ___ the forest. || | 
-stick to the facts || Please just ___. | Journalists should ___. | Let's ___ and not guess. | In court, ___. | ___, not rumours. || | 
+stick to the facts || I don't want your opinion. Please just ___. | Journalists should ___, not spread rumours. | Let's ___ and not guess. | The lawyer told him: "In court, ___ and don't guess." | ___, not rumours. || |
 ruled out || The doctor ___ a broken bone. | Police haven't ___ murder. | We've ___ the cheaper option. | She ___ running for office. | Nothing can be ___. || | 
-take it easy || ___ — it's just a game. | You should ___ after surgery. | We're going to ___ this weekend. | ___ on the stairs. | Hey, ___! || | 
+take it easy || ___ — it's just a game. | You should ___ after surgery. | We're going to ___ this weekend. | ___ on the stairs. | Hey, ___! There's no need to shout at me. || |
 widow || She's been a ___ since 2010. | The ___ inherited everything. | His ___ wrote a book about him. | The young ___ remarried. | A ___'s pension. || | 
-jumper || Wear a ___, it's cold. | Granny knitted me a ___. | That's a lovely ___. | A woolly ___. | I spilled coffee on my ___. || sweater | 
-hideous || What a ___ jacket! | The building is ___. | He made a ___ mistake. | That wallpaper is ___. | A ___ monster. || | 
-treating her to || He's ___ dinner for her birthday. | I'm ___ a spa day. | They're ___ a holiday. | Dad's ___ new shoes. | I'm ___ lunch. || | 
+jumper || Wear a ___, it's cold. | Granny knitted me a ___. | That's a lovely ___. | It's freezing outside — put on a woolly ___. | I spilled coffee on my ___. || sweater |
+hideous || What a ___ jacket! | The building is ___. | He made a ___ mistake. | That wallpaper is ___. | The children screamed when a ___ monster appeared on screen. || |
+treating her to || He's ___ dinner for her birthday. | I'm ___ a spa day. | They're ___ a holiday. | Dad's ___ new shoes. | It's my mum's birthday, so I'm ___ lunch at a nice restaurant. || |
 economise || We need to ___ on heating. | Try to ___ where you can. | Families are trying to ___. | You can ___ by cooking at home. | The council must ___. || economize / cut back | 
 starter || For a ___, I'll have the soup. | Shall we share a ___? | The ___ was better than the main. | Just a ___ for me. | Prawn cocktail is a classic ___. || appetizer | 
 late husband's || She still wears her ___ watch. | Her ___ family visit every summer. | This was my ___ car. | She sold her ___ books. | Her ___ ashes are in the garden. || | 
-cheating || He was caught ___ in the exam. | Is he ___ on his wife? | That's ___! | Copying homework is ___. | She accused him of ___ at cards. || | 
-never been better || "How are you?" "___!" | I've ___ since I quit. | Business has ___. | Honestly, I've ___. | My health has ___. || | 
-Where did I go wrong || My kids never call. ___? | The cake collapsed. ___? | ___? I followed the recipe. | Failed again — ___? | ___ with my life? || | 
+cheating || He was caught ___ in the exam. | Is he ___ on his wife? | You looked at the answers! That's ___! | Copying homework is ___. | She accused him of ___ at cards. || |
+never been better || "How are you?" "___!" | I've ___ since I quit. | Since we opened the website, business has ___. | "How are you since the operation?" "Honestly, I've ___." | My health has ___. || |
+Where did I go wrong || My kids never call. ___? | The cake collapsed. ___? | ___? I followed the recipe. | I studied for weeks and failed again — ___? | ___ with my life? || |
 fixated on || He's ___ his weight. | She's ___ the idea of moving. | The media is ___ the scandal. | Why are you so ___ money? | The cat is ___ the bird. || obsessed with | 
-live-in || We have a ___ nanny. | She works as a ___ carer. | A ___ boyfriend. | ___ staff get free meals. | He's her ___ chef. || | 
+live-in || We have a ___ nanny. | She works as a ___ carer. | She doesn't want to marry; she's happy with a ___ boyfriend. | ___ staff get free meals. | He's her ___ chef. || |
 archaic || These laws are ___. | ___ language in the old prayer book. | His views are ___. | The system is ___. | "Thou" is an ___ word. || | 
-skip the coffee || Let's ___ and go straight to the meeting. | I'll ___ today. | Can we ___? I'm in a hurry. | Doctors told me to ___. | ___, we're late. || | 
+skip the coffee || Let's ___ and go straight to the meeting. | My heart is racing, so I'll ___ today. | Can we ___? I'm in a hurry. | Doctors told me to ___. | ___, we're late. || |
 get anywhere || Did you ___ with the bank? | We talked for hours but didn't ___. | We didn't ___ with the police. | Did you ___ with your homework? | Did the detectives ___? || | 
 doubt || There's no ___ about it. | I ___ he'll come. | When in ___, ask. | Without a ___, she's the best. | I have some ___ about this plan. || | 
 Good luck with that || You want him to apologise? ___. | Getting a table on Friday? ___. | ___ — he never listens. | Teaching the cat tricks? ___. | ___, the shop's closed. || | 
-would you believe || He's ninety, ___? | ___, I won the lottery! | It snowed in May, ___? | And then, ___, she said yes! | ___ it, he's married now. || | 
+would you believe || He still runs marathons. He's ninety, ___? | ___, I won the lottery! | It snowed in May, ___? | And then, ___, she said yes! | ___ it, he's married now. || |
 incognito || The star travelled ___. | The prince went ___ to the bar. | Use ___ mode in your browser. | She was ___ in sunglasses. | He visited the shop ___. || | 
-put in a few calls || I'll ___ and see what I can do. | She ___ to friends in the ministry. | Let me ___. | He ___ and got us tickets. | I'll ___ tomorrow. || | 
+put in a few calls || I'll ___ and see what I can do. | She ___ to friends in the ministry. | I know some people at the club. Let me ___. | He ___ and got us tickets. | Don't worry about the visa. I'll ___ tomorrow. || |
 one thing just led to another || We started talking, and ___. | I went for one drink and ___. | ___ and we ended up married. | We kissed, and ___. | I opened one email and ___. || | 
 a bit of a boost || The sale gave the shop ___. | Coffee gives me ___. | The win gave the team ___. | Sunshine gives tourism ___. | Her praise gave me ___. || | 
 heaven sent || The rain was ___ for the farmers. | That job offer was ___. | The new nurse was ___. | Your help was ___. | This money is ___. || | 
 vicious || A ___ dog bit the postman. | It was a ___ attack. | She has a ___ tongue. | A ___ circle of debt. | ___ rumours spread quickly. || | 
 Hilarious || "I locked myself out." "___." | That film was ___! | ___, that's the best joke all year. | Her stories are ___. | Oh yes, ___ — I'm laughing inside. || | 
-driven a man out of his mind || That noise has ___. | Jealousy has ___. | The waiting has ___. | Her lies have ___. | The case has ___. || | 
-no harm done || "Sorry I bumped your car." "___." | It was a mistake, but ___. | Relax, ___. | ___ — the vase didn't break. | Well, ___ in the end. || | 
+driven a man out of his mind || That noise has ___. | He follows her everywhere; jealousy has ___. | The waiting has ___. | Her lies have ___. | The case has ___. || |
+no harm done || "Sorry I bumped your car." "___." | It was a mistake, but ___. | You only spilled water on the table. Relax, ___. | ___ — the vase didn't break. | Well, ___ in the end. || |
 charge them with || The police will ___ theft. | What can we ___? | They decided to ___ fraud. | We can't ___ anything yet. | The CPS will ___ murder. || | 
 pull off || I don't know how she managed to ___ that trick. | Can we ___ the surprise party? | He tried to ___ the robbery. | Only you could ___ that hat. | They'll never ___ this deal. || | 
 bizarre || That's a ___ coincidence. | He has some ___ habits. | What a ___ dream. | The story gets more ___. | Her outfit was ___. || | 
-Pick up || ___, Mum, it's urgent! | ___ the phone! | He won't ___. | Come on, ___... why isn't he answering? | ___, please! || | 
+Pick up || ___, Mum, it's urgent! | It's ringing and ringing. ___ the phone! | I've called five times and he won't ___. | Come on, ___... why isn't he answering? | Come on, Mum, ___, please! It's urgent. || |
 I daren't || ___ tell my mother. | ___ look at the bill. | ___ open the letter. | I'd love to, but ___. | ___ go in there alone. || I don't dare | dated
 drugged || Someone ___ my drink. | The guard was ___. | She felt ___ and confused. | The horse had been ___. | They ___ the victim before robbing him. || | 
-cold-blooded || A ___ killer. | It was ___ murder. | Snakes are ___ animals. | That was a ___ decision. | He's completely ___. || | 
+cold-blooded || Police described him as a calm, ___ killer. | It was ___ murder. | Snakes are ___ animals. | That was a ___ decision. | He sacked fifty people without blinking. He's completely ___. || |
 It isn't done || You don't talk about money at dinner. ___. | Wearing white to a wedding? ___. | ___ — you don't call the boss by his first name here. | ___ in polite society. | Eating with your hands? ___ here. || | dated
 mix-up || There was a ___ with the tickets. | Sorry, a ___ at the hospital. | A ___ over the dates. | The ___ was my fault. | Due to a ___, we got the wrong order. || | 
-compassion || Nurses need ___. | She showed great ___. | He has no ___ for others. | Treat them with ___. | A lack of ___. || | 
+compassion || As well as skill, nurses need ___ for their patients. | She showed great ___. | He has no ___ for others. | Treat them with ___. | A lack of ___. || |
 mind palace || Sherlock retreats into his ___ to remember things. | Memory champions build a ___. | Let me check my ___. | Store it in your ___. | He walked through his ___. || memory palace | 
-thought it up || Who ___? It's brilliant. | She ___ in the shower. | He ___ on the spot. | I ___ myself. | We ___ last night. || came up with it | 
+thought it up || Who ___? It's brilliant. | She ___ in the shower. | He ___ on the spot. | Nobody helped me with the name — I ___ myself. | We ___ last night. || came up with it |
 throwback || The restaurant is a ___ to the 1950s. | His style is a ___. | This song is a ___. | The dress is a ___ to the 70s. | That rule is a ___ to the old days. || | 
 fond of || She's very ___ her nephew. | I'm not ___ spicy food. | He's ___ telling stories. | We're ___ the old house. | The cat is ___ him. || | 
 first-name terms || We're on ___ with the boss. | Are you on ___? | I'm on ___ with the doctor. | They quickly got onto ___. | We never got to ___. || | 
-Prolonged || ___ exposure to the sun is dangerous. | ___ silence filled the room. | ___ use can damage your eyes. | ___ applause followed. | ___ stress made him ill. || | 
+Prolonged || ___ exposure to the sun is dangerous. | ___ silence filled the room. | ___ use can damage your eyes. | When the orchestra finished, ___ applause followed. | ___ stress made him ill. || |
 cope || I can't ___ with all this work. | She'll ___, she's strong. | How do you ___ with three kids? | The hospital can't ___. | He couldn't ___ after the loss. || | 
 dosing you up || Who's been ___ with painkillers? | They were ___ without you knowing. | Your mum's ___ with medicine. | Stop ___ — you'll get addicted. | They've been ___ for weeks. || | 
-all at once || Everything happened ___. | Don't eat it ___. | Everyone started talking ___. | ___, the lights went out. | I can't do it ___. || | 
-Keep back || ___, the fire's spreading! | ___ from the edge! | Police told the crowd to ___. | ___, it might explode! | ___ — it's dangerous. || Stay back | 
+all at once || The phone rang, the baby cried and the doorbell went — everything happened ___. | Don't eat it ___. | Everyone started talking ___. | ___, the lights went out. | I can't do it ___. || |
+Keep back || ___, the fire's spreading! | ___ from the edge! | Police told the crowd to ___. | ___, it might explode! | The wall might fall. ___ — it's dangerous. || Stay back |
 scared to death || I was ___ of the dentist. | She's ___ of flying. | You had me ___! | The kids were ___. | He's ___ of spiders. || scared stiff | 
