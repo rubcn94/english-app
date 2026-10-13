@@ -15958,7 +15958,7 @@ const CARD_EXTRAS = {
   "ex": [
    "I don't want to know the price. ___.",
    "___ — don't tell me the score.",
-   "Sometimes ___.",
+   "I never check my bank balance. Sometimes ___.",
    "___, they say.",
    "I'd rather not check. ___."
   ]
@@ -15966,9 +15966,9 @@ const CARD_EXTRAS = {
  "sh12_balance-sheet": {
   "ex": [
    "The company's ___ looks healthy.",
-   "Check the ___.",
+   "Before you invest in a company, check the ___.",
    "On the ___, we're losing money.",
-   "A strong ___.",
+   "The bank survived the crisis thanks to a strong ___.",
    "Life is like a ___."
   ]
  },
@@ -15977,7 +15977,7 @@ const CARD_EXTRAS = {
    "You've stopped exercising — you're ___.",
    "Since the divorce, he's been ___.",
    "She's worried about ___.",
-   "Don't start ___.",
+   "You've retired, but don't start ___.",
    "Stop ___ and buy some new clothes."
   ]
  },
@@ -15995,7 +15995,7 @@ const CARD_EXTRAS = {
    "Take up the ___ of these trousers.",
    "The ___ is coming down.",
    "Her skirt's ___ is torn.",
-   "Sew the ___.",
+   "The skirt is too long. Sew the ___ up a bit.",
    "Let down the ___."
   ]
  },
@@ -16020,7 +16020,7 @@ const CARD_EXTRAS = {
  "sh12_in-a-state": {
   "ex": [
    "She was ___ when she heard.",
-   "Don't get ___.",
+   "It's only a small scratch on the car. Don't get ___.",
    "Look at you — you're ___!",
    "The house is ___.",
    "He's ___ about the exam."
@@ -16032,7 +16032,7 @@ const CARD_EXTRAS = {
    "Students are always ___.",
    "We're ___ until payday.",
    "The council is ___.",
-   "Sorry, I'm ___."
+   "I'd love to come to the concert, but sorry, I'm ___."
   ]
  },
  "sh12_keep-tabs": {
@@ -16068,14 +16068,14 @@ const CARD_EXTRAS = {
    "The AI has ___.",
    "One of our officers has ___.",
    "He's ___ — ignoring orders.",
-   "The drone's ___."
+   "It's not responding to the controls — the drone's ___."
   ]
  },
  "sh12_burn-our-bridges": {
   "ex": [
    "Let's leave politely — we don't want to ___.",
    "Don't ___ with the old company.",
-   "Shouting will ___.",
+   "Stay calm in the meeting; shouting will ___.",
    "We can't afford to ___.",
    "Careful, or we'll ___."
   ]
@@ -16112,7 +16112,7 @@ const CARD_EXTRAS = {
   "ex": [
    "Oh, ___ — it's not all about you.",
    "___, you're not that special.",
-   "___, mate.",
+   "You won one race. ___, mate.",
    "You need to ___.",
    "___ and help us."
   ]
@@ -16128,11 +16128,11 @@ const CARD_EXTRAS = {
  },
  "sh12_bullshit": {
   "ex": [
-   "That's complete ___.",
+   "He says he invented the internet? That's complete ___.",
    "Don't give me that ___.",
-   "He talks ___.",
+   "Don't listen to him — he talks ___.",
    "I can smell ___.",
-   "Cut the ___."
+   "I know you were at the bar. Cut the ___."
   ]
  },
  "sh12_buck-up": {
@@ -16140,7 +16140,7 @@ const CARD_EXTRAS = {
    "___, it's not the end of the world.",
    "You need to ___ your ideas.",
    "___ — we're nearly there!",
-   "Come on, ___!",
+   "You've been sad all week. Come on, ___!",
    "___ or you'll fail."
   ],
   "us": "Cheer up / Shape up",
@@ -16149,7 +16149,7 @@ const CARD_EXTRAS = {
  "sh12_get-ahead-of-ourselves": {
   "ex": [
    "Let's not ___ — we haven't won yet.",
-   "We shouldn't ___.",
+   "One good month of sales — we shouldn't ___.",
    "Don't ___ — it's only a first date.",
    "Let's not ___ with the wedding plans.",
    "We're starting to ___."
@@ -16166,10 +16166,10 @@ const CARD_EXTRAS = {
  },
  "sh12_drug-addled": {
   "ex": [
-   "A ___ musician.",
-   "His ___ mind.",
-   "A ___ teenager.",
-   "___ ramblings.",
+   "The film is about a ___ musician in the 70s.",
+   "His ___ mind couldn't remember what day it was.",
+   "The social worker tried to help a ___ teenager.",
+   "Nobody understood his ___ ramblings.",
    "He was ___ for years."
   ]
  },
@@ -16185,28 +16185,28 @@ const CARD_EXTRAS = {
  "sh12_outcasts": {
   "ex": [
    "They were treated as ___.",
-   "Social ___.",
+   "The club welcomed social ___ that nobody else wanted.",
    "A group of ___.",
-   "Society's ___.",
+   "The charity helps society's ___.",
    "The ___ became friends."
   ]
  },
  "sh12_gloomy": {
   "ex": [
-   "A ___ day.",
+   "It was a ___ day, grey and rainy.",
    "Don't look so ___.",
-   "___ weather.",
+   "This ___ weather is making me sad.",
    "The forecast is ___.",
-   "A ___ house."
+   "They lived in a dark, ___ house."
   ]
  },
  "sh12_pliable": {
   "ex": [
-   "___ clay.",
+   "Children love playing with ___ clay.",
    "Children's minds are ___.",
-   "___ leather.",
+   "These boots are made of soft, ___ leather.",
    "She found him ___.",
-   "A ___ material."
+   "Rubber is a ___ material."
   ],
   "us": "malleable"
  },
@@ -16214,16 +16214,16 @@ const CARD_EXTRAS = {
   "ex": [
    "He was ___ on pills.",
    "They got ___ at the festival.",
-   "He's ___ again.",
+   "He took something at the party — he's ___ again.",
    "She was ___ by midnight.",
-   "Totally ___."
+   "He was dancing on the table, totally ___."
   ],
   "us": "high as a kite / out of his mind"
  },
  "sh12_loitering": {
   "ex": [
    "No ___ outside the shop.",
-   "Youths were ___.",
+   "Youths were ___ outside the supermarket all night.",
    "Stop ___ and come in.",
    "He was arrested for ___.",
    "___ in the corridor."
@@ -16232,8 +16232,8 @@ const CARD_EXTRAS = {
  "sh12_bringing-charges": {
   "ex": [
    "The victim isn't ___.",
-   "Police are ___.",
-   "Are you ___?",
+   "Police are ___ against the driver.",
+   "He hit you. Are you ___?",
    "She decided against ___.",
    "The company is ___."
   ],
@@ -16243,15 +16243,15 @@ const CARD_EXTRAS = {
   "ex": [
    "He's very ill, but he'll ___.",
    "The dog will ___.",
-   "We'll ___ together.",
-   "Will she ___?",
+   "Things are hard, but we'll ___ together.",
+   "She's very ill. Will she ___?",
    "Only the strong ___."
   ]
  },
  "sh12_look-on-the-bright-side": {
   "ex": [
    "___ — at least nobody's hurt.",
-   "Try to ___.",
+   "You lost your job, but try to ___.",
    "___, it could be worse.",
    "She always tries to ___.",
    "___: no work tomorrow."
@@ -16269,9 +16269,9 @@ const CARD_EXTRAS = {
  "sh12_spooks": {
   "ex": [
    "The embassy is full of ___.",
-   "MI5 ___.",
-   "___ followed him.",
-   "Are they ___?",
+   "MI5 ___ were watching the embassy.",
+   "Government ___ followed him for months.",
+   "Two men in dark suits outside. Are they ___?",
    "A world of ___ and spies."
   ]
  },
@@ -16279,8 +16279,8 @@ const CARD_EXTRAS = {
   "ex": [
    "My old phone finally ___.",
    "The car ___ on the motorway.",
-   "The fridge ___.",
-   "My laptop ___.",
+   "The fridge ___ in the middle of summer.",
+   "My laptop ___ the night before my essay was due.",
    "The washing machine ___."
   ]
  },
@@ -16298,35 +16298,35 @@ const CARD_EXTRAS = {
    "Firefighters put themselves ___.",
    "Keep children out of ___.",
    "He never wanted to put you ___.",
-   "Soldiers ___.",
+   "Politicians make decisions that put soldiers ___.",
    "Don't put yourself ___."
   ]
  },
  "sh12_inadmissible": {
   "ex": [
    "The evidence is ___ in court.",
-   "___ testimony.",
+   "The judge ruled it ___ testimony.",
    "The judge ruled it ___.",
    "The recording was ___.",
-   "___ confession."
+   "He was beaten, so it was an ___ confession."
   ]
  },
  "sh12_entrapment": {
   "ex": [
    "The defence claimed ___.",
-   "That's ___.",
+   "The police paid him to sell drugs and then arrested him? That's ___.",
    "Police were accused of ___.",
-   "___ is illegal.",
+   "The defence argued that ___ is illegal.",
    "It looked like ___."
   ]
  },
  "sh12_comeback": {
   "ex": [
-   "No witty ___?",
+   "I called you boring. No witty ___?",
    "The team made a ___.",
-   "Her ___ album.",
+   "After ten years away, she released her ___ album.",
    "He had a clever ___.",
-   "A ___ tour."
+   "The old band announced a ___ tour."
   ]
  },
  "sh12_disservice": {
@@ -16352,9 +16352,9 @@ const CARD_EXTRAS = {
   "ex": [
    "We're just ___ at the mall.",
    "Who are you ___ with?",
-   "___ with friends.",
+   "On Saturdays, I'm usually ___ with friends.",
    "I like ___ here.",
-   "They're ___ again."
+   "Those two are ___ again — are they dating?"
   ]
  },
  "sh12_locked-himself-away": {
@@ -16369,10 +16369,10 @@ const CARD_EXTRAS = {
  "sh12_roll-up-your-right-sleeves": {
   "ex": [
    "Nurse: \"Please ___ for the injection.\"",
-   "___, everyone.",
+   "The nurse said, \"___, everyone.\"",
    "___ for the blood test.",
-   "Could you ___?",
-   "___ — vaccine time."
+   "I need to take your blood pressure. Could you ___?",
+   "Line up and ___ — vaccine time."
   ]
  },
  "sh12_take-it-back": {
@@ -16380,33 +16380,33 @@ const CARD_EXTRAS = {
    "I'm sorry, I ___.",
    "You can't ___ once it's said.",
    "Can I ___ to the shop?",
-   "___ — that's rude!",
-   "I ___ everything."
+   "You called my mum fat? ___ — that's rude!",
+   "You were right, I ___ everything."
   ]
  },
  "sh12_obscene": {
   "ex": [
-   "___ language.",
+   "The comedian was criticised for ___ language.",
    "An ___ amount of money.",
-   "___ gestures.",
-   "It's ___.",
-   "___ profits."
+   "The fans were making ___ gestures at the referee.",
+   "He earns a million a week while nurses struggle. It's ___.",
+   "Energy companies made ___ profits during the crisis."
   ]
  },
  "sh12_a-measure-of": {
   "ex": [
-   "___ success.",
+   "After years of failure, they finally had ___ success.",
    "It's ___ how much he cares.",
-   "___ trust.",
-   "___ respect.",
-   "___ control."
+   "Giving him the keys showed ___ trust.",
+   "He gained ___ respect after the speech.",
+   "Exercise gives me ___ control over my stress."
   ]
  },
  "sh12_drip-feeds": {
   "ex": [
    "The hospital ___ him through the night.",
    "They ___ information to the press.",
-   "Patients on ___.",
+   "The ward was full of patients on ___.",
    "He ___ us news.",
    "The ___ were changed."
   ]
@@ -16417,23 +16417,23 @@ const CARD_EXTRAS = {
    "He refused to ___.",
    "I ___, I ate it.",
    "The suspect will ___.",
-   "___ your sins."
+   "The priest told him to ___ before it was too late."
   ]
  },
  "sh12_high-ranking": {
   "ex": [
-   "A ___ officer.",
-   "___ officials.",
-   "A ___ diplomat.",
+   "A ___ officer was arrested for corruption.",
+   "___ officials met in secret.",
+   "A ___ diplomat was expelled from the country.",
    "___ members of the party.",
-   "She's ___."
+   "She's ___ in the party now."
   ]
  },
  "sh12_sits-on-the-board": {
   "ex": [
    "She ___ of three companies.",
    "He ___ of the hospital.",
-   "Who ___?",
+   "Who ___ of this company?",
    "My uncle ___ of a charity.",
    "She ___ of the bank."
   ]
@@ -16441,92 +16441,92 @@ const CARD_EXTRAS = {
  "sh12_in-credit": {
   "ex": [
    "My account is ___.",
-   "Stay ___.",
+   "Don't spend more than you have. Stay ___.",
    "We're ___ this month.",
    "Your account is ___.",
-   "Always ___."
+   "I check my account so it's always ___."
   ]
  },
  "sh12_gone-down-the-pub": {
   "ex": [
    "The lads have ___.",
-   "He's ___ again.",
-   "Everyone's ___.",
+   "He's ___ again instead of fixing the shelf.",
+   "The office is empty — everyone's ___.",
    "They've ___ to watch the match.",
-   "Dad's ___."
+   "Dad's ___ to watch the match."
   ],
   "us": "gone to the bar"
  },
  "sh12_it-s-all-on-me": {
   "ex": [
    "Order what you like — ___.",
-   "Tonight ___.",
-   "Drinks? ___.",
-   "___, guys.",
-   "Don't pay, ___."
+   "I got a pay rise, so tonight ___.",
+   "Drinks? ___ — it's my birthday.",
+   "Put your wallets away — ___, guys.",
+   "The waiter's coming. Don't pay, ___."
   ],
   "us": "It's my treat"
  },
  "sh12_your-roots-are-showing": {
   "ex": [
    "Time for a dye — ___.",
-   "___, darling.",
+   "Time for a dye — ___, darling.",
    "Book the hairdresser, ___.",
-   "Oh no, ___.",
-   "___ again."
+   "I looked in the mirror — oh no, ___.",
+   "You dyed your hair last month and ___ again."
   ]
  },
  "sh12_cost-cutting": {
   "ex": [
    "___ means fewer staff.",
-   "More ___.",
+   "The new manager means more ___.",
    "___ is a priority.",
-   "___ measures.",
+   "The council announced new ___ measures.",
    "___ led to errors."
   ]
  },
  "sh12_it-ll-come-back-to-me": {
   "ex": [
-   "His name? ___.",
-   "Don't worry, ___.",
-   "___ later.",
-   "Hmm, ___.",
-   "Wait — ___."
+   "What's that actor called? His name? ___.",
+   "I've forgotten my password, but don't worry, ___.",
+   "I can't remember the song now, but ___ later.",
+   "Where did I park? Hmm, ___.",
+   "What was I going to say? Wait — ___."
   ]
  },
  "sh12_turn-to": {
   "ex": [
    "Who can I ___?",
    "She has no one to ___.",
-   "___ page ten.",
-   "___ a friend.",
-   "___ the experts."
+   "Open your books and ___ page ten.",
+   "When things get tough, ___ a friend.",
+   "If the problem is serious, ___ the experts."
   ]
  },
  "sh12_consistent-with": {
   "ex": [
    "His injuries are ___ a fall.",
-   "___ the evidence.",
+   "His story is ___ the evidence.",
    "Results ___ previous studies.",
    "Be ___ the rules.",
-   "___ his story."
+   "The CCTV is ___ his story."
   ]
  },
  "sh12_on-the-road": {
   "ex": [
    "The band is ___ for months.",
    "I'm ___ a lot.",
-   "___ again.",
-   "Life ___.",
-   "Cars ___."
+   "The tour starts tomorrow and we're ___ again.",
+   "Life ___ is hard for truck drivers.",
+   "There are too many cars ___ at rush hour."
   ]
  },
  "sh12_notice-boards": {
   "ex": [
    "Check the ___ for news.",
    "Pinned on the ___.",
-   "School ___.",
-   "Community ___.",
+   "The exam dates are on the school ___.",
+   "Lost cats are posted on community ___.",
    "___ in the corridor."
   ],
   "us": "bulletin boards"
@@ -16535,15 +16535,15 @@ const CARD_EXTRAS = {
   "ex": [
    "It won't ___ to anyone.",
    "The news may ___.",
-   "Did it ___?",
-   "It didn't ___.",
-   "That shouldn't ___."
+   "You'd heard they were leaving. Did it ___?",
+   "He's always late, so it didn't ___.",
+   "You never studied, so the result shouldn't ___."
   ]
  },
  "sh12_cross": {
   "ex": [
    "Mum's ___ with you.",
-   "Don't be ___.",
+   "I forgot to call, but don't be ___ with me.",
    "He gets ___ when he loses.",
    "She was very ___.",
    "Why are you ___?"
@@ -16552,20 +16552,20 @@ const CARD_EXTRAS = {
  },
  "sh12_i-don-t-work-for-free": {
   "ex": [
-   "Sorry, ___.",
-   "___, mate.",
-   "___ — pay me.",
-   "___. Cash only.",
-   "Remember, ___."
+   "You want me to fix your website? Sorry, ___.",
+   "I'll paint your house, but ___, mate.",
+   "I've done the job, so ___ — pay me.",
+   "I'm a plumber, and ___. Cash only.",
+   "I'm happy to help, but remember, ___."
   ]
  },
  "sh12_don-t-you-dare": {
   "ex": [
    "___ touch my phone!",
-   "___!",
-   "___ tell anyone.",
-   "___ laugh.",
-   "___ leave now."
+   "You're thinking of eating my chocolate? ___!",
+   "This is a secret. ___ tell anyone.",
+   "I'm going to sing now — ___ laugh.",
+   "We haven't finished talking. ___ leave now."
   ]
  },
  "sh12_for-once": {
@@ -16573,7 +16573,7 @@ const CARD_EXTRAS = {
    "___, listen to me.",
    "___ he was on time.",
    "___ in your life.",
-   "Be quiet ___.",
+   "You talk all day. Be quiet ___.",
    "___, I agree."
   ]
  },
@@ -16582,8 +16582,8 @@ const CARD_EXTRAS = {
    "Were you held ___?",
    "Nobody can make you marry ___.",
    "___, they took you.",
-   "Taken ___.",
-   "Kept ___."
+   "Were you taken ___?",
+   "She was kept ___ in the basement."
   ]
  },
  "sh12_devised": {
@@ -16598,8 +16598,8 @@ const CARD_EXTRAS = {
  "sh12_dying-to-tell-us": {
   "ex": [
    "She's ___ her news.",
-   "He's ___.",
-   "They're ___ something.",
+   "Look at his face — he's ___ something.",
+   "They keep smiling. They're ___ something.",
    "I can see you're ___.",
    "You're ___, aren't you?"
   ]
@@ -16608,99 +16608,99 @@ const CARD_EXTRAS = {
   "ex": [
    "The child is ___ — call the doctor.",
    "I'm ___ in here.",
-   "You're ___!",
+   "Feel your forehead — you're ___!",
    "He was ___ with fever.",
    "___ in the sun."
   ]
  },
  "sh12_despicable": {
   "ex": [
-   "A ___ act.",
-   "___ behaviour.",
-   "He's ___.",
+   "Stealing from a charity is a ___ act.",
+   "Laughing at a disabled man is ___ behaviour.",
+   "He left his family with nothing. He's ___.",
    "What a ___ thing to do.",
-   "___ lies."
+   "The paper printed ___ lies about her."
   ]
  },
  "sh12_a-mess": {
   "ex": [
    "The kitchen is ___.",
-   "I'm ___.",
-   "What ___!",
+   "My girlfriend left me and I lost my job. I'm ___.",
+   "The kids had a party here. What ___!",
    "My life is ___.",
-   "Clean up ___."
+   "You spilled the paint, so clean up ___."
   ]
  },
  "sh12_using-again": {
   "ex": [
    "I think he's ___.",
-   "She started ___.",
-   "Is he ___?",
+   "After her boyfriend left, she started ___.",
+   "His eyes look strange. Is he ___?",
    "After rehab, he was ___.",
-   "Don't start ___."
+   "You've been clean for a year. Don't start ___."
   ]
  },
  "sh12_lower-your-standards": {
   "ex": [
    "Don't ___ for anyone.",
    "You'll have to ___.",
-   "Never ___.",
-   "Why ___?",
+   "Find someone who deserves you. Never ___.",
+   "You can get a better job. Why ___?",
    "He refused to ___."
   ]
  },
  "sh12_five-a-day": {
   "ex": [
-   "Eat your ___.",
+   "Fruit and vegetables — eat your ___.",
    "Fruit counts towards your ___.",
-   "Getting your ___.",
-   "___ campaign.",
+   "Smoothies help with getting your ___.",
+   "The government's ___ campaign promoted fruit and veg.",
    "Kids rarely get their ___."
   ]
  },
  "sh12_viral": {
   "ex": [
    "The video went ___.",
-   "A ___ infection.",
-   "___ marketing.",
-   "It's gone ___.",
-   "A ___ tweet."
+   "Antibiotics don't work on a ___ infection.",
+   "The company used ___ marketing on TikTok.",
+   "My video of the cat has gone ___.",
+   "A ___ tweet made her famous overnight."
   ]
  },
  "sh12_been-played": {
   "ex": [
    "I think we've ___.",
-   "Have you ___?",
+   "He took your money and disappeared. Have you ___?",
    "We've ___ for fools.",
    "I realise I've ___.",
-   "You've ___."
+   "There was no prize — you've ___."
   ]
  },
  "sh12_highlights": {
   "ex": [
-   "Match ___.",
+   "I missed the game, so I watched the match ___.",
    "The ___ of the trip.",
    "___ in her hair.",
-   "Show the ___.",
-   "The ___ reel."
+   "We don't have time for the whole film. Show the ___.",
+   "His best goals are in the ___ reel."
   ]
  },
  "sh12_step-by-step": {
   "ex": [
-   "A ___ guide.",
-   "Explain it ___.",
-   "___ instructions.",
-   "Do it ___.",
-   "A ___ plan."
+   "The book is a ___ guide to cooking.",
+   "I'm confused. Explain it ___.",
+   "The furniture came with ___ instructions.",
+   "Don't rush the repair. Do it ___.",
+   "We need a ___ plan to pay off the debt."
   ]
  },
  "sh12_gave-away-the-ending": {
   "ex": [
-   "You ___!",
+   "I haven't seen the film yet. You ___!",
    "He ___ of the film.",
    "Don't say — you ___.",
-   "She ___.",
-   "Someone ___ online."
+   "She ___ before I finished the book.",
+   "Someone ___ online before the episode aired."
   ],
   "us": "spoiled the ending"
  },
@@ -16715,47 +16715,47 @@ const CARD_EXTRAS = {
  },
  "sh12_take-a-joke": {
   "ex": [
-   "Can't you ___?",
-   "He can't ___.",
-   "Learn to ___.",
-   "She can ___.",
-   "___, mate!"
+   "I was only teasing. Can't you ___?",
+   "Don't tease him — he can't ___.",
+   "Not everything is an insult. Learn to ___.",
+   "Tease her all you like — she can ___.",
+   "Relax, it was funny. ___, mate!"
   ]
  },
  "sh12_good-for-the-soul": {
   "ex": [
-   "Laughter is ___.",
+   "Watch a comedy tonight — laughter is ___.",
    "A walk is ___.",
-   "Music is ___.",
-   "Honesty is ___.",
-   "Nature is ___."
+   "Sing in the shower — music is ___.",
+   "Tell her the truth. Honesty is ___.",
+   "Turn off your phone and walk in the woods — nature is ___."
   ]
  },
  "sh12_makes-the-world-go-round": {
   "ex": [
-   "Money ___.",
-   "Love ___.",
-   "Coffee ___.",
-   "Gossip ___.",
+   "Like it or not, money ___.",
+   "As the old song says, love ___.",
+   "At this office, coffee ___.",
+   "In a small village, gossip ___.",
    "They say love ___."
   ]
  },
  "sh12_urges": {
   "ex": [
-   "Fight your ___.",
-   "Sudden ___.",
+   "When you want a cigarette, fight your ___.",
+   "During pregnancy she had sudden ___ for pickles.",
    "He has strong ___.",
-   "___ to smoke.",
-   "Resist the ___."
+   "The patches help with the ___ to smoke.",
+   "It's hard to resist the ___ to check my phone."
   ]
  },
  "sh12_to-be-precise": {
   "ex": [
    "Ten years, six months ___.",
    "___, it's 3:12.",
-   "Two hundred, ___.",
+   "We sold two hundred tickets, ___.",
    "___, she's my cousin.",
-   "Forty-nine ___."
+   "He's nearly fifty — forty-nine, ___."
   ]
  },
  "sh12_rounded-up": {
@@ -16764,21 +16764,21 @@ const CARD_EXTRAS = {
    "I ___ the price.",
    "The dog ___ the sheep.",
    "___ to the nearest pound.",
-   "They ___ volunteers."
+   "Before the festival, they ___ volunteers from the village."
   ]
  },
  "sh12_tough-crowd": {
   "ex": [
-   "Nobody laughed — ___.",
-   "___ tonight.",
-   "Wow, ___.",
-   "___, eh?",
-   "They're a ___."
+   "I told my best joke and nobody laughed — ___.",
+   "The comedian sighed: \"___ tonight.\"",
+   "Not even a smile? Wow, ___.",
+   "The audience didn't clap once. ___, eh?",
+   "Teenagers on a Monday morning — they're a ___."
   ]
  },
  "sh12_mess-with": {
   "ex": [
-   "Don't ___ me.",
+   "I'm in a terrible mood. Don't ___ me.",
    "Don't ___ the settings.",
    "Who would ___ him?",
    "Stop ___ my hair.",
@@ -16789,25 +16789,25 @@ const CARD_EXTRAS = {
   "ex": [
    "A ___ old house.",
    "He's a bit ___.",
-   "___ music.",
-   "That's ___.",
-   "___ dolls."
+   "The film's ___ music made me nervous.",
+   "He knows where I live and I never told him. That's ___.",
+   "My grandmother's house was full of ___ dolls."
   ]
  },
  "sh12_lay-it-out-for-you": {
   "ex": [
    "Let me ___ simply.",
-   "I'll ___.",
-   "Shall I ___?",
+   "You're confused about the plan? I'll ___.",
+   "It's complicated. Shall I ___?",
    "I'll ___ step by step.",
-   "Here, I'll ___."
+   "Here, I'll ___ on this piece of paper."
   ]
  },
  "sh12_factor-in": {
   "ex": [
    "___ the cost of petrol.",
    "Don't forget to ___ tax.",
-   "___ delays.",
+   "The trip takes six hours, but ___ delays.",
    "We must ___ the weather.",
    "___ time for lunch."
   ]
@@ -16824,9 +16824,9 @@ const CARD_EXTRAS = {
  "sh12_leave-him-be": {
   "ex": [
    "___, he's tired.",
-   "Just ___.",
-   "___ — he's grieving.",
-   "Please ___.",
+   "He wants to be alone. Just ___.",
+   "Don't ask him questions now. ___ — he's grieving.",
+   "He's not hurting anyone. Please ___.",
    "___, he's fine."
   ],
   "us": "Leave him alone"
@@ -16835,43 +16835,43 @@ const CARD_EXTRAS = {
   "ex": [
    "___ to his opinion.",
    "___ to a refund.",
-   "___ to know.",
-   "___ to rest.",
+   "It's his money. ___ to know where it went.",
+   "He's worked all week. ___ to rest.",
    "___ to some privacy."
   ]
  },
  "sh12_parting-gift": {
   "ex": [
    "A ___ from his colleagues.",
-   "Here's a ___.",
-   "___ for you.",
-   "A small ___.",
+   "You've been a great colleague. Here's a ___.",
+   "Before you leave for Canada — a ___ for you.",
+   "The staff gave the retiring teacher a small ___.",
    "Her ___ was a book."
   ],
   "us": "Going-away gift"
  },
  "sh12_self-loathing": {
   "ex": [
-   "Full of ___.",
+   "After hurting her, he was full of ___.",
    "His ___ was obvious.",
-   "___ and guilt.",
+   "The song is about ___ and guilt.",
    "A wave of ___.",
-   "___ is destructive."
+   "Be kind to yourself; ___ is destructive."
   ]
  },
  "sh12_detest": {
   "ex": [
    "I ___ cold weather.",
    "They ___ each other.",
-   "I ___ liars.",
-   "We ___ waiting.",
-   "I ___ him."
+   "I can forgive a lot, but I ___ liars.",
+   "We ___ waiting in long queues.",
+   "He bullied me for years. I ___ him."
   ]
  },
  "sh12_misspoke": {
   "ex": [
-   "Sorry, I ___.",
-   "The minister ___.",
+   "I said Tuesday? Sorry, I ___ — I meant Thursday.",
+   "The spokesperson said the minister ___ in the interview.",
    "He said he ___.",
    "I ___ — I meant Tuesday.",
    "She admitted she ___."
@@ -16881,18 +16881,18 @@ const CARD_EXTRAS = {
   "ex": [
    "We ___ on a journey.",
    "She ___ on a new career.",
-   "The passengers ___.",
+   "The passengers ___ at Southampton.",
    "He ___ on a diet.",
    "They ___ on the project."
   ]
  },
  "sh12_triggered-it": {
   "ex": [
-   "What ___?",
+   "The alarm went off at 3am. What ___?",
    "A loud noise ___.",
-   "Stress ___.",
-   "Something ___.",
-   "The smell ___."
+   "He had a heart attack, and stress ___.",
+   "She suddenly started crying. Something ___.",
+   "I remembered my grandma's kitchen — the smell ___."
   ]
  },
  "sh12_so-to-speak": {
@@ -16906,38 +16906,38 @@ const CARD_EXTRAS = {
  },
  "sh12_decency": {
   "ex": [
-   "Have some ___!",
-   "Common ___.",
-   "Basic ___.",
+   "Don't take photos at the funeral. Have some ___!",
+   "Say sorry when you bump into someone. It's common ___.",
+   "Returning a lost wallet is basic ___.",
    "He had the ___ to apologise.",
-   "No ___."
+   "He cancelled by text an hour before. No ___."
   ]
  },
  "sh12_for-luck": {
   "ex": [
-   "Kiss me ___.",
-   "One more ___.",
-   "Touch wood ___.",
-   "A coin ___.",
-   "Knock ___."
+   "I'm about to go on stage. Kiss me ___.",
+   "Throw the coin in the fountain — one more ___.",
+   "We haven't had any problems — touch wood ___.",
+   "She keeps a coin in her shoe ___.",
+   "Knock on wood ___."
   ]
  },
  "sh12_to-what-do-i-owe-the-pleasure": {
   "ex": [
-   "Oh, hello! ___?",
+   "Oh, hello! I wasn't expecting you. ___?",
    "___ of your visit?",
-   "Well, ___?",
-   "___, Inspector?",
+   "My son phoning me? Well, ___?",
+   "Come in. ___, Inspector?",
    "___? It's been years."
   ]
  },
  "sh12_jammed": {
   "ex": [
-   "The printer's ___.",
+   "I can't print the report — the printer's ___.",
    "The door is ___.",
-   "___ traffic.",
-   "The gun ___.",
-   "The window's ___."
+   "We sat in ___ traffic for an hour.",
+   "He pulled the trigger, but the gun ___.",
+   "I can't open it — the window's ___."
   ],
   "us": "stuck"
  },
@@ -16945,71 +16945,71 @@ const CARD_EXTRAS = {
   "ex": [
    "Don't ___ with him.",
    "He loves to ___.",
-   "Why ___?",
+   "He's twice your size. Why ___?",
    "She tried to ___.",
    "Don't ___ you can't win."
   ]
  },
  "sh12_restrain-him": {
   "ex": [
-   "___! He's dangerous.",
+   "He's attacking the staff. ___! He's dangerous.",
    "___ before he hurts someone.",
-   "Security, ___!",
-   "Please ___.",
-   "___ now."
+   "He's trying to get on stage. Security, ___!",
+   "The patient is pulling out his tubes. Please ___.",
+   "He's going to hurt himself. ___ now."
   ]
  },
  "sh12_malnourished": {
   "ex": [
-   "___ children.",
+   "Aid workers treated ___ children in the camp.",
    "The dog was ___.",
-   "___ and weak.",
-   "He looks ___.",
-   "___ prisoners."
+   "The rescued dog was ___ and weak.",
+   "He's lost so much weight. He looks ___.",
+   "The photos showed ___ prisoners behind wire."
   ]
  },
  "sh12_heard-you-the-first-time": {
   "ex": [
-   "OK, OK — ___!",
-   "___, Mum.",
+   "Stop shouting. OK, OK — ___!",
+   "Yes, I'll tidy my room. ___, Mum.",
    "___, no need to shout.",
-   "Yes, I ___.",
-   "___!"
+   "You don't need to repeat it. Yes, I ___.",
+   "\"Take the bins out! Take the bins out!\" \"___!\""
   ]
  },
  "sh12_predictable": {
   "ex": [
-   "You're so ___.",
-   "A ___ ending.",
-   "___ weather.",
+   "Pizza again? You're so ___.",
+   "I guessed who the killer was — a ___ ending.",
+   "Spain has more ___ weather than Britain.",
    "The result was ___.",
-   "How ___."
+   "He forgot my birthday again. How ___."
   ]
  },
  "sh12_back-up-plans": {
   "ex": [
-   "Always have ___.",
-   "We need ___.",
-   "I had ___.",
-   "Several ___.",
-   "Any ___?"
+   "In business, always have ___.",
+   "If it rains, the picnic is ruined. We need ___.",
+   "I wasn't worried about failing — I had ___.",
+   "The general prepared several ___.",
+   "The venue just cancelled. Any ___?"
   ],
   "us": "backup plans"
  },
  "sh12_biased": {
   "ex": [
    "The referee was ___.",
-   "A ___ report.",
-   "I'm ___.",
-   "Don't be ___.",
-   "___ against women."
+   "The newspaper published a ___ report.",
+   "My son is the best player, but I'm ___.",
+   "Listen to both sides. Don't be ___.",
+   "The hiring system was ___ against women."
   ]
  },
  "sh12_taking-it-in-turns": {
   "ex": [
    "We're ___ to drive.",
    "The kids are ___.",
-   "___ to cook.",
+   "In our flat, we're ___ to cook.",
    "___ to look after Mum.",
    "They're ___ on the swing."
   ],
@@ -17018,8 +17018,8 @@ const CARD_EXTRAS = {
  "sh12_it-is-what-it-is": {
   "ex": [
    "Can't change it — ___.",
-   "Oh well, ___.",
-   "___, mate.",
+   "The flight is cancelled. Oh well, ___.",
+   "We lost the final. ___, mate.",
    "___; we'll cope.",
    "Rain on our holiday? ___."
   ]
@@ -17027,8 +17027,8 @@ const CARD_EXTRAS = {
  "sh12_trust-you-to": {
   "ex": [
    "___ forget my birthday!",
-   "___ be late.",
-   "___ say that.",
+   "The one day it matters — ___ be late.",
+   "At a funeral? ___ say that.",
    "___ find the best seat.",
    "___ make a mess."
   ],
@@ -17046,28 +17046,28 @@ const CARD_EXTRAS = {
  "sh12_cheated-on": {
   "ex": [
    "He ___ his wife.",
-   "She ___ me.",
+   "She ___ me with my best friend.",
    "Have you ever ___ anyone?",
-   "I was ___.",
-   "He was ___."
+   "I was ___ by my first boyfriend.",
+   "He was ___ and he never trusted anyone again."
   ]
  },
  "sh12_from-time-to-time": {
   "ex": [
    "I see him ___.",
    "___ we eat out.",
-   "It rains ___.",
+   "Bring an umbrella — it rains ___ even in summer.",
    "___ I get headaches.",
-   "Call me ___."
+   "I'm moving away, but call me ___."
   ]
  },
  "sh12_off-his-head": {
   "ex": [
    "He was ___ on drugs.",
    "He must be ___.",
-   "Totally ___.",
-   "___ with worry.",
-   "He's ___."
+   "He was running naked through the park, totally ___.",
+   "His daughter didn't come home. He was ___ with worry.",
+   "He wants to sail around the world alone. He's ___."
   ],
   "us": "out of his mind"
  },
@@ -17076,7 +17076,7 @@ const CARD_EXTRAS = {
    "Towels are in the ___.",
    "Dry it in the ___.",
    "The ___ is warm.",
-   "Check the ___.",
+   "I can't find clean towels. Check the ___.",
    "Hidden in the ___."
   ],
   "us": "linen closet"
