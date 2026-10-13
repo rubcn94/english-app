@@ -40,7 +40,7 @@ v25_038 || We tried ___ with our second child. | ___ uses soft finger foods inst
 v25_039 || The baby slept in an old wooden ___. | Rock the ___ gently until she sleeps. | The ___ was a family heirloom. | The ___ stood by the fire. | Grandpa made the ___ by hand. || |
 v25_040 || Lay the baby on the ___. | The ___ is easy to wipe clean. | Keep the ___ on the floor for safety. | The ___ is in the bathroom. | Put a towel on the ___ first. || |
 v25_041 || Fill the ___ with warm water. | The baby loves splashing in the ___. | The ___ fits inside the big bath. | Test the water in the ___ with your elbow. | The ___ is made of plastic. || |
-v25_042 || Use ___ for nappy changes. | Pack some ___ in the changing bag. | ___ are useful for sticky hands too. | Don't flush ___ down the toilet. | We need to buy more ___. || baby wipes |
+v25_042 || Use ___ for nappy changes. | Pack some ___ in the changing bag. | ___ are useful for sticky hands too. | Don't flush ___ down the toilet. | We need to buy more ___. || |
 v25_043 || The baby has ___ again. | A special cream helps with ___. | Change nappies often to avoid ___. | ___ makes babies uncomfortable. | ___ is very common in babies. || diaper rash |
 v25_044 || The baby has ___ and cries every evening. | ___ usually stops at around three months. | ___ is exhausting for new parents. | Doctors still don't know what causes ___. | Rocking sometimes helps with ___. || |
 v25_045 || The baby has ___ and brings up milk. | ___ is common in newborns. | Feed the baby upright to reduce ___. | ___ can cause a lot of discomfort. | The doctor gave her medicine for ___. || |
@@ -59,7 +59,7 @@ v25_057 || The baby is going through a ___. | A ___ makes babies hungry. | He ha
 v25_058 || The baby is going through ___. | ___ is exhausting for parents. | ___ usually passes in a few weeks. | The four-month ___ is very common. | Don't panic about ___ — it's normal. || |
 v25_059 || The baby takes a ___ after lunch. | Toddlers still need a daily ___. | I'm going to have a quick ___. | He skipped his ___ and was grumpy all evening. | The baby's ___ lasted two hours. || |
 v25_060 || A ___ helps babies sleep better. | Our ___ includes a bath and a story. | Keep the ___ simple and calm. | The ___ takes about an hour. | Try to stick to the ___ every night. || |
-v25_061 || ___ often starts at about eight months. | She has ___ when we leave her at nursery. | Crying when mum leaves the room is ___. | The toddler cried with ___. | Dogs can also suffer from ___. || |
+v25_061 || ___ often starts at about eight months. | She has ___ when we leave her at nursery. | Crying when mum leaves the room is a sign of ___. | The toddler cried with ___. | Dogs can also suffer from ___. || |
 v25_062 || The ___ looks after three children. | We found a ___ near our house. | The ___ picks the kids up from school. | Our ___ is very experienced. | A ___ is cheaper than a nanny. || |
 v25_063 || She goes to ___ three days a week. | The ___ has a big garden. | ___ fees are very high in London. | He loves going to ___. | The ___ closes at six. || daycare |
 v25_064 || The ___ lives with the family. | They hired a ___ for the twins. | The ___ takes the kids to school. | Having a ___ is expensive. | Mary Poppins was a magical ___. || |
