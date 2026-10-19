@@ -95,6 +95,16 @@
         <span class="stat-label">due today</span>
       </div>
     </div>
+    <div class="today-card">
+      <div class="today-head">
+        <span class="today-title">Today</span>
+        <button class="btn-settings" onclick="showSettings()">⚙ Study settings</button>
+      </div>
+      <div class="today-line"><span>Reviews done</span><span id="today-reviews">0 / 60</span></div>
+      <div class="today-track"><div class="today-bar" id="today-bar"></div></div>
+      <div class="today-line"><span>New cards learned</span><span id="today-news">0</span></div>
+      <p class="today-note" id="today-session"></p>
+    </div>
     <div class="backup-row">
       <span class="backup-status" id="backup-status">Never backed up</span>
       <div class="backup-actions">
@@ -102,6 +112,53 @@
         <button class="btn-backup" onclick="triggerImportBackup()">⬆ Import</button>
       </div>
       <input type="file" id="backup-file-input" accept="application/json" class="hidden" onchange="importBackupFile(this)">
+    </div>
+  </div>
+
+  <!-- SCREEN: STUDY SETTINGS -->
+  <div id="screen-settings" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('home'); refreshHomeStats()">← Back</button>
+      <h2>⚙ Study settings</h2>
+    </div>
+    <div class="settings-body">
+      <div class="setting-row">
+        <div class="setting-text"><span class="setting-label">Reviews per day</span><span class="setting-help">Total across all sections. When you reach it, sections only give you new cards.</span></div>
+        <div class="setting-stepper">
+          <button onclick="stepSetting('dailyReviews', -5)">−</button>
+          <input type="number" id="set-dailyReviews" inputmode="numeric">
+          <button onclick="stepSetting('dailyReviews', 5)">+</button>
+        </div>
+      </div>
+      <div class="setting-row">
+        <div class="setting-text"><span class="setting-label">Reviews per session</span><span class="setting-help">Due reviews served each time you open a section (most overdue first).</span></div>
+        <div class="setting-stepper">
+          <button onclick="stepSetting('reviewsPerSession', -5)">−</button>
+          <input type="number" id="set-reviewsPerSession" inputmode="numeric">
+          <button onclick="stepSetting('reviewsPerSession', 5)">+</button>
+        </div>
+      </div>
+      <div class="setting-row">
+        <div class="setting-text"><span class="setting-label">New cards per session (with reviews)</span><span class="setting-help">New cards that always get in, even when reviews are pending.</span></div>
+        <div class="setting-stepper">
+          <button onclick="stepSetting('minNewPerSession', -5)">−</button>
+          <input type="number" id="set-minNewPerSession" inputmode="numeric">
+          <button onclick="stepSetting('minNewPerSession', 5)">+</button>
+        </div>
+      </div>
+      <div class="setting-row">
+        <div class="setting-text"><span class="setting-label">New cards per session (no reviews)</span><span class="setting-help">New cards when nothing is due, and in “New only” mode.</span></div>
+        <div class="setting-stepper">
+          <button onclick="stepSetting('newPerSession', -5)">−</button>
+          <input type="number" id="set-newPerSession" inputmode="numeric">
+          <button onclick="stepSetting('newPerSession', 5)">+</button>
+        </div>
+      </div>
+      <div class="settings-actions">
+        <button class="btn-backup" onclick="resetSettingsForm()">Reset defaults</button>
+        <button class="btn-save-settings" onclick="saveSettingsForm()">Save</button>
+      </div>
+      <p class="settings-saved" id="settings-saved"></p>
     </div>
   </div>
 

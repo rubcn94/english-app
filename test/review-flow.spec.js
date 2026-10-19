@@ -202,7 +202,27 @@ function testNewOnlyModeSkipsReviews() {
   assertEqual(q.length, 20, 'new-only mode serves a full set of new cards');
 }
 
+function testSettingsChangeTheSession() {
+  const h = load();
+  h.call('showSettings');
+  h.document.getElementById('set-reviewsPerSession').value = '5';
+  h.document.getElementById('set-minNewPerSession').value = '3';
+  h.document.getElementById('set-dailyReviews').value = '9999';
+  h.call('saveSettingsForm');
+  assertEqual(h.run('DAILY_REVIEW_LIMIT'), 500, 'values are clamped to the allowed range');
+  assertEqual(h.run('loadSettings().reviewsPerSession'), 5, 'settings persist');
+  const sec = h.getData('vocab').find(s => s.section === 1);
+  markProgress(h, sec.cards.slice(0, 50).map(c => c.id), PAST);
+  h.call('startSection', 'vocab', 1);
+  const q = h.run('state.blocks.flat().map(c => c._isNew)');
+  assertEqual(q.filter(x => !x).length, 5, 'reviews per session follows the setting');
+  assertEqual(q.filter(x => x).length, 3, 'with a full set of reviews, only the minimum of new cards');
+  h.call('refreshHomeStats');
+  assert(h.document.getElementById('today-reviews').textContent.endsWith('/ 500'), 'home panel shows the daily limit');
+}
+
 module.exports = {
+  testSettingsChangeTheSession,
   testDailyReviewLimitAcrossSections,
   testNewOnlyModeSkipsReviews,
   testFirstIntervalsDependOnTheButton,

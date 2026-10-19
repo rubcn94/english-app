@@ -131,6 +131,8 @@ const ALL_IDS = [
   // home
   'progress-blue', 'progress-green', 'progress-vocab', 'progress-sherlock',
   'stat-streak', 'stat-total', 'stat-due', 'rate-hint-3', 'rate-hint-4', 'rate-hint-5',
+  'today-reviews', 'today-news', 'today-bar', 'today-session', 'settings-saved',
+  'set-dailyReviews', 'set-reviewsPerSession', 'set-newPerSession', 'set-minNewPerSession',
   'btn-study-due', 'due-badge', 'due-label', 'backup-status', 'backup-file-input',
   // book menu / sections
   'book-menu-title', 'section-list',
@@ -170,7 +172,7 @@ const ALL_IDS = [
   // note modal
   'note-modal', 'modal-word', 'modal-translation', 'modal-textarea',
   // screens (toggled via class="screen")
-  'screen-home', 'screen-book', 'screen-study', 'screen-summary', 'screen-glossary',
+  'screen-home', 'screen-settings', 'screen-book', 'screen-study', 'screen-summary', 'screen-glossary',
   'screen-topics', 'screen-dynamic-templates', 'screen-dynamic-study',
   'screen-leveltest-study', 'screen-leveltest-result',
 ];

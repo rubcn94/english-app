@@ -119,18 +119,49 @@ function isDue(card) { if (!card || !card.dueDate) return true; return card.dueD
 
 // ── App state ─────────────────────────────────────────────────────────────────
 const BLOCK_SIZE = 10;
-const NEW_PER_SESSION = 20;
-// A section session is at most SESSION_SIZE cards: up to REVIEWS_PER_SESSION
-// due reviews (oldest and hardest first — the rest wait for the next
-// session) and at least MIN_NEW_PER_SESSION new cards, mixed together, so a
-// pile of reviews never blocks new material.
-const SESSION_SIZE = 30;
-const REVIEWS_PER_SESSION = 20;
-const MIN_NEW_PER_SESSION = 10;
-// Reviews per day across every section. Once reached, sections only serve
-// new cards; the "due cards" button on the home screen still lets you do
-// extra reviews on purpose.
-const DAILY_REVIEW_LIMIT = 60;
+// Study limits — editable from ⚙ Study settings on the home screen.
+// A section session is up to REVIEWS_PER_SESSION due reviews (oldest and
+// hardest first — the rest wait for the next session) plus at least
+// MIN_NEW_PER_SESSION new cards, mixed together, so a pile of reviews never
+// blocks new material. With no reviews pending, NEW_PER_SESSION new cards.
+// DAILY_REVIEW_LIMIT counts reviews across every section; once reached,
+// sections only serve new cards (the home "due cards" button still allows
+// an extra round on purpose).
+const SETTINGS_KEY = 'eng_settings_v1';
+const DEFAULT_SETTINGS = { dailyReviews: 60, reviewsPerSession: 20, newPerSession: 20, minNewPerSession: 10 };
+const SETTING_RANGES = {
+  dailyReviews: [0, 500], reviewsPerSession: [0, 100], newPerSession: [1, 100], minNewPerSession: [0, 100],
+};
+let NEW_PER_SESSION, REVIEWS_PER_SESSION, MIN_NEW_PER_SESSION, SESSION_SIZE, DAILY_REVIEW_LIMIT;
+function loadSettings() {
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(SETTINGS_KEY)) || {}; } catch {}
+  return cleanSettings({ ...DEFAULT_SETTINGS, ...saved });
+}
+function cleanSettings(st) {
+  const out = {};
+  Object.keys(DEFAULT_SETTINGS).forEach(k => {
+    const [lo, hi] = SETTING_RANGES[k];
+    const v = Math.round(Number(st[k]));
+    out[k] = Number.isFinite(v) ? Math.min(hi, Math.max(lo, v)) : DEFAULT_SETTINGS[k];
+  });
+  out.minNewPerSession = Math.min(out.minNewPerSession, out.newPerSession);
+  return out;
+}
+function applySettings(st) {
+  DAILY_REVIEW_LIMIT = st.dailyReviews;
+  REVIEWS_PER_SESSION = st.reviewsPerSession;
+  NEW_PER_SESSION = st.newPerSession;
+  MIN_NEW_PER_SESSION = st.minNewPerSession;
+  SESSION_SIZE = REVIEWS_PER_SESSION + MIN_NEW_PER_SESSION;
+}
+function saveSettings(st) {
+  const clean = cleanSettings(st);
+  safeSet(SETTINGS_KEY, JSON.stringify(clean));
+  applySettings(clean);
+  return clean;
+}
+applySettings(loadSettings());
 // A card only counts as "known" (glossary) once its next review is at
 // least this many days away — one correct answer isn't knowing it yet.
 const KNOWN_INTERVAL = 21;
@@ -1104,6 +1135,30 @@ function updateStreak() {
   saveStreak(s);
 }
 
+// ── Study settings ───────────────────────────────────────────────────────────
+function showSettings() {
+  const st = loadSettings();
+  Object.keys(DEFAULT_SETTINGS).forEach(k => { document.getElementById('set-' + k).value = st[k]; });
+  document.getElementById('settings-saved').textContent = '';
+  showScreen('settings');
+}
+function stepSetting(key, delta) {
+  const el = document.getElementById('set-' + key);
+  const [lo, hi] = SETTING_RANGES[key];
+  el.value = Math.min(hi, Math.max(lo, (Number(el.value) || 0) + delta));
+}
+function saveSettingsForm() {
+  const st = {};
+  Object.keys(DEFAULT_SETTINGS).forEach(k => { st[k] = document.getElementById('set-' + k).value; });
+  const clean = saveSettings(st);
+  Object.keys(clean).forEach(k => { document.getElementById('set-' + k).value = clean[k]; });
+  document.getElementById('settings-saved').textContent = 'Saved ✓';
+  refreshHomeStats();
+}
+function resetSettingsForm() {
+  Object.keys(DEFAULT_SETTINGS).forEach(k => { document.getElementById('set-' + k).value = DEFAULT_SETTINGS[k]; });
+}
+
 // ── Home stats ────────────────────────────────────────────────────────────────
 function refreshHomeStats() {
   document.getElementById('progress-blue').textContent  = `${countStudied('blue')} / ${totalCards('blue')} studied`;
@@ -1122,6 +1177,16 @@ function refreshHomeStats() {
   const dueBtn = document.getElementById('btn-study-due');
   document.getElementById('due-badge').textContent = due;
   const left = reviewsLeftToday();
+  const today = loadDaily();
+  const revEl = document.getElementById('today-reviews');
+  if (revEl) {
+    revEl.textContent = `${today.reviews} / ${DAILY_REVIEW_LIMIT}`;
+    document.getElementById('today-news').textContent = today.news;
+    const pct = DAILY_REVIEW_LIMIT ? Math.min(100, Math.round(100 * today.reviews / DAILY_REVIEW_LIMIT)) : 100;
+    document.getElementById('today-bar').style.width = pct + '%';
+    document.getElementById('today-session').textContent =
+      `Each section session: up to ${REVIEWS_PER_SESSION} reviews + at least ${MIN_NEW_PER_SESSION} new (${NEW_PER_SESSION} new if nothing is due).`;
+  }
   document.getElementById('due-label').textContent = due === 0 ? 'No cards due'
     : left > 0 ? `Study due cards · ${Math.min(left, due)} for today`
     : 'Daily reviews done ✓ · extra round';
@@ -1550,6 +1615,7 @@ function exportBackup() {
     notes: state.notes,
     known: state.known,
     streak: loadStreak(),
+    settings: loadSettings(),
   };
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -1618,6 +1684,7 @@ function mergeBackup(data) {
     const current = loadStreak();
     if (data.streak.count > current.count) saveStreak(data.streak);
   }
+  if (data.settings && typeof data.settings === 'object') saveSettings(data.settings);
 
   refreshHomeStats();
   alert(`Backup imported. ${updatedCards} card(s) updated, notes and known words merged.`);
