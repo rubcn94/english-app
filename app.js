@@ -31,6 +31,20 @@ function loadStreak() {
 }
 function saveStreak(s) { safeSet(STREAK_KEY, JSON.stringify(s)); }
 
+// Reviews done today across ALL sections and books, so the daily review
+// limit holds however many sections you open. Resets every day; it's a
+// per-device convenience, not part of the backup.
+const DAILY_KEY = 'eng_daily_v1';
+function loadDaily() {
+  try {
+    const d = JSON.parse(localStorage.getItem(DAILY_KEY));
+    if (d && d.date === todayStr()) return d;
+  } catch {}
+  return { date: todayStr(), reviews: 0, news: 0 };
+}
+function saveDaily(d) { safeSet(DAILY_KEY, JSON.stringify(d)); }
+function reviewsLeftToday() { return Math.max(0, DAILY_REVIEW_LIMIT - loadDaily().reviews); }
+
 function loadNotes() {
   try { return JSON.parse(localStorage.getItem(NOTES_KEY)) || {}; } catch { return {}; }
 }
@@ -113,6 +127,10 @@ const NEW_PER_SESSION = 20;
 const SESSION_SIZE = 30;
 const REVIEWS_PER_SESSION = 20;
 const MIN_NEW_PER_SESSION = 10;
+// Reviews per day across every section. Once reached, sections only serve
+// new cards; the "due cards" button on the home screen still lets you do
+// extra reviews on purpose.
+const DAILY_REVIEW_LIMIT = 60;
 // A card only counts as "known" (glossary) once its next review is at
 // least this many days away — one correct answer isn't knowing it yet.
 const KNOWN_INTERVAL = 21;
@@ -499,30 +517,38 @@ function renderSectionList(book) {
       </div>
       <div class="section-right">
         ${isSherlock ? '<span class="section-glossary-btn" role="button" title="Episode glossary">📖 Glossary</span>' : ''}
+        ${due > 0 && newCount > 0 ? '<span class="section-new-btn" role="button" title="Skip reviews and study new cards only">＋ New only</span>' : ''}
         <span class="section-count">${done}/${total}</span>
         <span class="section-badge ${badgeClass}">${badge}</span>
       </div>`;
     btn.onclick = () => startSection(book, sec.section);
     const gBtn = btn.querySelector('.section-glossary-btn');
     if (gBtn) gBtn.onclick = e => { e.stopPropagation(); showEpisodeGlossary(sec.section); };
+    const nBtn = btn.querySelector('.section-new-btn');
+    if (nBtn) nBtn.onclick = e => { e.stopPropagation(); startSection(book, sec.section, 'new'); };
     list.appendChild(btn);
   });
 }
 
 // ── Study session ─────────────────────────────────────────────────────────────
-function startSection(book, sectionNum) {
+// mode: 'mixed' (default — reviews + new) or 'new' (new cards only, for the
+// days you just want to move forward).
+function startSection(book, sectionNum, mode) {
   const sec = getData(book).find(s => s.section === sectionNum);
   if (!sec) return;
   state.currentBook = book;
   state.currentSection = sec;
+  state.sessionMode = mode === 'new' ? 'new' : 'mixed';
   state.isAllDue = false;
   state.isCustomQueue = false;
-  const due = pickReviews(sec.cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null));
+  const reviewCap = state.sessionMode === 'new' ? 0 : Math.min(REVIEWS_PER_SESSION, reviewsLeftToday());
+  const due = pickReviews(sec.cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null), reviewCap);
   // New cards fill the session up (between MIN_NEW_PER_SESSION and
   // NEW_PER_SESSION). Old-fashioned expressions are left for last, so
   // they're the ones that wait.
   const allNew = sec.cards.filter(c => getCardProgress(c.id) === null);
-  const newCount = Math.min(NEW_PER_SESSION, Math.max(MIN_NEW_PER_SESSION, SESSION_SIZE - due.length));
+  const newCount = state.sessionMode === 'new' ? NEW_PER_SESSION
+    : Math.min(NEW_PER_SESSION, Math.max(MIN_NEW_PER_SESSION, SESSION_SIZE - due.length));
   const newCards = [...allNew.filter(c => !isDated(c)), ...allNew.filter(c => isDated(c))].slice(0, newCount);
   // Sherlock episodes are studied in the order the words come up in the
   // episode (the data is already sorted that way), so no shuffling there.
@@ -533,7 +559,8 @@ function startSection(book, sectionNum) {
   // section — rateCard() leaves not-due cards' schedule untouched unless
   // they're missed.
   const pending = interleave(order(due), order(newCards));
-  if (pending.length > 0) beginBlockedStudy(pending, sec.title);
+  const title = state.sessionMode === 'new' ? `${sec.title} · new only` : sec.title;
+  if (pending.length > 0) beginBlockedStudy(pending, title);
   else beginBlockedStudy(order(sec.cards), `${sec.title} · free practice`);
 }
 
@@ -556,12 +583,12 @@ function updateRateHints(card) {
 
 // The REVIEWS_PER_SESSION most urgent due cards: the longest overdue first,
 // then the hardest (lowest ease). The rest stay due for the next session.
-function pickReviews(due) {
+function pickReviews(due, cap = REVIEWS_PER_SESSION) {
   return [...due].sort((a, b) => {
     const pa = getCardProgress(a.id), pb = getCardProgress(b.id);
     if (pa.dueDate !== pb.dueDate) return pa.dueDate < pb.dueDate ? -1 : 1;
     return (pa.easeFactor || 2.5) - (pb.easeFactor || 2.5);
-  }).slice(0, REVIEWS_PER_SESSION);
+  }).slice(0, cap);
 }
 
 // Spreads b evenly through a (e.g. 20 reviews + 10 new → 2 reviews, 1 new…).
@@ -578,8 +605,13 @@ function interleave(a, b) {
 }
 
 function startAllDue() {
-  const due = getAllCardsAllBooks().filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
-  if (due.length === 0) return;
+  const allDue = getAllCardsAllBooks().filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
+  if (allDue.length === 0) return;
+  // Today's remaining reviews, most urgent first. If today's limit is
+  // already reached, pressing the button means you want extra: serve a
+  // normal-sized round of the most urgent ones.
+  const left = reviewsLeftToday();
+  const due = pickReviews(allDue, left > 0 ? left : REVIEWS_PER_SESSION);
   state.currentBook = null;
   state.currentSection = null;
   state.isAllDue = true;
@@ -1012,6 +1044,11 @@ function rateCard(rating) {
       state.progress[card.id] = scheduleCard(card, prev, rating);
       saveProgress(state.progress);
     }
+    if (card._isNew || card._wasDue) {
+      const d = loadDaily();
+      if (card._wasDue) d.reviews++; else d.news++;
+      saveDaily(d);
+    }
     if (rating === 0) state.sessionStats.again++;
     else if (rating === 3) state.sessionStats.hard++;
     else if (rating === 4) state.sessionStats.good++;
@@ -1050,7 +1087,7 @@ function showSummary() {
 function studyAgain() {
   if (state.isCustomQueue) showScreen(state.customQueueOrigin === 'topics' ? 'topics' : 'glossary');
   else if (state.isAllDue) startAllDue();
-  else if (state.currentSection) startSection(state.currentBook, state.currentSection.section);
+  else if (state.currentSection) startSection(state.currentBook, state.currentSection.section, state.sessionMode);
   else showScreen('home');
 }
 
@@ -1084,7 +1121,10 @@ function refreshHomeStats() {
 
   const dueBtn = document.getElementById('btn-study-due');
   document.getElementById('due-badge').textContent = due;
-  document.getElementById('due-label').textContent = due === 0 ? 'No cards due' : 'Study due cards';
+  const left = reviewsLeftToday();
+  document.getElementById('due-label').textContent = due === 0 ? 'No cards due'
+    : left > 0 ? `Study due cards · ${Math.min(left, due)} for today`
+    : 'Daily reviews done ✓ · extra round';
   dueBtn.disabled = due === 0;
 
   const backupLabel = document.getElementById('backup-status');

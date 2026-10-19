@@ -177,7 +177,34 @@ function testReviewsAreCappedAndMixedWithNewCards() {
   assert(q.slice(0, 10).includes(true), 'new cards should be mixed in, not left for the end');
 }
 
+function testDailyReviewLimitAcrossSections() {
+  const h = load();
+  h.run(`localStorage.setItem(DAILY_KEY, JSON.stringify({ date: todayStr(), reviews: DAILY_REVIEW_LIMIT - 5, news: 0 }))`);
+  const sec = h.getData('vocab').find(s => s.section === 1);
+  markProgress(h, sec.cards.slice(0, 50).map(c => c.id), PAST);
+  h.call('startSection', 'vocab', 1);
+  const q = h.run('state.blocks.flat().map(c => c._isNew)');
+  assertEqual(q.filter(x => !x).length, 5, 'only the reviews left for today');
+  assertEqual(q.filter(x => x).length, 20, 'the rest of the session is new cards');
+  h.driveTheoryPass();
+  h.answerCurrentCard('correct'); h.rate(4);
+  const d = h.run('loadDaily()');
+  assertEqual(d.reviews + d.news, h.run('DAILY_REVIEW_LIMIT') - 5 + 1, 'answered cards are counted for today');
+}
+
+function testNewOnlyModeSkipsReviews() {
+  const h = load();
+  const sec = h.getData('vocab').find(s => s.section === 1);
+  markProgress(h, sec.cards.slice(0, 50).map(c => c.id), PAST);
+  h.call('startSection', 'vocab', 1, 'new');
+  const q = h.run('state.blocks.flat().map(c => c._isNew)');
+  assert(q.length > 0 && q.every(Boolean), 'new-only mode must not serve reviews');
+  assertEqual(q.length, 20, 'new-only mode serves a full set of new cards');
+}
+
 module.exports = {
+  testDailyReviewLimitAcrossSections,
+  testNewOnlyModeSkipsReviews,
   testFirstIntervalsDependOnTheButton,
   testReviewsAreCappedAndMixedWithNewCards,
   testKnownFollowsTheSchedule,
