@@ -130,7 +130,7 @@ function matchAll(nodes, selector) {
 const ALL_IDS = [
   // home
   'progress-blue', 'progress-green', 'progress-vocab', 'progress-sherlock',
-  'stat-streak', 'stat-total', 'stat-due',
+  'stat-streak', 'stat-total', 'stat-due', 'rate-hint-3', 'rate-hint-4', 'rate-hint-5',
   'btn-study-due', 'due-badge', 'due-label', 'backup-status', 'backup-file-input',
   // book menu / sections
   'book-menu-title', 'section-list',

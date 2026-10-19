@@ -65,11 +65,19 @@ function localDateStr(date) {
 // on every "Good" and made intervals shrink over time.)
 function sm2(card, rating) {
   let { interval = 1, repetitions = 0, easeFactor = 2.5 } = card || {};
+  // The first two steps depend on the button: everything used to come back
+  // the next day (Easy included), so a session of 20 new cards meant 20
+  // reviews the next morning before anything new could be seen.
+  //   1st correct answer: Hard 1 day · Good 3 · Easy 7
+  //   2nd correct answer: Hard 4 days · Good 7 · Easy 12
+  //   later: Hard ×1.2 · Good ×ease · Easy ×ease×1.3
   if (rating < 3) { repetitions = 0; interval = 1; }
   else {
-    if (repetitions === 0) interval = 1;
-    else if (repetitions === 1) interval = 6;
-    else interval = Math.round(interval * easeFactor);
+    if (repetitions === 0) interval = { 3: 1, 4: 3, 5: 7 }[rating];
+    else if (repetitions === 1) interval = { 3: 4, 4: 7, 5: 12 }[rating];
+    else if (rating === 3) interval = Math.max(interval + 1, Math.round(interval * 1.2));
+    else if (rating === 4) interval = Math.round(interval * easeFactor);
+    else interval = Math.round(interval * easeFactor * 1.3);
     repetitions += 1;
   }
   easeFactor = Math.max(1.3, easeFactor + 0.1 - (5 - rating) * (0.08 + (5 - rating) * 0.02));
@@ -98,6 +106,13 @@ function isDue(card) { if (!card || !card.dueDate) return true; return card.dueD
 // ── App state ─────────────────────────────────────────────────────────────────
 const BLOCK_SIZE = 10;
 const NEW_PER_SESSION = 20;
+// A section session is at most SESSION_SIZE cards: up to REVIEWS_PER_SESSION
+// due reviews (oldest and hardest first — the rest wait for the next
+// session) and at least MIN_NEW_PER_SESSION new cards, mixed together, so a
+// pile of reviews never blocks new material.
+const SESSION_SIZE = 30;
+const REVIEWS_PER_SESSION = 20;
+const MIN_NEW_PER_SESSION = 10;
 // A card only counts as "known" (glossary) once its next review is at
 // least this many days away — one correct answer isn't knowing it yet.
 const KNOWN_INTERVAL = 21;
@@ -502,24 +517,64 @@ function startSection(book, sectionNum) {
   state.currentSection = sec;
   state.isAllDue = false;
   state.isCustomQueue = false;
-  const due     = sec.cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null);
-  // At most NEW_PER_SESSION new cards per session (vocab sections have
-  // 70-177 cards, which meant up to 18 blocks in one go). Old-fashioned
-  // expressions are left for last, so they're the ones that wait.
+  const due = pickReviews(sec.cards.filter(c => isDue(getCardProgress(c.id)) && getCardProgress(c.id) !== null));
+  // New cards fill the session up (between MIN_NEW_PER_SESSION and
+  // NEW_PER_SESSION). Old-fashioned expressions are left for last, so
+  // they're the ones that wait.
   const allNew = sec.cards.filter(c => getCardProgress(c.id) === null);
-  const newCards = [...allNew.filter(c => !isDated(c)), ...allNew.filter(c => isDated(c))].slice(0, NEW_PER_SESSION);
+  const newCount = Math.min(NEW_PER_SESSION, Math.max(MIN_NEW_PER_SESSION, SESSION_SIZE - due.length));
+  const newCards = [...allNew.filter(c => !isDated(c)), ...allNew.filter(c => isDated(c))].slice(0, newCount);
   // Sherlock episodes are studied in the order the words come up in the
   // episode (the data is already sorted that way), so no shuffling there.
   const order = book === 'sherlock' ? (a => a) : shuffle;
-  // Only what's actually pending: due reviews first, then new cards. Cards
-  // already studied and scheduled for a later day are NOT re-queued (they
-  // used to be appended every time, so opening a section always restarted
-  // it from the first card). If nothing is pending, fall back to a free
-  // practice round over the whole section — rateCard() leaves not-due cards'
-  // schedule untouched unless they're missed.
-  const pending = [...order(due), ...order(newCards)];
+  // Only what's actually pending, reviews and new cards interleaved. Cards
+  // already studied and scheduled for a later day are NOT re-queued. If
+  // nothing is pending, fall back to a free practice round over the whole
+  // section — rateCard() leaves not-due cards' schedule untouched unless
+  // they're missed.
+  const pending = interleave(order(due), order(newCards));
   if (pending.length > 0) beginBlockedStudy(pending, sec.title);
   else beginBlockedStudy(order(sec.cards), `${sec.title} · free practice`);
+}
+
+// Shows under Hard/Good/Easy when the card would come back ("1d", "3d"…).
+// Blank when the answer won't move the schedule (an in-session retry, or
+// free practice on a card that isn't due yet).
+function formatInterval(days) {
+  if (days < 30) return days + 'd';
+  if (days < 365) return Math.round(days / 30) + 'mo';
+  return (Math.round(days / 36.5) / 10) + 'y';
+}
+function updateRateHints(card) {
+  const counts = card && !(state.sessionSeen && state.sessionSeen[card.id]) && (card._isNew || card._wasDue);
+  const prev = getCardProgress(card.id);
+  [3, 4, 5].forEach(r => {
+    const el = document.getElementById('rate-hint-' + r);
+    if (el) el.textContent = counts ? formatInterval(scheduleCard(card, prev, r).interval) : '';
+  });
+}
+
+// The REVIEWS_PER_SESSION most urgent due cards: the longest overdue first,
+// then the hardest (lowest ease). The rest stay due for the next session.
+function pickReviews(due) {
+  return [...due].sort((a, b) => {
+    const pa = getCardProgress(a.id), pb = getCardProgress(b.id);
+    if (pa.dueDate !== pb.dueDate) return pa.dueDate < pb.dueDate ? -1 : 1;
+    return (pa.easeFactor || 2.5) - (pb.easeFactor || 2.5);
+  }).slice(0, REVIEWS_PER_SESSION);
+}
+
+// Spreads b evenly through a (e.g. 20 reviews + 10 new → 2 reviews, 1 new…).
+function interleave(a, b) {
+  if (!a.length) return [...b];
+  if (!b.length) return [...a];
+  const out = [], step = (a.length + b.length) / b.length;
+  let ai = 0, bi = 0;
+  for (let i = 0; i < a.length + b.length; i++) {
+    if (bi < b.length && (ai >= a.length || i + 1 >= Math.round(step * (bi + 1)))) out.push(b[bi++]);
+    else out.push(a[ai++]);
+  }
+  return out;
 }
 
 function startAllDue() {
@@ -876,6 +931,7 @@ function finishAnswer(card, picked, knownCorrect) {
   // Continue button, nothing to rate.
   document.getElementById('rating-wrap').classList.toggle('hidden', !correct);
   document.getElementById('btn-continue-miss').classList.toggle('hidden', correct);
+  if (correct) updateRateHints(card);
 
   const yourEl = document.getElementById('correction-your');
   if (hasBlanks(card)) {

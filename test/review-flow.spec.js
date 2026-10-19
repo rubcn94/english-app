@@ -155,7 +155,31 @@ function testStorageFailureDoesNotBreakStudy() {
   assert(res.answers.length > 0, 'cards answered');
 }
 
+function testFirstIntervalsDependOnTheButton() {
+  const h = load();
+  const iv = r => h.run(`sm2(null, ${r}).interval`);
+  assertEqual(iv(3), 1, 'Hard on a new card → tomorrow');
+  assertEqual(iv(4), 3, 'Good on a new card → 3 days');
+  assertEqual(iv(5), 7, 'Easy on a new card → a week');
+  h.ctx.__p = { interval: 3, repetitions: 1, easeFactor: 2.5 };
+  assertEqual(h.run('sm2(__p, 4).interval'), 7, 'second Good → a week');
+}
+
+function testReviewsAreCappedAndMixedWithNewCards() {
+  const h = load();
+  const sec = h.getData('vocab').find(s => s.section === 1);
+  const studied = sec.cards.slice(0, 50).map(c => c.id);
+  markProgress(h, studied, PAST);
+  h.call('startSection', 'vocab', 1);
+  const q = h.run('state.blocks.flat().map(c => c._isNew)');
+  assertEqual(q.filter(x => !x).length, 20, 'at most 20 reviews per session');
+  assertEqual(q.filter(x => x).length, 10, 'new cards still get in when reviews pile up');
+  assert(q.slice(0, 10).includes(true), 'new cards should be mixed in, not left for the end');
+}
+
 module.exports = {
+  testFirstIntervalsDependOnTheButton,
+  testReviewsAreCappedAndMixedWithNewCards,
   testKnownFollowsTheSchedule,
   testNewCardsCappedAt20,
   testEaseMigrationRunsOnce,

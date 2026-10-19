@@ -491,6 +491,8 @@ input.hidden { display: none; }
   color: white;
   transition: transform 0.1s, opacity 0.1s;
 }
+.rate-hint { display: block; font-size: 0.7rem; font-weight: 400; opacity: 0.85; margin-top: 2px; }
+.rate-hint:empty { display: none; }
 .btn-rate:active { transform: scale(0.95); opacity: 0.85; }
 .btn-rate.again { background: var(--again); }
 .btn-rate.hard { background: var(--hard); }
